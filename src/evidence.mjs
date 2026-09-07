@@ -39,7 +39,7 @@ export function classify(text, { truncated = false } = {}) {
   if (!/reset|usage|allowance|quota|limits?/i.test(value)) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b.{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
-  if (/\b(?:he|she|they|someone) (?:said|says)|\bquote\b|[“”]/i.test(value)) return unknown;
+  if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value)) return unknown;
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
     if (/\bwe (?:will|are going to)|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };
