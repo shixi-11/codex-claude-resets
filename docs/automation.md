@@ -2,7 +2,7 @@
 
 The production workflow is `.github/workflows/site.yml`. It checks announcements twice hourly, writes a daily Markdown digest at 02:23 UTC, validates records, builds the static site and deploys GitHub Pages. Public files are served on `shixilin.com/ai/codex-reset/` through the personal website's Vercel rewrite.
 
-The default collector needs no token, LLM or billing account. Community discovery supplies candidate URLs only. X official embeds verify the author, post identity and visible text. Full source text is hashed, not republished in full. Quotes are limited to a short excerpt.
+The default collector needs no token, LLM or billing account. Independent public discovery pages supply candidate URLs only. Codex Reset Monitor and Codex Resets are checked independently; CodexRunway is a fallback if both are unavailable. X official embeds verify the author, post identity and visible text. Full source text is hashed, not republished in full. Quotes are limited to a short excerpt.
 
 `X_BEARER_TOKEN` together with `ENABLE_PAID_X_API=true` explicitly selects the optional official timeline adapter when running the collector. The hosted workflow does not set either value. Operators must review X's current pricing and permissions before enabling this path. There is no silent paid fallback.
 

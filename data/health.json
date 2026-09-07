@@ -1,14 +1,28 @@
 {
-  "lastAttemptAt": "2026-09-07T22:36:18.693Z",
-  "lastSuccessAt": "2026-09-07T22:34:13.047Z",
-  "discoveryAt": "2026-09-07T22:32:45.000Z",
+  "lastAttemptAt": "2026-09-07T22:41:58.861Z",
+  "lastSuccessAt": "2026-09-07T22:41:58.861Z",
+  "discoveryAt": "2026-09-07T22:41:58.861Z",
   "mode": "community-discovery",
   "sources": [
     {
-      "name": "Announcement discovery",
-      "ok": false,
-      "error": "HTTP 403"
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": true,
+      "candidates": 404
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 53
+    },
+    {
+      "name": "X official embed",
+      "url": "https://publish.twitter.com/",
+      "ok": true,
+      "checked": 30,
+      "failed": 0
     }
   ],
-  "status": "degraded"
+  "status": "ok"
 }

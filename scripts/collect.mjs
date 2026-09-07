@@ -8,10 +8,10 @@ const existing = JSON.parse(await readFile(new URL('data/events.json', root), 'u
 const previousHealth = JSON.parse(await readFile(new URL('data/health.json', root), 'utf8'));
 const health = { ...previousHealth, lastAttemptAt: now, sources: [], status: 'degraded', mode: 'community-discovery' };
 const fresh = [];
-const request = async (url, headers = {}) => {
+const request = async (url, headers = {}, format = 'json') => {
   const response = await fetch(url, { headers: { 'User-Agent': 'CodexResetTracker/1.0 (public announcement monitoring)', ...headers }, signal: AbortSignal.timeout(18000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return response.json();
+  return format === 'text' ? response.text() : response.json();
 };
 
 let candidates = [];
@@ -25,13 +25,29 @@ try {
     health.discoveryAt = now;
     health.sources.push({ name: 'X timeline', url: 'https://x.com/thsottiaux', ok: true });
   } else {
-    const feed = await request('https://codex-reset.com/api/feed');
-    if (!Array.isArray(feed.tweets) || !Number.isFinite(Date.parse(feed.fetched_at))) throw new Error('Invalid discovery feed');
-    const feedAge = Date.now() - Date.parse(feed.fetched_at);
-    if (feed.stale || feedAge > 3 * 3600000 || feedAge < -300000) throw new Error('Discovery feed is stale');
-    candidates = feed.tweets.filter(post => /reset|usage|quota|limit/i.test(post.text || '')).slice(0, 24).map(post => ({ url: post.url }));
-    health.discoveryAt = feed.fetched_at;
-    health.sources.push({ name: 'Codex Reset · discovery only', url: 'https://codex-reset.com/api/feed', ok: true });
+    // Independent public pages are discovery indexes only. Never accept their classifications or text as evidence.
+    for (const source of [
+      { name: 'Codex Reset Monitor · discovery only', url: 'https://codexreset.org/' },
+      { name: 'Codex Resets · discovery only', url: 'https://codex-resets.com/' },
+    ]) {
+      try {
+        const html = await request(source.url, {}, 'text');
+        const urls = [...new Set(html.match(/https:\/\/(?:x|twitter)\.com\/[A-Za-z0-9_]+\/status\/\d+/g) || [])].filter(url => parsePostUrl(url));
+        if (!urls.length) throw new Error('No allowed source links');
+        candidates.push(...urls.map(url => ({ url })));
+        health.sources.push({ ...source, ok: true, candidates: urls.length });
+      } catch (error) { health.sources.push({ ...source, ok: false, error: error.message.slice(0, 100) }); }
+    }
+    if (!candidates.length) {
+      const feed = await request('https://www.codexrunway.com/api/status.json');
+      const checked = Date.parse(feed.lastSuccessfulCheckAt);
+      if (!Array.isArray(feed.events) || !Number.isFinite(checked) || Date.now() - checked > 3 * 3600000 || checked > Date.now() + 300000) throw new Error('Fallback discovery is stale');
+      const serialized = JSON.stringify(feed);
+      candidates = [...new Set(serialized.match(/https:\/\/(?:x|twitter)\.com\/[A-Za-z0-9_]+\/status\/\d+/g) || [])].filter(url => parsePostUrl(url)).map(url => ({ url }));
+      health.sources.push({ name: 'CodexRunway · discovery only', url: 'https://www.codexrunway.com/api/status.json', ok: candidates.length > 0 });
+    }
+    candidates = [...new Map(candidates.map(post => [parsePostUrl(post.url).id, post])).values()].sort((a,b) => {const x=BigInt(parsePostUrl(a.url).id),y=BigInt(parsePostUrl(b.url).id);return x===y?0:x>y?-1:1;}).slice(0,30);
+    health.discoveryAt = now;
   }
   let verified = 0;
   let failed = 0;

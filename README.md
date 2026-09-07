@@ -14,7 +14,7 @@ Codex hits a limit. Your idea doesn't. Respawn brings public reset announcements
 
 ### What “checked” means
 
-Candidate links come from [Codex Reset's community feed](https://codex-reset.com/). Their visible text and authors are then checked against **X's official embed endpoint**. The discovery feed is not treated as evidence. Only allowlisted OpenAI accounts and the Codex lead are accepted.
+Candidate links come from the public pages of [Codex Reset Monitor](https://codexreset.org/) and [Codex Resets](https://codex-resets.com/), with [CodexRunway](https://www.codexrunway.com/) as a fallback. Their visible text and authors are then checked against **X's official embed endpoint**. These discovery indexes are not treated as evidence. Only allowlisted OpenAI accounts and the Codex lead are accepted.
 
 A truncated post stays **unconfirmed**, even when the visible portion sounds promising. An announcement never becomes a completed reset just because time has passed. “Reported complete” describes the source's statement; it does not verify your account.
 

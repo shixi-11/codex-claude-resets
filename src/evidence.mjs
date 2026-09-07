@@ -1,4 +1,4 @@
-export const RULES_VERSION = '1.0.0';
+export const RULES_VERSION = '1.0.1';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI'];
 
 export function parsePostUrl(value) {
@@ -36,8 +36,8 @@ export function extractEmbed(embed, requestedUrl) {
 export function classify(text, { truncated = false } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
-  if (truncated) return { ...unknown, reason: 'truncated' };
   if (!/reset|usage|allowance|quota|limits?/i.test(value)) return { kind: 'other', state: 'information', reason: 'unrelated' };
+  if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b.{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\bquote\b|[“”]/i.test(value)) return unknown;
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
@@ -68,7 +68,7 @@ export function validateEvent(event) {
   if (!Number.isFinite(Date.parse(event.publishedAt)) || !Number.isFinite(Date.parse(event.verifiedAt))) throw new Error('Invalid date');
   if (event.truncated && event.state !== 'unconfirmed') throw new Error('Incomplete evidence cannot confirm a claim');
   if (!['x-oembed', 'x-api', 'manual-primary'].includes(event.provenance)) throw new Error('Unsupported evidence provenance');
-  if (typeof event.excerpt !== 'string' || event.excerpt.split(/\s+/).length > 25) throw new Error('Excerpt too long');
+  if (typeof event.excerpt !== 'string' || !event.excerpt.trim() || event.excerpt.split(/\s+/).length > 25) throw new Error('Invalid excerpt');
   if (!event.rulesVersion || !/^[0-9a-f]{64}$/.test(event.contentHash)) throw new Error('Missing version anchor');
   return true;
 }
