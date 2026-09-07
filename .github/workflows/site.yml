@@ -28,6 +28,9 @@ jobs:
       - name: Check public announcements
         if: github.event_name != 'push'
         run: node scripts/collect.mjs
+      - name: Check official Claude promotion terms
+        if: github.event_name != 'push'
+        run: node scripts/collect-platforms.mjs
       - name: Daily source digest
         if: github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
         run: node scripts/digest.mjs

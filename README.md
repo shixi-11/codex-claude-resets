@@ -1,22 +1,23 @@
 <p align="center"><img src="public/favicon.svg" width="52" alt="Codex Respawn cursor"></p>
-<h1 align="center">Codex Respawn</h1>
-<p align="center"><strong>Out of tokens. Not out of ideas.</strong><br>A checkpoint for your next Codex session.</p>
+<h1 align="center">Respawn</h1>
+<p align="center"><strong>Out of tokens. Not out of ideas.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-reset/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-reset/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-reset/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
 ![Codex Respawn desktop interface](docs/screenshot.jpg)
 
-Codex hits a limit. Your idea doesn't. Respawn brings public reset announcements, their original sources, and your personal reset timer into one small page.
+Respawn puts the next confirmed Codex and Claude reset time first. Check the countdown in your own timezone, see reset-credit and extra-usage offers, and open the original announcement.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
+- **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
 - **Keep your own time.** Enter the reset time displayed in your account. Save it locally or download a calendar reminder.
 - **Read in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available.
 - **Follow without another account.** RSS, public JSON and permanent event links are built in.
 
 ### What “checked” means
 
-Candidate links come from the public pages of [Codex Reset Monitor](https://codexreset.org/) and [Codex Resets](https://codex-resets.com/), with [CodexRunway](https://www.codexrunway.com/) as a fallback. Their visible text and authors are then checked against **X's official embed endpoint**. These discovery indexes are not treated as evidence. Only allowlisted OpenAI accounts and the Codex lead are accepted.
+The collector polls Tibo and ClaudeDevs timelines through the public FxEmbed relay. X official embeds independently check author, post ID and visible text. For a long post, the full relay text must match that official excerpt and the post timestamp; its record identifies `x-oembed+fxembed` provenance. This is a relay-backed tracker, not an official X API integration. Community pages are fallback link indexes only. Claude promotion terms are fetched directly from its official help center.
 
-A truncated post stays **unconfirmed**, even when the visible portion sounds promising. An announcement never becomes a completed reset just because time has passed. “Reported complete” describes the source's statement; it does not verify your account.
+A post that remains truncated stays **unconfirmed**, even when the visible portion sounds promising. An announcement never becomes a completed reset just because time has passed. “Reported complete” describes the source's statement; it does not verify your account.
 
 The page shows source health and the last successful check. After three hours without a successful check, it marks the data as potentially stale, including in a tab left open. This is a selective announcement feed, not a complete account or service-status monitor. See [OpenAI's usage guidance](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for account-specific details.
 
@@ -62,7 +63,7 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 ## 简体中文
 
-**额度用完了，灵感还在。** Codex Respawn把公开重置公告、原始来源和个人恢复计时器放在同一页，方便接着把想法做出来。
+**还要多久重置？** Respawn把Codex和Claude的已确认重置时间、倒计时、重置卡和额外额度消息放在同一页，自动按访客本地时区显示，并附原始来源。
 
 [打开网站](https://shixilin.com/ai/codex-reset/zh/) · [RSS订阅](https://shixilin.com/ai/codex-reset/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-reset/events.json)
 
@@ -80,4 +81,4 @@ Made by [Shixi Lin](https://shixilin.com/?lang=en). For collaborations: [info@el
 
 If this little checkpoint is useful, you can [support the project](https://shixilin.com/support?lang=en).
 
-Independent project. Not affiliated with OpenAI.
+Independent project. Not affiliated with OpenAI or Anthropic.

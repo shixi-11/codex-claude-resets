@@ -1,5 +1,6 @@
-export const RULES_VERSION = '1.0.1';
-export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI'];
+export const RULES_VERSION = '1.2.1';
+export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
+export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
 export function parsePostUrl(value) {
   try {
@@ -34,18 +35,19 @@ export function extractEmbed(embed, requestedUrl) {
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
 export function classify(text, { truncated = false } = {}) {
-  const value = text.replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim();
+  const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
   if (!/reset|usage|allowance|quota|limits?/i.test(value)) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
-  if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b.{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
+  if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value)) return unknown;
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
     if (/\bwe (?:will|are going to)|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };
     return { kind: 'usage', state: 'information', reason: 'bank-information' };
   }
-  if (/\b(?:codex|chatgpt work|all paid|paid (?:users|plans|subscriptions)|global)\b/i.test(value)) {
+  if (/\b(?:codex|claude|chatgpt work|all users|all subscribers|all paid|paid (?:users|plans|subscriptions)|global)\b/i.test(value)) {
+    if (/\bwe have (?:also |now |just )?reset (?:5-hour and weekly|weekly|5-hour) limits\b/i.test(value)) return { kind:'global',state:'reported',reason:'explicit-completion' };
     if (/\bwe (?:have )?(?:now |just |already )?reset\s+(?:the )?(?:usage|limits?|quotas?)|\breset (?:has (?:been )?|is now )(?:applied|propagated|complete|completed)|\b(?:usage|limits?) (?:has|have) (?:been )?reset/i.test(value)) return { kind: 'global', state: 'reported', reason: 'explicit-completion' };
     if (/\bwe (?:will|are going to) (?:do |perform |apply )?(?:a |the )?(?:global )?reset|\b(?:reset|resets?) will (?:land|arrive|happen)|\bwe are reset(?:t)?ing usage/i.test(value)) return { kind: 'global', state: 'announced', reason: 'explicit-announcement' };
   }
@@ -63,11 +65,13 @@ export function evidenceExcerpt(text) {
 export function validateEvent(event) {
   const post = parsePostUrl(event.sourceUrl);
   if (!post || post.id !== event.id) throw new Error('Invalid source');
+  if (typeof event.author !== 'string' || event.author.toLowerCase() !== post.author.toLowerCase()) throw new Error('Event author mismatch');
+  if (event.platform && event.platform !== postPlatform(event.author)) throw new Error('Event platform mismatch');
   if (!['global', 'banked', 'usage', 'signal'].includes(event.kind)) throw new Error('Invalid kind');
   if (!['reported', 'announced', 'information', 'unconfirmed'].includes(event.state)) throw new Error('Invalid state');
   if (!Number.isFinite(Date.parse(event.publishedAt)) || !Number.isFinite(Date.parse(event.verifiedAt))) throw new Error('Invalid date');
   if (event.truncated && event.state !== 'unconfirmed') throw new Error('Incomplete evidence cannot confirm a claim');
-  if (!['x-oembed', 'x-api', 'manual-primary'].includes(event.provenance)) throw new Error('Unsupported evidence provenance');
+  if (!['x-oembed', 'x-oembed+fxembed', 'x-api', 'manual-primary'].includes(event.provenance)) throw new Error('Unsupported evidence provenance');
   if (typeof event.excerpt !== 'string' || !event.excerpt.trim() || event.excerpt.split(/\s+/).length > 25) throw new Error('Invalid excerpt');
   if (!event.rulesVersion || !/^[0-9a-f]{64}$/.test(event.contentHash)) throw new Error('Missing version anchor');
   return true;
@@ -78,6 +82,7 @@ export function mergeEvents(existing, incoming) {
   for (const event of incoming) {
     validateEvent(event);
     const previous = records.get(event.id);
+    if(previous&&Date.parse(previous.verifiedAt)>Date.parse(event.verifiedAt))continue;
     // An unavailable or shorter embed must not overwrite already reviewed complete evidence.
     if (previous && !previous.truncated && event.truncated) continue;
     records.set(event.id, event);

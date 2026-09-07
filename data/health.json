@@ -1,28 +1,29 @@
 {
-  "lastAttemptAt": "2026-09-07T22:46:47.890Z",
-  "lastSuccessAt": "2026-09-07T22:46:47.890Z",
-  "discoveryAt": "2026-09-07T22:46:47.890Z",
-  "mode": "community-discovery",
+  "lastAttemptAt": "2026-09-07T23:35:50.192Z",
+  "lastSuccessAt": "2026-09-07T23:35:50.192Z",
+  "discoveryAt": "2026-09-07T23:35:50.192Z",
+  "mode": "profile-relay",
   "sources": [
     {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
+      "name": "@thsottiaux timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "ok": true,
-      "candidates": 404
+      "candidates": 18
     },
     {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
+      "name": "@ClaudeDevs timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "ok": true,
-      "candidates": 53
+      "candidates": 19
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 30,
+      "checked": 19,
       "failed": 0
     }
   ],
-  "status": "ok"
+  "status": "ok",
+  "failedPosts": []
 }

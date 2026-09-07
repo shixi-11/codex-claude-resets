@@ -3,9 +3,9 @@ const {lang,t,health,url} = JSON.parse(document.querySelector('#page-data').text
 document.querySelector('.language select').addEventListener('change',e=>location.assign(e.target.value));
 document.querySelectorAll('time[datetime]').forEach(el=>{const at=Date.parse(el.dateTime);if(Number.isFinite(at))el.textContent=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short'}).format(at);});
 const showHealth=()=>{const state=freshness(health);document.querySelector('[data-health]').textContent=t[state];document.querySelector('.health-dot').className=`health-dot ${state}`;};showHealth();setInterval(showHealth,60000);
-const rows=[...document.querySelectorAll('.event-row')];let active='all',limit=5;
-const filter=()=>{const matches=rows.filter(el=>active==='all'||el.dataset.kind===active);rows.forEach(el=>el.hidden=!matches.slice(0,limit).includes(el));const more=document.querySelector('.more');if(more)more.hidden=matches.length<=limit;const empty=document.querySelector('.empty');if(empty)empty.hidden=matches.length>0;};
-document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{active=button.dataset.filter;limit=5;document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filter();}));document.querySelector('.more')?.addEventListener('click',()=>{limit+=5;filter();});filter();
+const rows=[...document.querySelectorAll('.event-row')];let active='all',activePlatform='all',limit=3;
+const filter=()=>{const matches=rows.filter(el=>(active==='all'||el.dataset.kind===active)&&(activePlatform==='all'||el.dataset.platformFeed===activePlatform));rows.forEach(el=>el.hidden=!matches.slice(0,limit).includes(el));const more=document.querySelector('.more');if(more)more.hidden=matches.length<=limit;const empty=document.querySelector('.empty');if(empty)empty.hidden=matches.length>0;};
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{active=button.dataset.filter;limit=3;document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filter();}));document.querySelector('.more')?.addEventListener('click',()=>{limit+=5;filter();});filter();
 const key='codex-respawn-timer-v1';let timestamp=0;try{timestamp=Number(localStorage.getItem(key))||0;}catch{}
 const clock=document.querySelector('.clock'),form=document.querySelector('.timer-form'),input=document.querySelector('#reset-time'),edit=document.querySelector('[data-edit-timer]');
 const tick=()=>{if(!clock)return;const remain=Math.max(0,timestamp-Date.now());const secs=Math.ceil(remain/1000);clock.textContent=timestamp?`${String(Math.floor(secs/3600)).padStart(2,'0')}:${String(Math.floor(secs/60)%60).padStart(2,'0')}:${String(secs%60).padStart(2,'0')}`:'--:--:--';document.querySelector('.timer-state').textContent=timestamp?(remain>0?new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short'}).format(timestamp):t.timerDue):t.timerEmpty;document.querySelector('.timer-tools').hidden=!timestamp;};tick();if(clock)setInterval(tick,1000);
@@ -14,3 +14,20 @@ form?.addEventListener('submit',e=>{e.preventDefault();const value=new Date(inpu
 document.querySelector('[data-clear]')?.addEventListener('click',()=>{timestamp=0;try{localStorage.removeItem(key);}catch{}tick();});
 document.querySelector('[data-calendar]')?.addEventListener('click',()=>{if(!timestamp)return;const blob=new Blob([calendarFile(timestamp,t.timerDue)],{type:'text/calendar;charset=utf-8'});const href=URL.createObjectURL(blob);const a=document.createElement('a');a.href=href;a.download='codex-respawn.ics';a.click();setTimeout(()=>URL.revokeObjectURL(href),1000);});
 document.querySelector('[data-share]')?.addEventListener('click',async()=>{try{if(navigator.share)await navigator.share({title:document.title,url});else{await navigator.clipboard.writeText(url);const toast=document.querySelector('.toast');toast.textContent=t.copied;toast.hidden=false;setTimeout(()=>toast.hidden=true,2500);}}catch{}});
+
+// Public announcement clocks never use the personal timer's local-storage value.
+import { resetStatus, countdown, localResetTime, offerStatus } from './reset-status.mjs';
+import { platformCopy } from './platform-copy.mjs';
+const platformData = JSON.parse(document.querySelector('#page-data').textContent).platforms;
+const publicTick = () => document.querySelectorAll('[data-platform]').forEach(card => {
+  const state = resetStatus(platformData[card.dataset.platform].reset);
+  const copy = platformCopy[lang];
+  const offer = platformData[card.dataset.platform].gifts[0];
+  const offerLabel = card.querySelector('[data-offer-status]');
+  if(offerLabel){let status=offerStatus(offer);if(status==="active"&&platformData[card.dataset.platform].promotionHealth?.state!=="fresh")status="stale";offerLabel.textContent=status==='active'?'':status==='expired'?copy.expired:copy.staleOffer;card.querySelector('[data-offer]').dataset.state=status;}
+  card.querySelector('[data-public-countdown]').textContent = state.state === 'announced' ? (platformData[card.dataset.platform].reset.approximate?'≈ ':'')+countdown(state.remainingMs) : copy[state.state] || copy.unknown;
+  card.querySelector('[data-public-time]').textContent = state.at ? localResetTime(state.at, lang) : `${copy.local} · ${Intl.DateTimeFormat().resolvedOptions().timeZone}`;
+});
+publicTick();setInterval(publicTick,1000);
+
+document.querySelectorAll('[data-platform-filter]').forEach(button=>button.addEventListener('click',()=>{activePlatform=button.dataset.platformFilter;limit=3;document.querySelectorAll('[data-platform-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filter();}));
