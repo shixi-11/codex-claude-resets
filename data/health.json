@@ -1,0 +1,21 @@
+{
+  "lastAttemptAt": "2026-09-07T22:34:13.047Z",
+  "lastSuccessAt": "2026-09-07T22:34:13.047Z",
+  "discoveryAt": "2026-09-07T22:32:45.000Z",
+  "mode": "community-discovery",
+  "sources": [
+    {
+      "name": "Codex Reset · discovery only",
+      "url": "https://codex-reset.com/api/feed",
+      "ok": true
+    },
+    {
+      "name": "X official embed",
+      "url": "https://publish.twitter.com/",
+      "ok": true,
+      "checked": 21,
+      "failed": 0
+    }
+  ],
+  "status": "ok"
+}

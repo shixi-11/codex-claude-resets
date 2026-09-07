@@ -1,0 +1,51 @@
+name: Refresh announcements and publish
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17,47 * * * *'
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: codex-respawn-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test
+      - name: Check public announcements
+        if: github.event_name != 'push'
+        run: node scripts/collect.mjs
+      - name: Daily source digest
+        if: github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
+        run: node scripts/digest.mjs
+      - name: Save source records
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data digests
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh verified announcements and source health"
+            git push
+          fi
+      - run: node scripts/build.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

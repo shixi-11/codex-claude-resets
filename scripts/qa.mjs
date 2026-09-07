@@ -1,0 +1,19 @@
+import {chromium} from 'playwright';
+import{mkdir,writeFile}from'node:fs/promises';import assert from'node:assert/strict';
+const base=process.env.QA_URL||'http://127.0.0.1:4187/';await mkdir('.qa',{recursive:true});
+const browser=await chromium.launch({headless:true,channel:'chrome'});const errors=[];const checks=[];
+try{const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1,reducedMotion:'reduce'});page.on('pageerror',err=>errors.push(err.message));
+for(const lang of ['en','zh','zh-Hant','ja','ko','es','fr','de','ar'])for(const width of [1440,768,390]){
+await page.setViewportSize({width,height:1000});await page.goto(base+(lang==='en'?'':lang+'/'));await page.evaluate(()=>document.fonts.ready);
+const result=await page.evaluate(()=>({lang:document.documentElement.lang,dir:document.documentElement.dir,width:innerWidth,scroll:document.documentElement.scrollWidth,missing:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),h1:document.querySelector('h1').textContent,overflow:[...document.querySelectorAll('h1,h2,button,.brand,.clock,.timer-card,.latest-strip,select')].filter(el=>{const r=el.getBoundingClientRect();return r.left< -1||r.right>innerWidth+1}).map(el=>el.className)}));
+assert.equal(result.lang,lang);assert.ok(result.scroll<=width+1,`${lang} ${width} horizontal overflow ${result.scroll}`);assert.equal(result.missing.length,0);assert.equal(result.overflow.length,0,`${lang} ${width} ${result.overflow}`);checks.push(result);
+await page.screenshot({path:`.qa/${lang}-${width}.png`,fullPage:true});}
+await page.setViewportSize({width:1440,height:1000});await page.goto(base);await page.getByRole('button',{name:'Reset credits',exact:true}).click();assert.ok(await page.locator('.event-row:visible').evaluateAll(rows=>rows.every(r=>r.dataset.kind==='banked')));
+await page.getByRole('button',{name:'All',exact:true}).click();assert.equal(await page.locator('.event-row:visible').count(),5);await page.getByRole('button',{name:'Show more updates'}).click();assert.equal(await page.locator('.event-row:visible').count(),10);
+await page.getByRole('link',{name:'Set a reminder',exact:true}).click();await page.locator('#reset-time').fill('2026-12-20T12:30');await page.getByRole('button',{name:'Save timer',exact:true}).click();assert.ok((await page.locator('.clock').textContent())!=='--:--:--');
+await page.reload();assert.ok((await page.locator('.clock').textContent())!=='--:--:--');const download=page.waitForEvent('download');await page.getByRole('button',{name:'Add to calendar'}).click();assert.equal((await download).suggestedFilename(),'codex-respawn.ics');await page.getByRole('button',{name:'Clear timer',exact:true}).click();assert.equal(await page.locator('.clock').textContent(),'--:--:--');
+await page.locator('summary').first().click();assert.equal(await page.locator('details[open]').count(),1);await page.getByRole('combobox',{name:'Language'}).selectOption({label:'العربية'});await page.waitForURL('**/ar/');assert.equal(await page.locator('html').getAttribute('dir'),'rtl');
+await page.goto(base);await page.locator('.event-title a').first().click();assert.ok(page.url().includes('/events/'));assert.equal(await page.locator('blockquote').count(),1);assert.ok(await page.getByRole('button',{name:'Share ↗',exact:true}).isVisible());
+await page.goto(base);await page.keyboard.press('Tab');assert.equal(await page.evaluate(()=>document.activeElement.className),'skip');assert.equal(errors.length,0,errors.join('\n'));
+await page.goto(base);await page.screenshot({path:'.qa/desktop.png',fullPage:false});await writeFile('.qa/results.json',JSON.stringify({checks:checks.length,errors,interactions:'filters, pagination, timer, persistence, calendar, clear, FAQ, locale, event, keyboard'},null,2));console.log(`PASS: ${checks.length} language/viewport combinations, interaction flows and no page errors.`);
+}finally{await browser.close();}

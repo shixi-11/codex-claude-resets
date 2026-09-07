@@ -1,0 +1,99 @@
+Codex & Claude Resets — Noncommercial License 1.0
+Copyright (c) 2026 Shixi Lin (光之十一)
+
+English
+
+1. Scope
+This license applies to the project code, scripts, documentation, original
+visual designs, illustrations, mascots, icons, animations, models and source
+project files that Shixi Lin has the right to license (the "Materials"),
+except for items expressly identified as third-party or separately licensed.
+Public availability does not grant unrestricted reuse. This is a custom
+source-available, noncommercial license, not the MIT License or an
+OSI-approved open-source license.
+
+2. Noncommercial permission
+You may use, run, copy, study, modify and redistribute the Materials solely
+for noncommercial purposes, including personal learning, noncommercial
+research and noncommercial public demonstrations, subject to this license.
+Keep this license and the copyright and attribution notices with every copy
+or substantial portion you share. Identify your modifications. In public
+deployments and presentations, credit "Shixi Lin / 光之十一" and link to
+https://github.com/shixi-11/codex-claude-resets in an accessible credits or
+license section. Redistributed Materials, including modified versions of
+them, must remain subject to these noncommercial conditions; you may not
+grant commercial permissions for the Materials yourself.
+
+3. Commercial use requires prior written permission
+Without separate prior written permission from Shixi Lin, you may not use,
+copy, modify, deploy or redistribute the Materials primarily for commercial
+advantage or monetary compensation. Commercial use includes selling or
+licensing the Materials; operating paid, subscription, advertising-supported
+or affiliate-revenue products or services based on them; using them in
+commercial client work, business operations or commercial promotion; and
+selling templates, asset packs or merchandise containing them. Providing
+an end product free of charge does not by itself make its use noncommercial.
+Changing the name, replacing the artwork or modifying the code does not
+remove these conditions from the Materials you reuse.
+For commercial permission, contact info@elevencapital.ltd with your intended
+use. A request, silence or a donation is not permission.
+
+4. Browsing and independent facts
+These conditions govern reuse of the Materials. Merely visiting the official
+website or reading its announcements does not require commercial permission,
+including when you do so at work. This license does not restrict independent
+facts, source links, or uses that applicable law permits without permission.
+
+5. Third-party content and branding
+Third-party code, fonts, source posts, product names and marks remain subject
+to their respective rights and licenses. In particular, bundled Manrope and
+DM Sans fonts retain the SIL Open Font License notices in
+public/assets/licenses/. This license does not impose a noncommercial
+restriction on those fonts or claim ownership of third-party announcements,
+OpenAI or Anthropic branding. It grants only rights Shixi Lin can grant,
+including in assets made with generative tools. No separate trademark right
+or right to imply sponsorship, official status or endorsement is granted.
+
+6. Earlier versions
+These terms apply to Materials offered under this license. They do not revoke
+permissions already granted under MIT or another license, or retroactively
+restrict earlier licensed copies. Material already available under an earlier
+license can still be used under that license where it applies; rewriting
+history, moving or deleting files does not undo that.
+
+7. Warranty and reserved rights
+The Materials are provided as is, without warranties, to the extent permitted
+by applicable law. To that same extent, Shixi Lin is not liable for claims,
+damages or other liability arising from their use. Rights not expressly
+granted are reserved. Uses outside this license require separate permission.
+
+8. Languages
+The Chinese and English sections describe the same terms. If they conflict,
+the Chinese section controls to the extent permitted by applicable law.
+
+简体中文
+
+1. 适用范围
+本许可适用于光之十一（Shixi Lin）有权授权的项目代码、脚本、文档、原创视觉设计、插画、吉祥物、图标、动画、模型及工程源文件（以下统称“本项目材料”），明确标注为第三方内容或另行许可的内容除外。公开可见不代表可以不受限制地使用。本许可为自定义的源码公开、非商业许可，不是MIT许可证，也不是经OSI批准的开源许可证。
+
+2. 非商业使用许可
+在遵守本许可的前提下，你可以出于非商业目的使用、运行、复制、学习、修改和再分发本项目材料，包括个人学习、非商业研究和非商业公开演示。分享任何副本或实质性部分时，须保留本许可、版权及署名声明，并标明所作修改。公开部署或展示时，须在便于访问的署名或许可说明处注明“光之十一 / Shixi Lin”，并链接至https://github.com/shixi-11/codex-claude-resets。再分发的本项目材料及其修改版本须继续遵守本许可的非商业条件；你无权自行向他人授予本项目材料的商业使用许可。
+
+3. 商业使用须事先取得书面授权
+未经光之十一另行事先书面授权，不得以获取商业利益或金钱报酬为主要目的，使用、复制、修改、部署或再分发本项目材料。商业使用包括销售或许可销售本项目材料；基于本项目材料运营收费、订阅、广告变现或推广分成的产品及服务；将本项目材料用于商业客户项目、企业业务运营或商业宣传；销售包含本项目材料的模板、素材包或周边商品。最终产品免费提供，不当然构成非商业使用。改名、替换美术或修改代码，不会解除所复用项目材料的许可条件。
+商业授权请联系info@elevencapital.ltd并说明具体用途。提出申请、未收到回复或捐赠均不构成授权。
+
+4. 网站访问与独立事实
+本许可约束对本项目材料的复用。仅访问官方网站或阅读公告，包括在工作中查阅，无须申请商业授权。本许可不限制独立事实、来源链接，以及适用法律允许无需授权的使用。
+
+5. 第三方内容与品牌
+第三方代码、字体、公告原文、产品名称及标识仍受各自权利和许可证约束。其中，随项目提供的Manrope与DM Sans字体继续遵循public/assets/licenses/内的SIL Open Font License声明；本许可不对这些字体追加非商业限制，也不主张拥有第三方公告或OpenAI、Anthropic品牌的权利。包括使用生成工具制作的素材在内，本许可只授予光之十一有权授予的权利。本许可不另行授予商标权，也不允许暗示获得赞助、官方身份或背书。
+
+6. 历史版本
+本许可适用于按本许可提供的项目材料，不撤销已按MIT或其他许可证授予的权利，也不追溯限制此前已获许可的副本。已按旧许可提供的材料，在该许可适用的范围内仍可按旧许可使用；改写历史、移动或删除文件不会撤回这些权利。
+
+7. 保证与权利保留
+在适用法律允许的范围内，本项目材料按现状提供，不附带任何保证；光之十一不对因使用本项目材料而产生的索赔、损害或其他责任承担责任。未明确授予的权利均予保留；超出本许可范围的使用须另行取得授权。
+
+8. 语言
+中英文部分表达相同的许可条件。如有冲突，在适用法律允许的范围内以中文部分为准。

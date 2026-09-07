@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.qa/
+.vercel/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.log
+docs/concept.png
+docs/concept-respawn.png
+public/mascot-source.png

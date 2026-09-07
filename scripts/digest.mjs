@@ -1,0 +1,6 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {locales} from '../src/locales.mjs';
+const root=new URL('../',import.meta.url);const events=JSON.parse(await readFile(new URL('data/events.json',root),'utf8'));const health=JSON.parse(await readFile(new URL('data/health.json',root),'utf8'));
+const today=new Date().toISOString().slice(0,10);const start=Date.parse(today);const dayEvents=events.filter(ev=>Date.parse(ev.publishedAt)>=start-86400000&&Date.parse(ev.publishedAt)<start);
+const text=`# Codex Respawn · ${today}\n\nDaily source digest for the previous UTC day. This is a record of public statements, not a personal quota check.\n\nSource health: ${health.status}. Last successful check: ${health.lastSuccessAt||'none'}.\n\n${dayEvents.length?dayEvents.map(ev=>`- **${locales.en[ev.state]}** · ${ev.publishedAt}\n  ${ev.excerpt}\n  [Original post](${ev.sourceUrl}) · ${ev.truncated?'Incomplete source text; unconfirmed.':`Classification: ${ev.kind}.`}`).join('\n\n'):'No new matching announcements in the collected records. This does not prove that no reset occurred.'}\n\n[Live tracker](https://shixilin.com/ai/codex-reset/) · [Shixi Lin](https://shixilin.com/)\n`;
+await mkdir(new URL('digests/',root),{recursive:true});await writeFile(new URL(`digests/${today}.md`,root),text);console.log(`Daily digest: ${today}; ${dayEvents.length} records.`);
