@@ -5,7 +5,7 @@
 
 ![Codex & Claude Resets desktop interface](docs/screenshot.jpg)
 
-Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and the last reset announcement. Older records and extra-usage offers stay collapsed until needed.
+Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and the last reset announcement. Older records and extra-usage offers are expanded by default.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
@@ -70,7 +70,7 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 - 区分重置预告、已宣布完成、可用重置次数、额度变化和尚未确认的线索。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
-- 首页直接展示下次重置、最新相关推文及其发布时间、上次重置；更早记录与额度活动默认收起。
+- 首页直接展示下次重置、最新相关推文及其发布时间、上次重置；更早记录与额度活动默认展开。
 - 默认英文，提供九种语言；网站和自动更新放在同一个开源仓库。
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 

@@ -16,5 +16,5 @@ function tickAll(){
  });
 }
 const renderedDetails=new WeakMap();
-function updateDetails(){document.querySelectorAll('[data-platform]').forEach(card=>{const box=card.querySelector('[data-priority-details]'),open=box.querySelector('details')?.open;const html=priorityDetails(platforms[card.dataset.platform],card.dataset.platform,pageData.events,lang);if(renderedDetails.get(box)===html)return;renderedDetails.set(box,html);box.innerHTML=html;if(open&&box.querySelector('details'))box.querySelector('details').open=true;});}
+function updateDetails(){document.querySelectorAll('[data-platform]').forEach(card=>{const box=card.querySelector('[data-priority-details]'),open=box.querySelector('details')?.open;const html=priorityDetails(platforms[card.dataset.platform],card.dataset.platform,pageData.events,lang);if(renderedDetails.get(box)===html)return;renderedDetails.set(box,html);box.innerHTML=html;if(typeof open==='boolean'&&box.querySelector('details'))box.querySelector('details').open=open;});}
 setInterval(tickAll,1000);tickAll();updateDetails();window.addEventListener('reset-data-updated',()=>{tickAll();updateDetails();});document.querySelector('[data-refresh]')?.addEventListener('click',refreshLiveData);
