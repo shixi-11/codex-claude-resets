@@ -11,3 +11,6 @@ de:['Resets und zusätzliche Nutzung auf einen Blick.','Warten auf eine neue Ank
 ar:['إعادة الضبط والاستخدام الإضافي، في مكان واحد.','بانتظار إعلان جديد','آخر إعادة ضبط مؤكدة','لا توجد سجلات مؤكدة بعد','أبلغني بالتحديثات','متابعة التحديثات مفعّلة','أبقِ هذه الصفحة مفتوحة. تتبع التنبيهات الإعلانات الموثّقة تلقائيًا؛ وقد تتأخر في علامات التبويب الخلفية.','تأكدت إعادة ضبط جديدة. تحقق من استخدامك.','تغيّر إعلان إعادة الضبط.','التحقق من التحديثات','انقطع الاتصال · تُعرض آخر بيانات تم التحقق منها','تم تحديث بيانات الصفحة']
 };
 export const watchCopy=Object.fromEntries(Object.entries(rows).map(([lang,row])=>[lang,Object.fromEntries(keys.map((key,i)=>[key,row[i]]))]));
+
+const focusedIntros={"en":"Next reset. Latest source. Last reset.","zh":"下次重置、最新消息、上次重置。","zh-Hant":"下次重置、最新消息、上次重置。","ja":"次回のリセット、最新の情報源、前回の記録。","ko":"다음 초기화, 최신 소식, 지난 초기화.","es":"Próximo restablecimiento, última fuente y registro anterior.","fr":"Prochaine réinitialisation, dernière source et dernier reset.","de":"Nächster Reset. Neueste Quelle. Letzter Reset.","ar":"إعادة الضبط التالية، أحدث مصدر، وآخر إعادة ضبط."};
+for(const [lang,text]of Object.entries(focusedIntros))watchCopy[lang].intro=text;

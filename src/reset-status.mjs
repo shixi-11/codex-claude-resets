@@ -27,7 +27,7 @@ export function countdown(milliseconds) {
 }
 
 export function localResetTime(at, language, timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone) {
-  return new Intl.DateTimeFormat(language, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short', timeZone }).format(new Date(at));
+  return new Intl.DateTimeFormat(language, { year: new Date(at).getUTCFullYear()!==new Date().getUTCFullYear()?'numeric':undefined, month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short', timeZone }).format(new Date(at));
 }
 
 export function offerStatus(offer, now = Date.now()) {

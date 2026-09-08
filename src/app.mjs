@@ -1,3 +1,5 @@
+import {postPlatform} from './evidence.mjs';
+import {earlierPosts} from './priority-details.mjs';
 import { offers } from './offers.mjs';
 import { escapeHtml as e, eventPath } from './shared.mjs';
 import { freshness } from './shared.mjs';
@@ -28,10 +30,14 @@ document.querySelectorAll('[data-platform-filter]').forEach(button=>button.addEv
 
 window.addEventListener('reset-data-updated',()=>{showHealth();const time=document.querySelector('[data-health-time]');if(time&&health.lastSuccessAt){time.dateTime=health.lastSuccessAt;time.textContent=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short'}).format(new Date(health.lastSuccessAt));}publicTick();});
 
+let lastOffers='',lastFeed='';
 window.addEventListener('reset-data-updated',()=>{
- const section=document.querySelector('.offers-section');if(section){section.outerHTML=offers(pageData.platforms,lang);document.querySelectorAll('.offers-section time[datetime]').forEach(el=>{if(Number.isFinite(Date.parse(el.dateTime)))el.textContent=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short'}).format(new Date(el.dateTime));});publicTick();}
- const feed=document.querySelector('.events');if(feed&&pageData.events){const root=new URL('../',import.meta.url);feed.innerHTML=pageData.events.map(ev=>{
- const kind=t[ev.kind==='usage'?'usageKind':ev.kind],platform=['claudedevs','anthropicai','claudeai'].includes(ev.author.toLowerCase())?'claude':'codex';
+ const section=document.querySelector('.offers-section');const nextOffers=offers(pageData.platforms,lang);if(section&&lastOffers!==nextOffers){lastOffers=nextOffers;section.outerHTML=nextOffers;document.querySelectorAll('.offers-section time[datetime]').forEach(el=>{if(Number.isFinite(Date.parse(el.dateTime)))el.textContent=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short'}).format(new Date(el.dateTime));});publicTick();}
+ const feed=document.querySelector('.events');if(feed&&pageData.events){const root=new URL('../',import.meta.url);const nextFeed=earlierPosts(pageData.events).map(ev=>{
+ const kind=t[ev.kind==='usage'?'usageKind':ev.kind],platform=postPlatform(ev.author);
  return '<article class="event-row" data-kind="'+e(ev.kind)+'" data-platform-feed="'+platform+'"><div class="event-icon" aria-hidden="true">'+({global:'↻',banked:'☆',usage:'↗',signal:'·'}[ev.kind]||'↻')+'</div><div class="event-main"><div class="event-title"><a href="'+new URL(eventPath(lang,ev.id),root)+'">'+e(kind)+'</a><span class="badge '+e(ev.state)+'">'+e(t[ev.state])+'</span></div><p class="excerpt" lang="en" dir="ltr">'+e(ev.excerpt)+'</p><div class="event-meta"><span>'+(platform==='claude'?'Claude':'Codex')+' · @'+e(ev.author)+'</span><time datetime="'+e(ev.publishedAt)+'">'+e(new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short'}).format(new Date(ev.publishedAt)))+'</time><a href="'+e(ev.sourceUrl)+'" target="_blank" rel="noopener noreferrer">'+e(t.source)+' ↗</a></div></div></article>';
- }).join('');rows=[...feed.querySelectorAll('.event-row')];filter();}
+ }).join('');if(lastFeed!==nextFeed){lastFeed=nextFeed;feed.innerHTML=nextFeed;rows=[...feed.querySelectorAll('.event-row')];filter();}}
 });
+
+function openArchive(){if(location.hash==='#updates'){const archive=document.querySelector('.tweet-archive');if(archive)archive.open=true;}}
+window.addEventListener('hashchange',openArchive);document.querySelectorAll('a[href$="#updates"]').forEach(a=>a.addEventListener('click',()=>{const archive=document.querySelector('.tweet-archive');if(archive)archive.open=true;}));openArchive();

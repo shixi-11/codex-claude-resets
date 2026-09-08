@@ -35,3 +35,6 @@ export const locales = Object.fromEntries(Object.entries(rows).map(([lang, row])
 
 const privacy={en:'No login. No account access. Calendar downloads stay on your device.',zh:'无需登录，不读取账号。下载的日历文件留在本机。','zh-Hant':'無需登入，不讀取帳號。下載的行事曆檔案留在本機。',ja:'ログイン不要。アカウントへのアクセスはありません。カレンダーは端末に保存されます。',ko:'로그인이나 계정 접근 없이 사용합니다. 캘린더 파일은 기기에 저장됩니다.',es:'Sin inicio de sesión ni acceso a tu cuenta. Los calendarios se descargan en tu dispositivo.',fr:'Sans connexion ni accès à votre compte. Les calendriers restent sur votre appareil.',de:'Ohne Anmeldung oder Kontozugriff. Kalenderdateien bleiben auf deinem Gerät.',ar:'لا يلزم تسجيل الدخول ولا نصل إلى حسابك. تبقى ملفات التقويم على جهازك.'};
 for(const [lang,value] of Object.entries(privacy))locales[lang].privacy=value;
+
+const focusedPrivacy={"en":"No login. No account access. No email collection.","zh":"无需登录，不读取账号，不收集邮箱。","zh-Hant":"無需登入，不讀取帳號，不收集信箱。","ja":"ログイン不要。アカウントやメールアドレスは収集しません。","ko":"로그인이 필요 없으며 계정이나 이메일을 수집하지 않습니다.","es":"Sin inicio de sesión, acceso a cuentas ni recogida de correos.","fr":"Sans connexion, accès aux comptes ni collecte d’adresses e-mail.","de":"Ohne Anmeldung, Kontozugriff oder Erfassung von E-Mail-Adressen.","ar":"لا تسجيل دخول ولا وصول إلى الحساب ولا جمع للبريد الإلكتروني."};
+for(const [lang,text]of Object.entries(focusedPrivacy))locales[lang].privacy=text;

@@ -1,3 +1,5 @@
+> Initial research plan. The current visitor-first requirements and delivered hierarchy are in [experience-plan.md](experience-plan.md).
+
 # Codex Respawn｜复活点
 
 2026-09-08 · Owner: current Codex task · Status: delivered · Verification: passed · Acceptance: pending

@@ -1,19 +1,18 @@
 <p align="center"><img src="public/favicon.svg" width="52" alt="Codex &amp; Claude Resets keycap logo"></p>
 <h1 align="center">Codex &amp; Claude Resets</h1>
-<p align="center"><strong>Two platforms. Two clocks.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
+<p align="center"><strong>Reset times. Sources. History.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-claude-resets/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-claude-resets/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-claude-resets/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
 ![Codex & Claude Resets desktop interface](docs/screenshot.jpg)
 
-Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. Check the countdown in your own timezone, see reset-credit and extra-usage offers, and open the original announcement.
+Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and the last reset announcement. Older records and extra-usage offers stay collapsed until needed.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
-- **Follow automatically.** Enable alerts for either platform, even before a time is announced. New confirmed resets and changed announcements appear automatically; published deadlines get a countdown and calendar export.
+- **Stay current.** The open page refreshes public records automatically. No notifications, email subscriptions or personal-account access.
 - **Read in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available.
 - **Follow without another account.** RSS, public JSON and permanent event links are built in.
 
-In-page alarms require an open page, an awake device and sound permission; browser throttling can delay them. Use the calendar export for reminders after closing the page. An elapsed announcement awaits confirmation and never claims your quota was restored.
 
 ### What “checked” means
 
@@ -49,7 +48,7 @@ node scripts/serve.mjs
 
 Open `http://127.0.0.1:4187/`. To refresh data, run `node scripts/collect.mjs`. To create a digest, run `node scripts/digest.mjs`.
 
-For image processing or browser checks, install development dependencies with `pnpm install`. `pnpm qa` uses an installed Chrome in headless mode. Alerts and calendar export operate locally; no visitor account data is collected by this application.
+For image processing or browser checks, install development dependencies with `pnpm install`. `pnpm qa` uses an installed Chrome in headless mode. This application does not collect visitor account data or email addresses.
 
 ### Reuse the feed
 
@@ -71,7 +70,7 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 - 区分重置预告、已宣布完成、可用重置次数、额度变化和尚未确认的线索。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
-- Codex和Claude分别开启自动提醒；无确切时间时等待公告，已公布时间自动倒计时，也可下载日历提醒。
+- 首页直接展示下次重置、最新相关推文及其发布时间、上次重置；更早记录与额度活动默认收起。
 - 默认英文，提供九种语言；网站和自动更新放在同一个开源仓库。
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 

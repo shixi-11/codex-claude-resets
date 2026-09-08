@@ -1,25 +1,25 @@
-# Automatic reset tracker: product and verification
+# 访客信息优先目标
 
-## Visitor outcome
+首页只优先回答三个问题：下次什么时候重置，最新相关推文什么时候发布、原文是什么，上次重置什么时候确认。
 
-A visitor can immediately see whether a public reset has a confirmed schedule, find the latest verified reset announcement, check their actual account usage, and follow future announcements with one click. No personal date entry is required.
+## 首页层级
 
-## Implemented
+1. Codex与Claude分别展示下次公开重置状态。有可靠预告时间才显示倒计时；没有则说明等待公告，不猜测时间。
+2. 紧接着展示最新相关推文的发布时间、作者、原文摘要、来源和消息类型。未确认线索不冒充重置公告，重置卡不冒充额度恢复。
+3. 上次重置直接显示。来源未提供精确时刻时，明确标注采用的是完成公告发布时间。更早的三条确认记录默认折叠。
+4. 更早推文放在独立折叠区，不重复主页已经展示的每个平台最新推文。
+5. 重置卡、额度活动和必要解释放在下方独立折叠区。额度重置是恢复额度，重置卡是以后可用的机会，提高上限的活动不等于赠卡。
 
-- Removed manual timers, input forms, local-storage clock persistence and their obsolete tests.
-- Separated the next announcement from the latest confirmed reset record. Unknown schedules remain unknown; a passed deadline awaits confirmation.
-- Alerts follow changed or cancelled announcements and new confirmed completions. Repeated checks do not repeat an alert. Historical records do not ring on enable.
-- The open page checks published JSON every minute and when returning to the page. The existing backend checks sources twice hourly and produces a daily digest. These are separate cadences; this is not a direct real-time X subscription.
-- Platforms, offers, history and source health update together. Invalid or failed responses preserve the last valid data and show a connection message.
-- Announced times older than three hours since verification no longer sustain a countdown.
-- Built the reset station in Blender 4.5 LTS. Editable scene: design/reset-station/reset-station.blend. A transparent WebP render is used in the interface, with a small state change when watching. No WebGL dependency or foreground Blender window is needed.
-- Preserved the approved keycap mascot, nine languages, English default, local time, source links, RSS, JSON, support and collaboration links.
-- Changed the canonical URL and repository slug to codex-claude-resets. Existing RSS GUIDs remain stable.
+## 已撤除
 
-## Validation
+通知、闹钟、邮件订阅、日历提醒、个人额度查询入口，以及展开占屏的通用科普。没有访客订阅数据库，不采集邮箱，不增加邮件寄送服务。
 
-20 unit tests; 10 automatic announcement/alert browser scenarios; 27 language/viewport combinations, plus filters, pagination, FAQ, language switching, event pages and keyboard focus. Main-site locale, font and production-build checks pass. Production migration is checked separately after deployment.
+## 收藏夹与标签页
 
-## Deliberate limits
+英文名称为Codex & Claude Resets，中文名称为Codex与Claude重置。其他语言采用相应的简短名称，不追加宣传问句。使用同一品牌logo，提供SVG、32px PNG、16/32/48px ICO与Apple Touch图标。
 
-This public site cannot read visitor account balances. In-page alerts require the page and device to remain active; browser background throttling can delay them. Calendar export is offered when an announcement has a confirmed future instant. Unknown schedules do not get a guessed forecast or a manual replacement clock.
+## 验收
+
+九语言与1440、768、390像素屏幕逐一检查。核心时间、最新来源与上次记录直接可见；历史和活动默认收起；自动刷新不改变用户已展开的历史；失联保留最后有效数据；过期核查不维持倒计时。检查线上旧址跳转、图标文件与收藏夹名称。
+
+公开记录仍由原有GitHub定时流程更新为JSON文件。页面每分钟检查已发布数据，并在重新回到页面时刷新；这不代表直接实时连接X。
