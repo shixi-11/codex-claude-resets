@@ -112,6 +112,8 @@ for(const [key,platform] of Object.entries(platforms)){
  platform.lastReset=records.find(event=>event.kind==='global'&&event.state==='reported')||null;
  if(latestReset?.state==='announced'&&latestReset.resetAt&&Date.parse(latestReset.resetAt)>Date.now()-86400000){
   platform.reset={state:'announced',resetAt:latestReset.resetAt,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,approximate:latestReset.approximate,sourceTimezone:latestReset.sourceTimezone};
+ } else if(latestReset?.state==='reported'&&Date.parse(latestReset.publishedAt)>Date.now()-86400000){
+  platform.reset={state:'completed',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt};
  } else platform.reset={state:'unknown',resetAt:null};
  platform.discoveryMode=health.mode;
  platform.trackingState=health.sources.some(source=>source.name===`@${key==='codex'?'thsottiaux':'ClaudeDevs'} timeline via FxEmbed`&&source.ok)?'timeline-checked':'fallback-discovery';

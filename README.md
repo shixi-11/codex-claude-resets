@@ -1,17 +1,19 @@
-<p align="center"><img src="public/favicon.svg" width="52" alt="Codex Respawn cursor"></p>
-<h1 align="center">Respawn</h1>
-<p align="center"><strong>Out of tokens. Not out of ideas.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
+<p align="center"><img src="public/favicon.svg" width="52" alt="Codex &amp; Claude Resets keycap logo"></p>
+<h1 align="center">Codex &amp; Claude Resets</h1>
+<p align="center"><strong>Two platforms. Two clocks.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-reset/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-reset/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-reset/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
-![Codex Respawn desktop interface](docs/screenshot.jpg)
+![Codex & Claude Resets desktop interface](docs/screenshot.jpg)
 
-Respawn puts the next confirmed Codex and Claude reset time first. Check the countdown in your own timezone, see reset-credit and extra-usage offers, and open the original announcement.
+Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. Check the countdown in your own timezone, see reset-credit and extra-usage offers, and open the original announcement.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
-- **Keep your own time.** Enter the reset time displayed in your account. Save it locally or download a calendar reminder.
+- **Keep your own time.** Set independent Codex and Claude timers from the times displayed in your accounts. Keep them in this browser, enable an in-page alarm, or download a calendar reminder.
 - **Read in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available.
 - **Follow without another account.** RSS, public JSON and permanent event links are built in.
+
+In-page alarms require an open page, an awake device and sound permission; browser throttling can delay them. Use the calendar export for reminders after closing the page. A due timer asks you to check your account, never claims your quota was restored.
 
 ### What “checked” means
 
@@ -63,13 +65,13 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 ## 简体中文
 
-**还要多久重置？** Respawn把Codex和Claude的已确认重置时间、倒计时、重置卡和额外额度消息放在同一页，自动按访客本地时区显示，并附原始来源。
+**还要多久重置？** Codex & Claude Resets把Codex和Claude的已确认重置时间、倒计时、重置卡和额外额度消息放在同一页，自动按访客本地时区显示，并附原始来源。
 
 [打开网站](https://shixilin.com/ai/codex-reset/zh/) · [RSS订阅](https://shixilin.com/ai/codex-reset/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-reset/events.json)
 
 - 区分重置预告、已宣布完成、可用重置次数、额度变化和尚未确认的线索。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
-- 个人计时器使用自己账号显示的时间，可保存到本机或下载日历提醒。
+- Codex和Claude分别设置个人计时器，使用自己账号显示的时间；可保存到本机、开启网页闹钟或下载日历提醒。
 - 默认英文，提供九种语言；网站和自动更新放在同一个开源仓库。
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 

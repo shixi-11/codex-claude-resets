@@ -16,6 +16,7 @@ export function resetStatus(record, now = Date.now()) {
 }
 
 export function countdown(milliseconds) {
+  if (typeof milliseconds !== 'number' || !Number.isFinite(milliseconds)) return '--:--:--';
   const seconds = Math.max(0, Math.ceil(milliseconds / 1000));
   return [Math.floor(seconds / 3600), Math.floor(seconds / 60) % 60, seconds % 60]
     .map(n => String(n).padStart(2, '0')).join(':');

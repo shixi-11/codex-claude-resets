@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readPersonalClock,timerKey,validDeadline,personalClockState,alarmCalendar} from '../src/personal-clock.mjs';
+import {clockCopy} from '../src/clock-copy.mjs';
+import {platformCopy} from '../src/platform-copy.mjs';
+import {classify} from '../src/evidence.mjs';
+import {countdown} from '../src/reset-status.mjs';
+test('two personal deadlines persist independently; legacy Codex value migrates once',()=>{const m=new Map([['codex-respawn-timer-v1',String(Date.now()+3600000)]]),s={getItem:k=>m.get(k),setItem:(k,v)=>m.set(k,v),removeItem:k=>m.delete(k)};assert.equal(readPersonalClock(s,'claude'),0);const at=readPersonalClock(s,'codex');assert.ok(at>Date.now());assert.ok(!m.has('codex-respawn-timer-v1'));s.setItem(timerKey('claude'),String(at+50000));assert.equal(readPersonalClock(s,'claude'),at+50000);assert.equal(readPersonalClock(s,'codex'),at);});
+test('denied storage and malformed values cannot break the page',()=>{assert.equal(readPersonalClock({getItem(){throw Error();}},'codex'),0);for(const v of ['Infinity','NaN','-4','1e18'])assert.equal(readPersonalClock({getItem:()=>v},'claude'),0);});
+test('personal expiry does not claim restored platform usage',()=>{assert.equal(personalClockState(100,101).state,'due');assert.equal(personalClockState(0).state,'empty');assert.equal(validDeadline(Infinity),false);for(const v of [null,undefined,NaN,Infinity])assert.equal(countdown(v),'--:--:--');});
+test('calendar reminders include an absolute UTC instant and a display alarm',()=>{const text=alarmCalendar(Date.parse('2026-09-10T02:30:00Z'),'Claude','Check your account');assert.match(text,/DTSTART:20260910T023000Z/);assert.match(text,/BEGIN:VALARM\r\nTRIGGER:PT0S/);assert.equal((text.match(/BEGIN:VEVENT/g)||[]).length,1);});
+test('new copy exists in all nine languages',()=>{for(const copy of [clockCopy,platformCopy]){assert.equal(Object.keys(copy).length,9);for(const [lang,row]of Object.entries(copy))for(const key of Object.keys(copy.en))assert.ok(typeof row[key]==='string'&&row[key].length,`${lang}.${key}`);}});
+test('short completion must match complete Tibo original, not speculation or other authors',()=>{assert.equal(classify('All reset for everyone.',{author:'thsottiaux'}).state,'reported');for(const options of [{author:'ClaudeDevs'},{author:'thsottiaux',truncated:true},{}])assert.equal(classify('All reset for everyone.',options).state,'unconfirmed');for(const text of ['All reset for everyone tomorrow.','All reset for everyone?','You forgot the part where I reset usage twice in the middle','"All reset for everyone."'])assert.equal(classify(text,{author:'thsottiaux'}).state,'unconfirmed');});

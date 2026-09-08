@@ -1,4 +1,4 @@
-export const RULES_VERSION = '1.2.1';
+export const RULES_VERSION = '1.2.2';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -34,13 +34,16 @@ export function extractEmbed(embed, requestedUrl) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export function classify(text, { truncated = false } = {}) {
+export function classify(text, { truncated = false, author = '' } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
   if (!/reset|usage|allowance|quota|limits?/i.test(value)) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value)) return unknown;
+  // Tibo's complete first-person announcement uses this exact short formulation.
+  // Do not infer a global reset from jokes, replies about earlier resets, or other authors.
+  if (author.toLowerCase()==='thsottiaux' && /^All reset for everyone\.(?: Enjoy the week with Astra\.)?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
     if (/\bwe (?:will|are going to)|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };

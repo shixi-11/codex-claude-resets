@@ -1,28 +1,18 @@
-import { chromium } from 'playwright';
+import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
-const browser=await chromium.launch({headless:true,channel:'chrome'});
-const base=process.env.QA_URL||'http://127.0.0.1:4187/';
-try {
- for(const zone of ['Asia/Shanghai','America/Los_Angeles','Europe/Berlin']){
-  const context=await browser.newContext({timezoneId:zone});
-  const page=await context.newPage();
-  await page.clock.install({time:new Date('2026-09-08T00:00:00Z')});
-  await page.route(base,async route=>{
-   const response=await route.fetch();let html=await response.text();
-   html=html.replace(/(<script id="page-data" type="application\/json">)([\s\S]*?)(<\/script>)/,(_,start,json,end)=>{
-    const data=JSON.parse(json);data.platforms.codex.reset={state:'announced',resetAt:'2026-09-08T02:00:00Z',sourceUrl:'https://x.com/thsottiaux/status/1',verifiedAt:'2026-09-08T00:00:00Z'};
-    return start+JSON.stringify(data).replace(/</g,'\\u003c')+end;
-   });
-   await route.fulfill({response,body:html});
-  });
-  await page.goto(base);
-  assert.equal(await page.locator('[data-platform="codex"] [data-public-countdown]').textContent(),'02:00:00');
-  assert.equal(await page.locator('[data-platform="claude"] [data-public-countdown]').textContent(),'No confirmed time');
-  const label=await page.locator('[data-platform="codex"] [data-public-time]').textContent();
-  assert.match(label,zone==='Asia/Shanghai'?/10:00/:zone==='America/Los_Angeles'?/Sep 7/:/04:00/);
-  await page.clock.fastForward(7200000);
-  assert.equal(await page.locator('[data-platform="codex"] [data-public-countdown]').textContent(),'Awaiting confirmation');
-  await context.close();
- }
- console.log('PASS: public countdown, unknown state, expiration and three visitor timezones in actual browser.');
-} finally {await browser.close();}
+import {readFile,writeFile} from 'node:fs/promises';
+const browser=await chromium.launch({headless:true,channel:'chrome'}),base=process.env.QA_URL||'http://127.0.0.1:4187/',results=[];
+try{
+for(const zone of ['Asia/Shanghai','America/Los_Angeles','Europe/Berlin','Australia/Lord_Howe']){
+const ctx=await browser.newContext({timezoneId:zone,acceptDownloads:true});const page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install({time:new Date('2026-09-08T00:00:00Z')});await page.clock.pauseAt(new Date('2026-09-08T00:00:00Z'));
+await page.addInitScript(()=>{window.__alarmSounds=0;const original=AudioContext.prototype.createOscillator;AudioContext.prototype.createOscillator=function(...a){window.__alarmSounds++;return original.apply(this,a);};});
+await page.route(base,async route=>{const response=await route.fetch();let html=await response.text();html=html.replace(/(<script id="page-data" type="application\/json">)([\s\S]*?)(<\/script>)/,(_,start,json,end)=>{const data=JSON.parse(json);data.platforms.codex.reset={state:'announced',resetAt:'2026-09-08T02:00:00Z',sourceUrl:'https://x.com/thsottiaux/status/1',verifiedAt:'2026-09-08T00:00:00Z'};data.platforms.claude.reset={state:'unknown'};return start+JSON.stringify(data).replace(/</g,'\\u003c')+end;});await route.fulfill({response,body:html});});
+await page.goto(base);const codex=page.locator('[data-platform=codex]'),claude=page.locator('[data-platform=claude]');const digits=card=>card.locator('[data-digit]').allTextContents();assert.deepEqual(await digits(codex),['02','00','00']);assert.deepEqual(await digits(claude),['--','--','--']);assert.match(await claude.locator('[data-clock-verdict]').textContent(),/No confirmed time/);
+const label=await codex.locator('[data-public-time]').textContent();assert.match(label,zone==='Asia/Shanghai'?/10:00/:zone==='America/Los_Angeles'?/Sep 7/:zone==='Europe/Berlin'?/04:00/:/12:30/);
+for(const [card,hours] of [[codex,3],[claude,4]]){await card.locator('[data-edit-personal]').click();const value=await page.evaluate(h=>{const d=new Date(Date.now()+h*3600000);return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16);},hours);await card.locator('input').fill(value);await card.locator('button[type=submit]').click();assert.deepEqual(await digits(card),[String(hours).padStart(2,'0'),'00','00']);}
+assert.deepEqual(await digits(codex),['03','00','00']);await claude.locator('[data-clock-mode=public]').click();assert.deepEqual(await digits(claude),['--','--','--']);await claude.locator('[data-clock-mode=personal]').click();assert.deepEqual(await digits(claude),['04','00','00']);
+await page.reload();assert.equal(await codex.getAttribute('data-clock-kind'),'public');assert.equal(await claude.getAttribute('data-clock-kind'),'personal');await codex.locator('[data-clock-mode=personal]').click();assert.deepEqual(await digits(codex),['03','00','00']);
+const wait=page.waitForEvent('download');await claude.locator('[data-clock-calendar]').click();const download=await wait;assert.equal(download.suggestedFilename(),'claude-reset.ics');const calendar=await readFile(await download.path(),'utf8');assert.match(calendar,/DTSTART:20260908T040000Z/);assert.match(calendar,/BEGIN:VALARM/);
+await codex.locator('[data-alarm]').click();assert.equal(await codex.locator('[data-alarm]').getAttribute('aria-pressed'),'true');await page.clock.fastForward(3*3600000);assert.deepEqual(await digits(codex),['00','00','00']);assert.ok(await codex.locator('.alarm-alert').isVisible());assert.equal(await page.evaluate(()=>window.__alarmSounds),3);assert.match(await codex.locator('[data-clock-verdict]').textContent(),/Check your account/);assert.deepEqual(await digits(claude),['01','00','00']);await codex.locator('[data-clear-personal]').click();assert.deepEqual(await digits(codex),['--','--','--']);assert.deepEqual(await digits(claude),['01','00','00']);await codex.locator('[data-clock-mode=public]').click();assert.match(await codex.locator('[data-clock-verdict]').textContent(),/Awaiting confirmation/);assert.equal(errors.length,0,errors.join('\n'));results.push({zone,independentTimers:true,localTime:label,persistence:true,calendarUTC:true,audioNodes:3,expiry:true});await ctx.close();}
+await writeFile('.qa/clocks.json',JSON.stringify(results,null,2));console.log('PASS: four timezones, independent public/personal timers, persistence, calendar alarms, real Web Audio alarm and truthful expiry.');
+}finally{await browser.close();}

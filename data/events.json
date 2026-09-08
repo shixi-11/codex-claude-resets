@@ -8,11 +8,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2097183639356489952",
     "publishedAt": "2026-09-08T04:41:58.067Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "You forgot the part where I reset usage twice in the middle",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "824b02a347621eb6b60a0e5de9693ad9afe770d7261efc965fc67d60d6c022c0"
   },
   {
@@ -24,27 +24,27 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2097175062566846501",
     "publishedAt": "2026-09-08T04:07:53.201Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "There is no schedule, only resets",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "1cba9279acee6c69c7d841effce3e0c535049813f4be6db2bf2a78385e20ea18"
   },
   {
     "id": "2097174560412246215",
-    "kind": "signal",
-    "state": "unconfirmed",
-    "reason": "ambiguous",
+    "kind": "global",
+    "state": "reported",
+    "reason": "explicit-completion",
     "author": "thsottiaux",
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2097174560412246215",
     "publishedAt": "2026-09-08T04:05:53.478Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "All reset for everyone.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "a7b576705246ef1d4e3c09602bdb460de0168014c34ffac206d3f599c5055554"
   },
   {
@@ -56,12 +56,12 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2097043464538264003",
     "publishedAt": "2026-09-07T19:24:57.786Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all…",
     "truncated": false,
     "provenance": "x-oembed+fxembed",
     "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2097043464538264003",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "27e5167241ce36d0a057c5fc5a33241fe72579660946cc2e5c241684d0ec6505",
     "resetAt": "2026-09-08T02:00:00.000Z",
     "sourceTimezone": "PST",
@@ -77,11 +77,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2096717905614524491",
     "publishedAt": "2026-09-06T21:51:18.490Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "d7b0d9585c47b79de994eff0ac8258901d46dd308c3b737f8266a8c911713389"
   },
   {
@@ -93,11 +93,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2096692394435752258",
     "publishedAt": "2026-09-06T20:09:56.151Z",
-    "verifiedAt": "2026-09-08T00:43:43.027Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Who says it won't reset in a while 👀",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "83265d0ddbde3a4ea13b34241419f542f9055c4851d5045d57698851679dda2e"
   },
   {
@@ -109,11 +109,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2096686370848989558",
     "publishedAt": "2026-09-06T19:46:00.016Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "There is no difference between usage you get before or after a reset.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "6330cb803732e58b0f225164e0eb929f28dc95501e86d728f6de687f9e5c193c"
   },
   {
@@ -125,7 +125,7 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2096035437299237298",
     "publishedAt": "2026-09-05T00:39:25.364Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really,…",
     "truncated": false,
     "provenance": "x-oembed+fxembed",
@@ -135,7 +135,7 @@
       "Pro",
       "Business"
     ],
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "bacb77d25506794495e906beea3edaf61858fcd1d91bfab3bcf3e31dfd4b2cd5"
   },
   {
@@ -147,11 +147,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2095979536043401428",
     "publishedAt": "2026-09-04T20:57:17.466Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Some Plus and Business users won't yet get access to Astra today, we've got you covered with a banked reset.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "84b24fb8b31798ea157ca9b1553ad97fc0f4e8bb83a91522acc379cc3d6721e3"
   },
   {
@@ -163,11 +163,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2095899886470463914",
     "publishedAt": "2026-09-04T15:40:47.528Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "It takes Astra 10-15 minutes and less than the 15% of the weekly usage.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "5e9aa63a279d017f9fc944bb1e6959c2df4394d1c16676d889b2ec952cb07c8c"
   },
   {
@@ -179,11 +179,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2095651088502591861",
     "publishedAt": "2026-09-03T23:12:09.470Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "We will give one banked reset for every day you don't have access to Astra on your paid ChatGPT plan, starting today.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "62d2d08fd94e8f7c644614e1f92053a8b0f8d610ee6348542a435d360a50fac5"
   },
   {
@@ -195,11 +195,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2095597659545591917",
     "publishedAt": "2026-09-03T19:39:51.014Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "d3baeced9bd53c1a97ada84d2328f08d063d4c19d3a9cb37c8e3067f4b005a47"
   },
   {
@@ -211,11 +211,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2095370639892955269",
     "publishedAt": "2026-09-03T04:37:45.311Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Which Codex reset?",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "c7f146c4a53ef39c357adcf4e9d000c6ed23f18104564c4cd0668d5e743daa45"
   },
   {
@@ -227,11 +227,11 @@
     "platform": "claude",
     "sourceUrl": "https://x.com/ClaudeDevs/status/2094856679250919746",
     "publishedAt": "2026-09-01T18:35:27.545Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
   },
   {
@@ -243,12 +243,12 @@
     "platform": "claude",
     "sourceUrl": "https://x.com/ClaudeDevs/status/2094851235694497836",
     "publishedAt": "2026-09-01T18:13:49.700Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "To lower costs, we’ve kept pricing the same as Fable 5 while lowering the price of cache reads on usage-based billing.",
     "truncated": false,
     "provenance": "x-oembed+fxembed",
     "relayUrl": "https://api.fxtwitter.com/ClaudeDevs/status/2094851235694497836",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "bd855378759db73d4286179d339e219deddd956ebc7275c82d8eb4fb17760fcc"
   },
   {
@@ -260,11 +260,11 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2094254532020818191",
     "publishedAt": "2026-08-31T02:42:44.458Z",
-    "verifiedAt": "2026-09-07T23:35:50.192Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "7125c5fc71c9578a49cc061719d2c3ec7b70227782cda9fe230c30f6f80a9a16"
   },
   {
@@ -329,11 +329,11 @@
     "platform": "claude",
     "sourceUrl": "https://x.com/ClaudeDevs/status/2093742322525810912",
     "publishedAt": "2026-08-29T16:47:24.198Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Compared to today, this works out to a 17% reduction in weekly limits on Claude Code.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "e4a2fa9ab0448b8fab57389fba5486deb6fadd9159f7db2875abd493ff5b1792"
   },
   {
@@ -345,11 +345,11 @@
     "platform": "claude",
     "sourceUrl": "https://x.com/ClaudeDevs/status/2093742321473065266",
     "publishedAt": "2026-08-29T16:47:23.947Z",
-    "verifiedAt": "2026-09-08T05:21:39.715Z",
+    "verifiedAt": "2026-09-08T05:48:05.391Z",
     "excerpt": "Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.2.1",
+    "rulesVersion": "1.2.2",
     "contentHash": "2841d63c8360a20e60671b56cbfc81d72aa251d75ff108bdba98375d23fc87c0"
   },
   {
