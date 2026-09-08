@@ -31,3 +31,5 @@
 /* Latest announcement is primary; older reset records are secondary. */
 .last-reset>span{color:#193d2c;font-weight:600}.reset-history>summary,.reset-history li a{color:#687168}.reset-history>summary{font-weight:500}
 
+
+.offer-source,.offer-source:hover{ text-decoration:none }.offer-source-label{text-decoration:underline;text-underline-offset:4px}
