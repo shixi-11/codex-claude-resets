@@ -35,3 +35,6 @@
 .offer-source,.offer-source:hover{ text-decoration:none }.offer-source-label{text-decoration:underline;text-underline-offset:4px}
 
 .tweet-source,.tweet-source:hover,.source-action{text-decoration:none}.source-action-label{text-decoration:underline;text-underline-offset:4px}.source-arrow{font-size:16px;font-weight:500;text-decoration:none}.live-controls:not(:has([data-live-status]:not([hidden]))){display:none}
+
+/* Cards follow their own content; sections keep independent spacing. */
+.platform-grid{align-items:start}.reset-overview{padding-bottom:24px}.platform-card{padding-bottom:20px!important}.last-reset>span:first-child{flex:1;min-width:0}.last-reset>[data-reset-elapsed]{flex:0 0 auto;text-align:end}@media(max-width:650px){.reset-overview{padding-bottom:20px}.platform-card{padding-bottom:18px!important}}

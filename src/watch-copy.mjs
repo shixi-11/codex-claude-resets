@@ -12,5 +12,5 @@ ar:['إعادة الضبط والاستخدام الإضافي، في مكان �
 };
 export const watchCopy=Object.fromEntries(Object.entries(rows).map(([lang,row])=>[lang,Object.fromEntries(keys.map((key,i)=>[key,row[i]]))]));
 
-const focusedIntros={"en":"Next reset. Latest source. Last reset.","zh":"下次重置、最新消息、上次重置。","zh-Hant":"下次重置、最新消息、上次重置。","ja":"次回のリセット、最新の情報源、前回の記録。","ko":"다음 초기화, 최신 소식, 지난 초기화.","es":"Próximo restablecimiento, última fuente y registro anterior.","fr":"Prochaine réinitialisation, dernière source et dernier reset.","de":"Nächster Reset. Neueste Quelle. Letzter Reset.","ar":"إعادة الضبط التالية، أحدث مصدر، وآخر إعادة ضبط."};
+const focusedIntros={"en": "Reset times. Latest offers. Recent news.", "zh": "重置时间、最新方案、近期消息。", "zh-Hant": "重置時間、最新方案、近期消息。", "ja": "リセット時刻、最新の特典、最近のお知らせ。", "ko": "초기화 시간, 최신 혜택, 최근 소식.", "es": "Horarios de restablecimiento, últimas ofertas y noticias recientes.", "fr": "Horaires de réinitialisation, dernières offres et actualités.", "de": "Reset-Zeiten. Aktuelle Angebote. Neueste Meldungen.", "ar": "مواعيد إعادة الضبط، أحدث العروض، وآخر الأخبار."};
 for(const [lang,text]of Object.entries(focusedIntros))watchCopy[lang].intro=text;
