@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-08T21:14:39.224Z",
-  "lastSuccessAt": "2026-09-08T21:14:39.224Z",
-  "discoveryAt": "2026-09-08T21:14:39.224Z",
+  "lastAttemptAt": "2026-09-08T23:27:36.940Z",
+  "lastSuccessAt": "2026-09-08T23:27:36.940Z",
+  "discoveryAt": "2026-09-08T23:27:36.940Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -14,7 +14,7 @@
       "name": "@ClaudeDevs timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "ok": true,
-      "candidates": 19
+      "candidates": 21
     },
     {
       "name": "X official embed",
