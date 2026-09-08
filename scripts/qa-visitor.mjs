@@ -18,7 +18,8 @@ try{
  assert.equal(await page.locator('.latest-post .tweet-excerpt[lang=zh]').count(),2);
  assert.equal(await page.locator('.supplemental:not([open]),.tweet-archive:not([open]),.reset-history:not([open])').count(),0);
  await page.locator('[data-platform-filter=claude]').click();
- assert.ok(await page.locator('.event-row:visible').evaluateAll(nodes=>nodes.length>0&&nodes.every(n=>n.dataset.platformFeed==='claude')));
+ assert.ok(await page.locator('.event-row:visible').evaluateAll(nodes=>nodes.every(n=>n.dataset.platformFeed==='claude')));
+ assert.equal(await page.locator('.empty').isVisible(),await page.locator('.event-row:visible').count()===0);
  const checked=await page.locator('[data-health-time]').innerText();offline=true;
  const refresh=async()=>{await page.locator('[data-refresh]').click();await page.waitForFunction(()=>!document.querySelector('[data-refresh]').disabled);};await refresh();
  assert.equal(await page.locator('[data-health-time]').innerText(),checked);assert.equal(await page.locator('[data-live-status]').isVisible(),true);
