@@ -1,3 +1,4 @@
+import {elapsedSince,elapsedLabel} from './elapsed.mjs';
 import {postText} from './post-text.mjs';
 import {visitorCopy} from './visitor-copy.mjs';
 import {postPlatform} from './evidence.mjs';
@@ -24,7 +25,7 @@ export function priorityDetails(platform,id,events,lang){
  const latest=list[0]||platform.latest,last=platform.lastReset;
  const when=at=>localResetTime(at,lang);
  return `<div class="latest-post"><div class="priority-label"><span>${e(t.latest)}</span>${latest?`<time datetime="${e(latest.publishedAt)}">${e(when(latest.publishedAt))}</time>`:''}</div>${latest?`<a class="tweet-source" href="${e(latest.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>@${e(latest.author)}</span><span class="source-action"><span class="source-action-label">${e(sourceAction[lang])}</span><span class="source-arrow" aria-hidden="true">↗</span></span></a>${postText(latest,lang,'tweet-excerpt')}<p class="tweet-meaning"><span class="post-kind" data-kind="${e(latest.kind)}">${e(postKindLabel(latest.kind,lang))}</span> ${e(latest.kind==='global'&&latest.state==='reported'?t.complete:latest.state==='unconfirmed'?t.unconfirmed:postStateLabel(latest.state,lang))}</p>`:`<p>${e(t.empty)}</p>`}</div>
- <div class="last-reset"><span>${e(visitorCopy[lang].lastReset)}</span><a data-last-reset href="${e(last?.sourceUrl||platform.profileUrl)}" target="_blank" rel="noopener noreferrer">${last?`<time datetime="${e(last.publishedAt)}" title="${e(last.publishedAt)}">${e(when(last.publishedAt))}</time> ↗`:e(watchCopy[lang].noHistory)}</a></div>
+ <div class="last-reset"><span>${e(elapsedLabel[lang])}</span><span data-last-reset data-reset-elapsed="${e(last?.publishedAt||'')}" title="${last?e(when(last.publishedAt)):''}">${last?e(elapsedSince(last.publishedAt,lang)):e(watchCopy[lang].noHistory)}</span></div>
 `;
 }
 const kindRows={en:['Quota reset','Reset credit','Usage change','Unconfirmed signal'],zh:['额度重置','重置卡','额度变化','未确认线索'],'zh-Hant':['額度重置','重置卡','額度變化','未確認線索'],ja:['利用枠リセット','リセット権','利用枠の変更','未確認情報'],ko:['사용량 초기화','초기화 이용권','사용량 변경','미확인 정보'],es:['Restablecimiento','Crédito de restablecimiento','Cambio de uso','Indicio sin confirmar'],fr:['Réinitialisation','Crédit de réinitialisation','Changement d’utilisation','Information non confirmée'],de:['Limit-Reset','Reset-Guthaben','Nutzungsänderung','Unbestätigter Hinweis'],ar:['إعادة ضبط الحد','رصيد إعادة ضبط','تغيير الاستخدام','إشارة غير مؤكّدة']};

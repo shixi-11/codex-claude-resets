@@ -1,3 +1,4 @@
+import {elapsedSince} from './elapsed.mjs';
 import { resetStatus, countdown, localResetTime } from './reset-status.mjs';
 import { watchCopy } from './watch-copy.mjs';
 import { platformCopy } from './platform-copy.mjs';
@@ -5,6 +6,7 @@ import { pageData, refreshLiveData } from './live-data.mjs';
 import {priorityDetails} from './priority-details.mjs';
 const {lang,platforms}=pageData,p=platformCopy[lang],w=watchCopy[lang];
 function tickAll(){
+ document.querySelectorAll('[data-reset-elapsed]').forEach(el=>{if(el.dataset.resetElapsed)el.textContent=elapsedSince(el.dataset.resetElapsed,lang);});
  const now=document.querySelector('[data-local-now]');if(now)now.textContent=new Intl.DateTimeFormat(lang,{hour:'2-digit',minute:'2-digit',second:'2-digit',timeZoneName:'short'}).format(new Date());
  document.querySelectorAll('[data-platform]').forEach(card=>{
   const q=s=>card.querySelector(s),data=platforms[card.dataset.platform],state=resetStatus(data.reset),at=Date.parse(state.at),running=state.state==='announced';
