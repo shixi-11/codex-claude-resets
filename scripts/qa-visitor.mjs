@@ -21,7 +21,7 @@ try{
  assert.ok(await page.locator('.event-row:visible').evaluateAll(nodes=>nodes.every(n=>n.dataset.platformFeed==='claude')));
  assert.equal(await page.locator('.empty').isVisible(),await page.locator('.event-row:visible').count()===0);
  const checked=await page.locator('[data-health-time]').innerText();offline=true;
- const refresh=async()=>{await page.locator('[data-refresh]').click();await page.waitForFunction(()=>!document.querySelector('[data-refresh]').disabled);};await refresh();
+ const refresh=async()=>{await page.evaluate(async()=>{const src=document.querySelector('script[src*="app.mjs"]').src;const u=new URL(src);u.pathname=u.pathname.replace(/app\.mjs$/,'live-data.mjs');await (await import(u.href)).refreshLiveData();});};await refresh();
  assert.equal(await page.locator('[data-health-time]').innerText(),checked);assert.equal(await page.locator('[data-live-status]').isVisible(),true);
  offline=false;health.status='degraded';await refresh();assert.equal(await page.locator('[data-health]').isVisible(),true);assert.equal(await page.locator('[data-health-time]').innerText(),checked);
  const latest=events.find(e=>e.author==='thsottiaux');latest.excerpt='A new usage update.';await refresh();

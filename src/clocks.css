@@ -33,3 +33,5 @@
 
 
 .offer-source,.offer-source:hover{ text-decoration:none }.offer-source-label{text-decoration:underline;text-underline-offset:4px}
+
+.tweet-source,.tweet-source:hover,.source-action{text-decoration:none}.source-action-label{text-decoration:underline;text-underline-offset:4px}.source-arrow{font-size:16px;font-weight:500;text-decoration:none}.live-controls:not(:has([data-live-status]:not([hidden]))){display:none}
