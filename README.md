@@ -67,7 +67,7 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 ## 简体中文
 
-**还要多久重置？** Codex & Claude Resets把Codex和Claude的已确认重置时间、倒计时、重置卡和额外额度消息放在同一页，自动按访客本地时区显示，并附原始来源。
+**还要多久重置？** Codex & Claude Resets把Codex和Claude的已确认重置时间、倒计时、重置卡和额外额度消息放在同一页，自动按访客本地时区显示，并附原始来源。由光之十一制作。
 
 [打开网站](https://shixilin.com/ai/codex-claude-resets/zh/) · [RSS订阅](https://shixilin.com/ai/codex-claude-resets/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-claude-resets/events.json)
 
