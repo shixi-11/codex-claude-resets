@@ -3,9 +3,9 @@ import { platformCopy } from './platform-copy.mjs';
 import { clockCopy } from './clock-copy.mjs';
 import { resetStatus } from './reset-status.mjs';
 const bell='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0v5l2 3H4l2-3V9Z"/><path d="M9 20h6M12 1v2"/></svg>';
-export function clockPanel(platforms,lang,base){
+export function clockPanel(platforms,lang,base,version){
  const t=platformCopy[lang], c=clockCopy[lang];
- return `<section class="reset-overview"><div class="overview-title"><div><h1>${e(t.heading)}</h1><p class="local-now"><span class="live-dot"></span>${e(c.localNow)} <time data-local-now></time></p></div><img class="reset-mascot" src="${base}assets/mascot.webp" width="170" height="150" alt=""/></div><div class="platform-grid">${Object.entries(platforms).map(([id,p])=>{
+ return `<section class="reset-overview"><div class="overview-title"><div><h1>${e(t.heading)}</h1><p class="local-now"><span class="live-dot"></span>${e(c.localNow)} <time data-local-now></time></p></div><img class="reset-mascot" src="${base}assets/mascot.webp?v=${version}" width="170" height="150" alt=""/></div><div class="platform-grid">${Object.entries(platforms).map(([id,p])=>{
  const s=resetStatus(p.reset), digits=['--','--','--'];
  return `<article class="platform-card" data-platform="${id}"><div class="platform-heading"><h2><span class="platform-symbol" aria-hidden="true">${id==='codex'?'⌘':'✳'}</span>${e(p.name)}</h2><a href="${e(p.usageUrl)}" target="_blank" rel="noopener noreferrer">${e(t.usage)} ↗</a></div>
  <div class="clock-modes" role="group" aria-label="${e(p.name)}"><button data-clock-mode="public" aria-pressed="true">${e(c.public)}</button><button data-clock-mode="personal" aria-pressed="false">${e(c.personal)}</button></div>

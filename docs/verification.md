@@ -10,4 +10,4 @@ The first screen now contains independent Codex and Claude digital timers, with 
 
 In-page alarms require an open page, an awake device and sound permission; browser throttling can delay them. Calendar export supports reminders after closing the page. The page does not read visitor quota or promise account restoration. The existing half-hourly GitHub update and daily digest schedules remain unchanged.
 
-Production deployment and verification are recorded after the live build is checked.
+Production release f39ec88 passed GitHub Actions run [34192419726](https://github.com/shixi-11/codex-respawn/actions/runs/34192419726). The public personal-domain page was verified in Chrome after following the renamed entry from the main AI collection: English default, two timers, two alarm buttons, current keycap favicon, genuine transparent mascot, Chinese mobile rendering and support link all passed.
