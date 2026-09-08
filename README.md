@@ -5,10 +5,13 @@
 
 ![Codex & Claude Resets desktop interface](docs/screenshot.jpg)
 
-Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and the last reset announcement. Older records and extra-usage offers are expanded by default.
+Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and the last reset announcement. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
+- **Follow the latest scheme.** A newer published reset replaces an older credit announcement in the Codex summary. Earlier announcements remain in the recent feed.
+- **Scan recent news.** The homepage feed shows the past seven days in descending publication order, with All, Codex and Claude filters. Older records retain their permanent links.
+- **Know the timezone.** Announcement, offer deadline, news and successful-check timestamps use the visitor’s device timezone and show its offset. Language selection does not change timezone; daylight saving follows the date.
 - **Stay current.** The open page refreshes public records automatically. No notifications, email subscriptions or personal-account access.
 - **Read news in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available. Post excerpts follow the selected language; the original source is one click away.
 - **Follow without another account.** RSS, public JSON and permanent event links are built in.
@@ -35,8 +38,6 @@ The site, source records, collector and GitHub Actions workflow all live in this
 | Manual refresh | GitHub Actions → Run workflow | Check, digest and deployment |
 
 GitHub schedules may be delayed. Failures retain existing records and publish the degraded health state. The production workflow requires **no paid API or model**. An optional X API adapter exists in the collector, but paid access is never enabled by default. Subscription OAuth and device credentials do not belong in repository secrets or hosted runners.
-
-For optional editorial review, Grok `grok-4.6` with `high` reasoning can review new public Web/X context through an operator's authorized local subscription CLI. This is separate from the unattended pipeline; no model gets to mark incomplete evidence as confirmed. See [automation notes](docs/automation.md).
 
 ### Run locally
 
@@ -70,10 +71,13 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 [打开网站](https://shixilin.com/ai/codex-claude-resets/zh/) · [RSS订阅](https://shixilin.com/ai/codex-claude-resets/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-claude-resets/events.json)
 
-- 区分重置预告、已宣布完成、可用重置次数、额度变化和尚未确认的线索。
+- 区分重置预告、已宣布完成、重置卡、额度变化和尚未确认的线索。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
-- 首页直接展示下次重置、最新相关推文及其发布时间、上次重置；更早记录与额度活动默认展开。
-- 默认英文，提供九种语言；网站和自动更新放在同一个开源仓库。
+- 首页展示下次重置、最新相关推文和上次重置公告；最近一次公告用深色，前几次重置用灰色区分。
+- 最新重置与额度方案放在近期消息前面。Codex按发布时间选择最新的统一重置或赠卡公告，较早方案留在消息记录中。
+- 消息列表只显示最近7天，按原帖发布时间从新到旧排列，支持全部、Codex、Claude筛选。历史原始记录及独立链接仍保留。
+- 公告、截止时间、消息列表和上次成功检查时间均显示访客设备的本地时间及GMT偏移，自动处理夏令时；切换语言不会改变时区。
+- 默认英文，提供九种语言，消息正文随语言切换并保留原文入口。新消息自动尝试翻译，未完成时显示英文原文与待更新提示。
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 
 网站无法查看或重置个人账号的实际额度。请以Codex额度面板或CLI中的`/status`为准。日常自动化不需要付费模型，也不会把订阅登录凭据上传到GitHub。
