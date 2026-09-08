@@ -1,6 +1,6 @@
 # Automation
 
-The production workflow is `.github/workflows/site.yml`. It checks announcements twice hourly, writes a daily Markdown digest at 02:23 UTC, validates records, builds the static site and deploys GitHub Pages. Public files are served on `shixilin.com/ai/codex-reset/` through the personal website's Vercel rewrite.
+The production workflow is `.github/workflows/site.yml`. It checks announcements twice hourly, writes a daily Markdown digest at 02:23 UTC, validates records, builds the static site and deploys GitHub Pages. Public files are served on `shixilin.com/ai/codex-claude-resets/` through the personal website's Vercel rewrite.
 
 The default collector needs no token, LLM or billing account. Tibo and ClaudeDevs public timelines are polled through FxEmbed. Community discovery pages supply fallback URLs only. X official embeds verify the author, post identity and visible text. Full long-post text can be retrieved through FxEmbed after the author, ID, timestamp and visible official excerpt match; provenance identifies that relay. Full source text is hashed, not republished in full. Quotes are limited to a short excerpt.
 

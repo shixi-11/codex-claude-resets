@@ -18,7 +18,7 @@ A visitor can immediately see whether a public reset has a confirmed schedule, f
 
 ## Validation
 
-20 unit tests; 9 automatic announcement/alert browser scenarios; 27 language/viewport combinations, plus filters, pagination, FAQ, language switching, event pages and keyboard focus. Main-site locale, font and production-build checks pass. Production migration is checked separately after deployment.
+20 unit tests; 10 automatic announcement/alert browser scenarios; 27 language/viewport combinations, plus filters, pagination, FAQ, language switching, event pages and keyboard focus. Main-site locale, font and production-build checks pass. Production migration is checked separately after deployment.
 
 ## Deliberate limits
 

@@ -12,5 +12,5 @@ export function calendarFile(timestamp, title, url = CANONICAL) {
   if (!Number.isFinite(timestamp)) throw new Error('Invalid timestamp');
   const date = new Date(timestamp).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
   const clean = String(title).replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/,/g, '\\,').replace(/;/g, '\\;');
-  return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Codex Respawn//Personal reminder//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:codex-respawn-${timestamp}@shixilin.com`,`DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z')}`,`DTSTART:${date}`,`SUMMARY:${clean}`,`URL:${url}`,'BEGIN:VALARM','TRIGGER:PT0M','ACTION:DISPLAY',`DESCRIPTION:${clean}`,'END:VALARM','END:VEVENT','END:VCALENDAR',''].join('\r\n');
+  return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Codex and Claude Resets//Public announcement reminder//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:codex-respawn-${timestamp}@shixilin.com`,`DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z')}`,`DTSTART:${date}`,`SUMMARY:${clean}`,`URL:${url}`,'BEGIN:VALARM','TRIGGER:PT0M','ACTION:DISPLAY',`DESCRIPTION:${clean}`,'END:VALARM','END:VEVENT','END:VCALENDAR',''].join('\r\n');
 }
