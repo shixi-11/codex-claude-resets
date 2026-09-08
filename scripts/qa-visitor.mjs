@@ -1,0 +1,34 @@
+import {chromium} from 'playwright';
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const read=async name=>JSON.parse(await readFile(`dist/${name}.json`,'utf8'));
+const events=await read('events'),platforms=await read('platforms'),health=await read('health');
+health.lastSuccessAt=new Date().toISOString();health.status='ok';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+try{
+ const page=await browser.newPage({viewport:{width:390,height:900},timezoneId:'Asia/Shanghai'});let offline=false;
+ await page.route('**/events.json*',r=>r.fulfill({json:events}));
+ await page.route('**/platforms.json*',r=>r.fulfill({json:platforms}));
+ await page.route('**/health.json*',r=>r.fulfill(offline?{status:503,body:'offline'}:{json:health}));
+ await page.goto('http://127.0.0.1:4187/zh/');await page.waitForFunction(()=>document.querySelector('[data-live-status]').textContent.includes('已更新'));
+ assert.equal(await page.locator('[data-health]').isVisible(),false);
+ assert.equal(await page.locator('[data-live-status]').isVisible(),false);
+ assert.equal(await page.locator('.footer-note,.data-links,.reset-definition,[data-filter],.health-dot,.section-heading').count(),0);
+ assert.equal(await page.locator('[data-platform-filter]').count(),3);
+ assert.equal(await page.locator('.latest-post .tweet-excerpt[lang=zh]').count(),2);
+ assert.equal(await page.locator('.supplemental:not([open]),.tweet-archive:not([open]),.reset-history:not([open])').count(),0);
+ await page.locator('[data-platform-filter=claude]').click();
+ assert.ok(await page.locator('.event-row:visible').evaluateAll(nodes=>nodes.length>0&&nodes.every(n=>n.dataset.platformFeed==='claude')));
+ const checked=await page.locator('[data-health-time]').innerText();offline=true;
+ const refresh=async()=>{await page.locator('[data-refresh]').click();await page.waitForFunction(()=>!document.querySelector('[data-refresh]').disabled);};await refresh();
+ assert.equal(await page.locator('[data-health-time]').innerText(),checked);assert.equal(await page.locator('[data-live-status]').isVisible(),true);
+ offline=false;health.status='degraded';await refresh();assert.equal(await page.locator('[data-health]').isVisible(),true);assert.equal(await page.locator('[data-health-time]').innerText(),checked);
+ const latest=events.find(e=>e.author==='thsottiaux');latest.excerpt='A new usage update.';await refresh();
+ assert.equal(await page.locator('[data-platform=codex] .tweet-excerpt').getAttribute('lang'),'en');
+ assert.match(await page.locator('[data-platform=codex] .translation-note').innerText(),/待更新/);
+ latest.localized={excerpt:latest.excerpt,contentHash:latest.contentHash,texts:{zh:'一则新的额度消息。'}};await refresh();
+ assert.equal(await page.locator('[data-platform=codex] .tweet-excerpt').innerText(),'一则新的额度消息。');
+ assert.equal(await page.locator('[data-platform-filter=claude]').getAttribute('aria-pressed'),'true');
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+ console.log('PASS: translated news, source-version fallback, live replacement, one filter group, truthful check time and clean footer.');
+}finally{await browser.close();}

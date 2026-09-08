@@ -34,6 +34,11 @@ jobs:
       - name: Daily source digest
         if: github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
         run: node scripts/digest.mjs
+      - name: Cache translations for new source records
+        if: github.event_name != 'push'
+        run: node scripts/translate.mjs
+        env:
+          TRANSLATION_REQUEST_LIMIT: '80'
       - name: Save source records
         if: github.event_name != 'push'
         run: |

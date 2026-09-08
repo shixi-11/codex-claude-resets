@@ -1,0 +1,646 @@
+{
+  "version": 1,
+  "posts": {
+    "2097183639356489952": {
+      "excerpt": "You forgot the part where I reset usage twice in the middle",
+      "contentHash": "824b02a347621eb6b60a0e5de9693ad9afe770d7261efc965fc67d60d6c022c0",
+      "texts": {
+        "zh": "你忘了我中途重置过两次额度这件事。",
+        "zh-Hant": "你忘了我中途重置過兩次額度這件事。",
+        "ja": "途中で私が利用枠を2回リセットしたことを忘れていますよ。",
+        "ko": "제가 중간에 사용량을 두 번 초기화한 건 빼먹으셨네요.",
+        "es": "Olvidaste mencionar que restablecí el uso dos veces entre medias.",
+        "fr": "Tu as oublié de mentionner que j’ai réinitialisé les quotas deux fois entre-temps.",
+        "de": "Du hast vergessen, dass ich zwischendurch die Nutzungslimits zweimal zurückgesetzt habe.",
+        "ar": "لقد نسيت أنني أعدت ضبط حد الاستخدام مرتين في أثناء ذلك."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2097175062566846501": {
+      "excerpt": "There is no schedule, only resets",
+      "contentHash": "1cba9279acee6c69c7d841effce3e0c535049813f4be6db2bf2a78385e20ea18",
+      "texts": {
+        "zh": "没有时间表，只有重置。",
+        "zh-Hant": "沒有時間表，只有重置。",
+        "ja": "予定表はありません。あるのはリセットだけです。",
+        "ko": "정해진 일정은 없고, 초기화만 있습니다.",
+        "es": "No hay un calendario, solo restablecimientos.",
+        "fr": "Il n’y a pas de calendrier, seulement des réinitialisations.",
+        "de": "Es gibt keinen Zeitplan, nur Resets.",
+        "ar": "لا يوجد جدول زمني، بل عمليات إعادة ضبط فقط."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2097174560412246215": {
+      "excerpt": "All reset for everyone.",
+      "contentHash": "a7b576705246ef1d4e3c09602bdb460de0168014c34ffac206d3f599c5055554",
+      "texts": {
+        "zh": "所有人的额度都已重置。",
+        "zh-Hant": "所有人的額度都已重置。",
+        "ja": "全員の利用枠をすべてリセットしました。",
+        "ko": "모든 사용자의 한도를 전부 초기화했습니다.",
+        "es": "Se han restablecido todos los límites para todo el mundo.",
+        "fr": "Tous les quotas ont été réinitialisés pour tout le monde.",
+        "de": "Alle Nutzungslimits wurden für alle zurückgesetzt.",
+        "ar": "أُعيد ضبط جميع حدود الاستخدام للجميع."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2097043464538264003": {
+      "excerpt": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all…",
+      "contentHash": "27e5167241ce36d0a057c5fc5a33241fe72579660946cc2e5c241684d0ec6505",
+      "texts": {
+        "zh": "我们将为所有付费订阅统一重置额度，让你们在用尽额度后还能继续使用Astra……",
+        "zh-Hant": "我們將為所有付費訂閱統一重置額度，讓你們在用盡額度後還能繼續使用Astra……",
+        "ja": "すべての有料サブスクリプションの利用枠を一斉にリセットします。使い切った後もAstraを引き続き楽しめるように……",
+        "ko": "모든 유료 구독의 사용량을 일괄 초기화할 예정입니다. 한도를 모두 소진한 뒤에도 Astra를 계속 이용하실 수 있도록…",
+        "es": "Restableceremos el uso de todas las suscripciones de pago para que podáis seguir disfrutando de Astra después de agotar todo…",
+        "fr": "Nous réinitialiserons les quotas de tous les abonnements payants pour que vous puissiez continuer à profiter d’Astra après avoir tout épuisé…",
+        "de": "Wir werden die Nutzungslimits aller kostenpflichtigen Abonnements zurücksetzen, damit ihr Astra weiter nutzen könnt, nachdem ihr alles aufgebraucht habt…",
+        "ar": "سنعيد ضبط حدود الاستخدام لجميع الاشتراكات المدفوعة، لتتمكنوا من مواصلة الاستمتاع بـAstra بعد استنفادها بالكامل…"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2096717905614524491": {
+      "excerpt": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.",
+      "contentHash": "d7b0d9585c47b79de994eff0ac8258901d46dd308c3b737f8266a8c911713389",
+      "texts": {
+        "zh": "我们做了一些改进，改善了通过ChatGPT账号登录的Astra重度用户在长尾场景下的额度使用体验。",
+        "zh-Hant": "我們做了一些改進，改善了透過ChatGPT帳號登入的Astra重度用戶在長尾情境下的額度使用體驗。",
+        "ja": "ChatGPTアカウントでログインしているAstraのヘビーユーザー向けに、ロングテールの利用状況を改善する変更を加えました。",
+        "ko": "ChatGPT 계정으로 로그인한 Astra 고급 사용자의 롱테일 사용 상황을 개선하는 변경을 적용했습니다.",
+        "es": "Hemos introducido mejoras en el uso de los casos de larga cola para usuarios intensivos de Astra que inician sesión con su cuenta de ChatGPT.",
+        "fr": "Nous avons apporté des améliorations à l’utilisation dans les cas de longue traîne pour les utilisateurs intensifs d’Astra connectés avec leur compte ChatGPT.",
+        "de": "Wir haben Verbesserungen für die Nutzung in Long-Tail-Fällen bei intensiven Astra-Nutzern vorgenommen, die mit ihrem ChatGPT-Konto angemeldet sind.",
+        "ar": "أجرينا تحسينات على الاستخدام في حالات الذيل الطويل لمستخدمي Astra المكثّفين عند تسجيل الدخول بحساب ChatGPT."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2096692394435752258": {
+      "excerpt": "Who says it won't reset in a while 👀",
+      "contentHash": "83265d0ddbde3a4ea13b34241419f542f9055c4851d5045d57698851679dda2e",
+      "texts": {
+        "zh": "谁说过一会儿不会重置呢👀",
+        "zh-Hant": "誰說過一會兒不會重置呢👀",
+        "ja": "しばらくしたらリセットされないなんて、誰が言いました？👀",
+        "ko": "조금 뒤에 초기화되지 않을 거라고 누가 그랬나요? 👀",
+        "es": "¿Quién dice que no se restablecerá dentro de un rato? 👀",
+        "fr": "Qui a dit que ça ne serait pas réinitialisé dans un moment ? 👀",
+        "de": "Wer sagt denn, dass es nicht in einer Weile zurückgesetzt wird? 👀",
+        "ar": "ومن قال إنه لن يُعاد ضبطه بعد قليل؟ 👀"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2096686370848989558": {
+      "excerpt": "There is no difference between usage you get before or after a reset.",
+      "contentHash": "6330cb803732e58b0f225164e0eb929f28dc95501e86d728f6de687f9e5c193c",
+      "texts": {
+        "zh": "重置前后获得的额度没有区别。",
+        "zh-Hant": "重置前後獲得的額度沒有區別。",
+        "ja": "リセットの前後で付与される利用枠に違いはありません。",
+        "ko": "초기화 전후에 받는 사용량 한도에는 차이가 없습니다.",
+        "es": "No hay diferencia entre el uso disponible antes y después de un restablecimiento.",
+        "fr": "Il n’y a aucune différence entre les quotas dont vous disposez avant et après une réinitialisation.",
+        "de": "Die Nutzungskontingente, die ihr vor oder nach einem Reset erhaltet, unterscheiden sich nicht.",
+        "ar": "لا يوجد فرق بين حصة الاستخدام التي تحصل عليها قبل إعادة الضبط أو بعدها."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2096035437299237298": {
+      "excerpt": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really,…",
+      "contentHash": "bacb77d25506794495e906beea3edaf61858fcd1d91bfab3bcf3e31dfd4b2cd5",
+      "texts": {
+        "zh": "Astra今天提前上线，让我们高兴极了；你们也一直对我们很有耐心（并没有，……",
+        "zh-Hant": "Astra今天提前上線，讓我們高興極了；你們也一直對我們很有耐心（並沒有，……",
+        "ja": "Astraが本日予定より早く公開されて大喜びしていますし、皆さんもずっと辛抱強く待ってくれたので（実際はそうでもないですが、…",
+        "ko": "Astra가 오늘 예정보다 일찍 출시되어 정말 기쁘고, 여러분도 저희를 아주 인내심 있게 기다려 주셨으니(사실 그렇진 않지만,…",
+        "es": "Como nos alegra muchísimo que Astra se haya lanzado hoy antes de lo previsto y habéis tenido muchísima paciencia con nosotros (bueno, no tanta,…",
+        "fr": "Comme nous sommes ravis qu’Astra soit sorti aujourd’hui en avance et que vous avez été très patients avec nous (enfin, pas vraiment,…",
+        "de": "Weil wir uns riesig freuen, dass Astra heute früher als geplant erschienen ist, und ihr so geduldig mit uns wart (na ja, eigentlich nicht,…",
+        "ar": "لأننا سعداء للغاية بإطلاق Astra اليوم قبل الموعد، ولأنكم كنتم صبورين جدًا معنا (ليس تمامًا،…"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2095979536043401428": {
+      "excerpt": "Some Plus and Business users won't yet get access to Astra today, we've got you covered with a banked reset.",
+      "contentHash": "84b24fb8b31798ea157ca9b1553ad97fc0f4e8bb83a91522acc379cc3d6721e3",
+      "texts": {
+        "zh": "部分Plus和Business用户今天仍无法使用Astra，我们已为你们准备了重置卡。",
+        "zh-Hant": "部分Plus和Business用戶今天仍無法使用Astra，我們已為你們準備了重置卡。",
+        "ja": "一部のPlus・Businessユーザーは今日もまだAstraを利用できませんが、後で使えるリセット権を用意しています。",
+        "ko": "일부 Plus 및 Business 사용자는 오늘도 아직 Astra를 이용할 수 없지만, 나중에 쓸 수 있는 초기화 이용권을 준비했습니다.",
+        "es": "Algunos usuarios de Plus y Business todavía no tendrán acceso a Astra hoy; hemos previsto un crédito de restablecimiento para vosotros.",
+        "fr": "Certains utilisateurs de Plus et Business n’auront pas encore accès à Astra aujourd’hui ; nous avons prévu un crédit de réinitialisation pour vous.",
+        "de": "Einige Plus- und Business-Nutzer erhalten heute noch keinen Zugang zu Astra. Für euch haben wir Reset-Guthaben vorgesehen.",
+        "ar": "لن يتمكن بعض مستخدمي Plus وBusiness من الوصول إلى Astra اليوم بعد؛ وقد أعددنا لهم رصيد إعادة ضبط."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2095899886470463914": {
+      "excerpt": "It takes Astra 10-15 minutes and less than the 15% of the weekly usage.",
+      "contentHash": "5e9aa63a279d017f9fc944bb1e6959c2df4394d1c16676d889b2ec952cb07c8c",
+      "texts": {
+        "zh": "Astra需要10～15分钟，消耗不到每周额度的15%。",
+        "zh-Hant": "Astra需要10～15分鐘，消耗不到每週額度的15%。",
+        "ja": "Astraなら10～15分で、週間利用枠の15%未満で済みます。",
+        "ko": "Astra로 10~15분이 걸리고, 주간 한도의 15% 미만을 사용합니다.",
+        "es": "Astra tarda entre 10 y 15 minutos y consume menos del 15 % del uso semanal disponible.",
+        "fr": "Cela prend 10 à 15 minutes à Astra et consomme moins de 15 % du quota hebdomadaire.",
+        "de": "Astra benötigt dafür 10–15 Minuten und weniger als 15 % des wöchentlichen Nutzungskontingents.",
+        "ar": "يستغرق الأمر من Astra ما بين 10 و15 دقيقة ويستهلك أقل من 15% من حصة الاستخدام الأسبوعية."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2095651088502591861": {
+      "excerpt": "We will give one banked reset for every day you don't have access to Astra on your paid ChatGPT plan, starting today.",
+      "contentHash": "62d2d08fd94e8f7c644614e1f92053a8b0f8d610ee6348542a435d360a50fac5",
+      "texts": {
+        "zh": "从今天起，如果你订阅了付费ChatGPT方案，每有一天无法使用Astra，我们就给你一张重置卡。",
+        "zh-Hant": "從今天起，如果你訂閱了付費ChatGPT方案，每有一天無法使用Astra，我們就給你一張重置卡。",
+        "ja": "本日から、有料ChatGPTプランでAstraを利用できない日ごとに、後で使えるリセット権を1回分付与します。",
+        "ko": "오늘부터 유료 ChatGPT 요금제에서 Astra를 이용하지 못하는 날마다 초기화 이용권을 한 장씩 드립니다.",
+        "es": "A partir de hoy, os daremos un crédito de restablecimiento por cada día que no tengáis acceso a Astra con vuestro plan de pago de ChatGPT.",
+        "fr": "À partir d’aujourd’hui, nous vous accorderons un crédit de réinitialisation pour chaque jour sans accès à Astra avec votre abonnement ChatGPT payant.",
+        "de": "Ab heute erhaltet ihr für jeden Tag ohne Astra-Zugang in eurem kostenpflichtigen ChatGPT-Tarif ein Reset-Guthaben.",
+        "ar": "بدءًا من اليوم، سنمنح رصيد إعادة ضبط واحدًا عن كل يوم لا تتمكن فيه من الوصول إلى Astra ضمن خطة ChatGPT المدفوعة."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2095597659545591917": {
+      "excerpt": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra.",
+      "contentHash": "d3baeced9bd53c1a97ada84d2328f08d063d4c19d3a9cb37c8e3067f4b005a47",
+      "texts": {
+        "zh": "各方案的常规使用额度都包含Astra，你可以把全部额度用于Astra。",
+        "zh-Hant": "各方案的常規使用額度都包含Astra，你可以把全部額度用於Astra。",
+        "ja": "どのプランでもAstraは通常の利用枠に含まれ、その100%をAstraに使えます。",
+        "ko": "모든 요금제에서 Astra는 일반 사용량 한도에 포함되며, 그 한도의 100%를 Astra에 사용할 수 있습니다.",
+        "es": "En todos los planes, Astra estará incluido en la asignación de uso habitual y podréis dedicarle el 100 %.",
+        "fr": "Dans tous les abonnements, Astra sera inclus dans le quota habituel et vous pourrez lui consacrer 100 % de ce quota.",
+        "de": "In allen Tarifen ist Astra im regulären Nutzungskontingent enthalten, und ihr könnt es zu 100 % für Astra verwenden.",
+        "ar": "في جميع الخطط، سيكون Astra مشمولًا بحصة الاستخدام المعتادة، ويمكنك تخصيص 100% منها له."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2095370639892955269": {
+      "excerpt": "Which Codex reset?",
+      "contentHash": "c7f146c4a53ef39c357adcf4e9d000c6ed23f18104564c4cd0668d5e743daa45",
+      "texts": {
+        "zh": "哪一次Codex重置？",
+        "zh-Hant": "哪一次Codex重置？",
+        "ja": "どのCodexのリセットですか？",
+        "ko": "어떤 Codex 초기화요?",
+        "es": "¿Qué restablecimiento de Codex?",
+        "fr": "Quelle réinitialisation de Codex ?",
+        "de": "Welcher Codex-Reset?",
+        "ar": "أي إعادة ضبط لـCodex؟"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2094856679250919746": {
+      "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+      "texts": {
+        "zh": "Fable 5.1今天发布，我们也为所有用户重置了5小时额度和每周额度。",
+        "zh-Hant": "Fable 5.1今天發佈，我們也為所有用戶重置了5小時額度和每週額度。",
+        "ja": "本日のFable 5.1公開に合わせて、全ユーザーの5時間枠と週間利用枠もリセットしました。",
+        "ko": "오늘 Fable 5.1 출시와 함께 모든 사용자의 5시간 한도와 주간 한도도 초기화했습니다.",
+        "es": "Con el lanzamiento de Fable 5.1 hoy, también hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+        "fr": "À l’occasion de la sortie de Fable 5.1 aujourd’hui, nous avons aussi réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+        "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2094851235694497836": {
+      "excerpt": "To lower costs, we’ve kept pricing the same as Fable 5 while lowering the price of cache reads on usage-based billing.",
+      "contentHash": "bd855378759db73d4286179d339e219deddd956ebc7275c82d8eb4fb17760fcc",
+      "texts": {
+        "zh": "为降低成本，我们维持了与Fable 5相同的定价，同时下调按使用量计费的缓存读取价格。",
+        "zh-Hant": "為降低成本，我們維持了與Fable 5相同的定價，同時下調按使用量計費的快取讀取價格。",
+        "ja": "コストを抑えるため、料金はFable 5と同じに据え置き、従量課金のキャッシュ読み取り価格を引き下げました。",
+        "ko": "비용을 낮추기 위해 가격은 Fable 5와 동일하게 유지하면서 종량제 과금의 캐시 읽기 요금을 내렸습니다.",
+        "es": "Para reducir costes, hemos mantenido los precios de Fable 5 y rebajado el coste de las lecturas de caché en la facturación por uso.",
+        "fr": "Pour réduire les coûts, nous avons conservé les tarifs de Fable 5 tout en baissant le prix des lectures du cache en facturation à l’usage.",
+        "de": "Um die Kosten zu senken, haben wir die Preise von Fable 5 beibehalten und zugleich Cache-Lesezugriffe bei nutzungsbasierter Abrechnung vergünstigt.",
+        "ar": "لخفض التكاليف، أبقينا الأسعار مماثلة لأسعار Fable 5، مع خفض سعر قراءة الذاكرة المؤقتة في الفوترة حسب الاستخدام."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2094254532020818191": {
+      "excerpt": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits.",
+      "contentHash": "7125c5fc71c9578a49cc061719d2c3ec7b70227782cda9fe230c30f6f80a9a16",
+      "texts": {
+        "zh": "说明一下：虽然两者都叫20X，但在Codex中，它具体指的是每周使用额度。",
+        "zh-Hant": "說明一下：雖然兩者都叫20X，但在Codex中，它具體指的是每週使用額度。",
+        "ja": "補足すると、どちらも20Xと呼ばれていますが、Codexでは特に週間利用枠を指します。",
+        "ko": "명확히 말씀드리면, 둘 다 20X라고 하지만 Codex에서는 구체적으로 주간 사용량 한도를 뜻합니다.",
+        "es": "Para aclararlo: aunque ambos se llaman 20X, en Codex se refieren específicamente a los límites de uso semanales.",
+        "fr": "Pour préciser : bien que les deux portent le nom 20X, dans Codex, cela concerne spécifiquement les quotas hebdomadaires.",
+        "de": "Zur Klarstellung: Beide heißen zwar 20X, bei Codex beziehen sie sich aber ausdrücklich auf die wöchentlichen Nutzungslimits.",
+        "ar": "للتوضيح: رغم أن كليهما يُسمّى 20X، فإن ذلك يشير في Codex تحديدًا إلى حدود الاستخدام الأسبوعية."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2094252447271366730": {
+      "excerpt": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid…",
+      "contentHash": "70db1e86effb9820d2b87cb72aae6ec4d606586ce711bfc575612c6fa09d67e8",
+      "texts": {
+        "zh": "我昨天想说的是，我们的活跃用户已达2500万；为庆祝这一点，我们现已为所有付费订阅重置额度……",
+        "zh-Hant": "我昨天想說的是，我們的活躍用戶已達2500萬；為慶祝這一點，我們現已為所有付費訂閱重置額度……",
+        "ja": "昨日お伝えしたかったのは、アクティブユーザーが2,500万人に達し、その記念として、すべての有料サブスクリプションの利用枠をリセットしたということです…",
+        "ko": "어제 하려던 말은 활성 사용자가 2,500만 명에 도달했고, 이를 기념해 모든 유료 구독의 사용량을 초기화했다는 것이었습니다…",
+        "es": "Lo que quería decir ayer es que llegamos a 25 millones de usuarios activos y, para celebrarlo, hemos restablecido el uso de todas las suscripciones de pago…",
+        "fr": "Ce que je voulais dire hier, c’est que nous avons atteint 25 millions d’utilisateurs actifs et que, pour le fêter, nous avons réinitialisé les quotas de tous les abonnements payants…",
+        "de": "Was ich gestern sagen wollte: Wir haben 25 Millionen aktive Nutzer erreicht und zur Feier die Nutzungslimits aller kostenpflichtigen Abonnements zurückgesetzt…",
+        "ar": "ما أردت قوله أمس هو أننا وصلنا إلى 25 مليون مستخدم نشط، واحتفالًا بذلك أعدنا ضبط حدود الاستخدام لجميع الاشتراكات المدفوعة…"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2094144275957350900": {
+      "excerpt": "Your Codex and ChatGPT Work reset will land at 6pm PST.",
+      "contentHash": "47448e06e699724d204fb84b99af7ec6690f8372ab9584b500c0ed4bd906e110",
+      "texts": {
+        "zh": "你的Codex和ChatGPT Work额度将于太平洋标准时间下午6点重置。",
+        "zh-Hant": "你的Codex和ChatGPT Work額度將於太平洋標準時間下午6點重置。",
+        "ja": "CodexとChatGPT Workの利用枠は、太平洋標準時の午後6時にリセットされます。",
+        "ko": "Codex와 ChatGPT Work 사용량은 태평양 표준시 오후 6시에 초기화됩니다.",
+        "es": "Tus límites de Codex y ChatGPT Work se restablecerán a las 18:00 PST.",
+        "fr": "Vos quotas Codex et ChatGPT Work seront réinitialisés à 18 h PST.",
+        "de": "Deine Nutzungslimits für Codex und ChatGPT Work werden um 18 Uhr PST zurückgesetzt.",
+        "ar": "ستُعاد حدود استخدامك في Codex وChatGPT Work عند الساعة السادسة مساءً بتوقيت المحيط الهادئ القياسي (PST)."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2093801758665715784": {
+      "excerpt": "We are reseting usage for all paid users of Codex and ChatGPT Work.",
+      "contentHash": "8a003b13ce8f82fdd5166afb23aa95825bb51591c2c0f44174480261b8e9dc0e",
+      "texts": {
+        "zh": "我们正在为Codex和ChatGPT Work的所有付费用户重置额度。",
+        "zh-Hant": "我們正在為Codex和ChatGPT Work的所有付費用戶重置額度。",
+        "ja": "CodexとChatGPT Workの全有料ユーザーの利用枠をリセットしています。",
+        "ko": "Codex와 ChatGPT Work의 모든 유료 사용자에 대해 사용량을 초기화하고 있습니다.",
+        "es": "Estamos restableciendo el uso de todos los usuarios de pago de Codex y ChatGPT Work.",
+        "fr": "Nous réinitialisons les quotas de tous les utilisateurs payants de Codex et ChatGPT Work.",
+        "de": "Wir setzen die Nutzungslimits aller zahlenden Nutzer von Codex und ChatGPT Work zurück.",
+        "ar": "نعيد ضبط حدود الاستخدام لجميع المستخدمين المشتركين بخطط مدفوعة في Codex وChatGPT Work."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2093742322525810912": {
+      "excerpt": "Compared to today, this works out to a 17% reduction in weekly limits on Claude Code.",
+      "contentHash": "e4a2fa9ab0448b8fab57389fba5486deb6fadd9159f7db2875abd493ff5b1792",
+      "texts": {
+        "zh": "与今天相比，这相当于Claude Code每周额度减少17%。",
+        "zh-Hant": "與今天相比，這相當於Claude Code每週額度減少17%。",
+        "ja": "現時点と比べると、Claude Codeの週間利用枠は17%減る計算になります。",
+        "ko": "현재와 비교하면 Claude Code의 주간 한도가 17% 줄어드는 셈입니다.",
+        "es": "En comparación con hoy, esto equivale a una reducción del 17 % de los límites semanales de Claude Code.",
+        "fr": "Par rapport à aujourd’hui, cela représente une réduction de 17 % des quotas hebdomadaires de Claude Code.",
+        "de": "Verglichen mit heute entspricht das einer Senkung der Wochenlimits von Claude Code um 17 %.",
+        "ar": "مقارنةً بالوضع اليوم، يعادل ذلك انخفاضًا بنسبة 17% في الحدود الأسبوعية لـClaude Code."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2093742321473065266": {
+      "excerpt": "Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans.",
+      "contentHash": "2841d63c8360a20e60671b56cbfc81d72aa251d75ff108bdba98375d23fc87c0",
+      "texts": {
+        "zh": "从9月14日起，我们将为Pro、Max、Team和按席位计费的Enterprise方案永久提高Claude Code标准每周额度，增幅为25%。",
+        "zh-Hant": "從9月14日起，我們將為Pro、Max、Team和按席位計費的Enterprise方案永久提高Claude Code標準每週額度，增幅為25%。",
+        "ja": "9月14日から、Pro、Max、Team、席数課金のEnterpriseプランで、Claude Codeの標準週間利用枠を恒久的に25%引き上げます。",
+        "ko": "9월 14일부터 Pro, Max, Team 및 좌석 기반 Enterprise 요금제의 Claude Code 기본 주간 한도를 영구적으로 25% 높입니다.",
+        "es": "A partir del 14 de septiembre, aumentaremos permanentemente un 25 % los límites semanales estándar de Claude Code para Pro, Max, Team y Enterprise por plazas.",
+        "fr": "À partir du 14 septembre, nous augmenterons définitivement de 25 % les quotas hebdomadaires standard de Claude Code pour Pro, Max, Team et Enterprise par siège.",
+        "de": "Ab dem 14. September erhöhen wir die regulären Wochenlimits von Claude Code für Pro, Max, Team und sitzbasierte Enterprise-Tarife dauerhaft um 25 %.",
+        "ar": "بدءًا من 14 سبتمبر، سنرفع الحدود الأسبوعية القياسية لـClaude Code بصورة دائمة بنسبة 25% لخطط Pro وMax وTeam وEnterprise القائمة على المقاعد."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2093551005711679557": {
+      "excerpt": "There is a place and a time for resets.",
+      "contentHash": "5395d292613e15240fca82a5cff3b640cc18eec3881bff030b6b96ce4b869a7a",
+      "texts": {
+        "zh": "重置也有合适的时间和场合。",
+        "zh-Hant": "重置也有合適的時間和場合。",
+        "ja": "リセットにも適切な時と場所があります。",
+        "ko": "초기화에도 알맞은 때와 자리가 있습니다.",
+        "es": "Los restablecimientos tienen su momento y su lugar.",
+        "fr": "Il y a un moment et un lieu pour les réinitialisations.",
+        "de": "Auch Resets haben ihre Zeit und ihren Ort.",
+        "ar": "لإعادة الضبط وقتها ومكانها."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2093351797830422812": {
+      "excerpt": "Team working hard on infra and usage optimizations",
+      "contentHash": "171a024c92432582a824bb0abeee9d59740d745272dc3d08164e82772a70342e",
+      "texts": {
+        "zh": "团队正努力优化基础设施与额度使用。",
+        "zh-Hant": "團隊正努力優化基礎設施與額度使用。",
+        "ja": "チームはインフラと利用効率の最適化に取り組んでいます。",
+        "ko": "팀이 인프라와 사용량 최적화에 힘쓰고 있습니다.",
+        "es": "El equipo está trabajando intensamente en optimizar la infraestructura y el uso.",
+        "fr": "L’équipe travaille d’arrache-pied à l’optimisation de l’infrastructure et de l’utilisation.",
+        "de": "Das Team arbeitet intensiv an der Optimierung von Infrastruktur und Nutzung.",
+        "ar": "يعمل الفريق بجد على تحسين البنية التحتية والاستخدام."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2093014447833116908": {
+      "excerpt": "Never slept better and feeling reseted.",
+      "contentHash": "f774af5a44590decdcf3356fb1d25f94fea47644d5f76f965f8091a407645ac0",
+      "texts": {
+        "zh": "从没睡得这么好，感觉自己像重置了一样。",
+        "zh-Hant": "從沒睡得這麼好，感覺自己像重置了一樣。",
+        "ja": "こんなによく眠れたのは初めてで、リセットされた気分です。",
+        "ko": "이렇게 잘 잔 적이 없어요. 리셋된 기분입니다.",
+        "es": "Nunca había dormido tan bien; me siento como nuevo.",
+        "fr": "Je n’ai jamais aussi bien dormi ; j’ai l’impression d’avoir été remis à neuf.",
+        "de": "Ich habe noch nie so gut geschlafen und fühle mich wie neu gestartet.",
+        "ar": "لم أنم بهذه الراحة من قبل، وأشعر كأنني بدأت من جديد."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2092862554632826968": {
+      "excerpt": "A good thing about having aged is that I feel that it’s been 20 years since I’ve pressed the reset button.",
+      "contentHash": "6574af9faf87a4c42b96b6242c308e79c63fbfd1b73bfff3de8cc88c15576e2c",
+      "texts": {
+        "zh": "上了年纪有个好处：感觉自己已经20年没按过重置按钮了。",
+        "zh-Hant": "上了年紀有個好處：感覺自己已經20年沒按過重置按鈕了。",
+        "ja": "年を重ねてよかったことの一つは、リセットボタンを押したのが20年も前のように感じられることです。",
+        "ko": "나이가 들어 좋은 점 하나는 리셋 버튼을 누른 지 20년은 된 것처럼 느껴진다는 겁니다.",
+        "es": "Una cosa buena de hacerme mayor es que siento que han pasado 20 años desde que pulsé el botón de reinicio.",
+        "fr": "L’un des avantages de vieillir, c’est que j’ai l’impression que cela fait 20 ans que je n’ai pas appuyé sur le bouton de réinitialisation.",
+        "de": "Eine gute Seite des Älterwerdens ist, dass es sich anfühlt, als hätte ich seit 20 Jahren nicht mehr den Reset-Knopf gedrückt.",
+        "ar": "من مزايا التقدم في العمر أنني أشعر وكأن 20 عامًا مرت منذ ضغطت زر إعادة الضبط."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2092675679724978506": {
+      "excerpt": "Glad you found your usage back.",
+      "contentHash": "072e1f36ee67c3b6415da6ecd5ce16558e779b20ddc2335a88779da36ec6d16b",
+      "texts": {
+        "zh": "很高兴你的额度恢复了。",
+        "zh-Hant": "很高興你的額度恢復了。",
+        "ja": "利用枠が戻ったようでよかったです。",
+        "ko": "사용량 한도가 돌아왔다니 다행이네요.",
+        "es": "Me alegra que hayas recuperado tu uso disponible.",
+        "fr": "Content que vous ayez retrouvé votre quota d’utilisation.",
+        "de": "Schön, dass dein Nutzungskontingent wieder da ist.",
+        "ar": "يسعدني أن حصة استخدامك قد عادت."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2092490655864127909": {
+      "excerpt": "Reseted you mean?",
+      "contentHash": "c0336a322e4fdf17958c3042d3e87617ae5b508a5b4074f2f86db6a26d23da3b",
+      "texts": {
+        "zh": "你是说“重置了”？",
+        "zh-Hant": "你是說「重置了」？",
+        "ja": "「リセットされた」という意味ですか？",
+        "ko": "리셋됐다는 말인가요?",
+        "es": "¿Quieres decir «restablecido»?",
+        "fr": "Vous voulez dire « réinitialisé » ?",
+        "de": "Du meinst „zurückgesetzt“?",
+        "ar": "تقصد «أُعيد ضبطه»؟"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2092058556707344708": {
+      "excerpt": "Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex.",
+      "contentHash": "6f37db399d8c52c9c4b010d021cff43cb51cf2ae0a73ab8dc759bfefe2bcf606",
+      "texts": {
+        "zh": "明天，我们将为ChatGPT Work和Codex的Plus账号恢复5小时限制。",
+        "zh-Hant": "明天，我們將為ChatGPT Work和Codex的Plus帳號恢復5小時限制。",
+        "ja": "明日、ChatGPT WorkとCodexのPlusアカウントに5時間の利用制限を戻します。",
+        "ko": "내일부터 ChatGPT Work와 Codex의 Plus 계정에 5시간 한도를 다시 적용합니다.",
+        "es": "Mañana volveremos a aplicar el límite de 5 horas a las cuentas Plus en ChatGPT Work y Codex.",
+        "fr": "Demain, nous rétablirons la limite de 5 heures pour les comptes Plus sur ChatGPT Work et Codex.",
+        "de": "Morgen führen wir das 5-Stunden-Limit für Plus-Konten in ChatGPT Work und Codex wieder ein.",
+        "ar": "غدًا سنعيد تطبيق حد الساعات الخمس على حسابات Plus في ChatGPT Work وCodex."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2089798442306711646": {
+      "excerpt": "We’re extending the 50% increase to weekly Claude Code limits through August 31.",
+      "contentHash": "596d6240e8aeed23b7728d487cb321cfac05b2d7d586856b44058fff859f9e6e",
+      "texts": {
+        "zh": "Claude Code每周额度提高50%的活动将延长至8月31日。",
+        "zh-Hant": "Claude Code每週額度提高50%的活動將延長至8月31日。",
+        "ja": "Claude Codeの週間利用枠を50%増やす措置を8月31日まで延長します。",
+        "ko": "Claude Code 주간 한도 50% 추가 혜택을 8월 31일까지 연장합니다.",
+        "es": "Prolongamos hasta el 31 de agosto el aumento del 50 % de los límites semanales de Claude Code.",
+        "fr": "Nous prolongeons jusqu’au 31 août l’augmentation de 50 % des quotas hebdomadaires de Claude Code.",
+        "de": "Wir verlängern die Erhöhung der Wochenlimits von Claude Code um 50 % bis zum 31. August.",
+        "ar": "نمدّد زيادة الحدود الأسبوعية لـClaude Code بنسبة 50% حتى 31 أغسطس."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2088014831605702937": {
+      "excerpt": "Hit your usage limit in Claude Code desktop?",
+      "contentHash": "825ca4a468a67da293de2dcd528b7eb7b9a317f7867f52ac3ec9e78c26b795cb",
+      "texts": {
+        "zh": "用完Claude Code桌面版的额度了？",
+        "zh-Hant": "用完Claude Code桌面版的額度了？",
+        "ja": "Claude Codeデスクトップ版の利用上限に達しましたか？",
+        "ko": "Claude Code 데스크톱에서 사용량 한도에 도달하셨나요?",
+        "es": "¿Has alcanzado tu límite de uso en Claude Code para escritorio?",
+        "fr": "Vous avez atteint votre limite d’utilisation dans Claude Code pour ordinateur ?",
+        "de": "Hast du dein Nutzungslimit in Claude Code für den Desktop erreicht?",
+        "ar": "هل وصلت إلى حد الاستخدام في إصدار سطح المكتب من Claude Code؟"
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2078511173759324328": {
+      "excerpt": "We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.",
+      "contentHash": "fdc14ecfb69cf00850a51fd40c2daab6f0c6046020d4b4a6d690a284b2f6c361",
+      "texts": {
+        "zh": "我们还将继续为所有Pro、Max、Team和按席位计费的Enterprise用户提高Claude Code每周额度，增幅为50%，现延长至8月19日。",
+        "zh-Hant": "我們還將繼續為所有Pro、Max、Team和按席位計費的Enterprise用戶提高Claude Code每週額度，增幅為50%，現延長至8月19日。",
+        "ja": "Pro、Max、Team、席数課金のEnterpriseの全ユーザーを対象に、Claude Codeの週間利用枠を50%増やす措置も8月19日まで継続します。",
+        "ko": "모든 Pro, Max, Team 및 좌석 기반 Enterprise 사용자를 위한 Claude Code 주간 한도 50% 추가 혜택도 8월 19일까지 유지합니다.",
+        "es": "También mantenemos un 50 % más de uso semanal de Claude Code, ahora hasta el 19 de agosto, para todos los usuarios de Pro, Max, Team y Enterprise por plazas.",
+        "fr": "Nous maintenons aussi les quotas hebdomadaires de Claude Code à un niveau 50 % plus élevé, désormais jusqu’au 19 août, pour tous les utilisateurs de Pro, Max, Team et Enterprise par siège.",
+        "de": "Außerdem bleiben die Wochenlimits von Claude Code für alle Nutzer von Pro, Max, Team und sitzbasiertem Enterprise um 50 % erhöht, jetzt bis zum 19. August.",
+        "ar": "نُبقي أيضًا الحدود الأسبوعية لـClaude Code أعلى بنسبة 50%، حتى 19 أغسطس الآن، لجميع مستخدمي Pro وMax وTeam وEnterprise القائمة على المقاعد."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2078302415804379218": {
+      "excerpt": "Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.",
+      "contentHash": "6724725409cbd2386999461878e2ee18a2edcf3fb8e49e30dbbb888fba91741e",
+      "texts": {
+        "zh": "从7月20日起，所有Max和Team Premium方案都将包含Claude Fable 5，按50%的额度计算。",
+        "zh-Hant": "從7月20日起，所有Max和Team Premium方案都將包含Claude Fable 5，按50%的額度計算。",
+        "ja": "7月20日から、Claude Fable 5はすべてのMaxとTeam Premiumプランに含まれ、利用枠の50%で利用できます。",
+        "ko": "7월 20일부터 모든 Max 및 Team Premium 요금제에 Claude Fable 5가 포함되며, 한도의 50%로 이용할 수 있습니다.",
+        "es": "A partir del 20 de julio, Claude Fable 5 estará incluido en todos los planes Max y Team Premium, al 50 % de los límites.",
+        "fr": "À partir du 20 juillet, Claude Fable 5 sera inclus dans tous les abonnements Max et Team Premium, à 50 % des limites.",
+        "de": "Ab dem 20. Juli ist Claude Fable 5 in allen Max- und Team-Premium-Tarifen enthalten, bei 50 % der Limits.",
+        "ar": "بدءًا من 20 يوليو، ستشمل جميع خطط Max وTeam Premium نموذج Claude Fable 5، عند 50% من الحدود."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2077603834453770467": {
+      "excerpt": "We've reset 5-hour and weekly rate limits for all users.",
+      "contentHash": "9426ac8f612f051f6c9f5ce96101ccb0e54b263b03bc4206b466e414009449d0",
+      "texts": {
+        "zh": "我们已为所有用户重置5小时额度和每周额度。",
+        "zh-Hant": "我們已為所有用戶重置5小時額度和每週額度。",
+        "ja": "全ユーザーの5時間枠と週間利用枠をリセットしました。",
+        "ko": "모든 사용자의 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+        "fr": "Nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+        "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2076351399999557669": {
+      "excerpt": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+      "contentHash": "474fbe52cd48dfc2567dba419646da805bf754addd8f82185a4096e1e618d0fd",
+      "texts": {
+        "zh": "我们将所有付费方案使用Claude Fable 5的期限延长至7月19日，Claude Code每周额度提高50%的措施也将维持到这一天。",
+        "zh-Hant": "我們將所有付費方案使用Claude Fable 5的期限延長至7月19日，Claude Code每週額度提高50%的措施也將維持到這一天。",
+        "ja": "すべての有料プランでClaude Fable 5を利用できる期間と、Claude Codeの週間利用枠を50%増やす措置を、7月19日まで延長します。",
+        "ko": "모든 유료 요금제의 Claude Fable 5 이용 기간과 Claude Code 주간 한도 50% 추가 혜택을 7월 19일까지 연장합니다.",
+        "es": "Prolongamos hasta el 19 de julio el acceso a Claude Fable 5 en todos los planes de pago y el aumento del 50 % de los límites semanales de Claude Code.",
+        "fr": "Nous prolongeons jusqu’au 19 juillet l’accès à Claude Fable 5 pour tous les abonnements payants, ainsi que les quotas hebdomadaires de Claude Code augmentés de 50 %.",
+        "de": "Wir verlängern den Zugang zu Claude Fable 5 für alle kostenpflichtigen Tarife und die um 50 % erhöhten Wochenlimits von Claude Code bis zum 19. Juli.",
+        "ar": "نمدّد الوصول إلى Claude Fable 5 في جميع الخطط المدفوعة، ونُبقي الحدود الأسبوعية لـClaude Code أعلى بنسبة 50%، حتى 19 يوليو."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2075279141352706215": {
+      "excerpt": "We've reset 5-hour and weekly rate limits for all users.",
+      "contentHash": "9426ac8f612f051f6c9f5ce96101ccb0e54b263b03bc4206b466e414009449d0",
+      "texts": {
+        "zh": "我们已为所有用户重置5小时额度和每周额度。",
+        "zh-Hant": "我們已為所有用戶重置5小時額度和每週額度。",
+        "ja": "全ユーザーの5時間枠と週間利用枠をリセットしました。",
+        "ko": "모든 사용자의 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+        "fr": "Nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+        "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2074525821755101458": {
+      "excerpt": "We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude.",
+      "contentHash": "fc74e7eee869e3cf2d547ea22f3d76cd322af4c73ce2491dbd56f78a7cb90690",
+      "texts": {
+        "zh": "我们将Cowork使用额度翻倍的活动延长至8月5日，让你能把更大的任务交给Claude。",
+        "zh-Hant": "我們將Cowork使用額度翻倍的活動延長至8月5日，讓你能把更大的任務交給Claude。",
+        "ja": "Coworkの利用枠を2倍にする措置を8月5日まで延長し、より大きな仕事をClaudeに任せられるようにします。",
+        "ko": "더 큰 작업을 Claude에 맡길 수 있도록 Cowork 사용량 한도 두 배 혜택을 8월 5일까지 연장합니다.",
+        "es": "Prolongamos hasta el 5 de agosto los límites de uso duplicados de Cowork para que puedas delegar tareas más grandes a Claude.",
+        "fr": "Nous prolongeons jusqu’au 5 août le doublement des quotas de Cowork, pour vous permettre de confier des tâches plus importantes à Claude.",
+        "de": "Wir verlängern die verdoppelten Nutzungslimits von Cowork bis zum 5. August, damit du größere Aufgaben an Claude delegieren kannst.",
+        "ar": "نمدّد مضاعفة حدود استخدام Cowork حتى 5 أغسطس، لتتمكن من إسناد مهام أكبر إلى Claude."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2072429181565288665": {
+      "excerpt": "Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
+      "contentHash": "ed08517819ab4fe37a3438b0a46b05545eb63e7aff073b85521ccc8738945600",
+      "texts": {
+        "zh": "Fable 5现已（再次）可以用于开发，我们也重置了所有人的5小时额度和每周额度。",
+        "zh-Hant": "Fable 5現已（再次）可以用於開發，我們也重置了所有人的5小時額度和每週額度。",
+        "ja": "Fable 5で再び開発できるようになったので、全員の5時間枠と週間利用枠をリセットしました。",
+        "ko": "Fable 5가 다시 개발에 사용할 준비를 마쳤으므로, 모든 사용자의 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Ahora que Fable 5 está listo para desarrollar de nuevo, hemos restablecido los límites de 5 horas y semanales de todo el mundo.",
+        "fr": "Maintenant que Fable 5 est de nouveau prêt pour le développement, nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tout le monde.",
+        "de": "Da Fable 5 wieder für die Entwicklung bereitsteht, haben wir die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "الآن وقد أصبح Fable 5 جاهزًا للتطوير مجددًا، أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية للجميع."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2072402639644766602": {
+      "excerpt": "All paid plans with usage included can access Fable 5 through July 7.",
+      "contentHash": "bd6f48524f388d21fe0d6b3edd81f28540636bd95dccb4f10f16940ec7f84ecd",
+      "texts": {
+        "zh": "所有包含使用额度的付费方案都可使用Fable 5，期限至7月7日。",
+        "zh-Hant": "所有包含使用額度的付費方案都可使用Fable 5，期限至7月7日。",
+        "ja": "利用枠が含まれるすべての有料プランで、7月7日までFable 5を利用できます。",
+        "ko": "사용량이 포함된 모든 유료 요금제에서 7월 7일까지 Fable 5를 이용할 수 있습니다.",
+        "es": "Todos los planes de pago con uso incluido pueden acceder a Fable 5 hasta el 7 de julio.",
+        "fr": "Tous les abonnements payants comprenant un quota d’utilisation peuvent accéder à Fable 5 jusqu’au 7 juillet.",
+        "de": "Alle kostenpflichtigen Tarife mit enthaltenem Nutzungskontingent können Fable 5 bis zum 7. Juli nutzen.",
+        "ar": "يمكن لجميع الخطط المدفوعة التي تتضمن حصة استخدام الوصول إلى Fable 5 حتى 7 يوليو."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2068122937308426676": {
+      "excerpt": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans.",
+      "contentHash": "feea32c8d48e0d245aa0e3d663f3b90c85c1cfd6b28a222b33eb97963e17c449",
+      "texts": {
+        "zh": "更新：我们已经为所有方案的全部用户重置5小时额度和每周额度。",
+        "zh-Hant": "更新：我們已經為所有方案的全部用戶重置5小時額度和每週額度。",
+        "ja": "更新：すべてのプランの全ユーザーを対象に、5時間枠と週間利用枠をリセットしました。",
+        "ko": "업데이트: 모든 요금제의 모든 사용자에 대해 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Actualización: ya hemos restablecido los límites de uso de 5 horas y semanales de todos los usuarios, en todos los planes.",
+        "fr": "Mise à jour : nous avons réinitialisé les quotas de 5 heures et hebdomadaires pour tout le monde, tous abonnements confondus.",
+        "de": "Update: Wir haben die 5-Stunden- und Wochenlimits für alle Nutzer in sämtlichen Tarifen zurückgesetzt.",
+        "ar": "تحديث: أعدنا بالفعل ضبط حدود الاستخدام لخمس ساعات والحدود الأسبوعية للجميع، في جميع الخطط."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    },
+    "2061501787769893055": {
+      "excerpt": "We've reset 5-hour and weekly rate limits for all users on Pro and Max plans.",
+      "contentHash": "b95a5e79016627fc5891a50c8089d7e7f28dbbb3a3aae14d26d5e72c77e2a467",
+      "texts": {
+        "zh": "我们已为Pro和Max方案的所有用户重置5小时额度和每周额度。",
+        "zh-Hant": "我們已為Pro和Max方案的所有用戶重置5小時額度和每週額度。",
+        "ja": "ProとMaxプランの全ユーザーの5時間枠と週間利用枠をリセットしました。",
+        "ko": "Pro 및 Max 요금제의 모든 사용자에 대해 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Hemos restablecido los límites de 5 horas y semanales de todos los usuarios de los planes Pro y Max.",
+        "fr": "Nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs des abonnements Pro et Max.",
+        "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer der Pro- und Max-Tarife zurückgesetzt.",
+        "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع مستخدمي خطتَي Pro وMax."
+      },
+      "provider": "editorial-review",
+      "reviewedAt": "2026-09-08T18:33:18.785Z"
+    }
+  },
+  "pending": 0
+}

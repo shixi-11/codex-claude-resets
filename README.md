@@ -10,7 +10,7 @@ Codex & Claude Resets puts the next confirmed Codex and Claude reset time first.
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
 - **Stay current.** The open page refreshes public records automatically. No notifications, email subscriptions or personal-account access.
-- **Read in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available.
+- **Read news in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available. Post excerpts follow the selected language; the original source is one click away.
 - **Follow without another account.** RSS, public JSON and permanent event links are built in.
 
 
@@ -21,6 +21,8 @@ The collector polls Tibo and ClaudeDevs timelines through the public FxEmbed rel
 A post that remains truncated stays **unconfirmed**, even when the visible portion sounds promising. An announcement never becomes a completed reset just because time has passed. “Reported complete” describes the source's statement; it does not verify your account.
 
 The page shows source health and the last successful check. After three hours without a successful check, it marks the data as potentially stale, including in a tab left open. This is a selective announcement feed, not a complete account or service-status monitor. See [OpenAI's usage guidance](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for account-specific details.
+
+Post translations are cached in `data/translations.json` and bound to the exact excerpt and source content hash. The scheduled collector uses FxEmbed's documented `lang` parameter for newly discovered text; failed translations remain pending and display the English original. Current excerpts receive editorial correction, especially for reset-credit terminology. Translated prose never determines evidence status or countdown time. The browser receives cached text, with no translation credentials or paid API fallback.
 
 ### Runs on its own
 

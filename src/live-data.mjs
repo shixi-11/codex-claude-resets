@@ -11,7 +11,7 @@ export async function refreshLiveData(){
   const [platforms,health,events]=await Promise.all(['platforms.json','health.json','events.json'].map(path=>fetch(new URL(path+'?t='+Date.now(),base),{cache:'no-store',signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();})));
   if(!valid(platforms)||!Number.isFinite(Date.parse(health.lastSuccessAt))||!Array.isArray(events)||!events.every(validateEvent))throw Error('Invalid data');
   pageData.events=events;Object.assign(pageData.platforms,platforms);Object.assign(pageData.health,health);window.dispatchEvent(new Event('reset-data-updated'));
-  const label=document.querySelector('[data-live-status]');if(label)label.textContent=w.updated+' · '+new Intl.DateTimeFormat(pageData.lang,{hour:'2-digit',minute:'2-digit'}).format(new Date());
- }catch{const label=document.querySelector('[data-live-status]');if(label)label.textContent=w.offline;}finally{busy=false;if(button)button.disabled=false;}
+  const label=document.querySelector('[data-live-status]');if(label){label.textContent=w.updated;label.hidden=true;}
+ }catch{const label=document.querySelector('[data-live-status]');if(label){label.textContent=w.offline;label.hidden=false;}}finally{busy=false;if(button)button.disabled=false;}
 }
 refreshLiveData();setInterval(()=>{if(!document.hidden)refreshLiveData();},60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshLiveData();});
