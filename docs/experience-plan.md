@@ -1,20 +1,25 @@
-# Codex与Claude重置站体验优化
+# Automatic reset tracker: product and verification
 
-首要受众：关注Codex、Claude额度重置与赠送重置卡的用户。
+## Visitor outcome
 
-首屏信息顺序：平台名称 → 距离重置的时间 → 访客当地重置时刻 → 公告确认状态。两个独立计时器是视觉主体，角色、赠送消息和历史记录服从这条层级。
+A visitor can immediately see whether a public reset has a confirmed schedule, find the latest verified reset announcement, check their actual account usage, and follow future announcements with one click. No personal date entry is required.
 
-按小主人追加要求，每个平台提供计时器与闹钟：公开公告模式和个人时间模式明确切换；个人时间分别保存，提醒分别启用。网页闹钟需要保持页面打开、设备唤醒并允许播放声音，后台节流可能造成延迟；需要关闭网页后提醒时提供系统日历导出。到点不能自动宣称平台额度已经恢复。
+## Implemented
 
-1. 名称优先使用Codex & Claude Resets，网页标题与收藏标签明确保留两个平台名称。
-2. 两个平台采用相同的时间卡片结构；公开重置公告与各自个人额度周期分开，未知时间不编造倒计时。
-3. 键帽角色形成统一品牌：简化头像作为网页Logo及收藏图标，透明完整版用作适量插画。检查16px、32px图标和手机实际显示。
-4. 参考同类网站的历史时间轴、分类、来源入口与提醒模式，提炼合适功能与展示，不机械复制整站文案和品牌素材。
-5. 加入重置、重置卡、额外额度的简明图文说明；保留九语言、默认英文、访客时区自动换算、原域名和开源仓库。
-6. 实测双平台独立计时、跨时区、到期状态、透明背景、桌面平板手机及云端更新后发布。
+- Removed manual timers, input forms, local-storage clock persistence and their obsolete tests.
+- Separated the next announcement from the latest confirmed reset record. Unknown schedules remain unknown; a passed deadline awaits confirmation.
+- Alerts follow changed or cancelled announcements and new confirmed completions. Repeated checks do not repeat an alert. Historical records do not ring on enable.
+- The open page checks published JSON every minute and when returning to the page. The existing backend checks sources twice hourly and produces a daily digest. These are separate cadences; this is not a direct real-time X subscription.
+- Platforms, offers, history and source health update together. Invalid or failed responses preserve the last valid data and show a connection message.
+- Announced times older than three hours since verification no longer sustain a countdown.
+- Built the reset station in Blender 4.5 LTS. Editable scene: design/reset-station/reset-station.blend. A transparent WebP render is used in the interface, with a small state change when watching. No WebGL dependency or foreground Blender window is needed.
+- Preserved the approved keycap mascot, nine languages, English default, local time, source links, RSS, JSON, support and collaboration links.
+- Changed the canonical URL and repository slug to codex-claude-resets. Existing RSS GUIDs remain stable.
 
-初步参考：codex-resets.com突出最新重置时间与历史记录；resetradar.com区分公开变化和个人滚动周期；resetbeacon.com把下一次时间作为首要信息。具体采纳范围随真实功能核验确定。
+## Validation
 
-本轮落地：双平台数码计时器、独立个人时间、本地实时时钟、网页声音提醒与系统日历提醒；键帽Logo、32px收藏图标、180px主屏图标、透明原角色与更新后的分享图；赠送额度图文卡片和带平台筛选的历史消息。
+20 unit tests; 9 automatic announcement/alert browser scenarios; 27 language/viewport combinations, plus filters, pagination, FAQ, language switching, event pages and keyboard focus. Main-site locale, font and production-build checks pass. Production migration is checked separately after deployment.
 
-参考来源：[Codex Resets](https://codex-resets.com/)的重置优先级、历史分类与提醒入口；[Reset Radar](https://www.resetradar.com/)的公开消息与个人计时区分；[Reset Beacon](https://resetbeacon.com/)的时间信息层级。本站保留自己的角色、配色、排版和代码，没有采用无官方依据的预测时间。
+## Deliberate limits
+
+This public site cannot read visitor account balances. In-page alerts require the page and device to remain active; browser background throttling can delay them. Calendar export is offered when an announcement has a confirmed future instant. Unknown schedules do not get a guessed forecast or a manual replacement clock.

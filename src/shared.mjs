@@ -1,5 +1,5 @@
-export const CANONICAL = 'https://shixilin.com/ai/codex-reset/';
-export const REPO = 'https://github.com/shixi-11/codex-respawn';
+export const CANONICAL = 'https://shixilin.com/ai/codex-claude-resets/';
+export const REPO = 'https://github.com/shixi-11/codex-claude-resets';
 export const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function freshness(health, now = Date.now()) {
   const at = Date.parse(health.lastSuccessAt);

@@ -15,9 +15,9 @@ events.forEach(validateEvent);
 await mkdir(out, { recursive: true });
 await cp(new URL('public/', root), out, { recursive: true, filter: path => !String(path).endsWith('mascot-source.png') });
 await mkdir(new URL('assets/', out), { recursive: true });
-const clientFiles=['app.mjs','style.css','shared.mjs','reset-status.mjs','platform-copy.mjs','clock-app.mjs','clock-copy.mjs','personal-clock.mjs','clocks.css'];
+const clientFiles=['app.mjs','style.css','shared.mjs','reset-status.mjs','platform-copy.mjs','clock-app.mjs','clock-copy.mjs','watch-copy.mjs','live-data.mjs','offers.mjs','clocks.css'];
 const assetVersion=createHash('sha256').update(Buffer.concat(await Promise.all(clientFiles.map(file=>readFile(new URL('src/'+file,root)))))).digest('hex').slice(0,10);
-for (const file of clientFiles) await cp(new URL(`src/${file}`, root), new URL(`assets/${file}`, out));
+for (const file of clientFiles) {const source=new URL(`src/${file}`,root),target=new URL(`assets/${file}`,out);if(file.endsWith('.mjs')){const text=await readFile(source,'utf8');await writeFile(target,text.replace(/(from\s*['"]\.\/[^'"]+\.mjs)(['"])/g,(_,path,quote)=>path+'?v='+assetVersion+quote));}else await cp(source,target);}
 for (const file of ['events.json','health.json','platforms.json']) await cp(new URL(`data/${file}`,root),new URL(file,out));
 const write = async (path, text) => {const url = new URL(path, out); await mkdir(new URL('./',url),{recursive:true});await writeFile(url,text);};
 const usageUrl = 'https://chatgpt.com/codex/settings/usage';

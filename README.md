@@ -1,7 +1,7 @@
 <p align="center"><img src="public/favicon.svg" width="52" alt="Codex &amp; Claude Resets keycap logo"></p>
 <h1 align="center">Codex &amp; Claude Resets</h1>
 <p align="center"><strong>Two platforms. Two clocks.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
-<p align="center"><a href="https://shixilin.com/ai/codex-reset/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-reset/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-reset/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
+<p align="center"><a href="https://shixilin.com/ai/codex-claude-resets/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-claude-resets/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-claude-resets/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
 ![Codex & Claude Resets desktop interface](docs/screenshot.jpg)
 
@@ -9,11 +9,11 @@ Codex & Claude Resets puts the next confirmed Codex and Claude reset time first.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
-- **Keep your own time.** Set independent Codex and Claude timers from the times displayed in your accounts. Keep them in this browser, enable an in-page alarm, or download a calendar reminder.
+- **Follow automatically.** Enable alerts for either platform, even before a time is announced. New confirmed resets and changed announcements appear automatically; published deadlines get a countdown and calendar export.
 - **Read in nine languages.** English opens by default, with 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch and العربية available.
 - **Follow without another account.** RSS, public JSON and permanent event links are built in.
 
-In-page alarms require an open page, an awake device and sound permission; browser throttling can delay them. Use the calendar export for reminders after closing the page. A due timer asks you to check your account, never claims your quota was restored.
+In-page alarms require an open page, an awake device and sound permission; browser throttling can delay them. Use the calendar export for reminders after closing the page. An elapsed announcement awaits confirmation and never claims your quota was restored.
 
 ### What “checked” means
 
@@ -49,12 +49,12 @@ node scripts/serve.mjs
 
 Open `http://127.0.0.1:4187/`. To refresh data, run `node scripts/collect.mjs`. To create a digest, run `node scripts/digest.mjs`.
 
-For image processing or browser checks, install development dependencies with `pnpm install`. `pnpm qa` uses an installed Chrome in headless mode. The timer and calendar export operate locally; no visitor account data is collected by this application.
+For image processing or browser checks, install development dependencies with `pnpm install`. `pnpm qa` uses an installed Chrome in headless mode. Alerts and calendar export operate locally; no visitor account data is collected by this application.
 
 ### Reuse the feed
 
 ```sh
-curl https://shixilin.com/ai/codex-reset/events.json
+curl https://shixilin.com/ai/codex-claude-resets/events.json
 ```
 
 Each event has a source URL, post ID, type, evidence state, creation and verification timestamps, a short excerpt, truncation flag, provenance, rules version and content hash. A stable post ID is the deduplication key. Details and the trust boundary are in [the data notes](docs/data.md).
@@ -67,11 +67,11 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 
 **还要多久重置？** Codex & Claude Resets把Codex和Claude的已确认重置时间、倒计时、重置卡和额外额度消息放在同一页，自动按访客本地时区显示，并附原始来源。
 
-[打开网站](https://shixilin.com/ai/codex-reset/zh/) · [RSS订阅](https://shixilin.com/ai/codex-reset/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-reset/events.json)
+[打开网站](https://shixilin.com/ai/codex-claude-resets/zh/) · [RSS订阅](https://shixilin.com/ai/codex-claude-resets/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-claude-resets/events.json)
 
 - 区分重置预告、已宣布完成、可用重置次数、额度变化和尚未确认的线索。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
-- Codex和Claude分别设置个人计时器，使用自己账号显示的时间；可保存到本机、开启网页闹钟或下载日历提醒。
+- Codex和Claude分别开启自动提醒；无确切时间时等待公告，已公布时间自动倒计时，也可下载日历提醒。
 - 默认英文，提供九种语言；网站和自动更新放在同一个开源仓库。
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 

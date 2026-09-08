@@ -32,3 +32,6 @@ export const locales = Object.fromEntries(Object.entries(rows).map(([lang, row])
   if (row.length !== keys.length) throw new Error(`${lang}: ${row.length} translations for ${keys.length} keys`);
   return [lang, Object.fromEntries(keys.map((key, i) => [key, row[i]]))];
 }));
+
+const privacy={en:'No login. No account access. Calendar downloads stay on your device.',zh:'无需登录，不读取账号。下载的日历文件留在本机。','zh-Hant':'無需登入，不讀取帳號。下載的行事曆檔案留在本機。',ja:'ログイン不要。アカウントへのアクセスはありません。カレンダーは端末に保存されます。',ko:'로그인이나 계정 접근 없이 사용합니다. 캘린더 파일은 기기에 저장됩니다.',es:'Sin inicio de sesión ni acceso a tu cuenta. Los calendarios se descargan en tu dispositivo.',fr:'Sans connexion ni accès à votre compte. Les calendriers restent sur votre appareil.',de:'Ohne Anmeldung oder Kontozugriff. Kalenderdateien bleiben auf deinem Gerät.',ar:'لا يلزم تسجيل الدخول ولا نصل إلى حسابك. تبقى ملفات التقويم على جهازك.'};
+for(const [lang,value] of Object.entries(privacy))locales[lang].privacy=value;

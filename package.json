@@ -5,11 +5,11 @@
     "playwright": "1.63.0",
     "sharp": "^0.35.4"
   },
-  "name": "codex-respawn",
+  "name": "codex-claude-resets",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Codex reset announcements, a personal timer, and source-linked updates in nine languages.",
+  "description": "Automatic public reset tracking, alerts and source-linked Codex and Claude updates in nine languages.",
   "scripts": {
     "digest": "node scripts/digest.mjs",
     "test": "node --test",

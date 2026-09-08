@@ -6,6 +6,10 @@ const announcement = { state:'announced', resetAt:'2026-09-08T02:00:00Z', source
 test('unknown or incomplete evidence never creates a countdown', () => {
   for (const record of [null, {}, {...announcement, sourceUrl:null}, {...announcement, resetAt:'2026-09-08T02:00:00'}]) assert.equal(resetStatus(record,now).remainingMs,null);
 });
+
+test('stale or invalid verification cannot sustain a public countdown', () => {
+ for(const verifiedAt of ['invalid','2026-09-07T00:00:00Z','2026-09-09T00:00:00Z'])assert.equal(resetStatus({...announcement,verifiedAt},now).state,'unknown');
+});
 test('countdown follows the absolute instant and elapsed time awaits confirmation', () => {
   assert.equal(countdown(resetStatus(announcement,now).remainingMs),'02:00:00');
   assert.equal(resetStatus(announcement,now+7200000).state,'awaitingConfirmation');
