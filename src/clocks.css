@@ -27,3 +27,7 @@
 @media(max-width:650px){.supplemental>summary{padding:17px 18px}.supplemental .offers-section{padding:0 12px;margin-bottom:12px}.offer-grid{gap:12px}.offer-card{padding:17px}.offer-title{font-size:16px;margin-top:14px}.offer-facts>div{grid-template-columns:64px minmax(0,1fr);gap:10px}.offer-facts dt,.offer-facts dd{font-size:12px}.tweet-excerpt{font-size:14px;line-height:1.8}.offer-type{font-size:10px}.updates-panel{padding:16px 18px 12px}.platform-filters button{min-height:40px}.last-reset{font-size:11px}.offer-card .offer-bottom{margin-top:14px}.tweet-archive>summary{font-size:15px;padding:17px 18px}}
 .offer-meaning{font-size:12px;line-height:1.7;color:#6a7862;margin:-5px 0 13px}
 .live-controls{justify-content:flex-end}.live-controls>[data-live-status]:not([hidden]){margin-inline-end:auto}
+
+/* Latest announcement is primary; older reset records are secondary. */
+.last-reset>span{color:#193d2c;font-weight:600}.reset-history>summary,.reset-history li a{color:#687168}.reset-history>summary{font-weight:500}
+
