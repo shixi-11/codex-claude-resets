@@ -104,9 +104,10 @@
         "es": "Nunca te voy a defraudar  \nNunca te voy a abandonar  \nNunca voy a correr y dejarte  \nNunca voy a hacerte llorar  \nNunca voy a decir adiós  \nNunca voy a decir una mentira y lastimarte  \n\nGracias por leer. Vamos a hacer un reinicio global del uso para todas las suscripciones pagadas para que puedas seguir disfrutando de Astra después de haberlo agotado todo haciendo modelado 3D divertido en Blender. La semana laboral está a punto de comenzar.  \n\nLlega alrededor de las 6pm PST hoy.",
         "fr": "Jamais je ne renoncerai à toi  \nJamais je ne te décevrai  \nJamais je ne courrai et t'abandonnerai  \nJamais je ne te ferai pleurer  \nJamais je ne dirai au revoir  \nJamais je ne mentirai et te ferai souffrir  \n\nMerci d'avoir lu. Nous allons effectuer une réinitialisation globale de l'utilisation pour tous les abonnements payants afin que vous puissiez continuer à profiter d'Astra après avoir épuisé tout le quota en faisant du modélage 3D amusant dans Blender. La semaine de travail est sur le point de commencer.  \n\nAtterrissage prévu vers 18h PST aujourd'hui.",
         "de": "Niemals werd ich dich aufgeben\nNiemals werd ich dich im Stich lassen\nNiemals werd ich rumrennen und dich verlassen\nNiemals werd ich dich zum Weinen bringen\nNiemals werd ich dir Auf Wiedersehen sagen\nNiemals werd ich lügen und dich verletzen\n\nDanke fürs Lesen. Wir werden einen globalen Reset der Nutzung für alle kostenpflichtigen Abonnements durchführen, damit du weiterhin Astra genießen kannst, nachdem du alles verbraucht hast, um lustiges 3D-Modeling in Blender zu machen. Die Arbeitswoche steht kurz bevor.\n\nLandung um ca. 18 Uhr PST heute.",
-        "ar": "لن أتخلّى عنك أبداً\nلن أُخيّب ظنّك أبداً\nلن أهرب وأترُكك أبداً\nلن أجعلك تبكي أبداً\nلن أودّعك أبداً\nلن أكذب وأؤذيك أبداً\n\nشكراً لقراءتك. سنقوم بإعادة تعيين عالمي للاستخدام لجميع الاشتراكات المدفوعة حتى تتمكن من الاستمتاع بـAstra بعد أن تستنفد كل شيء في عمليات نمذجة ثلاثية الأبعاد ممتعة في Blender. أسبوع العمل على وشك البدء.\n\nيهبط حوالي الساعة 6 مساءً بتوقيت المحيط الهادئ اليوم."
+        "ar": "لن أتخلّى عنك أبداً\nلن أُخيّب ظنّك أبداً\nلن أهرب وأترُكك أبداً\nلن أجعلك تبكي أبداً\nلن أودّعك أبداً\nلن أكذب وأؤذيك أبداً\n\nشكراً لقراءتك. سنقوم بإعادة تعيين عالمي للاستخدام لجميع الاشتراكات المدفوعة حتى تتمكن من الاستمتاع بـAstra بعد أن تستنفد كل شيء في عمليات نمذجة ثلاثية الأبعاد ممتعة في Blender. أسبوع العمل على وشك البدء.\n\nيهبط حوالي الساعة 6 مساءً بتوقيت المحيط الهادئ اليوم.",
+        "ja": "君を絶対に諦めない\n君を絶対に失望させない\n君を置いて逃げたり捨てたりしない\n君を泣かせたりしない\nさよならなんて言わない\n嘘をついて君を傷つけたりしない\n\n読んでくれてありがとう。有料サブスクリプションすべての使用量をグローバルにリセットするよ。Blenderで楽しい3Dモデリングに全部使い切っちゃった後でも、Astraをこれからも楽しめるようにね。仕事週間がもうすぐ始まるよ。\n\n今日の午後6時頃PSTに到着予定。"
       },
-      "translatedAt": "2026-09-09T21:43:44.875Z"
+      "translatedAt": "2026-09-09T21:59:36.540Z"
     },
     "2096717905614524491": {
       "excerpt": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.",
@@ -582,10 +583,12 @@
         "ja": "リセットには場所と時間があります。もうすぐですが、今日ではありません。",
         "ko": "리셋에는 적절한 장소와 시기가 있습니다. 곧이지만, 오늘은 아닙니다.",
         "es": "Hay un lugar y un momento para los reinicios. Pronto, pero no hoy.",
-        "fr": "Il y a un lieu et un moment pour les réinitialisations. Bientôt, mais pas aujourd'hui."
+        "fr": "Il y a un lieu et un moment pour les réinitialisations. Bientôt, mais pas aujourd'hui.",
+        "de": "Es gibt einen Ort und eine Zeit für Neustarts. Bald, aber nicht heute.",
+        "ar": "هناك مكان وزمان لإعادة التعيين. قريبًا، لكن ليس اليوم"
       },
       "fullText": "There is a place and a time for resets. Soon, but not today",
-      "translatedAt": "2026-09-09T21:44:01.973Z"
+      "translatedAt": "2026-09-09T21:59:41.199Z"
     },
     "2093351797830422812": {
       "excerpt": "Team working hard on infra and usage optimizations",
@@ -609,10 +612,11 @@
         "es": "Siempre mejorando. El equipo trabajando duro en infra y optimizaciones de uso.",
         "fr": "Toujours en amélioration. L'équipe travaille dur sur l'infrastructure et les optimisations d'utilisation.",
         "de": "Immer am Verbessern. Team arbeitet hart an Infra- und Nutzungsoptimierungen",
-        "ar": "دائمًا في تحسّن. الفريق يعمل بجد على تحسين البنية التحتية وتحسينات الاستخدام"
+        "ar": "دائمًا في تحسّن. الفريق يعمل بجد على تحسين البنية التحتية وتحسينات الاستخدام",
+        "ko": "계속 개선 중입니다. 팀이 인프라와 사용 최적화에 열심히 노력하고 있습니다."
       },
       "fullText": "Always improving. Team working hard on infra and usage optimizations",
-      "translatedAt": "2026-09-09T21:44:06.670Z"
+      "translatedAt": "2026-09-09T21:59:41.458Z"
     },
     "2093014447833116908": {
       "excerpt": "Never slept better and feeling reseted.",
@@ -691,10 +695,11 @@
         "ko": "친애하는 빅토르님, 모든 것을 용서했습니다. 사용법을 다시 찾으신 걸 기쁘게 생각합니다. 함께 만들어갑시다!",
         "fr": "Cher Viktor, tout est pardonné. Ravi que tu aies retrouvé ton usage. Construisons !",
         "de": "Lieber Viktor, alles ist vergeben. Freut mich, dass du deinen Schwung wiedergefunden hast. Lass uns bauen!",
-        "ar": "عزيزي فيكتور، كل شيء مغفور. سعيد بأنك وجدت استخدامك مرة أخرى. لنبنِ!"
+        "ar": "عزيزي فيكتور، كل شيء مغفور. سعيد بأنك وجدت استخدامك مرة أخرى. لنبنِ!",
+        "es": "Querido Viktor, todo está perdonado. Me alegra que hayas recuperado tu uso. ¡Construyamos!"
       },
       "fullText": "Dear Viktor, it's all forgiven. Glad you found your usage back. Let's build!",
-      "translatedAt": "2026-09-09T21:44:12.146Z"
+      "translatedAt": "2026-09-09T21:59:41.834Z"
     },
     "2092490655864127909": {
       "excerpt": "Reseted you mean?",
@@ -797,10 +802,12 @@
         "ko": "Claude Code 데스크톱에서 사용 한도를 초과했나요? 이제 자동 계속 체크박스가 있습니다.\n\n이것을 켜면 한도가 재설정되면 중단한 곳에서 자동으로 계속됩니다.",
         "es": "¿Alcanzaste tu límite de uso en Claude Code de escritorio? Ahora hay una casilla de verificación para continuar automáticamente.\n\nActívala, y continuará automáticamente donde lo dejaste una vez que tu límite se reinicie.",
         "fr": "Avez-vous atteint votre limite d'utilisation dans Claude Code sur ordinateur ? Il existe désormais une case à cocher pour la poursuite automatique.\n\nActivez-la, et elle continuera automatiquement là où vous vous êtes arrêté une fois que votre limite sera réinitialisée.",
-        "de": "Haben Sie Ihr Nutzungs-Limit in Claude Code Desktop erreicht? Es gibt jetzt ein Kontrollkästchen für die automatische Fortsetzung.\n\nSchalten Sie es ein, und es wird automatisch dort weitermachen, wo Sie aufgehört haben, sobald Ihr Limit zurückgesetzt ist."
+        "de": "Haben Sie Ihr Nutzungs-Limit in Claude Code Desktop erreicht? Es gibt jetzt ein Kontrollkästchen für die automatische Fortsetzung.\n\nSchalten Sie es ein, und es wird automatisch dort weitermachen, wo Sie aufgehört haben, sobald Ihr Limit zurückgesetzt ist.",
+        "ja": "Claude Code デスクトップで使用制限に達しましたか？ 今ならオートコンティニュー チェックボックスがあります。\n\nこれをオンにすると、制限がリセットされた後に自動的に中断した場所から続行します。",
+        "ar": "هل وصلت إلى حد الاستخدام في Claude Code على سطح المكتب؟ هناك الآن خيار نافذة تحقق للاستمرار التلقائي.\n\nقم بتشغيله، وسيستمر تلقائيًا من حيث توقفت بمجرد إعادة تعيين الحد."
       },
       "fullText": "Hit your usage limit in Claude Code desktop? There's now an auto-continue checkbox. \n\nTurn it on, and it'll automatically continue where you left off once your limit resets.",
-      "translatedAt": "2026-09-09T21:44:15.922Z"
+      "translatedAt": "2026-09-09T21:59:42.829Z"
     },
     "2078511173759324328": {
       "excerpt": "We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.",
@@ -1075,6 +1082,6 @@
       }
     }
   },
-  "pending": 36,
-  "lastAttemptAt": "2026-09-09T21:44:18.083Z"
+  "pending": 29,
+  "lastAttemptAt": "2026-09-09T21:59:43.417Z"
 }
