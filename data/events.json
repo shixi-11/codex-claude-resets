@@ -13,7 +13,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "fa88a472616b58d0d0e335054ef8730ae895e63d2c5bd73c99169771765395a7"
+    "contentHash": "fa88a472616b58d0d0e335054ef8730ae895e63d2c5bd73c99169771765395a7",
+    "fullText": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize."
   },
   {
     "id": "2097183639356489952",
@@ -29,7 +30,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "824b02a347621eb6b60a0e5de9693ad9afe770d7261efc965fc67d60d6c022c0"
+    "contentHash": "824b02a347621eb6b60a0e5de9693ad9afe770d7261efc965fc67d60d6c022c0",
+    "fullText": "You forgot the part where I reset usage twice in the middle"
   },
   {
     "id": "2097175062566846501",
@@ -45,7 +47,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "1cba9279acee6c69c7d841effce3e0c535049813f4be6db2bf2a78385e20ea18"
+    "contentHash": "1cba9279acee6c69c7d841effce3e0c535049813f4be6db2bf2a78385e20ea18",
+    "fullText": "There is no schedule, only resets"
   },
   {
     "id": "2097174560412246215",
@@ -61,7 +64,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "a7b576705246ef1d4e3c09602bdb460de0168014c34ffac206d3f599c5055554"
+    "contentHash": "a7b576705246ef1d4e3c09602bdb460de0168014c34ffac206d3f599c5055554",
+    "fullText": "All reset for everyone. Enjoy the week with Astra."
   },
   {
     "id": "2097043464538264003",
@@ -82,7 +86,8 @@
     "resetAt": "2026-09-08T02:00:00.000Z",
     "sourceTimezone": "PST",
     "approximate": true,
-    "timeBasis": "literal-source-offset"
+    "timeBasis": "literal-source-offset",
+    "fullText": "Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\nThanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.\n\nLands around 6pm PST today."
   },
   {
     "id": "2096717905614524491",
@@ -98,7 +103,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "d7b0d9585c47b79de994eff0ac8258901d46dd308c3b737f8266a8c911713389"
+    "contentHash": "d7b0d9585c47b79de994eff0ac8258901d46dd308c3b737f8266a8c911713389",
+    "fullText": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.\n\nNo change in quality and a pure win that on the long tail can result in up to 3-4X less usage being drawn from the subscription."
   },
   {
     "id": "2096692394435752258",
@@ -114,7 +120,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "83265d0ddbde3a4ea13b34241419f542f9055c4851d5045d57698851679dda2e"
+    "contentHash": "83265d0ddbde3a4ea13b34241419f542f9055c4851d5045d57698851679dda2e",
+    "fullText": "Who says it won't reset in a while 👀"
   },
   {
     "id": "2096686370848989558",
@@ -130,7 +137,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "6330cb803732e58b0f225164e0eb929f28dc95501e86d728f6de687f9e5c193c"
+    "contentHash": "6330cb803732e58b0f225164e0eb929f28dc95501e86d728f6de687f9e5c193c",
+    "fullText": "Not the case. There is no difference between usage you get before or after a reset."
   },
   {
     "id": "2096035437299237298",
@@ -152,7 +160,8 @@
       "Business"
     ],
     "rulesVersion": "1.2.2",
-    "contentHash": "bacb77d25506794495e906beea3edaf61858fcd1d91bfab3bcf3e31dfd4b2cd5"
+    "contentHash": "bacb77d25506794495e906beea3edaf61858fcd1d91bfab3bcf3e31dfd4b2cd5",
+    "fullText": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day.\n\nHappy Astra day and enjoy a phenomenal weekend. \n\nPS: If you create the account or upgrade before 8pm PT you will get it too. Still time!"
   },
   {
     "id": "2095979536043401428",
@@ -168,7 +177,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "84b24fb8b31798ea157ca9b1553ad97fc0f4e8bb83a91522acc379cc3d6721e3"
+    "contentHash": "84b24fb8b31798ea157ca9b1553ad97fc0f4e8bb83a91522acc379cc3d6721e3",
+    "fullText": "Some Plus and Business users won't yet get access to Astra today, we've got you covered with a banked reset. Lands by end of day and if you create your account by 8pm PT then you'll get it too."
   },
   {
     "id": "2095899886470463914",
@@ -184,7 +194,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "5e9aa63a279d017f9fc944bb1e6959c2df4394d1c16676d889b2ec952cb07c8c"
+    "contentHash": "5e9aa63a279d017f9fc944bb1e6959c2df4394d1c16676d889b2ec952cb07c8c",
+    "fullText": "I tested it and you can comfortably do it in the Plus subscription. It takes Astra 10-15 minutes and less than the 15% of the weekly usage.\n\nThis means that you can sell ~6 tables per week. Or 24 tables in a month. Making it less than 85 cents per table."
   },
   {
     "id": "2095651088502591861",
@@ -200,7 +211,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "62d2d08fd94e8f7c644614e1f92053a8b0f8d610ee6348542a435d360a50fac5"
+    "contentHash": "62d2d08fd94e8f7c644614e1f92053a8b0f8d610ee6348542a435d360a50fac5",
+    "fullText": "We will give one banked reset for every day you don't have access to Astra on your paid ChatGPT plan, starting today.  Team is moving mountains to give access as fast as we can.\n\nFirst one will land in ~ 3 hours. There is still time to create your account if you don't have one."
   },
   {
     "id": "2095597659545591917",
@@ -216,7 +228,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "d3baeced9bd53c1a97ada84d2328f08d063d4c19d3a9cb37c8e3067f4b005a47"
+    "contentHash": "d3baeced9bd53c1a97ada84d2328f08d063d4c19d3a9cb37c8e3067f4b005a47",
+    "fullText": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra."
   },
   {
     "id": "2095370639892955269",
@@ -232,7 +245,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "c7f146c4a53ef39c357adcf4e9d000c6ed23f18104564c4cd0668d5e743daa45"
+    "contentHash": "c7f146c4a53ef39c357adcf4e9d000c6ed23f18104564c4cd0668d5e743daa45",
+    "fullText": "Which Codex reset?"
   },
   {
     "id": "2094856679250919746",
@@ -248,7 +262,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
+    "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+    "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users."
   },
   {
     "id": "2094851235694497836",
@@ -265,7 +280,8 @@
     "provenance": "x-oembed+fxembed",
     "relayUrl": "https://api.fxtwitter.com/ClaudeDevs/status/2094851235694497836",
     "rulesVersion": "1.2.2",
-    "contentHash": "bd855378759db73d4286179d339e219deddd956ebc7275c82d8eb4fb17760fcc"
+    "contentHash": "bd855378759db73d4286179d339e219deddd956ebc7275c82d8eb4fb17760fcc",
+    "fullText": "To lower costs, we’ve kept pricing the same as Fable 5 while lowering the price of cache reads on usage-based billing. Cache reads on Fable 5.1 are $0.25/MTok, down from $1/MTok on Fable 5.\n\nFor builders on the Claude Platform with long horizon workloads, a prompt cache-optimized integration will see significant savings.\n\nIn Claude Code, cache reads count at a reduced rate toward subscription usage, which remains unchanged. Long sessions billed at API rates can net out 25%-45% cheaper."
   },
   {
     "id": "2094254532020818191",
@@ -281,7 +297,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "7125c5fc71c9578a49cc061719d2c3ec7b70227782cda9fe230c30f6f80a9a16"
+    "contentHash": "7125c5fc71c9578a49cc061719d2c3ec7b70227782cda9fe230c30f6f80a9a16",
+    "fullText": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin."
   },
   {
     "id": "2094252447271366730",
@@ -297,7 +314,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "70db1e86effb9820d2b87cb72aae6ec4d606586ce711bfc575612c6fa09d67e8"
+    "contentHash": "70db1e86effb9820d2b87cb72aae6ec4d606586ce711bfc575612c6fa09d67e8",
+    "fullText": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex.\n\nSee you soon for more news from The Reset Company."
   },
   {
     "id": "2094144275957350900",
@@ -317,7 +335,8 @@
     "resetAt": "2026-08-31T02:00:00.000Z",
     "sourceTimezone": "PST",
     "approximate": false,
-    "timeBasis": "literal-source-offset"
+    "timeBasis": "literal-source-offset",
+    "fullText": "Your Codex and ChatGPT Work reset will land at 6pm PST. \n\nI challenge you to burn as much usage as you can and discover and the latest awesome features. \n\nTime to go /fast"
   },
   {
     "id": "2093801758665715784",
@@ -334,7 +353,8 @@
     "provenance": "x-oembed+fxembed",
     "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2093801758665715784",
     "rulesVersion": "1.2.2",
-    "contentHash": "8a003b13ce8f82fdd5166afb23aa95825bb51591c2c0f44174480261b8e9dc0e"
+    "contentHash": "8a003b13ce8f82fdd5166afb23aa95825bb51591c2c0f44174480261b8e9dc0e",
+    "fullText": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see your usage go between 10% and 50% further than before.\n\nWe really went with a fine comb, with many uncovered small things being longstanding and here is what we found and fixed:\n- Compaction. We were keeping old images during compaction, sometimes making the context large enough to trigger compaction again. After the fix, usage dropped around 10% for users making heavy use of images. Fixed.\n- Memory. Background memory workers could inherit Stop hooks and keep running when the hook wouldn’t let them finish. This affected fewer than 1% of users, with the long tail being pretty bad and we saw one example thread check whether it could stop 15,000 times. Fixed.\n- Goals. In some cases, a set /goal could finish and then keep going past the intended stop condition, or the model would keep retrying broken tools without stopping. We saw examples consume anywhere from 15% to 70% of a weekly allowance. Fixed.\n- Automations. Some custom schedules could run more frequently than configured. Fixed.\n- Subagents. Smaller models (e.g. Luna) sometimes picked more capable helpers without being explicitly asked. The same was true where the orchestrating model not running in /fast mode could request sub-agents to run /fast. Fixed.\n- Computer History. The older implementation could lead to repeatedly summarizing overlapping activity. For some cases we saw it consume up to one fifth of the weekly usage per week. Fixed.\n- Rolling task summaries. Ordinary turns were triggering extra background requests. These added about 1% to token usage. Small each time, but it adds up. We have disabled this.\n- MCP. Some tool results could be encoded twice. We also found tool instructions getting cut off and fetched again. Fixed.\n\nWe’ve also made architectural changes to prevent these from regressing and our teams will get paged if it happens regardless. We are also working on showing you directly in the app where your usage goes so you don’t have to guess.\n\nGoes without saying that we’re resetting usage limits and I hope you enjoy a very nice Saturday!"
   },
   {
     "id": "2093742322525810912",
@@ -350,7 +370,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "e4a2fa9ab0448b8fab57389fba5486deb6fadd9159f7db2875abd493ff5b1792"
+    "contentHash": "e4a2fa9ab0448b8fab57389fba5486deb6fadd9159f7db2875abd493ff5b1792",
+    "fullText": "Compared to today, this works out to a 17% reduction in weekly limits on Claude Code. We’re working on exciting changes that will make it feel like you’re getting more from Claude, while having more visibility and control of your usage. Can’t wait to share them."
   },
   {
     "id": "2093742321473065266",
@@ -366,7 +387,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "2841d63c8360a20e60671b56cbfc81d72aa251d75ff108bdba98375d23fc87c0"
+    "contentHash": "2841d63c8360a20e60671b56cbfc81d72aa251d75ff108bdba98375d23fc87c0",
+    "fullText": "Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place."
   },
   {
     "id": "2093551005711679557",
@@ -382,7 +404,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "5395d292613e15240fca82a5cff3b640cc18eec3881bff030b6b96ce4b869a7a"
+    "contentHash": "5395d292613e15240fca82a5cff3b640cc18eec3881bff030b6b96ce4b869a7a",
+    "fullText": "There is a place and a time for resets. Soon, but not today"
   },
   {
     "id": "2093351797830422812",
@@ -398,7 +421,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "171a024c92432582a824bb0abeee9d59740d745272dc3d08164e82772a70342e"
+    "contentHash": "171a024c92432582a824bb0abeee9d59740d745272dc3d08164e82772a70342e",
+    "fullText": "Always improving. Team working hard on infra and usage optimizations"
   },
   {
     "id": "2093014447833116908",
@@ -414,7 +438,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "f774af5a44590decdcf3356fb1d25f94fea47644d5f76f965f8091a407645ac0"
+    "contentHash": "f774af5a44590decdcf3356fb1d25f94fea47644d5f76f965f8091a407645ac0",
+    "fullText": "Never slept better and feeling reseted. Brand new me and brand new usage for all ChatGPT Work and Codex users. Regaining my youth one button press at a time.\n\nHappy Thursday"
   },
   {
     "id": "2092862554632826968",
@@ -430,7 +455,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "6574af9faf87a4c42b96b6242c308e79c63fbfd1b73bfff3de8cc88c15576e2c"
+    "contentHash": "6574af9faf87a4c42b96b6242c308e79c63fbfd1b73bfff3de8cc88c15576e2c",
+    "fullText": "A good thing about having aged is that I feel that it’s been 20 years since I’ve pressed the reset button. Intrigued to see if I can find it tomorrow and dust it up"
   },
   {
     "id": "2092675679724978506",
@@ -446,7 +472,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "072e1f36ee67c3b6415da6ecd5ce16558e779b20ddc2335a88779da36ec6d16b"
+    "contentHash": "072e1f36ee67c3b6415da6ecd5ce16558e779b20ddc2335a88779da36ec6d16b",
+    "fullText": "Dear Viktor, it's all forgiven. Glad you found your usage back. Let's build!"
   },
   {
     "id": "2092490655864127909",
@@ -462,7 +489,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.2.2",
-    "contentHash": "c0336a322e4fdf17958c3042d3e87617ae5b508a5b4074f2f86db6a26d23da3b"
+    "contentHash": "c0336a322e4fdf17958c3042d3e87617ae5b508a5b4074f2f86db6a26d23da3b",
+    "fullText": "Reseted you mean?"
   },
   {
     "id": "2092058556707344708",
@@ -479,7 +507,8 @@
     "provenance": "x-oembed+fxembed",
     "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2092058556707344708",
     "rulesVersion": "1.2.1",
-    "contentHash": "6f37db399d8c52c9c4b010d021cff43cb51cf2ae0a73ab8dc759bfefe2bcf606"
+    "contentHash": "6f37db399d8c52c9c4b010d021cff43cb51cf2ae0a73ab8dc759bfefe2bcf606",
+    "fullText": "Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex. I had mentioned this a while ago, but then postponed it.\n\nThis is necessary as (a) the 5h limit allows us to smoothen the load on our compute, allowing to keep the plan generous in terms of weekly usage and (b) users on the Plus plan are relatively casual and new users, but then also just accidentally eat through their whole weeks usage and then are confused, making it not a great experience.\n\nWe are for the upcoming months keeping the 5h limit not enabled for Pro $100 and Pro $200 subscriptions."
   },
   {
     "id": "2089798442306711646",
@@ -495,7 +524,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "596d6240e8aeed23b7728d487cb321cfac05b2d7d586856b44058fff859f9e6e"
+    "contentHash": "596d6240e8aeed23b7728d487cb321cfac05b2d7d586856b44058fff859f9e6e",
+    "fullText": "We’re extending the 50% increase to weekly Claude Code limits through August 31. \n\nWe hope to make this a permanent change to our plans, but strong demand for our models means that capacity may be tight over the coming weeks. We’ll keep you posted as things develop."
   },
   {
     "id": "2088014831605702937",
@@ -511,7 +541,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "825ca4a468a67da293de2dcd528b7eb7b9a317f7867f52ac3ec9e78c26b795cb"
+    "contentHash": "825ca4a468a67da293de2dcd528b7eb7b9a317f7867f52ac3ec9e78c26b795cb",
+    "fullText": "Hit your usage limit in Claude Code desktop? There's now an auto-continue checkbox. \n\nTurn it on, and it'll automatically continue where you left off once your limit resets."
   },
   {
     "id": "2078511173759324328",
@@ -527,7 +558,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "fdc14ecfb69cf00850a51fd40c2daab6f0c6046020d4b4a6d690a284b2f6c361"
+    "contentHash": "fdc14ecfb69cf00850a51fd40c2daab6f0c6046020d4b4a6d690a284b2f6c361",
+    "fullText": "We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users."
   },
   {
     "id": "2078302415804379218",
@@ -559,7 +591,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "9426ac8f612f051f6c9f5ce96101ccb0e54b263b03bc4206b466e414009449d0"
+    "contentHash": "9426ac8f612f051f6c9f5ce96101ccb0e54b263b03bc4206b466e414009449d0",
+    "fullText": "We've reset 5-hour and weekly rate limits for all users."
   },
   {
     "id": "2076351399999557669",
@@ -575,7 +608,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "474fbe52cd48dfc2567dba419646da805bf754addd8f82185a4096e1e618d0fd"
+    "contentHash": "474fbe52cd48dfc2567dba419646da805bf754addd8f82185a4096e1e618d0fd",
+    "fullText": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19."
   },
   {
     "id": "2075279141352706215",
@@ -591,7 +625,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "9426ac8f612f051f6c9f5ce96101ccb0e54b263b03bc4206b466e414009449d0"
+    "contentHash": "9426ac8f612f051f6c9f5ce96101ccb0e54b263b03bc4206b466e414009449d0",
+    "fullText": "We've reset 5-hour and weekly rate limits for all users."
   },
   {
     "id": "2074525821755101458",
@@ -623,7 +658,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "ed08517819ab4fe37a3438b0a46b05545eb63e7aff073b85521ccc8738945600"
+    "contentHash": "ed08517819ab4fe37a3438b0a46b05545eb63e7aff073b85521ccc8738945600",
+    "fullText": "Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits."
   },
   {
     "id": "2072402639644766602",
@@ -655,7 +691,8 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "feea32c8d48e0d245aa0e3d663f3b90c85c1cfd6b28a222b33eb97963e17c449"
+    "contentHash": "feea32c8d48e0d245aa0e3d663f3b90c85c1cfd6b28a222b33eb97963e17c449",
+    "fullText": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!"
   },
   {
     "id": "2061501787769893055",
@@ -671,6 +708,7 @@
     "truncated": false,
     "provenance": "x-oembed",
     "rulesVersion": "1.1.0",
-    "contentHash": "b95a5e79016627fc5891a50c8089d7e7f28dbbb3a3aae14d26d5e72c77e2a467"
+    "contentHash": "b95a5e79016627fc5891a50c8089d7e7f28dbbb3a3aae14d26d5e72c77e2a467",
+    "fullText": "We've reset 5-hour and weekly rate limits for all users on Pro and Max plans.\n\nWe fixed an issue that caused some Claude Code sessions to spawn excessive parallel subagents, burning through usage faster than expected."
   }
 ]

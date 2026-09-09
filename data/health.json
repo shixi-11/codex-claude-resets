@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-09T19:31:30.777Z",
+  "lastAttemptAt": "2026-09-09T21:39:30.255Z",
   "lastSuccessAt": "2026-09-09T19:31:30.777Z",
-  "discoveryAt": "2026-09-09T19:31:30.777Z",
+  "discoveryAt": "2026-09-09T21:39:30.255Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -19,11 +19,44 @@
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": true,
-      "checked": 8,
-      "failed": 0
+      "ok": false,
+      "checked": 0,
+      "failed": 8
     }
   ],
-  "status": "ok",
-  "failedPosts": []
+  "status": "degraded",
+  "failedPosts": [
+    {
+      "url": "https://x.com/thsottiaux/status/2097752790177370535",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2097183639356489952",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2097175062566846501",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2097174560412246215",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2097043464538264003",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2096717905614524491",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2094856679250919746",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2094851235694497836",
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
 }

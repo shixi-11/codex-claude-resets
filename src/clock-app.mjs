@@ -18,5 +18,5 @@ function tickAll(){
  });
 }
 const renderedDetails=new WeakMap();
-function updateDetails(){document.querySelectorAll('[data-platform]').forEach(card=>{const box=card.querySelector('[data-priority-details]'),open=box.querySelector('details')?.open;const html=priorityDetails(platforms[card.dataset.platform],card.dataset.platform,pageData.events,lang);if(renderedDetails.get(box)===html)return;renderedDetails.set(box,html);box.innerHTML=html;if(typeof open==='boolean'&&box.querySelector('details'))box.querySelector('details').open=open;});}
+function updateDetails(){document.querySelectorAll('[data-platform]').forEach(card=>{const box=card.querySelector('[data-priority-details]'),opened=new Set([...box.querySelectorAll('.post-full[open]')].map(el=>el.dataset.postId));const html=priorityDetails(platforms[card.dataset.platform],card.dataset.platform,pageData.events,lang);if(renderedDetails.get(box)===html)return;renderedDetails.set(box,html);box.innerHTML=html;box.querySelectorAll('.post-full').forEach(el=>{el.open=opened.has(el.dataset.postId);});});}
 setInterval(tickAll,1000);tickAll();updateDetails();window.addEventListener('reset-data-updated',()=>{tickAll();updateDetails();});document.querySelector('[data-refresh]')?.addEventListener('click',refreshLiveData);

@@ -12,5 +12,10 @@ export function translatedText(event,lang){
 }
 export function postText(event,lang,className='excerpt',tag='p'){
  const value=translatedText(event,lang),label=labels[lang]||labels.en;
- return `<${tag} class="${className}" lang="${e(value.lang)}" dir="${value.lang==='ar'?'rtl':'ltr'}">${e(value.text)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[value.translated?0:1])}</small>`}`;
+ const preview=`<${tag} class="${className}" lang="${e(value.lang)}" dir="${value.lang==='ar'?'rtl':'ltr'}">${e(value.text)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[value.translated?0:1])}</small>`}`;
+ if(!event.fullText||event.truncated)return preview;
+ const entry=event.localized,translated=lang!=='en'&&entry?.contentHash===event.contentHash&&entry?.fullText===event.fullText&&typeof entry?.fullTexts?.[lang]==='string'&&entry.fullTexts[lang].trim();
+ const full=translated?entry.fullTexts[lang]:event.fullText,fullLang=translated?lang:'en',actions=expandLabels[lang]||expandLabels.en;
+ return `<div class="post-body">${preview}<details class="post-full" data-post-id="${e(event.id)}"><summary><span class="expand-label">${e(actions[0])}</span><span class="collapse-label">${e(actions[1])}</span></summary><div class="full-post-text" lang="${e(fullLang)}" dir="${fullLang==='ar'?'rtl':'ltr'}">${e(full)}</div>${lang==='en'?'':`<small class="translation-note">${e(label[translated?0:1])}</small>`}</details></div>`;
 }
+const expandLabels={en:['Read full post','Show less'],zh:['展开全文','收起全文'],'zh-Hant':['展開全文','收起全文'],ja:['全文を表示','折りたたむ'],ko:['전체 글 보기','접기'],es:['Leer publicación completa','Mostrar menos'],fr:['Lire la publication complète','Réduire'],de:['Vollständigen Beitrag lesen','Weniger anzeigen'],ar:['عرض المنشور كاملاً','عرض أقل']};

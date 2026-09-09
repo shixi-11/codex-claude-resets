@@ -4,6 +4,19 @@ import {postText,translatedText} from '../src/post-text.mjs';
 import {translationFromResponse} from '../scripts/translate.mjs';
 const event={id:'2097183639356489952',author:'thsottiaux',excerpt:'We reset usage.',contentHash:'abc'};
 const payload=(text='我们已重置额度。')=>({code:200,status:{id:event.id,url:`https://x.com/thsottiaux/status/${event.id}`,author:{screen_name:'thsottiaux',protected:false},text:event.excerpt,translation:{text,target_lang:'zh-cn'}}});
+test('full translation retains the second sentence and rejects changed full sources',()=>{
+ const full={...event,fullText:event.excerpt+' Everyone affected receives another credit.'};
+ const response=payload('我们已重置额度。所有受影响的用户都会再获得一次重置机会。');response.status.text=full.fullText;
+ assert.equal(translationFromResponse(full,'zh',response,true),response.status.translation.text);
+ assert.throws(()=>translationFromResponse({...full,fullText:full.fullText+' Changed.'},'zh',response,true));
+});
+test('both platforms get accessible collapsed full text with version-bound translations',()=>{
+ for(const author of ['thsottiaux','ClaudeDevs']){
+ const full={...event,author,fullText:'We reset usage. Another sentence.',localized:{excerpt:event.excerpt,contentHash:'abc',texts:{zh:'我们已重置额度。'},fullText:'We reset usage. Another sentence.',fullTexts:{zh:'我们已重置额度。另一句话。'}}};
+ const html=postText(full,'zh');assert.match(html,/<details class="post-full"/);assert.match(html,/展开全文/);assert.match(html,/另一句话/);assert.doesNotMatch(html,/<details[^>]* open/);
+ full.localized.fullText='Old text';assert.match(postText(full,'zh'),/Another sentence/);assert.doesNotMatch(postText(full,'zh'),/另一句话/);
+ }
+});
 test('translated text is bound to both exact excerpt and source version',()=>{
  const localized={excerpt:event.excerpt,contentHash:'abc',texts:{zh:'我们已重置额度。'}};
  assert.equal(translatedText({...event,localized},'zh').lang,'zh');

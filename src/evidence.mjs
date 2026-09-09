@@ -76,6 +76,7 @@ export function validateEvent(event) {
   if (event.truncated && event.state !== 'unconfirmed') throw new Error('Incomplete evidence cannot confirm a claim');
   if (!['x-oembed', 'x-oembed+fxembed', 'x-api', 'manual-primary'].includes(event.provenance)) throw new Error('Unsupported evidence provenance');
   if (typeof event.excerpt !== 'string' || !event.excerpt.trim() || event.excerpt.split(/\s+/).length > 25) throw new Error('Invalid excerpt');
+  if (event.fullText!==undefined&&(typeof event.fullText!=='string'||!event.fullText.trim()||event.fullText.length>20000||event.truncated)) throw new Error('Invalid full text');
   if (!event.rulesVersion || !/^[0-9a-f]{64}$/.test(event.contentHash)) throw new Error('Missing version anchor');
   return true;
 }

@@ -15,7 +15,18 @@
         "ar": "لقد نسيت أنني أعدت ضبط حد الاستخدام مرتين في أثناء ذلك."
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "你忘了我中途重置过两次额度这件事。",
+        "zh-Hant": "你忘了我中途重置過兩次額度這件事。",
+        "ja": "途中で私が利用枠を2回リセットしたことを忘れていますよ。",
+        "ko": "제가 중간에 사용량을 두 번 초기화한 건 빼먹으셨네요.",
+        "es": "Olvidaste mencionar que restablecí el uso dos veces entre medias.",
+        "fr": "Tu as oublié de mentionner que j’ai réinitialisé les quotas deux fois entre-temps.",
+        "de": "Du hast vergessen, dass ich zwischendurch die Nutzungslimits zweimal zurückgesetzt habe.",
+        "ar": "لقد نسيت أنني أعدت ضبط حد الاستخدام مرتين في أثناء ذلك."
+      },
+      "fullText": "You forgot the part where I reset usage twice in the middle"
     },
     "2097175062566846501": {
       "excerpt": "There is no schedule, only resets",
@@ -31,7 +42,18 @@
         "ar": "لا يوجد جدول زمني، بل عمليات إعادة ضبط فقط."
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "没有时间表，只有重置。",
+        "zh-Hant": "沒有時間表，只有重置。",
+        "ja": "予定表はありません。あるのはリセットだけです。",
+        "ko": "정해진 일정은 없고, 초기화만 있습니다.",
+        "es": "No hay un calendario, solo restablecimientos.",
+        "fr": "Il n’y a pas de calendrier, seulement des réinitialisations.",
+        "de": "Es gibt keinen Zeitplan, nur Resets.",
+        "ar": "لا يوجد جدول زمني، بل عمليات إعادة ضبط فقط."
+      },
+      "fullText": "There is no schedule, only resets"
     },
     "2097174560412246215": {
       "excerpt": "All reset for everyone.",
@@ -46,8 +68,19 @@
         "de": "Alle Nutzungslimits wurden für alle zurückgesetzt.",
         "ar": "أُعيد ضبط جميع حدود الاستخدام للجميع."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "All reset for everyone. Enjoy the week with Astra.",
+      "fullTexts": {
+        "zh": "全部为所有人重置。和 Astra 一起享受这一周。",
+        "zh-Hant": "全部重置了，大家一起享受吧。和 Astra 一起度過愉快的一週。",
+        "ja": "すべてがリセットされました。Astraと一緒に楽しい一週間をお過ごしください。",
+        "ko": "모두를 위해 모든 것을 재설정했습니다. Astra와 함께 즐거운 한 주 되세요.",
+        "es": "Todo restablecido para todos. Disfruten la semana con Astra.",
+        "fr": "Tout réinitialisé pour tout le monde. Profitez de la semaine avec Astra.",
+        "de": "Alles zurückgesetzt für alle. Genießt die Woche mit Astra."
+      },
+      "translatedAt": "2026-09-09T21:42:07.281Z"
     },
     "2097043464538264003": {
       "excerpt": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all…",
@@ -62,8 +95,18 @@
         "de": "Wir werden die Nutzungslimits aller kostenpflichtigen Abonnements zurücksetzen, damit ihr Astra weiter nutzen könnt, nachdem ihr alles aufgebraucht habt…",
         "ar": "سنعيد ضبط حدود الاستخدام لجميع الاشتراكات المدفوعة، لتتمكنوا من مواصلة الاستمتاع بـAstra بعد استنفادها بالكامل…"
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\nThanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.\n\nLands around 6pm PST today.",
+      "fullTexts": {
+        "zh": "永不放弃你\n永不让你失望\n永不四处乱跑抛弃你\n永不让你哭泣\n永不对你说再见\n永不撒谎伤害你\n\n感谢阅读。我们将对所有付费订阅的用量进行全球重置，这样你就可以在用光所有额度后继续享受 Astra 的乐趣，在 Blender 中进行有趣的 3D 建模。新的一周工作即将开始。\n\n今天太平洋标准时间下午 6 点左右抵达。",
+        "zh-Hant": "永不放棄你  \n永不讓你失望  \n永不四處奔波拋棄你  \n永不讓你哭泣  \n永不說再見  \n永不說謊傷害你  \n\n感謝閱讀。我們將對所有付費訂閱進行全球使用量重置，這樣你就可以在用光所有額度於 Blender 中進行有趣的 3D 建模後，繼續享受 Astra。下週工作即將開始。  \n\n預計於今日太平洋標準時間下午 6 點左右抵達。",
+        "es": "Nunca te voy a defraudar  \nNunca te voy a abandonar  \nNunca voy a correr y dejarte  \nNunca voy a hacerte llorar  \nNunca voy a decir adiós  \nNunca voy a decir una mentira y lastimarte  \n\nGracias por leer. Vamos a hacer un reinicio global del uso para todas las suscripciones pagadas para que puedas seguir disfrutando de Astra después de haberlo agotado todo haciendo modelado 3D divertido en Blender. La semana laboral está a punto de comenzar.  \n\nLlega alrededor de las 6pm PST hoy.",
+        "fr": "Jamais je ne renoncerai à toi  \nJamais je ne te décevrai  \nJamais je ne courrai et t'abandonnerai  \nJamais je ne te ferai pleurer  \nJamais je ne dirai au revoir  \nJamais je ne mentirai et te ferai souffrir  \n\nMerci d'avoir lu. Nous allons effectuer une réinitialisation globale de l'utilisation pour tous les abonnements payants afin que vous puissiez continuer à profiter d'Astra après avoir épuisé tout le quota en faisant du modélage 3D amusant dans Blender. La semaine de travail est sur le point de commencer.  \n\nAtterrissage prévu vers 18h PST aujourd'hui.",
+        "de": "Niemals werd ich dich aufgeben\nNiemals werd ich dich im Stich lassen\nNiemals werd ich rumrennen und dich verlassen\nNiemals werd ich dich zum Weinen bringen\nNiemals werd ich dir Auf Wiedersehen sagen\nNiemals werd ich lügen und dich verletzen\n\nDanke fürs Lesen. Wir werden einen globalen Reset der Nutzung für alle kostenpflichtigen Abonnements durchführen, damit du weiterhin Astra genießen kannst, nachdem du alles verbraucht hast, um lustiges 3D-Modeling in Blender zu machen. Die Arbeitswoche steht kurz bevor.\n\nLandung um ca. 18 Uhr PST heute.",
+        "ar": "لن أتخلّى عنك أبداً\nلن أُخيّب ظنّك أبداً\nلن أهرب وأترُكك أبداً\nلن أجعلك تبكي أبداً\nلن أودّعك أبداً\nلن أكذب وأؤذيك أبداً\n\nشكراً لقراءتك. سنقوم بإعادة تعيين عالمي للاستخدام لجميع الاشتراكات المدفوعة حتى تتمكن من الاستمتاع بـAstra بعد أن تستنفد كل شيء في عمليات نمذجة ثلاثية الأبعاد ممتعة في Blender. أسبوع العمل على وشك البدء.\n\nيهبط حوالي الساعة 6 مساءً بتوقيت المحيط الهادئ اليوم."
+      },
+      "translatedAt": "2026-09-09T21:43:44.875Z"
     },
     "2096717905614524491": {
       "excerpt": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.",
@@ -78,8 +121,19 @@
         "de": "Wir haben Verbesserungen für die Nutzung in Long-Tail-Fällen bei intensiven Astra-Nutzern vorgenommen, die mit ihrem ChatGPT-Konto angemeldet sind.",
         "ar": "أجرينا تحسينات على الاستخدام في حالات الذيل الطويل لمستخدمي Astra المكثّفين عند تسجيل الدخول بحساب ChatGPT."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.\n\nNo change in quality and a pure win that on the long tail can result in up to 3-4X less usage being drawn from the subscription.",
+      "fullTexts": {
+        "zh": "我们进行了一些改进，这些改进提升了 Astra 高级用户在登录 ChatGPT 账户时对长尾用量的使用体验。\n\n质量没有变化，这是一次纯粹的胜利，在长尾部分可以将订阅用量减少高达 3-4 倍。",
+        "zh-Hant": "我們進行了一些改進，提升了 Astra 進階使用者在登入 ChatGPT 帳戶時的長尾使用體驗。\n\n品質沒有變化，這是一個純粹的優勢，在長尾情況下，可以使訂閱的用量減少高達 3-4 倍。",
+        "ja": "私たちは、ChatGPT アカウントでログインした際の Astra のパワーユーザーにおけるロングテールの使用感を向上させるためのいくつかの改善を行いました。\n\n品質に変更はなく、ロングテールにおいてサブスクリプションから最大 3-4 倍少ない使用量が消費されるという純粋な利点です。",
+        "ko": "우리는 Astra의 파워 유저들이 ChatGPT 계정으로 로그인했을 때 롱 테일에서의 사용성을 향상시키는 몇 가지 개선 사항을 만들었습니다.\n\n품질에는 변화가 없으며, 롱 테일에서 구독에서 끌려오는 사용량을 최대 3-4배까지 줄일 수 있는 순수한 이득입니다.",
+        "es": "Hemos realizado algunas mejoras que mejoran el uso en la cola larga para usuarios avanzados de Astra cuando inician sesión con su cuenta de ChatGPT.\n\nNo hay cambios en la calidad y es una ganancia pura que, en la cola larga, puede resultar en hasta 3-4 veces menos uso extraído de la suscripción.",
+        "fr": "Nous avons apporté quelques améliorations qui améliorent l'utilisation de la longue traîne pour les utilisateurs avancés d'Astra lorsqu'ils sont connectés avec leur compte ChatGPT.\n\nAucun changement de qualité et un gain net qui, sur la longue traîne, peut entraîner jusqu'à 3-4 fois moins d'utilisation prélevée sur l'abonnement.",
+        "de": "Wir haben einige Verbesserungen vorgenommen, die die Nutzung im Long Tail für Power-User von Astra verbessern, wenn Sie mit Ihrem ChatGPT-Konto angemeldet sind.\n\nKeine Änderung in der Qualität und ein reiner Gewinn, der im Long Tail zu bis zu 3-4X geringerem Verbrauch aus dem Abonnement führen kann."
+      },
+      "translatedAt": "2026-09-09T21:42:13.755Z"
     },
     "2096692394435752258": {
       "excerpt": "Who says it won't reset in a while 👀",
@@ -95,7 +149,18 @@
         "ar": "ومن قال إنه لن يُعاد ضبطه بعد قليل؟ 👀"
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "谁说过一会儿不会重置呢👀",
+        "zh-Hant": "誰說過一會兒不會重置呢👀",
+        "ja": "しばらくしたらリセットされないなんて、誰が言いました？👀",
+        "ko": "조금 뒤에 초기화되지 않을 거라고 누가 그랬나요? 👀",
+        "es": "¿Quién dice que no se restablecerá dentro de un rato? 👀",
+        "fr": "Qui a dit que ça ne serait pas réinitialisé dans un moment ? 👀",
+        "de": "Wer sagt denn, dass es nicht in einer Weile zurückgesetzt wird? 👀",
+        "ar": "ومن قال إنه لن يُعاد ضبطه بعد قليل؟ 👀"
+      },
+      "fullText": "Who says it won't reset in a while 👀"
     },
     "2096686370848989558": {
       "excerpt": "There is no difference between usage you get before or after a reset.",
@@ -110,8 +175,20 @@
         "de": "Die Nutzungskontingente, die ihr vor oder nach einem Reset erhaltet, unterscheiden sich nicht.",
         "ar": "لا يوجد فرق بين حصة الاستخدام التي تحصل عليها قبل إعادة الضبط أو بعدها."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "不是这样的。重置前后获得的用法之间没有区别。",
+        "zh-Hant": "不是這樣。重置前後獲得的使用量沒有差別。",
+        "ja": "その通りではありません。リセット前でも後でも、受け取る使用量に違いはありません。",
+        "ko": "그렇지 않습니다. 리셋 전후에 얻는 사용량 사이에는 차이가 없습니다.",
+        "es": "No es el caso. No hay diferencia entre el uso que obtienes antes o después de un restablecimiento.",
+        "fr": "Ce n'est pas le cas. Il n'y a aucune différence entre l'utilisation que vous obtenez avant ou après une réinitialisation.",
+        "de": "Das ist nicht der Fall. Es gibt keinen Unterschied zwischen der Nutzung, die du vor oder nach einem Reset erhältst.",
+        "ar": "ليس هذا صحيحًا. لا يوجد فرق بين الاستخدام الذي تحصل عليه قبل أو بعد إعادة الضبط."
+      },
+      "fullText": "Not the case. There is no difference between usage you get before or after a reset.",
+      "translatedAt": "2026-09-09T21:43:48.241Z"
     },
     "2096035437299237298": {
       "excerpt": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really,…",
@@ -126,8 +203,17 @@
         "de": "Weil wir uns riesig freuen, dass Astra heute früher als geplant erschienen ist, und ihr so geduldig mit uns wart (na ja, eigentlich nicht,…",
         "ar": "لأننا سعداء للغاية بإطلاق Astra اليوم قبل الموعد، ولأنكم كنتم صبورين جدًا معنا (ليس تمامًا،…"
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day.\n\nHappy Astra day and enjoy a phenomenal weekend. \n\nPS: If you create the account or upgrade before 8pm PT you will get it too. Still time!",
+      "fullTexts": {
+        "ja": "今日は予定より早くAstraをローンチできたことにとてもとても嬉しく思います。そして、あなたたちが我々に超辛抱強く付き合ってくれたこと（本当はそうでもないけど、大丈夫！）… ということで、すべてのPlus、Pro、Businessユーザー向けに、今日、完全なバンクリセットも行います。今日の終わり頃に完了します。\n\nハッピーAstraデー、そして素晴らしい週末をお楽しみください。\n\nPS: 太平洋時間午後8時前にアカウントを作成またはアップグレードすれば、あなたも受け取れます。まだ時間あります！",
+        "ko": "우리는 오늘 Astra를 예정보다 앞당겨 출시하게 되어 정말 기쁩니다. 여러분이 우리에게 엄청나게 인내심을 보여주셨죠 (사실은 그렇지 않지만, 괜찮아요!)… 그래서 오늘 Plus, Pro, Business 사용자 모두를 대상으로 완전한 뱅크 리셋도 진행할 예정입니다. 오늘 하루 끝에 완료될 거예요.\n\nHappy Astra day and enjoy a phenomenal weekend. \n\nPS: 만약 8pm PT 전에 계정을 생성하거나 업그레이드하시면 여러분도 받을 수 있어요. 아직 시간 있어요!",
+        "es": "Porque estamos más que felices de tener Astra lanzado hoy con adelanto al horario y han sido súper pacientes con nosotros (no realmente, ¡pero está bien!)… también haremos el reinicio completo bancado hoy para todos los usuarios Plus, Pro y Business. Se completa al final del día.\n\nFeliz día de Astra y disfruten un fin de semana fenomenal.\n\nPS: Si crean la cuenta o actualizan antes de las 8pm PT, también lo obtendrán. ¡Todavía hay tiempo!",
+        "de": "Weil wir überglücklich sind, dass Astra heute früher als geplant ausgerollt wurde, und ihr unglaublich geduldig mit uns wart (nicht wirklich, aber ist schon okay!)… werden wir heute auch den vollständigen angesparten Reset für alle Plus-, Pro- und Business-Nutzer durchführen. Fertig bis Ende des Tages.\n\nFrohen Astra-Tag und genießt ein phänomenales Wochenende.\n\nPS: Wenn ihr das Konto erstellt oder vor 20 Uhr PT upgradet, bekommt ihr es auch. Noch Zeit!",
+        "ar": "لأننا أكثر من سعيدين بأن Astra قد تم إطلاقها اليوم قبل الموعد المحدد، وأنتم كنتم صبورين للغاية معنا (ليس حقًا، لكن لا بأس!)… سنقوم أيضًا بإعادة التعيين الكاملة المتراكمة اليوم لجميع مستخدمي Plus وPro وBusiness. تنتهي في نهاية اليوم.\n\nيوم Astra سعيد واستمتعوا بعطلة نهاية أسبوع مذهلة.\n\nملاحظة: إذا أنشأت الحساب أو قمت بالترقية قبل الساعة 8 مساءً بتوقيت المحيط الهادئ، ستحصل عليها أيضًا. لا يزال هناك وقت!"
+      },
+      "translatedAt": "2026-09-09T21:42:17.139Z"
     },
     "2095979536043401428": {
       "excerpt": "Some Plus and Business users won't yet get access to Astra today, we've got you covered with a banked reset.",
@@ -142,8 +228,17 @@
         "de": "Einige Plus- und Business-Nutzer erhalten heute noch keinen Zugang zu Astra. Für euch haben wir Reset-Guthaben vorgesehen.",
         "ar": "لن يتمكن بعض مستخدمي Plus وBusiness من الوصول إلى Astra اليوم بعد؛ وقد أعددنا لهم رصيد إعادة ضبط."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Some Plus and Business users won't yet get access to Astra today, we've got you covered with a banked reset. Lands by end of day and if you create your account by 8pm PT then you'll get it too.",
+      "fullTexts": {
+        "zh-Hant": "部分 Plus 和 Business 用戶今天尚未能存取 Astra，我們已為您準備好一個備用的重置選項。將於今日結束前到達，若您在太平洋時間晚上 8 點前建立帳戶，也能獲得此功能。",
+        "es": "Algunos usuarios de Plus y Business aún no tendrán acceso a Astra hoy, te tenemos cubierto con un reinicio bancado. Llega a finales del día y si creas tu cuenta antes de las 8pm PT, tú también lo obtendrás.",
+        "fr": "Certains utilisateurs Plus et Business n'auront pas encore accès à Astra aujourd'hui, nous vous couvrons avec une remise mise de côté. Arrivée en fin de journée et si vous créez votre compte avant 20h PT, vous l'obtiendrez aussi.",
+        "de": "Einige Plus- und Business-Nutzer erhalten heute noch keinen Zugriff auf Astra, wir haben euch mit einem gebuchten Reset abgedeckt. Er landet bis zum Tagesende, und wenn ihr euer Konto bis 20 Uhr PT erstellt, bekommt ihr ihn auch.",
+        "ar": "بعض مستخدمي Plus و Business لن يحصلوا بعد على الوصول إلى Astra اليوم، لكننا غطينا الأمر بإعادة تعيين محفوظة. تصل بنهاية اليوم، وإذا أنشأت حسابك بحلول الساعة 8 مساءً بتوقيت المحيط الهادئ، ستحصل عليها أيضًا."
+      },
+      "translatedAt": "2026-09-09T21:42:20.300Z"
     },
     "2095899886470463914": {
       "excerpt": "It takes Astra 10-15 minutes and less than the 15% of the weekly usage.",
@@ -158,8 +253,19 @@
         "de": "Astra benötigt dafür 10–15 Minuten und weniger als 15 % des wöchentlichen Nutzungskontingents.",
         "ar": "يستغرق الأمر من Astra ما بين 10 و15 دقيقة ويستهلك أقل من 15% من حصة الاستخدام الأسبوعية."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "我测试过了，你可以在 Plus 订阅中轻松完成。它会让 Astra 花费 10-15 分钟，并且每周使用量的不到 15%。\n\n这意味着你每周可以卖出约 6 张表格。或者一个月卖出 24 张表格。每张表格的成本不到 85 美分。",
+        "zh-Hant": "我測試過了，在 Plus 訂閱中你可以輕鬆完成。它會讓 Astra 花費 10-15 分鐘，並且不到每週使用量的 15%。\n\n這意味著你每週可以賣出約 6 張表格。或者一個月 24 張表格。每張表格的成本不到 85 美分。",
+        "ja": "テストしてみたところ、Plus サブスクリプションで快適に実行できます。Astra には 10〜15 分かかり、週の使用量の 15% 未満です。\n\nこれにより、週に約 6 つのテーブルを販売できます。あるいは月で 24 テーブルです。テーブルあたり 85 セント未満になります。",
+        "es": "Lo probé y puedes hacerlo cómodamente con la suscripción Plus. Le toma a Astra 10-15 minutos y menos del 15% del uso semanal.\n\nEsto significa que puedes vender ~6 mesas por semana. O 24 mesas en un mes. Haciendo que sean menos de 85 centavos por mesa.",
+        "fr": "J'ai testé et vous pouvez le faire confortablement avec l'abonnement Plus. Cela prend à Astra 10-15 minutes et moins de 15 % de l'utilisation hebdomadaire.\n\nCela signifie que vous pouvez vendre ~6 tables par semaine. Ou 24 tables par mois. Ce qui revient à moins de 85 cents par table.",
+        "de": "Ich habe es getestet, und du kannst es bequem mit dem Plus-Abo machen. Es dauert bei Astra 10–15 Minuten und weniger als 15 % der wöchentlichen Nutzung.\n\nDas bedeutet, dass du ~6 Tabellen pro Woche verkaufen kannst. Oder 24 Tabellen in einem Monat. Damit kommst du auf weniger als 85 Cent pro Tabelle.",
+        "ar": "لقد اختبرته ويمكنك القيام به بسهولة في اشتراك Plus. يستغرق الأمر من Astra 10-15 دقيقة وأقل من 15% من الاستخدام الأسبوعي.\n\nهذا يعني أنك يمكنك بيع حوالي 6 جداول أسبوعيًا. أو 24 جدولًا في الشهر. مما يجعله أقل من 85 سنتًا لكل جدول."
+      },
+      "fullText": "I tested it and you can comfortably do it in the Plus subscription. It takes Astra 10-15 minutes and less than the 15% of the weekly usage.\n\nThis means that you can sell ~6 tables per week. Or 24 tables in a month. Making it less than 85 cents per table.",
+      "translatedAt": "2026-09-09T21:43:53.577Z"
     },
     "2095651088502591861": {
       "excerpt": "We will give one banked reset for every day you don't have access to Astra on your paid ChatGPT plan, starting today.",
@@ -174,8 +280,14 @@
         "de": "Ab heute erhaltet ihr für jeden Tag ohne Astra-Zugang in eurem kostenpflichtigen ChatGPT-Tarif ein Reset-Guthaben.",
         "ar": "بدءًا من اليوم، سنمنح رصيد إعادة ضبط واحدًا عن كل يوم لا تتمكن فيه من الوصول إلى Astra ضمن خطة ChatGPT المدفوعة."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We will give one banked reset for every day you don't have access to Astra on your paid ChatGPT plan, starting today.  Team is moving mountains to give access as fast as we can.\n\nFirst one will land in ~ 3 hours. There is still time to create your account if you don't have one.",
+      "fullTexts": {
+        "ja": "本日より、有料のChatGPTプランでAstraにアクセスできない日ごとに、1つの繰り越しリセットを付与します。チームはできる限り早くアクセスを提供するために全力で取り組んでいます。\n\n最初のものが約3時間後に適用されます。まだアカウントをお持ちでない場合は、今から作成する時間があります。",
+        "es": "Te daremos un restablecimiento acumulado por cada día que no tengas acceso a Astra en tu plan de pago de ChatGPT, a partir de hoy. El equipo está moviendo montañas para otorgar el acceso lo más rápido posible.\n\nEl primero llegará en ~ 3 horas. Todavía hay tiempo para crear tu cuenta si no tienes una."
+      },
+      "translatedAt": "2026-09-09T21:42:22.467Z"
     },
     "2095597659545591917": {
       "excerpt": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra.",
@@ -190,8 +302,20 @@
         "de": "In allen Tarifen ist Astra im regulären Nutzungskontingent enthalten, und ihr könnt es zu 100 % für Astra verwenden.",
         "ar": "في جميع الخطط، سيكون Astra مشمولًا بحصة الاستخدام المعتادة، ويمكنك تخصيص 100% منها له."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra.",
+      "fullTexts": {
+        "zh": "各方案的常规使用额度都包含Astra，你可以把全部额度用于Astra。",
+        "zh-Hant": "各方案的常規使用額度都包含Astra，你可以把全部額度用於Astra。",
+        "ja": "どのプランでもAstraは通常の利用枠に含まれ、その100%をAstraに使えます。",
+        "ko": "모든 요금제에서 Astra는 일반 사용량 한도에 포함되며, 그 한도의 100%를 Astra에 사용할 수 있습니다.",
+        "es": "En todos los planes, Astra estará incluido en la asignación de uso habitual y podréis dedicarle el 100 %.",
+        "fr": "Dans tous les abonnements, Astra sera inclus dans le quota habituel et vous pourrez lui consacrer 100 % de ce quota.",
+        "de": "In allen Tarifen ist Astra im regulären Nutzungskontingent enthalten, und ihr könnt es zu 100 % für Astra verwenden.",
+        "ar": "في جميع الخطط، سيكون Astra مشمولًا بحصة الاستخدام المعتادة، ويمكنك تخصيص 100% منها له."
+      },
+      "translatedAt": "2026-09-09T21:42:26.216Z"
     },
     "2095370639892955269": {
       "excerpt": "Which Codex reset?",
@@ -207,7 +331,18 @@
         "ar": "أي إعادة ضبط لـCodex؟"
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "哪一次Codex重置？",
+        "zh-Hant": "哪一次Codex重置？",
+        "ja": "どのCodexのリセットですか？",
+        "ko": "어떤 Codex 초기화요?",
+        "es": "¿Qué restablecimiento de Codex?",
+        "fr": "Quelle réinitialisation de Codex ?",
+        "de": "Welcher Codex-Reset?",
+        "ar": "أي إعادة ضبط لـCodex؟"
+      },
+      "fullText": "Which Codex reset?"
     },
     "2094856679250919746": {
       "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
@@ -222,8 +357,20 @@
         "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
         "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+      "fullTexts": {
+        "zh": "Fable 5.1今天发布，我们也为所有用户重置了5小时额度和每周额度。",
+        "zh-Hant": "Fable 5.1今天發佈，我們也為所有用戶重置了5小時額度和每週額度。",
+        "ko": "오늘 Fable 5.1 출시와 함께 모든 사용자의 5시간 한도와 주간 한도도 초기화했습니다.",
+        "es": "Con el lanzamiento de Fable 5.1 hoy, también hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+        "fr": "À l’occasion de la sortie de Fable 5.1 aujourd’hui, nous avons aussi réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+        "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين.",
+        "ja": "本日のFable 5.1公開に合わせて、全ユーザーの5時間枠と週間利用枠もリセットしました。"
+      },
+      "translatedAt": "2026-09-09T21:42:29.653Z"
     },
     "2094851235694497836": {
       "excerpt": "To lower costs, we’ve kept pricing the same as Fable 5 while lowering the price of cache reads on usage-based billing.",
@@ -238,8 +385,20 @@
         "de": "Um die Kosten zu senken, haben wir die Preise von Fable 5 beibehalten und zugleich Cache-Lesezugriffe bei nutzungsbasierter Abrechnung vergünstigt.",
         "ar": "لخفض التكاليف، أبقينا الأسعار مماثلة لأسعار Fable 5، مع خفض سعر قراءة الذاكرة المؤقتة في الفوترة حسب الاستخدام."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "To lower costs, we’ve kept pricing the same as Fable 5 while lowering the price of cache reads on usage-based billing. Cache reads on Fable 5.1 are $0.25/MTok, down from $1/MTok on Fable 5.\n\nFor builders on the Claude Platform with long horizon workloads, a prompt cache-optimized integration will see significant savings.\n\nIn Claude Code, cache reads count at a reduced rate toward subscription usage, which remains unchanged. Long sessions billed at API rates can net out 25%-45% cheaper.",
+      "fullTexts": {
+        "zh": "为了降低成本，我们将定价保持与 Fable 5 相同，同时降低了基于使用量计费的缓存读取价格。Fable 5.1 上的缓存读取价格为 $0.25/MTok，比 Fable 5 上的 $1/MTok 降低了。\n\n对于在 Claude 平台上使用长时程工作负载的构建者，提示缓存优化的集成将实现显著节省。\n\n在 Claude Code 中，缓存读取以降低的费率计入订阅使用量，订阅使用量保持不变。以 API 费率计费的长会话可净节省 25%-45%。",
+        "zh-Hant": "為了降低成本，我們將定價維持與 Fable 5 相同，同時降低基於使用量的快取讀取價格。Fable 5.1 的快取讀取價格為 $0.25/MTok，低於 Fable 5 的 $1/MTok。\n\n對於使用 Claude Platform 且具備長時間範圍工作負載的開發者，提示快取優化整合將帶來顯著節省。\n\n在 Claude Code 中，快取讀取以降低的費率計入訂閱使用量，而訂閱使用量維持不變。以 API 費率計費的長會話可節省 25%-45%。",
+        "ja": "コストを下げるため、Fable 5と同じ価格設定を維持しつつ、使用量ベースの課金におけるキャッシュ読み取りの価格を下げました。Fable 5.1のキャッシュ読み取りは$0.25/MTokで、Fable 5の$1/MTokから引き下げられています。\n\nClaude Platform上で長期間のワークロードを持つビルダー向けには、プロンプトキャッシュ最適化された統合により大幅なコスト削減が見込めます。\n\nClaude Codeでは、キャッシュ読み取りがサブスクリプション使用量に対して割引率でカウントされ、サブスクリプションの仕様は変更されていません。APIレートで課金される長時間のセッションは、全体として25%-45%安くなる可能性があります。",
+        "ko": "비용을 낮추기 위해, 우리는 Fable 5와 동일한 가격을 유지하면서 사용량 기반 청구의 캐시 읽기 가격을 낮췄습니다. Fable 5.1의 캐시 읽기는 $0.25/MTok이며, Fable 5의 $1/MTok에서 인하된 것입니다.\n\nClaude Platform에서 장기적인 작업 부하를 가진 빌더들을 위해, 프롬프트 캐시 최적화 통합은 상당한 비용 절감을 볼 것입니다.\n\nClaude Code에서 캐시 읽기는 구독 사용량에 대해 할인된 비율로 계산되며, 이는 변경되지 않습니다. API 요율로 청구되는 긴 세션은 25%-45% 더 저렴해질 수 있습니다.",
+        "es": "Para reducir costos, hemos mantenido los precios iguales a los de Fable 5 mientras reducimos el precio de las lecturas de caché en la facturación basada en uso. Las lecturas de caché en Fable 5.1 cuestan $0.25/MTok, bajando desde $1/MTok en Fable 5.\n\nPara constructores en la Plataforma Claude con cargas de trabajo de horizonte largo, una integración optimizada para caché de prompts verá ahorros significativos.\n\nEn Claude Code, las lecturas de caché cuentan a una tasa reducida hacia el uso de suscripción, que permanece sin cambios. Sesiones largas facturadas a tasas de API pueden resultar un 25%-45% más baratas en neto.",
+        "fr": "Pour réduire les coûts, nous avons maintenu les prix au même niveau que pour Fable 5 tout en abaissant le prix des lectures de cache sur la facturation basée sur l'utilisation. Les lectures de cache sur Fable 5.1 sont de 0,25 $/MTok, contre 1 $/MTok sur Fable 5.\n\nPour les constructeurs sur la plateforme Claude avec des charges de travail à long horizon, une intégration optimisée pour le cache de prompts permettra des économies significatives.\n\nDans Claude Code, les lectures de cache sont comptabilisées à un taux réduit dans l'utilisation de l'abonnement, qui reste inchangé. Les sessions longues facturées aux tarifs API peuvent être 25 %-45 % moins chères au final.",
+        "de": "Um die Kosten zu senken, haben wir die Preise auf dem gleichen Niveau wie bei Fable 5 belassen, während wir den Preis für Cache-Lesevorgänge bei nutzungsbasierter Abrechnung gesenkt haben. Cache-Lesevorgänge bei Fable 5.1 kosten 0,25 $/MTok, herabgesetzt von 1 $/MTok bei Fable 5.\n\nFür Entwickler auf der Claude Platform mit langfristigen Workloads bietet eine auf den Prompt-Cache optimierte Integration erhebliche Einsparungen.\n\nIn Claude Code werden Cache-Lesevorgänge mit einem reduzierten Satz auf den Abonnementsverbrauch angerechnet, der unverändert bleibt. Lange Sitzungen, die zu API-Sätzen abgerechnet werden, können insgesamt 25–45 % günstiger ausfallen.",
+        "ar": "لخفض التكاليف، لقد حافظنا على نفس تسعيرة Fable 5 بينما خفضنا سعر قراءات الكاش في الفوترة المبنية على الاستخدام. قراءات الكاش في Fable 5.1 هي $0.25/MTok، انخفاضًا من $1/MTok في Fable 5.\n\nبالنسبة للمطورين على منصة Claude الذين يتعاملون مع أحمال عمل طويلة الأمد، فإن تكاملًا محسنًا لكاش الـ prompt سيشهد توفيرًا كبيرًا.\n\nفي Claude Code، تُحسب قراءات الكاش بنسبة مخفضة نحو استخدام الاشتراك، الذي يظل دون تغيير. الجلسات الطويلة المفوترة بمعدلات API يمكن أن تكون أرخص بنسبة 25%-45%."
+      },
+      "translatedAt": "2026-09-09T21:42:32.909Z"
     },
     "2094254532020818191": {
       "excerpt": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits.",
@@ -254,8 +413,20 @@
         "de": "Zur Klarstellung: Beide heißen zwar 20X, bei Codex beziehen sie sich aber ausdrücklich auf die wöchentlichen Nutzungslimits.",
         "ar": "للتوضيح: رغم أن كليهما يُسمّى 20X، فإن ذلك يشير في Codex تحديدًا إلى حدود الاستخدام الأسبوعية."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin.",
+      "fullTexts": {
+        "zh": "为了清晰起见，虽然两者都称为 20X，但在 Codex 中，它们特指每周使用限制。而且我们对两种 Pro 计划都没有 5 小时限制。\n\nPro 20X 非常精确地是 Plus 订阅使用量的 20 倍，所以它完全实现了其承诺的功能。",
+        "zh-Hant": "為了清楚起見，雖然兩者都被稱為 20X，但在 Codex 中，它們專門適用於每週使用限制。而且我們在兩個 Pro 計劃中也沒有 5 小時限制。\n\nPro 20X 相當精確地是 Plus 訂閱使用量的 20 倍，因此它確實名副其實。",
+        "ja": "明確にするため、どちらも20Xと呼ばれていますが、Codexでは週間の使用制限に特に適用されます。また、両方のProプランには5時間の制限もありません。\n\nPro 20Xは、Plusサブスクリプションの使用量の正確に20倍なので、まさにその名の通りです。",
+        "ko": "명확성을 위해, 둘 다 20X라고 불리지만, Codex에서는 주간 사용 한도에만 구체적으로 적용됩니다. 그리고 Pro 플랜 둘 다에 대해 5시간 한도도 없습니다.\n\nPro 20X는 Plus 구독의 사용량의 정확히 20배이므로, 이름 그대로 정확히 그 역할을 합니다.",
+        "es": "Para mayor claridad, aunque ambos se llaman 20X, en Codex se aplican específicamente a los límites de uso semanales. Y tampoco tenemos límites de 5h para ambos planes Pro.\n\nEl Pro 20X es bastante precisamente 20X el uso de la suscripción Plus, por lo que hace exactamente lo que dice en la lata.",
+        "fr": "Pour plus de clarté, bien que les deux s'appellent 20X, dans Codex, ils s'appliquent spécifiquement aux limites d'utilisation hebdomadaires. Et nous n'avons pas non plus de limites de 5h pour les deux plans Pro.\n\nLe Pro 20X correspond assez précisément à 20X l'utilisation de l'abonnement Plus, donc il fait exactement ce qui est indiqué sur l'emballage.",
+        "de": "Zur Klarheit: Während beide als 20X bezeichnet werden, beziehen sie sich in Codex speziell auf wöchentliche Nutzungsbeschränkungen. Und wir haben auch keine 5-Stunden-Limits für beide Pro-Pläne.\n\nDas Pro 20X ist ziemlich genau das 20-Fache der Nutzung des Plus-Abonnements, also macht es genau das, was draufsteht.",
+        "ar": "للتوضيح، بينما يُطلق على كليهما 20X، إلا أنهما في Codex ينطبقان تحديدًا على حدود الاستخدام الأسبوعية. ونحن أيضًا لا نملك حدودًا مدتها 5 ساعات لكلا الخطط الاحترافية.\n\nالـ Pro 20X هو بالضبط 20X استخدام اشتراك Plus، لذا فإنه يفعل بالضبط ما يقوله على العلبة."
+      },
+      "translatedAt": "2026-09-09T21:42:36.845Z"
     },
     "2094252447271366730": {
       "excerpt": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid…",
@@ -270,8 +441,20 @@
         "de": "Was ich gestern sagen wollte: Wir haben 25 Millionen aktive Nutzer erreicht und zur Feier die Nutzungslimits aller kostenpflichtigen Abonnements zurückgesetzt…",
         "ar": "ما أردت قوله أمس هو أننا وصلنا إلى 25 مليون مستخدم نشط، واحتفالًا بذلك أعدنا ضبط حدود الاستخدام لجميع الاشتراكات المدفوعة…"
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex.\n\nSee you soon for more news from The Reset Company.",
+      "fullTexts": {
+        "zh": "我昨天想说的是，我们已经达到了2500万活跃用户，为了庆祝，我们现在已经为所有付费订阅的 ChatGPT Work 和 Codex 重置了使用量。\n\n期待很快与您分享来自 The Reset Company 的更多消息。",
+        "zh-Hant": "我想說昨天想說的是，我們已經達到 25M 活躍用戶，為了慶祝，我們現在已經為所有 ChatGPT Work 和 Codex 的付費訂閱重置了使用量。\n\n期待不久後來自 The Reset Company 的更多消息。",
+        "ja": "昨日お伝えしたかったのは、私たちが2,500万人のアクティブユーザーに到達したことで、それを祝してChatGPT WorkとCodexのすべての有料サブスクリプションの使用量をリセットしたということです。\n\nThe Reset Companyからのさらなるニュースをお楽しみに。",
+        "ko": "어제 하고 싶었던 말은, 우리는 2,500만 명의 활성 사용자를 달성했으며, 이를 기념하여 ChatGPT Work와 Codex의 모든 유료 구독에 대해 사용량을 재설정했다는 것입니다.\n\nThe Reset Company의 더 많은 소식을 곧 만나요.",
+        "es": "Lo que quería decir ayer es que alcanzamos 25 millones de usuarios activos y, para celebrarlo, ahora hemos restablecido el uso para todas las suscripciones pagadas de ChatGPT Work y Codex.\n\nNos vemos pronto para más noticias de The Reset Company.",
+        "fr": "Ce que je voulais dire hier, c'est que nous avons atteint 25 millions d'utilisateurs actifs et, pour célébrer cela, nous avons maintenant réinitialisé l'utilisation pour tous les abonnements payants de ChatGPT Work et Codex.\n\nÀ bientôt pour plus de nouvelles de The Reset Company.",
+        "de": "Was ich gestern sagen wollte, ist, dass wir 25 Millionen aktive Nutzer erreicht haben, und zur Feier haben wir nun die Nutzung für alle kostenpflichtigen Abonnements von ChatGPT Work und Codex zurückgesetzt.\n\nWir sehen uns bald für weitere Neuigkeiten von The Reset Company.",
+        "ar": "ما أردت قوله أمس هو أننا وصلنا إلى 25 مليون مستخدم نشط، وللاحتفال بذلك، قمنا الآن بإعادة تعيين الاستخدام لجميع الاشتراكات المدفوعة لـ ChatGPT Work وCodex.\n\nأراكم قريبًا للمزيد من الأخبار من The Reset Company."
+      },
+      "translatedAt": "2026-09-09T21:42:40.797Z"
     },
     "2094144275957350900": {
       "excerpt": "Your Codex and ChatGPT Work reset will land at 6pm PST.",
@@ -286,8 +469,13 @@
         "de": "Deine Nutzungslimits für Codex und ChatGPT Work werden um 18 Uhr PST zurückgesetzt.",
         "ar": "ستُعاد حدود استخدامك في Codex وChatGPT Work عند الساعة السادسة مساءً بتوقيت المحيط الهادئ القياسي (PST)."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Your Codex and ChatGPT Work reset will land at 6pm PST. \n\nI challenge you to burn as much usage as you can and discover and the latest awesome features. \n\nTime to go /fast",
+      "fullTexts": {
+        "fr": "Votre réinitialisation Codex et ChatGPT Work aura lieu à 18 h PST.\n\nJe vous défie de consommer autant d'utilisation que possible et de découvrir les dernières fonctionnalités géniales.\n\nL'heure est venue d'aller /fast"
+      },
+      "translatedAt": "2026-09-09T21:42:43.050Z"
     },
     "2093801758665715784": {
       "excerpt": "We are reseting usage for all paid users of Codex and ChatGPT Work.",
@@ -302,8 +490,20 @@
         "de": "Wir setzen die Nutzungslimits aller zahlenden Nutzer von Codex und ChatGPT Work zurück.",
         "ar": "نعيد ضبط حدود الاستخدام لجميع المستخدمين المشتركين بخطط مدفوعة في Codex وChatGPT Work."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see your usage go between 10% and 50% further than before.\n\nWe really went with a fine comb, with many uncovered small things being longstanding and here is what we found and fixed:\n- Compaction. We were keeping old images during compaction, sometimes making the context large enough to trigger compaction again. After the fix, usage dropped around 10% for users making heavy use of images. Fixed.\n- Memory. Background memory workers could inherit Stop hooks and keep running when the hook wouldn’t let them finish. This affected fewer than 1% of users, with the long tail being pretty bad and we saw one example thread check whether it could stop 15,000 times. Fixed.\n- Goals. In some cases, a set /goal could finish and then keep going past the intended stop condition, or the model would keep retrying broken tools without stopping. We saw examples consume anywhere from 15% to 70% of a weekly allowance. Fixed.\n- Automations. Some custom schedules could run more frequently than configured. Fixed.\n- Subagents. Smaller models (e.g. Luna) sometimes picked more capable helpers without being explicitly asked. The same was true where the orchestrating model not running in /fast mode could request sub-agents to run /fast. Fixed.\n- Computer History. The older implementation could lead to repeatedly summarizing overlapping activity. For some cases we saw it consume up to one fifth of the weekly usage per week. Fixed.\n- Rolling task summaries. Ordinary turns were triggering extra background requests. These added about 1% to token usage. Small each time, but it adds up. We have disabled this.\n- MCP. Some tool results could be encoded twice. We also found tool instructions getting cut off and fetched again. Fixed.\n\nWe’ve also made architectural changes to prevent these from regressing and our teams will get paged if it happens regardless. We are also working on showing you directly in the app where your usage goes so you don’t have to guess.\n\nGoes without saying that we’re resetting usage limits and I hope you enjoy a very nice Saturday!",
+      "fullTexts": {
+        "zh": "我们正在为所有 Codex 和 ChatGPT Work 的付费用户重置使用量。\n\n请继续阅读以获取 Codex 使用限制的更新。团队日夜奋战，处理了数千份报告并发布了修复补丁。\n\n根据您使用 Codex 的方式，您的使用量应该比之前多出 10% 到 50%。\n\n我们真的用细齿梳仔仔细细地检查了，许多长期未发现的小问题被挖了出来，以下是我们发现并修复的内容：\n- 压缩。我们在压缩过程中保留了旧图像，有时会使上下文变得足够大，从而再次触发压缩。修复后，重度使用图像的用户使用量下降了约 10%。已修复。\n- 内存。后台内存工作者可能会继承停止钩子，并在钩子不允许其完成时继续运行。这影响了不到 1% 的用户，但长尾问题相当严重，我们看到一个示例线程检查了是否可以停止 15,000 次。已修复。\n- 目标。在某些情况下，/goal 设置完成后可能会继续运行，超出预期的停止条件，或者模型会不断重试损坏的工具而不停止。我们看到一些示例消耗了每周限额的 15% 到 70%。已修复。\n- 自动化。一些自定义计划可能会比配置的频率更频繁地运行。已修复。\n- 子代理。较小的模型（例如 Luna）有时会在未明确要求的情况下选择更强大的助手。同样，在编排模型未以 /fast 模式运行时，它可能会要求子代理以 /fast 模式运行。已修复。\n- 计算机历史。旧的实现可能会导致反复总结重叠活动。在某些情况下，我们看到它每周消耗每周使用量的五分之一。已修复。\n- 滚动任务摘要。普通回合会触发额外的后台请求。这些请求每次会增加约 1% 的令牌使用量。每次都很小，但会累积。我们已禁用此功能。\n- MCP。一些工具结果可能会被编码两次。我们还发现工具指令被截断并重新获取。已修复。\n\n我们还进行了架构更改，以防止这些问题复发，无论如何，如果发生，我们的团队都会收到通知。我们也在努力在应用中直接向您显示使用量去向，这样您就不必猜测了。\n\n不用说，我们正在重置使用限制，我希望您享受一个非常美好的周六！",
+        "zh-Hant": "我們正在為所有 Codex 和 ChatGPT Work 的付費用戶重置使用量。\n\n請繼續閱讀以了解 Codex 使用限制的更新。團隊日以繼夜地工作，處理數千份報告並推出修復方案。\n\n根據您使用 Codex 的方式，您的使用量應該會比之前增加 10% 至 50%。\n\n我們真的用細密的梳子仔細檢查，發現許多長期存在的小問題，以下是我們發現並修復的內容：\n- 壓縮。我們在壓縮過程中保留舊圖像，有時會使上下文變得足夠大而再次觸發壓縮。修復後，重度使用圖像的用戶使用量下降約 10%。已修復。\n- 記憶體。背景記憶體工作程式可能繼承停止鉤子，並在鉤子不允許它們完成時繼續運行。這影響不到 1% 的用戶，但長尾效應相當嚴重，我們看到一個範例執行緒檢查是否可以停止達 15,000 次。已修復。\n- 目標。在某些情況下，/goal 設定可能完成後繼續運行超過預期的停止條件，或模型會持續重試損壞的工具而不停止。我們看到範例消耗每週配額的 15% 至 70%。已修復。\n- 自動化。某些自訂排程可能比設定更頻繁地運行。已修復。\n- 子代理。較小的模型（例如 Luna）有時會在未明確要求的情況下選擇更強大的助手。同樣的情況也發生在編排模型未以 /fast 模式運行時，要求子代理以 /fast 運行。已修復。\n- 電腦歷史。舊的實作可能導致重複總結重疊活動。在某些情況下，我們看到它每週消耗每週使用量的五分之一。已修復。\n- 滾動任務摘要。普通回合會觸發額外的背景請求。這些請求增加了約 1% 的 token 使用量。每次都很小，但累積起來很可觀。我們已停用此功能。\n- MCP。某些工具結果可能被編碼兩次。我們還發現工具指示被截斷並重新擷取。已修復。\n\n我們還進行了架構變更，以防止這些問題復發，並且無論如何，如果發生，團隊都會收到通知。我們也在努力在應用程式中直接顯示您的使用量去向，這樣您就不必猜測了。\n\n不用說，我們正在重置使用限制，並希望您享受一個非常美好的星期六！",
+        "ja": "CodexおよびChatGPT Workの全有料ユーザーの使用量をリセットします。\n\nCodexの使用制限に関する更新情報を読み進めてください。チームは連日徹夜で作業を続け、数千件のレポートを精査し、修正をリリースしてきました。\n\nCodexの使用方法によっては、以前より10%から50%多く使用できるはずです。\n\n私たちは本当に細かいところまで徹底的に調べ、多くの長年の小さな問題を発見・修正しました。以下がその内容です：\n- 圧縮。圧縮中に古い画像を保持しており、コンテキストが大きくなりすぎて再び圧縮をトリガーしてしまう場合がありました。修正後、画像を多用するユーザーの使用量が約10%減少しました。修正済み。\n- メモリ。バックグラウンドのメモリワーカーがStopフックを継承し、フックが完了を許可しない場合でも実行を続けていました。これにより1%未満のユーザーに影響がありましたが、長尾のケースが深刻で、あるスレッドが15,000回も停止可能かをチェックする例もありました。修正済み。\n- 目標。一部のケースで、/goalのセットが完了した後も意図した停止条件を超えて続行したり、モデルが壊れたツールを停止せずに繰り返し試行したりしていました。例として、週次割り当ての15%から70%を消費するケースが見られました。修正済み。\n- 自動化。一部のカスタムスケジュールが設定より頻繁に実行されていました。修正済み。\n- サブエージェント。小規模モデル（例: Luna）が明示的に指示されていなくても、より高性能なヘルパーを選択してしまう場合がありました。また、オーケストレーションするモデルが/fastモードで実行されていない場合に、サブエージェントに/fastで実行を要求するケースもありました。修正済み。\n- コンピュータ履歴。古い実装では、重複するアクティビティを繰り返し要約してしまうことがありました。一部のケースで、週次使用量の最大5分の1を消費していました。修正済み。\n- ローリングタスク要約。通常のターンで余分なバックグラウンドリクエストがトリガーされていました。これによりトークン使用量が約1%増加していました。1回あたりは小さいですが、積み重なります。この機能を無効化しました。\n- MCP。一部のツール結果が二重にエンコードされていました。また、ツールの指示が途中で切れて再取得されるケースもありました。修正済み。\n\nこれらが再発しないようアーキテクチャの変更も行いました。万一発生した場合でも、チームにアラートが送信されるようになっています。また、使用量の内訳をアプリ内で直接表示する機能も開発中ですので、推測する必要がなくなります。\n\n使用制限をリセットするのは言うまでもなく、素晴らしい土曜日をお過ごしください！",
+        "ko": "Codex와 ChatGPT Work의 모든 유료 사용자에 대한 사용량을 재설정하고 있습니다.\n\nCodex 사용 제한에 대한 업데이트를 계속 읽어주세요. 팀은 밤낮없이 수천 건의 보고서를 검토하며 수정 사항을 배포해 왔습니다.\n\nCodex를 사용하는 방식에 따라, 사용량이 이전보다 10%에서 50% 더 늘어나는 것을 보게 될 것입니다.\n\n우리는 정말 세밀한 빗으로 샅샅이 뒤져보았고, 많은 미발견된 작은 문제들이 오랫동안 지속된 것들이었으며, 우리가 발견하고 수정한 내용은 다음과 같습니다:\n- 압축. 압축 중에 오래된 이미지를 유지하고 있었는데, 때때로 컨텍스트를 다시 압축을 유발할 정도로 크게 만들었습니다. 수정 후, 이미지를 많이 사용하는 사용자들의 사용량이 약 10% 감소했습니다. 수정됨.\n- 메모리. 백그라운드 메모리 작업자들이 Stop 훅을 상속받아 훅이 완료를 허용하지 않을 때도 계속 실행될 수 있었습니다. 이는 사용자 1% 미만에게 영향을 미쳤으며, 긴 꼬리 부분이 상당히 심각했는데, 한 예시 스레드가 중지 가능 여부를 15,000회 확인하는 경우를 보았습니다. 수정됨.\n- 목표. 일부 경우에 /goal 설정이 완료된 후에도 의도된 중지 조건을 넘어 계속 진행되거나, 모델이 중단 없이 고장 난 도구를 계속 재시도했습니다. 예시에서 주간 할당량의 15%에서 70%까지 소비하는 경우를 보았습니다. 수정됨.\n- 자동화. 일부 사용자 지정 일정이 구성된 것보다 더 자주 실행될 수 있었습니다. 수정됨.\n- 하위 에이전트. 작은 모델(예: Luna)이 명시적으로 요청하지 않았음에도 더 유능한 도우미를 선택하는 경우가 있었습니다. 오케스트레이팅 모델이 /fast 모드에서 실행되지 않을 때 하위 에이전트에게 /fast 실행을 요청하는 경우도 마찬가지였습니다. 수정됨.\n- 컴퓨터 히스토리. 이전 구현 방식이 겹치는 활동을 반복적으로 요약하게 만들 수 있었습니다. 일부 경우에 주간 사용량의 5분의 1까지 소비하는 것을 보았습니다. 수정됨.\n- 롤링 작업 요약. 일반 턴이 추가 백그라운드 요청을 유발했습니다. 이는 토큰 사용량에 약 1%를 추가했습니다. 매번 작지만, 누적됩니다. 이를 비활성화했습니다.\n- MCP. 일부 도구 결과가 두 번 인코딩될 수 있었습니다. 또한 도구 지침이 잘려서 다시 가져오는 경우를 발견했습니다. 수정됨.\n\n이러한 문제들이 재발하지 않도록 아키텍처 변경도 수행했으며, 발생할 경우 팀이 페이지 알림을 받을 것입니다. 또한 앱 내에서 사용량이 어디로 가는지 직접 보여주는 작업도 진행 중이니 추측할 필요가 없게 될 것입니다.\n\n말할 것도 없이, 우리는 사용 제한을 재설정하고 있으며, 여러분이 아주 멋진 토요일을 즐기시길 바랍니다!",
+        "es": "Estamos reiniciando el uso para todos los usuarios de pago de Codex y ChatGPT Work.\n\nPor favor, sigue leyendo para una actualización sobre los límites de uso de Codex. El equipo ha estado trabajando sin parar, revisando miles de informes y enviando correcciones.\n\nDependiendo de cómo uses Codex, deberías ver que tu uso se extiende entre un 10% y un 50% más que antes.\n\nRealmente lo revisamos con lupa, con muchas cosas pequeñas no detectadas que eran de larga data, y aquí está lo que encontramos y corregimos:\n- Compaction. Estábamos conservando imágenes antiguas durante la compactación, a veces haciendo que el contexto fuera lo suficientemente grande como para activar la compactación de nuevo. Después de la corrección, el uso bajó alrededor del 10% para usuarios que hacen un uso intensivo de imágenes. Corregido.\n- Memory. Los trabajadores de memoria en segundo plano podían heredar ganchos de Stop y seguir ejecutándose cuando el gancho no les permitía terminar. Esto afectó a menos del 1% de los usuarios, con la cola larga siendo bastante mala y vimos un ejemplo de hilo que verificaba si podía detenerse 15,000 veces. Corregido.\n- Goals. En algunos casos, un set /goal podía terminar y luego seguir más allá de la condición de parada prevista, o el modelo seguiría reintentando herramientas rotas sin detenerse. Vimos ejemplos que consumían desde el 15% hasta el 70% de una asignación semanal. Corregido.\n- Automations. Algunos horarios personalizados podían ejecutarse con más frecuencia de la configurada. Corregido.\n- Subagents. Modelos más pequeños (p.ej. Luna) a veces elegían ayudantes más capaces sin ser solicitados explícitamente. Lo mismo ocurría cuando el modelo orquestador no ejecutándose en modo /fast podía solicitar subagentes para ejecutar /fast. Corregido.\n- Computer History. La implementación anterior podía llevar a resumir repetidamente actividad superpuesta. En algunos casos vimos que consumía hasta una quinta parte del uso semanal por semana. Corregido.\n- Rolling task summaries. Los turnos ordinarios estaban activando solicitudes adicionales en segundo plano. Estas añadían alrededor del 1% al uso de tokens. Pequeño cada vez, pero se acumula. Lo hemos desactivado.\n- MCP. Algunos resultados de herramientas podían codificarse dos veces. También encontramos instrucciones de herramientas que se cortaban y se volvían a obtener. Corregido.\n\nTambién hemos realizado cambios arquitectónicos para evitar que estos problemas regresen y nuestros equipos recibirán alertas si ocurre de todos modos. También estamos trabajando en mostrarte directamente en la app adónde va tu uso para que no tengas que adivinar.\n\nNo hace falta decir que estamos reiniciando los límites de uso y espero que disfrutes de un sábado muy agradable!",
+        "fr": "Nous réinitialisons l'utilisation pour tous les utilisateurs payants de Codex et ChatGPT Work.\n\nVeuillez continuer la lecture pour une mise à jour sur les limites d'utilisation de Codex. L'équipe a travaillé sans relâche, jour et nuit, en examinant des milliers de rapports et en déployant des correctifs.\n\nSelon la manière dont vous utilisez Codex, vous devriez voir votre utilisation augmenter de 10 % à 50 % par rapport à avant.\n\nNous avons vraiment passé au peigne fin, en découvrant de nombreuses petites choses qui étaient là depuis longtemps, et voici ce que nous avons trouvé et corrigé :\n- Compaction. Nous conservions d'anciennes images pendant la compaction, ce qui rendait parfois le contexte suffisamment volumineux pour déclencher une nouvelle compaction. Après la correction, l'utilisation a diminué d'environ 10 % pour les utilisateurs faisant un usage intensif des images. Corrigé.\n- Mémoire. Les workers de mémoire en arrière-plan pouvaient hériter de crochets d'arrêt et continuer à s'exécuter lorsque le crochet ne leur permettait pas de se terminer. Cela a affecté moins de 1 % des utilisateurs, avec une longue traîne assez grave, et nous avons vu un exemple de thread vérifier s'il pouvait s'arrêter 15 000 fois. Corrigé.\n- Objectifs. Dans certains cas, un /goal pouvait se terminer puis continuer au-delà de la condition d'arrêt prévue, ou le modèle continuerait à réessayer des outils défectueux sans s'arrêter. Nous avons vu des exemples consommer entre 15 % et 70 % d'une allocation hebdomadaire. Corrigé.\n- Automatisations. Certaines programmations personnalisées pouvaient s'exécuter plus fréquemment que configuré. Corrigé.\n- Sous-agents. Des modèles plus petits (par ex. Luna) choisissaient parfois des assistants plus performants sans y être explicitement invités. Il en allait de même lorsque le modèle orchestrateur, ne fonctionnant pas en mode /fast, pouvait demander aux sous-agents de s'exécuter en /fast. Corrigé.\n- Historique de l'ordinateur. L'ancienne implémentation pouvait conduire à résumer de manière répétée des activités chevauchantes. Dans certains cas, nous avons vu qu'elle consommait jusqu'à un cinquième de l'utilisation hebdomadaire par semaine. Corrigé.\n- Résumés de tâches roulants. Les tours ordinaires déclenchaient des requêtes en arrière-plan supplémentaires. Celles-ci ajoutaient environ 1 % à l'utilisation des tokens. Petit à chaque fois, mais cela s'accumule. Nous avons désactivé cela.\n- MCP. Certains résultats d'outils pouvaient être encodés deux fois. Nous avons également trouvé des instructions d'outils qui étaient coupées et récupérées à nouveau. Corrigé.\n\nNous avons également apporté des changements architecturaux pour empêcher ces problèmes de réapparaître et nos équipes seront alertées si cela arrive malgré tout. Nous travaillons aussi à afficher directement dans l'application où va votre utilisation, afin que vous n'ayez pas à deviner.\n\nCela va de soi que nous réinitialisons les limites d'utilisation et j'espère que vous passerez un samedi très agréable !",
+        "de": "Wir setzen die Nutzung für alle zahlenden Nutzer von Codex und ChatGPT Work zurück.\n\nBitte lesen Sie weiter für ein Update zu den Codex-Nutzungslimits. Das Team hat rund um die Uhr gearbeitet, Tausende von Berichten durchgesehen und Fixes ausgerollt.\n\nJe nachdem, wie Sie Codex nutzen, sollten Sie eine Nutzung sehen, die 10 % bis 50 % höher ausfällt als zuvor.\n\nWir sind wirklich mit einem feinen Kamm durchgegangen, wobei viele unentdeckte kleine Dinge langjährig waren, und hier ist, was wir gefunden und behoben haben:\n- Kompaktion. Wir haben alte Bilder während der Kompaktion gespeichert, was manchmal den Kontext groß genug machte, um die Kompaktion erneut auszulösen. Nach dem Fix sank die Nutzung um etwa 10 % bei Nutzern, die Bilder intensiv einsetzen. Behoben.\n- Speicher. Hintergrund-Speicherarbeiter konnten Stop-Hooks erben und weiterlaufen, wenn der Hook sie nicht beenden ließ. Dies betraf weniger als 1 % der Nutzer, wobei der Long Tail ziemlich schlimm war, und wir sahen einen Beispiel-Thread, der 15.000 Mal prüfte, ob er stoppen konnte. Behoben.\n- Ziele. In einigen Fällen konnte ein /goal-Set fertiggestellt werden und dann über die vorgesehene Stoppbedingung hinauslaufen, oder das Modell würde defekte Tools weiterhin erneut versuchen, ohne zu stoppen. Wir sahen Beispiele, die 15 % bis 70 % einer wöchentlichen Zuteilung verbrauchten. Behoben.\n- Automatisierungen. Einige benutzerdefinierte Zeitpläne konnten häufiger laufen als konfiguriert. Behoben.\n- Subagenten. Kleinere Modelle (z. B. Luna) haben manchmal fähigere Helfer gewählt, ohne explizit darum gebeten zu werden. Dasselbe galt, wenn das orchestrierende Modell nicht im /fast-Modus lief und Subagenten anwies, /fast zu laufen. Behoben.\n- Computer-Verlauf. Die ältere Implementierung konnte zu wiederholten Zusammenfassungen überlappender Aktivitäten führen. In einigen Fällen sahen wir, dass es bis zu einem Fünftel der wöchentlichen Nutzung pro Woche verbrauchte. Behoben.\n- Rollende Aufgaben-Zusammenfassungen. Normale Turns lösten zusätzliche Hintergrundanfragen aus. Diese fügten etwa 1 % zur Token-Nutzung hinzu. Klein jedes Mal, aber es summiert sich. Wir haben das deaktiviert.\n- MCP. Einige Tool-Ergebnisse konnten doppelt kodiert werden. Wir fanden auch Tool-Anweisungen, die abgeschnitten und erneut abgerufen wurden. Behoben.\n\nWir haben auch architektonische Änderungen vorgenommen, um zu verhindern, dass diese Probleme zurückkehren, und unsere Teams werden paginiert, falls es dennoch passiert. Wir arbeiten auch daran, Ihnen direkt in der App anzuzeigen, wohin Ihre Nutzung geht, damit Sie nicht raten müssen.\n\nEs versteht sich von selbst, dass wir die Nutzungslimits zurücksetzen, und ich hoffe, Sie genießen einen sehr schönen Samstag!",
+        "ar": "نحن نعيد تعيين الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work.\n\nيرجى المتابعة في القراءة للحصول على تحديث حول حدود استخدام Codex. الفريق كان يعمل على مدار الساعة، يمر عبر آلاف التقارير ويرسل الإصلاحات.\n\nبناءً على طريقة استخدامك لـ Codex، يجب أن ترى استخدامك يزيد بين 10% و50% أكثر مما كان عليه سابقًا.\n\nلقد قمنا حقًا بفحص دقيق جدًا، مع العديد من الأمور الصغيرة غير المكتشفة سابقًا التي كانت قائمة منذ فترة طويلة، وإليك ما وجدناه وأصلحناه:\n- الضغط. كنا نحتفظ بالصور القديمة أثناء الضغط، مما يجعل السياق كبيرًا بما يكفي لإثارة الضغط مرة أخرى أحيانًا. بعد الإصلاح، انخفض الاستخدام بنحو 10% للمستخدمين الذين يستخدمون الصور بكثافة. تم الإصلاح.\n- الذاكرة. يمكن لعمال الذاكرة الخلفية أن يرثوا خطافات الإيقاف ويستمروا في العمل عندما لا تسمح الخطافة لهم بالانتهاء. أثر ذلك على أقل من 1% من المستخدمين، مع الذيل الطويل كان سيئًا جدًا ورأينا مثالًا واحدًا لخيط يتحقق مما إذا كان يمكنه الإيقاف 15,000 مرة. تم الإصلاح.\n- الأهداف. في بعض الحالات، يمكن لمجموعة /goal أن تنتهي ثم تستمر بعد شرط الإيقاف المقصود، أو أن النموذج سيستمر في إعادة محاولة أدوات معطلة دون إيقاف. رأينا أمثلة تستهلك أيًا من 15% إلى 70% من بدل أسبوعي. تم الإصلاح.\n- التلقائيات. بعض الجداول المخصصة يمكن أن تعمل بشكل أكثر تكرارًا مما هو محدد. تم الإصلاح.\n- الوكلاء الفرعيون. النماذج الأصغر (مثل Luna) أحيانًا تختار مساعدين أكثر كفاءة دون طلب صريح. كان الأمر نفسه صحيحًا حيث يمكن للنموذج المنسق الذي لا يعمل في وضع /fast أن يطلب من الوكلاء الفرعيين العمل /fast. تم الإصلاح.\n- تاريخ الحاسوب. التنفيذ الأقدم يمكن أن يؤدي إلى تلخيص متكرر للنشاط المتداخل. في بعض الحالات رأيناه يستهلك ما يصل إلى خُمس الاستخدام الأسبوعي أسبوعيًا. تم الإصلاح.\n- ملخصات المهام المتدحرجة. الدورات العادية كانت تثير طلبات خلفية إضافية. أضافت هذه نحو 1% إلى استخدام الرموز. صغيرة في كل مرة، لكنها تتراكم. لقد قمنا بتعطيل هذا.\n- MCP. يمكن لنتائج بعض الأدوات أن تُشفر مرتين. كما وجدنا تعليمات الأدوات تقطع وتُجلب مرة أخرى. تم الإصلاح.\n\nلقد قمنا أيضًا بإجراء تغييرات معمارية لمنع هذه من العودة، وسيتم إشعار فرقنا إذا حدث ذلك بغض النظر. نحن أيضًا نعمل على عرض لك مباشرة في التطبيق أين يذهب استخدامك حتى لا تضطر إلى التخمين.\n\nلا يحتاج الأمر إلى قول أننا نعيد تعيين حدود الاستخدام وأتمنى أن تستمتعوا بسبت أحلى!"
+      },
+      "translatedAt": "2026-09-09T21:42:46.873Z"
     },
     "2093742322525810912": {
       "excerpt": "Compared to today, this works out to a 17% reduction in weekly limits on Claude Code.",
@@ -318,8 +518,20 @@
         "de": "Verglichen mit heute entspricht das einer Senkung der Wochenlimits von Claude Code um 17 %.",
         "ar": "مقارنةً بالوضع اليوم، يعادل ذلك انخفاضًا بنسبة 17% في الحدود الأسبوعية لـClaude Code."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Compared to today, this works out to a 17% reduction in weekly limits on Claude Code. We’re working on exciting changes that will make it feel like you’re getting more from Claude, while having more visibility and control of your usage. Can’t wait to share them.",
+      "fullTexts": {
+        "zh": "与今天相比，这相当于每周 Claude Code 限制减少了 17%。我们正在开发激动人心的变化，这些变化将让你感觉从 Claude 那里获得更多，同时让你对自己的使用情况有更多的可见性和控制。我们迫不及待地想分享它们。",
+        "zh-Hant": "相較於今天，這相當於 Claude Code 的每週限制減少 17%。我們正在開發令人興奮的變更，這些變更將讓你感覺從 Claude 獲得更多價值，同時擁有更多使用情況的可見性和控制權。迫不及待想與你分享這些變更。",
+        "ja": "今日と比較すると、これはClaude Codeの週次制限を17%削減することになります。私たちは、Claudeからより多くを得ているような感覚を与えつつ、使用状況の可視性と制御を高めるエキサイティングな変更に取り組んでいます。それらを共有するのが待ちきれません。",
+        "ko": "오늘에 비해, 이는 Claude Code의 주간 한도에 17% 감소에 해당합니다. Claude에서 더 많은 것을 얻는 느낌을 주면서 사용량에 대한 더 많은 가시성과 제어를 제공할 흥미로운 변경 사항을 작업 중입니다. 공유할 날을 고대하고 있습니다.",
+        "es": "En comparación con hoy, esto representa una reducción del 17 % en los límites semanales de Claude Code. Estamos trabajando en cambios emocionantes que harán que sientas que obtienes más de Claude, al tiempo que tienes mayor visibilidad y control sobre tu uso. No puedo esperar para compartirlos.",
+        "fr": "Par rapport à aujourd'hui, cela représente une réduction de 17 % des limites hebdomadaires sur Claude Code. Nous travaillons sur des changements passionnants qui feront en sorte que vous ayez l'impression d'obtenir plus de Claude, tout en ayant une meilleure visibilité et un meilleur contrôle de votre utilisation. J'ai hâte de les partager.",
+        "de": "Im Vergleich zu heute ergibt das eine Reduktion von 17 % bei den wöchentlichen Limits für Claude Code. Wir arbeiten an spannenden Änderungen, die das Gefühl vermitteln werden, dass Sie mehr aus Claude herausholen, während Sie mehr Sichtbarkeit und Kontrolle über Ihre Nutzung haben. Freuen uns schon darauf, sie mit Ihnen zu teilen.",
+        "ar": "بالمقارنة مع اليوم، يعني هذا انخفاضًا بنسبة 17% في الحدود الأسبوعية لـ Claude Code. نحن نعمل على تغييرات مثيرة ستجعلك تشعر وكأنك تحصل على المزيد من Claude، مع توفير رؤية أكبر وتحكم أكبر في استخدامك. لا أستطيع الانتظار لمشاركتها."
+      },
+      "translatedAt": "2026-09-09T21:43:58.580Z"
     },
     "2093742321473065266": {
       "excerpt": "Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans.",
@@ -334,8 +546,20 @@
         "de": "Ab dem 14. September erhöhen wir die regulären Wochenlimits von Claude Code für Pro, Max, Team und sitzbasierte Enterprise-Tarife dauerhaft um 25 %.",
         "ar": "بدءًا من 14 سبتمبر، سنرفع الحدود الأسبوعية القياسية لـClaude Code بصورة دائمة بنسبة 25% لخطط Pro وMax وTeam وEnterprise القائمة على المقاعد."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place.",
+      "fullTexts": {
+        "zh": "从9月14日起，我们将永久将Claude Code的标准每周限制为Pro、Max、Team和基于席位的Enterprise计划提高25%。在那之前，当前的50%提升将继续生效。",
+        "zh-Hant": "從 9 月 14 日起，我們將永久將 Claude Code 的標準每週限制提高 25%，適用於 Pro、Max、Team 和基於席位的 Enterprise 方案。在此之前，目前的 50% 增加將繼續有效。",
+        "ko": "9월 14일부터 Claude Code의 Pro, Max, Team 및 좌석 기반 Enterprise 플랜에 대해 표준 주간 한도를 영구적으로 25% 인상합니다. 그때까지 현재 50% 증가된 한도가 유지됩니다.",
+        "fr": "À partir du 14 septembre, nous augmentons de manière permanente les limites hebdomadaires standard dans Claude Code de 25 % pour les plans Pro, Max, Team et Enterprise basés sur les sièges. Jusque-là, l'augmentation actuelle de 50 % restera en place.",
+        "de": "Ab dem 14. September erhöhen wir die Standard-Wochenlimits in Claude Code dauerhaft um 25 % für Pro-, Max-, Team- und sitzbasierte Enterprise-Pläne. Bis dahin bleibt die aktuelle Erhöhung um 50 % bestehen.",
+        "ar": "بدءًا من 14 سبتمبر، سنرفع نهائيًا الحدود الأسبوعية القياسية في Claude Code بنسبة 25% لخطط Pro وMax وTeam والخطط الشركية المعتمدة على المقاعد. حتى ذلك الحين، ستبقى الزيادة الحالية بنسبة 50% سارية المفعول.",
+        "ja": "9月14日から、Claude Code の標準的な週制限を Pro、Max、Team、およびシートベースの Enterprise プランで恒久的に 25% 引き上げます。それまでは、現在の 50% 増加が適用されます。",
+        "es": "A partir del 14 de septiembre, estamos aumentando permanentemente los límites semanales estándar en Claude Code en un 25% para los planes Pro, Max, Team y Enterprise basados en asientos. Hasta entonces, el aumento actual del 50% permanecerá vigente."
+      },
+      "translatedAt": "2026-09-09T21:43:59.503Z"
     },
     "2093551005711679557": {
       "excerpt": "There is a place and a time for resets.",
@@ -350,8 +574,18 @@
         "de": "Auch Resets haben ihre Zeit und ihren Ort.",
         "ar": "لإعادة الضبط وقتها ومكانها."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "重置有其时间和地点。很快，但不是今天。",
+        "zh-Hant": "重置自有其時機與地點。很快，但不是今天。",
+        "ja": "リセットには場所と時間があります。もうすぐですが、今日ではありません。",
+        "ko": "리셋에는 적절한 장소와 시기가 있습니다. 곧이지만, 오늘은 아닙니다.",
+        "es": "Hay un lugar y un momento para los reinicios. Pronto, pero no hoy.",
+        "fr": "Il y a un lieu et un moment pour les réinitialisations. Bientôt, mais pas aujourd'hui."
+      },
+      "fullText": "There is a place and a time for resets. Soon, but not today",
+      "translatedAt": "2026-09-09T21:44:01.973Z"
     },
     "2093351797830422812": {
       "excerpt": "Team working hard on infra and usage optimizations",
@@ -366,8 +600,19 @@
         "de": "Das Team arbeitet intensiv an der Optimierung von Infrastruktur und Nutzung.",
         "ar": "يعمل الفريق بجد على تحسين البنية التحتية والاستخدام."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "持续改进。团队正努力优化基础设施和使用体验",
+        "zh-Hant": "持續改進。團隊正努力進行基礎設施和使用優化。",
+        "ja": "常に改善中。チームはインフラと使用最適化に懸命に取り組んでいます。",
+        "es": "Siempre mejorando. El equipo trabajando duro en infra y optimizaciones de uso.",
+        "fr": "Toujours en amélioration. L'équipe travaille dur sur l'infrastructure et les optimisations d'utilisation.",
+        "de": "Immer am Verbessern. Team arbeitet hart an Infra- und Nutzungsoptimierungen",
+        "ar": "دائمًا في تحسّن. الفريق يعمل بجد على تحسين البنية التحتية وتحسينات الاستخدام"
+      },
+      "fullText": "Always improving. Team working hard on infra and usage optimizations",
+      "translatedAt": "2026-09-09T21:44:06.670Z"
     },
     "2093014447833116908": {
       "excerpt": "Never slept better and feeling reseted.",
@@ -382,8 +627,19 @@
         "de": "Ich habe noch nie so gut geschlafen und fühle mich wie neu gestartet.",
         "ar": "لم أنم بهذه الراحة من قبل، وأشعر كأنني بدأت من جديد."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Never slept better and feeling reseted. Brand new me and brand new usage for all ChatGPT Work and Codex users. Regaining my youth one button press at a time.\n\nHappy Thursday",
+      "fullTexts": {
+        "zh-Hant": "從未睡得如此香甜，感覺重置了。全新的我，以及為所有 ChatGPT Work 和 Codex 使用者帶來的新用途。一鍵按下，逐步找回青春。\n\n快樂的星期四",
+        "ja": "これ以上ないほどぐっすり眠れて、リセットされた気分です。全く新しい私と、ChatGPT WorkおよびCodexユーザー全員のための全く新しい使い方。一回のボタン押しのたびに、若さを取り戻しています。\n\nハッピースリューズデイ",
+        "ko": "잠을 더 잘 잤고, 리셋된 기분이야. 완전히 새로 태어난 나와 ChatGPT Work와 Codex 사용자 모두를 위한 새로운 활용법. 한 번의 버튼 누름으로 청춘을 하나씩 되찾아가고 있어.\n\nHappy Thursday",
+        "es": "Nunca he dormido mejor y me siento renovado. Un yo completamente nuevo y un nuevo uso para todos los usuarios de ChatGPT Work y Codex. Recuperando mi juventud con un solo botón a la vez.\n\nFeliz jueves",
+        "fr": "Jamais dormi aussi bien et me sens réinitialisé. Tout nouveau moi et nouvelle utilisation pour tous les utilisateurs de ChatGPT Work et Codex. Je retrouve ma jeunesse un appui sur un bouton à la fois.\n\nJeudi heureux",
+        "ar": "لم أنم أفضل من هذا من قبل وأشعر بأنني مستعاد. أنا جديد كليًا واستخدام جديد كليًا لجميع مستخدمي ChatGPT Work وCodex. أستعيد شبابي ضغطة زر تلو الأخرى.\n\nخميس سعيد",
+        "de": "Noch nie besser geschlafen und fühle mich zurückgesetzt. Brandneuer ich und brandneue Nutzung für alle ChatGPT Work- und Codex-Nutzer. Meine Jugend zurückerobern, einen Knopfdruck nach dem anderen.\n\nFrohen Donnerstag"
+      },
+      "translatedAt": "2026-09-09T21:44:08.148Z"
     },
     "2092862554632826968": {
       "excerpt": "A good thing about having aged is that I feel that it’s been 20 years since I’ve pressed the reset button.",
@@ -398,8 +654,20 @@
         "de": "Eine gute Seite des Älterwerdens ist, dass es sich anfühlt, als hätte ich seit 20 Jahren nicht mehr den Reset-Knopf gedrückt.",
         "ar": "من مزايا التقدم في العمر أنني أشعر وكأن 20 عامًا مرت منذ ضغطت زر إعادة الضبط."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "A good thing about having aged is that I feel that it’s been 20 years since I’ve pressed the reset button. Intrigued to see if I can find it tomorrow and dust it up",
+      "fullTexts": {
+        "zh": "变老的一件好事是，我感觉已经20年没按下重置按钮了。很好奇明天能不能找到它，然后掸掉灰尘。",
+        "zh-Hant": "年紀增長的好處之一，就是我感覺自己已經有 20 年沒按下重置按鈕了。很期待明天看看能不能找到它，然後把它掸掂。",
+        "ja": "歳を重ねた良い点は、リセットボタンを押してから20年経った気がすることだ。明日それを見つけられて、埃を払えるかどうか、興味深い。",
+        "ko": "나이 드는 좋은 점은 리셋 버튼을 누른 지 20년이 지났다는 느낌이 든다는 거예요. 내일 그것을 찾아서 먼지를 털어낼 수 있을지 궁금하네요.",
+        "es": "Una de las cosas buenas de haber envejecido es que siento que han pasado 20 años desde que presioné el botón de reinicio. Intrigado por ver si puedo encontrarlo mañana y quitarle el polvo.",
+        "fr": "Un bon côté du fait d’avoir vieilli, c’est que j’ai l’impression que ça fait 20 ans que j’ai appuyé sur le bouton reset. Intrigué de voir si je peux le retrouver demain et le dépoussiérer.",
+        "de": "Ein gutes Gefühl, älter geworden zu sein, ist, dass ich das Gefühl habe, es wären 20 Jahre vergangen, seit ich den Reset-Knopf gedrückt habe. Neugierig, ob ich ihn morgen finde und den Staub abwische.",
+        "ar": "شيء جيد في التقدم في العمر هو أنني أشعر بأنّه مرّ 20 عامًا منذ أن ضغطت على زر إعادة التعيين. متشوق لرؤية ما إذا كنتُ سأعثر عليه غدًا وأنفض عنه الغبار"
+      },
+      "translatedAt": "2026-09-09T21:42:59.975Z"
     },
     "2092675679724978506": {
       "excerpt": "Glad you found your usage back.",
@@ -414,8 +682,19 @@
         "de": "Schön, dass dein Nutzungskontingent wieder da ist.",
         "ar": "يسعدني أن حصة استخدامك قد عادت."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "亲爱的维克托，一切都原谅了。很高兴你找回了你的用法。让我们一起建设吧！",
+        "zh-Hant": "親愛的 Viktor，一切都已原諒。很高興你找回了你的用法。讓我們一起建造吧！",
+        "ja": "ヴィクトール様、すべて許しました。使用方法を再び見つけられてよかったです。一緒に構築しましょう！",
+        "ko": "친애하는 빅토르님, 모든 것을 용서했습니다. 사용법을 다시 찾으신 걸 기쁘게 생각합니다. 함께 만들어갑시다!",
+        "fr": "Cher Viktor, tout est pardonné. Ravi que tu aies retrouvé ton usage. Construisons !",
+        "de": "Lieber Viktor, alles ist vergeben. Freut mich, dass du deinen Schwung wiedergefunden hast. Lass uns bauen!",
+        "ar": "عزيزي فيكتور، كل شيء مغفور. سعيد بأنك وجدت استخدامك مرة أخرى. لنبنِ!"
+      },
+      "fullText": "Dear Viktor, it's all forgiven. Glad you found your usage back. Let's build!",
+      "translatedAt": "2026-09-09T21:44:12.146Z"
     },
     "2092490655864127909": {
       "excerpt": "Reseted you mean?",
@@ -431,7 +710,18 @@
         "ar": "تقصد «أُعيد ضبطه»؟"
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "你是说“重置了”？",
+        "zh-Hant": "你是說「重置了」？",
+        "ja": "「リセットされた」という意味ですか？",
+        "ko": "리셋됐다는 말인가요?",
+        "es": "¿Quieres decir «restablecido»?",
+        "fr": "Vous voulez dire « réinitialisé » ?",
+        "de": "Du meinst „zurückgesetzt“?",
+        "ar": "تقصد «أُعيد ضبطه»؟"
+      },
+      "fullText": "Reseted you mean?"
     },
     "2092058556707344708": {
       "excerpt": "Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex.",
@@ -446,8 +736,20 @@
         "de": "Morgen führen wir das 5-Stunden-Limit für Plus-Konten in ChatGPT Work und Codex wieder ein.",
         "ar": "غدًا سنعيد تطبيق حد الساعات الخمس على حسابات Plus في ChatGPT Work وCodex."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex. I had mentioned this a while ago, but then postponed it.\n\nThis is necessary as (a) the 5h limit allows us to smoothen the load on our compute, allowing to keep the plan generous in terms of weekly usage and (b) users on the Plus plan are relatively casual and new users, but then also just accidentally eat through their whole weeks usage and then are confused, making it not a great experience.\n\nWe are for the upcoming months keeping the 5h limit not enabled for Pro $100 and Pro $200 subscriptions.",
+      "fullTexts": {
+        "zh": "明天我们将在 ChatGPT Work 和 Codex 平台上为 Plus 账户恢复 5 小时限制。我之前已经提到过这件事，但后来推迟了。\n\n这样做是必要的，因为 (a) 5 小时限制可以帮助我们平滑计算负载，从而在每周使用量方面保持慷慨的计划；(b) Plus 计划的用户相对来说是休闲型和新手用户，但他们有时会无意中耗尽整个星期的使用额度，然后感到困惑，这会带来不佳的体验。\n\n在接下来的几个月里，我们将保持 Pro $100 和 Pro $200 订阅的 5 小时限制未启用状态。",
+        "zh-Hant": "明天我們將在 ChatGPT Work 和 Codex 平台上，為 Plus 帳戶重新啟用 5 小時限制。我之前曾經提過這件事，但後來延後了。\n\n這是必要的，因為 (a) 5 小時限制能讓我們平滑計算資源的負載，從而維持每週使用量的計劃保持寬鬆慷慨，以及 (b) Plus 計劃的用戶相對較為休閒且是新手，但他們有時會不小心耗盡整個星期的使用額度，然後感到困惑，這會讓體驗變得不佳。\n\n在接下來的幾個月裡，我們將繼續為 Pro $100 和 Pro $200 訂閱保持 5 小時限制未啟用。",
+        "ja": "明日、私たちはChatGPT WorkとCodex全体でPlusアカウント向けの5時間制限を復活させます。これについては少し前に言及していましたが、その後延期しました。\n\nこれは必要不可欠です。なぜなら、(a) 5時間制限により、計算リソースへの負荷を平滑化でき、週次使用量の面で寛大なプランを維持できるからです。また、(b) Plusプランのユーザーは比較的カジュアルで新しいユーザーですが、うっかりして週全体の使用量を消費してしまい、混乱を招くため、優れた体験とは言えません。\n\n今後数ヶ月間は、Pro $100およびPro $200サブスクリプションに対して5時間制限を有効にしない予定です。",
+        "ko": "내일 우리는 ChatGPT Work와 Codex 전반의 Plus 계정에 대해 5시간 제한을 다시 도입할 것입니다. 제가 한참 전에 이걸 언급했었는데, 그 후로 미루었습니다.\n\n이건 필요합니다. 왜냐하면 (a) 5시간 제한은 우리의 컴퓨팅 부하를 완화할 수 있게 해주며, 주간 사용량 면에서 계획을 관대하게 유지할 수 있게 하고 (b) Plus 플랜 사용자들은 상대적으로 캐주얼하고 새로운 사용자들인데, 우연히 일주일 사용량 전체를 소진해버리고 혼란스러워하며, 그로 인해 훌륭한 경험이 되지 않기 때문입니다.\n\n우리는 앞으로 몇 달 동안 Pro $100 및 Pro $200 구독에 대해 5시간 제한을 활성화하지 않고 유지할 것입니다.",
+        "es": "Mañana restableceremos el límite de 5h para las cuentas Plus en todo ChatGPT Work y Codex. Lo había mencionado hace un tiempo, pero luego lo pospuse.\n\nEsto es necesario porque (a) el límite de 5h nos permite suavizar la carga en nuestra computación, permitiendo mantener el plan generoso en términos de uso semanal y (b) los usuarios en el plan Plus son relativamente casuales y nuevos, pero luego también accidentalmente consumen todo su uso de la semana y luego se confunden, lo que no hace una gran experiencia.\n\nPara los próximos meses, mantendremos el límite de 5h no habilitado para las suscripciones Pro $100 y Pro $200.",
+        "fr": "Demain, nous réintroduirons la limite de 5 h pour les comptes Plus sur ChatGPT Work et Codex. J’en avais parlé il y a quelque temps, mais je l’avais ensuite reporté.\n\nCeci est nécessaire car (a) la limite de 5 h nous permet de lisser la charge sur notre infrastructure de calcul, ce qui nous autorise à maintenir un plan généreux en termes d’utilisation hebdomadaire et (b) les utilisateurs du plan Plus sont relativement occasionnels et nouveaux, mais ils épuisent ensuite accidentellement toute leur utilisation hebdomadaire et se retrouvent confus, ce qui ne fait pas une bonne expérience.\n\nPour les mois à venir, nous maintenons la limite de 5 h désactivée pour les abonnements Pro à 100 $ et Pro à 200 $.",
+        "de": "Morgen werden wir das 5-Stunden-Limit für Plus-Konten in ChatGPT Work und Codex wieder einführen. Ich hatte das vor einiger Zeit erwähnt, es dann aber verschoben.\n\nDas ist notwendig, da (a) das 5-Stunden-Limit es uns ermöglicht, die Belastung unserer Rechenleistung auszugleichen, sodass wir den Plan in Bezug auf die wöchentliche Nutzung großzügig halten können, und (b) Nutzer auf dem Plus-Plan relativ beiläufige und neue Nutzer sind, die aber dann versehentlich ihre gesamte Wochen-Nutzung verbrauchen und verwirrt sind, was keine gute Erfahrung darstellt.\n\nFür die kommenden Monate behalten wir das 5-Stunden-Limit für Pro-$100- und Pro-$200-Abonnements deaktiviert.",
+        "ar": "غدًا سنعيد تطبيق حد 5 ساعات للحسابات Plus عبر ChatGPT Work وCodex. لقد ذكرت هذا منذ فترة، لكنني أجّلت الأمر بعد ذلك.\n\nهذا الإجراء ضروري لأن (أ) حد 5 ساعات يسمح لنا بتلطيف الحمل على موارد الحوسبة لدينا، مما يتيح الحفاظ على الخطة سخية من حيث الاستخدام الأسبوعي، و(ب) مستخدمو خطة Plus هم نسبيًا مستخدمون عاديون وجدد، لكنهم أيضًا يستهلكون عن غير قصد كامل استخدامهم الأسبوعي ثم يشعرون بالارتباك، مما يجعل التجربة غير رائعة.\n\nسنبقي في الأشهر القادمة حد 5 ساعات غير مفعّل لاشتراكات Pro $100 وPro $200."
+      },
+      "translatedAt": "2026-09-09T21:43:03.108Z"
     },
     "2089798442306711646": {
       "excerpt": "We’re extending the 50% increase to weekly Claude Code limits through August 31.",
@@ -462,8 +764,17 @@
         "de": "Wir verlängern die Erhöhung der Wochenlimits von Claude Code um 50 % bis zum 31. August.",
         "ar": "نمدّد زيادة الحدود الأسبوعية لـClaude Code بنسبة 50% حتى 31 أغسطس."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We’re extending the 50% increase to weekly Claude Code limits through August 31. \n\nWe hope to make this a permanent change to our plans, but strong demand for our models means that capacity may be tight over the coming weeks. We’ll keep you posted as things develop.",
+      "fullTexts": {
+        "zh": "我们将把 50% 的增幅延长至每周 Claude Code 限额，直至 8 月 31 日。\n\n我们希望将这一变化永久纳入我们的计划，但我们模型的强劲需求意味着未来几周的容量可能会紧张。我们会随着事态发展随时向您通报。",
+        "ja": "8月31日まで、Claude Codeの週次制限の50%増加を延長します。\n\nこの変更を当社のプランに恒久的なものとすることを望んでいますが、当社のモデルに対する強い需要により、今後数週間にわたって容量が逼迫する可能性があります。状況が進展次第、お知らせします。",
+        "ko": "8월 31일까지 주간 Claude Code 한도 50% 증가를 연장합니다.\n\n이것을 우리 플랜의 영구적인 변경으로 만들고자 희망하지만, 우리 모델에 대한 강한 수요로 인해 앞으로 몇 주 동안 용량이 타이트할 수 있습니다. 상황이 발전함에 따라 알려드리겠습니다.",
+        "es": "Estamos extendiendo el aumento del 50% a los límites semanales de Claude Code hasta el 31 de agosto.\n\nEsperamos poder hacer de esto un cambio permanente en nuestros planes, pero la fuerte demanda de nuestros modelos significa que la capacidad podría ser limitada en las próximas semanas. Los mantendremos informados a medida que las cosas avancen.",
+        "fr": "Nous prolongeons l’augmentation de 50 % des limites hebdomadaires de Claude Code jusqu’au 31 août.\n\nNous espérons rendre ce changement permanent dans nos plans, mais la forte demande pour nos modèles signifie que la capacité pourrait être limitée dans les semaines à venir. Nous vous tiendrons informés au fur et à mesure que les choses évolueront."
+      },
+      "translatedAt": "2026-09-09T21:43:06.176Z"
     },
     "2088014831605702937": {
       "excerpt": "Hit your usage limit in Claude Code desktop?",
@@ -478,8 +789,18 @@
         "de": "Hast du dein Nutzungslimit in Claude Code für den Desktop erreicht?",
         "ar": "هل وصلت إلى حد الاستخدام في إصدار سطح المكتب من Claude Code؟"
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {
+        "zh": "在 Claude Code 桌面版中达到使用限制？现在有一个自动继续复选框。\n\n将其打开后，一旦您的限制重置，它就会自动从您中断的地方继续。",
+        "zh-Hant": "在 Claude Code 桌面版達到使用限制了嗎？現在有一個自動繼續的選項方塊。\n\n啟用它，一旦您的限制重置，它就會自動從您中斷的地方繼續。",
+        "ko": "Claude Code 데스크톱에서 사용 한도를 초과했나요? 이제 자동 계속 체크박스가 있습니다.\n\n이것을 켜면 한도가 재설정되면 중단한 곳에서 자동으로 계속됩니다.",
+        "es": "¿Alcanzaste tu límite de uso en Claude Code de escritorio? Ahora hay una casilla de verificación para continuar automáticamente.\n\nActívala, y continuará automáticamente donde lo dejaste una vez que tu límite se reinicie.",
+        "fr": "Avez-vous atteint votre limite d'utilisation dans Claude Code sur ordinateur ? Il existe désormais une case à cocher pour la poursuite automatique.\n\nActivez-la, et elle continuera automatiquement là où vous vous êtes arrêté une fois que votre limite sera réinitialisée.",
+        "de": "Haben Sie Ihr Nutzungs-Limit in Claude Code Desktop erreicht? Es gibt jetzt ein Kontrollkästchen für die automatische Fortsetzung.\n\nSchalten Sie es ein, und es wird automatisch dort weitermachen, wo Sie aufgehört haben, sobald Ihr Limit zurückgesetzt ist."
+      },
+      "fullText": "Hit your usage limit in Claude Code desktop? There's now an auto-continue checkbox. \n\nTurn it on, and it'll automatically continue where you left off once your limit resets.",
+      "translatedAt": "2026-09-09T21:44:15.922Z"
     },
     "2078511173759324328": {
       "excerpt": "We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.",
@@ -494,8 +815,20 @@
         "de": "Außerdem bleiben die Wochenlimits von Claude Code für alle Nutzer von Pro, Max, Team und sitzbasiertem Enterprise um 50 % erhöht, jetzt bis zum 19. August.",
         "ar": "نُبقي أيضًا الحدود الأسبوعية لـClaude Code أعلى بنسبة 50%، حتى 19 أغسطس الآن، لجميع مستخدمي Pro وMax وTeam وEnterprise القائمة على المقاعد."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.",
+      "fullTexts": {
+        "zh": "我们还将继续为所有Pro、Max、Team和按席位计费的Enterprise用户提高Claude Code每周额度，增幅为50%，现延长至8月19日。",
+        "zh-Hant": "我們還將繼續為所有Pro、Max、Team和按席位計費的Enterprise用戶提高Claude Code每週額度，增幅為50%，現延長至8月19日。",
+        "ja": "Pro、Max、Team、席数課金のEnterpriseの全ユーザーを対象に、Claude Codeの週間利用枠を50%増やす措置も8月19日まで継続します。",
+        "ko": "모든 Pro, Max, Team 및 좌석 기반 Enterprise 사용자를 위한 Claude Code 주간 한도 50% 추가 혜택도 8월 19일까지 유지합니다.",
+        "es": "También mantenemos un 50 % más de uso semanal de Claude Code, ahora hasta el 19 de agosto, para todos los usuarios de Pro, Max, Team y Enterprise por plazas.",
+        "fr": "Nous maintenons aussi les quotas hebdomadaires de Claude Code à un niveau 50 % plus élevé, désormais jusqu’au 19 août, pour tous les utilisateurs de Pro, Max, Team et Enterprise par siège.",
+        "de": "Außerdem bleiben die Wochenlimits von Claude Code für alle Nutzer von Pro, Max, Team und sitzbasiertem Enterprise um 50 % erhöht, jetzt bis zum 19. August.",
+        "ar": "نُبقي أيضًا الحدود الأسبوعية لـClaude Code أعلى بنسبة 50%، حتى 19 أغسطس الآن، لجميع مستخدمي Pro وMax وTeam وEnterprise القائمة على المقاعد."
+      },
+      "translatedAt": "2026-09-09T21:43:10.779Z"
     },
     "2078302415804379218": {
       "excerpt": "Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits.",
@@ -511,7 +844,8 @@
         "ar": "بدءًا من 20 يوليو، ستشمل جميع خطط Max وTeam Premium نموذج Claude Fable 5، عند 50% من الحدود."
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {}
     },
     "2077603834453770467": {
       "excerpt": "We've reset 5-hour and weekly rate limits for all users.",
@@ -526,8 +860,20 @@
         "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
         "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We've reset 5-hour and weekly rate limits for all users.",
+      "fullTexts": {
+        "zh": "我们已为所有用户重置5小时额度和每周额度。",
+        "zh-Hant": "我們已為所有用戶重置5小時額度和每週額度。",
+        "ja": "全ユーザーの5時間枠と週間利用枠をリセットしました。",
+        "ko": "모든 사용자의 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+        "fr": "Nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+        "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
+      },
+      "translatedAt": "2026-09-09T21:43:14.128Z"
     },
     "2076351399999557669": {
       "excerpt": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
@@ -542,8 +888,20 @@
         "de": "Wir verlängern den Zugang zu Claude Fable 5 für alle kostenpflichtigen Tarife und die um 50 % erhöhten Wochenlimits von Claude Code bis zum 19. Juli.",
         "ar": "نمدّد الوصول إلى Claude Fable 5 في جميع الخطط المدفوعة، ونُبقي الحدود الأسبوعية لـClaude Code أعلى بنسبة 50%، حتى 19 يوليو."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+      "fullTexts": {
+        "zh": "我们将所有付费方案使用Claude Fable 5的期限延长至7月19日，Claude Code每周额度提高50%的措施也将维持到这一天。",
+        "zh-Hant": "我們將所有付費方案使用Claude Fable 5的期限延長至7月19日，Claude Code每週額度提高50%的措施也將維持到這一天。",
+        "ja": "すべての有料プランでClaude Fable 5を利用できる期間と、Claude Codeの週間利用枠を50%増やす措置を、7月19日まで延長します。",
+        "ko": "모든 유료 요금제의 Claude Fable 5 이용 기간과 Claude Code 주간 한도 50% 추가 혜택을 7월 19일까지 연장합니다.",
+        "fr": "Nous prolongeons jusqu’au 19 juillet l’accès à Claude Fable 5 pour tous les abonnements payants, ainsi que les quotas hebdomadaires de Claude Code augmentés de 50 %.",
+        "de": "Wir verlängern den Zugang zu Claude Fable 5 für alle kostenpflichtigen Tarife und die um 50 % erhöhten Wochenlimits von Claude Code bis zum 19. Juli.",
+        "ar": "نمدّد الوصول إلى Claude Fable 5 في جميع الخطط المدفوعة، ونُبقي الحدود الأسبوعية لـClaude Code أعلى بنسبة 50%، حتى 19 يوليو.",
+        "es": "Prolongamos hasta el 19 de julio el acceso a Claude Fable 5 en todos los planes de pago y el aumento del 50 % de los límites semanales de Claude Code."
+      },
+      "translatedAt": "2026-09-09T21:43:17.245Z"
     },
     "2075279141352706215": {
       "excerpt": "We've reset 5-hour and weekly rate limits for all users.",
@@ -558,8 +916,20 @@
         "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
         "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We've reset 5-hour and weekly rate limits for all users.",
+      "fullTexts": {
+        "zh-Hant": "我們已為所有用戶重置5小時額度和每週額度。",
+        "ja": "全ユーザーの5時間枠と週間利用枠をリセットしました。",
+        "ko": "모든 사용자의 5시간 한도와 주간 한도를 초기화했습니다.",
+        "fr": "Nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+        "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين.",
+        "zh": "我们已为所有用户重置5小时额度和每周额度。",
+        "es": "Hemos restablecido los límites de 5 horas y semanales de todos los usuarios."
+      },
+      "translatedAt": "2026-09-09T21:43:20.343Z"
     },
     "2074525821755101458": {
       "excerpt": "We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude.",
@@ -575,7 +945,8 @@
         "ar": "نمدّد مضاعفة حدود استخدام Cowork حتى 5 أغسطس، لتتمكن من إسناد مهام أكبر إلى Claude."
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {}
     },
     "2072429181565288665": {
       "excerpt": "Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
@@ -590,8 +961,20 @@
         "de": "Da Fable 5 wieder für die Entwicklung bereitsteht, haben wir die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
         "ar": "الآن وقد أصبح Fable 5 جاهزًا للتطوير مجددًا، أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية للجميع."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
+      "fullTexts": {
+        "zh": "Fable 5现已（再次）可以用于开发，我们也重置了所有人的5小时额度和每周额度。",
+        "zh-Hant": "Fable 5現已（再次）可以用於開發，我們也重置了所有人的5小時額度和每週額度。",
+        "ja": "Fable 5で再び開発できるようになったので、全員の5時間枠と週間利用枠をリセットしました。",
+        "ko": "Fable 5가 다시 개발에 사용할 준비를 마쳤으므로, 모든 사용자의 5시간 한도와 주간 한도를 초기화했습니다.",
+        "es": "Ahora que Fable 5 está listo para desarrollar de nuevo, hemos restablecido los límites de 5 horas y semanales de todo el mundo.",
+        "fr": "Maintenant que Fable 5 est de nouveau prêt pour le développement, nous avons réinitialisé les quotas de 5 heures et hebdomadaires de tout le monde.",
+        "de": "Da Fable 5 wieder für die Entwicklung bereitsteht, haben wir die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+        "ar": "الآن وقد أصبح Fable 5 جاهزًا للتطوير مجددًا، أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية للجميع."
+      },
+      "translatedAt": "2026-09-09T21:43:23.305Z"
     },
     "2072402639644766602": {
       "excerpt": "All paid plans with usage included can access Fable 5 through July 7.",
@@ -607,7 +990,8 @@
         "ar": "يمكن لجميع الخطط المدفوعة التي تتضمن حصة استخدام الوصول إلى Fable 5 حتى 7 يوليو."
       },
       "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullTexts": {}
     },
     "2068122937308426676": {
       "excerpt": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans.",
@@ -622,8 +1006,20 @@
         "de": "Update: Wir haben die 5-Stunden- und Wochenlimits für alle Nutzer in sämtlichen Tarifen zurückgesetzt.",
         "ar": "تحديث: أعدنا بالفعل ضبط حدود الاستخدام لخمس ساعات والحدود الأسبوعية للجميع، في جميع الخطط."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!",
+      "fullTexts": {
+        "zh": "更新：我们已经为所有计划下的每个人重置了 5 小时和每周使用限制。祝您周末愉快！",
+        "zh-Hant": "更新：我們已經為所有計劃中的每個人都重置了 5 小時和每週使用限制。享受你的週末！",
+        "ja": "更新：すべてのプランで、全員の5時間および週間の使用制限をリセットしました。週末をお楽しみください！",
+        "ko": "업데이트: 모든 플랜에 걸쳐 모든 사용자에게 5시간 및 주간 사용 한도를 재설정했습니다. 즐거운 주말 되세요!",
+        "fr": "Mise à jour : nous avons procédé à la réinitialisation des limites d'utilisation de 5 heures et hebdomadaires pour tout le monde, sur tous les plans. Profitez bien de votre week-end !",
+        "de": "Update: Wir haben die 5-Stunden- und wöchentlichen Nutzungsbeschränkungen für alle zurückgesetzt, über alle Pläne hinweg. Genießen Sie Ihr Wochenende!",
+        "ar": "تحديث: لقد قمنا بإعادة تعيين حدود الاستخدام لمدة 5 ساعات وأسبوعية للجميع، عبر جميع الخطط. استمتعوا بعطلة نهاية الأسبوع!",
+        "es": "Actualización: hemos procedido a restablecer los límites de uso de 5 horas y semanales para todos, en todos los planes. ¡Disfruten su fin de semana!"
+      },
+      "translatedAt": "2026-09-09T21:44:16.902Z"
     },
     "2061501787769893055": {
       "excerpt": "We've reset 5-hour and weekly rate limits for all users on Pro and Max plans.",
@@ -638,23 +1034,47 @@
         "de": "Wir haben die 5-Stunden- und Wochenlimits aller Nutzer der Pro- und Max-Tarife zurückgesetzt.",
         "ar": "أعدنا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع مستخدمي خطتَي Pro وMax."
       },
-      "provider": "editorial-review",
-      "reviewedAt": "2026-09-08T18:33:18.785Z"
+      "provider": "FxEmbed",
+      "reviewedAt": "2026-09-08T18:33:18.785Z",
+      "fullText": "We've reset 5-hour and weekly rate limits for all users on Pro and Max plans.\n\nWe fixed an issue that caused some Claude Code sessions to spawn excessive parallel subagents, burning through usage faster than expected.",
+      "fullTexts": {
+        "zh": "我们已为 Pro 和 Max 计划的所有用户重置了 5 小时和每周速率限制。\n\n我们修复了一个问题，该问题导致某些 Claude Code 会话生成过多的并行子代理，从而导致使用量比预期更快地耗尽。",
+        "zh-Hant": "我們已為 Pro 和 Max 方案的所有用戶重置 5 小時和每週速率限制。\n\n我們修復了一個問題，該問題導致某些 Claude Code 工作階段產生過多的並行子代理，從而比預期更快地耗盡使用量。",
+        "ja": "ProおよびMaxプランの全ユーザーの5時間および週間のレートリミットをリセットしました。\n\n一部のClaude Codeセッションで過剰な並列サブエージェントを生成し、予想よりも速く使用量を消費してしまう問題を修正しました。",
+        "ko": "Pro 및 Max 플랜의 모든 사용자에 대해 5시간 및 주간 속도 제한을 재설정했습니다.\n\n일부 Claude Code 세션에서 과도한 병렬 하위 에이전트를 생성하여 예상보다 빠르게 사용량을 소모하게 하는 문제를 수정했습니다.",
+        "ar": "لقد أعدنا تعيين حدود المعدل لمدة 5 ساعات وللأسبوع لجميع المستخدمين في خطط Pro و Max.\n\nلقد قمنا بإصلاح مشكلة تسببت في إنشاء بعض جلسات Claude Code لعدد مفرط من الوكلاء الفرعيين المتوازيين، مما يستهلك الاستخدام بشكل أسرع من المتوقع.",
+        "es": "Hemos restablecido los límites de tasa de 5 horas y semanales para todos los usuarios en los planes Pro y Max.\n\nArreglamos un problema que causaba que algunas sesiones de Claude Code generaran subagentes paralelos excesivos, consumiendo el uso más rápido de lo esperado."
+      },
+      "translatedAt": "2026-09-09T21:44:17.105Z"
     },
     "2097752790177370535": {
       "excerpt": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex.",
       "contentHash": "fa88a472616b58d0d0e335054ef8730ae895e63d2c5bd73c99169771765395a7",
       "texts": {
-        "zh": "今天早上在使用 ChatGPT Work 和 Codex 时，出现了一些小麻烦，一些预存的重置没有完全生效。",
-        "ko": "오늘 아침에 ChatGPT Work와 Codex에서 일부 저장된 리셋이 완전히 적용되지 않아 약간의 소란이 있었습니다.",
-        "ja": "今朝、ChatGPT WorkとCodexで使用した際に、一部のバンクトリセットが完全に適用されないというちょっとした騒ぎがありました。",
-        "de": "Heute Morgen gab es ein bisschen Aufregung mit einigen gespeicherten Resets, die nicht vollständig angewendet wurden, als sie in ChatGPT Work und Codex verwendet wurden.",
-        "ar": "حدثت بعض الفوضى هذا الصباح مع بعض إعادات التعيين المخزنة التي لم تُطبق بالكامل عند استخدامها في ChatGPT Work وCodex."
+        "zh": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用时没有完全生效，造成了一些问题。",
+        "ko": "오늘 아침 ChatGPT Work와 Codex에서 저장해 둔 초기화가 사용 시 완전히 적용되지 않는 문제가 일부 발생했습니다.",
+        "ja": "今朝、ChatGPT Work と Codex で、保存しておいたリセットを使用しても完全に適用されないケースがあり、少し混乱が生じました。",
+        "de": "Heute Morgen gab es etwas Durcheinander, weil einige aufgesparte Resets bei der Verwendung in ChatGPT Work und Codex nicht vollständig angewendet wurden.",
+        "ar": "حدثت بعض المشكلات هذا الصباح، إذ لم تُطبَّق بعض عمليات إعادة الضبط المحفوظة بالكامل عند استخدامها في ChatGPT Work وCodex.",
+        "zh-Hant": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用時沒有完全生效，造成了一些問題。",
+        "es": "Esta mañana hubo algunos problemas: ciertos restablecimientos guardados no se aplicaron por completo al usarlos en ChatGPT Work y Codex.",
+        "fr": "Ce matin, quelques problèmes sont survenus : certaines réinitialisations mises en réserve ne se sont pas entièrement appliquées lors de leur utilisation dans ChatGPT Work et Codex."
       },
-      "provider": "FxEmbed",
-      "translatedAt": "2026-09-09T19:31:35.228Z"
+      "provider": "editorial-review",
+      "translatedAt": "2026-09-09T21:45:05.122Z",
+      "fullText": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
+      "fullTexts": {
+        "zh": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用时没有完全生效，造成了一些问题。\n\n所有在受影响时段内使用过重置卡的用户，都会再获得一张，并收到一封致歉邮件。",
+        "zh-Hant": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用時沒有完全生效，造成了一些問題。\n\n所有在受影響時段內使用過重置卡的使用者，都會再獲得一張，並收到一封致歉郵件。",
+        "ja": "今朝、ChatGPT Work と Codex で、保存しておいたリセットを使用しても完全に適用されないケースがあり、少し混乱が生じました。\n\n影響のあった時間帯にリセットを使用した全員に、もう1回分のリセットとお詫びのメールをお送りします。",
+        "ko": "오늘 아침 ChatGPT Work와 Codex에서 저장해 둔 초기화가 사용 시 완전히 적용되지 않는 문제가 일부 발생했습니다.\n\n문제가 발생한 시간대에 초기화를 사용한 모든 분께 초기화 기회 1회와 사과 이메일을 보내드립니다.",
+        "es": "Esta mañana hubo algunos problemas: ciertos restablecimientos guardados no se aplicaron por completo al usarlos en ChatGPT Work y Codex.\n\nTodas las personas que usaron uno durante el período afectado recibirán otro y un correo de disculpa.",
+        "fr": "Ce matin, quelques problèmes sont survenus : certaines réinitialisations mises en réserve ne se sont pas entièrement appliquées lors de leur utilisation dans ChatGPT Work et Codex.\n\nToutes les personnes qui en ont utilisé une pendant la période concernée en recevront une autre, ainsi qu’un e-mail d’excuses.",
+        "de": "Heute Morgen gab es etwas Durcheinander, weil einige aufgesparte Resets bei der Verwendung in ChatGPT Work und Codex nicht vollständig angewendet wurden.\n\nAlle, die im betroffenen Zeitraum einen verwendet haben, erhalten einen weiteren sowie eine Entschuldigungs-E-Mail.",
+        "ar": "حدثت بعض المشكلات هذا الصباح، إذ لم تُطبَّق بعض عمليات إعادة الضبط المحفوظة بالكامل عند استخدامها في ChatGPT Work وCodex.\n\nسيحصل كل من استخدم إحداها خلال الفترة المتأثرة على عملية إعادة ضبط أخرى ورسالة بريد إلكتروني للاعتذار."
+      }
     }
   },
-  "pending": 3,
-  "lastAttemptAt": "2026-09-09T19:31:35.407Z"
+  "pending": 36,
+  "lastAttemptAt": "2026-09-09T21:44:18.083Z"
 }

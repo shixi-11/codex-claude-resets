@@ -23,7 +23,8 @@
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.2.2",
-      "contentHash": "fa88a472616b58d0d0e335054ef8730ae895e63d2c5bd73c99169771765395a7"
+      "contentHash": "fa88a472616b58d0d0e335054ef8730ae895e63d2c5bd73c99169771765395a7",
+      "fullText": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize."
     },
     "lastReset": {
       "id": "2097174560412246215",
@@ -39,7 +40,8 @@
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.2.2",
-      "contentHash": "a7b576705246ef1d4e3c09602bdb460de0168014c34ffac206d3f599c5055554"
+      "contentHash": "a7b576705246ef1d4e3c09602bdb460de0168014c34ffac206d3f599c5055554",
+      "fullText": "All reset for everyone. Enjoy the week with Astra."
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
@@ -62,7 +64,8 @@
         "Business"
       ],
       "rulesVersion": "1.2.2",
-      "contentHash": "bacb77d25506794495e906beea3edaf61858fcd1d91bfab3bcf3e31dfd4b2cd5"
+      "contentHash": "bacb77d25506794495e906beea3edaf61858fcd1d91bfab3bcf3e31dfd4b2cd5",
+      "fullText": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day.\n\nHappy Astra day and enjoy a phenomenal weekend. \n\nPS: If you create the account or upgrade before 8pm PT you will get it too. Still time!"
     }
   },
   "claude": {
@@ -107,7 +110,8 @@
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.2.2",
-      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
+      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+      "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users."
     },
     "lastReset": {
       "id": "2094856679250919746",
@@ -123,7 +127,8 @@
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.2.2",
-      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
+      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+      "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users."
     },
     "discoveryMode": "profile-relay",
     "latestGift": null
