@@ -3,11 +3,12 @@
 <p align="center"><strong>Reset times. Sources. History.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-claude-resets/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-claude-resets/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-claude-resets/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
-![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/5dfe38d00798dd658125c250fca85dd691aba1a0/docs/screenshot.jpg)
+![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/9198b538e6d88cd9d0665fb68fb065996feb5fb9/docs/screenshot.jpg)
 
 Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and elapsed time since the last reset announcement. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
+- **Read the complete post.** Codex and Claude both offer “Read full post” and “Show less”. Verified full text is stored alongside the summary; full translations retain the rest of the announcement.
 - **See the public clock first.** Confirmed announcement times become local-time countdowns. An approximate source time stays approximate. No verified time means no invented countdown.
 - **Follow the latest scheme.** A newer published reset replaces an older credit announcement in the Codex summary. Earlier announcements remain in the recent feed.
 - **Scan recent news.** The homepage feed shows the past seven days in descending publication order, with All, Codex and Claude filters. Older records retain their permanent links.
@@ -72,6 +73,7 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 [打开网站](https://shixilin.com/ai/codex-claude-resets/zh/) · [RSS订阅](https://shixilin.com/ai/codex-claude-resets/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-claude-resets/events.json)
 
 - 区分重置预告、已宣布完成、重置卡、额度变化和尚未确认的线索。
+- Codex和Claude两边均可展开、收起全文。采集时同时保存经核验的完整正文与摘要，全文翻译保留公告的后续内容。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
 - 首页展示下次重置、最新相关推文和上次重置公告；上次公告以持续更新的已过去时间显示，准确日期与来源在下方查看。
 - 最新重置与额度方案放在近期消息前面。Codex按发布时间选择最新的统一重置或赠卡公告，较早方案留在消息记录中。
