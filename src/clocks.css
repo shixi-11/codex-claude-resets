@@ -36,7 +36,8 @@
 
 .tweet-source,.tweet-source:hover,.source-action{text-decoration:none}.source-action-label{text-decoration:underline;text-underline-offset:4px}.source-arrow{font-size:16px;font-weight:500;text-decoration:none}.live-controls:not(:has([data-live-status]:not([hidden]))){display:none}
 
-/* Cards follow their own content; sections keep independent spacing. */
+/* Shared footer baseline, with compact spacing above the announcement. */
+.platform-card{display:flex;flex-direction:column}.platform-card>[data-priority-details]{display:flex;flex-direction:column;flex:1}.platform-card .latest-post{flex:1;padding:14px 0 12px}.platform-card .clock-face{margin-top:16px;padding-block:12px}.platform-card .tweet-source{margin:0 0 4px}.platform-card .last-reset{margin-top:12px}
 .platform-grid{align-items:stretch}.reset-overview{padding-bottom:24px}.platform-card{padding-bottom:20px!important}.last-reset>span:first-child{flex:1;min-width:0}.last-reset>[data-reset-elapsed]{flex:0 0 auto;text-align:end}@media(max-width:650px){.reset-overview{padding-bottom:20px}.platform-card{padding-bottom:18px!important}}
 
 .post-full>summary{justify-content:flex-start;padding:6px 0;font-size:12px;color:var(--ink);gap:0;min-height:32px}.post-full>summary span{font-size:inherit;font-weight:600;transform:none!important}.post-full .collapse-label{display:none}.post-full[open] .expand-label{display:none}.post-full[open] .collapse-label{display:inline}.post-body:has(>.post-full[open])>.tweet-excerpt,.post-body:has(>.post-full[open])>.excerpt,.post-body:has(>.post-full[open])>.offer-excerpt,.post-body:has(>.post-full[open])>.detail-excerpt,.post-body:has(>.post-full[open])>.translation-note{display:none}.full-post-text{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.85;margin:8px 0;color:var(--ink)}.post-full>summary:focus-visible{outline:2px solid #4e7158;outline-offset:3px;border-radius:2px}
