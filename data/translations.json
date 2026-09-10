@@ -1071,14 +1071,14 @@
       "translatedAt": "2026-09-09T21:45:05.122Z",
       "fullText": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
       "fullTexts": {
-        "zh": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用时没有完全生效，造成了一些问题。\n\n所有在受影响时段内使用过重置卡的用户，都会再获得一张，并收到一封致歉邮件。",
-        "zh-Hant": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用時沒有完全生效，造成了一些問題。\n\n所有在受影響時段內使用過重置卡的使用者，都會再獲得一張，並收到一封致歉郵件。",
-        "ja": "今朝、ChatGPT Work と Codex で、保存しておいたリセットを使用しても完全に適用されないケースがあり、少し混乱が生じました。\n\n影響のあった時間帯にリセットを使用した全員に、もう1回分のリセットとお詫びのメールをお送りします。",
-        "ko": "오늘 아침 ChatGPT Work와 Codex에서 저장해 둔 초기화가 사용 시 완전히 적용되지 않는 문제가 일부 발생했습니다.\n\n문제가 발생한 시간대에 초기화를 사용한 모든 분께 초기화 기회 1회와 사과 이메일을 보내드립니다.",
-        "es": "Esta mañana hubo algunos problemas: ciertos restablecimientos guardados no se aplicaron por completo al usarlos en ChatGPT Work y Codex.\n\nTodas las personas que usaron uno durante el período afectado recibirán otro y un correo de disculpa.",
-        "fr": "Ce matin, quelques problèmes sont survenus : certaines réinitialisations mises en réserve ne se sont pas entièrement appliquées lors de leur utilisation dans ChatGPT Work et Codex.\n\nToutes les personnes qui en ont utilisé une pendant la période concernée en recevront une autre, ainsi qu’un e-mail d’excuses.",
-        "de": "Heute Morgen gab es etwas Durcheinander, weil einige aufgesparte Resets bei der Verwendung in ChatGPT Work und Codex nicht vollständig angewendet wurden.\n\nAlle, die im betroffenen Zeitraum einen verwendet haben, erhalten einen weiteren sowie eine Entschuldigungs-E-Mail.",
-        "ar": "حدثت بعض المشكلات هذا الصباح، إذ لم تُطبَّق بعض عمليات إعادة الضبط المحفوظة بالكامل عند استخدامها في ChatGPT Work وCodex.\n\nسيحصل كل من استخدم إحداها خلال الفترة المتأثرة على عملية إعادة ضبط أخرى ورسالة بريد إلكتروني للاعتذار."
+        "zh": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用时没有完全生效，造成了一些问题。所有在受影响时段内使用过重置卡的用户，都会再获得一张，并收到一封致歉邮件。",
+        "zh-Hant": "今天早上，部分重置卡在 ChatGPT Work 和 Codex 中使用時沒有完全生效，造成了一些問題。所有在受影響時段內使用過重置卡的使用者，都會再獲得一張，並收到一封致歉郵件。",
+        "ja": "今朝、ChatGPT Work と Codex で、保存しておいたリセットを使用しても完全に適用されないケースがあり、少し混乱が生じました。影響のあった時間帯にリセットを使用した全員に、もう1回分のリセットとお詫びのメールをお送りします。",
+        "ko": "오늘 아침 ChatGPT Work와 Codex에서 저장해 둔 초기화가 사용 시 완전히 적용되지 않는 문제가 일부 발생했습니다. 문제가 발생한 시간대에 초기화를 사용한 모든 분께 초기화 기회 1회와 사과 이메일을 보내드립니다.",
+        "es": "Esta mañana hubo algunos problemas: ciertos restablecimientos guardados no se aplicaron por completo al usarlos en ChatGPT Work y Codex. Todas las personas que usaron uno durante el período afectado recibirán otro y un correo de disculpa.",
+        "fr": "Ce matin, quelques problèmes sont survenus : certaines réinitialisations mises en réserve ne se sont pas entièrement appliquées lors de leur utilisation dans ChatGPT Work et Codex. Toutes les personnes qui en ont utilisé une pendant la période concernée en recevront une autre, ainsi qu’un e-mail d’excuses.",
+        "de": "Heute Morgen gab es etwas Durcheinander, weil einige aufgesparte Resets bei der Verwendung in ChatGPT Work und Codex nicht vollständig angewendet wurden. Alle, die im betroffenen Zeitraum einen verwendet haben, erhalten einen weiteren sowie eine Entschuldigungs-E-Mail.",
+        "ar": "حدثت بعض المشكلات هذا الصباح، إذ لم تُطبَّق بعض عمليات إعادة الضبط المحفوظة بالكامل عند استخدامها في ChatGPT Work وCodex. سيحصل كل من استخدم إحداها خلال الفترة المتأثرة على عملية إعادة ضبط أخرى ورسالة بريد إلكتروني للاعتذار."
       }
     }
   },

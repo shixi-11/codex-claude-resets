@@ -1,8 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {postText,translatedText} from '../src/post-text.mjs';
-import {translationFromResponse} from '../scripts/translate.mjs';
+import {translationFromResponse,matchSourceBreaks} from '../scripts/translate.mjs';
 const event={id:'2097183639356489952',author:'thsottiaux',excerpt:'We reset usage.',contentHash:'abc'};
+test('translations follow source breaks without adding or flattening paragraphs',()=>{
+ assert.equal(matchSourceBreaks('One paragraph. Two sentences.','一个段落。\n\n两个句子。'),'一个段落。两个句子。');
+ assert.equal(matchSourceBreaks('One paragraph. Two sentences.','One paragraph.\n\nTwo sentences.'),'One paragraph. Two sentences.');
+ assert.equal(matchSourceBreaks('First.\n\nSecond.','第一段。\n第二段。'),'第一段。\n\n第二段。');
+ assert.throws(()=>matchSourceBreaks('First.\n\nSecond.','第一段。第二段。'));
+});
 const payload=(text='我们已重置额度。')=>({code:200,status:{id:event.id,url:`https://x.com/thsottiaux/status/${event.id}`,author:{screen_name:'thsottiaux',protected:false},text:event.excerpt,translation:{text,target_lang:'zh-cn'}}});
 test('full translation retains the second sentence and rejects changed full sources',()=>{
  const full={...event,fullText:event.excerpt+' Everyone affected receives another credit.'};

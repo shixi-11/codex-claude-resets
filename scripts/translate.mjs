@@ -8,6 +8,15 @@ const targetCodes={zh:'zh-cn','zh-Hant':'zh-tw',ja:'ja',ko:'ko',es:'es',fr:'fr',
 const vocabulary={zh:/重置|用量|额度|限额|限制|使用量/,'zh-Hant':/重置|用量|額度|限額|限制|使用量/,ja:/リセット|利用|使用|制限|上限/,ko:/초기화|재설정|리셋|사용|한도|제한/,es:/restablec|reinici|uso|límite|cuota/i,fr:/réinitial|utilisation|limite|quota/i,de:/zurücksetz|reset|nutzung|limit|kontingent/i,ar:/إعادة|استخدام|حدود|حصة|حصص/};
 const normalize=text=>String(text).replace(/https?:\/\/\S+/g,'').replace(/(?:^|\s)@[\w]+/g,' ').replace(/[’‘]/g,"'").replace(/…|\.{3}/g,'').replace(/\s+/g,' ').trim();
 
+// Preserve the source's authored breaks; responsive wrapping remains CSS's job.
+export function matchSourceBreaks(source,text){
+ const breaks=String(source).trim().match(/\r?\n+/g)||[];
+ const parts=String(text).trim().split(/\r?\n+/).map(part=>part.trim());
+ if(!breaks.length)return parts.reduce((joined,part)=>joined+(joined&& !/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}。，！？]$/u.test(joined)&&! /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(part)?' ':'')+part,'');
+ if(parts.length!==breaks.length+1)throw Error('Translation paragraph structure differs from source');
+ return parts.map((part,i)=>part+(breaks[i]?.replace(/\r/g,'')||'')).join('');
+}
+
 export function translationFromResponse(event,lang,payload,full=false){
  const post=payload?.status,translation=post?.translation,url=parsePostUrl(post?.url);
  if(payload?.code!==200||String(post?.id)!==event.id||!url||url.id!==event.id||url.author.toLowerCase()!==event.author.toLowerCase()||post.author?.screen_name?.toLowerCase()!==event.author.toLowerCase()||post.author?.protected)throw Error('Translation source identity mismatch');
@@ -15,7 +24,7 @@ export function translationFromResponse(event,lang,payload,full=false){
  if(typeof translation?.text!=='string'||translation.text.length>20000||translation.target_lang?.toLowerCase()!==targetCodes[lang]||!translation.text.trim())throw Error('Translation unavailable');
  if(full){
   if(!event.fullText||normalize(post.raw_text?.text||post.text)!==normalize(event.fullText))throw Error('Full translation source text changed');
-  const text=translation.text.trim();
+  const text=matchSourceBreaks(event.fullText,translation.text);
   for(const name of ['ChatGPT Work','Claude Code','ChatGPT','Codex','Astra','Fable'])if(event.fullText.includes(name)&&!text.includes(name))throw Error('Product name lost in translation');
   if(/banked reset/i.test(event.fullText)&&/银行|銀行|은행|bancari|bancaire|bankier|banking|مصرف|銀行預金/i.test(text))throw Error('Reset credit terminology needs review');
   return text;
