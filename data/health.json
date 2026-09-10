@@ -1,26 +1,26 @@
 {
-  "lastAttemptAt": "2026-09-10T14:29:56.835Z",
-  "lastSuccessAt": "2026-09-10T14:29:56.835Z",
-  "discoveryAt": "2026-09-10T14:29:56.835Z",
+  "lastAttemptAt": "2026-09-10T17:55:01.936Z",
+  "lastSuccessAt": "2026-09-10T17:55:01.936Z",
+  "discoveryAt": "2026-09-10T17:55:01.936Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "ok": true,
-      "candidates": 22
+      "candidates": 21
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "ok": true,
-      "candidates": 21
+      "candidates": 20
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 6,
+      "checked": 5,
       "failed": 0
     }
   ],
