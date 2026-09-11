@@ -217,18 +217,24 @@ for frame in range(1,49):
         anchor,rest,shoulder,elbow,hand,upper,fore,stick,head=rig
         centers=[8,32] if index==0 else [20,44]
         # Human reference: shoulder lift, bent elbow, fast stroke, free rebound.
-        side=anchor+Vector((0,-.10 if index==0 else .10,-.43))
-        raised=anchor+Vector((.10,0,1.20))
-        up_direction=Vector((.18,0,.98)).normalized()
-        down_direction=Vector((.84,0,-.54)).normalized()
-        side_direction=Vector((.72,0,-.69)).normalized()
-        striking=Vector((1.35,rest.y,.965+.145))-down_direction*.70
-        rebound=striking+Vector((-.025,0,.14))
+        side=anchor+Vector((.14,-.10 if index==0 else .10,-.79))
+        raised=anchor+Vector((.10,0,1.00))
+        vertical=Vector((0,0,1))
+        contact=Vector((1.30,-.95,.965+.145)) if index==0 else Vector((1.48,-.36,.965+.145))
+        forward=Vector((contact.x-anchor.x,contact.y-anchor.y,0)).normalized()
+        up_direction=(forward*.18+vertical*.98).normalized()
+        down_direction=(forward*.98-vertical*.20).normalized()
+        side_direction=(forward*.70+vertical*.714).normalized()
+        striking=contact-down_direction*.94
+        # A single anatomical swing plane prevents elbow flipping and cross-body folds.
+        side=anchor+forward*.10-vertical*.73
+        raised=anchor+forward*.08+vertical*.82
+        rebound=striking-forward*.025+vertical*.10
         rebound_direction=down_direction.slerp(up_direction,.16)
         if index==0:
             keys=[(1,side,side_direction),(5,raised,up_direction),(8,striking,down_direction),
                   (10,rebound,rebound_direction),(20,raised,up_direction),(29,raised,up_direction),
-                  (32,striking,down_direction),(34,rebound,rebound_direction),(48,side,side_direction)]
+                  (32,striking,down_direction),(34,rebound,rebound_direction),(42,side,up_direction),(48,side,side_direction)]
         else:
             keys=[(1,striking,down_direction),(8,raised,up_direction),(17,raised,up_direction),
                   (20,striking,down_direction),(22,rebound,rebound_direction),(32,raised,up_direction),
@@ -238,19 +244,24 @@ for frame in range(1,49):
             if begin[0]<=frame<=end[0]:
                 u=(frame-begin[0])/(end[0]-begin[0])
                 u=u*u if end[0] in centers else u*u*(3-2*u)
-                h=begin[1].lerp(end[1],u)
+                start_reach=begin[1]-anchor;end_reach=end[1]-anchor
+                start_angle=math.atan2(start_reach.z,start_reach.dot(forward))
+                end_angle=math.atan2(end_reach.z,end_reach.dot(forward))
+                angle=start_angle+(end_angle-start_angle)*u
+                reach_length=max(.74,start_reach.length+(end_reach.length-start_reach.length)*u)
+                h=anchor+(forward*math.cos(angle)+vertical*math.sin(angle))*reach_length
                 direction=begin[2].slerp(end[2],u)
                 break
         impact=max(max(0,1-abs(frame-contact)/2) for contact in centers)
         impacts.append(impact)
-        tip=h+direction.normalized()*.70
+        tip=h+direction.normalized()*.94
         # Solve a two-bone arm: both shoulder and elbow rotate, lengths stay fixed.
-        upper_length,fore_length=.62,.70
+        upper_length,fore_length=.40,.45
         reach=h-anchor;distance=reach.length;axis=reach.normalized()
         assert abs(upper_length-fore_length)<distance<upper_length+fore_length, (frame,index,distance)
         along=(upper_length**2-fore_length**2+distance**2)/(2*distance)
-        pole=Vector((0,-1 if index==0 else 1,-.30))
-        bend=(pole-axis*pole.dot(axis)).normalized()
+        angle=math.atan2(axis.z,axis.dot(forward))
+        bend=forward*math.sin(angle)-vertical*math.cos(angle)
         joint=anchor+axis*along+bend*math.sqrt(max(0,upper_length**2-along**2))
         shoulder.location=anchor;elbow.location=joint;hand.location=h;head.location=tip
         pose_rod(upper,anchor,joint);pose_rod(fore,joint,h)
