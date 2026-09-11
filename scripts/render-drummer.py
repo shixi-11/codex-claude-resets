@@ -161,7 +161,7 @@ arrow=curve('Reset emblem arrow',[tuple(back+normal*.105),tuple(end),tuple(back-
 arrow.parent=body_root
 
 # Turn the complete character toward the drum; keep the camera and drum fixed.
-yaw = math.atan2(2.23, .67)
+yaw = math.atan2(1.93, .67)
 def facing_point(point):
     x,y,z=point
     x-=char_x
@@ -178,25 +178,25 @@ for ob in character_roots:
 facing.rotation_euler.z=yaw
 
 # Drum: membrane, shell, metal rims, lacing and three feet have distinct materials.
-bpy.ops.object.empty_add(type='PLAIN_AXES', location=(1.65,-.67,.15))
+bpy.ops.object.empty_add(type='PLAIN_AXES', location=(1.35,-.67,.15))
 drum_root=bpy.context.object
 drum_root.name='Drum rebound control'
 drum_parts=[]
-drum_parts.append(cylinder('Olive drum shell',(1.65,-.67,.55),.64,.65,olive))
-drum_parts.append(cylinder('Top rim',(1.65,-.67,.90),.675,.09,rim_mat))
-drum_parts.append(cylinder('Drum membrane',(1.65,-.67,.948),.615,.035,skin_mat))
-drum_parts.append(cylinder('Bottom rim',(1.65,-.67,.235),.665,.08,rim_mat))
+drum_parts.append(cylinder('Olive drum shell',(1.35,-.67,.55),.64,.65,olive))
+drum_parts.append(cylinder('Top rim',(1.35,-.67,.90),.675,.09,rim_mat))
+drum_parts.append(cylinder('Drum membrane',(1.35,-.67,.948),.615,.035,skin_mat))
+drum_parts.append(cylinder('Bottom rim',(1.35,-.67,.235),.665,.08,rim_mat))
 for i in range(12):
     a=2*math.pi*i/12;b=a+math.pi/12
-    top=(1.65+.649*math.cos(a),-.67+.649*math.sin(a),.856)
-    bot=(1.65+.649*math.cos(b),-.67+.649*math.sin(b),.286)
+    top=(1.35+.649*math.cos(a),-.67+.649*math.sin(a),.856)
+    bot=(1.35+.649*math.cos(b),-.67+.649*math.sin(b),.286)
     drum_parts.append(rod('Tension lace '+str(i),top,bot,.015,rope_mat))
 bpy.context.view_layer.update()
 for ob in drum_parts:
     matrix=ob.matrix_world.copy();ob.parent=drum_root;ob.matrix_world=matrix
 for i in range(3):
     a=2*math.pi*i/3
-    sphere('Drum foot '+str(i),(1.65+.43*math.cos(a),-.67+.43*math.sin(a),.13),(.13,.13,.13),olive)
+    sphere('Drum foot '+str(i),(1.35+.43*math.cos(a),-.67+.43*math.sin(a),.13),(.13,.13,.13),olive)
 
 # Two complete gripping hands alternate, four contacts per loop.
 rigs=[]
@@ -216,38 +216,49 @@ for frame in range(1,49):
     for index,rig in enumerate(rigs):
         anchor,rest,shoulder,elbow,hand,upper,fore,stick,head=rig
         centers=[8,32] if index==0 else [20,44]
-        # Rest at the sides -> swing out/up -> shoulder-led strike -> return.
+        # Human reference: shoulder lift, bent elbow, fast stroke, free rebound.
         side=anchor+Vector((0,-.10 if index==0 else .10,-.43))
-        raised=Vector((.20 if index==0 else .75,rest.y,2.28))
+        raised=anchor+Vector((.10,0,1.20))
+        up_direction=Vector((.18,0,.98)).normalized()
         down_direction=Vector((.84,0,-.54)).normalized()
-        striking=Vector((1.65,rest.y,.965+.145))-down_direction*.70
-        h=side.copy();direction=Vector((.72,0,-.69)).normalized();impact=0.0
-        for contact in centers:
-            t=frame-contact
-            if -7<=t<=-3:
-                u=(t+7)/4;u=u*u*(3-2*u)
-                h=side.lerp(raised,u)
-                direction=Vector((.72,0,-.69)).normalized().slerp(Vector((.60,0,.80)),u)
-            elif -3<t<=0:
-                u=(t+3)/3;u=u*u
-                h=raised.lerp(striking,u)
-                direction=Vector((.60,0,.80)).slerp(down_direction,u)
-                impact=u
-            elif 0<t<=4:
-                u=t/4;u=u*u*(3-2*u)
-                h=striking.lerp(side,u)
-                direction=down_direction.slerp(Vector((.72,0,-.69)).normalized(),u)
-                impact=1-u
+        side_direction=Vector((.72,0,-.69)).normalized()
+        striking=Vector((1.35,rest.y,.965+.145))-down_direction*.70
+        rebound=striking+Vector((-.025,0,.14))
+        rebound_direction=down_direction.slerp(up_direction,.16)
+        if index==0:
+            keys=[(1,side,side_direction),(5,raised,up_direction),(8,striking,down_direction),
+                  (10,rebound,rebound_direction),(20,raised,up_direction),(29,raised,up_direction),
+                  (32,striking,down_direction),(34,rebound,rebound_direction),(48,side,side_direction)]
+        else:
+            keys=[(1,striking,down_direction),(8,raised,up_direction),(17,raised,up_direction),
+                  (20,striking,down_direction),(22,rebound,rebound_direction),(32,raised,up_direction),
+                  (41,raised,up_direction),(44,striking,down_direction),(46,rebound,rebound_direction),
+                  (48,striking,down_direction)]
+        for begin,end in zip(keys,keys[1:]):
+            if begin[0]<=frame<=end[0]:
+                u=(frame-begin[0])/(end[0]-begin[0])
+                u=u*u if end[0] in centers else u*u*(3-2*u)
+                h=begin[1].lerp(end[1],u)
+                direction=begin[2].slerp(end[2],u)
+                break
+        impact=max(max(0,1-abs(frame-contact)/2) for contact in centers)
         impacts.append(impact)
         tip=h+direction.normalized()*.70
-        joint=anchor.lerp(h,.48)+Vector((-.09,0,-.10))
+        # Solve a two-bone arm: both shoulder and elbow rotate, lengths stay fixed.
+        upper_length,fore_length=.62,.70
+        reach=h-anchor;distance=reach.length;axis=reach.normalized()
+        assert abs(upper_length-fore_length)<distance<upper_length+fore_length, (frame,index,distance)
+        along=(upper_length**2-fore_length**2+distance**2)/(2*distance)
+        pole=Vector((0,-1 if index==0 else 1,-.30))
+        bend=(pole-axis*pole.dot(axis)).normalized()
+        joint=anchor+axis*along+bend*math.sqrt(max(0,upper_length**2-along**2))
         shoulder.location=anchor;elbow.location=joint;hand.location=h;head.location=tip
         pose_rod(upper,anchor,joint);pose_rod(fore,joint,h)
         pose_rod(stick,h-direction*.10,tip)
         for ob in [shoulder,elbow,hand,head,upper,fore,stick]:
             for prop in ['location','rotation_euler','scale']:
                 ob.keyframe_insert(data_path=prop,frame=frame)
-    body_root.location.z=-.018*max(impacts)
+    body_root.location.z=-.045*max(impacts)
     body_root.keyframe_insert(data_path='location',frame=frame)
 for ob in bpy.data.objects:
     if ob.animation_data and ob.animation_data.action:
@@ -287,9 +298,9 @@ area('Gentle top rim',(1,3,5),380,3.0,(1,1,.92))
 bpy.ops.object.camera_add(location=(4.7,-8.7,6.0))
 camera=bpy.context.object
 camera.name='Locked three-quarter product camera'
-target=Vector((.22,-.04,1.22))
+target=Vector((.10,-.04,1.22))
 camera.rotation_euler=(target-camera.location).to_track_quat('-Z','Y').to_euler()
-camera.data.type='ORTHO';camera.data.ortho_scale=4.90
+camera.data.type='ORTHO';camera.data.ortho_scale=4.65
 scene.camera=camera
 scene.frame_set(1)
 bpy.ops.wm.save_as_mainfile(filepath=str(ART/'20260912_敲鼓.blend'))
