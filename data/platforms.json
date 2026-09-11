@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2098300424520687965",
       "publishedAt": "2026-09-11T06:39:40.399Z",
-      "verifiedAt": "2026-09-11T18:39:38.042Z",
+      "verifiedAt": "2026-09-11T21:21:23.985Z",
       "excerpt": "When I say excellent service for existing users, that includes the occasional reset",
       "fullText": "When I say excellent service for existing users, that includes the occasional reset",
       "truncated": false,
@@ -75,7 +75,7 @@
         "type": "usage-promotion",
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
-        "verifiedAt": "2026-09-11T18:39:44.242Z",
+        "verifiedAt": "2026-09-11T21:21:27.346Z",
         "benefit": "Claude Code weekly usage +50%",
         "eligible": "Pro, Max, Team, and legacy seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -87,7 +87,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-09-11T18:39:44.242Z",
+      "checkedAt": "2026-09-11T21:21:27.346Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
