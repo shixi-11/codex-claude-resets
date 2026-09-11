@@ -1134,8 +1134,27 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-11T07:21:19.277Z"
+    },
+    "2093059087298601113": {
+      "excerpt": "Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year.",
+      "contentHash": "7f72e1418cf19528e1d38e75575d712307b483a13273ce34758020a26d07f4ff",
+      "texts": {
+        "zh": "标准席位免费，高级席位享有 5 倍使用限额，每月 15 美元，享受 80% 折扣，为期一年。",
+        "zh-Hant": "標準席位免費，而高級席位提供 5 倍使用限制，每月 15 美元，一年 80% 折扣。",
+        "es": "Los asientos estándar son gratuitos, y los asientos premium con límites de uso 5 veces mayores cuestan $15 al mes, un descuento del 80%, durante un año.",
+        "ar": "المقاعد القياسية مجانية، والمقاعد المميزة مع حدود استخدام 5x هي 15 دولارًا شهريًا، خصم 80%، لمدة عام واحد."
+      },
+      "fullText": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, can get Claude through our new Claude Team plan for scientists. Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year.\n\nClaude is becoming increasingly capable of scientific work, with recent progress on problems from advanced physics calculations to protein design. Alongside that progress, we've been investing in the research community: Claude Science launched in June, and our AI for Science program funds high-impact projects with free credits. Today's expansion builds on both.\n\nPrincipal investigators (or equivalent) at academic and nonprofit research institutions can sign up, then add the researchers in their group. Over the coming months, we plan to extend the program well beyond the initial 10,000 seats.\n\nLearn more: https://t.co/RTG1JxWi4Q",
+      "fullTexts": {
+        "zh": "从今天起，来自各个领域的 10,000 名科学家，从数学到化学再到物理等，都可以通过我们新推出的 Claude 团队科学家计划获得 Claude。标准席位免费，高级席位享有 5 倍使用限额，每月 15 美元，享受 80% 折扣，为期一年。\n\nClaude 在科学工作方面的能力日益强大，最近在从高级物理计算到蛋白质设计的问题上取得了进展。与此同时，我们一直在投资研究社区：Claude Science 于六月推出，我们的 AI for Science 计划通过免费积分资助高影响力项目。今天的发展建立在这两者基础之上。\n\n学术和非营利研究机构的首席研究员（或同等职位）可以注册，然后添加他们团队中的研究人员。在接下来的几个月里，我们计划将该计划扩展到远超最初 10,000 个席位的范围。\n\n了解更多：",
+        "zh-Hant": "從今天開始，來自各領域的 10,000 名科學家，從數學到化學、物理學等領域，都可以透過我們全新推出的 Claude 科學家團隊計劃來使用 Claude。標準席位免費，而高級席位提供 5 倍使用限制，每月 15 美元，一年 80% 折扣。\n\nClaude 在科學工作方面變得越來越強大，最近在從高級物理計算到蛋白質設計等問題上取得了進展。伴隨著這一進展，我們一直致力於投資研究社群：Claude Science 於六月推出，我們的 AI for Science 計劃資助高影響力項目，提供免費信用額度。今天擴大規模正是建立在這兩者基礎上。\n\n學術和非營利研究機構的主要研究員（或同等職位）可以註冊，然後添加他們團隊中的研究人員。在接下來的幾個月裡，我們計劃將該計劃擴展到遠超最初 10,000 個席位。\n\n了解更多：",
+        "es": "A partir de hoy, 10,000 científicos de todos los campos, desde matemáticas hasta química, física y más, pueden acceder a Claude a través de nuestro nuevo plan Claude Team para científicos. Los asientos estándar son gratuitos, y los asientos premium con límites de uso 5 veces mayores cuestan $15 al mes, un descuento del 80%, durante un año.\n\nClaude se está volviendo cada vez más capaz para el trabajo científico, con avances recientes en problemas que van desde cálculos avanzados de física hasta el diseño de proteínas. Junto con ese progreso, hemos estado invirtiendo en la comunidad de investigación: Claude Science se lanzó en junio, y nuestro programa AI for Science financia proyectos de alto impacto con créditos gratuitos. La expansión de hoy se basa en ambos.\n\nLos investigadores principales (o equivalentes) en instituciones de investigación académicas y sin fines de lucro pueden registrarse, luego agregar a los investigadores de su grupo. En los próximos meses, planeamos extender el programa mucho más allá de los 10,000 asientos iniciales.\n\nMás información:",
+        "ar": "بدءًا من اليوم، يمكن لـ 10,000 عالم في كل التخصصات، من الرياضيات إلى الكيمياء إلى الفيزياء وغيرها، الحصول على Claude من خلال خطة Claude Team الجديدة للعلماء. المقاعد القياسية مجانية، والمقاعد المميزة مع حدود استخدام 5x هي 15 دولارًا شهريًا، خصم 80%، لمدة عام واحد.\n\nClaude يصبح أكثر قدرة على العمل العلمي، مع تقدم حديث في مشكلات من حسابات فيزياء متقدمة إلى تصميم البروتين. جنبًا إلى جنب مع ذلك التقدم، كنا نستثمر في مجتمع البحث: Claude Science أُطلق في يونيو، وبرنامجنا AI for Science يمول مشاريع ذات تأثير عالي بائتمانات مجانية. توسعة اليوم تبني على كليهما.\n\nالمقيمون الرئيسيون (أو ما يعادلهم) في المؤسسات الأكاديمية والبحثية غير الربحية يمكنهم التسجيل، ثم إضافة الباحثين في مجموعتهم. خلال الأشهر القادمة، نخطط لتوسيع البرنامج إلى ما هو أبعد بكثير من المقاعد الأولية الـ 10,000.\n\nتعرف على المزيد:"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-11T11:31:31.417Z"
     }
   },
-  "pending": 29,
-  "lastAttemptAt": "2026-09-11T07:21:24.921Z"
+  "pending": 33,
+  "lastAttemptAt": "2026-09-11T11:31:32.775Z"
 }

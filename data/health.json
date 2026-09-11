@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-11T07:43:01.653Z",
-  "lastSuccessAt": "2026-09-11T07:21:14.256Z",
-  "discoveryAt": "2026-09-11T07:43:01.653Z",
+  "lastAttemptAt": "2026-09-11T11:31:20.190Z",
+  "lastSuccessAt": "2026-09-11T11:31:20.190Z",
+  "discoveryAt": "2026-09-11T11:31:20.190Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -55,40 +55,19 @@
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": false,
-      "checked": 0,
-      "failed": 5
+      "ok": true,
+      "checked": 5,
+      "failed": 0
     }
   ],
-  "status": "degraded",
-  "failedPosts": [
-    {
-      "url": "https://x.com/thsottiaux/status/2098300424520687965",
-      "error": "fetch failed"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2098300998968357218",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2097375276384567642",
-      "error": "fetch failed"
-    },
-    {
-      "url": "https://x.com/ClaudeDevs/status/2094856679250919746",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/claudeai/status/2093059087298601113",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "status": "ok",
+  "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-11T07:43:01.653Z",
-      "status": "degraded",
-      "checked": 0,
-      "failed": 3,
+      "lastAttemptAt": "2026-09-11T11:31:20.190Z",
+      "status": "ok",
+      "checked": 3,
+      "failed": 0,
       "discovered": 43,
       "authors": [
         {
@@ -104,13 +83,13 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": null
+      "lastSuccessAt": "2026-09-11T11:31:20.190Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-11T07:43:01.653Z",
-      "status": "degraded",
-      "checked": 0,
-      "failed": 2,
+      "lastAttemptAt": "2026-09-11T11:31:20.190Z",
+      "status": "ok",
+      "checked": 2,
+      "failed": 0,
       "discovered": 54,
       "authors": [
         {
@@ -126,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": null
+      "lastSuccessAt": "2026-09-11T11:31:20.190Z"
     }
   }
 }
