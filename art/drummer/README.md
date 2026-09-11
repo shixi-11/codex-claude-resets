@@ -8,4 +8,4 @@ node scripts/pack-drummer.mjs
 npm run build
 ```
 
-The original keycap character has a green felt mallet, a laced drum and transparent studio lighting. The 24 frames play at 30 fps. The packing script applies one shared crop and writes the transparent WebP poster and atlas into `public/assets`, with frame metadata in `src/drummer-data.mjs`. Intermediate PNG frames are excluded from Git.
+The original keycap character has two green felt mallets, a laced drum and transparent studio lighting. The 48 frames play at 30 fps. The packing script applies one shared crop and writes the transparent WebP poster and atlas into `public/assets`, with frame metadata in `src/drummer-data.mjs`. Intermediate PNG frames are excluded from Git.

@@ -8,24 +8,25 @@ export function createDrummer(mascot){
  url.search=new URL(import.meta.url).search;
  atlas.src=url.href;
  const ready=atlas.decode().then(()=>atlas.naturalWidth===drumSize*drumColumns&&atlas.naturalHeight===drumSize*Math.ceil(drumFrames/drumColumns)).catch(()=>false);
- let request=0,generation=0,flash;
+ let request=0,generation=0,flash,playing=false,pending=false;
  function stop(){
-  generation++;cancelAnimationFrame(request);request=0;flash?.cancel();
+  playing=false;pending=false;generation++;cancelAnimationFrame(request);request=0;flash?.cancel();
   canvas.hidden=true;poster.hidden=false;delete mascot.dataset.drumFrame;
  }
  function acknowledge(){flash=mascot.animate?.([{opacity:.65},{opacity:1}],{duration:150});}
  async function play(){
-  stop();const ticket=generation;
-  if(motion.matches||!context){acknowledge();return;}
+  if(playing){pending=true;return;}
+  stop();playing=true;const ticket=generation;
+  if(motion.matches||!context){playing=false;acknowledge();return;}
   const loaded=await ready;
   if(ticket!==generation)return;
-  if(!loaded){acknowledge();return;}
-  const began=performance.now();
+  if(!loaded){playing=false;acknowledge();return;}
+  let began=performance.now();
   poster.hidden=true;canvas.hidden=false;
   function tick(now){
    if(ticket!==generation)return;
-   const frame=Math.floor((now-began)*drumFps/1000);
-   if(frame>=drumFrames){stop();return;}
+   let frame=Math.floor((now-began)*drumFps/1000);
+   if(frame>=drumFrames){if(pending){pending=false;began=now;frame=0;}else{stop();return;}}
    context.clearRect(0,0,drumSize,drumSize);
    context.drawImage(atlas,(frame%drumColumns)*drumSize,Math.floor(frame/drumColumns)*drumSize,drumSize,drumSize,0,0,drumSize,drumSize);
    mascot.dataset.drumFrame=String(frame);

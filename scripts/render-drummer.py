@@ -1,7 +1,7 @@
 """Blender source for the website's original keycap drummer.
 
 Run with Blender --background --python scripts/render-drummer.py -- preview|frames
-The fixed camera and 24 keyed poses render a transparent, replayable 0.8 s hit.
+The fixed camera and 48 keyed poses render a transparent, replayable 1.6 s alternating roll.
 """
 import bpy
 import math
@@ -38,7 +38,7 @@ scene.render.image_settings.file_format = 'PNG'
 scene.render.image_settings.color_mode = 'RGBA'
 scene.render.image_settings.color_depth = '8'
 scene.render.fps = 30
-scene.frame_start, scene.frame_end = 1, 24
+scene.frame_start, scene.frame_end = 1, 48
 scene.world.color = (0.38, 0.38, 0.38)
 scene.view_settings.view_transform = 'AgX'
 scene.view_settings.look = 'AgX - Medium High Contrast'
@@ -160,15 +160,6 @@ normal=Vector((math.cos(theta),math.sin(theta),0))
 arrow=curve('Reset emblem arrow',[tuple(back+normal*.105),tuple(end),tuple(back-normal*.105)],.034,lime)
 arrow.parent=body_root
 
-# Left arm attaches to the side below the eyes; its mitten rests by the hip.
-left_shoulder=(-1.47,-.015,1.15)
-left_elbow=(-1.65,-.24,.91)
-left_hand=(-1.48,-.49,.79)
-for name,a,b in [('Left upper arm',left_shoulder,left_elbow),('Left forearm',left_elbow,left_hand)]:
-    ob=rod(name,a,b,.105,ivory);ob.parent=body_root
-for name,p,r in [('Left shoulder',left_shoulder,.14),('Left elbow',left_elbow,.12),('Left mitten',left_hand,.16)]:
-    ob=sphere(name,p,(r,r,r),ivory);ob.parent=body_root
-
 # Turn the complete character toward the drum; keep the camera and drum fixed.
 yaw = math.atan2(1.60, .67)
 def facing_point(point):
@@ -206,54 +197,42 @@ for i in range(3):
     a=2*math.pi*i/3
     sphere('Drum foot '+str(i),(1.02+.43*math.cos(a),-.67+.43*math.sin(a),.13),(.13,.13,.13),olive)
 
-shoulder=sphere('Right shoulder joint',(.36,-.015,1.20),(.15,.15,.15),ivory)
-elbow=sphere('Right elbow joint',(.75,-.20,1.30),(.12,.12,.12),ivory)
-hand=sphere('Right mitten - gripping the stick',(1.0,-.32,1.65),(.145,.145,.145),ivory)
-upper=rod('Right upper arm',shoulder.location,elbow.location,.105,ivory)
-fore=rod('Right forearm',elbow.location,hand.location,.105,ivory)
-stick=rod('Solid maple drumstick',(1,-.3,1.6),(1,-.3,2.3),.042,wood)
-head=sphere('Round padded mallet head',(1,-.3,2.3),(.165,.165,.165),felt)
-
-# Pose keys: raised mallet, anticipation, fast downstroke, rebound, rest.
-poses=[
- (1,(.99,-.30,1.63),(.20,-.08,.97),0,1),
- (6,(.92,-.10,1.74),(-.05,.10,.99),.025,1),
- (10,(.99,-.32,1.64),(.10,-.48,-.87),-.025,.94),
- (14,(1.01,-.27,1.65),(.24,-.34,.91),.005,1.035),
- (24,(.99,-.30,1.63),(.20,-.08,.97),0,1)
-]
-resolved=[]
-for frame,h,d,bob,drum_z in poses:
-    h=Vector(h);d=Vector(d).normalized()
-    if frame==10:
-        tip=Vector((1.02,-.67,.15+(.965-.15)*drum_z+.165))
-        d=(tip-h).normalized()
-        h=tip-d*.59
-    resolved.append((frame,h,d,bob,drum_z))
-
-for frame in range(1,25):
-    for i in range(len(resolved)-1):
-        start,end=resolved[i],resolved[i+1]
-        if start[0] <= frame <= end[0]:
-            u=(frame-start[0])/(end[0]-start[0]);u=u*u*(3-2*u)
-            h=start[1].lerp(end[1],u)
-            d=start[2].slerp(end[2],u).normalized()
-            bob=start[3]+(end[3]-start[3])*u
-            drum_z=start[4]+(end[4]-start[4])*u
-            break
-    a=facing_point((.28,-.24,1.20+bob))
-    joint=a.lerp(h,.50)+Vector((.16,0,-.10))
-    tip=h+d*.59
-    shoulder.location=a;elbow.location=joint;hand.location=h;head.location=tip
-    pose_rod(upper,a,joint);pose_rod(fore,joint,h)
-    pose_rod(stick,h-d*.10,tip)
-    for ob in [shoulder,elbow,hand,head,upper,fore,stick]:
-        for prop in ['location','rotation_euler','scale']:
-            ob.keyframe_insert(data_path=prop,frame=frame)
-    body_root.location.z=bob
+# Two complete gripping hands alternate, four contacts per loop.
+rigs=[]
+for side,local_x,hit_y in [('Left',-1.50,-.91),('Right',.28,-.40)]:
+    anchor=facing_point((local_x,-.50,1.18))
+    h=Vector((.68,hit_y,1.48))
+    shoulder=sphere(side+' shoulder',anchor,(.14,)*3,ivory)
+    elbow=sphere(side+' elbow',anchor,(.12,)*3,ivory)
+    hand=sphere(side+' gripping mitten',h,(.145,)*3,ivory)
+    upper=rod(side+' upper arm',anchor,h,.105,ivory)
+    fore=rod(side+' forearm',anchor,h,.105,ivory)
+    stick=rod(side+' maple stick',h,h+Vector((0,0,.59)),.042,wood)
+    head=sphere(side+' felt head',h+Vector((0,0,.59)),(.145,)*3,felt)
+    rigs.append((anchor,h,shoulder,elbow,hand,upper,fore,stick,head))
+for frame in range(1,49):
+    impacts=[]
+    for index,rig in enumerate(rigs):
+        anchor,rest,shoulder,elbow,hand,upper,fore,stick,head=rig
+        centers=[8,32] if index==0 else [20,44]
+        impact=max(max(0,1-abs(frame-c)/5) for c in centers)
+        impact=impact*impact*(3-2*impact)
+        impacts.append(impact)
+        h=rest.copy();h.z+=.04*(1-impact)
+        tip_up=h+Vector((.18,0,.56))
+        tip_down=Vector((1.02,rest.y,.965+.145))
+        tip=tip_up.lerp(tip_down,impact)
+        direction=(tip-h).normalized()
+        h=tip-direction*.59
+        joint=anchor.lerp(h,.52)+Vector((.08,0,-.15))
+        shoulder.location=anchor;elbow.location=joint;hand.location=h;head.location=tip
+        pose_rod(upper,anchor,joint);pose_rod(fore,joint,h)
+        pose_rod(stick,h-direction*.10,tip)
+        for ob in [shoulder,elbow,hand,head,upper,fore,stick]:
+            for prop in ['location','rotation_euler','scale']:
+                ob.keyframe_insert(data_path=prop,frame=frame)
+    body_root.location.z=-.018*max(impacts)
     body_root.keyframe_insert(data_path='location',frame=frame)
-    drum_root.scale.z=drum_z
-    drum_root.keyframe_insert(data_path='scale',frame=frame)
 for ob in bpy.data.objects:
     if ob.animation_data and ob.animation_data.action:
         for fcurve in ob.animation_data.action.fcurves:
@@ -304,7 +283,7 @@ if MODE=='frames':
     scene.render.filepath=str(ART/'frames'/'drum_')
     bpy.ops.render.render(animation=True)
 else:
-    for frame,label in [(1,'待机'),(6,'蓄力'),(10,'落槌')]:
+    for frame,label in [(1,'待机'),(8,'左槌'),(20,'右槌')]:
         scene.frame_set(frame)
         scene.render.filepath=str(OUT/f'20260912_3D敲鼓_{label}.png')
         bpy.ops.render.render(write_still=True)

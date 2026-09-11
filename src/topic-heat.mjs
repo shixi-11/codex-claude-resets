@@ -13,6 +13,8 @@ export const heatCopy={
  ar:['مشاهدة لإعلانات إعادة التعيين','مشاهدات منشورات X · تقريبًا','المصادر والتاريخ','أنا مهتم','تمت المتابعة','محفوظ في هذا المتصفح. لا تُرسل إشعارات.','تعذر الحفظ. يرجى السماح بتخزين بيانات الموقع.','إجمالي مشاهدات إعلانات إعادة التعيين الستة على X المرتبطة أدناه. يشمل المشاهدات المتكررة للشخص نفسه، ولا يمثل عدد زوار هذا الموقع.','بتاريخ']
 };
 
+export const cheerCopy={en:'Cheer for resets',zh:'为重置加油','zh-Hant':'為重置加油',ja:'リセットを応援',ko:'리셋 응원하기',es:'¡Vamos, reinicios!',fr:'Allez les resets !',de:'Resets anfeuern',ar:'شجّع إعادة التعيين'};
+
 export function heatTotal(data){
  if(!data||!Number.isFinite(Date.parse(data.observedAt))||data.posts?.length!==6)throw Error('Invalid topic heat snapshot');
  const ids=new Set();
@@ -23,5 +25,5 @@ export function topicHeat(data,lang,base='./',version=''){
  const t=heatCopy[lang],total=heatTotal(data);
  const number=new Intl.NumberFormat(lang,{notation:'compact',maximumFractionDigits:1}).format(total);
  const date=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeZone:'UTC'}).format(new Date(data.observedAt));
- return `<aside class="topic-heat" aria-label="${e(t[0])}"><div class="heat-summary">${drummer(lang,base,version)}<div><div class="heat-metric"><strong>${e(number)}</strong><span>${e(t[0])}</span></div></div></div><div class="heat-actions"><details class="heat-sources"><summary aria-label="${e(t[2])}" title="${e(t[2])}">ⓘ</summary><div class="heat-popover"><strong>${e(t[2])}</strong><p>${e(t[8])} <time datetime="${e(data.observedAt)}">${e(date)}</time></p><ul>${data.posts.map(p=>`<li><a href="${e(p.url)}" target="_blank" rel="noopener noreferrer">@${e(p.url.split('/')[3])} · ${e(new Intl.NumberFormat(lang).format(p.views))} ↗</a></li>`).join('')}</ul></div></details><button type="button" class="heat-follow" data-heat-follow aria-pressed="false" aria-describedby="heat-feedback" disabled><span data-heat-icon aria-hidden="true">♡</span><span data-heat-label>${e(t[3])}</span></button></div><p id="heat-feedback" class="heat-feedback" role="status" hidden></p></aside>`;
+ return `<aside class="topic-heat" aria-label="${e(t[0])}"><div class="heat-summary">${drummer(lang,base,version)}<div><div class="heat-metric"><strong>${e(number)}</strong><span>${e(t[0])}</span></div></div></div><div class="heat-actions"><details class="heat-sources"><summary aria-label="${e(t[2])}" title="${e(t[2])}">ⓘ</summary><div class="heat-popover"><strong>${e(t[2])}</strong><p>${e(t[8])} <time datetime="${e(data.observedAt)}">${e(date)}</time></p><ul>${data.posts.map(p=>`<li><a href="${e(p.url)}" target="_blank" rel="noopener noreferrer">@${e(p.url.split('/')[3])} · ${e(new Intl.NumberFormat(lang).format(p.views))} ↗</a></li>`).join('')}</ul></div></details><button type="button" class="heat-follow" data-heat-follow disabled><span data-heat-icon aria-hidden="true">♡</span><span data-heat-label>${e(cheerCopy[lang])}</span></button></div></aside>`;
 }
