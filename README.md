@@ -28,7 +28,7 @@ The collector polls @thsottiaux, @OpenAIDevs, @OpenAI, @ClaudeDevs, @AnthropicAI
 
 A post that remains truncated stays **unconfirmed**, even when the visible portion sounds promising. An announcement never becomes a completed reset just because time has passed. “Reported complete” describes the source's statement; it does not verify your account.
 
-The page shows independent Codex and Claude check status and attempt timestamps. A platform is healthy only when all its configured timelines were read and its candidate evidence checks succeeded. No new relevant post is a valid outcome; a failed source is incomplete coverage. After three hours without a successful check, it marks the data as potentially stale, including in a tab left open. This is a selective announcement feed, not a complete account or service-status monitor. See [OpenAI's usage guidance](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for account-specific details.
+The page shows the last successful check time. Independent Codex and Claude check results are recorded in `health.json`. A platform is healthy only when all its configured timelines were read and its candidate evidence checks succeeded. No new relevant post is a valid outcome; a failed source is incomplete coverage. After three hours without a successful check, it marks the data as potentially stale, including in a tab left open. This is a selective announcement feed, not a complete account or service-status monitor. See [OpenAI's usage guidance](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for account-specific details.
 
 Post translations are cached in `data/translations.json` and bound to the exact excerpt and source content hash. The scheduled collector uses FxEmbed's documented `lang` parameter for newly discovered text; failed translations remain pending and display the English original. Current excerpts receive editorial correction, especially for reset-credit terminology. Translated prose never determines evidence status or countdown time. The browser receives cached text, with no translation credentials or paid API fallback.
 
@@ -82,10 +82,10 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 - 首页展示下次重置、最新相关推文和上次重置公告；上次公告以持续更新的已过去时间显示，准确日期与来源在下方查看。
 - 最新重置与额度方案放在近期消息前面。Codex按发布时间选择最新的统一重置或赠卡公告，较早方案留在消息记录中。
 - 消息列表只显示最近7天，按原帖发布时间从新到旧排列，支持全部、Codex、Claude筛选。历史原始记录及独立链接仍保留。
-- 公告、截止时间、消息列表和各平台检查时间均显示访客设备的本地时间及GMT偏移，自动处理夏令时；切换语言不会改变时区。
+- 公告、截止时间、消息列表和上次成功检查时间均显示访客设备的本地时间及GMT偏移，自动处理夏令时；切换语言不会改变时区。
 - 默认英文，提供九种语言，消息正文随语言切换并保留原文入口。新消息自动尝试翻译，未完成时显示英文原文与待更新提示。
 - 只收录额度重置、重置卡及订阅额度信息；模型退役、发布或使用人数变化不会仅因含有“usage”而进入消息列表。规则更新后会重新判断完整历史原文，清除误收。
-- 六个允许的官方账号分别采集，Codex与Claude分别显示检查状态。没有新消息与来源检查失败分开处理；计划、线索、补发和已宣布完成不会混为一谈。
+- 六个允许的官方账号分别采集，Codex与Claude的独立检查状态保存在数据中，页面保留上次成功检查时间。没有新消息与来源检查失败分开处理；计划、线索、补发和已宣布完成不会混为一谈。
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 
 网站无法查看或重置个人账号的实际额度。请以Codex额度面板或CLI中的`/status`为准。日常自动化不需要付费模型，也不会把订阅登录凭据上传到GitHub。

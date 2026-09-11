@@ -1,4 +1,3 @@
-import {trackingPanel,trackingRules} from '../src/tracking-panel.mjs';
 import {postText} from '../src/post-text.mjs';
 import {visitorCopy} from '../src/visitor-copy.mjs';
 import {priorityCopy,resetDefinitions,earlierPosts} from '../src/priority-details.mjs';
@@ -22,7 +21,7 @@ for(const platform of Object.values(platforms))for(const key of ['latest','lates
 await mkdir(out, { recursive: true });
 await cp(new URL('public/', root), out, { recursive: true, filter: path => !String(path).endsWith('mascot-source.png') });
 await mkdir(new URL('assets/', out), { recursive: true });
-const clientFiles=['tracking-panel.mjs','elapsed.mjs','locales.mjs','app.mjs','style.css','shared.mjs','reset-status.mjs','platform-copy.mjs','clock-app.mjs','clock-copy.mjs','watch-copy.mjs','live-data.mjs','offers.mjs','priority-details.mjs','post-text.mjs','visitor-copy.mjs','evidence.mjs','clocks.css'];
+const clientFiles=['elapsed.mjs','locales.mjs','app.mjs','style.css','shared.mjs','reset-status.mjs','platform-copy.mjs','clock-app.mjs','clock-copy.mjs','watch-copy.mjs','live-data.mjs','offers.mjs','priority-details.mjs','post-text.mjs','visitor-copy.mjs','evidence.mjs','clocks.css'];
 const assetVersion=createHash('sha256').update(Buffer.concat(await Promise.all([...clientFiles.map(file=>readFile(new URL('src/'+file,root))),readFile(new URL('public/assets/social.jpg',root))]))).digest('hex').slice(0,10);
 for (const file of clientFiles) {const source=new URL(`src/${file}`,root),target=new URL(`assets/${file}`,out);if(file.endsWith('.mjs')){const text=await readFile(source,'utf8');await writeFile(target,text.replace(/(from\s*['"]\.\/[^'"]+\.mjs)(['"])/g,(_,path,quote)=>path+'?v='+assetVersion+quote));}else await cp(source,target);}
 for (const [name,data] of Object.entries({events,health,platforms})) await writeFile(new URL(name+'.json',out),JSON.stringify(data,null,2)+'\n');
@@ -42,7 +41,7 @@ return `<!doctype html><html lang="${lang}" dir="${lang==='ar'?'rtl':'ltr'}"><he
 <details class="supplemental" open><summary>${e(platformCopy[lang].gifts)} <span class="disclosure-chevron" aria-hidden="true"></span></summary>${offers(platforms,lang)}</details>
 <details class="tweet-archive" id="updates" open><summary>${e(priorityCopy[lang].archive)} <span class="disclosure-chevron" aria-hidden="true"></span></summary><div class="content-grid"><section class="updates-panel"><div class="filters platform-filters" role="group" aria-label="Platform"><button data-platform-filter="all" aria-pressed="true">${e(t.all)}</button><button data-platform-filter="codex" aria-pressed="false">Codex</button><button data-platform-filter="claude" aria-pressed="false">Claude</button></div><div class="events">${earlierPosts(events).map(item=>row(item,lang,base)).join('')}</div><p class="empty" hidden>${e(t.empty)}</p><button class="more" hidden>${e(t.more)} <span aria-hidden="true">↓</span></button></section>
 </div></details>`}
-<section class="source-health"><div class="platform-checks" data-platform-checks>${trackingPanel(health,lang)}</div>${trackingRules(lang)}<div class="check-time"><span>${e(visitorCopy[lang].checked)}</span><time data-health-time datetime="${e(health.lastSuccessAt||'')}">${health.lastSuccessAt?e(date(health.lastSuccessAt,lang)):'—'}</time></div><p class="check-warning" data-health hidden></p></section></main>
+<section class="source-health"><div class="check-time"><span>${e(visitorCopy[lang].checked)}</span><time data-health-time datetime="${e(health.lastSuccessAt||'')}">${health.lastSuccessAt?e(date(health.lastSuccessAt,lang)):'—'}</time></div><p class="check-warning" data-health hidden></p></section></main>
 <footer><div class="footer-links"><a href="https://shixilin.com/?lang=${lang}">${e(t.creator)} ↗</a><a href="https://shixilin.com/support?lang=${lang}">${e(t.support)}</a><a href="mailto:info@elevencapital.ltd">${e(t.contact)} ↗</a></div></footer></div><p class="toast" role="status" hidden></p><script id="page-data" type="application/json">${safeJSON}</script></body></html>`;
 }
 for(const lang of Object.keys(locales)){await write(`${localePath(lang)}index.html`,render(lang));for(const ev of events)await write(`${eventPath(lang,ev.id)}index.html`,render(lang,ev));}
