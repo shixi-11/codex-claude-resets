@@ -10,7 +10,7 @@ test('collector removes a stored false positive and does not mask a failed Claud
  const root=await mkdtemp(join(tmpdir(),'reset-collector-test-'));
  try {
   for(const dir of ['src','data','scripts'])await mkdir(join(root,dir));
-  for(const file of ['scripts/collect.mjs','src/evidence.mjs','src/announcement-time.mjs','src/x-relay.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/collect.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/announcement-time.mjs','src/x-relay.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   const id='2098300998968357218';
   await writeFile(join(root,'data/events.json'),JSON.stringify([{id,author:'thsottiaux',sourceUrl:`https://x.com/thsottiaux/status/${id}`,kind:'signal',state:'unconfirmed',fullText:'Codex usage has been declining.',truncated:false,verifiedAt:'2026-09-01',publishedAt:'2026-09-01',rulesVersion:'old'}]));
   await writeFile(join(root,'data/health.json'),JSON.stringify({lastSuccessAt:'2026-09-01',platforms:{claude:{lastSuccessAt:'2026-09-01'}}}));

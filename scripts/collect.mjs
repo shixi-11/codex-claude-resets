@@ -1,3 +1,4 @@
+import {refreshTopicHeat} from './topic-heat-refresh.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { announcementTime } from '../src/announcement-time.mjs';
@@ -143,3 +144,5 @@ await writeFile(new URL('data/events.json', root), JSON.stringify(merged, null, 
 await writeFile(new URL('data/health.json', root), JSON.stringify(health, null, 2) + '\n');
 console.log(JSON.stringify({ status: health.status, records: merged.length, checked: fresh.length, lastSuccessAt: health.lastSuccessAt }));
 // Keep the last-known-good website publishable. Health is rendered to visitors; no false green status.
+
+try{const heat=await refreshTopicHeat(root,request);console.log(JSON.stringify({topicHeat:"updated",observedAt:heat.observedAt}));}catch(error){console.warn("Topic views retained from last successful check: "+error.message);}
