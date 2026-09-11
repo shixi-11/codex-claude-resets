@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-11T06:05:52.348Z",
-  "lastSuccessAt": "2026-09-11T06:05:52.348Z",
-  "discoveryAt": "2026-09-11T06:05:52.348Z",
+  "lastAttemptAt": "2026-09-11T07:21:14.256Z",
+  "lastSuccessAt": "2026-09-11T07:21:14.256Z",
+  "discoveryAt": "2026-09-11T07:21:14.256Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -20,7 +20,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 2,
+      "checked": 3,
       "failed": 0
     }
   ],

@@ -1080,8 +1080,62 @@
         "de": "Heute Morgen gab es etwas Durcheinander, weil einige aufgesparte Resets bei der Verwendung in ChatGPT Work und Codex nicht vollständig angewendet wurden. Alle, die im betroffenen Zeitraum einen verwendet haben, erhalten einen weiteren sowie eine Entschuldigungs-E-Mail.",
         "ar": "حدثت بعض المشكلات هذا الصباح، إذ لم تُطبَّق بعض عمليات إعادة الضبط المحفوظة بالكامل عند استخدامها في ChatGPT Work وCodex. سيحصل كل من استخدم إحداها خلال الفترة المتأثرة على عملية إعادة ضبط أخرى ورسالة بريد إلكتروني للاعتذار."
       }
+    },
+    "2098300998968357218": {
+      "excerpt": "It's had a good run and was a lot of fun, but usage has been declining and we have significantly better models now.",
+      "contentHash": "e439fa378451083b24ebb535cf9cc4a51b3bea964de6cfe1926e1965562be365",
+      "texts": {
+        "zh": "它有过一段美好的历程，也带来了很多乐趣，但使用量一直在下降，而且我们现在有性能显著更好的模型。",
+        "zh-Hant": "它有過一段美好的旅程，也帶來了很多樂趣，但使用量一直在下降，我們現在有明顯更好的模型。",
+        "ko": "그 모델은 좋은 활약을 펼쳤고 정말 재미있었지만, 사용량이 줄어들고 있고 이제는 훨씬 더 나은 모델들이 나와 있습니다.",
+        "ja": "素晴らしい活躍をしてくれましたし、非常に楽しいものでしたが、使用量が減少しており、今では大幅に優れたモデルがあります。",
+        "es": "Ha tenido una buena trayectoria y fue muy divertido, pero el uso ha estado disminuyendo y ahora tenemos modelos significativamente mejores.",
+        "fr": "Il a eu une belle carrière et a été très amusant, mais l'utilisation a diminué et nous avons maintenant des modèles bien meilleurs.",
+        "de": "Es hatte einen guten Lauf und war viel Spaß, aber die Nutzung ist rückläufig, und wir haben jetzt deutlich bessere Modelle.",
+        "ar": "لقد كان له مسار جيد وكان ممتعًا جدًا، لكن الاستخدام يتضاءل وأصبح لدينا نماذج أفضل بكثير الآن."
+      },
+      "fullText": "Next week we’ll be retiring GPT-5.3-Codex-Spark. Can you believe we shipped a model named as such!!\n\nIt's had a good run and was a lot of fun, but usage has been declining and we have significantly better models now. Time to make room for the future.",
+      "fullTexts": {
+        "zh": "下周我们将退役 GPT-5.3-Codex-Spark。你能相信我们发布了一个这样命名的模型吗！！\n\n它有过一段美好的历程，也带来了很多乐趣，但使用量一直在下降，而且我们现在有性能显著更好的模型。是时候为未来腾出空间了。",
+        "zh-Hant": "下週我們將退役 GPT-5.3-Codex-Spark。你能相信我們推出了一個這樣命名的模型嗎！！\n\n它有過一段美好的旅程，也帶來了很多樂趣，但使用量一直在下降，我們現在有明顯更好的模型。是時候為未來騰出空間了。",
+        "ko": "다음 주에 GPT-5.3-Codex-Spark를 퇴역시킬 예정입니다. 이런 이름의 모델을 출시했다니 믿기세요!!\n\n그 모델은 좋은 활약을 펼쳤고 정말 재미있었지만, 사용량이 줄어들고 있고 이제는 훨씬 더 나은 모델들이 나와 있습니다. 미래를 위한 자리를 마련할 때가 됐어요.",
+        "ja": "来週、GPT-5.3-Codex-Sparkを廃止します。そんな名前のモデルをリリースしたなんて信じられますか！！\n\n素晴らしい活躍をしてくれましたし、非常に楽しいものでしたが、使用量が減少しており、今では大幅に優れたモデルがあります。未来のためにスペースを空ける時が来ました。",
+        "es": "La próxima semana retiraremos GPT-5.3-Codex-Spark. ¿Puedes creer que lanzamos un modelo con ese nombre!!\n\nHa tenido una buena trayectoria y fue muy divertido, pero el uso ha estado disminuyendo y ahora tenemos modelos significativamente mejores. Es hora de hacer espacio para el futuro.",
+        "fr": "La semaine prochaine, nous mettrons à la retraite GPT-5.3-Codex-Spark. Pouvez-vous croire que nous avons lancé un modèle avec un nom pareil !!\n\nIl a eu une belle carrière et a été très amusant, mais l'utilisation a diminué et nous avons maintenant des modèles bien meilleurs. Il est temps de faire de la place pour l'avenir.",
+        "de": "Nächste Woche beenden wir den Betrieb von GPT-5.3-Codex-Spark. Kannst du glauben, dass wir ein Modell mit so einem Namen herausgebracht haben!!\n\nEs hatte einen guten Lauf und war viel Spaß, aber die Nutzung ist rückläufig, und wir haben jetzt deutlich bessere Modelle. Zeit, Platz für die Zukunft zu schaffen.",
+        "ar": "الأسبوع القادم سنُوقف تشغيل GPT-5.3-Codex-Spark. هل تصدق أننا أطلقنا نموذجًا باسم كهذا!!\n\nلقد كان له مسار جيد وكان ممتعًا جدًا، لكن الاستخدام يتضاءل وأصبح لدينا نماذج أفضل بكثير الآن. حان الوقت لإفساح المجال للمستقبل."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-11T07:21:17.911Z"
+    },
+    "2098300424520687965": {
+      "excerpt": "When I say excellent service for existing users, that includes the occasional reset",
+      "contentHash": "927b27fa1bd2f423fa9b02929347a6ab549a07f306264ee1f811a940d8fefbc2",
+      "texts": {
+        "zh": "当我说对现有用户的优质服务时，这包括偶尔的重置",
+        "zh-Hant": "當我說對現有用戶的優質服務時，那包括偶爾的重置",
+        "ja": "既存のユーザーに対する優れたサービスについて言うときには、時折のリセットも含まれるということです。",
+        "ko": "기존 사용자에게 우수한 서비스를 제공한다고 할 때, 그에는 가끔의 리셋이 포함됩니다.",
+        "es": "Cuando digo un servicio excelente para los usuarios existentes, eso incluye el reinicio ocasional",
+        "fr": "Quand je parle d'excellent service pour les utilisateurs existants, cela inclut le réinitialisation occasionnelle",
+        "de": "Wenn ich von exzellentem Service für bestehende Nutzer spreche, schließt das gelegentliche Resets ein",
+        "ar": "عندما أقول خدمة ممتازة للمستخدمين الحاليين، فإن ذلك يشمل إعادة الضبط العرضية"
+      },
+      "fullText": "When I say excellent service for existing users, that includes the occasional reset",
+      "fullTexts": {
+        "zh": "当我说对现有用户的优质服务时，这包括偶尔的重置",
+        "zh-Hant": "當我說對現有用戶的優質服務時，那包括偶爾的重置",
+        "ja": "既存のユーザーに対する優れたサービスについて言うときには、時折のリセットも含まれるということです。",
+        "ko": "기존 사용자에게 우수한 서비스를 제공한다고 할 때, 그에는 가끔의 리셋이 포함됩니다.",
+        "es": "Cuando digo un servicio excelente para los usuarios existentes, eso incluye el reinicio ocasional",
+        "fr": "Quand je parle d'excellent service pour les utilisateurs existants, cela inclut le réinitialisation occasionnelle",
+        "de": "Wenn ich von exzellentem Service für bestehende Nutzer spreche, schließt das gelegentliche Resets ein",
+        "ar": "عندما أقول خدمة ممتازة للمستخدمين الحاليين، فإن ذلك يشمل إعادة الضبط العرضية"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-11T07:21:19.277Z"
     }
   },
   "pending": 29,
-  "lastAttemptAt": "2026-09-11T06:06:00.084Z"
+  "lastAttemptAt": "2026-09-11T07:21:24.921Z"
 }
