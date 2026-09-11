@@ -169,6 +169,23 @@ for name,a,b in [('Left upper arm',left_shoulder,left_elbow),('Left forearm',lef
 for name,p,r in [('Left shoulder',left_shoulder,.14),('Left elbow',left_elbow,.12),('Left mitten',left_hand,.16)]:
     ob=sphere(name,p,(r,r,r),ivory);ob.parent=body_root
 
+# Turn the complete character toward the drum; keep the camera and drum fixed.
+yaw = math.atan2(1.60, .67)
+def facing_point(point):
+    x,y,z=point
+    x-=char_x
+    return Vector((char_x+x*math.cos(yaw)-y*math.sin(yaw),
+                   x*math.sin(yaw)+y*math.cos(yaw),z))
+character_roots=[ob for ob in bpy.data.objects if ob.parent is None]
+bpy.ops.object.empty_add(type='PLAIN_AXES', location=(char_x,0,0))
+facing=bpy.context.object
+facing.name='Character facing drum'
+bpy.context.view_layer.update()
+for ob in character_roots:
+    ob.parent=facing
+    ob.matrix_parent_inverse=facing.matrix_world.inverted()
+facing.rotation_euler.z=yaw
+
 # Drum: membrane, shell, metal rims, lacing and three feet have distinct materials.
 bpy.ops.object.empty_add(type='PLAIN_AXES', location=(1.02,-.67,.15))
 drum_root=bpy.context.object
@@ -209,8 +226,7 @@ resolved=[]
 for frame,h,d,bob,drum_z in poses:
     h=Vector(h);d=Vector(d).normalized()
     if frame==10:
-        tip=h+d*.59
-        tip.z=.15+(.965-.15)*drum_z+.165
+        tip=Vector((1.02,-.67,.15+(.965-.15)*drum_z+.165))
         d=(tip-h).normalized()
         h=tip-d*.59
     resolved.append((frame,h,d,bob,drum_z))
@@ -225,8 +241,8 @@ for frame in range(1,25):
             bob=start[3]+(end[3]-start[3])*u
             drum_z=start[4]+(end[4]-start[4])*u
             break
-    a=Vector((.36,-.015,1.20+bob))
-    joint=Vector((.70,-.18,1.24+bob+(h.z-1.63)*.4))
+    a=facing_point((.28,-.24,1.20+bob))
+    joint=a.lerp(h,.50)+Vector((.16,0,-.10))
     tip=h+d*.59
     shoulder.location=a;elbow.location=joint;hand.location=h;head.location=tip
     pose_rod(upper,a,joint);pose_rod(fore,joint,h)
