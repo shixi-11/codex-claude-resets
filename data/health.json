@@ -1,14 +1,14 @@
 {
-  "lastAttemptAt": "2026-09-11T01:11:57.132Z",
-  "lastSuccessAt": "2026-09-11T01:11:57.132Z",
-  "discoveryAt": "2026-09-11T01:11:57.132Z",
+  "lastAttemptAt": "2026-09-11T06:05:52.348Z",
+  "lastSuccessAt": "2026-09-11T06:05:52.348Z",
+  "discoveryAt": "2026-09-11T06:05:52.348Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "ok": true,
-      "candidates": 20
+      "candidates": 21
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
