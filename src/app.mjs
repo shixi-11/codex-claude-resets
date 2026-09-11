@@ -1,3 +1,4 @@
+import './topic-heat-client.mjs';
 import {postText} from './post-text.mjs';
 import {visitorCopy} from './visitor-copy.mjs';
 import {postPlatform} from './evidence.mjs';
