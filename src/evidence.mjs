@@ -1,4 +1,4 @@
-export const RULES_VERSION = '1.2.2';
+export const RULES_VERSION = '1.3.0';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -33,11 +33,33 @@ export function extractEmbed(embed, requestedUrl) {
   return { ...post, text, truncated: /(?:…|\.\.\.)\s*$/.test(text) };
 }
 
+// Relevance is separate from evidence strength. "Usage" alone may mean adoption.
+export function isRelevant(text, {author = ''} = {}) {
+  const value = text.replace(/[’‘]/g, "'");
+  const reset = /\breset(?:s|ting|ing|ed)?\b/i.test(value);
+  if (reset && /\b(?:password|router|device|factory|conversation|context|settings)\s+reset|\breset\s+(?:your |the )?(?:password|router|device|context|settings)\b/i.test(value) && !/quota|usage|allowance|weekly|5.hour|banked/i.test(value)) return false;
+  if (reset && (author.toLowerCase()==='thsottiaux' || /codex|claude|usage|limits?|quotas?|allowance|banked|credits?|all users|everyone/i.test(value))) return true;
+  return /\b(?:usage|rate|weekly|daily|5.hour|5h|subscription)\s+(?:limits?|quotas?|allowance|allocation)\b|\b(?:weekly|subscription)\s+usage\b|\busage\b.{0,60}\b(?:subscription|allocation|allowance)\b|\b(?:quota|allowance)\b|\b(?:codex|claude(?: code)?)(?:'s)?\s+(?:(?:weekly|usage|rate)\s+)?limits?\b|\b(?:usage consumption|usage optimizations)\b/i.test(value);
+}
+
+// Re-evaluate complete stored evidence when rules change, even if it drops out of timelines.
+// Incomplete records cannot be deleted on the strength of an excerpt alone.
+export function reclassifyEvents(events) {
+  return events.flatMap(event => {
+    if (!event.fullText || event.truncated) return [event];
+    const result = classify(event.fullText, event);
+    if (result.kind === 'other') return [];
+    const {resetAt, approximate, sourceTimezone, ...record} = event;
+    return [{...record, ...result, rulesVersion: RULES_VERSION,
+      ...(result.kind==='global' && result.state==='announced' && resetAt ? {resetAt, approximate, sourceTimezone} : {})}];
+  });
+}
+
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
 export function classify(text, { truncated = false, author = '' } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
-  if (!/reset|usage|allowance|quota|limits?/i.test(value)) return { kind: 'other', state: 'information', reason: 'unrelated' };
+  if (!isRelevant(value, {author})) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value)) return unknown;
@@ -45,12 +67,13 @@ export function classify(text, { truncated = false, author = '' } = {}) {
   // Do not infer a global reset from jokes, replies about earlier resets, or other authors.
   if (author.toLowerCase()==='thsottiaux' && /^All reset for everyone\.(?: Enjoy the week with Astra\.)?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
+    if (/\b(?:affected|not fully applying)\b/i.test(value) && /getting another|replacement|replac|compensat/i.test(value)) return {kind:'banked',state:'announced',reason:'replacement-credit'};
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
     if (/\bwe (?:will|are going to)|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };
     return { kind: 'usage', state: 'information', reason: 'bank-information' };
   }
-  if (/\b(?:codex|claude|chatgpt work|all users|all subscribers|all paid|paid (?:users|plans|subscriptions)|global)\b/i.test(value)) {
-    if (/\bwe have (?:also |now |just )?reset (?:5-hour and weekly|weekly|5-hour) limits\b/i.test(value)) return { kind:'global',state:'reported',reason:'explicit-completion' };
+  if (/\b(?:codex|claude|chatgpt work|everyone|all users|all subscribers|all paid|paid (?:users|plans|subscriptions)|global)\b/i.test(value)) {
+    if (/\bwe have (?:also |now |just )?reset (?:everyone's )?(?:5-hour and weekly|weekly|5-hour) (?:rate |usage )?limits\b/i.test(value)) return { kind:'global',state:'reported',reason:'explicit-completion' };
     if (/\bwe (?:have )?(?:now |just |already )?reset\s+(?:the )?(?:usage|limits?|quotas?)|\breset (?:has (?:been )?|is now )(?:applied|propagated|complete|completed)|\b(?:usage|limits?) (?:has|have) (?:been )?reset/i.test(value)) return { kind: 'global', state: 'reported', reason: 'explicit-completion' };
     if (/\bwe (?:will|are going to) (?:do |perform |apply )?(?:a |the )?(?:global )?reset|\b(?:reset|resets?) will (?:land|arrive|happen)|\bwe are reset(?:t)?ing usage/i.test(value)) return { kind: 'global', state: 'announced', reason: 'explicit-announcement' };
   }

@@ -1,29 +1,132 @@
 {
-  "lastAttemptAt": "2026-09-11T07:21:14.256Z",
+  "lastAttemptAt": "2026-09-11T07:43:01.653Z",
   "lastSuccessAt": "2026-09-11T07:21:14.256Z",
-  "discoveryAt": "2026-09-11T07:21:14.256Z",
+  "discoveryAt": "2026-09-11T07:43:01.653Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
+      "author": "thsottiaux",
+      "platform": "codex",
       "ok": true,
       "candidates": 21
     },
     {
+      "name": "@OpenAIDevs timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
+      "author": "OpenAIDevs",
+      "platform": "codex",
+      "ok": true,
+      "candidates": 7
+    },
+    {
+      "name": "@OpenAI timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+      "author": "OpenAI",
+      "platform": "codex",
+      "ok": true,
+      "candidates": 15
+    },
+    {
       "name": "@ClaudeDevs timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+      "author": "ClaudeDevs",
+      "platform": "claude",
       "ok": true,
       "candidates": 20
     },
     {
+      "name": "@AnthropicAI timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
+      "author": "AnthropicAI",
+      "platform": "claude",
+      "ok": true,
+      "candidates": 17
+    },
+    {
+      "name": "@claudeai timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/claudeai/statuses?count=40&with_replies=1",
+      "author": "claudeai",
+      "platform": "claude",
+      "ok": true,
+      "candidates": 17
+    },
+    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": true,
-      "checked": 3,
-      "failed": 0
+      "ok": false,
+      "checked": 0,
+      "failed": 5
     }
   ],
-  "status": "ok",
-  "failedPosts": []
+  "status": "degraded",
+  "failedPosts": [
+    {
+      "url": "https://x.com/thsottiaux/status/2098300424520687965",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2098300998968357218",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/OpenAI/status/2097375276384567642",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2094856679250919746",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/claudeai/status/2093059087298601113",
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "platforms": {
+    "codex": {
+      "lastAttemptAt": "2026-09-11T07:43:01.653Z",
+      "status": "degraded",
+      "checked": 0,
+      "failed": 3,
+      "discovered": 43,
+      "authors": [
+        {
+          "author": "thsottiaux",
+          "ok": true
+        },
+        {
+          "author": "OpenAIDevs",
+          "ok": true
+        },
+        {
+          "author": "OpenAI",
+          "ok": true
+        }
+      ],
+      "lastSuccessAt": null
+    },
+    "claude": {
+      "lastAttemptAt": "2026-09-11T07:43:01.653Z",
+      "status": "degraded",
+      "checked": 0,
+      "failed": 2,
+      "discovered": 54,
+      "authors": [
+        {
+          "author": "ClaudeDevs",
+          "ok": true
+        },
+        {
+          "author": "AnthropicAI",
+          "ok": true
+        },
+        {
+          "author": "claudeai",
+          "ok": true
+        }
+      ],
+      "lastSuccessAt": null
+    }
+  }
 }

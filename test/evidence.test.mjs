@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import{parsePostUrl,classify,extractEmbed,mergeEvents,validateEvent,evidenceExcerpt}from'../src/evidence.mjs';import{freshness,calendarFile,escapeHtml}from'../src/shared.mjs';import{locales,names}from'../src/locales.mjs';
+import{reclassifyEvents,parsePostUrl,classify,extractEmbed,mergeEvents,validateEvent,evidenceExcerpt}from'../src/evidence.mjs';import{freshness,calendarFile,escapeHtml}from'../src/shared.mjs';import{locales,names}from'../src/locales.mjs';
 test('reject impostor sources and script URLs',()=>{for(const url of ['https://x.com.evil.test/OpenAI/status/123','https://x.com/fake/status/123','http://x.com/OpenAI/status/123','javascript:alert(1)'])assert.equal(parsePostUrl(url),null);assert.equal(parsePostUrl('https://x.com/OpenAI/status/123')?.id,'123');});
 test('unrelated truncated announcements are not reset signals',()=>{assert.equal(classify('We are launching a new editor…',{truncated:true}).kind,'other');});
 test('quoted or retracted completion text is not completion evidence',()=>{for(const text of ['"We have reset Codex usage"','Example: we have reset Codex usage.','We have reset Codex usage. Correction: that was wrong.'])assert.equal(classify(text).state,'unconfirmed');});
@@ -9,3 +9,17 @@ test('health ages without a successful build and never stays falsely green',()=>
 test('dedupe and incomplete fallback preserve complete evidence',()=>{const ev={id:'123',author:'OpenAI',sourceUrl:'https://x.com/OpenAI/status/123',kind:'global',state:'reported',publishedAt:'2026-09-01',verifiedAt:'2026-09-02',truncated:false,excerpt:'We have reset Codex usage.',provenance:'x-oembed',rulesVersion:'1.0.0',contentHash:'a'.repeat(64)};assert.equal(mergeEvents([ev],[ev]).length,1);assert.equal(mergeEvents([ev],[{...ev,truncated:true,state:'unconfirmed'}])[0].state,'reported');assert.throws(()=>validateEvent({...ev,truncated:true}));assert.throws(()=>validateEvent({...ev,author:"ClaudeDevs"}));assert.throws(()=>validateEvent({...ev,platform:"claude"}));});
 test('calendar uses UTC and escapes title instead of injecting properties',()=>{const file=calendarFile(Date.parse('2026-09-10T10:30:00+08:00'),'Check\nATTENDEE:bad');assert.ok(file.includes('DTSTART:20260910T023000Z'));assert.ok(!file.includes('\r\nATTENDEE:'));assert.throws(()=>calendarFile(NaN,'test'));});
 test('all nine locales have real copy and text is escaped',()=>{assert.equal(Object.keys(locales).length,9);for(const lang of Object.keys(names))for(const value of Object.values(locales[lang]))assert.ok(typeof value==='string'&&value.length>0);assert.equal(escapeHtml('<script>'),'&lt;script&gt;');assert.ok(evidenceExcerpt('reset '+ 'word '.repeat(80)).split(/\s+/).length<=24);});
+
+test('adoption and unrelated resets are excluded, allowance changes stay relevant',()=>{
+ for(const text of ["Next week we'll be retiring GPT-5.3-Codex-Spark. Usage has been declining and we have significantly better models now.",'Codex usage grew to 25 million users.','Reset your password to access Claude.','Claude pushes the limits of reasoning.']) assert.equal(classify(text,{author:'thsottiaux'}).kind,'other',text);
+ for(const text of ['We are raising Claude Code weekly limits by 25%.','3-4X less usage being drawn from the subscription.','When I say excellent service for existing users, that includes the occasional reset']) assert.notEqual(classify(text,{author:'thsottiaux'}).kind,'other',text);
+ assert.equal(classify('When I say excellent service for existing users, that includes the occasional reset',{author:'thsottiaux'}).state,'unconfirmed');
+ assert.equal(classify('Some banked resets were not fully applying. Everyone affected is getting another one.').reason,'replacement-credit');
+ assert.equal(classify("We've reset 5-hour and weekly rate limits for all users.",{author:'ClaudeDevs'}).state,'reported');
+});
+test('rule migration removes old false positives without deleting incomplete evidence',()=>{
+ const base={id:'a',kind:'signal',state:'unconfirmed',rulesVersion:'old',fullText:'Codex usage has been declining.',truncated:false};
+ const migrated=reclassifyEvents([base,{...base,id:'b',fullText:undefined,truncated:true},{...base,id:'c',fullText:'We have reset usage for all paid Codex users.'}]);
+ assert.deepEqual(migrated.map(e=>e.id),['b','c']);assert.equal(migrated[1].state,'reported');
+ assert.deepEqual(reclassifyEvents(migrated),migrated);
+});

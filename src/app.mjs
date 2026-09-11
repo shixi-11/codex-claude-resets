@@ -1,3 +1,4 @@
+import {trackingPanel} from './tracking-panel.mjs';
 import {postText} from './post-text.mjs';
 import {visitorCopy} from './visitor-copy.mjs';
 import {postPlatform} from './evidence.mjs';
@@ -9,7 +10,7 @@ import { pageData } from './live-data.mjs';
 const {lang,t,health,url}=pageData;
 document.querySelector('.language select').addEventListener('change',e=>location.assign(e.target.value));
 document.querySelectorAll('time[datetime]').forEach(el=>{const at=Date.parse(el.dateTime);if(Number.isFinite(at))el.textContent=new Intl.DateTimeFormat(lang,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'shortOffset'}).format(at);});
-const showHealth=()=>{const state=freshness(health),label=document.querySelector('[data-health]');if(label){label.hidden=state==='fresh';label.textContent=state==='stale'?visitorCopy[lang].stale:visitorCopy[lang].failed;}};showHealth();setInterval(showHealth,60000);
+const showHealth=()=>{const checks=document.querySelector('[data-platform-checks]');if(checks)checks.innerHTML=trackingPanel(health,lang);const state=freshness(health),label=document.querySelector('[data-health]');if(label){label.hidden=state==='fresh';label.textContent=state==='stale'?visitorCopy[lang].stale:visitorCopy[lang].failed;}};showHealth();setInterval(showHealth,60000);
 let rows=[...document.querySelectorAll('.event-row')];let activePlatform='all',limit=3;
 const filter=()=>{const now=Date.now();const matches=rows.filter(el=>{const at=Date.parse(el.querySelector('time[datetime]')?.dateTime);return at<=now&&at>=now-7*86400000;}).sort((a,b)=>Date.parse(b.querySelector('time').dateTime)-Date.parse(a.querySelector('time').dateTime)).filter(el=>(activePlatform==='all'||el.dataset.platformFeed===activePlatform));matches.forEach(el=>el.parentNode.append(el));rows.forEach(el=>el.hidden=!matches.slice(0,limit).includes(el));const more=document.querySelector('.more');if(more)more.hidden=matches.length<=limit;const empty=document.querySelector('.empty');if(empty)empty.hidden=matches.length>0;};
 document.querySelector('.more')?.addEventListener('click',()=>{limit+=5;filter();});filter();setInterval(filter,60000);
