@@ -4,4 +4,4 @@ The homepage sums the X view counts of six existing, verified reset announcement
 
 The follow button currently saves an explicit on/off preference in this browser's local storage, shared across the site's languages. It does not send notifications, increment the X metric or claim a global follower total. Shared persistence and anti-abuse controls require a separate backend before site-wide follower totals can be offered to advertisers.
 
-The site's keycap mascot plays a 620 ms drum hit on follow, and can be tapped independently to replay. Repeated taps restart a single animation; reduced-motion mode uses only a brief opacity cue. No audio plays and drumming never changes the view metric or the follow preference.
+The site's keycap mascot plays a 800 ms Blender-rendered 3D drum hit on follow, and can be tapped independently to replay. Repeated taps restart a single animation; reduced-motion mode uses only a brief opacity cue. No audio plays and drumming never changes the view metric or the follow preference.
