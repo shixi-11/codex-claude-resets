@@ -10,21 +10,22 @@
     "gifts": [],
     "trackingState": "timeline-checked",
     "latest": {
-      "id": "2098300424520687965",
+      "id": "2098612714704891959",
       "kind": "signal",
       "state": "unconfirmed",
       "reason": "ambiguous",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2098300424520687965",
-      "publishedAt": "2026-09-11T06:39:40.399Z",
-      "verifiedAt": "2026-09-12T01:36:25.101Z",
-      "excerpt": "When I say excellent service for existing users, that includes the occasional reset",
-      "fullText": "When I say excellent service for existing users, that includes the occasional reset",
+      "sourceUrl": "https://x.com/thsottiaux/status/2098612714704891959",
+      "publishedAt": "2026-09-12T03:20:36.181Z",
+      "verifiedAt": "2026-09-12T06:32:53.524Z",
+      "excerpt": "A reset and a quick update on quality issues that have been posted around.",
+      "fullText": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
       "truncated": false,
-      "provenance": "x-oembed",
+      "provenance": "x-oembed+fxembed",
+      "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2098612714704891959",
       "rulesVersion": "1.3.0",
-      "contentHash": "927b27fa1bd2f423fa9b02929347a6ab549a07f306264ee1f811a940d8fefbc2"
+      "contentHash": "3bf824911a096df2ce5c4a694c7d1454257c4b7f889daf5d55fa415f6ba75c35"
     },
     "lastReset": {
       "id": "2097174560412246215",
@@ -75,7 +76,7 @@
         "type": "usage-promotion",
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
-        "verifiedAt": "2026-09-12T01:36:28.806Z",
+        "verifiedAt": "2026-09-12T06:32:57.923Z",
         "benefit": "Claude Code weekly usage +50%",
         "eligible": "Pro, Max, Team, and legacy seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -87,7 +88,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-09-12T01:36:28.806Z",
+      "checkedAt": "2026-09-12T06:32:57.923Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {

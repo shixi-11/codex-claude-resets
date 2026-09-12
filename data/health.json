@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-12T01:36:25.101Z",
-  "lastSuccessAt": "2026-09-12T01:36:25.101Z",
-  "discoveryAt": "2026-09-12T01:36:25.101Z",
+  "lastAttemptAt": "2026-09-12T06:32:53.524Z",
+  "lastSuccessAt": "2026-09-12T06:32:53.524Z",
+  "discoveryAt": "2026-09-12T06:32:53.524Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -56,7 +56,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 4,
+      "checked": 5,
       "failed": 0
     }
   ],
@@ -64,9 +64,9 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-12T01:36:25.101Z",
+      "lastAttemptAt": "2026-09-12T06:32:53.524Z",
       "status": "ok",
-      "checked": 3,
+      "checked": 4,
       "failed": 0,
       "discovered": 49,
       "authors": [
@@ -83,10 +83,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-12T01:36:25.101Z"
+      "lastSuccessAt": "2026-09-12T06:32:53.524Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-12T01:36:25.101Z",
+      "lastAttemptAt": "2026-09-12T06:32:53.524Z",
       "status": "ok",
       "checked": 1,
       "failed": 0,
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-12T01:36:25.101Z"
+      "lastSuccessAt": "2026-09-12T06:32:53.524Z"
     }
   }
 }
