@@ -7,7 +7,7 @@
       "state": "completed",
       "resetAt": null,
       "sourceUrl": "https://x.com/thsottiaux/status/2098685367058612394",
-      "verifiedAt": "2026-09-12T08:35:52.209Z",
+      "verifiedAt": "2026-09-12T08:37:25.957Z",
       "publishedAt": "2026-09-12T08:09:17.852Z"
     },
     "gifts": [],
@@ -21,8 +21,8 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2098685367058612394",
       "publishedAt": "2026-09-12T08:09:17.852Z",
-      "verifiedAt": "2026-09-12T08:35:52.209Z",
-      "excerpt": "Reset all propagated. Sweet dreams.",
+      "verifiedAt": "2026-09-12T08:37:25.957Z",
+      "excerpt": "Reset all propagated.",
       "fullText": "Reset all propagated. Sweet dreams.",
       "truncated": false,
       "provenance": "x-oembed",
@@ -38,8 +38,8 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2098685367058612394",
       "publishedAt": "2026-09-12T08:09:17.852Z",
-      "verifiedAt": "2026-09-12T08:35:52.209Z",
-      "excerpt": "Reset all propagated. Sweet dreams.",
+      "verifiedAt": "2026-09-12T08:37:25.957Z",
+      "excerpt": "Reset all propagated.",
       "fullText": "Reset all propagated. Sweet dreams.",
       "truncated": false,
       "provenance": "x-oembed",
@@ -61,7 +61,7 @@
       "fullText": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.3.0",
+      "rulesVersion": "1.3.3",
       "contentHash": "fa88a472616b58d0d0e335054ef8730ae895e63d2c5bd73c99169771765395a7"
     }
   },
@@ -107,7 +107,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.3.0",
+      "rulesVersion": "1.3.3",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "lastReset": {
@@ -124,7 +124,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.3.0",
+      "rulesVersion": "1.3.3",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",

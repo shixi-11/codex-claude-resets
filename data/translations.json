@@ -1188,33 +1188,32 @@
       "translatedAt": "2026-09-12T06:32:59.661Z"
     },
     "2098685367058612394": {
-      "excerpt": "Reset all propagated. Sweet dreams.",
-      "fullText": "Reset all propagated. Sweet dreams.",
+      "excerpt": "Reset all propagated.",
       "contentHash": "95cd808e297fb42a1b3fd251123155d17ab2d46b59bf7b840257441d5fc1dc89",
       "texts": {
-        "zh": "重置已全部生效。祝好梦。",
-        "zh-Hant": "重置已全部生效。祝好夢。",
-        "ja": "リセットはすべて反映されました。良い夢を。",
-        "ko": "초기화가 모두 적용되었습니다. 좋은 꿈 꾸세요.",
-        "es": "El restablecimiento ya se ha aplicado por completo. Dulces sueños.",
-        "fr": "La réinitialisation est entièrement appliquée. Faites de beaux rêves.",
-        "de": "Der Reset ist überall wirksam. Schöne Träume.",
-        "ar": "اكتملت إعادة الضبط للجميع. أحلامًا سعيدة."
+        "zh-Hant": "重置所有已傳播的。",
+        "zh": "重置所有已传播。",
+        "ko": "모든 전파를 재설정했습니다.",
+        "ja": "すべてリセット完了。",
+        "es": "Restablecer todo lo propagado.",
+        "fr": "Tout réinitialisé propagé.",
+        "de": "Alle propagierten zurücksetzen."
       },
+      "fullText": "Reset all propagated. Sweet dreams.",
       "fullTexts": {
-        "zh": "重置已全部生效。祝好梦。",
-        "zh-Hant": "重置已全部生效。祝好夢。",
-        "ja": "リセットはすべて反映されました。良い夢を。",
-        "ko": "초기화가 모두 적용되었습니다. 좋은 꿈 꾸세요.",
-        "es": "El restablecimiento ya se ha aplicado por completo. Dulces sueños.",
-        "fr": "La réinitialisation est entièrement appliquée. Faites de beaux rêves.",
-        "de": "Der Reset ist überall wirksam. Schöne Träume.",
-        "ar": "اكتملت إعادة الضبط للجميع. أحلامًا سعيدة."
+        "zh-Hant": "重置所有已傳播的。甜美的夢。",
+        "zh": "重置所有已传播。甜梦。",
+        "ko": "모든 전파를 재설정했습니다. 달콤한 꿈을.",
+        "ja": "すべてリセット完了。おやすみなさい。",
+        "es": "Restablecer todo lo propagado. Dulces sueños.",
+        "fr": "Tout réinitialisé propagé. Douces rêves.",
+        "de": "Alle propagierten zurücksetzen. Gute Nacht.",
+        "ar": "أعد ضبط كل ما تم نشره. أحلام سعيدة."
       },
-      "provider": "manual-primary",
-      "translatedAt": "2026-09-12T08:35:52.209Z"
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-12T08:37:31.567Z"
     }
   },
-  "pending": 30,
-  "lastAttemptAt": "2026-09-12T07:13:57.794Z"
+  "pending": 31,
+  "lastAttemptAt": "2026-09-12T08:37:37.224Z"
 }
