@@ -4,13 +4,14 @@ export function resetStatus(record, now = Date.now()) {
   if (!record || record.state === 'unknown') return { state: 'unknown', remainingMs: null, at: null };
   if (record.state === 'completed') return { state: 'completed', remainingMs: null, at: null };
   if (record.state === 'cancelled') return { state: 'cancelled', remainingMs: null, at: null };
-  if (record.state !== 'announced' || !record.sourceUrl || !record.verifiedAt || !record.resetAt) {
+  if (record.state !== 'announced' || !record.sourceUrl || !record.verifiedAt) {
     return { state: 'unknown', remainingMs: null, at: null };
   }
   const checked = Date.parse(record.verifiedAt);
   if (!Number.isFinite(checked) || checked > now + 300000 || now - checked > 3 * 3600000) {
     return { state: 'unknown', remainingMs: null, at: null };
   }
+  if (!record.resetAt) return { state: 'announcedUntimed', remainingMs: null, at: null };
   // An explicit offset is mandatory. A wall-clock string must not be interpreted
   // using the build server's timezone or a visitor's timezone.
   if (!/(?:Z|[+-]\d{2}:\d{2})$/.test(record.resetAt)) return { state: 'unknown', remainingMs: null, at: null };

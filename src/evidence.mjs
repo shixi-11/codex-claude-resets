@@ -1,4 +1,4 @@
-export const RULES_VERSION = '1.3.0';
+export const RULES_VERSION = '1.3.1';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -66,6 +66,7 @@ export function classify(text, { truncated = false, author = '' } = {}) {
   // Tibo's complete first-person announcement uses this exact short formulation.
   // Do not infer a global reset from jokes, replies about earlier resets, or other authors.
   if (author.toLowerCase()==='thsottiaux' && /^All reset for everyone\.(?: Enjoy the week with Astra\.)?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
+  if (author.toLowerCase()==='thsottiaux' && /\b(?:Astra|Codex) users\b/i.test(value) && /(?:^|[.!?]\s+)(?:And of course,?\s+)?a reset is (?:also )?landing by midnight today\.$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
     if (/\b(?:affected|not fully applying)\b/i.test(value) && /getting another|replacement|replac|compensat/i.test(value)) return {kind:'banked',state:'announced',reason:'replacement-credit'};
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
