@@ -198,75 +198,52 @@ for i in range(3):
     a=2*math.pi*i/3
     sphere('Drum foot '+str(i),(1.35+.43*math.cos(a),-.67+.43*math.sin(a),.13),(.13,.13,.13),olive)
 
-# Two complete gripping hands alternate, four contacts per loop.
+# Simple toy arms: one rigid arm per side, rotating only at the shoulder.
+# Arm, mitten and mallet follow one continuous swing axis; no elbow joint.
 rigs=[]
 for side,local_x,hit_y in [('Left',-1.50,-1.02),('Right',.28,-.32)]:
     anchor=facing_point((local_x,-.50,1.18))
-    h=Vector((.68,hit_y,1.48))
     shoulder=sphere(side+' shoulder',anchor,(.14,)*3,ivory)
-    elbow=sphere(side+' elbow',anchor,(.12,)*3,ivory)
-    hand=sphere(side+' gripping mitten',h,(.145,)*3,ivory)
-    upper=rod(side+' upper arm',anchor,h,.105,ivory)
-    fore=rod(side+' forearm',anchor,h,.105,ivory)
-    stick=rod(side+' maple stick',h,h+Vector((0,0,.59)),.042,wood)
-    head=sphere(side+' felt head',h+Vector((0,0,.59)),(.145,)*3,felt)
-    rigs.append((anchor,h,shoulder,elbow,hand,upper,fore,stick,head))
+    hand=sphere(side+' gripping mitten',anchor,(.145,)*3,ivory)
+    arm=rod(side+' single arm',anchor,anchor+Vector((0,0,.75)),.105,ivory)
+    stick=rod(side+' maple stick',anchor,anchor+Vector((0,0,.94)),.042,wood)
+    head=sphere(side+' felt head',anchor,(.145,)*3,felt)
+    rigs.append((anchor,shoulder,hand,arm,stick,head))
 for frame in range(1,49):
     impacts=[]
     for index,rig in enumerate(rigs):
-        anchor,rest,shoulder,elbow,hand,upper,fore,stick,head=rig
+        anchor,shoulder,hand,arm,stick,head=rig
         centers=[8,32] if index==0 else [20,44]
-        # Human reference: shoulder lift, bent elbow, fast stroke, free rebound.
-        side=anchor+Vector((.14,-.10 if index==0 else .10,-.79))
-        raised=anchor+Vector((.10,0,1.00))
-        vertical=Vector((0,0,1))
-        contact=Vector((1.30,-.95,.965+.145)) if index==0 else Vector((1.48,-.36,.965+.145))
+        contact=Vector((1.30,-.95,1.110)) if index==0 else Vector((1.48,-.36,1.110))
         forward=Vector((contact.x-anchor.x,contact.y-anchor.y,0)).normalized()
-        up_direction=(forward*.18+vertical*.98).normalized()
-        down_direction=(forward*.98-vertical*.20).normalized()
-        side_direction=(forward*.70+vertical*.714).normalized()
-        striking=contact-down_direction*.94
-        # A single anatomical swing plane prevents elbow flipping and cross-body folds.
-        side=anchor+forward*.10-vertical*.73
-        raised=anchor-forward*.10+vertical*.68
-        rebound=striking-forward*.025+vertical*.10
-        rebound_direction=down_direction.slerp(up_direction,.16)
+        vertical=Vector((0,0,1))
+        reach=(contact-anchor).length
+        arm_length=reach-.94
+        strike_angle=math.atan2(contact.z-anchor.z,(contact-anchor).dot(forward))
+        lift_angle=math.radians(98)
+        rebound_angle=strike_angle+math.radians(12)
         if index==0:
-            keys=[(1,raised,up_direction),(3,raised,up_direction),(8,striking,down_direction),
-                  (10,rebound,rebound_direction),(21,raised,up_direction),(27,raised,up_direction),
-                  (32,striking,down_direction),(34,rebound,rebound_direction),(45,raised,up_direction),(48,raised,up_direction)]
+            keys=[(1,lift_angle),(3,lift_angle),(8,strike_angle),(10,rebound_angle),
+                  (21,lift_angle),(27,lift_angle),(32,strike_angle),(34,rebound_angle),
+                  (45,lift_angle),(48,lift_angle)]
         else:
-            keys=[(1,striking,down_direction),(9,raised,up_direction),(15,raised,up_direction),
-                  (20,striking,down_direction),(22,rebound,rebound_direction),(33,raised,up_direction),
-                  (39,raised,up_direction),(44,striking,down_direction),(46,rebound,rebound_direction),
-                  (48,striking,down_direction)]
+            keys=[(1,strike_angle),(9,lift_angle),(15,lift_angle),(20,strike_angle),
+                  (22,rebound_angle),(33,lift_angle),(39,lift_angle),(44,strike_angle),
+                  (46,rebound_angle),(48,strike_angle)]
         for begin,end in zip(keys,keys[1:]):
             if begin[0]<=frame<=end[0]:
                 u=(frame-begin[0])/(end[0]-begin[0])
                 u=u*u if end[0] in centers else u*u*(3-2*u)
-                start_reach=begin[1]-anchor;end_reach=end[1]-anchor
-                start_angle=math.atan2(start_reach.z,start_reach.dot(forward))
-                end_angle=math.atan2(end_reach.z,end_reach.dot(forward))
-                angle=start_angle+(end_angle-start_angle)*u
-                reach_length=max(.66,start_reach.length+(end_reach.length-start_reach.length)*u)
-                h=anchor+(forward*math.cos(angle)+vertical*math.sin(angle))*reach_length
-                direction=begin[2].slerp(end[2],u)
+                angle=begin[1]+(end[1]-begin[1])*u
                 break
-        impact=max(max(0,1-abs(frame-contact)/2) for contact in centers)
-        impacts.append(impact)
-        tip=h+direction.normalized()*.94
-        # Solve a two-bone arm: both shoulder and elbow rotate, lengths stay fixed.
-        upper_length,fore_length=.40,.45
-        reach=h-anchor;distance=reach.length;axis=reach.normalized()
-        assert abs(upper_length-fore_length)<distance<upper_length+fore_length, (frame,index,distance)
-        along=(upper_length**2-fore_length**2+distance**2)/(2*distance)
-        angle=math.atan2(axis.z,axis.dot(forward))
-        bend=-forward*math.sin(angle)+vertical*math.cos(angle)
-        joint=anchor+axis*along+bend*math.sqrt(max(0,upper_length**2-along**2))
-        shoulder.location=anchor;elbow.location=joint;hand.location=h;head.location=tip
-        pose_rod(upper,anchor,joint);pose_rod(fore,joint,h)
+        direction=forward*math.cos(angle)+vertical*math.sin(angle)
+        h=anchor+direction*arm_length
+        tip=anchor+direction*reach
+        impacts.append(max(max(0,1-abs(frame-hit)/2) for hit in centers))
+        shoulder.location=anchor;hand.location=h;head.location=tip
+        pose_rod(arm,anchor,h)
         pose_rod(stick,h-direction*.10,tip)
-        for ob in [shoulder,elbow,hand,head,upper,fore,stick]:
+        for ob in [shoulder,hand,head,arm,stick]:
             for prop in ['location','rotation_euler','scale']:
                 ob.keyframe_insert(data_path=prop,frame=frame)
     body_root.location.z=-.045*max(impacts)
