@@ -13,7 +13,6 @@ function tickAll(){
   q('[data-clock-countdown]').hidden=!running;if(running)countdown(state.remainingMs).split(':').forEach((v,i)=>q(`[data-digit="${i}"]`).textContent=v);
   q('[data-clock-verdict]').textContent=running?'':state.state==='completed'||state.state==='unknown'?w.waiting:p[state.state];q('[data-clock-verdict]').hidden=running;
   q('[data-public-time]').textContent=Number.isFinite(at)?`${data.reset.approximate?'≈ ':''}${localResetTime(at,lang)}`:state.state==='announcedUntimed'?(data.reset.deadlineText==='by midnight today'?p.midnightDeadline:p.unknown):'';
-  const link=q('[data-schedule-source]');link.hidden=!Number.isFinite(at)&&state.state!=='announcedUntimed';link.href=data.reset.sourceUrl||data.profileUrl;link.target='_blank';link.rel='noopener noreferrer';
   card.dataset.clockState=state.state;
  });
 }
