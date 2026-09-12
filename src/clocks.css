@@ -55,3 +55,5 @@
 .platform-card:not([data-clock-state=announced]) .clock-reading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding-bottom:24px}.platform-card:not([data-clock-state=announced]) .clock-verdict{max-width:calc(100% - 120px)}.platform-card:not([data-clock-state=announced]) .station-art{margin-inline-start:auto}
 
 @media(max-width:600px){.platform-card:not([data-clock-state=announced]) .clock-verdict{max-width:calc(100% - 160px);min-width:0;overflow-wrap:normal;word-break:normal}}
+
+.platform-card:not([data-clock-state=announced]) .clock-verdict{position:absolute;left:50%;transform:translateX(-50%);width:max-content;text-align:center}
