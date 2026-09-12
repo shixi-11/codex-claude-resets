@@ -51,3 +51,5 @@
 .heat-follow{position:relative}.heat-cheer-cue{position:absolute;inset-inline-end:14px;top:-10px;font-size:18px;font-weight:800;color:#285c47;pointer-events:none}.heat-cheer-cue[hidden]{display:none}
 
 .reset-overview .local-now{font-size:14px;gap:8px;line-height:1.5}@media(max-width:600px){.reset-overview .local-now{font-size:13px;gap:6px}}
+.clock-face{position:relative}.clock-content{padding-bottom:24px}.clock-face .public-reset-time{position:absolute;inset-inline:0;bottom:0;text-align:start;margin:0}.clock-face .public-reset-time:empty{display:none}
+.platform-card[data-clock-state=announcedUntimed] .clock-reading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding-bottom:24px}.platform-card[data-clock-state=announcedUntimed] .clock-verdict{max-width:calc(100% - 120px)}.platform-card[data-clock-state=announcedUntimed] .station-art{margin-inline-start:auto}
