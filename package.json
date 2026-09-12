@@ -8,6 +8,7 @@
   "name": "codex-claude-resets",
   "version": "1.0.0",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "description": "Automatic public reset tracking, alerts and source-linked Codex and Claude updates in nine languages.",
   "scripts": {

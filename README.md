@@ -66,7 +66,11 @@ curl https://shixilin.com/ai/codex-claude-resets/events.json
 
 Each event has a source URL, post ID, type, evidence state, creation and verification timestamps, a short excerpt, truncation flag, provenance, rules version and content hash. A stable post ID is the deduplication key. Details and the trust boundary are in [the data notes](docs/data.md).
 
-Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remain attributable to their authors. The mascot was generated for this project; image provenance is documented in [assets](docs/assets.md).
+### License and reuse
+
+**Project code and original assets are available for noncommercial use only. Commercial use requires prior written permission from Shixi Lin.** Noncommercial learning, modification and sharing are permitted subject to attribution and the other terms in [LICENSE](LICENSE). Paid products, ad-supported sites, commercial client work and business use of the materials require separate permission. Contact [info@elevencapital.ltd](mailto:info@elevencapital.ltd) with your intended use.
+
+This is a source-available project under a custom noncommercial license, not an MIT-licensed open-source release. The change does not revoke permissions already granted for earlier MIT-licensed material. Merely visiting the official website or reading announcements does not require commercial permission. Third-party fonts retain their OFL licenses; source posts and third-party names and marks retain their respective rights. See [LICENSE](LICENSE) for scope and historical permissions, and [assets](docs/assets.md) for image provenance.
 
 ---
 
@@ -89,6 +93,12 @@ Code is MIT-licensed. Fonts retain their own OFL licenses. Source excerpts remai
 - 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
 
 网站无法查看或重置个人账号的实际额度。请以Codex额度面板或CLI中的`/status`为准。日常自动化不需要付费模型，也不会把订阅登录凭据上传到GitHub。
+
+### 授权与使用
+
+**项目代码与原创素材仅允许非商业使用；商业使用须事先取得光之十一的书面授权。**允许遵守署名等许可条件进行非商业学习、修改和分享。收费产品、广告变现网站、商业客户项目及将项目材料用于企业业务，均须另行授权。申请请联系[info@elevencapital.ltd](mailto:info@elevencapital.ltd)，并说明具体用途。完整条款见[LICENSE](LICENSE)。
+
+本项目采用自定义的源码公开、非商业许可，不再以MIT开源项目发布；此次变更不撤销此前按MIT授出的权利。正常访问官方网站、阅读公告无须申请商业授权。第三方字体仍遵循原有OFL许可证，公告原文及第三方名称、标识的权利仍归相应权利人。素材来源见[素材说明](docs/assets.md)。
 
 ---
 
