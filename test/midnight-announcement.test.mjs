@@ -25,3 +25,8 @@ test('Tibo midnight uses approved PST convention and stays an estimated deadline
  assert.equal(announcementTime(event.fullText,event.publishedAt,{author:'thsottiaux',truncated:true}),null);
  assert.equal(resetStatus({...s,state:'announced',sourceUrl:event.sourceUrl,verifiedAt:'2026-09-12T07:13:00Z'},Date.parse('2026-09-12T08:01:00Z')).state,'awaitingConfirmation');
 });
+test('Tibo propagation confirmation is completion evidence',()=>{
+ assert.equal(classify('Reset all propagated. Sweet dreams.',{author:'thsottiaux'}).state,'reported');
+ for(const text of ['Reset has not propagated.','If reset all propagated. Sweet dreams.','"Reset all propagated. Sweet dreams."'])assert.notEqual(classify(text,{author:'thsottiaux'}).state,'reported');
+ assert.notEqual(classify('Reset all propagated. Sweet dreams.',{author:'thsottiaux',truncated:true}).state,'reported');
+});

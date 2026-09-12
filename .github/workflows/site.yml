@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '17,47 * * * *'
+    - cron: '7,17,27,37,47,57 * * * *'
     - cron: '23 2 * * *'
   workflow_dispatch:
 permissions:
@@ -26,7 +26,6 @@ jobs:
           node-version: '24'
       - run: node --test
       - name: Check public announcements
-        if: github.event_name != 'push'
         run: node scripts/collect.mjs
       - name: Check official Claude promotion terms
         if: github.event_name != 'push'
@@ -35,12 +34,10 @@ jobs:
         if: github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
         run: node scripts/digest.mjs
       - name: Cache translations for new source records
-        if: github.event_name != 'push'
         run: node scripts/translate.mjs
         env:
           TRANSLATION_REQUEST_LIMIT: '80'
       - name: Save source records
-        if: github.event_name != 'push'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
