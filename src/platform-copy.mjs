@@ -61,3 +61,4 @@ Object.entries({
  de:['Reset angekündigt','Ankündigung: bis heute Mitternacht (Zeitzone nicht angegeben)'],
  ar:['أُعلن عن إعادة الضبط','الإعلان: بحلول منتصف ليل اليوم (المنطقة الزمنية غير محددة)']
 }).forEach(([lang,[announcedUntimed,midnightDeadline]])=>Object.assign(platformCopy[lang],{announcedUntimed,midnightDeadline}));
+Object.entries({en:'By {time} (estimated using Tibo’s usual PST)',zh:'预计截至{time}（按 Tibo 惯用 PST 推算）','zh-Hant':'預計截至{time}（按 Tibo 慣用 PST 推算）',ja:'{time}まで（Tiboが通常使うPSTで推定）',ko:'{time}까지 (Tibo의 통상 PST 기준 추정)',es:'Antes de {time} (estimado según el PST habitual de Tibo)',fr:'D’ici {time} (estimation selon le PST habituel de Tibo)',de:'Bis {time} (geschätzt nach Tibos üblicher PST-Angabe)',ar:'بحلول {time} (تقدير وفق توقيت PST المعتاد لدى Tibo)'}).forEach(([lang,text])=>platformCopy[lang].inferredDeadline=text);

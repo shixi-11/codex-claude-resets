@@ -134,7 +134,7 @@ for(const [key,platform] of Object.entries(platforms)){
  if(latestReset?.state==='announced'&&!latestReset.resetAt){
   platform.reset={state:'announced',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt,...(/a reset is (?:also )?landing by midnight today\./i.test(latestReset.fullText||'')?{deadlineText:'by midnight today'}:{})};
  } else if(latestReset?.state==='announced'&&latestReset.resetAt&&Date.parse(latestReset.resetAt)>Date.now()-86400000){
-  platform.reset={state:'announced',resetAt:latestReset.resetAt,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,approximate:latestReset.approximate,sourceTimezone:latestReset.sourceTimezone};
+  platform.reset={state:'announced',resetAt:latestReset.resetAt,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,approximate:latestReset.approximate,sourceTimezone:latestReset.sourceTimezone,timeBasis:latestReset.timeBasis,timeKind:latestReset.timeKind};
  } else if(latestReset?.state==='reported'&&Date.parse(latestReset.publishedAt)>Date.now()-86400000){
   platform.reset={state:'completed',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt};
  } else platform.reset={state:'unknown',resetAt:null};

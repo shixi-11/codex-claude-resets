@@ -18,3 +18,10 @@ test('verified untimed announcement remains visible without countdown',()=>{
  assert.deepEqual(resetStatus(record,Date.parse(event.verifiedAt)),{state:'announcedUntimed',remainingMs:null,at:null});
  assert.equal(resetStatus({...record,sourceUrl:null},Date.parse(event.verifiedAt)).state,'unknown');
 });
+test('Tibo midnight uses approved PST convention and stays an estimated deadline',()=>{
+ const s=announcementTime(event.fullText,event.publishedAt,{author:'thsottiaux'});
+ assert.equal(s.resetAt,'2026-09-12T08:00:00.000Z');assert.equal(s.timeBasis,'author-usual-PST');assert.equal(s.timeKind,'deadline');
+ assert.equal(announcementTime(event.fullText,event.publishedAt,{author:'OpenAI'}),null);
+ assert.equal(announcementTime(event.fullText,event.publishedAt,{author:'thsottiaux',truncated:true}),null);
+ assert.equal(resetStatus({...s,state:'announced',sourceUrl:event.sourceUrl,verifiedAt:'2026-09-12T07:13:00Z'},Date.parse('2026-09-12T08:01:00Z')).state,'awaitingConfirmation');
+});

@@ -1,4 +1,5 @@
-export const RULES_VERSION = '1.3.1';
+import {announcementTime} from './announcement-time.mjs';
+export const RULES_VERSION = '1.3.2';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -49,9 +50,9 @@ export function reclassifyEvents(events) {
     if (!event.fullText || event.truncated) return [event];
     const result = classify(event.fullText, event);
     if (result.kind === 'other') return [];
-    const {resetAt, approximate, sourceTimezone, ...record} = event;
+    const {resetAt, approximate, sourceTimezone, timeBasis, timeKind, ...record} = event;
     return [{...record, ...result, rulesVersion: RULES_VERSION,
-      ...(result.kind==='global' && result.state==='announced' && resetAt ? {resetAt, approximate, sourceTimezone} : {})}];
+      ...(result.kind==='global' && result.state==='announced' ? (announcementTime(event.fullText,event.publishedAt,event)||(resetAt?{resetAt,approximate,sourceTimezone,timeBasis,timeKind}:{})) : {})}];
   });
 }
 

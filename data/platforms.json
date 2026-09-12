@@ -5,11 +5,13 @@
     "usageUrl": "https://chatgpt.com/codex/settings/usage",
     "reset": {
       "state": "announced",
-      "resetAt": null,
-      "sourceUrl": "https://x.com/thsottiaux/status/2098612714704891959",
+      "resetAt": "2026-09-12T08:00:00.000Z",
       "verifiedAt": "2026-09-12T07:13:46.691Z",
-      "publishedAt": "2026-09-12T03:20:36.181Z",
-      "deadlineText": "by midnight today"
+      "sourceUrl": "https://x.com/thsottiaux/status/2098612714704891959",
+      "approximate": true,
+      "sourceTimezone": "PST",
+      "timeBasis": "author-usual-PST",
+      "timeKind": "deadline"
     },
     "gifts": [],
     "trackingState": "timeline-checked",
@@ -28,8 +30,13 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2098612714704891959",
-      "rulesVersion": "1.3.1",
-      "contentHash": "3bf824911a096df2ce5c4a694c7d1454257c4b7f889daf5d55fa415f6ba75c35"
+      "rulesVersion": "1.3.2",
+      "contentHash": "3bf824911a096df2ce5c4a694c7d1454257c4b7f889daf5d55fa415f6ba75c35",
+      "resetAt": "2026-09-12T08:00:00.000Z",
+      "sourceTimezone": "PST",
+      "approximate": true,
+      "timeBasis": "author-usual-PST",
+      "timeKind": "deadline"
     },
     "lastReset": {
       "id": "2097174560412246215",
