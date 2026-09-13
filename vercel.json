@@ -4,6 +4,5 @@
   "installCommand": "echo Bundled static assets",
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "dist",
-  "trailingSlash": true,
-  "public": false
+  "trailingSlash": true
 }
