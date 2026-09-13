@@ -1,4 +1,4 @@
-name: Refresh announcements and publish
+name: Refresh announcements for Vercel
 on:
   push:
     branches: [main]
@@ -8,17 +8,12 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  pages: write
-  id-token: write
 concurrency:
   group: codex-respawn-publish
   cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -37,7 +32,8 @@ jobs:
         run: node scripts/translate.mjs
         env:
           TRANSLATION_REQUEST_LIMIT: '80'
-      - name: Save source records
+      - run: node scripts/build.mjs
+      - name: Save source records for Vercel automatic deployment
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -46,11 +42,3 @@ jobs:
             git commit -m "Refresh verified announcements and source health"
             git push
           fi
-      - run: node scripts/build.mjs
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4

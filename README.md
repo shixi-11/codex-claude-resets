@@ -34,15 +34,17 @@ Post translations are cached in `data/translations.json` and bound to the exact 
 
 ### Runs on its own
 
-The site, source records, collector and GitHub Actions workflow all live in this repository.
+The site, source records, collector and GitHub Actions workflow live in this private repository. Actions checks and commits the records; Vercel's Git integration builds and publishes each new production commit. The public website does not depend on GitHub Pages.
 
 | Job | Schedule | Output |
 | --- | --- | --- |
-| Announcement check | At minutes 17 and 47 each hour | Verified records, source health, rebuilt site |
+| Announcement check | At minutes 7, 17, 27, 37, 47 and 57 each hour | Verified records and source health committed for Vercel deployment |
 | Daily digest | 02:23 UTC daily | A source-linked Markdown digest of the previous UTC day |
-| Manual refresh | GitHub Actions → Run workflow | Check, digest and deployment |
+| Manual refresh | GitHub Actions → Run workflow | Check, digest and commit for Vercel deployment |
 
 GitHub schedules may be delayed. Failures retain existing records and publish the degraded health state. The production workflow requires **no paid API or model**. An optional X API adapter exists in the collector, but paid access is never enabled by default. Subscription OAuth and device credentials do not belong in repository secrets or hosted runners.
+
+Private-repository Actions runs consume the owner's included allowance. GitHub Free includes 2,000 minutes per month shared across the account's private repositories; the ten-minute schedule may exceed that allowance. Vercel hosting does not replace that allowance. No paid Actions budget is enabled by this project. See [automation](docs/automation.md) for deployment details.
 
 ### Run locally
 
@@ -90,7 +92,7 @@ This is a source-available project under a custom noncommercial license, not an 
 - 默认英文，提供九种语言，消息正文随语言切换并保留原文入口。新消息自动尝试翻译，未完成时显示英文原文与待更新提示。
 - 只收录额度重置、重置卡及订阅额度信息；模型退役、发布或使用人数变化不会仅因含有“usage”而进入消息列表。规则更新后会重新判断完整历史原文，清除误收。
 - 六个允许的官方账号分别采集，Codex与Claude的独立检查状态保存在数据中，页面保留上次成功检查时间。没有新消息与来源检查失败分开处理；计划、线索、补发和已宣布完成不会混为一谈。
-- 每半小时检查公开消息，每天生成来源摘要。调度可能延迟，来源故障和过期状态会在页面显示。
+- 每10分钟计划检查公开消息，每天生成来源摘要。Actions提交更新后的记录，由Vercel自动构建发布；网站不再依赖GitHub Pages。调度可能延迟，来源故障和过期状态会在页面显示。
 
 网站无法查看或重置个人账号的实际额度。请以Codex额度面板或CLI中的`/status`为准。日常自动化不需要付费模型，也不会把订阅登录凭据上传到GitHub。
 
