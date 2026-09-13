@@ -52,8 +52,7 @@
 
 .reset-overview .local-now{font-size:14px;gap:8px;line-height:1.5}@media(max-width:600px){.reset-overview .local-now{font-size:13px;gap:6px}}
 .clock-face{position:relative}.clock-content{padding-bottom:24px}.clock-face .public-reset-time{position:absolute;inset-inline:0;bottom:0;text-align:start;margin:0}.clock-face .public-reset-time:empty{display:none}
-.platform-card:not([data-clock-state=announced]) .clock-reading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding-bottom:24px}.platform-card:not([data-clock-state=announced]) .clock-verdict{max-width:calc(100% - 120px)}.platform-card:not([data-clock-state=announced]) .station-art{margin-inline-start:auto}
-
-@media(max-width:600px){.platform-card:not([data-clock-state=announced]) .clock-verdict{max-width:calc(100% - 160px);min-width:0;overflow-wrap:normal;word-break:normal}}
-
-.platform-card:not([data-clock-state=announced]) .clock-verdict{position:absolute;left:50%;transform:translateX(-50%);width:max-content;text-align:center}
+/* Center status text within its own column; retain the station's edge position. */
+.platform-card:not([data-clock-state=announced]) .clock-reading{position:static;display:flex;align-items:center;justify-content:center;align-self:stretch;padding-inline:12px}
+.platform-card:not([data-clock-state=announced]) .clock-verdict{position:static;transform:none;width:100%;max-width:100%;min-width:0;text-align:center;text-wrap:balance;overflow-wrap:anywhere;word-break:normal}
+.platform-card:not([data-clock-state=announced]) .station-art{margin-inline-start:auto}
