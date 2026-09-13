@@ -6,7 +6,7 @@ export function freshness(health, now = Date.now()) {
   if (!Number.isFinite(at) || at > now + 300000 || now - at > 3 * 3600000) return 'stale';
   return health.status === 'ok' ? 'fresh' : 'degraded';
 }
-export const localePath = lang => lang === 'en' ? '' : `${lang}/`;
+export const localePath = lang => `${lang}/`;
 export const eventPath = (lang, id) => `${localePath(lang)}events/${id}/`;
 export function calendarFile(timestamp, title, url = CANONICAL) {
   if (!Number.isFinite(timestamp)) throw new Error('Invalid timestamp');

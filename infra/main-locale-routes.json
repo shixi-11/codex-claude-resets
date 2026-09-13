@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Reset tracker entry: zh",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/zh/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(CN|SG)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: zh-Hant",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/zh-Hant/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(TW|HK|MO)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: ja",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/ja/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(JP)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: ko",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/ko/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(KR)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: es",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/es/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(ES|MX|AR|BO|CL|CO|CR|CU|DO|EC|GT|HN|NI|PA|PE|PR|PY|SV|UY|VE)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: fr",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/fr/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(FR|MC|BE|LU|SN|CI|BF|ML|NE|TG|BJ|GA|CG|CD|GN)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: de",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/de/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(DE|AT|LI|CH)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: ar",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/ar/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      },
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(AE|SA|EG|DZ|BH|IQ|JO|KW|LB|LY|MA|OM|PS|QA|SD|SY|TN|YE)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reset tracker entry: en",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/?$",
+      "dest": "/ai/codex-claude-resets/en/",
+      "status": 307,
+      "headers": {
+        "Cache-Control": "private, no-store",
+        "Vary": "X-Vercel-IP-Country"
+      }
+    }
+  },
+  {
+    "name": "Reset tracker legacy English announcements",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/events/([^/]+)/?$",
+      "dest": "/ai/codex-claude-resets/en/events/$1/",
+      "status": 308
+    }
+  },
+  {
+    "name": "Reset tracker directory slash",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/((?:en|zh|zh-Hant|ja|ko|es|fr|de|ar)(?:/events/[^/]+)?)$",
+      "dest": "/ai/codex-claude-resets/$1/",
+      "status": 308
+    }
+  },
+  {
+    "name": "Reset tracker Vercel origin",
+    "enabled": true,
+    "srcSyntax": "regex",
+    "route": {
+      "src": "^/ai/codex-claude-resets/(.*)$",
+      "dest": "https://codex-claude-resets.vercel.app/$1",
+      "respectOriginCacheControl": true
+    }
+  }
+]

@@ -4,5 +4,133 @@
   "installCommand": "echo Bundled static assets",
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "dist",
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/zh/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(CN|SG)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/zh-Hant/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(TW|HK|MO)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/ja/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(JP)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/ko/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(KR)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/es/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(ES|MX|AR|BO|CL|CO|CR|CU|DO|EC|GT|HN|NI|PA|PE|PR|PY|SV|UY|VE)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/fr/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(FR|MC|BE|LU|SN|CI|BF|ML|NE|TG|BJ|GA|CG|CD|GN)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/de/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(DE|AT|LI|CH)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/ar/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(AE|SA|EG|DZ|BH|IQ|JO|KW|LB|LY|MA|OM|PS|QA|SD|SY|TN|YE)"
+        }
+      ],
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/en/",
+      "permanent": false
+    },
+    {
+      "source": "/events/:id",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/en/events/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/events/:id/",
+      "destination": "https://shixilin.com/ai/codex-claude-resets/en/events/:id/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        },
+        {
+          "key": "Vary",
+          "value": "X-Vercel-IP-Country"
+        }
+      ]
+    }
+  ]
 }
