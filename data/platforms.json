@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2098685367058612394",
       "publishedAt": "2026-09-12T08:09:17.852Z",
-      "verifiedAt": "2026-09-14T01:37:28.440Z",
+      "verifiedAt": "2026-09-14T07:08:44.155Z",
       "excerpt": "Reset all propagated.",
       "fullText": "Reset all propagated. Sweet dreams.",
       "truncated": false,
@@ -35,7 +35,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2098685367058612394",
       "publishedAt": "2026-09-12T08:09:17.852Z",
-      "verifiedAt": "2026-09-14T01:37:28.440Z",
+      "verifiedAt": "2026-09-14T07:08:44.155Z",
       "excerpt": "Reset all propagated.",
       "fullText": "Reset all propagated. Sweet dreams.",
       "truncated": false,
@@ -86,9 +86,9 @@
     ],
     "trackingState": "timeline-checked",
     "promotionHealth": {
-      "state": "fresh",
-      "checkedAt": "2026-09-14T01:37:35.078Z",
-      "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
+      "state": "degraded",
+      "checkedAt": "2026-09-14T07:08:47.938Z",
+      "error": "Official promotion terms changed; review required"
     },
     "latest": {
       "id": "2094856679250919746",
