@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-15T10:29:36.632Z",
-  "lastSuccessAt": "2026-09-15T10:29:36.632Z",
-  "discoveryAt": "2026-09-15T10:29:36.632Z",
+  "lastAttemptAt": "2026-09-15T15:15:12.144Z",
+  "lastSuccessAt": "2026-09-15T15:15:12.144Z",
+  "discoveryAt": "2026-09-15T15:15:12.144Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -50,7 +50,7 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 17
+      "candidates": 16
     },
     {
       "name": "X official embed",
@@ -64,7 +64,7 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-15T10:29:36.632Z",
+      "lastAttemptAt": "2026-09-15T15:15:12.144Z",
       "status": "ok",
       "checked": 3,
       "failed": 0,
@@ -83,14 +83,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-15T10:29:36.632Z"
+      "lastSuccessAt": "2026-09-15T15:15:12.144Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-15T10:29:36.632Z",
+      "lastAttemptAt": "2026-09-15T15:15:12.144Z",
       "status": "ok",
       "checked": 1,
       "failed": 0,
-      "discovered": 53,
+      "discovered": 52,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-15T10:29:36.632Z"
+      "lastSuccessAt": "2026-09-15T15:15:12.144Z"
     }
   }
 }
