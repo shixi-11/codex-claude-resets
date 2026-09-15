@@ -34,7 +34,7 @@ Post translations are cached in `data/translations.json` and bound to the exact 
 
 ### Runs on its own
 
-The site, source records, collector and GitHub Actions workflow live in this private repository. Actions checks and commits the records; Vercel's Git integration builds and publishes each new production commit. The public website does not depend on GitHub Pages.
+The site, source records, collector and GitHub Actions workflow live in this public repository. The project is source-available under a custom noncommercial license, not MIT. Actions checks and commits the records; Vercel's Git integration builds and publishes each new production commit. The public website does not depend on GitHub Pages.
 
 | Job | Schedule | Output |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ The site, source records, collector and GitHub Actions workflow live in this pri
 
 GitHub schedules may be delayed. Failures retain existing records and publish the degraded health state. The production workflow requires **no paid API or model**. An optional X API adapter exists in the collector, but paid access is never enabled by default. Subscription OAuth and device credentials do not belong in repository secrets or hosted runners.
 
-Private-repository Actions runs consume the owner's included allowance. GitHub Free includes 2,000 minutes per month shared across the account's private repositories; the ten-minute schedule may exceed that allowance. Vercel hosting does not replace that allowance. No paid Actions budget is enabled by this project. See [automation](docs/automation.md) for deployment details.
+Standard GitHub-hosted runners on this public repository do not consume the owner's private Actions minutes. Other private repositories on the account still share the GitHub Free 2,000-minute allowance. Vercel hosting is separate. No paid Actions budget is enabled by this project. See [automation](docs/automation.md) for deployment details.
 
 ### Run locally
 
