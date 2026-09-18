@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-18T18:13:23.570Z",
-  "lastSuccessAt": "2026-09-18T18:13:23.570Z",
-  "discoveryAt": "2026-09-18T18:13:23.570Z",
+  "lastAttemptAt": "2026-09-18T20:57:25.213Z",
+  "lastSuccessAt": "2026-09-18T20:57:25.213Z",
+  "discoveryAt": "2026-09-18T20:57:25.213Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
-      "candidates": 21
+      "candidates": 20
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 13
+      "candidates": 11
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -42,7 +42,7 @@
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
-      "candidates": 19
+      "candidates": 20
     },
     {
       "name": "@claudeai timeline via FxEmbed",
@@ -50,13 +50,13 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 18
+      "candidates": 15
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 6,
+      "checked": 5,
       "failed": 0
     }
   ],
@@ -64,11 +64,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-18T18:13:23.570Z",
+      "lastAttemptAt": "2026-09-18T20:57:25.213Z",
       "status": "ok",
-      "checked": 3,
+      "checked": 2,
       "failed": 0,
-      "discovered": 49,
+      "discovered": 46,
       "authors": [
         {
           "author": "thsottiaux",
@@ -83,14 +83,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-18T18:13:23.570Z"
+      "lastSuccessAt": "2026-09-18T20:57:25.213Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-18T18:13:23.570Z",
+      "lastAttemptAt": "2026-09-18T20:57:25.213Z",
       "status": "ok",
       "checked": 3,
       "failed": 0,
-      "discovered": 55,
+      "discovered": 53,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-18T18:13:23.570Z"
+      "lastSuccessAt": "2026-09-18T20:57:25.213Z"
     }
   }
 }
