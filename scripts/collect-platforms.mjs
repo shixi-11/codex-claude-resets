@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import { currentClaudePromotion } from '../src/claude-promotion.mjs';
 const file = new URL('../data/platforms.json',import.meta.url);
 const data = JSON.parse(await readFile(file,'utf8'));
 const at = new Date().toISOString();
@@ -8,12 +9,9 @@ try {
   if(!response.ok) throw new Error(`Official help center HTTP ${response.status}`);
   const html = await response.text();
   const text = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ').replace(/\s+/g,' ');
-  // Only refresh the known offer when its actual terms still match. A changed
-  // amount, scope or end date requires parsing/review, not a false green check.
-  const required=[/weekly usage limits?[^.]{0,120}50%/i,/September 13, 2026 at 11:59 PM PT/i,/Pro, Max, and Team/i,/automatically applied/i,/5-hour usage limits are not affected/i];
-  if(!required.every(pattern=>pattern.test(text))) throw new Error('Official promotion terms changed; review required');
-  promotion.verifiedAt=at;
-  promotion.state=Date.parse(promotion.endsAt)>Date.now()?'announced':'expired';
+  const current=currentClaudePromotion(text,promotion.sourceUrl,at);
+  Object.keys(promotion).forEach(key=>delete promotion[key]);
+  Object.assign(promotion,current);
   data.claude.promotionHealth={state:'fresh',checkedAt:at,sourceUrl:promotion.sourceUrl};
 } catch(error) {
   data.claude.promotionHealth={state:'degraded',checkedAt:at,error:error.message};

@@ -36,5 +36,5 @@ export function offerStatus(offer, now = Date.now()) {
   if (offer.endsAt && Date.parse(offer.endsAt) <= now) return 'expired';
   if (offer.state === 'expired') return 'expired';
   if (now - Date.parse(offer.verifiedAt) > 3 * 3600000) return 'stale';
-  return offer.state === 'announced' ? 'active' : 'unverified';
+  return offer.state === 'announced' && (!offer.permanent || /^\d{4}-\d{2}-\d{2}$/.test(offer.effectiveOn||'')) ? 'active' : 'unverified';
 }

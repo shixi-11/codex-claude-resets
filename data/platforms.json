@@ -75,20 +75,21 @@
         "type": "usage-promotion",
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
-        "verifiedAt": "2026-09-14T01:37:35.078Z",
-        "benefit": "Claude Code weekly usage +50%",
-        "eligible": "Pro, Max, Team, and legacy seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
+        "verifiedAt": "2026-09-19T09:58:11.194Z",
+        "benefit": "Claude Code standard weekly limits +25% permanently",
+        "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
-        "endsAt": "2026-09-13T23:59:00-07:00",
+        "effectiveOn": "2026-09-14",
         "scope": "Claude Code weekly limits only; not five-hour limits or other Claude products",
+        "permanent": true,
         "isResetCard": false
       }
     ],
     "trackingState": "timeline-checked",
     "promotionHealth": {
-      "state": "degraded",
-      "checkedAt": "2026-09-19T07:25:02.044Z",
-      "error": "Official promotion terms changed; review required"
+      "state": "fresh",
+      "checkedAt": "2026-09-19T09:58:11.194Z",
+      "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
       "id": "2094856679250919746",

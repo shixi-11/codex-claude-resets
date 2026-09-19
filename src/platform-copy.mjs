@@ -23,6 +23,18 @@ const additions={
  ar:['انتهى العرض','يلزم التحقق من العرض مجددًا','لخطط Pro وMax وTeam وخطط Enterprise القديمة القائمة على المقاعد. لحدود Claude Code الأسبوعية فقط.','متابعة إعادة ضبط Codex وClaude']
 };
 for(const [lang,row] of Object.entries(additions)) Object.assign(platformCopy[lang],Object.fromEntries(['expired','staleOffer','eligibility','title'].map((k,i)=>[k,row[i]])));
+const permanentUsage={
+ en:['Claude Code weekly limits permanently increased by 25%','Effective from'],
+ zh:['Claude Code每周额度永久增加25%','生效日期'],
+ 'zh-Hant':['Claude Code每週額度永久增加25%','生效日期'],
+ ja:['Claude Codeの週間利用枠を恒久的に25％増加','適用開始日'],
+ ko:['Claude Code 주간 한도 영구 25% 상향','적용일'],
+ es:['Los límites semanales de Claude Code aumentan un 25% de forma permanente','En vigor desde'],
+ fr:['Les limites hebdomadaires de Claude Code augmentent définitivement de 25 %','En vigueur depuis le'],
+ de:['Wöchentliche Claude-Code-Limits dauerhaft um 25 % erhöht','Gültig seit'],
+ ar:['زيادة دائمة بنسبة 25٪ في الحدود الأسبوعية لـClaude Code','ساري منذ']
+};
+for(const [lang,row] of Object.entries(permanentUsage))Object.assign(platformCopy[lang],{permanentBoost:row[0],effective:row[1]});
 const clockNotes={
  en:'Public countdowns use a confirmed announcement time and display it in your local timezone. When no time is verified, no countdown is shown. Reaching zero does not confirm a completed reset. Your personal usage window is separate.',
  zh:'公开倒计时使用已核实的公告时间，并自动换算为你的本地时区。时间未核实时不显示倒计时；倒数归零不代表已确认重置完成。你个人账号的额度周期另行计算。',

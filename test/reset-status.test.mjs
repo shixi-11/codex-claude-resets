@@ -27,3 +27,8 @@ test('offers become stale or expire without requiring another successful collect
  assert.equal(offerStatus(offer,now+86400000),'expired');
  assert.equal(offerStatus({...offer,verifiedAt:null},now),'unverified');
 });
+test('a verified permanent weekly-limit increase stays active without an end date', () => {
+ const offer={state:'announced',sourceUrl:'https://support.claude.com/',verifiedAt:'2026-09-08T00:00:00Z',effectiveOn:'2026-09-14',permanent:true};
+ assert.equal(offerStatus(offer,now),'active');
+ assert.equal(offerStatus({...offer,effectiveOn:null},now),'unverified');
+});
