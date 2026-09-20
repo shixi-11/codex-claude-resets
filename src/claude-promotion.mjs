@@ -13,6 +13,7 @@ export function currentClaudePromotion(text, sourceUrl, verifiedAt) {
     type: 'usage-promotion',
     state: 'announced',
     sourceUrl,
+    announcementId: '2093742321473065266',
     verifiedAt,
     benefit: 'Claude Code standard weekly limits +25% permanently',
     eligible: 'Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats',

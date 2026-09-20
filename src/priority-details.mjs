@@ -22,7 +22,11 @@ const belongs=(ev,id)=>postPlatform(ev.author)===id;
 const sourceAction={en:'View original',zh:'查看原文','zh-Hant':'查看原文',ja:'原文を見る',ko:'원문 보기',es:'Ver original',fr:'Voir l’original',de:'Original ansehen',ar:'عرض المنشور الأصلي'};
 export function priorityDetails(platform,id,events,lang){
  const t=priorityCopy[lang],list=(events||[]).filter(ev=>belongs(ev,id)).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
- const latest=list[0]||platform.latest,last=platform.lastReset;
+ const gift=platform.gifts?.[0];
+ // The current offer and its announcement stay together, even when a later
+ // unrelated reset was posted. Keep the actual reset history independent.
+ const announcement=gift?.announcementId&&list.find(ev=>ev.id===gift.announcementId);
+ const latest=announcement||list[0]||platform.latest,last=platform.lastReset;
  const when=at=>localResetTime(at,lang);
  return `<div class="latest-post"><div class="priority-label"><span>${e(t.latest)}</span>${latest?`<time datetime="${e(latest.publishedAt)}">${e(when(latest.publishedAt))}</time>`:''}</div>${latest?`<a class="tweet-source" href="${e(latest.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>@${e(latest.author)}</span><span class="source-action"><span class="source-action-label">${e(sourceAction[lang])}</span><span class="source-arrow" aria-hidden="true">↗</span></span></a>${postText(latest,lang,'tweet-excerpt')}<p class="tweet-meaning"><span class="post-kind" data-kind="${e(latest.kind)}">${e(latest.reason==='replacement-credit'?replacementLabels[lang]:postKindLabel(latest.kind,lang))}</span> ${e(latest.kind==='global'&&latest.state==='reported'?t.complete:latest.state==='unconfirmed'?t.unconfirmed:postStateLabel(latest.state,lang))}</p>`:`<p>${e(t.empty)}</p>`}</div>
  <div class="last-reset"><span>${e(elapsedLabel[lang])}</span><span data-last-reset data-reset-elapsed="${e(last?.publishedAt||'')}" title="${last?e(when(last.publishedAt)):''}">${last?e(elapsedSince(last.publishedAt,lang)):e(watchCopy[lang].noHistory)}</span></div>
