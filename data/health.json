@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-22T15:39:27.413Z",
-  "lastSuccessAt": "2026-09-22T11:30:09.135Z",
-  "discoveryAt": "2026-09-22T15:39:27.413Z",
+  "lastAttemptAt": "2026-09-22T19:14:39.848Z",
+  "lastSuccessAt": "2026-09-22T19:14:39.848Z",
+  "discoveryAt": "2026-09-22T19:14:39.848Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,8 +9,8 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 20
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 11
+      "candidates": 9
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -26,7 +26,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 16
+      "candidates": 15
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -34,7 +34,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 18
+      "candidates": 14
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -42,7 +42,7 @@
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
-      "candidates": 20
+      "candidates": 21
     },
     {
       "name": "@claudeai timeline via FxEmbed",
@@ -50,68 +50,29 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 15
-    },
-    {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
-      "ok": true,
-      "candidates": 369
-    },
-    {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
-      "ok": false,
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Reset Radar · Claude link discovery only",
-      "url": "https://www.resetradar.com/data/events.json",
-      "ok": true,
-      "candidates": 17
+      "candidates": 9
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": false,
-      "checked": 384,
-      "failed": 5
+      "ok": true,
+      "checked": 9,
+      "failed": 0
     }
   ],
-  "status": "degraded",
-  "failedPosts": [
-    {
-      "url": "https://x.com/thsottiaux/status/2101738915564851585",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2093395719805960389",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2092280921827213712",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2092280915607109862",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2092280918291386786",
-      "error": "HTTP 404"
-    }
-  ],
+  "status": "ok",
+  "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-22T15:39:27.413Z",
-      "status": "degraded",
-      "checked": 365,
-      "failed": 5,
-      "discovered": 381,
+      "lastAttemptAt": "2026-09-22T19:14:39.848Z",
+      "status": "ok",
+      "checked": 4,
+      "failed": 0,
+      "discovered": 44,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": false
+          "ok": true
         },
         {
           "author": "OpenAIDevs",
@@ -122,14 +83,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-22T11:30:09.135Z"
+      "lastSuccessAt": "2026-09-22T19:14:39.848Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-22T15:39:27.413Z",
+      "lastAttemptAt": "2026-09-22T19:14:39.848Z",
       "status": "ok",
-      "checked": 19,
+      "checked": 5,
       "failed": 0,
-      "discovered": 69,
+      "discovered": 44,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -144,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-22T15:39:27.413Z"
+      "lastSuccessAt": "2026-09-22T19:14:39.848Z"
     }
   }
 }

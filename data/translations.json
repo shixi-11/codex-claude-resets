@@ -1263,7 +1263,8 @@
         "ko": "리셋이 계정에 전파되었으며, 어제 언급된 문제들에 대한 사용 관련 일부 수정 사항을 적용했습니다.",
         "es": "El reseteo se ha propagado a las cuentas y hemos implementado algunas correcciones al uso de las cosas mencionadas ayer como problemas que encontramos.",
         "de": "Der Reset wurde an die Konten weitergegeben, und wir haben einige Korrekturen für die Nutzung der Dinge umgesetzt, die gestern als Probleme genannt wurden, die wir gefunden haben.",
-        "ar": "تم نشر الإعادة التشغيل إلى الحسابات وقد طبقنا بعض الإصلاحات لاستخدام الأمور التي ذُكرت أمس كمشكلات وجدناها."
+        "ar": "تم نشر الإعادة التشغيل إلى الحسابات وقد طبقنا بعض الإصلاحات لاستخدام الأمور التي ذُكرت أمس كمشكلات وجدناها.",
+        "fr": "La réinitialisation a été propagée vers les comptes et nous avons déployé quelques correctifs pour l'usage des éléments mentionnés hier comme problèmes que nous avons identifiés."
       },
       "fullText": "Good Sunday. Reset has been propagated to accounts and we landed some fixes to usage for things mentioned yesterday as issues we found. You should feel a positive difference. More to come tomorrow and will keep communicating.",
       "fullTexts": {
@@ -1273,10 +1274,11 @@
         "ko": "좋은 일요일입니다. 리셋이 계정에 전파되었으며, 어제 언급된 문제들에 대한 사용 관련 일부 수정 사항을 적용했습니다. 긍정적인 차이를 느끼실 겁니다. 내일 더 많은 업데이트가 있을 예정이며, 계속 소통하겠습니다.",
         "es": "Buenos domingos. El reseteo se ha propagado a las cuentas y hemos implementado algunas correcciones al uso de las cosas mencionadas ayer como problemas que encontramos. Deberías notar una diferencia positiva. Habrá más mañana y seguiremos comunicando.",
         "de": "Guten Sonntag. Der Reset wurde an die Konten weitergegeben, und wir haben einige Korrekturen für die Nutzung der Dinge umgesetzt, die gestern als Probleme genannt wurden, die wir gefunden haben. Sie sollten einen positiven Unterschied spüren. Mehr kommt morgen, und wir werden weiterhin kommunizieren.",
-        "ar": "أحد سعيد. تم نشر الإعادة التشغيل إلى الحسابات وقد طبقنا بعض الإصلاحات لاستخدام الأمور التي ذُكرت أمس كمشكلات وجدناها. يجب أن تشعر بفرق إيجابي. المزيد قادم غداً وسنستمر في التواصل."
+        "ar": "أحد سعيد. تم نشر الإعادة التشغيل إلى الحسابات وقد طبقنا بعض الإصلاحات لاستخدام الأمور التي ذُكرت أمس كمشكلات وجدناها. يجب أن تشعر بفرق إيجابي. المزيد قادم غداً وسنستمر في التواصل.",
+        "fr": "Bon dimanche. La réinitialisation a été propagée vers les comptes et nous avons déployé quelques correctifs pour l'usage des éléments mentionnés hier comme problèmes que nous avons identifiés. Vous devriez ressentir une différence positive. Plus à venir demain et nous continuerons à communiquer."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-22T15:40:25.015Z"
+      "translatedAt": "2026-09-22T19:14:59.740Z"
     },
     "2087706104814023111": {
       "excerpt": "Enjoy a nice reset everyone.",
@@ -1364,7 +1366,8 @@
         "zh": "为了庆祝这一点，再加上我哪儿也不去的事实……我已经为所有 ChatGPT Work 和 Codex 的付费用户重置了使用限额。",
         "ja": "これを祝って、私が行くあてがないという事実と合わせて… ChatGPT Work と Codex の全有料ユーザーに対して使用制限をリセットしました。",
         "es": "he restablecido los límites de uso para todos los usuarios de pago de ChatGPT Work y Codex.",
-        "fr": "J'ai réinitialisé les limites d'utilisation pour tous les utilisateurs payants de ChatGPT Work et Codex."
+        "fr": "J'ai réinitialisé les limites d'utilisation pour tous les utilisateurs payants de ChatGPT Work et Codex.",
+        "de": "habe ich die Nutzungsbeschränkungen für alle zahlenden Nutzer von ChatGPT Work und Codex zurückgesetzt."
       },
       "fullText": "That's right, GPT-5.6 Sol is awesome and can be used pretty much anywhere, including in the CC harness. \n\nTo celebrate this, together with the fact that I'm not going anywhere... I have reset usage limits for all paid users of ChatGPT Work and Codex. \n\nHave fun out there!",
       "fullTexts": {
@@ -1374,24 +1377,62 @@
         "ja": "その通り、GPT-5.6 Sol は素晴らしいもので、ほぼどこでも使えます。CC ハーネスの中でも含めて。\n\nこれを祝って、私が行くあてがないという事実と合わせて… ChatGPT Work と Codex の全有料ユーザーに対して使用制限をリセットしました。\n\n外で楽しんでください！",
         "es": "Eso es correcto, GPT-5.6 Sol es impresionante y se puede usar prácticamente en cualquier lugar, incluido el arnés CC.\n\nPara celebrar esto, junto con el hecho de que no voy a irme a ningún lado... he restablecido los límites de uso para todos los usuarios de pago de ChatGPT Work y Codex.\n\n¡Diviértanse por ahí!",
         "fr": "C'est exact, GPT-5.6 Sol est génial et peut être utilisé presque partout, y compris dans le harnais CC.\n\nPour célébrer cela, ainsi que le fait que je ne vais nulle part... J'ai réinitialisé les limites d'utilisation pour tous les utilisateurs payants de ChatGPT Work et Codex.\n\nAmusez-vous bien là dehors !",
-        "ar": "صحيح، GPT-5.6 Sol رائع ويمكن استخدامه في أي مكان تقريبًا، بما في ذلك في حصيرة CC.\n\nللاحتفال بذلك، مع حقيقة أنني لن أذهب إلى أي مكان... لقد أعدت تعيين حدود الاستخدام لجميع المستخدمين المدفوعين في ChatGPT Work وCodex.\n\nاستمتعوا هناك!"
+        "ar": "صحيح، GPT-5.6 Sol رائع ويمكن استخدامه في أي مكان تقريبًا، بما في ذلك في حصيرة CC.\n\nللاحتفال بذلك، مع حقيقة أنني لن أذهب إلى أي مكان... لقد أعدت تعيين حدود الاستخدام لجميع المستخدمين المدفوعين في ChatGPT Work وCodex.\n\nاستمتعوا هناك!",
+        "de": "Genau, GPT-5.6 Sol ist großartig und kann praktisch überall eingesetzt werden, einschließlich im CC-Harness.\n\nZur Feier dessen, zusammen mit der Tatsache, dass ich nirgendwo hingehe... habe ich die Nutzungsbeschränkungen für alle zahlenden Nutzer von ChatGPT Work und Codex zurückgesetzt.\n\nViel Spaß da draußen!"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-22T15:40:35.427Z"
+      "translatedAt": "2026-09-22T19:15:02.425Z"
     },
     "2083395449814229287": {
       "excerpt": "I have reset usage limits for Codex and ChatGPT Work.",
       "contentHash": "9c3a36b44acd0b5133c732aa6ff7272b1ed1d97d2d8b5604e3049ed3a7c8d655",
-      "texts": {},
+      "texts": {
+        "zh-Hant": "為了慶祝一週的高效，並讓您這個週末能運行 100'000 個 Luna 執行緒……沒錯……等等瞧瞧……我已經為 Codex 和 ChatGPT Work 重設使用限制。",
+        "zh": "为了庆祝一周的高效，并让您这个周末运行 100,000 个 Luna 线程……没错……等等……我已经为 Codex 和 ChatGPT Work 重置了使用限制。",
+        "ja": "効率の一週間をお祝いするために、そしてこの週末に100,000本のLunaスレッドを動かせるようにするために…その通り…待ってて…CodexとChatGPT Workの使用制限をリセットしました。",
+        "ko": "Codex와 ChatGPT Work의 사용 제한을 재설정했습니다.",
+        "es": "tengo reseteados los límites de uso para Codex y ChatGPT Work.",
+        "fr": "Pour célébrer une semaine d’efficacité et vous permettre de lancer 100 000 threads Luna ce week-end… c’est ça… patientez… j’ai réinitialisé les limites d’utilisation pour Codex et ChatGPT Work.",
+        "de": "ich habe die Nutzungsbeschränkungen für Codex und ChatGPT Work zurückgesetzt.",
+        "ar": "لقد قمت بإعادة تعيين حدود الاستخدام لـCodex وChatGPT Work."
+      },
       "fullText": "To celebrate a week of efficiency and let you run 100'000 Luna threads this weekend... that's right... wait for it... I have reset usage limits for Codex and ChatGPT Work.\n\nEnjoy.",
-      "fullTexts": {}
+      "fullTexts": {
+        "zh-Hant": "為了慶祝一週的高效，並讓您這個週末能運行 100'000 個 Luna 執行緒……沒錯……等等瞧瞧……我已經為 Codex 和 ChatGPT Work 重設使用限制。\n\n盡情享受吧。",
+        "zh": "为了庆祝一周的高效，并让您这个周末运行 100,000 个 Luna 线程……没错……等等……我已经为 Codex 和 ChatGPT Work 重置了使用限制。\n\n尽情享受吧。",
+        "ja": "効率の一週間をお祝いするために、そしてこの週末に100,000本のLunaスレッドを動かせるようにするために…その通り…待ってて…CodexとChatGPT Workの使用制限をリセットしました。\n\n楽しんでください。",
+        "ko": "효율적인 일주일을 축하하고 이번 주말에 100,000개의 Luna 스레드를 실행할 수 있도록 하기 위해... 맞아요... 기다려 보세요... Codex와 ChatGPT Work의 사용 제한을 재설정했습니다.\n\n즐기세요.",
+        "es": "Para celebrar una semana de eficiencia y dejar que ejecutes 100'000 hilos de Luna este fin de semana... eso es... espera... tengo reseteados los límites de uso para Codex y ChatGPT Work.\n\nDisfruta.",
+        "fr": "Pour célébrer une semaine d’efficacité et vous permettre de lancer 100 000 threads Luna ce week-end… c’est ça… patientez… j’ai réinitialisé les limites d’utilisation pour Codex et ChatGPT Work.\n\nProfitez-en.",
+        "de": "Um eine Woche der Effizienz zu feiern und Ihnen dieses Wochenende 100.000 Luna-Threads laufen zu lassen... genau... warten Sie ab... ich habe die Nutzungsbeschränkungen für Codex und ChatGPT Work zurückgesetzt.\n\nGenießen Sie es.",
+        "ar": "للاحتفال بأسبوع من الكفاءة ولسماح لك بتشغيل 100,000 خيط لونا هذا العطلة نهاية الأسبوع... هذا صحيح... انتظر... لقد قمت بإعادة تعيين حدود الاستخدام لـCodex وChatGPT Work.\n\nاستمتع."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-22T19:15:05.007Z"
     },
     "2082317452755751098": {
       "excerpt": "I've reset usage limits for all ChatGPT Work and Codex users.",
       "contentHash": "53e594f5c781e0bbd834e6d3e0560d9fa84d4d2c2346a195c2eafec0a89ad1ae",
-      "texts": {},
+      "texts": {
+        "zh": "我们已经为所有 ChatGPT Work 和 Codex 用户重置了使用限额。",
+        "zh-Hant": "我已經為所有 ChatGPT Work 和 Codex 使用者重置了使用限制。",
+        "ja": "ChatGPT WorkおよびCodexユーザーのすべての利用制限をリセットしました。",
+        "es": "He restablecido los límites de uso para todos los usuarios de ChatGPT Work y Codex.",
+        "fr": "J'ai réinitialisé les limites d'utilisation pour tous les utilisateurs de ChatGPT Work et Codex.",
+        "ar": "لقد أعدت تعيين حدود الاستخدام لجميع مستخدمي ChatGPT Work وCodex."
+      },
       "fullText": "Hello people of Sol! I've reset usage limits for all ChatGPT Work and Codex users. Together with that, a quick update on GPT-5.6 Sol usage limits.\n\nOver the past few weeks, many of you have told us that Sol was using your Codex limits faster than expected. To be clear, we have not reduced usage on any subscription plans.\n\nWe’ve been digging into what was happening and have landed several improvements. As a result, we expect your usage to last around 18% longer during typical use of Sol. Some of you should already see significantly larger improvements from today. Tomorrow, we’ll also restore the five-hour limit that we temporarily paused while investigating.\n\nHere’s what we found:\n- GPT-5.6 Sol is much more willing to work for longer, make additional tool calls, and coordinate complex workflows across tools and subagents. That makes it better at solving hard problems, but some tasks were using far more than we intended.\n- Sol also works harder at the same reasoning effort than previous models. High on Sol can use more tokens than High did on GPT-5.5.\n- Programmatic tool calling, also referred to as code mode, gives Sol much more flexibility to run tool calls in parallel or continue working while waiting. But it also led to more responses per turn, more cached input tokens, and higher usage than expected.\n- This was particularly noticeable when Sol was waiting for tool calls to finish or running many web searches. We’ve improved how we handle both cases and are continuing to make code mode more efficient.\n- The impact was also very uneven. The median user actually found Sol quite token efficient, while some power users working on harder tasks saw their usage drain much faster. We were very focused on average and median usage before launch and missed some cases where the long tail could use significantly more usage.\n\nSol is a significant step forward in what Codex can do, but capability and efficiency do not always improve at the same pace, and some issues only become clear once people are using the model at real-world scale. We should have recognized this sooner and been more upfront about it.\n\nYou keep pushing the frontier and we’ll keep improving efficiency and sharing updates as we go.",
-      "fullTexts": {}
+      "fullTexts": {
+        "zh": "大家好，Sol 社区的各位！我们已经为所有 ChatGPT Work 和 Codex 用户重置了使用限额。同时，也来快速更新一下 GPT-5.6 Sol 的使用限额情况。\n\n在过去几周里，你们许多人告诉我们，Sol 消耗 Codex 限额的速度比预期快得多。明确地说，我们并没有减少任何订阅计划的使用量。\n\n我们一直在深入调查发生了什么，并已经推出了多项改进。因此，我们预计在 Sol 的典型使用中，你的限额将持续大约长 18%。你们中的一些人从今天起应该已经看到显著更大的改进。明天，我们还将恢复在调查期间临时暂停的五小时限额。\n\n以下是我们发现的问题：\n- GPT-5.6 Sol 更愿意长时间工作，进行额外的工具调用，并在工具和子代理之间协调复杂的流程。这让它更擅长解决难题，但有些任务消耗的资源远超我们的预期。\n- Sol 在相同的推理努力下也比之前模型更努力。在 Sol 上的 High 模式可能比在 GPT-5.5 上的 High 模式消耗更多令牌。\n- 程序化工具调用，也称为代码模式，赋予了 Sol 更大的灵活性，可以并行运行工具调用或在等待时继续工作。但这也导致了每轮响应更多、缓存输入令牌更多，以及超出预期的更高使用量。\n- 当 Sol 等待工具调用完成或运行大量网络搜索时，这种情况尤为明显。我们改进了处理这两种情况的方式，并将继续提升代码模式的效率。\n- 影响也非常不均衡。中位数用户实际上发现 Sol 的令牌效率相当高，而一些处理更难任务的资深用户则看到他们的限额消耗得更快。我们在推出前非常关注平均和中位数使用量，忽略了一些长尾情况，这些情况可能导致显著更高的使用量。\n\nSol 是 Codex 能力上的重大进步，但能力与效率并不总能同步提升，有些问题只有在人们大规模真实使用模型时才会显现。我们本该更早认识到这一点，并更坦诚地告知大家。\n\n你们继续推动前沿，我们将继续提升效率并分享更新。",
+        "zh-Hant": "各位 Sol 的使用者，大家好！我已經為所有 ChatGPT Work 和 Codex 使用者重置了使用限制。同時，也來快速更新一下 GPT-5.6 Sol 的使用限制情況。\n\n在過去幾週裡，你們許多人告訴我們，Sol 消耗 Codex 限制的速度比預期中快得多。為了說清楚，我們並沒有在任何訂閱方案上減少使用量。\n\n我們一直都在深入調查發生了什麼，並且已經推出了幾項改進。因此，我們預計在典型的 Sol 使用情況下，你的使用量將持續大約長 18%。你們有些人從今天起應該已經能看到顯著的改善。明天，我們也將恢復之前在調查期間暫停的五小時限制。\n\n以下是我們發現的問題：\n- GPT-5.6 Sol 更願意長時間工作、進行額外的工具調用，並協調跨工具和子代理的複雜工作流程。這讓它更擅長解決棘手問題，但有些任務消耗的資源遠超我們的預期。\n- Sol 在相同的推理努力下也比之前的模型更努力。在 Sol 上使用 High 模式可能會消耗比在 GPT-5.5 上使用 High 模式更多的 token。\n- 程式化工具調用，也稱為程式碼模式，讓 Sol 在並行執行工具調用或等待時繼續工作時具有更大的靈活性。但這也導致每個回合產生更多回應、更多快取輸入 token，以及超出預期的使用量。\n- 當 Sol 等待工具調用完成或執行大量網路搜尋時，這一點尤其明顯。我們已經改善了處理這兩種情況的方式，並持續提升程式碼模式的效率。\n- 影響也非常不均勻。中位數使用者實際上發現 Sol 的 token 效率相當高，而一些處理更困難任務的進階使用者則發現他們的使用量消耗得更快。我們在推出前非常專注於平均和中位數使用量，忽略了一些長尾情況下使用量顯著增加的案例。\n\nSol 是 Codex 能力上的一個重大進步，但能力與效率並不總是同步提升，有些問題只有在人們以真實世界規模使用模型時才會變得清晰。我們本該更早意識到這一點，並更坦誠地面對它。\n\n你們持續推動邊界，我們將持續改善效率並分享更新。",
+        "ja": "Solの人々へこんにちは！ ChatGPT WorkおよびCodexユーザーのすべての利用制限をリセットしました。これに伴い、GPT-5.6 Solの利用制限に関する簡単なアップデートをお知らせします。\n\n過去数週間で、皆さんの多くから、Solが予想よりもCodexの制限を早く消費しているというご指摘をいただきました。明確に申し上げますが、いずれのサブスクリプションプランでも利用を制限したことはありません。\n\n私たちは何が起きていたのかを調査し、いくつかの改善策を実施しました。その結果、Solの典型的な使用時に皆さんの利用期間が約18%長くなることを期待しています。一部の皆さんは、今日からすでに大幅な改善を実感できるはずです。明日には、調査中に一時的に停止していた5時間制限も復活させます。\n\n私たちが発見したこと：\n- GPT-5.6 Solは、より長く作業する意欲が高く、追加のツール呼び出しを行い、ツールやサブエージェント間で複雑なワークフローを調整するようになりました。これにより、難しい問題解決が向上しますが、一部のタスクでは意図した以上に多くのリソースを使用していました。\n- Solは、以前のモデルよりも同じ推論努力でより懸命に動作します。SolのHigh設定は、GPT-5.5のHigh設定よりも多くのトークンを使用することがあります。\n- プログラムによるツール呼び出し（コードモードとも呼ばれる）は、Solにツール呼び出しを並行して実行したり、待機中に作業を継続したりする柔軟性を大幅に与えます。しかし、これによりターンごとのレスポンスが増え、キャッシュされた入力トークンが増え、予想以上の利用が発生しました。\n- これは特に、Solがツール呼び出しの完了を待っているときや多数のウェブ検索を実行しているときに顕著でした。私たちは両方のケースの処理方法を改善し、コードモードをより効率的にする作業を続けています。\n- 影響は非常に偏っていました。中央値のユーザーにとっては、Solは実際にはかなりトークン効率的でしたが、一部の高度なタスクに取り組むパワーユーザーは利用が急速に枯渇するのを見ました。ローンチ前は平均値と中央値の利用に注力していましたが、ロングテールのケースで大幅に多くの利用が発生する可能性を見逃していました。\n\nSolはCodexの能力を大きく前進させる一歩ですが、能力と効率は常に同じペースで向上するわけではなく、一部の問題は実世界規模でモデルが使用され始めて初めて明らかになります。私たちはこれを早く認識し、もっと率直に伝えるべきでした。\n\n皆さんが最先端を押し進め、私たちは効率を向上させながらアップデートを共有し続けます。",
+        "ko": "안녕하세요, Sol의 사용자 여러분! ChatGPT Work와 Codex 사용자 모두에 대해 사용 한도를 재설정했습니다. 이와 함께, GPT-5.6 Sol 사용 한도에 대한 간단한 업데이트입니다.\n\n지난 몇 주 동안 여러분 중 많은 분들이 Sol이 예상보다 Codex 한도를 더 빨리 소모하고 있다고 말씀해 주셨습니다. 명확히 말씀드리자면, 우리는 어떤 구독 플랜의 사용량도 줄이지 않았습니다.\n\n우리는 무슨 일이 일어나고 있는지 조사해 왔으며, 여러 개선 사항을 적용했습니다. 그 결과, Sol의 일반적인 사용 시 한도가 약 18% 더 길게 지속될 것으로 예상합니다. 일부 사용자들은 이미 오늘부터 상당히 큰 개선 효과를 보게 될 것입니다. 내일에는 조사 중 일시적으로 중단했던 5시간 한도를 복원할 예정입니다.\n\n우리가 발견한 점은 다음과 같습니다:\n- GPT-5.6 Sol은 더 길게 일하려는 경향이 훨씬 강하고, 추가 도구 호출을 만들며, 도구와 하위 에이전트 간의 복잡한 워크플로를 조정합니다. 이는 어려운 문제를 더 잘 해결하게 만들지만, 일부 작업은 우리가 의도한 것보다 훨씬 더 많은 사용량을 소모했습니다.\n- Sol은 이전 모델들보다 동일한 추론 노력에서 더 열심히 작동합니다. Sol의 High 설정은 GPT-5.5의 High 설정보다 더 많은 토큰을 사용할 수 있습니다.\n- 프로그래밍 방식 도구 호출(코드 모드라고도 함)은 Sol이 도구 호출을 병렬로 실행하거나 대기 중에도 작업을 계속할 수 있는 유연성을 훨씬 더 부여합니다. 하지만 이는 턴당 더 많은 응답, 더 많은 캐시된 입력 토큰, 그리고 예상보다 높은 사용량으로 이어졌습니다.\n- 이는 특히 Sol이 도구 호출 완료를 기다리거나 많은 웹 검색을 실행할 때 두드러졌습니다. 우리는 두 경우 모두를 처리하는 방식을 개선했으며, 코드 모드를 더 효율적으로 만드는 작업을 계속하고 있습니다.\n- 영향은 또한 매우 불균등했습니다. 중간 사용자들은 실제로 Sol이 상당히 토큰 효율적이라고 느꼈지만, 더 어려운 작업을 하는 일부 파워 유저들은 사용량이 훨씬 더 빨리 소모되는 것을 보았습니다. 우리는 출시 전에 평균 및 중간 사용량에 매우 집중했으며, 롱 테일에서 상당히 더 많은 사용량을 소모할 수 있는 일부 사례를 놓쳤습니다.\n\nSol은 Codex가 할 수 있는 일에서 중요한 진전을 이루었지만, 기능과 효율성은 항상 같은 속도로 향상되지 않으며, 일부 문제는 사람들이 모델을 실제 규모로 사용할 때야 명확해집니다. 우리는 이를 더 일찍 인식하고 더 솔직하게 밝혀야 했습니다.\n\n여러분이 프론티어를 계속 밀어붙인다면, 우리는 효율성을 계속 개선하고 진행 상황에 따라 업데이트를 공유할 것입니다.",
+        "es": "¡Hola, gente de Sol! He restablecido los límites de uso para todos los usuarios de ChatGPT Work y Codex. Junto con eso, una rápida actualización sobre los límites de uso de GPT-5.6 Sol.\n\nEn las últimas semanas, muchos de ustedes nos han dicho que Sol estaba consumiendo sus límites de Codex más rápido de lo esperado. Para ser claros, no hemos reducido el uso en ningún plan de suscripción.\n\nHemos estado investigando qué estaba pasando y hemos implementado varias mejoras. Como resultado, esperamos que su uso dure alrededor del 18% más durante un uso típico de Sol. Algunos de ustedes ya deberían ver mejoras significativamente mayores a partir de hoy. Mañana, también restauraremos el límite de cinco horas que pausamos temporalmente mientras investigábamos.\n\nAquí está lo que encontramos:\n- GPT-5.6 Sol está mucho más dispuesto a trabajar por más tiempo, hacer llamadas adicionales a herramientas y coordinar flujos de trabajo complejos entre herramientas y subagentes. Eso lo hace mejor para resolver problemas difíciles, pero algunas tareas estaban usando mucho más de lo que pretendíamos.\n- Sol también trabaja más duro con el mismo esfuerzo de razonamiento que los modelos anteriores. Alto en Sol puede usar más tokens que Alto en GPT-5.5.\n- La llamada a herramientas programática, también conocida como modo código, le da a Sol mucha más flexibilidad para ejecutar llamadas a herramientas en paralelo o continuar trabajando mientras espera. Pero también llevó a más respuestas por turno, más tokens de entrada en caché y un uso más alto de lo esperado.\n- Esto fue particularmente notable cuando Sol estaba esperando a que las llamadas a herramientas terminaran o ejecutando muchas búsquedas web. Hemos mejorado cómo manejamos ambos casos y estamos continuando haciendo el modo código más eficiente.\n- El impacto también fue muy desigual. El usuario mediano en realidad encontró Sol bastante eficiente en tokens, mientras que algunos usuarios avanzados trabajando en tareas más difíciles vieron que su uso se agotaba mucho más rápido. Estábamos muy enfocados en el uso promedio y mediano antes del lanzamiento y pasamos por alto algunos casos donde la cola larga podía usar significativamente más uso.\n\nSol es un paso significativo hacia adelante en lo que Codex puede hacer, pero la capacidad y la eficiencia no siempre mejoran al mismo ritmo, y algunos problemas solo se hacen claros una vez que las personas están usando el modelo a escala del mundo real. Deberíamos haberlo reconocido antes y haber sido más directos al respecto.\n\nUstedes siguen empujando la frontera y nosotros seguiremos mejorando la eficiencia y compartiendo actualizaciones a medida que avancemos.",
+        "fr": "Bonjour à tous les habitants de Sol ! J'ai réinitialisé les limites d'utilisation pour tous les utilisateurs de ChatGPT Work et Codex. En complément, une mise à jour rapide sur les limites d'utilisation de GPT-5.6 Sol.\n\nAu cours des dernières semaines, beaucoup d'entre vous nous ont dit que Sol consommait vos limites Codex plus rapidement que prévu. Pour être clair, nous n'avons réduit l'utilisation sur aucun plan d'abonnement.\n\nNous avons creusé ce qui se passait et avons mis en place plusieurs améliorations. En conséquence, nous nous attendons à ce que votre utilisation dure environ 18 % plus longtemps lors d'une utilisation typique de Sol. Certains d'entre vous devraient déjà constater des améliorations significativement plus importantes dès aujourd'hui. Demain, nous rétablirons également la limite de cinq heures que nous avions temporairement suspendue pendant l'enquête.\n\nVoici ce que nous avons découvert :\n- GPT-5.6 Sol est beaucoup plus enclin à travailler plus longtemps, à effectuer des appels d'outils supplémentaires et à coordonner des flux de travail complexes à travers les outils et les sous-agents. Cela le rend meilleur pour résoudre des problèmes difficiles, mais certaines tâches consommaient bien plus que nous ne l'avions prévu.\n- Sol travaille également plus dur pour le même effort de raisonnement que les modèles précédents. Un niveau élevé sur Sol peut utiliser plus de jetons qu'un niveau élevé sur GPT-5.5.\n- L'appel d'outils programmatique, également appelé mode code, donne à Sol beaucoup plus de flexibilité pour exécuter des appels d'outils en parallèle ou pour continuer à travailler en attendant. Mais cela a aussi conduit à plus de réponses par tour, plus de jetons d'entrée mis en cache, et une utilisation plus élevée que prévu.\n- Cela était particulièrement noticeable lorsque Sol attendait la fin des appels d'outils ou effectuait de nombreuses recherches web. Nous avons amélioré la façon dont nous gérons ces deux cas et continuons à rendre le mode code plus efficace.\n- L'impact était également très inégal. L'utilisateur médian trouvait en réalité Sol assez efficace en termes de jetons, tandis que certains utilisateurs avancés travaillant sur des tâches plus difficiles voyaient leur utilisation s'épuiser beaucoup plus vite. Nous étions très concentrés sur l'utilisation moyenne et médiane avant le lancement et avons manqué certains cas où la longue traîne pouvait consommer significativement plus d'utilisation.\n\nSol représente une avancée significative dans ce que Codex peut faire, mais la capacité et l'efficacité ne s'améliorent pas toujours au même rythme, et certains problèmes ne deviennent clairs que lorsque les gens utilisent le modèle à l'échelle réelle. Nous aurions dû nous en rendre compte plus tôt et être plus transparents à ce sujet.\n\nVous continuez à repousser les frontières et nous continuerons à améliorer l'efficacité et à partager des mises à jour au fur et à mesure.",
+        "ar": "مرحبًا أهل سول! لقد أعدت تعيين حدود الاستخدام لجميع مستخدمي ChatGPT Work وCodex. مع ذلك، تحديث سريع حول حدود استخدام GPT-5.6 Sol.\n\nخلال الأسابيع القليلة الماضية، أخبرنا العديد منكم أن سول كان يستهلك حدود Codex الخاصة بكم بشكل أسرع مما هو متوقع. للتوضيح، لم نقلل من الاستخدام في أي خطط اشتراك.\n\nلقد كنا نتحقق مما كان يحدث ووصلنا إلى عدة تحسينات. نتيجة لذلك، نتوقع أن يستمر استخدامكم لمدة أطول بنسبة 18% تقريبًا أثناء الاستخدام النموذجي لسول. يجب أن يرى بعضكم بالفعل تحسينات أكبر بشكل ملحوظ ابتداءً من اليوم. غدًا، سنعيد أيضًا تفعيل حد الخمس ساعات الذي أوقفناه مؤقتًا أثناء التحقيق.\n\nإليكم ما وجدناه:\n- GPT-5.6 Sol أكثر استعدادًا بكثير للعمل لفترات أطول، وإجراء مكالمات أدوات إضافية، وتنسيق تدفقات عمل معقدة عبر الأدوات والوكلاء الفرعيين. هذا يجعله أفضل في حل المشكلات الصعبة، لكن بعض المهام كانت تستخدم أكثر بكثير مما قصدنا.\n- سول يعمل أيضًا بجهد أكبر في نفس مستوى التفكير مقارنة بالنماذج السابقة. الإعداد العالي في سول يمكن أن يستخدم رموزًا أكثر مما كان في الإعداد العالي على GPT-5.5.\n- مكالمة الأدوات البرمجية، المعروفة أيضًا باسم وضع الكود، تمنح سول مرونة أكبر لتشغيل مكالمات الأدوات بالتوازي أو الاستمرار في العمل أثناء الانتظار. لكنها أدت أيضًا إلى ردود أكثر لكل دور، ورموز إدخال مخزنة أكثر، واستخدام أعلى مما هو متوقع.\n- كان هذا ملحوظًا بشكل خاص عندما كان سول ينتظر انتهاء مكالمات الأدوات أو يجري العديد من عمليات البحث على الويب. لقد حسّنا كيفية التعامل مع كلا الحالتين ونستمر في جعل وضع الكود أكثر كفاءة.\n- كان التأثير غير متساوٍ تمامًا. المستخدم الوسيط وجد سول فعالًا جدًا في استخدام الرموز، بينما رأى بعض مستخدمي الطاقة العالية الذين يعملون على مهام أصعب استنزافًا أسرع بكثير لاستخدامهم. كنا مركزين جدًا على الاستخدام المتوسط والوسيط قبل الإطلاق وأغفلنا بعض الحالات التي يمكن أن يستخدم فيها الذيل الطويل استخدامًا أكبر بشكل ملحوظ.\n\nسول خطوة كبيرة إلى الأمام في ما يمكن لـCodex فعله، لكن القدرة والكفاءة لا تتحسنان دائمًا بنفس الوتيرة، وبعض المشكلات لا تصبح واضحة إلا عندما يبدأ الناس في استخدام النموذج على نطاق حقيقي. كان يجب أن ندرك هذا أسرع ونكون أكثر صراحة حياله.\n\nأنتم تواصلون دفع الحدود، وسنواصل تحسين الكفاءة ومشاركة التحديثات مع تقدمنا."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-22T19:15:07.128Z"
     },
     "2081940052154933696": {
       "excerpt": "The usage limits have been reset for all paid users of Codex and ChatGPT Work.",
@@ -1454,8 +1495,73 @@
       "contentHash": "356e32ba1db74c25c667ebc887f61c96c22902dc894ed160c67b44265817d0d6",
       "texts": {},
       "fullTexts": {}
+    },
+    "2102460984782938221": {
+      "excerpt": "Higher usage limits and lower cost give you more flexibility and room to iterate.",
+      "contentHash": "0a6924796a40a4741fc144406dbe196359c90f8e80d7bf357dcdb12d83b233ed",
+      "texts": {
+        "zh-Hant": "更高的使用限制和更低的成本為您提供更大的靈活性和迭代空間。",
+        "zh": "更高的使用限制和更低的成本为您提供了更大的灵活性和迭代空间。",
+        "ja": "高い使用制限と低コストにより、より多くの柔軟性と反復の余地が得られます。",
+        "ko": "더 높은 사용 한도와 더 낮은 비용은 더 많은 유연성과 반복할 여지를 제공합니다.",
+        "es": "Límites de uso más altos y costos más bajos te brindan mayor flexibilidad y espacio para iterar.",
+        "fr": "Des limites d'utilisation plus élevées et des coûts plus bas vous offrent plus de flexibilité et d'espace pour itérer.",
+        "de": "Höhere Nutzungsgrenzen und niedrigere Kosten bieten Ihnen mehr Flexibilität und Spielraum für Iterationen.",
+        "ar": "الحدود العليا للاستخدام الأعلى والتكلفة الأقل تمنحك مزيدًا من المرونة والمساحة للتكرار."
+      },
+      "fullText": "Higher usage limits and lower cost give you more flexibility and room to iterate.",
+      "fullTexts": {
+        "zh-Hant": "更高的使用限制和更低的成本為您提供更大的靈活性和迭代空間。",
+        "zh": "更高的使用限制和更低的成本为您提供了更大的灵活性和迭代空间。",
+        "ja": "高い使用制限と低コストにより、より多くの柔軟性と反復の余地が得られます。",
+        "ko": "더 높은 사용 한도와 더 낮은 비용은 더 많은 유연성과 반복할 여지를 제공합니다.",
+        "es": "Límites de uso más altos y costos más bajos te brindan mayor flexibilidad y espacio para iterar.",
+        "fr": "Des limites d'utilisation plus élevées et des coûts plus bas vous offrent plus de flexibilité et d'espace pour itérer.",
+        "de": "Höhere Nutzungsgrenzen und niedrigere Kosten bieten Ihnen mehr Flexibilität und Spielraum für Iterationen.",
+        "ar": "الحدود العليا للاستخدام الأعلى والتكلفة الأقل تمنحك مزيدًا من المرونة والمساحة للتكرار."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-22T19:14:47.079Z"
+    },
+    "2102438800836489554": {
+      "excerpt": "In Claude Code: - 5-hour session limits increase 20% today - Opus 5.5 is priced lower, so it goes 25% further within limits -…",
+      "contentHash": "1ce5c037a1b03ca2d5305ca8c3df954dde728c8472156deff27baef674e0e662",
+      "texts": {},
+      "fullText": "Opus 5.5 performs at the level of Fable 5.1. It's ~30% faster and ~40% cheaper than Opus 5 per task.\n\nIn Claude Code:\n- 5-hour session limits increase 20% today\n- Opus 5.5 is priced lower, so it goes 25% further within limits\n- Pro, Max, and Team users get a reset to use anytime",
+      "fullTexts": {
+        "zh": "Opus 5.5 的性能达到 Fable 5.1 的水平。它比 Opus 5 每项任务快约 30%，成本低约 40%。\n\n在 Claude Code 中：\n- 5 小时会话限制今天增加 20%\n- Opus 5.5 定价更低，因此在限制内可使用 25% 更久\n- Pro、Max 和 Team 用户可随时重置以使用",
+        "ja": "Opus 5.5 は Fable 5.1 のレベルで動作します。Opus 5 よりもタスクあたり約30%高速で、約40%安価です。\n\nClaude Code では：\n- 5時間セッション制限が本日20%増加\n- Opus 5.5 は価格が低く設定されているため、制限内で25%長く利用可能\n- Pro、Max、Team ユーザーはいつでもリセットを利用可能",
+        "zh-Hant": "Opus 5.5 的效能達到 Fable 5.1 的水準。它比 Opus 5 每項任務快約 30%，且成本低約 40%。\n\n在 Claude Code 中：\n- 5 小時工作階段限制今日增加 20%\n- Opus 5.5 定價更低，因此在限制內可多使用 25%\n- Pro、Max 和 Team 使用者可隨時重置使用",
+        "es": "Opus 5.5 rinde al nivel de Fable 5.1. Es ~30% más rápido y ~40% más barato que Opus 5 por tarea.\n\nEn Claude Code:\n- Los límites de sesiones de 5 horas aumentan un 20% hoy\n- Opus 5.5 tiene un precio más bajo, por lo que rinde un 25% más dentro de los límites\n- Los usuarios Pro, Max y Team obtienen un reinicio para usar en cualquier momento",
+        "ko": "Opus 5.5는 Fable 5.1 수준으로 성능을 발휘합니다. Opus 5보다 작업당 ~30% 빠르고 ~40% 저렴합니다.\n\nClaude Code에서:\n- 5시간 세션 제한이 오늘 20% 증가합니다\n- Opus 5.5는 가격이 더 낮아 제한 내에서 25% 더 멀리 갑니다\n- Pro, Max, Team 사용자들은 언제든 사용할 수 있도록 리셋됩니다",
+        "de": "Opus 5.5 erreicht die Leistung von Fable 5.1. Es ist ~30 % schneller und ~40 % günstiger als Opus 5 pro Aufgabe.\n\nIn Claude Code:\n- 5-Stunden-Sitzungsgrenzen steigen heute um 20 %\n- Opus 5.5 ist günstiger, sodass es innerhalb der Grenzen 25 % weiter reicht\n- Pro-, Max- und Team-Nutzer erhalten einen Reset, den sie jederzeit nutzen können",
+        "fr": "Opus 5.5 performe au niveau de Fable 5.1. Il est ~30 % plus rapide et ~40 % moins cher qu'Opus 5 par tâche.\n\nDans Claude Code :\n- les limites de sessions de 5 heures augmentent de 20 % aujourd'hui\n- Opus 5.5 est au prix plus bas, donc il va 25 % plus loin dans les limites\n- les utilisateurs Pro, Max et Team obtiennent une remise à zéro pour utiliser à tout moment"
+      }
+    },
+    "2102435538120691886": {
+      "excerpt": "One more thing: we’re increasing five-hour usage limits on Pro, Max, and Team plans.",
+      "contentHash": "4d30b9144e41e5ea13bde09cccf8a87e1bbdc000715339cf19cd0e8123c66ce8",
+      "texts": {
+        "zh-Hant": "還有一件事：我們正在增加 Pro、Max 和 Team 方案的五小時使用限制。",
+        "ja": "もう一つ：Pro、Max、Teamプランの5時間使用制限を増やします。",
+        "ko": "한 가지 더: Pro, Max, Team 플랜의 5시간 사용 한도를 늘리고 있습니다.",
+        "es": "Una cosa más: estamos aumentando los límites de uso de cinco horas en los planes Pro, Max y Team.",
+        "fr": "Une dernière chose : nous augmentons les limites d'utilisation de cinq heures sur les plans Pro, Max et Team.",
+        "ar": "شيء آخر: نحن نزيد حدود الاستخدام لمدة خمس ساعات في خطط Pro و Max و Team."
+      },
+      "fullText": "One more thing: we’re increasing five-hour usage limits on Pro, Max, and Team plans. We’re also providing subscription users a rate limit reset, which you can save and use whenever you choose.",
+      "fullTexts": {
+        "zh-Hant": "還有一件事：我們正在增加 Pro、Max 和 Team 方案的五小時使用限制。我們也為訂閱用戶提供速率限制重置，您可以隨時儲存並使用。",
+        "ja": "もう一つ：Pro、Max、Teamプランの5時間使用制限を増やします。購読ユーザーにはレートリミットのリセットも提供しており、いつでも保存して使用できます。",
+        "ko": "한 가지 더: Pro, Max, Team 플랜의 5시간 사용 한도를 늘리고 있습니다. 또한 구독 사용자에게 속도 제한 리셋을 제공하며, 이는 원하는 언제든지 저장하고 사용할 수 있습니다.",
+        "es": "Una cosa más: estamos aumentando los límites de uso de cinco horas en los planes Pro, Max y Team. También estamos proporcionando a los usuarios de suscripción un reinicio del límite de tasa, que puedes guardar y usar cuando elijas.",
+        "fr": "Une dernière chose : nous augmentons les limites d'utilisation de cinq heures sur les plans Pro, Max et Team. Nous offrons également aux abonnés un réinitialisation de la limite de taux, que vous pouvez économiser et utiliser quand vous le souhaitez.",
+        "ar": "شيء آخر: نحن نزيد حدود الاستخدام لمدة خمس ساعات في خطط Pro و Max و Team. كما نقدم للمستخدمين المشتركين إعادة تعيين لحد الإنذار، والتي يمكنك حفظها واستخدامها في أي وقت تختاره."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-22T19:14:51.735Z"
     }
   },
-  "pending": 146,
-  "lastAttemptAt": "2026-09-22T15:40:36.044Z"
+  "pending": 140,
+  "lastAttemptAt": "2026-09-22T19:15:07.308Z"
 }
