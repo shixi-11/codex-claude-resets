@@ -1212,8 +1212,32 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-12T08:37:31.567Z"
+    },
+    "2102254445082116335": {
+      "excerpt": "We are almost Tuesday and I promised a reset for Tuesday.",
+      "contentHash": "257267bf18cc9ddf7eeab3ca09b1880eba19b49fc4ec103b75e787735218e767",
+      "texts": {
+        "ko": "거의 화요일이 다가왔고, 나는 화요일에 리셋을 약속했어요.",
+        "ja": "火曜日まであと少しで、私は火曜日にリセットを約束しました。",
+        "es": "Ya casi es martes y prometí un reinicio para el martes.",
+        "de": "Wir sind fast Dienstag, und ich habe ein Reset für Dienstag versprochen.",
+        "ar": "نحن على وشك الثلاثاء ووعدت بإعادة تشغيل ليوم الثلاثاء."
+      },
+      "fullText": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+      "fullTexts": {
+        "zh": "女士们，先生们……启动……你们的……引擎。我们快到星期二了，我承诺星期二会有一个重启。还有其他一些事情。很快见。",
+        "zh-Hant": "女士們、先生們……啟動……你們的……引擎。我們即將迎來星期二，我承諾過星期二會重新開始。有些其他事情。很快見。",
+        "ko": "신사숙녀 여러분... 시동을... 걸어... 주세요. 거의 화요일이 다가왔고, 나는 화요일에 리셋을 약속했어요. 그리고 다른 몇 가지 일들 중에서. 곧 뵙겠습니다.",
+        "ja": "みなさん…スタート…あなたの…エンジンを。火曜日まであと少しで、私は火曜日にリセットを約束しました。他にもいくつかあります。では、また近いうちに。",
+        "fr": "Mesdames et messieurs... démarrez... vos... MOTEURS. Nous sommes presque mardi et j’ai promis un reset pour mardi. Parmi d’autres choses. À bientôt.",
+        "es": "Damas y caballeros... enciendan... sus... MOTORES. Ya casi es martes y prometí un reinicio para el martes. Entre otras cosas. Nos vemos pronto.",
+        "de": "Meine Damen und Herren... starten... Sie... IHRE... MOTOREN. Wir sind fast Dienstag, und ich habe ein Reset für Dienstag versprochen. Unter anderem. Bis bald.",
+        "ar": "سيداتي وسادتي... أطلقوا... محركاتكم... نحن على وشك الثلاثاء ووعدت بإعادة تشغيل ليوم الثلاثاء. من بين بعض الأمور الأخرى. أراكم قريبًا."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-22T06:05:17.323Z"
     }
   },
-  "pending": 31,
-  "lastAttemptAt": "2026-09-22T00:58:16.048Z"
+  "pending": 34,
+  "lastAttemptAt": "2026-09-22T06:05:23.096Z"
 }

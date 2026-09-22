@@ -10,21 +10,21 @@
     "gifts": [],
     "trackingState": "timeline-checked",
     "latest": {
-      "id": "2098685367058612394",
-      "kind": "global",
-      "state": "reported",
-      "reason": "explicit-completion",
+      "id": "2102254445082116335",
+      "kind": "signal",
+      "state": "unconfirmed",
+      "reason": "ambiguous",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2098685367058612394",
-      "publishedAt": "2026-09-12T08:09:17.852Z",
-      "verifiedAt": "2026-09-18T18:13:23.570Z",
-      "excerpt": "Reset all propagated.",
-      "fullText": "Reset all propagated. Sweet dreams.",
+      "sourceUrl": "https://x.com/thsottiaux/status/2102254445082116335",
+      "publishedAt": "2026-09-22T04:31:32.363Z",
+      "verifiedAt": "2026-09-22T06:05:10.478Z",
+      "excerpt": "We are almost Tuesday and I promised a reset for Tuesday.",
+      "fullText": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.3.3",
-      "contentHash": "95cd808e297fb42a1b3fd251123155d17ab2d46b59bf7b840257441d5fc1dc89"
+      "contentHash": "257267bf18cc9ddf7eeab3ca09b1880eba19b49fc4ec103b75e787735218e767"
     },
     "lastReset": {
       "id": "2098685367058612394",
@@ -76,7 +76,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-09-22T00:58:09.479Z",
+        "verifiedAt": "2026-09-22T06:05:15.429Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -89,7 +89,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-09-22T00:58:09.479Z",
+      "checkedAt": "2026-09-22T06:05:15.429Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
