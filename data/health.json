@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-22T19:14:39.848Z",
-  "lastSuccessAt": "2026-09-22T19:14:39.848Z",
-  "discoveryAt": "2026-09-22T19:14:39.848Z",
+  "lastAttemptAt": "2026-09-22T22:16:26.461Z",
+  "lastSuccessAt": "2026-09-22T22:16:26.461Z",
+  "discoveryAt": "2026-09-22T22:16:26.461Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 9
+      "candidates": 12
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -34,7 +34,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 14
+      "candidates": 15
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -64,11 +64,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-22T19:14:39.848Z",
+      "lastAttemptAt": "2026-09-22T22:16:26.461Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
-      "discovered": 44,
+      "discovered": 47,
       "authors": [
         {
           "author": "thsottiaux",
@@ -83,14 +83,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-22T19:14:39.848Z"
+      "lastSuccessAt": "2026-09-22T22:16:26.461Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-22T19:14:39.848Z",
+      "lastAttemptAt": "2026-09-22T22:16:26.461Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
-      "discovered": 44,
+      "discovered": 45,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-22T19:14:39.848Z"
+      "lastSuccessAt": "2026-09-22T22:16:26.461Z"
     }
   }
 }
