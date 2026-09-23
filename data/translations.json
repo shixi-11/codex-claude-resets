@@ -1004,7 +1004,8 @@
         "ja": "すべての有料プラン（使用量込み）は、7月7日までFable 5にアクセスできます。",
         "fr": "Tous les plans payants avec utilisation incluse peuvent accéder à Fable 5 jusqu'au 7 juillet.",
         "es": "Todos los planes de pago con uso incluido pueden acceder a Fable 5 hasta el 7 de julio.",
-        "de": "Alle kostenpflichtigen Pläne mit enthaltenem Nutzungsvolumen können Fable 5 bis einschließlich 7."
+        "de": "Alle kostenpflichtigen Pläne mit enthaltenem Nutzungsvolumen können Fable 5 bis einschließlich 7.",
+        "ar": "جميع الخطط المدفوعة التي تشمل الاستخدام يمكنها الوصول إلى Fable 5 حتى 7 يوليو."
       },
       "fullText": "All paid plans with usage included can access Fable 5 through July 7. You can use Fable 5 up to 50% of your weekly usage limit, after which you can switch to another model for the remainder of your usage. You can also continue using Fable via usage credits.\n\nMore here: https://t.co/5reBCfXAqy",
       "fullTexts": {
@@ -1014,10 +1015,11 @@
         "ja": "すべての有料プラン（使用量込み）は、7月7日までFable 5にアクセスできます。Fable 5は、週間使用量制限の最大50%まで使用でき、それ以降は残りの使用量について他のモデルに切り替えることができます。また、使用量クレジット経由でFableを継続して使用することもできます。\n\n詳細はこちら: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
         "fr": "Tous les plans payants avec utilisation incluse peuvent accéder à Fable 5 jusqu'au 7 juillet. Vous pouvez utiliser Fable 5 jusqu'à 50 % de votre limite d'utilisation hebdomadaire, après quoi vous pouvez passer à un autre modèle pour le reste de votre utilisation. Vous pouvez également continuer à utiliser Fable via des crédits d'utilisation.\n\nPlus d'informations ici : https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
         "es": "Todos los planes de pago con uso incluido pueden acceder a Fable 5 hasta el 7 de julio. Puedes usar Fable 5 hasta el 50% de tu límite de uso semanal, después de lo cual puedes cambiar a otro modelo para el resto de tu uso. También puedes seguir usando Fable a través de créditos de uso.\n\nMás información aquí: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
-        "de": "Alle kostenpflichtigen Pläne mit enthaltenem Nutzungsvolumen können Fable 5 bis einschließlich 7. Juli nutzen. Sie können Fable 5 bis zu 50 % Ihres wöchentlichen Nutzungs-Limits verwenden, danach können Sie für den Rest Ihrer Nutzung zu einem anderen Modell wechseln. Sie können Fable auch weiterhin über Nutzungsguthaben verwenden.\n\nMehr hier: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+        "de": "Alle kostenpflichtigen Pläne mit enthaltenem Nutzungsvolumen können Fable 5 bis einschließlich 7. Juli nutzen. Sie können Fable 5 bis zu 50 % Ihres wöchentlichen Nutzungs-Limits verwenden, danach können Sie für den Rest Ihrer Nutzung zu einem anderen Modell wechseln. Sie können Fable auch weiterhin über Nutzungsguthaben verwenden.\n\nMehr hier: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "ar": "جميع الخطط المدفوعة التي تشمل الاستخدام يمكنها الوصول إلى Fable 5 حتى 7 يوليو. يمكنك استخدام Fable 5 بنسبة تصل إلى 50% من حد الاستخدام الأسبوعي الخاص بك، وبعد ذلك يمكنك التبديل إلى نموذج آخر لباقي الاستخدام. كما يمكنك الاستمرار في استخدام Fable عبر رصيد الاستخدام.\n\nالمزيد هنا: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-23T05:14:40.889Z"
+      "translatedAt": "2026-09-23T07:50:54.651Z"
     },
     "2068122937308426676": {
       "excerpt": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans.",
@@ -1654,17 +1656,19 @@
         "zh": "- 暂时移除所有Plus、Business和Pro计划的5小时使用限制",
         "zh-Hant": "- 暫時移除所有 Plus、Business 和 Pro 方案的 5 小時使用限制",
         "ja": "- Plus、Business、Proプランのすべてについて、5時間の使用制限を一時的に撤廃",
-        "ko": "- 모든 Plus, Business 및 Pro 플랜에 대해 5시간 사용 제한을 일시적으로 제거"
+        "ko": "- 모든 Plus, Business 및 Pro 플랜에 대해 5시간 사용 제한을 일시적으로 제거",
+        "de": "- Vorübergehende Aufhebung der 5-Stunden-Nutzungsbeschränkung für alle Plus-, Business- und Pro-Pläne"
       },
       "fullText": "Morning. The last 48 hours of Codex and ChatGPT Work have been intense! Three important updates:\n\n- Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans\n- Rolling out changes that will make GPT 5.6 Sol more efficient across the board and that will be reflected in less usage being used so that it can take you further. Exact impact to be quantified and shared\n- We hit 6M active users, and are landing a usage reset in the next hour\n\nGo do things",
       "fullTexts": {
         "zh": "早上。过去48小时的Codex和ChatGPT Work工作非常紧张！三个重要更新：\n\n- 暂时移除所有Plus、Business和Pro计划的5小时使用限制\n- 推出更改，这些更改将使GPT 5.6 Sol在各方面更高效，并反映在使用量减少上，这样它能带你走得更远。具体影响将量化并分享\n- 我们达到了600万活跃用户，并在下一小时内进行使用量重置\n\n去行动吧",
         "zh-Hant": "早安。Codex 和 ChatGPT Work 過去 48 小時的工作非常緊張！三項重要更新：\n\n- 暫時移除所有 Plus、Business 和 Pro 方案的 5 小時使用限制\n- 推出變更，將使 GPT 5.6 Sol 在各個方面更有效率，並反映在減少使用量上，讓它能帶你走得更遠。確切影響將被量化並分享\n- 我們達到了 600 萬活躍用戶，並將在下一小時內進行使用量重置\n\n去行動吧",
         "ja": "おはよう。CodexとChatGPT Workの過去48時間が激しかった！3つの重要なアップデート：\n\n- Plus、Business、Proプランのすべてについて、5時間の使用制限を一時的に撤廃\n- GPT 5.6 Solを全体的に効率化する変更を展開し、使用量が少なくなることでさらに長く使えるようになります。具体的な影響を定量化して共有予定\n- 600万人のアクティブユーザーに到達し、次の1時間以内に使用量のリセットを実施\n\nさあ、行動を起こしましょう",
-        "ko": "좋은 아침. 지난 48시간 동안 Codex와 ChatGPT Work의 작업이 엄청나게 치열했습니다! 세 가지 중요한 업데이트:\n\n- 모든 Plus, Business 및 Pro 플랜에 대해 5시간 사용 제한을 일시적으로 제거\n- GPT 5.6 Sol을 전반적으로 더 효율적으로 만드는 변경 사항을 배포 중이며, 이는 사용량이 줄어들어 더 멀리 갈 수 있게 할 것입니다. 정확한 영향은 정량화되어 공유될 예정\n- 600만 명의 활성 사용자에 도달했으며, 다음 한 시간 내에 사용량 리셋을 적용 중\n\n가서 일들을 해보세요"
+        "ko": "좋은 아침. 지난 48시간 동안 Codex와 ChatGPT Work의 작업이 엄청나게 치열했습니다! 세 가지 중요한 업데이트:\n\n- 모든 Plus, Business 및 Pro 플랜에 대해 5시간 사용 제한을 일시적으로 제거\n- GPT 5.6 Sol을 전반적으로 더 효율적으로 만드는 변경 사항을 배포 중이며, 이는 사용량이 줄어들어 더 멀리 갈 수 있게 할 것입니다. 정확한 영향은 정량화되어 공유될 예정\n- 600만 명의 활성 사용자에 도달했으며, 다음 한 시간 내에 사용량 리셋을 적용 중\n\n가서 일들을 해보세요",
+        "de": "Guten Morgen. Die letzten 48 Stunden von Codex und ChatGPT Work waren intensiv! Drei wichtige Updates:\n\n- Vorübergehende Aufhebung der 5-Stunden-Nutzungsbeschränkung für alle Plus-, Business- und Pro-Pläne\n- Einführung von Änderungen, die GPT 5.6 Sol durchweg effizienter machen und die sich in einer geringeren Nutzung widerspiegeln, damit es Sie weiter bringt. Genaue Auswirkungen werden quantifiziert und mitgeteilt\n- Wir haben 6 Mio. aktive Nutzer erreicht und führen in der nächsten Stunde einen Nutzungs-Reset durch\n\nGeht und macht was draus"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-23T00:41:47.104Z"
+      "translatedAt": "2026-09-23T07:50:52.901Z"
     },
     "2075657265508647008": {
       "excerpt": "We have reset usage limits across Codex and ChatGPT Work.",
@@ -1742,6 +1746,6 @@
       "translatedAt": "2026-09-22T22:16:36.280Z"
     }
   },
-  "pending": 65,
-  "lastAttemptAt": "2026-09-23T05:14:41.453Z"
+  "pending": 63,
+  "lastAttemptAt": "2026-09-23T07:50:55.179Z"
 }

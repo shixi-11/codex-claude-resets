@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/OpenAI/status/2102460984782938221",
       "publishedAt": "2026-09-22T18:12:15.265Z",
-      "verifiedAt": "2026-09-23T05:14:10.898Z",
+      "verifiedAt": "2026-09-23T07:50:38.162Z",
       "excerpt": "Higher usage limits and lower cost give you more flexibility and room to iterate.",
       "fullText": "Higher usage limits and lower cost give you more flexibility and room to iterate.",
       "truncated": false,
@@ -76,7 +76,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-09-23T05:14:17.508Z",
+        "verifiedAt": "2026-09-23T07:50:42.712Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -89,7 +89,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-09-23T05:14:17.508Z",
+      "checkedAt": "2026-09-23T07:50:42.712Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -101,7 +101,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2102438800836489554",
       "publishedAt": "2026-09-22T16:44:06.200Z",
-      "verifiedAt": "2026-09-23T05:14:10.898Z",
+      "verifiedAt": "2026-09-23T07:50:38.162Z",
       "excerpt": "In Claude Code: - 5-hour session limits increase 20% today - Opus 5.5 is priced lower, so it goes 25% further within limits -…",
       "fullText": "Opus 5.5 performs at the level of Fable 5.1. It's ~30% faster and ~40% cheaper than Opus 5 per task.\n\nIn Claude Code:\n- 5-hour session limits increase 20% today\n- Opus 5.5 is priced lower, so it goes 25% further within limits\n- Pro, Max, and Team users get a reset to use anytime",
       "truncated": false,
