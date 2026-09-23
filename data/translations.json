@@ -1448,7 +1448,8 @@
         "fr": "Les limites d'utilisation ont été réinitialisées pour tous les utilisateurs payants de Codex et ChatGPT Work.",
         "es": "Los límites de uso se han restablecido para todos los usuarios de pago de Codex y ChatGPT Work.",
         "de": "Die Nutzungsbeschränkungen wurden für alle zahlenden Nutzer von Codex und ChatGPT Work zurückgesetzt.",
-        "ar": "تم إعادة تعيين حدود الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work."
+        "ar": "تم إعادة تعيين حدود الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work.",
+        "ko": "Codex와 ChatGPT Work의 모든 유료 사용자들을 위해 사용 한도가 재설정됐어."
       },
       "fullText": "Back at the laptop. The usage limits have been reset for all paid users of Codex and ChatGPT Work. Weeeeeeeee. It's a good day!",
       "fullTexts": {
@@ -1458,10 +1459,11 @@
         "fr": "De retour à l'ordinateur portable. Les limites d'utilisation ont été réinitialisées pour tous les utilisateurs payants de Codex et ChatGPT Work. Weeeeeeeee. C'est une bonne journée !",
         "es": "De vuelta en la laptop. Los límites de uso se han restablecido para todos los usuarios de pago de Codex y ChatGPT Work. ¡Weeeeeeeee! ¡Es un buen día!",
         "de": "Zurück am Laptop. Die Nutzungsbeschränkungen wurden für alle zahlenden Nutzer von Codex und ChatGPT Work zurückgesetzt. Weeeeeeeee. Es ist ein guter Tag!",
-        "ar": "على اللاب توب مرة أخرى. تم إعادة تعيين حدود الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work. ويييييي. يوم جيد!"
+        "ar": "على اللاب توب مرة أخرى. تم إعادة تعيين حدود الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work. ويييييي. يوم جيد!",
+        "ko": "노트북 앞에 다시 앉았어. Codex와 ChatGPT Work의 모든 유료 사용자들을 위해 사용 한도가 재설정됐어. 와아아아. 좋은 날이야!"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-22T22:16:48.695Z"
+      "translatedAt": "2026-09-23T00:41:40.992Z"
     },
     "2081096447718723984": {
       "excerpt": "We have reset usage limits for all Codex and ChatGPT Work users.",
@@ -1473,7 +1475,8 @@
         "es": "Hemos restablecido los límites de uso para todos los usuarios de Codex y ChatGPT Work.",
         "fr": "Nous avons réinitialisé les limites d'utilisation pour tous les utilisateurs de Codex et ChatGPT Work.",
         "de": "Wir haben die Nutzungsbeschränkungen für alle Codex- und ChatGPT Work-Nutzer zurückgesetzt.",
-        "ar": "لقد أعدنا تعيين حدود الاستخدام لجميع مستخدمي Codex وChatGPT Work."
+        "ar": "لقد أعدنا تعيين حدود الاستخدام لجميع مستخدمي Codex وChatGPT Work.",
+        "zh-Hant": "我們已為所有 Codex 和 ChatGPT Work 使用者重置使用限制。"
       },
       "fullText": "We have reset usage limits for all Codex and ChatGPT Work users.\n\nLast night around 2am to 4am we suffered an almost global outage. All well and recovered, but you know what comes next.\n\nWe learn. We reset. Enjoy.",
       "fullTexts": {
@@ -1483,10 +1486,11 @@
         "es": "Hemos restablecido los límites de uso para todos los usuarios de Codex y ChatGPT Work.\n\nAnoche, alrededor de las 2 a 4 de la mañana, sufrimos una interrupción casi global. Todo bien y recuperado, pero ya sabes qué viene después.\n\nAprendemos. Restablecemos. Disfruta.",
         "fr": "Nous avons réinitialisé les limites d'utilisation pour tous les utilisateurs de Codex et ChatGPT Work.\n\nLa nuit dernière, vers 2h à 4h, nous avons subi une panne presque mondiale. Tout va bien et est rétabli, mais vous savez ce qui suit.\n\nNous apprenons. Nous réinitialisons. Profitez.",
         "de": "Wir haben die Nutzungsbeschränkungen für alle Codex- und ChatGPT Work-Nutzer zurückgesetzt.\n\nIn der vergangenen Nacht gegen 2 bis 4 Uhr morgens litten wir unter einem nahezu globalen Ausfall. Alles wieder in Ordnung und behoben, aber Sie wissen, was als Nächstes kommt.\n\nWir lernen. Wir setzen zurück. Genießen Sie es.",
-        "ar": "لقد أعدنا تعيين حدود الاستخدام لجميع مستخدمي Codex وChatGPT Work.\n\nفي الليلة الماضية حوالي الساعة 2 صباحًا إلى 4 صباحًا، تعرضنا لانقطاع شبه عالمي. كل شيء على ما يرام وتم التعافي، لكنك تعرف ما يأتي بعد ذلك.\n\nنتعلم. نعيد التعيين. استمتع."
+        "ar": "لقد أعدنا تعيين حدود الاستخدام لجميع مستخدمي Codex وChatGPT Work.\n\nفي الليلة الماضية حوالي الساعة 2 صباحًا إلى 4 صباحًا، تعرضنا لانقطاع شبه عالمي. كل شيء على ما يرام وتم التعافي، لكنك تعرف ما يأتي بعد ذلك.\n\nنتعلم. نعيد التعيين. استمتع.",
+        "zh-Hant": "我們已為所有 Codex 和 ChatGPT Work 使用者重置使用限制。\n\n昨晚大約凌晨 2 點到 4 點，我們遭遇了幾乎全球性的中斷。所有問題都已解決並恢復正常，但你知道接下來會發生什麼。\n\n我們學習。我們重置。盡情享受。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-22T22:16:51.175Z"
+      "translatedAt": "2026-09-23T00:41:41.350Z"
     },
     "2079609157934886975": {
       "excerpt": "New day, new usage reset for paid users of Codex and ChatGPT Work.",
@@ -1524,7 +1528,9 @@
         "ja": "CodexとChatGPT Workの全有料ユーザー向けに、リセットされた使用制限をお楽しみください。",
         "ko": "Codex와 ChatGPT Work의 모든 유료 사용자들을 위해 리셋된 사용량 제한을 즐겨보세요.",
         "fr": "Profitez des limites de réinitialisation pour tous les utilisateurs payants pour Codex et ChatGPT Work.",
-        "es": "Disfruten de los límites de uso restablecidos para todos los usuarios de pago en Codex y ChatGPT Work."
+        "es": "Disfruten de los límites de uso restablecidos para todos los usuarios de pago en Codex y ChatGPT Work.",
+        "de": "Genießt die zurückgesetzten Nutzungsgrenzen für alle zahlenden Nutzer bei Codex und ChatGPT Work.",
+        "ar": "استمتع بإعادة تعيين حدود الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work."
       },
       "fullText": "Oops... I did it again. \n\nEnjoy reset usage limits for all paid users for Codex and ChatGPT Work. Super grateful for an incredible team who is iterating at lightspeed and keeping the infra up as we scale faster than ever.\n\nEnjoy the weekend!",
       "fullTexts": {
@@ -1533,38 +1539,102 @@
         "ja": "おっと…またやってしまった。\n\nCodexとChatGPT Workの全有料ユーザー向けに、リセットされた使用制限をお楽しみください。光の速さでイテレーションを繰り返し、私たちがこれまで以上に速くスケールする中でもインフラを維持してくれている素晴らしいチームに、心から感謝しています。\n\n週末をお楽しみください！",
         "ko": "아이고... 또 해버렸네.\n\nCodex와 ChatGPT Work의 모든 유료 사용자들을 위해 리셋된 사용량 제한을 즐겨보세요. 빛의 속도로 반복적으로 개선하며, 우리가 사상 최단 속도로 확장하는 동안 인프라를 유지해 주는 놀라운 팀에게 정말 감사드립니다.\n\n주말 즐겁게 보내세요!",
         "fr": "Oups... Je l’ai refait.\n\nProfitez des limites de réinitialisation pour tous les utilisateurs payants pour Codex et ChatGPT Work. Immensément reconnaissant envers une équipe incroyable qui itère à la vitesse de la lumière et maintient l’infrastructure opérationnelle alors que nous grandissons plus vite que jamais.\n\nProfitez du week-end !",
-        "es": "¡Ups... lo hice de nuevo!\n\nDisfruten de los límites de uso restablecidos para todos los usuarios de pago en Codex y ChatGPT Work. Súper agradecidos por un equipo increíble que está iterando a velocidad luz y manteniendo la infraestructura en pie mientras escalamos más rápido que nunca.\n\n¡Disfruten el fin de semana!"
+        "es": "¡Ups... lo hice de nuevo!\n\nDisfruten de los límites de uso restablecidos para todos los usuarios de pago en Codex y ChatGPT Work. Súper agradecidos por un equipo increíble que está iterando a velocidad luz y manteniendo la infraestructura en pie mientras escalamos más rápido que nunca.\n\n¡Disfruten el fin de semana!",
+        "de": "Hoppla... Ich hab’s schon wieder getan.\n\nGenießt die zurückgesetzten Nutzungsgrenzen für alle zahlenden Nutzer bei Codex und ChatGPT Work. Unendlich dankbar für ein unglaubliches Team, das mit Lichtgeschwindigkeit iteriert und die Infrastruktur am Laufen hält, während wir schneller skalieren als je zuvor.\n\nGenießt das Wochenende!",
+        "ar": "عفوًا... لقد فعلتها مرة أخرى.\n\nاستمتع بإعادة تعيين حدود الاستخدام لجميع المستخدمين المدفوعين لـ Codex و ChatGPT Work. ممتن جدًا لفريق رائع يتكرر بسرعة البرق ويحافظ على البنية التحتية قائمة بينما نتوسع بسرعة أكبر من أي وقت مضى.\n\nاستمتع بالعطلة نهاية الأسبوع!"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-22T22:16:55.392Z"
+      "translatedAt": "2026-09-23T00:41:41.789Z"
     },
     "2077607697487188198": {
       "excerpt": "Another reset for our Codex and ChatGPT Work users.",
       "contentHash": "6061ae72fd3434bdab7fd65befd9f41bc66559ead31a76eeb013ec2226782d78",
-      "texts": {},
+      "texts": {
+        "zh": "为我们的 Codex 和 ChatGPT Work 用户又一次重置。",
+        "ja": "CodexとChatGPT Workユーザー向けにまたリセットを行いました。",
+        "zh-Hant": "為我們的 Codex 和 ChatGPT Work 使用者進行另一次重置。",
+        "ko": "Codex와 ChatGPT Work 사용자들을 위한 또 다른 리셋입니다.",
+        "es": "Otro reinicio para nuestros usuarios de Codex y ChatGPT Work.",
+        "fr": "Un autre réinitialisation pour nos utilisateurs Codex et ChatGPT Work.",
+        "de": "Ein weiterer Reset für unsere Codex- und ChatGPT Work-Nutzer.",
+        "ar": "إعادة تعيين أخرى لمستخدمي Codex وChatGPT Work."
+      },
       "fullText": "Another reset for our Codex and ChatGPT Work users. Actually hit 9M active users way earlier today, but then got distracted by the approximately millions of things the team is doing to keep the systems up and reliable.\n\nShould have that sweet 100% weekly usage limit back in a few minutes. Go be your productive self and close twitter. Shoo!",
-      "fullTexts": {}
+      "fullTexts": {
+        "zh": "为我们的 Codex 和 ChatGPT Work 用户又一次重置。实际上今天早些时候就达到了 900 万活跃用户，但随后就被团队为保持系统稳定可靠而做的数百万件事分散了注意力。\n\n每周使用限额的甜蜜 100% 应该在几分钟内恢复。去发挥你的高效自我，然后关闭 Twitter。嘘！",
+        "ja": "CodexとChatGPT Workユーザー向けにまたリセットを行いました。実は今日もっと早くに900万アクティブユーザーに到達したのですが、その後チームがシステムを稼働させ信頼性を保つために取り組んでいる数百万ものタスクに気を取られてしまいました。\n\nその甘美な100%週次使用制限が数分後には戻るはずです。生産的な自分を取り戻して、Twitterを閉じてください。シュー！",
+        "zh-Hant": "為我們的 Codex 和 ChatGPT Work 使用者進行另一次重置。今天其實早早就達到了 900 萬活躍使用者，但隨後就被團隊為了維持系統穩定可靠而忙碌的數百萬件事給分心了。\n\n幾分鐘內應該就能恢復那美好的 100% 每週使用限制。去發揮你的生產力吧，關掉 Twitter。趕緊！",
+        "ko": "Codex와 ChatGPT Work 사용자들을 위한 또 다른 리셋입니다. 오늘 훨씬 일찍 900만 명의 활성 사용자를 달성했지만, 팀이 시스템을 안정적으로 유지하기 위해 진행 중인 수백만 가지 일에 정신이 팔렸습니다.\n\n몇 분 안에 그 달콤한 100% 주간 사용 한도를 다시 복구할 겁니다. 생산적인 당신으로 돌아가서 트위터를 닫으세요. 슉!",
+        "es": "Otro reinicio para nuestros usuarios de Codex y ChatGPT Work. De hecho, alcanzamos los 9 millones de usuarios activos mucho antes hoy, pero luego me distraje con las aproximadamente millones de cosas que el equipo está haciendo para mantener los sistemas en funcionamiento y confiables.\n\nDeberíamos tener de vuelta ese dulce límite de uso semanal del 100% en unos pocos minutos. Ve a ser tu yo productivo y cierra Twitter. ¡Fuera!",
+        "fr": "Un autre réinitialisation pour nos utilisateurs Codex et ChatGPT Work. J'ai en fait atteint 9 millions d'utilisateurs actifs bien plus tôt aujourd'hui, mais ensuite je me suis laissé distraire par les environ millions de choses que l'équipe fait pour maintenir les systèmes opérationnels et fiables.\n\nJe devrais avoir cette douce limite d'utilisation hebdomadaire de 100 % de retour dans quelques minutes. Allez, soyez votre moi productif et fermez Twitter. Chut !",
+        "de": "Ein weiterer Reset für unsere Codex- und ChatGPT Work-Nutzer. Tatsächlich haben wir heute viel früher die 9 Millionen aktiven Nutzer erreicht, aber dann wurden wir von den ungefähr Millionen von Dingen abgelenkt, die das Team tut, um die Systeme am Laufen und zuverlässig zu halten.\n\nIn ein paar Minuten sollte diese süße 100%ige wöchentliche Nutzungsgrenze wieder verfügbar sein. Geh und sei dein produktives Ich und schließe Twitter. Hau ab!",
+        "ar": "إعادة تعيين أخرى لمستخدمي Codex وChatGPT Work. في الواقع، وصلنا إلى 9 ملايين مستخدم نشط اليوم مبكرًا جدًا، لكنني ثم انشغلت بتلك الأشياء المليونية تقريبًا التي يقوم بها الفريق للحفاظ على أنظمة التشغيل مستقرة وموثوقة.\n\nيجب أن يعود ذلك الحد الأسبوعي الرائع بنسبة 100% في بضع دقائق. اذهب وكن ذاتك المنتجة وأغلق تويتر. هَرْ!"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-23T00:41:43.217Z"
     },
     "2077114635308986427": {
       "excerpt": "We are once again resetting the usage limits for all.",
       "contentHash": "68938093b0d123d2cbe03da5ef131d74540fabbae336c9ddf2f1737b55cc35d1",
-      "texts": {},
+      "texts": {
+        "zh": "我们将再次为所有人重置使用限制。",
+        "zh-Hant": "我們再次為所有人重置使用限制。",
+        "ja": "全員の使用制限を再びリセットします。",
+        "ko": "Codex와 ChatGPT Work를 통해 800만 명의 활성 사용자에 도달했습니다.",
+        "es": "Una vez más, estamos restableciendo los límites de uso para todos.",
+        "fr": "Nous réinitialisons une fois de plus les limites d'utilisation pour tous.",
+        "de": "Wir setzen die Nutzungsbeschränkungen für alle erneut zurück.",
+        "ar": "نعيد تعيين حدود الاستخدام للجميع مرة أخرى."
+      },
       "fullText": "Hello. We have reached 8M active users across Codex and ChatGPT Work.\n\nWe are once again resetting the usage limits for all. And we continue to not have the 5h rate limit as well, allowing everyone to explore the boundaries of GPT-5.6 Sol and discover how ambitious you can be.\n\nSee you tomorrow for more updates on our growth!",
-      "fullTexts": {}
+      "fullTexts": {
+        "zh": "你好。我们在 Codex 和 ChatGPT Work 上的活跃用户已达到 800 万。\n\n我们将再次为所有人重置使用限制。而且我们继续不设 5 小时速率限制，让每个人都能探索 GPT-5.6 Sol 的边界，并发现你能有多么雄心勃勃。\n\n明天再见，敬请期待更多关于我们增长的更新！",
+        "zh-Hant": "您好。我們已在 Codex 和 ChatGPT Work 上達到 800 萬活躍用戶。\n\n我們再次為所有人重置使用限制。而且我們繼續不設 5 小時速率限制，讓每個人能夠探索 GPT-5.6 Sol 的極限，並發掘您能有多麼雄心勃勃。\n\n明天見，屆時將有更多關於我們成長的更新！",
+        "ja": "こんにちは。Codex と ChatGPT Work を合わせて 800 万人のアクティブユーザーに到達しました。\n\n全員の使用制限を再びリセットします。また、5 時間ごとのレート制限も引き続き設けていません。これにより、すべての方が GPT-5.6 Sol の限界を探求し、自分がどれほど野心的になれるかを発見できるようになります。\n\n成長に関するさらなるアップデートを、明日お届けします！",
+        "ko": "안녕하세요. Codex와 ChatGPT Work를 통해 800만 명의 활성 사용자에 도달했습니다.\n\n다시 한 번 모든 사용자에게 사용 한도를 재설정합니다. 또한 5시간 속도 제한도 계속 유지하지 않고 있어, 모두가 GPT-5.6 Sol의 경계를 탐험하고 얼마나 야심찬 시도를 할 수 있는지 발견할 수 있습니다.\n\n성장 업데이트를 더 확인하러 내일 뵙겠습니다!",
+        "es": "Hola. Hemos alcanzado 8 millones de usuarios activos en total entre Codex y ChatGPT Work.\n\nUna vez más, estamos restableciendo los límites de uso para todos. Y seguimos sin tener el límite de tasa de 5 horas también, lo que permite a todos explorar los límites de GPT-5.6 Sol y descubrir cuán ambiciosos pueden ser.\n\n¡Nos vemos mañana para más actualizaciones sobre nuestro crecimiento!",
+        "fr": "Bonjour. Nous avons atteint 8 millions d'utilisateurs actifs à travers Codex et ChatGPT Work.\n\nNous réinitialisons une fois de plus les limites d'utilisation pour tous. Et nous continuons de ne pas avoir la limite de taux de 5h également, permettant à chacun d'explorer les limites de GPT-5.6 Sol et de découvrir à quel point vous pouvez être ambitieux.\n\nÀ demain pour plus de mises à jour sur notre croissance !",
+        "de": "Hallo. Wir haben 8 Millionen aktive Nutzer auf Codex und ChatGPT Work erreicht.\n\nWir setzen die Nutzungsbeschränkungen für alle erneut zurück. Und wir haben weiterhin keine 5-Stunden-Ratenbegrenzung, sodass jeder die Grenzen von GPT-5.6 Sol erkunden und herausfinden kann, wie ambitioniert man sein kann.\n\nBis morgen für weitere Updates zu unserem Wachstum!",
+        "ar": "مرحبا. لقد وصلنا إلى 8 ملايين مستخدم نشط عبر Codex وChatGPT Work.\n\nنعيد تعيين حدود الاستخدام للجميع مرة أخرى. ونواصل عدم وجود حد معدل 5 ساعات أيضا، مما يسمح للجميع باستكشاف حدود GPT-5.6 Sol واكتشاف مدى طموحكم.\n\nأراكم غدا للمزيد من التحديثات حول نمونا!"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-23T00:41:44.985Z"
     },
     "2076735790567338203": {
       "excerpt": "We have added a banked reset to everyone's account to celebrate the milestone.",
       "contentHash": "f638ffa6e99f648e95a6b2cc1e3f345a846aa19f7eba1738f175625a8c83ed9c",
-      "texts": {},
+      "texts": {
+        "es": "Hemos añadido un reinicio bancado a la cuenta de todos para celebrar el hito.",
+        "de": "Wir haben einen gebuchten Reset zu jedem Konto hinzugefügt, um den Meilenstein zu feiern.",
+        "ar": "لقد أضفنا إعادة تعيين محفوظة إلى حساب كل شخص للاحتفال بالإنجاز."
+      },
       "fullText": "Thank you to the 7M active users who are now using Codex and ChatGPT Work.\n\nWe have added a banked reset to everyone's account to celebrate the milestone. You can apply the reset in the desktop app or on web and it will replenish the weekly usage for you.\n\nHave fun out there.",
-      "fullTexts": {}
+      "fullTexts": {
+        "es": "Gracias a los 7 millones de usuarios activos que ahora están usando Codex y ChatGPT Work.\n\nHemos añadido un reinicio bancado a la cuenta de todos para celebrar el hito. Puedes aplicar el reinicio en la aplicación de escritorio o en la web y rellenará el uso semanal para ti.\n\nDiviértanse por ahí.",
+        "de": "Vielen Dank an die 7 Millionen aktiven Nutzer, die jetzt Codex und ChatGPT Work verwenden.\n\nWir haben einen gebuchten Reset zu jedem Konto hinzugefügt, um den Meilenstein zu feiern. Sie können den Reset in der Desktop-App oder im Web anwenden, und er wird die wöchentliche Nutzung für Sie auffüllen.\n\nViel Spaß da draußen.",
+        "ar": "شكرًا للـ 7M مستخدمين نشطين الذين يستخدمون الآن Codex و ChatGPT Work.\n\nلقد أضفنا إعادة تعيين محفوظة إلى حساب كل شخص للاحتفال بالإنجاز. يمكنك تطبيق الإعادة في تطبيق سطح المكتب أو على الويب، وسوف تعيد تعبئة الاستخدام الأسبوعي لك.\n\nاستمتعوا هناك."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-23T00:41:46.376Z"
     },
     "2076365965915467978": {
       "excerpt": "Three important updates: - Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans - Rolling out changes that…",
       "contentHash": "ad45da278f7d37e90343c5f14c4c8fdb2b142f4c49c63b5ba8771a3a2063213f",
-      "texts": {},
+      "texts": {
+        "zh": "- 暂时移除所有Plus、Business和Pro计划的5小时使用限制",
+        "zh-Hant": "- 暫時移除所有 Plus、Business 和 Pro 方案的 5 小時使用限制",
+        "ja": "- Plus、Business、Proプランのすべてについて、5時間の使用制限を一時的に撤廃",
+        "ko": "- 모든 Plus, Business 및 Pro 플랜에 대해 5시간 사용 제한을 일시적으로 제거"
+      },
       "fullText": "Morning. The last 48 hours of Codex and ChatGPT Work have been intense! Three important updates:\n\n- Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans\n- Rolling out changes that will make GPT 5.6 Sol more efficient across the board and that will be reflected in less usage being used so that it can take you further. Exact impact to be quantified and shared\n- We hit 6M active users, and are landing a usage reset in the next hour\n\nGo do things",
-      "fullTexts": {}
+      "fullTexts": {
+        "zh": "早上。过去48小时的Codex和ChatGPT Work工作非常紧张！三个重要更新：\n\n- 暂时移除所有Plus、Business和Pro计划的5小时使用限制\n- 推出更改，这些更改将使GPT 5.6 Sol在各方面更高效，并反映在使用量减少上，这样它能带你走得更远。具体影响将量化并分享\n- 我们达到了600万活跃用户，并在下一小时内进行使用量重置\n\n去行动吧",
+        "zh-Hant": "早安。Codex 和 ChatGPT Work 過去 48 小時的工作非常緊張！三項重要更新：\n\n- 暫時移除所有 Plus、Business 和 Pro 方案的 5 小時使用限制\n- 推出變更，將使 GPT 5.6 Sol 在各個方面更有效率，並反映在減少使用量上，讓它能帶你走得更遠。確切影響將被量化並分享\n- 我們達到了 600 萬活躍用戶，並將在下一小時內進行使用量重置\n\n去行動吧",
+        "ja": "おはよう。CodexとChatGPT Workの過去48時間が激しかった！3つの重要なアップデート：\n\n- Plus、Business、Proプランのすべてについて、5時間の使用制限を一時的に撤廃\n- GPT 5.6 Solを全体的に効率化する変更を展開し、使用量が少なくなることでさらに長く使えるようになります。具体的な影響を定量化して共有予定\n- 600万人のアクティブユーザーに到達し、次の1時間以内に使用量のリセットを実施\n\nさあ、行動を起こしましょう",
+        "ko": "좋은 아침. 지난 48시간 동안 Codex와 ChatGPT Work의 작업이 엄청나게 치열했습니다! 세 가지 중요한 업데이트:\n\n- 모든 Plus, Business 및 Pro 플랜에 대해 5시간 사용 제한을 일시적으로 제거\n- GPT 5.6 Sol을 전반적으로 더 효율적으로 만드는 변경 사항을 배포 중이며, 이는 사용량이 줄어들어 더 멀리 갈 수 있게 할 것입니다. 정확한 영향은 정량화되어 공유될 예정\n- 600만 명의 활성 사용자에 도달했으며, 다음 한 시간 내에 사용량 리셋을 적용 중\n\n가서 일들을 해보세요"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-23T00:41:47.104Z"
     },
     "2075657265508647008": {
       "excerpt": "We have reset usage limits across Codex and ChatGPT Work.",
@@ -1642,6 +1712,6 @@
       "translatedAt": "2026-09-22T22:16:36.280Z"
     }
   },
-  "pending": 108,
-  "lastAttemptAt": "2026-09-22T22:16:55.572Z"
+  "pending": 81,
+  "lastAttemptAt": "2026-09-23T00:41:47.635Z"
 }
