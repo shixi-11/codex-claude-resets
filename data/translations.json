@@ -951,10 +951,20 @@
         "de": "Wir verlängern die verdoppelten Nutzungslimits von Cowork bis zum 5. August, damit du größere Aufgaben an Claude delegieren kannst.",
         "ar": "نمدّد مضاعفة حدود استخدام Cowork حتى 5 أغسطس، لتتمكن من إسناد مهام أكبر إلى Claude."
       },
-      "provider": "editorial-review",
+      "provider": "FxEmbed",
       "reviewedAt": "2026-09-08T18:33:18.785Z",
-      "fullTexts": {},
-      "fullText": "We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude.\n\nRead more:"
+      "fullTexts": {
+        "zh": "我们将把 Cowork 使用限额翻倍的优惠延长至 8 月 5 日，这样您就可以将更大的工作委托给 Claude。\n\n阅读更多：https://claude.com/blog/cowork-web-mobile/",
+        "ja": "8月5日までCoworkの使用制限を2倍に延長しますので、より大きな作業をClaudeに委任できます。\n\n詳細はこちら: https://claude.com/blog/cowork-web-mobile/",
+        "zh-Hant": "我們將延長雙倍 Cowork 使用限制至 8 月 5 日，因此您可以將更大的工作委派給 Claude。\n\n閱讀更多：https://claude.com/blog/cowork-web-mobile/",
+        "ko": "8월 5일까지 Cowork 사용 한도를 두 배로 연장합니다. 그래서 더 큰 작업을 Claude에게 위임할 수 있습니다.\n\n자세한 내용: https://claude.com/blog/cowork-web-mobile/",
+        "fr": "Nous prolongeons les limites d'utilisation doublées de Cowork jusqu'au 5 août, afin que vous puissiez déléguer des tâches plus importantes à Claude.\n\nEn savoir plus : https://claude.com/blog/cowork-web-mobile/",
+        "es": "Estamos extendiendo los límites de uso duplicados de Cowork hasta el 5 de agosto, para que puedas delegar trabajos más grandes a Claude.\n\nLee más: https://claude.com/blog/cowork-web-mobile/",
+        "ar": "نحن نمدد حدود استخدام Cowork المضاعفة حتى 5 أغسطس، حتى تتمكن من تفويض أعمال أكبر إلى Claude.\n\nاقرأ المزيد: https://claude.com/blog/cowork-web-mobile/",
+        "de": "Wir verlängern die verdoppelten Nutzungsgrenzen für Cowork bis zum 5. August, damit Sie größere Aufgaben an Claude delegieren können.\n\nWeiterlesen: https://claude.com/blog/cowork-web-mobile/"
+      },
+      "fullText": "We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude.\n\nRead more:",
+      "translatedAt": "2026-09-23T05:14:38.456Z"
     },
     "2072429181565288665": {
       "excerpt": "Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
@@ -987,9 +997,27 @@
     "2072402639644766602": {
       "excerpt": "All paid plans with usage included can access Fable 5 through July 7.",
       "contentHash": "a3c35b7675c199d3ade2917dd43424ddec525b12d5fd232f36ef3dcbdce0fad4",
-      "texts": {},
+      "texts": {
+        "zh": "所有包含使用量的付费计划均可通过7月7日访问Fable 5。",
+        "zh-Hant": "所有包含使用量的付費方案均可於 7 月 7 日前存取 Fable 5。",
+        "ko": "사용량이 포함된 모든 유료 플랜은 7월 7일까지 Fable 5에 액세스할 수 있습니다.",
+        "ja": "すべての有料プラン（使用量込み）は、7月7日までFable 5にアクセスできます。",
+        "fr": "Tous les plans payants avec utilisation incluse peuvent accéder à Fable 5 jusqu'au 7 juillet.",
+        "es": "Todos los planes de pago con uso incluido pueden acceder a Fable 5 hasta el 7 de julio.",
+        "de": "Alle kostenpflichtigen Pläne mit enthaltenem Nutzungsvolumen können Fable 5 bis einschließlich 7."
+      },
       "fullText": "All paid plans with usage included can access Fable 5 through July 7. You can use Fable 5 up to 50% of your weekly usage limit, after which you can switch to another model for the remainder of your usage. You can also continue using Fable via usage credits.\n\nMore here: https://t.co/5reBCfXAqy",
-      "fullTexts": {}
+      "fullTexts": {
+        "zh": "所有包含使用量的付费计划均可通过7月7日访问Fable 5。您可以将Fable 5的使用量控制在每周使用限额的50%以内，之后您可以切换到另一个模型来使用剩余的使用量。您也可以通过使用积分继续使用Fable。\n\n更多信息请见此处：https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "zh-Hant": "所有包含使用量的付費方案均可於 7 月 7 日前存取 Fable 5。您可以使用 Fable 5 至您每週使用量限制的 50%，之後您可以切換至另一個模型以使用剩餘的使用量。您也可以透過使用點數繼續使用 Fable。\n\n更多資訊請見：https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "ko": "사용량이 포함된 모든 유료 플랜은 7월 7일까지 Fable 5에 액세스할 수 있습니다. Fable 5는 주간 사용량 제한의 최대 50%까지 사용할 수 있으며, 그 이후에는 나머지 사용량에 대해 다른 모델로 전환할 수 있습니다. 또한 사용 크레딧을 통해 Fable을 계속 사용할 수 있습니다.\n\n자세한 내용은 여기: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "ja": "すべての有料プラン（使用量込み）は、7月7日までFable 5にアクセスできます。Fable 5は、週間使用量制限の最大50%まで使用でき、それ以降は残りの使用量について他のモデルに切り替えることができます。また、使用量クレジット経由でFableを継続して使用することもできます。\n\n詳細はこちら: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "fr": "Tous les plans payants avec utilisation incluse peuvent accéder à Fable 5 jusqu'au 7 juillet. Vous pouvez utiliser Fable 5 jusqu'à 50 % de votre limite d'utilisation hebdomadaire, après quoi vous pouvez passer à un autre modèle pour le reste de votre utilisation. Vous pouvez également continuer à utiliser Fable via des crédits d'utilisation.\n\nPlus d'informations ici : https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "es": "Todos los planes de pago con uso incluido pueden acceder a Fable 5 hasta el 7 de julio. Puedes usar Fable 5 hasta el 50% de tu límite de uso semanal, después de lo cual puedes cambiar a otro modelo para el resto de tu uso. También puedes seguir usando Fable a través de créditos de uso.\n\nMás información aquí: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access",
+        "de": "Alle kostenpflichtigen Pläne mit enthaltenem Nutzungsvolumen können Fable 5 bis einschließlich 7. Juli nutzen. Sie können Fable 5 bis zu 50 % Ihres wöchentlichen Nutzungs-Limits verwenden, danach können Sie für den Rest Ihrer Nutzung zu einem anderen Modell wechseln. Sie können Fable auch weiterhin über Nutzungsguthaben verwenden.\n\nMehr hier: https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-23T05:14:40.889Z"
     },
     "2068122937308426676": {
       "excerpt": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans.",
@@ -1606,16 +1634,18 @@
       "texts": {
         "es": "Hemos añadido un reinicio bancado a la cuenta de todos para celebrar el hito.",
         "de": "Wir haben einen gebuchten Reset zu jedem Konto hinzugefügt, um den Meilenstein zu feiern.",
-        "ar": "لقد أضفنا إعادة تعيين محفوظة إلى حساب كل شخص للاحتفال بالإنجاز."
+        "ar": "لقد أضفنا إعادة تعيين محفوظة إلى حساب كل شخص للاحتفال بالإنجاز.",
+        "ja": "現在、Codex と ChatGPT Work をご利用いただいている 7M 人のアクティブユーザー各位に感謝申し上げます。"
       },
       "fullText": "Thank you to the 7M active users who are now using Codex and ChatGPT Work.\n\nWe have added a banked reset to everyone's account to celebrate the milestone. You can apply the reset in the desktop app or on web and it will replenish the weekly usage for you.\n\nHave fun out there.",
       "fullTexts": {
         "es": "Gracias a los 7 millones de usuarios activos que ahora están usando Codex y ChatGPT Work.\n\nHemos añadido un reinicio bancado a la cuenta de todos para celebrar el hito. Puedes aplicar el reinicio en la aplicación de escritorio o en la web y rellenará el uso semanal para ti.\n\nDiviértanse por ahí.",
         "de": "Vielen Dank an die 7 Millionen aktiven Nutzer, die jetzt Codex und ChatGPT Work verwenden.\n\nWir haben einen gebuchten Reset zu jedem Konto hinzugefügt, um den Meilenstein zu feiern. Sie können den Reset in der Desktop-App oder im Web anwenden, und er wird die wöchentliche Nutzung für Sie auffüllen.\n\nViel Spaß da draußen.",
-        "ar": "شكرًا للـ 7M مستخدمين نشطين الذين يستخدمون الآن Codex و ChatGPT Work.\n\nلقد أضفنا إعادة تعيين محفوظة إلى حساب كل شخص للاحتفال بالإنجاز. يمكنك تطبيق الإعادة في تطبيق سطح المكتب أو على الويب، وسوف تعيد تعبئة الاستخدام الأسبوعي لك.\n\nاستمتعوا هناك."
+        "ar": "شكرًا للـ 7M مستخدمين نشطين الذين يستخدمون الآن Codex و ChatGPT Work.\n\nلقد أضفنا إعادة تعيين محفوظة إلى حساب كل شخص للاحتفال بالإنجاز. يمكنك تطبيق الإعادة في تطبيق سطح المكتب أو على الويب، وسوف تعيد تعبئة الاستخدام الأسبوعي لك.\n\nاستمتعوا هناك.",
+        "ja": "現在、Codex と ChatGPT Work をご利用いただいている 7M 人のアクティブユーザー各位に感謝申し上げます。\n\nこのマイルストーンをお祝いして、全員のアカウントにバンクトリセットを追加しました。デスクトップアプリまたはウェブ上でリセットを適用すると、週間の使用量が補充されます。\n\n楽しんでください。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-23T00:41:46.376Z"
+      "translatedAt": "2026-09-23T05:14:31.817Z"
     },
     "2076365965915467978": {
       "excerpt": "Three important updates: - Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans - Rolling out changes that…",
@@ -1712,6 +1742,6 @@
       "translatedAt": "2026-09-22T22:16:36.280Z"
     }
   },
-  "pending": 81,
-  "lastAttemptAt": "2026-09-23T00:41:47.635Z"
+  "pending": 65,
+  "lastAttemptAt": "2026-09-23T05:14:41.453Z"
 }
