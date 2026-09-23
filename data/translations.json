@@ -1744,8 +1744,33 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-22T22:16:36.280Z"
+    },
+    "2102871554069774451": {
+      "excerpt": "The credit is separate from your usage limits, and it applies automatically once you start a cloud session.",
+      "contentHash": "c694ccea35843162705ac2618cd31cdd47635046140d1a2c0174bf8c0f78792a",
+      "texts": {
+        "zh": "信用与您的使用限制是分开的，一旦您开始云会话，它会自动应用。",
+        "zh-Hant": "信用額與您的使用限制是分開的，一旦您開始雲端工作階段，它會自動套用。",
+        "ja": "クレジットは使用制限とは別にあり、クラウドセッションを開始すると自動的に適用されます。",
+        "ko": "크레딧은 사용 제한과 별개이며, 클라우드 세션을 시작하면 자동으로 적용됩니다.",
+        "es": "El crédito es independiente de tus límites de uso, y se aplica automáticamente una vez que inicias una sesión en la nube.",
+        "fr": "Le crédit est distinct de vos limites d'utilisation et s'applique automatiquement dès que vous démarrez une session cloud.",
+        "ar": "الاعتمادة منفصلة عن حدود الاستخدام الخاصة بك، وتُطبق تلقائيًا بمجرد أن تبدأ جلسة سحابية."
+      },
+      "fullText": "The credit is separate from your usage limits, and it applies automatically once you start a cloud session.\n\nIf you hit a limit locally, keep going in the cloud until your credit runs out. One credit per account, for cloud sessions only.",
+      "fullTexts": {
+        "zh": "信用与您的使用限制是分开的，一旦您开始云会话，它会自动应用。\n\n如果您在本地达到限制，请在云端继续，直到您的信用耗尽。每账户一个信用，仅适用于云会话。",
+        "zh-Hant": "信用額與您的使用限制是分開的，一旦您開始雲端工作階段，它會自動套用。\n\n如果您在本地達到限制，請繼續在雲端進行，直到您的信用額用完。每個帳戶僅限一筆信用額，僅適用於雲端工作階段。",
+        "ja": "クレジットは使用制限とは別にあり、クラウドセッションを開始すると自動的に適用されます。\n\nローカルで制限に達した場合でも、クラウドでクレジットが尽きるまで継続してください。アカウントごとに1クレジット、クラウドセッション専用です。",
+        "ko": "크레딧은 사용 제한과 별개이며, 클라우드 세션을 시작하면 자동으로 적용됩니다.\n\n로컬에서 제한에 도달하면, 크레딧이 소진될 때까지 클라우드에서 계속 진행하세요. 계정당 1개의 크레딧, 클라우드 세션 전용입니다.",
+        "es": "El crédito es independiente de tus límites de uso, y se aplica automáticamente una vez que inicias una sesión en la nube.\n\nSi alcanzas un límite localmente, continúa en la nube hasta que se agote tu crédito. Un crédito por cuenta, solo para sesiones en la nube.",
+        "fr": "Le crédit est distinct de vos limites d'utilisation et s'applique automatiquement dès que vous démarrez une session cloud.\n\nSi vous atteignez une limite en local, continuez dans le cloud jusqu'à épuisement de votre crédit. Un crédit par compte, pour les sessions cloud uniquement.",
+        "ar": "الاعتمادة منفصلة عن حدود الاستخدام الخاصة بك، وتُطبق تلقائيًا بمجرد أن تبدأ جلسة سحابية.\n\nإذا وصلت إلى حد محليًا، استمر في السحابة حتى ينفد اعتمادك. اعتمادة واحدة لكل حساب، لجلسات السحابة فقط."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-23T22:07:19.272Z"
     }
   },
-  "pending": 63,
-  "lastAttemptAt": "2026-09-23T18:56:34.622Z"
+  "pending": 64,
+  "lastAttemptAt": "2026-09-23T22:07:31.002Z"
 }
