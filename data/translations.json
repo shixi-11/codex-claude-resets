@@ -1714,7 +1714,7 @@
         "zh-Hant": "Opus 5.5 的效能達到 Fable 5.1 的水準。它比 Opus 5 每項任務快約 30%，且成本低約 40%。\n\n在 Claude Code 中：\n- 5 小時工作階段限制今日增加 20%\n- Opus 5.5 定價更低，因此在限制內可多使用 25%\n- Pro、Max 和 Team 使用者可隨時重置使用",
         "es": "Opus 5.5 rinde al nivel de Fable 5.1. Es ~30% más rápido y ~40% más barato que Opus 5 por tarea.\n\nEn Claude Code:\n- Los límites de sesiones de 5 horas aumentan un 20% hoy\n- Opus 5.5 tiene un precio más bajo, por lo que rinde un 25% más dentro de los límites\n- Los usuarios Pro, Max y Team obtienen un reinicio para usar en cualquier momento",
         "ko": "Opus 5.5는 Fable 5.1 수준으로 성능을 발휘합니다. Opus 5보다 작업당 ~30% 빠르고 ~40% 저렴합니다.\n\nClaude Code에서:\n- 5시간 세션 제한이 오늘 20% 증가합니다\n- Opus 5.5는 가격이 더 낮아 제한 내에서 25% 더 멀리 갑니다\n- Pro, Max, Team 사용자들은 언제든 사용할 수 있도록 리셋됩니다",
-        "de": "Opus 5.5 ist auf dem Niveau von Fable 5.1. Es ist ~30 % schneller und ~40 % billiger als Opus 5 pro Aufgabe.\n\nIn Claude Code:\n- 5-Stunden-Sitzungslimits werden heute um 20% erhöht\n- Opus 5.5 ist preisgünstiger, so dass die Grenzen um 25 % erweitert werden können.\n- Pro-, Max- und Team-Benutzer erhalten einen Reset, um es jederzeit nutzen zu können.",
+        "de": "Opus 5.5 erreicht die Leistung von Fable 5.1. Es ist ~30 % schneller und ~40 % günstiger als Opus 5 pro Aufgabe.\n\nIn Claude Code:\n- 5-Stunden-Sitzungsgrenzen steigen heute um 20 %\n- Opus 5.5 ist günstiger, sodass es innerhalb der Grenzen 25 % weiter reicht\n- Pro-, Max- und Team-Nutzer erhalten einen Reset, den sie jederzeit nutzen können",
         "fr": "Opus 5.5 performe au niveau de Fable 5.1. Il est ~30 % plus rapide et ~40 % moins cher qu'Opus 5 par tâche.\n\nDans Claude Code :\n- les limites de sessions de 5 heures augmentent de 20 % aujourd'hui\n- Opus 5.5 est au prix plus bas, donc il va 25 % plus loin dans les limites\n- les utilisateurs Pro, Max et Team obtiennent une remise à zéro pour utiliser à tout moment"
       }
     },
@@ -1747,5 +1747,5 @@
     }
   },
   "pending": 63,
-  "lastAttemptAt": "2026-09-23T14:57:34.192Z"
+  "lastAttemptAt": "2026-09-23T18:56:34.622Z"
 }
