@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/OpenAI/status/2102460984782938221",
       "publishedAt": "2026-09-22T18:12:15.265Z",
-      "verifiedAt": "2026-09-23T22:07:13.089Z",
+      "verifiedAt": "2026-09-24T00:31:23.089Z",
       "excerpt": "Higher usage limits and lower cost give you more flexibility and room to iterate.",
       "fullText": "Higher usage limits and lower cost give you more flexibility and room to iterate.",
       "truncated": false,
@@ -76,7 +76,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-09-23T22:07:17.567Z",
+        "verifiedAt": "2026-09-24T00:31:31.972Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -89,7 +89,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-09-23T22:07:17.567Z",
+      "checkedAt": "2026-09-24T00:31:31.972Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -101,7 +101,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2102871554069774451",
       "publishedAt": "2026-09-23T21:23:42.611Z",
-      "verifiedAt": "2026-09-23T22:07:13.089Z",
+      "verifiedAt": "2026-09-24T00:31:23.089Z",
       "excerpt": "The credit is separate from your usage limits, and it applies automatically once you start a cloud session.",
       "fullText": "The credit is separate from your usage limits, and it applies automatically once you start a cloud session.\n\nIf you hit a limit locally, keep going in the cloud until your credit runs out. One credit per account, for cloud sessions only.",
       "truncated": false,

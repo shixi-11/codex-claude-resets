@@ -1755,7 +1755,8 @@
         "ko": "크레딧은 사용 제한과 별개이며, 클라우드 세션을 시작하면 자동으로 적용됩니다.",
         "es": "El crédito es independiente de tus límites de uso, y se aplica automáticamente una vez que inicias una sesión en la nube.",
         "fr": "Le crédit est distinct de vos limites d'utilisation et s'applique automatiquement dès que vous démarrez une session cloud.",
-        "ar": "الاعتمادة منفصلة عن حدود الاستخدام الخاصة بك، وتُطبق تلقائيًا بمجرد أن تبدأ جلسة سحابية."
+        "ar": "الاعتمادة منفصلة عن حدود الاستخدام الخاصة بك، وتُطبق تلقائيًا بمجرد أن تبدأ جلسة سحابية.",
+        "de": "Der Kredit ist unabhängig von Ihren Nutzungsbeschränkungen und wird automatisch angewendet, sobald Sie eine Cloud-Sitzung starten."
       },
       "fullText": "The credit is separate from your usage limits, and it applies automatically once you start a cloud session.\n\nIf you hit a limit locally, keep going in the cloud until your credit runs out. One credit per account, for cloud sessions only.",
       "fullTexts": {
@@ -1765,12 +1766,13 @@
         "ko": "크레딧은 사용 제한과 별개이며, 클라우드 세션을 시작하면 자동으로 적용됩니다.\n\n로컬에서 제한에 도달하면, 크레딧이 소진될 때까지 클라우드에서 계속 진행하세요. 계정당 1개의 크레딧, 클라우드 세션 전용입니다.",
         "es": "El crédito es independiente de tus límites de uso, y se aplica automáticamente una vez que inicias una sesión en la nube.\n\nSi alcanzas un límite localmente, continúa en la nube hasta que se agote tu crédito. Un crédito por cuenta, solo para sesiones en la nube.",
         "fr": "Le crédit est distinct de vos limites d'utilisation et s'applique automatiquement dès que vous démarrez une session cloud.\n\nSi vous atteignez une limite en local, continuez dans le cloud jusqu'à épuisement de votre crédit. Un crédit par compte, pour les sessions cloud uniquement.",
-        "ar": "الاعتمادة منفصلة عن حدود الاستخدام الخاصة بك، وتُطبق تلقائيًا بمجرد أن تبدأ جلسة سحابية.\n\nإذا وصلت إلى حد محليًا، استمر في السحابة حتى ينفد اعتمادك. اعتمادة واحدة لكل حساب، لجلسات السحابة فقط."
+        "ar": "الاعتمادة منفصلة عن حدود الاستخدام الخاصة بك، وتُطبق تلقائيًا بمجرد أن تبدأ جلسة سحابية.\n\nإذا وصلت إلى حد محليًا، استمر في السحابة حتى ينفد اعتمادك. اعتمادة واحدة لكل حساب، لجلسات السحابة فقط.",
+        "de": "Der Kredit ist unabhängig von Ihren Nutzungsbeschränkungen und wird automatisch angewendet, sobald Sie eine Cloud-Sitzung starten.\n\nFalls Sie lokal an ein Limit stoßen, fahren Sie in der Cloud fort, bis Ihr Kredit aufgebraucht ist. Ein Kredit pro Konto, nur für Cloud-Sitzungen."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-23T22:07:19.272Z"
+      "translatedAt": "2026-09-24T00:31:33.048Z"
     }
   },
-  "pending": 64,
-  "lastAttemptAt": "2026-09-23T22:07:31.002Z"
+  "pending": 63,
+  "lastAttemptAt": "2026-09-24T00:31:51.246Z"
 }
