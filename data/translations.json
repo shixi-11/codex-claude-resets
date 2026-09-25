@@ -1805,16 +1805,20 @@
         "es": "También estamos reduciendo permanentemente el precio de la API en un 50%, lo que hace que ambos sean viables para un montón de nuevos casos de uso y permite que tu consumo rinda más, incluso en las suscripciones.",
         "de": "Wir senken außerdem den API-Preis dauerhaft um 50 %, wodurch beide für eine Menge neuer Anwendungsfälle nutzbar werden und deine Nutzung weiter reicht, sogar bei den Abonnements.",
         "ar": "كما أننا نُقلل بشكل دائم من سعر الـ API بنسبة 50%، مما يجعل كليهما مناسبين لعدد هائل من حالات الاستخدام الجديدة ويجعل استخدامك يذهب أبعد أيضًا، حتى في الاشتراكات.",
-        "zh": "我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。"
+        "zh": "我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。",
+        "ja": "これにより、両モデルとも多くの新しいユースケースで活用可能になり、購読プランでも利用がより遠くまで広がります。"
       },
       "fullTexts": {
         "es": "GPT-6 Sol y Luna ya están disponibles. No solo representan una mejora muy significativa en todos los aspectos, sino también en la escritura y en la calidad general de \"ya sabes cuando lo pruebas\".\n\nTambién estamos reduciendo permanentemente el precio de la API en un 50%, lo que hace que ambos sean viables para un montón de nuevos casos de uso y permite que tu consumo rinda más, incluso en las suscripciones.\n\nY una cosa más. Estamos cargando un reinicio bancado en todas las cuentas de nuestros usuarios Plus, Pro y Business. ¡Vamos allá!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
         "de": "GPT-6 Sol und Luna sind draußen. Sie stellen nicht nur eine sehr bedeutende Verbesserung in allen Bereichen dar, sondern auch in der Schreibqualität und der allgemeinen „du weißt schon, wenn du es ausprobierst“-Qualität.\n\nWir senken außerdem den API-Preis dauerhaft um 50 %, wodurch beide für eine Menge neuer Anwendungsfälle nutzbar werden und deine Nutzung weiter reicht, sogar bei den Abonnements.\n\nUnd noch etwas. Wir laden einen gebankten Reset in alle Konten unserer Plus-, Pro- und Business-Nutzer. Los geht’s!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
         "ar": "صدر GPT-6 Sol و Luna. ليس فقط تحسينًا كبيرًا جدًا في جميع الجوانب، بل أيضًا في الكتابة وجودة \"تعرف عندما تجربها\" العامة.\n\nكما أننا نُقلل بشكل دائم من سعر الـ API بنسبة 50%، مما يجعل كليهما مناسبين لعدد هائل من حالات الاستخدام الجديدة ويجعل استخدامك يذهب أبعد أيضًا، حتى في الاشتراكات.\n\nوأمر آخر. نحن نُحمّل إعادة تعيين مُخزنة في جميع حسابات مستخدمي Plus و Pro و Business. هيا بنا!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
-        "zh": "GPT-6 Sol 和 Luna 已经推出。它们不仅在各方面都有显著提升，写作以及整体上那种“试过就知道”的体验也有进步。\n\n我们还将 API 价格永久降低 50%，让这两个模型适用于更多新场景，也让你的额度更耐用，包括订阅方案。\n\n还有一件事。我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。出发吧！\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/"
-      }
+        "zh": "GPT-6 Sol 和 Luna 已经推出。它们不仅在各方面都有显著提升，写作以及整体上那种“试过就知道”的体验也有进步。\n\n我们还将 API 价格永久降低 50%，让这两个模型适用于更多新场景，也让你的额度更耐用，包括订阅方案。\n\n还有一件事。我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。出发吧！\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "ja": "GPT-6 Sol と Luna がリリースされました。これらは全体的に非常に大きな改善であるだけでなく、執筆や一般的な「試してみるとわかる」品質においてもそうです。\n\nまた、API価格を50%恒久的に引き下げます。これにより、両モデルとも多くの新しいユースケースで活用可能になり、購読プランでも利用がより遠くまで広がります。\n\nもう一つ。Plus、Pro、Businessユーザーの全アカウントにバンクトリセットをロードします。行こう！\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-25T20:06:50.000Z"
     }
   },
-  "pending": 66,
-  "lastAttemptAt": "2026-09-25T19:30:52.218Z"
+  "pending": 68,
+  "lastAttemptAt": "2026-09-25T20:07:02.860Z"
 }
