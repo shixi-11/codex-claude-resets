@@ -1782,7 +1782,8 @@
         "zh-Hant": "Claude Code 現在在您於任務中途達到 5 小時限制時，將嘗試找到一個優雅的停止點，而不是在中途編輯時突然中斷。",
         "ja": "Claude Code はこれで、タスクの途中で5時間の制限に達した際に、編集の途中で切断するのではなく、優雅な停止地点を見つけるよう試みます。",
         "ko": "Claude Code는 이제 작업 중 5시간 제한에 도달했을 때 편집 도중에 끊는 대신 우아한 중단 지점을 찾으려고 시도할 것입니다.",
-        "es": "Claude Code ahora intentará encontrar un punto de parada elegante cuando alcances tu límite de 5 horas en medio de una tarea, en lugar de cortarse en medio de una edición."
+        "es": "Claude Code ahora intentará encontrar un punto de parada elegante cuando alcances tu límite de 5 horas en medio de una tarea, en lugar de cortarse en medio de una edición.",
+        "fr": "Claude Code essaiera désormais de trouver un point d'arrêt élégant lorsque vous atteignez votre limite de 5 heures en plein milieu d'une tâche, au lieu de couper en plein milieu d'une édition."
       },
       "fullText": "Claude Code will now try to find a graceful stopping point when you hit your 5-hour limit mid-task, instead of cutting off mid-edit. It gets a small, fixed allowance pulled from your weekly limit to wrap up what it can.",
       "fullTexts": {
@@ -1792,10 +1793,11 @@
         "ko": "Claude Code는 이제 작업 중 5시간 제한에 도달했을 때 편집 도중에 끊는 대신 우아한 중단 지점을 찾으려고 시도할 것입니다. 이를 위해 주간 제한에서 작은 고정 할당량을 가져와서 가능한 한 마무리할 수 있습니다.",
         "es": "Claude Code ahora intentará encontrar un punto de parada elegante cuando alcances tu límite de 5 horas en medio de una tarea, en lugar de cortarse en medio de una edición. Recibe una pequeña asignación fija extraída de tu límite semanal para terminar lo que pueda.",
         "ar": "سيحاول Claude Code الآن العثور على نقطة توقف أنيقة عندما تصل إلى حد الـ 5 ساعات في منتصف المهمة، بدلاً من قطع التحرير في منتصف العملية. يحصل على بدل صغير ثابت مستمد من حد أسبوعي لإنهاء ما يمكنه.",
-        "de": "Claude Code wird nun versuchen, einen eleganten Abbruchpunkt zu finden, wenn Sie Ihre 5-Stunden-Grenze mitten in einer Aufgabe erreichen, anstatt mitten in einer Bearbeitung abzubrechen. Es erhält eine kleine, feste Zuteilung aus Ihrem wöchentlichen Limit, um abzuschließen, was möglich ist."
+        "de": "Claude Code wird nun versuchen, einen eleganten Abbruchpunkt zu finden, wenn Sie Ihre 5-Stunden-Grenze mitten in einer Aufgabe erreichen, anstatt mitten in einer Bearbeitung abzubrechen. Es erhält eine kleine, feste Zuteilung aus Ihrem wöchentlichen Limit, um abzuschließen, was möglich ist.",
+        "fr": "Claude Code essaiera désormais de trouver un point d'arrêt élégant lorsque vous atteignez votre limite de 5 heures en plein milieu d'une tâche, au lieu de couper en plein milieu d'une édition. Il reçoit une petite allocation fixe prélevée sur votre limite hebdomadaire pour terminer ce qu'il peut."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-25T19:30:30.441Z"
+      "translatedAt": "2026-09-25T22:45:45.420Z"
     },
     "2102463847714247142": {
       "excerpt": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
@@ -1819,6 +1821,6 @@
       "translatedAt": "2026-09-25T20:06:50.000Z"
     }
   },
-  "pending": 68,
-  "lastAttemptAt": "2026-09-25T20:08:21.491Z"
+  "pending": 67,
+  "lastAttemptAt": "2026-09-25T22:45:58.205Z"
 }
