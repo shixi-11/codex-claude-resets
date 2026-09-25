@@ -90,7 +90,7 @@ try {
         ? { ...post, text: candidate.fullText, truncated: /(?:…|\.\.\.)\s*$/.test(candidate.fullText) }
         : extractEmbed(await request(`https://publish.twitter.com/oembed?url=${encodeURIComponent(post.url)}&omit_script=true`), post.url);
       let provenance=candidate.fullText?'x-api':'x-oembed';
-      if(source.truncated&&/reset|usage|quota|limit/i.test(source.text)){
+      if(source.truncated&&/reset|usage|quota|limit|credit/i.test(source.text+' '+(candidate.relay?.text||''))){
         try{
           const relay=candidate.relay||(await request(`https://api.fxtwitter.com/${post.author}/status/${post.id}`)).tweet;
           source=corroborateRelay(source,relay);provenance='x-oembed+fxembed';

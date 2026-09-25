@@ -22,11 +22,7 @@ const belongs=(ev,id)=>postPlatform(ev.author)===id;
 const sourceAction={en:'View original',zh:'查看原文','zh-Hant':'查看原文',ja:'原文を見る',ko:'원문 보기',es:'Ver original',fr:'Voir l’original',de:'Original ansehen',ar:'عرض المنشور الأصلي'};
 export function priorityDetails(platform,id,events,lang){
  const t=priorityCopy[lang],list=(events||[]).filter(ev=>belongs(ev,id)).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
- const gift=platform.gifts?.[0];
- // The current offer and its announcement stay together, even when a later
- // unrelated reset was posted. Keep the actual reset history independent.
- const announcement=gift?.announcementId&&list.find(ev=>ev.id===gift.announcementId);
- const latest=announcement||list[0]||platform.latest,last=platform.lastReset;
+ const latest=list.find(ev=>['global','banked'].includes(ev.kind)&&['announced','reported'].includes(ev.state))||list[0]||platform.latest,last=platform.lastReset;
  const when=at=>localResetTime(at,lang);
  return `<div class="latest-post"><div class="priority-label"><span>${e(t.latest)}</span>${latest?`<time datetime="${e(latest.publishedAt)}">${e(when(latest.publishedAt))}</time>`:''}</div>${latest?`<a class="tweet-source" href="${e(latest.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>@${e(latest.author)}</span><span class="source-action"><span class="source-action-label">${e(sourceAction[lang])}</span><span class="source-arrow" aria-hidden="true">↗</span></span></a>${postText(latest,lang,'tweet-excerpt')}<p class="tweet-meaning"><span class="post-kind" data-kind="${e(latest.kind)}">${e(latest.reason==='replacement-credit'?replacementLabels[lang]:postKindLabel(latest.kind,lang))}</span> ${e(latest.kind==='global'&&latest.state==='reported'?t.complete:latest.state==='unconfirmed'?t.unconfirmed:postStateLabel(latest.state,lang))}</p>`:`<p>${e(t.empty)}</p>`}</div>
  <div class="last-reset"><span>${e(elapsedLabel[lang])}</span><span data-last-reset data-reset-elapsed="${e(last?.publishedAt||'')}" title="${last?e(when(last.publishedAt)):''}">${last?e(elapsedSince(last.publishedAt,lang)):e(watchCopy[lang].noHistory)}</span></div>
@@ -40,6 +36,6 @@ export const resetDefinitions=definitions;
 export function earlierPosts(events,now=Date.now()){return [...events].sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).filter(ev=>{const at=Date.parse(ev.publishedAt);return Number.isFinite(at)&&at<=now&&at>=now-7*86400000;});}
 
 const otherStates={en:['Announced','Information'],zh:['已公布','信息'],'zh-Hant':['已公布','資訊'],ja:['発表済み','情報'],ko:['발표됨','정보'],es:['Anunciado','Información'],fr:['Annoncé','Information'],de:['Angekündigt','Information'],ar:['أُعلن','معلومات']};
-function postStateLabel(state,lang){return state==='announced'?otherStates[lang][0]:'';}
+function postStateLabel(state,lang){return state==='announced'?otherStates[lang][0]:state==='reported'?({en:'Granted',zh:'已发放','zh-Hant':'已發放',ja:'付与済み',ko:'지급됨',es:'Concedido',fr:'Accordé',de:'Gewährt',ar:'مُنح'})[lang]:'';}
 
 export const replacementLabels={en:'Replacement reset credit',zh:'重置卡补发','zh-Hant':'重置卡補發',ja:'リセット権の再付与',ko:'초기화 이용권 재지급',es:'Crédito de restablecimiento de reemplazo',fr:'Crédit de réinitialisation de remplacement',de:'Ersatz-Reset-Guthaben',ar:'رصيد إعادة ضبط تعويضي'};

@@ -1705,17 +1705,19 @@
     },
     "2102438800836489554": {
       "excerpt": "In Claude Code: - 5-hour session limits increase 20% today - Opus 5.5 is priced lower, so it goes 25% further within limits -…",
-      "contentHash": "1ce5c037a1b03ca2d5305ca8c3df954dde728c8472156deff27baef674e0e662",
-      "texts": {},
       "fullText": "Opus 5.5 performs at the level of Fable 5.1. It's ~30% faster and ~40% cheaper than Opus 5 per task.\n\nIn Claude Code:\n- 5-hour session limits increase 20% today\n- Opus 5.5 is priced lower, so it goes 25% further within limits\n- Pro, Max, and Team users get a reset to use anytime",
+      "contentHash": "1ce5c037a1b03ca2d5305ca8c3df954dde728c8472156deff27baef674e0e662",
+      "texts": {
+        "zh": "Claude Code 的 5 小时会话额度提高 20%；Pro、Max 和 Team 用户获得一次可随时使用的重置。"
+      },
       "fullTexts": {
-        "zh": "Opus 5.5 的性能达到 Fable 5.1 的水平。它比 Opus 5 每项任务快约 30%，成本低约 40%。\n\n在 Claude Code 中：\n- 5 小时会话限制今天增加 20%\n- Opus 5.5 定价更低，因此在限制内可使用 25% 更久\n- Pro、Max 和 Team 用户可随时重置以使用",
-        "ja": "Opus 5.5 は Fable 5.1 のレベルで動作します。Opus 5 よりもタスクあたり約30%高速で、約40%安価です。\n\nClaude Code では：\n- 5時間セッション制限が本日20%増加\n- Opus 5.5 は価格が低く設定されているため、制限内で25%長く利用可能\n- Pro、Max、Team ユーザーはいつでもリセットを利用可能",
+        "zh": "Opus 5.5 的表现达到 Fable 5.1 的水平。相比 Opus 5，每项任务的速度快约 30%，成本低约 40%。\n\n在 Claude Code 中：\n- 5 小时会话额度今天提高 20%\n- Opus 5.5 的价格更低，同样的额度可多用 25%\n- Pro、Max 和 Team 用户获得一次可随时使用的重置",
         "zh-Hant": "Opus 5.5 的效能達到 Fable 5.1 的水準。它比 Opus 5 每項任務快約 30%，且成本低約 40%。\n\n在 Claude Code 中：\n- 5 小時工作階段限制今日增加 20%\n- Opus 5.5 定價更低，因此在限制內可多使用 25%\n- Pro、Max 和 Team 使用者可隨時重置使用",
-        "es": "Opus 5.5 rinde al nivel de Fable 5.1. Es ~30% más rápido y ~40% más barato que Opus 5 por tarea.\n\nEn Claude Code:\n- Los límites de sesiones de 5 horas aumentan un 20% hoy\n- Opus 5.5 tiene un precio más bajo, por lo que rinde un 25% más dentro de los límites\n- Los usuarios Pro, Max y Team obtienen un reinicio para usar en cualquier momento",
+        "ja": "Opus 5.5 は Fable 5.1 のレベルで動作します。Opus 5 よりもタスクあたり約30%高速で、約40%安価です。\n\nClaude Code では：\n- 5時間セッション制限が本日20%増加\n- Opus 5.5 は価格が低く設定されているため、制限内で25%長く利用可能\n- Pro、Max、Team ユーザーはいつでもリセットを利用可能",
         "ko": "Opus 5.5는 Fable 5.1 수준으로 성능을 발휘합니다. Opus 5보다 작업당 ~30% 빠르고 ~40% 저렴합니다.\n\nClaude Code에서:\n- 5시간 세션 제한이 오늘 20% 증가합니다\n- Opus 5.5는 가격이 더 낮아 제한 내에서 25% 더 멀리 갑니다\n- Pro, Max, Team 사용자들은 언제든 사용할 수 있도록 리셋됩니다",
-        "de": "Opus 5.5 erreicht die Leistung von Fable 5.1. Es ist ~30 % schneller und ~40 % günstiger als Opus 5 pro Aufgabe.\n\nIn Claude Code:\n- 5-Stunden-Sitzungsgrenzen steigen heute um 20 %\n- Opus 5.5 ist günstiger, sodass es innerhalb der Grenzen 25 % weiter reicht\n- Pro-, Max- und Team-Nutzer erhalten einen Reset, den sie jederzeit nutzen können",
-        "fr": "Opus 5.5 performe au niveau de Fable 5.1. Il est ~30 % plus rapide et ~40 % moins cher qu'Opus 5 par tâche.\n\nDans Claude Code :\n- les limites de sessions de 5 heures augmentent de 20 % aujourd'hui\n- Opus 5.5 est au prix plus bas, donc il va 25 % plus loin dans les limites\n- les utilisateurs Pro, Max et Team obtiennent une remise à zéro pour utiliser à tout moment"
+        "es": "Opus 5.5 rinde al nivel de Fable 5.1. Es ~30% más rápido y ~40% más barato que Opus 5 por tarea.\n\nEn Claude Code:\n- Los límites de sesiones de 5 horas aumentan un 20% hoy\n- Opus 5.5 tiene un precio más bajo, por lo que rinde un 25% más dentro de los límites\n- Los usuarios Pro, Max y Team obtienen un reinicio para usar en cualquier momento",
+        "fr": "Opus 5.5 performe au niveau de Fable 5.1. Il est ~30 % plus rapide et ~40 % moins cher qu'Opus 5 par tâche.\n\nDans Claude Code :\n- les limites de sessions de 5 heures augmentent de 20 % aujourd'hui\n- Opus 5.5 est au prix plus bas, donc il va 25 % plus loin dans les limites\n- les utilisateurs Pro, Max et Team obtiennent une remise à zéro pour utiliser à tout moment",
+        "de": "Opus 5.5 erreicht die Leistung von Fable 5.1. Es ist ~30 % schneller und ~40 % günstiger als Opus 5 pro Aufgabe.\n\nIn Claude Code:\n- 5-Stunden-Sitzungsgrenzen steigen heute um 20 %\n- Opus 5.5 ist günstiger, sodass es innerhalb der Grenzen 25 % weiter reicht\n- Pro-, Max- und Team-Nutzer erhalten einen Reset, den sie jederzeit nutzen können"
       }
     },
     "2102435538120691886": {
@@ -1794,6 +1796,23 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-25T19:30:30.441Z"
+    },
+    "2102463847714247142": {
+      "excerpt": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+      "fullText": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
+      "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66",
+      "texts": {
+        "es": "También estamos reduciendo permanentemente el precio de la API en un 50%, lo que hace que ambos sean viables para un montón de nuevos casos de uso y permite que tu consumo rinda más, incluso en las suscripciones.",
+        "de": "Wir senken außerdem den API-Preis dauerhaft um 50 %, wodurch beide für eine Menge neuer Anwendungsfälle nutzbar werden und deine Nutzung weiter reicht, sogar bei den Abonnements.",
+        "ar": "كما أننا نُقلل بشكل دائم من سعر الـ API بنسبة 50%، مما يجعل كليهما مناسبين لعدد هائل من حالات الاستخدام الجديدة ويجعل استخدامك يذهب أبعد أيضًا، حتى في الاشتراكات.",
+        "zh": "我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。"
+      },
+      "fullTexts": {
+        "es": "GPT-6 Sol y Luna ya están disponibles. No solo representan una mejora muy significativa en todos los aspectos, sino también en la escritura y en la calidad general de \"ya sabes cuando lo pruebas\".\n\nTambién estamos reduciendo permanentemente el precio de la API en un 50%, lo que hace que ambos sean viables para un montón de nuevos casos de uso y permite que tu consumo rinda más, incluso en las suscripciones.\n\nY una cosa más. Estamos cargando un reinicio bancado en todas las cuentas de nuestros usuarios Plus, Pro y Business. ¡Vamos allá!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "de": "GPT-6 Sol und Luna sind draußen. Sie stellen nicht nur eine sehr bedeutende Verbesserung in allen Bereichen dar, sondern auch in der Schreibqualität und der allgemeinen „du weißt schon, wenn du es ausprobierst“-Qualität.\n\nWir senken außerdem den API-Preis dauerhaft um 50 %, wodurch beide für eine Menge neuer Anwendungsfälle nutzbar werden und deine Nutzung weiter reicht, sogar bei den Abonnements.\n\nUnd noch etwas. Wir laden einen gebankten Reset in alle Konten unserer Plus-, Pro- und Business-Nutzer. Los geht’s!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "ar": "صدر GPT-6 Sol و Luna. ليس فقط تحسينًا كبيرًا جدًا في جميع الجوانب، بل أيضًا في الكتابة وجودة \"تعرف عندما تجربها\" العامة.\n\nكما أننا نُقلل بشكل دائم من سعر الـ API بنسبة 50%، مما يجعل كليهما مناسبين لعدد هائل من حالات الاستخدام الجديدة ويجعل استخدامك يذهب أبعد أيضًا، حتى في الاشتراكات.\n\nوأمر آخر. نحن نُحمّل إعادة تعيين مُخزنة في جميع حسابات مستخدمي Plus و Pro و Business. هيا بنا!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "zh": "GPT-6 Sol 和 Luna 已经推出。它们不仅在各方面都有显著提升，写作以及整体上那种“试过就知道”的体验也有进步。\n\n我们还将 API 价格永久降低 50%，让这两个模型适用于更多新场景，也让你的额度更耐用，包括订阅方案。\n\n还有一件事。我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。出发吧！\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      }
     }
   },
   "pending": 66,

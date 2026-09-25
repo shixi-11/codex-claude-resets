@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-25T19:30:19.955Z",
+  "lastAttemptAt": "2026-09-25T20:00:22.056Z",
   "lastSuccessAt": "2026-09-25T19:30:19.955Z",
-  "discoveryAt": "2026-09-25T19:30:19.955Z",
+  "discoveryAt": "2026-09-25T20:00:22.056Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -55,19 +55,76 @@
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": true,
-      "checked": 14,
-      "failed": 0
+      "ok": false,
+      "checked": 0,
+      "failed": 14
     }
   ],
-  "status": "ok",
-  "failedPosts": [],
+  "status": "degraded",
+  "failedPosts": [
+    {
+      "url": "https://x.com/OpenAI/status/2103566736356458911",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2103561342057943314",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2103561343391735842",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2103548467729887677",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2102940480736821610",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2102871555244257518",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2102871554069774451",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2102871550974427462",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/OpenAI/status/2102460984782938221",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2102463847714247142",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2102438800836489554",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/claudeai/status/2102435538120691886",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/AnthropicAI/status/2100701582744797347",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://x.com/AnthropicAI/status/2100701581109072332",
+      "error": "fetch failed"
+    }
+  ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-25T19:30:19.955Z",
-      "status": "ok",
-      "checked": 3,
-      "failed": 0,
+      "lastAttemptAt": "2026-09-25T20:00:22.056Z",
+      "status": "degraded",
+      "checked": 0,
+      "failed": 3,
       "discovered": 51,
       "authors": [
         {
@@ -86,10 +143,10 @@
       "lastSuccessAt": "2026-09-25T19:30:19.955Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-25T19:30:19.955Z",
-      "status": "ok",
-      "checked": 11,
-      "failed": 0,
+      "lastAttemptAt": "2026-09-25T20:00:22.056Z",
+      "status": "degraded",
+      "checked": 0,
+      "failed": 11,
       "discovered": 53,
       "authors": [
         {

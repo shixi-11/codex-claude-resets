@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.3.3';
+export const RULES_VERSION = '1.3.4';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -63,7 +63,9 @@ export function classify(text, { truncated = false, author = '' } = {}) {
   if (!isRelevant(value, {author})) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
-  if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value)) return unknown;
+  if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
+  if (postPlatform(author)==='claude' && /(?:^|[.!?]\s+|[-:]\s*)Pro, Max, and Team users get a reset to use anytime(?:[.!?]|$)/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
+  if (author.toLowerCase()==='thsottiaux' && /(?:^|[.!?]\s+)We are loading a banked reset into all accounts of our Plus, Pro and Business users\./i.test(value)) return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
   // Tibo's complete first-person announcement uses this exact short formulation.
   // Do not infer a global reset from jokes, replies about earlier resets, or other authors.
   if (author.toLowerCase()==='thsottiaux' && /^Reset (?:all |has all |has fully |fully )?propagated\.(?: Sweet dreams\.)?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
