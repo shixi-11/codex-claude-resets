@@ -18,7 +18,7 @@ const health = JSON.parse(await readFile(new URL('data/health.json', root), 'utf
 events.forEach(validateEvent);
 let translations={posts:{}};try{translations=JSON.parse(await readFile(new URL('data/translations.json',root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
 for(const event of events){const entry=translations.posts[event.id];if(entry&&entry.excerpt===event.excerpt&&entry.contentHash===event.contentHash)event.localized={excerpt:entry.excerpt,contentHash:entry.contentHash,texts:entry.texts,fullText:entry.fullText,fullTexts:entry.fullTexts};}
-for(const platform of Object.values(platforms))for(const key of ['latest','latestGift','lastReset'])if(platform[key])platform[key]=events.find(event=>event.id===platform[key].id)||platform[key];
+for(const platform of Object.values(platforms))for(const key of ['latest','latestGift','latestReset','lastReset'])if(platform[key])platform[key]=events.find(event=>event.id===platform[key].id)||platform[key];
 await mkdir(out, { recursive: true });
 await cp(new URL('public/', root), out, { recursive: true, filter: path => !String(path).endsWith('mascot-source.png') });
 await mkdir(new URL('assets/', out), { recursive: true });

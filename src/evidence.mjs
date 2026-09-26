@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.3.5';
+export const RULES_VERSION = '1.4.0';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -39,7 +39,7 @@ export function isRelevant(text, {author = ''} = {}) {
   const value = text.replace(/[’‘]/g, "'");
   const reset = /\breset(?:s|ting|ing|ed)?\b/i.test(value);
   if (reset && /\b(?:password|router|device|factory|conversation|context|settings)\s+reset|\breset\s+(?:your |the )?(?:password|router|device|context|settings)\b/i.test(value) && !/quota|usage|allowance|weekly|5.hour|banked/i.test(value)) return false;
-  if (reset && (author.toLowerCase()==='thsottiaux' || /codex|claude|usage|limits?|quotas?|allowance|banked|credits?|all users|everyone/i.test(value))) return true;
+  if (reset && (author.toLowerCase()==='thsottiaux' || /codex|claude|usage|limits?|quotas?|allowance|banked|credits?|all users|everyone|\b(?:Pro|Max|Plus|Team|Business)\b/i.test(value))) return true;
   return /\b(?:usage|rate|weekly|daily|5.hour|5h|subscription)\s+(?:limits?|quotas?|allowance|allocation)\b|\b(?:weekly|subscription)\s+usage\b|\busage\b.{0,60}\b(?:subscription|allocation|allowance)\b|\b(?:quota|allowance)\b|\b(?:codex|claude(?: code)?)(?:'s)?\s+(?:(?:weekly|usage|rate)\s+)?limits?\b|\b(?:usage consumption|usage optimizations)\b/i.test(value);
 }
 
@@ -58,23 +58,21 @@ export function reclassifyEvents(events) {
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
 export function classify(text, { truncated = false, author = '' } = {}) {
-  const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\s+/g, ' ').trim();
+  const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
   if (!isRelevant(value, {author})) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
-  if (postPlatform(author)==='claude' && /(?:^|[.!?]\s+|[-:]\s*)Pro, Max, and Team users get a reset to use anytime(?:[.!?]|$)/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
-  if (author.toLowerCase()==='thsottiaux' && /(?:^|[.!?]\s+)We are loading a banked reset into all accounts of our Plus, Pro and Business users\./i.test(value)) return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
+  if (/\b(?:users|subscribers|accounts) (?:now )?(?:get|receive|have received) (?:a|one) reset (?:to use|you can use) (?:anytime|later|at any time)\b/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
   // Tibo's complete first-person announcement uses this exact short formulation.
   // Do not infer a global reset from jokes, replies about earlier resets, or other authors.
-  if (author.toLowerCase()==='thsottiaux' && /^Resets? (?:all |has all |have all |has fully |have fully |fully )?propagated\.(?: Sweet dreams\.| That will be all\. Have a fantastic weekend\.)?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
-  if (author.toLowerCase()==='thsottiaux' && /^All reset for everyone\.(?: Enjoy the week with Astra\.)?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
+  if (author.toLowerCase()==='thsottiaux' && /^(?:Resets? (?:(?:has|have) )?(?:(?:all|fully|successfully) )*(?:propagated|completed)|All reset for everyone)(?:[.!]|$)/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
   if (author.toLowerCase()==='thsottiaux' && /\b(?:Astra|Codex) users\b/i.test(value) && /(?:^|[.!?]\s+)(?:And of course,?\s+)?a reset is (?:also )?landing by midnight today\.$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
     if (/\b(?:affected|not fully applying)\b/i.test(value) && /getting another|replacement|replac|compensat/i.test(value)) return {kind:'banked',state:'announced',reason:'replacement-credit'};
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
-    if (/\bwe (?:will|are going to)|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };
+    if (/\bwe (?:will|are going to|are (?:loading|granting|adding|giving|sending))|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };
     return { kind: 'usage', state: 'information', reason: 'bank-information' };
   }
   if (/\b(?:codex|claude|chatgpt work|everyone|all users|all subscribers|all paid|paid (?:users|plans|subscriptions)|global)\b/i.test(value)) {

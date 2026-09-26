@@ -81,7 +81,8 @@ try {
     if (!post) return;
     const check = platformChecks[postPlatform(post.author)];
     check.discovered++;
-    if(candidate.relay?.text&&!/reset|usage|allowance|quota|limit|credit/i.test(candidate.relay.text))return;
+    const candidateText=candidate.relay?.raw_text?.text||candidate.relay?.text;
+    if(candidateText&&!/(?:…|\.\.\.)\s*$/.test(candidateText)&&!/reset|usage|allowance|quota|limit|credit/i.test(candidateText))return;
     // Snowflake creation time comes from the verified post ID, never from the discovery feed.
     const publishedAt = new Date(Number((BigInt(post.id) >> 22n) + 1288834974657n)).toISOString();
     if (Date.parse(publishedAt) > Date.now() + 300000) return;
@@ -90,7 +91,7 @@ try {
         ? { ...post, text: candidate.fullText, truncated: /(?:…|\.\.\.)\s*$/.test(candidate.fullText) }
         : extractEmbed(await request(`https://publish.twitter.com/oembed?url=${encodeURIComponent(post.url)}&omit_script=true`), post.url);
       let provenance=candidate.fullText?'x-api':'x-oembed';
-      if(source.truncated&&/reset|usage|quota|limit|credit/i.test(source.text+' '+(candidate.relay?.text||''))){
+      if(source.truncated){
         try{
           const relay=candidate.relay||(await request(`https://api.fxtwitter.com/${post.author}/status/${post.id}`)).tweet;
           source=corroborateRelay(source,relay);provenance='x-oembed+fxembed';
@@ -130,6 +131,7 @@ for(const [key,platform] of Object.entries(platforms)){
  platform.latest=records[0]||null;
  platform.latestGift=records.find(event=>event.kind==='banked'&&['announced','reported'].includes(event.state))||null;
  const latestReset=records.find(event=>event.kind==='global'&&['announced','reported'].includes(event.state));
+ platform.latestReset=latestReset||null;
  platform.lastReset=records.find(event=>event.kind==='global'&&event.state==='reported')||null;
  if(latestReset?.state==='announced'&&!latestReset.resetAt){
   platform.reset={state:'announced',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt,...(/a reset is (?:also )?landing by midnight today\./i.test(latestReset.fullText||'')?{deadlineText:'by midnight today'}:{})};
