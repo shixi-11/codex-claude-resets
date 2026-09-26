@@ -1871,8 +1871,57 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-26T21:22:26.955Z"
+    },
+    "2103963215885701493": {
+      "excerpt": "More resets coming next week",
+      "contentHash": "d75ba03700556d54dd2b0c73fa1febb2a482f9454a38fa611904bb341f0be010",
+      "texts": {
+        "zh": "下周会有更多重置。",
+        "zh-Hant": "下週還會有更多重置。",
+        "ko": "다음 주에 더 많은 리셋이 올 거야.",
+        "es": "Habrá más reinicios la próxima semana.",
+        "de": "Mehr Resets kommen nächste Woche."
+      },
+      "fullText": "Sorry Gia. More resets coming next week",
+      "fullTexts": {
+        "zh": "抱歉，Gia。下周会有更多重置。",
+        "zh-Hant": "抱歉，Gia。下週還會有更多重置。",
+        "ko": "미안해, Gia. 다음 주에 더 많은 리셋이 올 거야.",
+        "es": "Lo siento, Gia. Habrá más reinicios la próxima semana.",
+        "fr": "Désolé Gia. Plus de resets arrivent la semaine prochaine.",
+        "de": "Entschuldigung, Gia. Mehr Resets kommen nächste Woche.",
+        "ar": "عذرًا يا جيا. المزيد من إعادات التعيين قادمة الأسبوع القادم"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-26T23:51:02.878Z"
+    },
+    "2076119366647894371": {
+      "excerpt": "Step 1: Install CLIProxyAPI Step 2: Connect Step 3: Define following alias and enjoy claudex ``` alias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\ CLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\ CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\ ENABLE_TOOL_SEARCH=false…",
+      "contentHash": "64387537d816000a3f810f419854891416df9aed7c47db89ccfb8f55de797263",
+      "texts": {
+        "zh": "如果这个被屏蔽了，我欠你一个重置。",
+        "zh-Hant": "如果這被封鎖了，我欠您一個重置。",
+        "ja": "これがブロックされたら、リセットを保証するよ。",
+        "ko": "이게 차단되면, 리셋 하나를 당신에게 빚지게 됩니다.",
+        "es": "Si esto se bloquea, te debo un reinicio.",
+        "de": "Falls das blockiert wird, schulde ich dir einen Reset.",
+        "ar": "إذا تم حظر هذا، أنا مدين لك بإعادة تعيين."
+      },
+      "fullText": "If you aren't yet bold enough to install the Codex app, you can stay in the presence of your orange crab and point it at GPT 5.6 Sol. Takes 5 minutes. Kudos to Theo for explaining one of the ways to get this done.\n\nStep 1: Install CLIProxyAPI\nStep 2: Connect\nStep 3: Define following alias and enjoy claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nIf this gets blocked, I owe you a reset.",
+      "fullTexts": {
+        "zh": "如果你还没有足够大胆到安装 Codex 应用，你可以留在你的橙色螃蟹身边，并将它指向 GPT 5.6 Sol。只需 5 分钟。感谢 Theo 解释了实现这个目标的一种方法。\n\n步骤 1：安装 CLIProxyAPI\n步骤 2：连接\n步骤 3：定义以下别名并享受 claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\n如果这个被屏蔽了，我欠你一个重置。",
+        "zh-Hant": "如果您還不夠大膽到安裝 Codex 應用程式，您可以留在您的橙色螃蟹旁邊，並將它指向 GPT 5.6 Sol。只需 5 分鐘。感謝 Theo 解釋了完成這件事的一種方法。\n\n步驟 1：安裝 CLIProxyAPI\n步驟 2：連接\n步驟 3：定義以下別名並享受 claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\n如果這被封鎖了，我欠您一個重置。",
+        "ja": "まだCodexアプリをインストールするほど大胆じゃないなら、オレンジ色の蟹のそばにいて、それをGPT 5.6 Solに向けるだけでもいい。5分で終わるよ。Theoがこれをやる方法の一つを説明してくれたことに感謝。\n\nステップ1: CLIProxyAPIをインストール\nステップ2: 接続\nステップ3: 以下のエイリアスを定義して、claudexを楽しむ\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nこれがブロックされたら、リセットを保証するよ。",
+        "ko": "만약 Codex 앱을 설치할 만큼 아직 대담하지 않다면, 오렌지 게와 함께 머무르며 GPT 5.6 Sol을 가리키기만 하면 됩니다. 5분이면 충분합니다. 이 방법 중 하나를 설명해준 Theo에게 경의를 표합니다.\n\n단계 1: CLIProxyAPI 설치\n단계 2: 연결\n단계 3: 다음 별칭을 정의하고 claudex를 즐기세요\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\n이게 차단되면, 리셋 하나를 당신에게 빚지게 됩니다.",
+        "es": "Si aún no te sientes lo suficientemente audaz para instalar la app Codex, puedes quedarte en la presencia de tu cangrejo naranja y apuntarlo hacia GPT 5.6 Sol. Toma 5 minutos. Felicitaciones a Theo por explicar una de las formas de lograr esto.\n\nPaso 1: Instala CLIProxyAPI\nPaso 2: Conecta\nPaso 3: Define el siguiente alias y disfruta de claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nSi esto se bloquea, te debo un reinicio.",
+        "de": "Falls du noch nicht mutig genug bist, die Codex-App zu installieren, kannst du bei deinem orangen Krebs bleiben und ihn auf GPT 5.6 Sol richten. Dauert 5 Minuten. Kudos an Theo, der eine der Möglichkeiten erklärt hat, das hinzubekommen.\n\nSchritt 1: Installiere CLIProxyAPI\nSchritt 2: Verbinde\nSchritt 3: Definiere den folgenden Alias und genieße claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nFalls das blockiert wird, schulde ich dir einen Reset.",
+        "ar": "إذا لم تكن بعد جريئًا بما يكفي لتثبيت تطبيق Codex، يمكنك البقاء في حضور سرطانك البرتقالي وتوجيهه نحو GPT 5.6 Sol. يستغرق الأمر 5 دقائق. تهانينا لثيو على شرح إحدى الطرق لإنجاز هذا.\n\nالخطوة 1: تثبيت CLIProxyAPI\nالخطوة 2: الاتصال\nالخطوة 3: تعريف الاسم المستعار التالي واستمتع بـ claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nإذا تم حظر هذا، أنا مدين لك بإعادة تعيين.",
+        "fr": "Si vous n’êtes pas encore assez audacieux pour installer l’application Codex, vous pouvez rester en présence de votre crabe orange et le pointer vers GPT 5.6 Sol. Ça prend 5 minutes. Bravo à Theo pour avoir expliqué l’une des façons de faire ça.\n\nÉtape 1 : Installer CLIProxyAPI\nÉtape 2 : Se connecter\nÉtape 3 : Définir l’alias suivant et profiter de claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nSi ça se fait bloquer, je vous dois un reset."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-26T23:51:18.402Z"
     }
   },
-  "pending": 69,
-  "lastAttemptAt": "2026-09-26T21:31:11.745Z"
+  "pending": 73,
+  "lastAttemptAt": "2026-09-26T23:51:19.750Z"
 }
