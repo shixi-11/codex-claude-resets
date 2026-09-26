@@ -1855,7 +1855,8 @@
         "zh": "重置所有已传播的。",
         "ja": "すべての伝播をリセットしました。",
         "ko": "모든 전파된 것을 재설정합니다.",
-        "fr": "Réinitialise tout ce qui a été propagé."
+        "fr": "Réinitialise tout ce qui a été propagé.",
+        "es": "Reinicia todo lo propagado."
       },
       "fullText": "Resets all propagated. That will be all. Have a fantastic weekend.",
       "fullTexts": {
@@ -1865,12 +1866,13 @@
         "ko": "모든 전파된 것을 재설정합니다. 그게 전부입니다. 멋진 주말 보내세요.",
         "fr": "Réinitialise tout ce qui a été propagé. Ce sera tout. Passez un excellent week-end.",
         "de": "Setzt alle propagierten zurück. Das war’s. Haben Sie ein fantastisches Wochenende.",
-        "ar": "يُعيد تعيين جميع المنقولة. هذا كل شيء. أتمنى لكِ عطلة نهاية أسبوع رائعة."
+        "ar": "يُعيد تعيين جميع المنقولة. هذا كل شيء. أتمنى لكِ عطلة نهاية أسبوع رائعة.",
+        "es": "Reinicia todo lo propagado. Eso será todo. Que tengas un fin de semana fantástico."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-26T18:31:21.687Z"
+      "translatedAt": "2026-09-26T21:22:26.955Z"
     }
   },
-  "pending": 70,
-  "lastAttemptAt": "2026-09-26T18:31:35.641Z"
+  "pending": 69,
+  "lastAttemptAt": "2026-09-26T21:22:43.027Z"
 }
