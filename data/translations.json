@@ -1819,8 +1819,35 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-25T20:06:50.000Z"
+    },
+    "2103637477760311522": {
+      "excerpt": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work sorry about the brief…",
+      "contentHash": "d7b13796da3548f665c218f835a73359a2fb05a5167149b3fdedd9506ae9fc0e",
+      "texts": {
+        "zh": "哦是的……我们重新上线了，我们将为所有付费用户重置 codex 和 ChatGPT 的使用限制",
+        "zh-Hant": "哦是的… 我們重新上線了，並將為所有付費用戶重置 codex 和 ChatGPT 的使用限制",
+        "ko": "오 예… 다시 작동 중이고 codex와 ChatGPT 전체에서 모든 유료 사용자에 대한 사용 한도를 재설정할게요",
+        "ja": "おお、そうだね… 私たちは再び稼働中で、CodexとChatGPT全体で全有料ユーザーの使用制限をリセットするよ",
+        "es": "oh sí… estamos de vuelta en acción y restableceremos los límites de uso para todos los usuarios de pago en codex y ChatGPT work",
+        "fr": "oh oui… nous sommes de retour en action et nous réinitialiserons les limites d'utilisation pour tous les utilisateurs payants sur Codex et ChatGPT work",
+        "ar": "أوه نعم… لقد عدنا إلى العمل ولنعيد تعيين حدود الاستخدام لجميع المستخدمين المدفوعين عبر codex و ChatGPT work",
+        "de": "o ja… wir sind wieder im Einsatz und werden die Nutzungsbeschränkungen für alle zahlenden Nutzer bei Codex und ChatGPT zurücksetzen"
+      },
+      "fullText": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
+      "fullTexts": {
+        "zh": "哦是的……我们重新上线了，我们将为所有付费用户重置 codex 和 ChatGPT 的使用限制\n\n抱歉短暂中断！\n\n（是的，当系统宕机时，我们有一个特别的备用 codex 来帮助我们）",
+        "zh-Hant": "哦是的… 我們重新上線了，並將為所有付費用戶重置 codex 和 ChatGPT 的使用限制\n\n抱歉這短暫的中斷！\n\n（而且是的，當系統出問題時，我們有一個特別備用的 codex 來幫忙）",
+        "ko": "오 예… 다시 작동 중이고 codex와 ChatGPT 전체에서 모든 유료 사용자에 대한 사용 한도를 재설정할게요\n\n짧은 중단에 대해 죄송합니다!\n\n(그리고 예, 문제가 생겼을 때 우리를 도와주기 위해 특별 예비 codex를 가지고 있어요)",
+        "ja": "おお、そうだね… 私たちは再び稼働中で、CodexとChatGPT全体で全有料ユーザーの使用制限をリセットするよ\n\nちょっとした中断、本当にごめん！\n\n（そしてそう、私たちは何か問題が起きたときに助けてもらえる特別な予備のCodexを持ってるんだ）",
+        "es": "oh sí… estamos de vuelta en acción y restableceremos los límites de uso para todos los usuarios de pago en codex y ChatGPT work\n\n¡lo sentimos por la breve interrupción!\n\n(y sí, tenemos un codex de repuesto especial cuando las cosas están caídas para ayudarnos)",
+        "fr": "oh oui… nous sommes de retour en action et nous réinitialiserons les limites d'utilisation pour tous les utilisateurs payants sur Codex et ChatGPT work\n\ndésolé pour cette brève interruption !\n\n(et oui, nous avons un Codex de secours spécial quand les choses sont en panne pour nous aider)",
+        "ar": "أوه نعم… لقد عدنا إلى العمل ولنعيد تعيين حدود الاستخدام لجميع المستخدمين المدفوعين عبر codex و ChatGPT work\n\nعذرًا بسبب الاضطراب القصير!\n\n(ونعم، لدينا codex احتياطي خاص عندما تتعطل الأمور لمساعدتنا)",
+        "de": "o ja… wir sind wieder im Einsatz und werden die Nutzungsbeschränkungen für alle zahlenden Nutzer bei Codex und ChatGPT zurücksetzen\n\nsorry für die kurze Unterbrechung!\n\n(und ja, wir haben einen speziellen Ersatz-Codex, wenn es mal Probleme gibt, um uns zu helfen)"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-26T00:56:42.493Z"
     }
   },
   "pending": 67,
-  "lastAttemptAt": "2026-09-25T22:45:58.205Z"
+  "lastAttemptAt": "2026-09-26T00:56:55.360Z"
 }
