@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-27T08:21:51.806Z",
+  "lastAttemptAt": "2026-09-27T08:35:11.916Z",
   "lastSuccessAt": "2026-09-27T02:45:44.963Z",
-  "discoveryAt": "2026-09-27T08:21:51.806Z",
+  "discoveryAt": "2026-09-27T08:35:11.916Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -17,8 +17,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 13
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -33,8 +33,8 @@
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": true,
-      "candidates": 16
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -49,8 +49,8 @@
       "url": "https://api.fxtwitter.com/2/profile/claudeai/statuses?count=40&with_replies=1",
       "author": "claudeai",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 15
     },
     {
       "name": "Codex Reset Monitor · discovery only",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 367,
+      "checked": 365,
       "failed": 2
     }
   ],
@@ -91,11 +91,11 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-27T08:21:51.806Z",
+      "lastAttemptAt": "2026-09-27T08:35:11.916Z",
       "status": "degraded",
       "checked": 339,
       "failed": 2,
-      "discovered": 341,
+      "discovered": 354,
       "authors": [
         {
           "author": "thsottiaux",
@@ -103,7 +103,7 @@
         },
         {
           "author": "OpenAIDevs",
-          "ok": false
+          "ok": true
         },
         {
           "author": "OpenAI",
@@ -113,15 +113,15 @@
       "lastSuccessAt": "2026-09-27T02:45:44.963Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-27T08:21:51.806Z",
+      "lastAttemptAt": "2026-09-27T08:35:11.916Z",
       "status": "degraded",
-      "checked": 28,
+      "checked": 26,
       "failed": 0,
-      "discovered": 55,
+      "discovered": 59,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "AnthropicAI",
@@ -129,7 +129,7 @@
         },
         {
           "author": "claudeai",
-          "ok": false
+          "ok": true
         }
       ],
       "lastSuccessAt": "2026-09-27T02:45:44.963Z"
