@@ -1922,8 +1922,32 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-26T23:51:18.402Z"
+    },
+    "2104641323198472430": {
+      "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
+      "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b",
+      "texts": {
+        "zh-Hant": "我們在上週二為所有 Pro、Max 和 Team 使用者重置了一次。",
+        "zh": "我们上周二为所有 Pro、Max 和 Team 用户提供了一次重置。",
+        "ja": "5 は現在、Claude Platform および Claude Code で利用可能です。",
+        "ko": "5는 현재 Claude Platform과 Claude Code에서 사용할 수 있습니다.",
+        "es": "El martes pasado otorgamos un reinicio a todos los usuarios de Pro, Max y Team.",
+        "de": "Wir haben allen Pro-, Max- und Team-Nutzern letzten Dienstag einen Reset gewährt."
+      },
+      "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
+      "fullTexts": {
+        "zh-Hant": "Sonnet 5.5 現已在 Claude 平台和 Claude Code 中提供。\n\n我們在上週二為所有 Pro、Max 和 Team 使用者重置了一次。如果您尚未使用它，您仍然可以在 10 月 22 日之前隨時應用它。https://clau.de/reset",
+        "zh": "Sonnet 5.5 现已在 Claude 平台和 Claude Code 中提供。\n\n我们上周二为所有 Pro、Max 和 Team 用户提供了一次重置。如果您尚未使用它，您仍然可以在 10 月 22 日之前随时应用它。https://clau.de/reset",
+        "ja": "Sonnet 5.5 は現在、Claude Platform および Claude Code で利用可能です。\n\n先週の火曜日に、すべての Pro、Max、Team ユーザーに対してリセットを付与しました。まだ使用していない場合、10月22日以前であればいつでも適用できます。https://clau.de/reset",
+        "ko": "Sonnet 5.5는 현재 Claude Platform과 Claude Code에서 사용할 수 있습니다.\n\n지난 화요일에 모든 Pro, Max, Team 사용자에게 리셋을 부여했습니다. 아직 사용하지 않으셨다면 10월 22일 이전 언제든지 적용할 수 있습니다. https://clau.de/reset",
+        "fr": "Sonnet 5.5 est maintenant disponible dans la plateforme Claude et Claude Code.\n\nNous avons accordé à tous les utilisateurs Pro, Max et Team une remise à zéro le mardi dernier. Si vous ne l’avez pas encore utilisée, vous pouvez toujours l’appliquer quand vous voulez, avant le 22 octobre. https://clau.de/reset",
+        "es": "Soneto 5.5 ya está disponible en la Plataforma Claude y Claude Code.\n\nEl martes pasado otorgamos un reinicio a todos los usuarios de Pro, Max y Team. Si aún no lo has utilizado, todavía puedes aplicarlo cuando quieras, antes del 22 de octubre. https://clau.de/reset",
+        "de": "Sonett 5.5 ist jetzt in der Claude-Plattform und Claude Code verfügbar.\n\nWir haben allen Pro-, Max- und Team-Nutzern letzten Dienstag einen Reset gewährt. Wenn Sie ihn noch nicht genutzt haben, können Sie ihn immer noch anwenden, wann immer Sie möchten, vor dem 22. Oktober. https://clau.de/reset"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-28T23:29:39.477Z"
     }
   },
-  "pending": 72,
-  "lastAttemptAt": "2026-09-28T18:35:24.999Z"
+  "pending": 74,
+  "lastAttemptAt": "2026-09-28T23:30:05.605Z"
 }
