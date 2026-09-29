@@ -1973,8 +1973,36 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-09-29T09:04:50.159Z"
+    },
+    "2104993969486930015": {
+      "excerpt": "We are also committing to not reintroducing the 5hr limit so that you can fully use your weekly usage when you want.",
+      "contentHash": "742354a451a1defa4ce89aaf53da6ba0b0c91536f75e3f8d56390fea10c78fe7",
+      "texts": {
+        "zh-Hant": "我們也承諾不再重新引入 5 小時限制，讓您能夠在想要的時候充分利用每週使用額度。",
+        "ja": "このモデルは、Astraに近い機能を、日常的に使用できるモデルに提供します。",
+        "fr": "Nous nous engageons également à ne pas réintroduire la limite de 5 heures afin que vous puissiez pleinement utiliser votre consommation hebdomadaire quand vous le souhaitez.",
+        "de": "Wir verpflichten uns auch dazu, das 5-Stunden-Limit nicht wieder einzuführen, damit Sie Ihre wöchentliche Nutzung voll und ganz dann einsetzen können, wenn Sie möchten.",
+        "ar": "نحن أيضًا نعيد فتح اشتراكات Pro 200، مع الاستمرار في الوصول إلى نماذج الحدود الأمامية مثل Astra، بما في ذلك نموذجنا الجديد GPT-6."
+      },
+      "fullText": "We’re also reopening Pro 200 subscriptions, with continued access to frontier models like Astra, including our new GPT-6.1 Sol model which brings near-Astra capabilities to a model you can use every day.\n\nOur commitment is that your subscription will continue to help you get more work done with an increasing level of quality.\n\nWe are also committing to not reintroducing the 5hr limit so that you can fully use your weekly usage when you want.",
+      "fullTexts": {
+        "zh-Hant": "我們也正在重新開放 Pro 200 訂閱方案，持續提供對如 Astra 等前沿模型的存取權限，包括我們全新的 GPT-6.1 Sol 模型，它將近似 Astra 的能力帶入您日常可用的模型中。\n\n我們的承諾是，您的訂閱將持續幫助您以日益提升的品質完成更多工作。\n\n我們也承諾不再重新引入 5 小時限制，讓您能夠在想要的時候充分利用每週使用額度。",
+        "ja": "私たちはまた、Pro 200サブスクリプションを再開します。Astraのような最先端モデルへの継続的なアクセスを含み、私たちの新しいGPT-6.1 Solモデルが含まれます。このモデルは、Astraに近い機能を、日常的に使用できるモデルに提供します。\n\n私たちの約束は、あなたのサブスクリプションが、ますます高い品質のレベルで、より多くの仕事をするのを助け続けることです。\n\n私たちはまた、5時間制限を再導入しないことを約束し、あなたが望むときに週の使用量を完全に活用できるようにします。",
+        "fr": "Nous rouvrons également les abonnements Pro 200, avec un accès continu aux modèles de pointe comme Astra, y compris notre nouveau modèle GPT-6.1 Sol qui apporte des capacités proches d’Astra à un modèle que vous pouvez utiliser tous les jours.\n\nNotre engagement est que votre abonnement continuera à vous aider à accomplir davantage de travail avec un niveau de qualité croissant.\n\nNous nous engageons également à ne pas réintroduire la limite de 5 heures afin que vous puissiez pleinement utiliser votre consommation hebdomadaire quand vous le souhaitez.",
+        "de": "Wir öffnen auch die Pro 200-Abonnements wieder, mit weiterhinem Zugang zu Frontier-Modellen wie Astra, einschließlich unseres neuen GPT-6.1 Sol-Modells, das nahezu Astra-Fähigkeiten in ein Modell bringt, das Sie täglich nutzen können.\n\nUnser Versprechen ist, dass Ihr Abonnement Ihnen weiterhin dabei hilft, mehr Arbeit zu erledigen, mit einer zunehmend höheren Qualität.\n\nWir verpflichten uns auch dazu, das 5-Stunden-Limit nicht wieder einzuführen, damit Sie Ihre wöchentliche Nutzung voll und ganz dann einsetzen können, wenn Sie möchten.",
+        "ar": "نحن أيضًا نعيد فتح اشتراكات Pro 200، مع الاستمرار في الوصول إلى نماذج الحدود الأمامية مثل Astra، بما في ذلك نموذجنا الجديد GPT-6.1 Sol الذي يجلب قدرات قريبة من Astra إلى نموذج يمكنك استخدامه يوميًا.\n\nالتزامنا هو أن اشتراكك سيستمر في مساعدتك على إنجاز المزيد من العمل بمستوى متزايد من الجودة.\n\nنحن أيضًا نلتزم بعدم إعادة إدخال حد 5 ساعات حتى تتمكن من استخدام استخدامك الأسبوعي بالكامل عندما تريد."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-09-29T20:14:48.652Z"
+    },
+    "2104993967985381673": {
+      "excerpt": "To access it in Codex and ChatGPT Work, we’re introducing Pro 500—a new plan with our highest usage limits (25x Plus) and access to…",
+      "contentHash": "faca4e357621d09d06e1665bf508fa861b21f17d92c9985289cb4a8027c76edb",
+      "texts": {},
+      "fullText": "Ultrafast is available today for GPT-6 Astra in Codex, ChatGPT Work, and the API, with GPT-6.1 Sol coming soon.\n\nTo access it in Codex and ChatGPT Work, we’re introducing Pro 500—a new plan with our highest usage limits (25x Plus) and access to Ultrafast.",
+      "fullTexts": {}
     }
   },
-  "pending": 74,
-  "lastAttemptAt": "2026-09-29T15:44:29.185Z"
+  "pending": 85,
+  "lastAttemptAt": "2026-09-29T20:15:02.813Z"
 }
