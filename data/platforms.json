@@ -24,7 +24,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/OpenAI/status/2104993969486930015",
-      "rulesVersion": "1.4.0",
+      "rulesVersion": "1.4.1",
       "contentHash": "742354a451a1defa4ce89aaf53da6ba0b0c91536f75e3f8d56390fea10c78fe7"
     },
     "lastReset": {
@@ -60,7 +60,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
-      "rulesVersion": "1.4.0",
+      "rulesVersion": "1.4.1",
       "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66"
     },
     "latestReset": {
@@ -113,9 +113,9 @@
     },
     "latest": {
       "id": "2104641323198472430",
-      "kind": "signal",
-      "state": "unconfirmed",
-      "reason": "ambiguous",
+      "kind": "banked",
+      "state": "reported",
+      "reason": "explicit-bank-grant",
       "author": "ClaudeDevs",
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
@@ -125,7 +125,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.0",
+      "rulesVersion": "1.4.1",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "lastReset": {
@@ -147,21 +147,21 @@
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
-      "id": "2102438800836489554",
+      "id": "2104641323198472430",
       "kind": "banked",
       "state": "reported",
       "reason": "explicit-bank-grant",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "sourceUrl": "https://x.com/ClaudeDevs/status/2102438800836489554",
-      "publishedAt": "2026-09-22T16:44:06.200Z",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
+      "publishedAt": "2026-09-28T18:36:08.452Z",
       "verifiedAt": "2026-09-29T20:17:04.778Z",
-      "excerpt": "In Claude Code: - 5-hour session limits increase 20% today - Opus 5.5 is priced lower, so it goes 25% further within limits -…",
-      "fullText": "Opus 5.5 performs at the level of Fable 5.1. It's ~30% faster and ~40% cheaper than Opus 5 per task.\n\nIn Claude Code:\n- 5-hour session limits increase 20% today\n- Opus 5.5 is priced lower, so it goes 25% further within limits\n- Pro, Max, and Team users get a reset to use anytime",
+      "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
+      "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.0",
-      "contentHash": "1ce5c037a1b03ca2d5305ca8c3df954dde728c8472156deff27baef674e0e662"
+      "rulesVersion": "1.4.1",
+      "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
       "id": "2094856679250919746",
