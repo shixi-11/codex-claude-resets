@@ -1982,7 +1982,10 @@
         "ja": "このモデルは、Astraに近い機能を、日常的に使用できるモデルに提供します。",
         "fr": "Nous nous engageons également à ne pas réintroduire la limite de 5 heures afin que vous puissiez pleinement utiliser votre consommation hebdomadaire quand vous le souhaitez.",
         "de": "Wir verpflichten uns auch dazu, das 5-Stunden-Limit nicht wieder einzuführen, damit Sie Ihre wöchentliche Nutzung voll und ganz dann einsetzen können, wenn Sie möchten.",
-        "ar": "نحن أيضًا نعيد فتح اشتراكات Pro 200، مع الاستمرار في الوصول إلى نماذج الحدود الأمامية مثل Astra، بما في ذلك نموذجنا الجديد GPT-6."
+        "ar": "نحن أيضًا نعيد فتح اشتراكات Pro 200، مع الاستمرار في الوصول إلى نماذج الحدود الأمامية مثل Astra، بما في ذلك نموذجنا الجديد GPT-6.",
+        "zh": "我们还承诺不再重新引入 5 小时限制，以便您可以在需要时充分利用您的每周使用量。",
+        "ko": "여기에는 일상적으로 사용할 수 있는 모델에 거의 Astra 수준의 기능을 가져다주는 새로운 GPT-6.",
+        "es": "También nos comprometemos a no reintroducir el límite de 5 horas para que puedas usar completamente tu uso semanal cuando quieras."
       },
       "fullText": "We’re also reopening Pro 200 subscriptions, with continued access to frontier models like Astra, including our new GPT-6.1 Sol model which brings near-Astra capabilities to a model you can use every day.\n\nOur commitment is that your subscription will continue to help you get more work done with an increasing level of quality.\n\nWe are also committing to not reintroducing the 5hr limit so that you can fully use your weekly usage when you want.",
       "fullTexts": {
@@ -1990,10 +1993,13 @@
         "ja": "私たちはまた、Pro 200サブスクリプションを再開します。Astraのような最先端モデルへの継続的なアクセスを含み、私たちの新しいGPT-6.1 Solモデルが含まれます。このモデルは、Astraに近い機能を、日常的に使用できるモデルに提供します。\n\n私たちの約束は、あなたのサブスクリプションが、ますます高い品質のレベルで、より多くの仕事をするのを助け続けることです。\n\n私たちはまた、5時間制限を再導入しないことを約束し、あなたが望むときに週の使用量を完全に活用できるようにします。",
         "fr": "Nous rouvrons également les abonnements Pro 200, avec un accès continu aux modèles de pointe comme Astra, y compris notre nouveau modèle GPT-6.1 Sol qui apporte des capacités proches d’Astra à un modèle que vous pouvez utiliser tous les jours.\n\nNotre engagement est que votre abonnement continuera à vous aider à accomplir davantage de travail avec un niveau de qualité croissant.\n\nNous nous engageons également à ne pas réintroduire la limite de 5 heures afin que vous puissiez pleinement utiliser votre consommation hebdomadaire quand vous le souhaitez.",
         "de": "Wir öffnen auch die Pro 200-Abonnements wieder, mit weiterhinem Zugang zu Frontier-Modellen wie Astra, einschließlich unseres neuen GPT-6.1 Sol-Modells, das nahezu Astra-Fähigkeiten in ein Modell bringt, das Sie täglich nutzen können.\n\nUnser Versprechen ist, dass Ihr Abonnement Ihnen weiterhin dabei hilft, mehr Arbeit zu erledigen, mit einer zunehmend höheren Qualität.\n\nWir verpflichten uns auch dazu, das 5-Stunden-Limit nicht wieder einzuführen, damit Sie Ihre wöchentliche Nutzung voll und ganz dann einsetzen können, wenn Sie möchten.",
-        "ar": "نحن أيضًا نعيد فتح اشتراكات Pro 200، مع الاستمرار في الوصول إلى نماذج الحدود الأمامية مثل Astra، بما في ذلك نموذجنا الجديد GPT-6.1 Sol الذي يجلب قدرات قريبة من Astra إلى نموذج يمكنك استخدامه يوميًا.\n\nالتزامنا هو أن اشتراكك سيستمر في مساعدتك على إنجاز المزيد من العمل بمستوى متزايد من الجودة.\n\nنحن أيضًا نلتزم بعدم إعادة إدخال حد 5 ساعات حتى تتمكن من استخدام استخدامك الأسبوعي بالكامل عندما تريد."
+        "ar": "نحن أيضًا نعيد فتح اشتراكات Pro 200، مع الاستمرار في الوصول إلى نماذج الحدود الأمامية مثل Astra، بما في ذلك نموذجنا الجديد GPT-6.1 Sol الذي يجلب قدرات قريبة من Astra إلى نموذج يمكنك استخدامه يوميًا.\n\nالتزامنا هو أن اشتراكك سيستمر في مساعدتك على إنجاز المزيد من العمل بمستوى متزايد من الجودة.\n\nنحن أيضًا نلتزم بعدم إعادة إدخال حد 5 ساعات حتى تتمكن من استخدام استخدامك الأسبوعي بالكامل عندما تريد.",
+        "zh": "我们还将重新开放 Pro 200 订阅，继续访问前沿模型如 Astra，包括我们的新 GPT-6.1 Sol 模型，它将近 Astra 级别的能力带入您日常可用的模型。\n\n我们的承诺是，您的订阅将继续帮助您以不断提高的质量水平完成更多工作。\n\n我们还承诺不再重新引入 5 小时限制，以便您可以在需要时充分利用您的每周使用量。",
+        "ko": "우리는 또한 Pro 200 구독을 재개방하며, Astra와 같은 프론티어 모델에 대한 지속적인 액세스를 제공합니다. 여기에는 일상적으로 사용할 수 있는 모델에 거의 Astra 수준의 기능을 가져다주는 새로운 GPT-6.1 Sol 모델이 포함됩니다.\n\n우리의 약속은 당신의 구독이 점점 더 높은 수준의 품질로 더 많은 작업을 완료하는 데 계속 도움이 될 것이라는 것입니다.\n\n우리는 또한 주간 사용량을 원할 때 완전히 사용할 수 있도록 5시간 제한을 다시 도입하지 않기로 약속합니다.",
+        "es": "También estamos reabriendo las suscripciones Pro 200, con acceso continuo a modelos de vanguardia como Astra, incluyendo nuestro nuevo modelo GPT-6.1 Sol, que trae capacidades cercanas a Astra a un modelo que puedes usar todos los días.\n\nNuestro compromiso es que tu suscripción seguirá ayudándote a hacer más trabajo con un nivel de calidad cada vez mayor.\n\nTambién nos comprometemos a no reintroducir el límite de 5 horas para que puedas usar completamente tu uso semanal cuando quieras."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-29T20:14:48.652Z"
+      "translatedAt": "2026-09-29T20:18:05.510Z"
     },
     "2104993967985381673": {
       "excerpt": "To access it in Codex and ChatGPT Work, we’re introducing Pro 500—a new plan with our highest usage limits (25x Plus) and access to…",
@@ -2003,6 +2009,6 @@
       "fullTexts": {}
     }
   },
-  "pending": 85,
-  "lastAttemptAt": "2026-09-29T20:15:02.813Z"
+  "pending": 82,
+  "lastAttemptAt": "2026-09-29T20:18:28.792Z"
 }
