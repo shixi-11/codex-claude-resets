@@ -1,2 +1,2 @@
-// Fixed-camera Blender render, 48 frames at 30 fps.
-export const drumFrames=48,drumColumns=6,drumSize=318,drumFps=30;
+// Approved September 30 mascot, 16 frames; original GIF timing: 20 ms per frame.
+export const drumFrames=16,drumColumns=6,drumSize=318,drumFps=50;
