@@ -2007,8 +2007,29 @@
       "texts": {},
       "fullText": "Ultrafast is available today for GPT-6 Astra in Codex, ChatGPT Work, and the API, with GPT-6.1 Sol coming soon.\n\nTo access it in Codex and ChatGPT Work, we’re introducing Pro 500—a new plan with our highest usage limits (25x Plus) and access to Ultrafast.",
       "fullTexts": {}
+    },
+    "2105672058269212820": {
+      "excerpt": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset.",
+      "contentHash": "eda9cd3a79289fdd639e4e0f9553b723264ade9e142bec5518d60ac95625a251",
+      "texts": {
+        "zh": "因为你主域名上的使用量目前几乎是无限的，我真的无法进行重置。",
+        "ja": "現在、あなたの主要なドットでの使用量が事実上無制限なので、リセットを本当に提供できません。",
+        "es": "Porque el uso en tu punto principal es prácticamente ilimitado en este momento, no puedo realmente hacer un reinicio.",
+        "de": "Da die Nutzung auf Ihrem primären Punkt derzeit quasi unbegrenzt ist, kann ich wirklich keinen Reset vornehmen.",
+        "ar": "بسبب أن الاستخدام على نقطتك الأساسية غير محدود عمليًا في الوقت الحالي، لا يمكنني حقًا تقديم إعادة تعيين."
+      },
+      "fullText": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
+      "fullTexts": {
+        "zh": "因为你主域名上的使用量目前几乎是无限的，我真的无法进行重置。我需要快速想出一些新东西。",
+        "ja": "現在、あなたの主要なドットでの使用量が事実上無制限なので、リセットを本当に提供できません。私は急いで何か新しいものを思いつく必要があります。",
+        "es": "Porque el uso en tu punto principal es prácticamente ilimitado en este momento, no puedo realmente hacer un reinicio. Necesito idear algo nuevo rápido.",
+        "de": "Da die Nutzung auf Ihrem primären Punkt derzeit quasi unbegrenzt ist, kann ich wirklich keinen Reset vornehmen. Ich muss schnell etwas Neues ausdenken.",
+        "ar": "بسبب أن الاستخدام على نقطتك الأساسية غير محدود عمليًا في الوقت الحالي، لا يمكنني حقًا تقديم إعادة تعيين. أحتاج إلى ابتكار شيء جديد بسرعة."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-01T17:46:44.100Z"
     }
   },
-  "pending": 82,
-  "lastAttemptAt": "2026-10-01T11:51:25.507Z"
+  "pending": 85,
+  "lastAttemptAt": "2026-10-01T17:46:58.934Z"
 }

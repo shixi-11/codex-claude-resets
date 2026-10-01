@@ -8,24 +8,23 @@
       "resetAt": null
     },
     "gifts": [],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "latest": {
-      "id": "2104993969486930015",
-      "kind": "usage",
-      "state": "information",
-      "reason": "usage-change",
-      "author": "OpenAI",
+      "id": "2105672058269212820",
+      "kind": "signal",
+      "state": "unconfirmed",
+      "reason": "ambiguous",
+      "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/OpenAI/status/2104993969486930015",
-      "publishedAt": "2026-09-29T17:57:25.879Z",
-      "verifiedAt": "2026-10-01T11:50:31.407Z",
-      "excerpt": "We are also committing to not reintroducing the 5hr limit so that you can fully use your weekly usage when you want.",
-      "fullText": "We’re also reopening Pro 200 subscriptions, with continued access to frontier models like Astra, including our new GPT-6.1 Sol model which brings near-Astra capabilities to a model you can use every day.\n\nOur commitment is that your subscription will continue to help you get more work done with an increasing level of quality.\n\nWe are also committing to not reintroducing the 5hr limit so that you can fully use your weekly usage when you want.",
+      "sourceUrl": "https://x.com/thsottiaux/status/2105672058269212820",
+      "publishedAt": "2026-10-01T14:51:54.843Z",
+      "verifiedAt": "2026-10-01T17:46:37.232Z",
+      "excerpt": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset.",
+      "fullText": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
       "truncated": false,
-      "provenance": "x-oembed+fxembed",
-      "relayUrl": "https://api.fxtwitter.com/OpenAI/status/2104993969486930015",
+      "provenance": "x-oembed",
       "rulesVersion": "1.4.1",
-      "contentHash": "742354a451a1defa4ce89aaf53da6ba0b0c91536f75e3f8d56390fea10c78fe7"
+      "contentHash": "eda9cd3a79289fdd639e4e0f9553b723264ade9e142bec5518d60ac95625a251"
     },
     "lastReset": {
       "id": "2103911959544610829",
@@ -95,7 +94,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-10-01T11:51:08.783Z",
+        "verifiedAt": "2026-10-01T17:46:42.189Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -105,10 +104,10 @@
         "isResetCard": false
       }
     ],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-10-01T11:51:08.783Z",
+      "checkedAt": "2026-10-01T17:46:42.189Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -120,7 +119,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
       "publishedAt": "2026-09-28T18:36:08.452Z",
-      "verifiedAt": "2026-10-01T11:50:31.407Z",
+      "verifiedAt": "2026-10-01T17:46:37.232Z",
       "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
@@ -155,7 +154,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
       "publishedAt": "2026-09-28T18:36:08.452Z",
-      "verifiedAt": "2026-10-01T11:50:31.407Z",
+      "verifiedAt": "2026-10-01T17:46:37.232Z",
       "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
