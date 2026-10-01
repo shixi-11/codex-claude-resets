@@ -2016,7 +2016,10 @@
         "ja": "現在、あなたの主要なドットでの使用量が事実上無制限なので、リセットを本当に提供できません。",
         "es": "Porque el uso en tu punto principal es prácticamente ilimitado en este momento, no puedo realmente hacer un reinicio.",
         "de": "Da die Nutzung auf Ihrem primären Punkt derzeit quasi unbegrenzt ist, kann ich wirklich keinen Reset vornehmen.",
-        "ar": "بسبب أن الاستخدام على نقطتك الأساسية غير محدود عمليًا في الوقت الحالي، لا يمكنني حقًا تقديم إعادة تعيين."
+        "ar": "بسبب أن الاستخدام على نقطتك الأساسية غير محدود عمليًا في الوقت الحالي، لا يمكنني حقًا تقديم إعادة تعيين.",
+        "zh-Hant": "因為目前你在主要帳號上的使用量幾乎是無限的，我真的無法進行重置。",
+        "ko": "현재 당신의 주 도트 사용량이 사실상 무제한이라서, 리셋을 제대로 할 수가 없어요.",
+        "fr": "Parce que l'utilisation sur votre domaine principal est virtuellement illimitée pour le moment, je ne peux pas vraiment proposer une réinitialisation."
       },
       "fullText": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
       "fullTexts": {
@@ -2024,12 +2027,42 @@
         "ja": "現在、あなたの主要なドットでの使用量が事実上無制限なので、リセットを本当に提供できません。私は急いで何か新しいものを思いつく必要があります。",
         "es": "Porque el uso en tu punto principal es prácticamente ilimitado en este momento, no puedo realmente hacer un reinicio. Necesito idear algo nuevo rápido.",
         "de": "Da die Nutzung auf Ihrem primären Punkt derzeit quasi unbegrenzt ist, kann ich wirklich keinen Reset vornehmen. Ich muss schnell etwas Neues ausdenken.",
-        "ar": "بسبب أن الاستخدام على نقطتك الأساسية غير محدود عمليًا في الوقت الحالي، لا يمكنني حقًا تقديم إعادة تعيين. أحتاج إلى ابتكار شيء جديد بسرعة."
+        "ar": "بسبب أن الاستخدام على نقطتك الأساسية غير محدود عمليًا في الوقت الحالي، لا يمكنني حقًا تقديم إعادة تعيين. أحتاج إلى ابتكار شيء جديد بسرعة.",
+        "zh-Hant": "因為目前你在主要帳號上的使用量幾乎是無限的，我真的無法進行重置。我需要快點想出一些新東西。",
+        "ko": "현재 당신의 주 도트 사용량이 사실상 무제한이라서, 리셋을 제대로 할 수가 없어요. 빨리 뭔가 새로운 걸 생각해내야 해요.",
+        "fr": "Parce que l'utilisation sur votre domaine principal est virtuellement illimitée pour le moment, je ne peux pas vraiment proposer une réinitialisation. Je dois trouver quelque chose de nouveau rapidement."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-01T17:46:44.100Z"
+      "translatedAt": "2026-10-01T22:01:32.564Z"
+    },
+    "2105721630051692804": {
+      "excerpt": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less…",
+      "contentHash": "7c76701cdc7c57c48113dac4a601251687d0e4fa817fe356b86f60a97f4d9e99",
+      "texts": {
+        "zh-Hant": "連續兩週，在 Claude 應用程式中啟動一個設計、簡報或文件，後續在該對話中進行的所有工作，將使用您 50% 更少的用量限制。",
+        "zh": "在接下来的两周内，在 Claude 应用中启动一个设计、幻灯片或文档，随后在该对话中进行的工作将使用您 50% 更少的用量限制。",
+        "ko": "두 주 동안 Claude 앱에서 디자인, 데크, 또는 문서를 시작하면, 그 대화에서 이어지는 작업이 사용 한도 50% 적게 소모됩니다.",
+        "ja": "2週間以内に、Claudeアプリでデザイン、デッキ、またはドキュメントを開始すると、その会話で続く作業が使用制限の50%少なく利用できます。",
+        "es": "Durante dos semanas, inicia un diseño, presentación o documento en la aplicación de Claude, y el trabajo que continúe en esa conversación utilizará un 50% menos de tus límites de uso.",
+        "fr": "Pendant deux semaines, commencez un design, un jeu de diapositives ou un document dans l'application Claude, et le travail qui suit dans cette conversation utilise 50 % moins de vos limites d'utilisation.",
+        "de": "Für zwei Wochen: Starten Sie ein Design, ein Deck oder ein Dokument in der Claude-App, und die darauf folgende Arbeit in diesem Gespräch verbraucht 50 % weniger von Ihren Nutzungsgrenzen.",
+        "ar": "لمدة أسبوعين، ابدأ تصميمًا، أو عرضًا تقديميًا، أو مستندًا في تطبيق Claude، والعمل الذي يليه في تلك المحادثة يستخدم 50% أقل من حدود الاستخدام الخاصة بك."
+      },
+      "fullText": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less of your usage limits.\n\nGive it a try with Claude Sonnet 5.5. It has a strong eye for design and builds slides that need minimal editing.",
+      "fullTexts": {
+        "zh-Hant": "連續兩週，在 Claude 應用程式中啟動一個設計、簡報或文件，後續在該對話中進行的所有工作，將使用您 50% 更少的用量限制。\n\n試試用 Claude Sonnet 5.5 來體驗。它擁有出色的設計眼光，並能製作需要最少編輯的投影片。",
+        "zh": "在接下来的两周内，在 Claude 应用中启动一个设计、幻灯片或文档，随后在该对话中进行的工作将使用您 50% 更少的用量限制。\n\n用 Claude Sonnet 5.5 试试看吧。它对设计有敏锐的眼光，并能制作出几乎无需编辑的幻灯片。",
+        "ko": "두 주 동안 Claude 앱에서 디자인, 데크, 또는 문서를 시작하면, 그 대화에서 이어지는 작업이 사용 한도 50% 적게 소모됩니다.\n\nClaude Sonnet 5.5로 시도해 보세요. 디자인에 대한 감각이 뛰어나고, 최소한의 편집만 필요한 슬라이드를 제작합니다.",
+        "ja": "2週間以内に、Claudeアプリでデザイン、デッキ、またはドキュメントを開始すると、その会話で続く作業が使用制限の50%少なく利用できます。\n\nClaude Sonnet 5.5で試してみてください。デザインに鋭い目を持ち、最小限の編集で済むスライドを作成します。",
+        "es": "Durante dos semanas, inicia un diseño, presentación o documento en la aplicación de Claude, y el trabajo que continúe en esa conversación utilizará un 50% menos de tus límites de uso.\n\nPruébalo con Claude Sonnet 5.5. Tiene un gran ojo para el diseño y crea diapositivas que requieren una edición mínima.",
+        "fr": "Pendant deux semaines, commencez un design, un jeu de diapositives ou un document dans l'application Claude, et le travail qui suit dans cette conversation utilise 50 % moins de vos limites d'utilisation.\n\nEssayez-le avec Claude Sonnet 5.5. Il a un œil aiguisé pour le design et crée des diapositives qui nécessitent un minimum de retouches.",
+        "de": "Für zwei Wochen: Starten Sie ein Design, ein Deck oder ein Dokument in der Claude-App, und die darauf folgende Arbeit in diesem Gespräch verbraucht 50 % weniger von Ihren Nutzungsgrenzen.\n\nProbieren Sie es mit Claude Sonnet 5.5 aus. Es hat ein geschultes Auge für Design und erstellt Folien, die nur minimale Bearbeitung benötigen.",
+        "ar": "لمدة أسبوعين، ابدأ تصميمًا، أو عرضًا تقديميًا، أو مستندًا في تطبيق Claude، والعمل الذي يليه في تلك المحادثة يستخدم 50% أقل من حدود الاستخدام الخاصة بك.\n\nجرب ذلك مع Claude Sonnet 5.5. إنه يتمتع بنظرة قوية للتصميم ويبني شرائح تحتاج إلى تحرير قليل."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-01T22:01:31.824Z"
     }
   },
-  "pending": 85,
-  "lastAttemptAt": "2026-10-01T17:46:58.934Z"
+  "pending": 82,
+  "lastAttemptAt": "2026-10-01T22:01:46.951Z"
 }
