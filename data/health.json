@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-09-30T20:25:32.337Z",
+  "lastAttemptAt": "2026-10-01T00:04:12.402Z",
   "lastSuccessAt": "2026-09-30T15:52:01.355Z",
-  "discoveryAt": "2026-09-30T20:25:32.337Z",
+  "discoveryAt": "2026-10-01T00:04:12.402Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 15
+      "candidates": 13
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -56,7 +56,7 @@
       "name": "Codex Reset Monitor · discovery only",
       "url": "https://codexreset.org/",
       "ok": true,
-      "candidates": 399
+      "candidates": 401
     },
     {
       "name": "Codex Resets · discovery only",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 426,
+      "checked": 428,
       "failed": 4
     }
   ],
@@ -99,9 +99,9 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-09-30T20:25:32.337Z",
+      "lastAttemptAt": "2026-10-01T00:04:12.402Z",
       "status": "degraded",
-      "checked": 396,
+      "checked": 398,
       "failed": 4,
       "discovered": 415,
       "authors": [
@@ -121,7 +121,7 @@
       "lastSuccessAt": "2026-09-30T15:52:01.355Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-09-30T20:25:32.337Z",
+      "lastAttemptAt": "2026-10-01T00:04:12.402Z",
       "status": "ok",
       "checked": 30,
       "failed": 0,
@@ -140,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-09-30T20:25:32.337Z"
+      "lastSuccessAt": "2026-10-01T00:04:12.402Z"
     }
   }
 }
