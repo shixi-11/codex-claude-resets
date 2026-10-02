@@ -2,7 +2,8 @@
 // Ambiguous wall-clock times and relative durations intentionally remain unset.
 export function announcementTime(text, publishedAt, {truncated=false,author=""}={}) {
  if(truncated) return null;
- const match=text.match(/\b(?:lands?|landing|reset.{0,30}(?:at|around))\s+(around\s+)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(PST|PDT|UTC|GMT)\s*(today|tomorrow)?\b/i);
+ const leadingDay=text.match(/\b(?:lands?|landing)\s+(today|tomorrow)\s+(around\s+)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(PST|PDT|UTC|GMT)\b/i);
+ const match=leadingDay ? [leadingDay[0],leadingDay[2],leadingDay[3],leadingDay[4],leadingDay[5],leadingDay[6],leadingDay[1]] : text.match(/\b(?:lands?|landing|reset.{0,30}(?:at|around))\s+(around\s+)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(PST|PDT|UTC|GMT)\s*(today|tomorrow)?\b/i);
  if(!match) {
   // User-approved fallback to Tibo's literal PST convention, not a claim
   // about his live location. Prior originals: 2097043464538264003, 2094144275957350900.

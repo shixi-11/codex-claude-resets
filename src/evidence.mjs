@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.1';
+export const RULES_VERSION = '1.4.2';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -77,6 +77,7 @@ export function classify(text, { truncated = false, author = '' } = {}) {
     return { kind: 'usage', state: 'information', reason: 'bank-information' };
   }
   if (/\b(?:codex|claude|chatgpt work|everyone|all users|all subscribers|all paid|paid (?:users|plans|subscriptions)|global)\b/i.test(value)) {
+    if (/\bglobal reset (?:is )?(?:landing|lands)\b/i.test(value) && /\ball paid (?:ChatGPT )?(?:users|accounts|subscribers)\b/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
     if (/\bwe have (?:also |now |just )?reset (?:everyone's )?(?:5-hour and weekly|weekly|5-hour) (?:rate |usage )?limits\b/i.test(value)) return { kind:'global',state:'reported',reason:'explicit-completion' };
     if (/\bwe (?:have )?(?:now |just |already )?reset\s+(?:the )?(?:usage|limits?|quotas?)|\breset (?:has (?:been )?|is now )(?:applied|propagated|complete|completed)|\b(?:usage|limits?) (?:has|have) (?:been )?reset/i.test(value)) return { kind: 'global', state: 'reported', reason: 'explicit-completion' };
     if (/\bwe (?:will|are going to) (?:do |perform |apply )?(?:a |the )?(?:global )?reset|\b(?:reset|resets?) will (?:land|arrive|happen)|\bwe are reset(?:t)?ing usage/i.test(value)) return { kind: 'global', state: 'announced', reason: 'explicit-announcement' };
