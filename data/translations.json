@@ -2071,7 +2071,9 @@
         "es": "Reinicio global aterrizando mañana a las 10am PST para todas las cuentas de pago de ChatGPT.",
         "fr": "Réinitialisation globale demain à 10h PST pour tous les comptes ChatGPT payants.",
         "ar": "إعادة تعيين عالمية لهبوط الغد الساعة 10 صباحًا بتوقيت المحيط الهادئ لجميع حسابات ChatGPT المدفوعة.",
-        "de": "Globaler Reset-Landing morgen um 10 Uhr PST für alle kostenpflichtigen ChatGPT-Konten."
+        "de": "Globaler Reset-Landing morgen um 10 Uhr PST für alle kostenpflichtigen ChatGPT-Konten.",
+        "ko": "모든 유료 ChatGPT 계정에 대해 내일 오전 10시 PST에 글로벌 리셋 착륙 예정입니다.",
+        "zh-Hant": "全球重置登陸明天太平洋標準時間上午 10 點適用於所有付費 ChatGPT 帳戶。"
       },
       "fullText": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
       "fullTexts": {
@@ -2080,12 +2082,14 @@
         "es": "Reinicio global aterrizando mañana a las 10am PST para todas las cuentas de pago de ChatGPT. Disculpas por el inicio lento con GPT-6.1 Sol, ahora está de vuelta ejecutándose a las velocidades esperadas después del pico masivo de carga en los primeros dos días.",
         "fr": "Réinitialisation globale demain à 10h PST pour tous les comptes ChatGPT payants. Nos excuses pour le démarrage lent avec GPT-6.1 Sol, il est maintenant revenu à des vitesses attendues après la pointe massive de charge au cours des deux premiers jours.",
         "ar": "إعادة تعيين عالمية لهبوط الغد الساعة 10 صباحًا بتوقيت المحيط الهادئ لجميع حسابات ChatGPT المدفوعة. اعتذارنا عن البداية البطيئة مع GPT-6.1 Sol، إنها الآن تعود إلى العمل بسرعات متوقعة بعد الارتفاع الهائل في الحمل خلال اليومين الأولين.",
-        "de": "Globaler Reset-Landing morgen um 10 Uhr PST für alle kostenpflichtigen ChatGPT-Konten. Entschuldigungen für den langsamen Start mit GPT-6.1 Sol, es läuft jetzt wieder mit den erwarteten Geschwindigkeiten nach dem massiven Lastspitzenanstieg in den ersten zwei Tagen."
+        "de": "Globaler Reset-Landing morgen um 10 Uhr PST für alle kostenpflichtigen ChatGPT-Konten. Entschuldigungen für den langsamen Start mit GPT-6.1 Sol, es läuft jetzt wieder mit den erwarteten Geschwindigkeiten nach dem massiven Lastspitzenanstieg in den ersten zwei Tagen.",
+        "ko": "모든 유료 ChatGPT 계정에 대해 내일 오전 10시 PST에 글로벌 리셋 착륙 예정입니다. GPT-6.1 Sol의 느린 시작에 대해 사과드립니다. 첫 이틀 동안의 대규모 부하 급증 후 이제 예상 속도로 다시 실행되고 있습니다.",
+        "zh-Hant": "全球重置登陸明天太平洋標準時間上午 10 點適用於所有付費 ChatGPT 帳戶。對於 GPT-6.1 Sol 的緩慢啟動表示歉意，它現在在頭兩天的巨大負載激增後已恢復到預期的運行速度。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-02T07:30:46.366Z"
+      "translatedAt": "2026-10-02T08:41:03.131Z"
     }
   },
-  "pending": 84,
-  "lastAttemptAt": "2026-10-02T07:31:00.820Z"
+  "pending": 82,
+  "lastAttemptAt": "2026-10-02T08:41:18.315Z"
 }
