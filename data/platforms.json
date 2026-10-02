@@ -7,13 +7,13 @@
       "state": "announced",
       "resetAt": "2026-10-02T18:00:00.000Z",
       "sourceUrl": "https://x.com/thsottiaux/status/2105843926221660585",
-      "verifiedAt": "2026-10-02T12:32:19.309Z",
+      "verifiedAt": "2026-10-02T12:33:53.032Z",
       "approximate": false,
       "sourceTimezone": "PST",
       "timeBasis": "literal-source-offset"
     },
     "gifts": [],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "latest": {
       "id": "2105843926221660585",
       "kind": "global",
@@ -23,7 +23,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2105843926221660585",
       "publishedAt": "2026-10-02T02:14:51.356Z",
-      "verifiedAt": "2026-10-02T12:32:19.309Z",
+      "verifiedAt": "2026-10-02T12:33:53.032Z",
       "excerpt": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts.",
       "fullText": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
       "truncated": false,
@@ -49,7 +49,7 @@
       "fullText": "Resets all propagated. That will be all. Have a fantastic weekend.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.1",
+      "rulesVersion": "1.4.2",
       "contentHash": "33028b1e3dc42196e305d27b627c725522162a0f1d4ac3ca79638d09a5d7790b"
     },
     "discoveryMode": "profile-relay",
@@ -68,7 +68,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
-      "rulesVersion": "1.4.1",
+      "rulesVersion": "1.4.2",
       "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66"
     },
     "latestReset": {
@@ -80,7 +80,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2105843926221660585",
       "publishedAt": "2026-10-02T02:14:51.356Z",
-      "verifiedAt": "2026-10-02T12:32:19.309Z",
+      "verifiedAt": "2026-10-02T12:33:53.032Z",
       "excerpt": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts.",
       "fullText": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
       "truncated": false,
@@ -132,12 +132,12 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/claudeai/status/2105721630051692804",
       "publishedAt": "2026-10-01T18:08:53.677Z",
-      "verifiedAt": "2026-10-02T08:40:31.120Z",
+      "verifiedAt": "2026-10-02T12:33:53.032Z",
       "excerpt": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less…",
       "fullText": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less of your usage limits.\n\nGive it a try with Claude Sonnet 5.5. It has a strong eye for design and builds slides that need minimal editing.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.1",
+      "rulesVersion": "1.4.2",
       "contentHash": "7c76701cdc7c57c48113dac4a601251687d0e4fa817fe356b86f60a97f4d9e99"
     },
     "lastReset": {
@@ -154,7 +154,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.1",
+      "rulesVersion": "1.4.2",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -167,12 +167,12 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
       "publishedAt": "2026-09-28T18:36:08.452Z",
-      "verifiedAt": "2026-10-02T08:40:31.120Z",
+      "verifiedAt": "2026-10-02T12:33:53.032Z",
       "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.1",
+      "rulesVersion": "1.4.2",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -189,7 +189,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.1",
+      "rulesVersion": "1.4.2",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }
