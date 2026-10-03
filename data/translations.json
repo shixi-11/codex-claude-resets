@@ -2099,7 +2099,8 @@
         "ja": "すべての伝播をリセットしました。",
         "fr": "Réinitialiser tout ce qui a été propagé.",
         "de": "Alle propagierten zurücksetzen.",
-        "ar": "إعادة تعيين كل ما تم نشره."
+        "ar": "إعادة تعيين كل ما تم نشره.",
+        "es": "Restablecer todo lo propagado."
       },
       "fullText": "Reset all propagated. Enjoy.",
       "fullTexts": {
@@ -2109,12 +2110,13 @@
         "ja": "すべての伝播をリセットしました。楽しんでください。",
         "fr": "Réinitialiser tout ce qui a été propagé. Profitez.",
         "de": "Alle propagierten zurücksetzen. Viel Spaß.",
-        "ar": "إعادة تعيين كل ما تم نشره. استمتع."
+        "ar": "إعادة تعيين كل ما تم نشره. استمتع.",
+        "es": "Restablecer todo lo propagado. Disfruta."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-02T23:02:46.764Z"
+      "translatedAt": "2026-10-03T01:53:00.538Z"
     }
   },
-  "pending": 83,
-  "lastAttemptAt": "2026-10-02T23:03:00.967Z"
+  "pending": 82,
+  "lastAttemptAt": "2026-10-03T01:53:16.015Z"
 }

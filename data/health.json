@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-02T23:02:14.780Z",
+  "lastAttemptAt": "2026-10-03T01:52:27.323Z",
   "lastSuccessAt": "2026-10-02T14:05:50.909Z",
-  "discoveryAt": "2026-10-02T23:02:14.780Z",
+  "discoveryAt": "2026-10-03T01:52:27.323Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 12
+      "candidates": 10
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -56,7 +56,7 @@
       "name": "Codex Reset Monitor · discovery only",
       "url": "https://codexreset.org/",
       "ok": true,
-      "candidates": 412
+      "candidates": 410
     },
     {
       "name": "Codex Resets · discovery only",
@@ -68,13 +68,13 @@
       "name": "Reset Radar · Claude link discovery only",
       "url": "https://www.resetradar.com/data/events.json",
       "ok": true,
-      "candidates": 25
+      "candidates": 27
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 439,
+      "checked": 438,
       "failed": 4
     }
   ],
@@ -99,11 +99,11 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-02T23:02:14.780Z",
+      "lastAttemptAt": "2026-10-03T01:52:27.323Z",
       "status": "degraded",
-      "checked": 409,
+      "checked": 407,
       "failed": 4,
-      "discovered": 425,
+      "discovered": 421,
       "authors": [
         {
           "author": "thsottiaux",
@@ -121,9 +121,9 @@
       "lastSuccessAt": "2026-10-02T14:05:50.909Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-02T23:02:14.780Z",
+      "lastAttemptAt": "2026-10-03T01:52:27.323Z",
       "status": "ok",
-      "checked": 30,
+      "checked": 31,
       "failed": 0,
       "discovered": 77,
       "authors": [
@@ -140,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-02T23:02:14.780Z"
+      "lastSuccessAt": "2026-10-03T01:52:27.323Z"
     }
   }
 }
