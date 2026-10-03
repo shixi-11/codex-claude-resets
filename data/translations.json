@@ -2124,7 +2124,9 @@
         "zh-Hant": "看到一些報告指出，Pro 500 沒有如預期般在先前獲得重置。",
         "ko": "Pro 500이 예상대로 초기화되지 않았다는 보고가 몇 개 보이네요.",
         "fr": "J'ai vu certains rapports indiquant que le Pro 500 n'a pas reçu la réinitialisation comme prévu plus tôt.",
-        "ar": "نرى بعض التقارير التي تشير إلى أن Pro 500 لم يحصل على إعادة الضبط كما هو متوقع في وقت سابق."
+        "ar": "نرى بعض التقارير التي تشير إلى أن Pro 500 لم يحصل على إعادة الضبط كما هو متوقع في وقت سابق.",
+        "ja": "Pro 500 が予定通りリセットされなかったという報告がいくつか見受けられます。",
+        "es": "Viendo algunos informes de que el Pro 500 no recibió el reinicio como se esperaba antes."
       },
       "fullText": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
       "fullTexts": {
@@ -2133,12 +2135,14 @@
         "ko": "Pro 500이 예상대로 초기화되지 않았다는 보고가 몇 개 보이네요. 조사 중이며 보상하겠습니다.",
         "fr": "J'ai vu certains rapports indiquant que le Pro 500 n'a pas reçu la réinitialisation comme prévu plus tôt. Enquête en cours et nous compenserons pour cela.",
         "de": "Einige Berichte darüber, dass das Pro 500 nicht wie erwartet früher zurückgesetzt wurde. Untersuche das und werde es nachholen.",
-        "ar": "نرى بعض التقارير التي تشير إلى أن Pro 500 لم يحصل على إعادة الضبط كما هو متوقع في وقت سابق. نحن نتحقّق من الأمر وسنجعّل الأمور على ما يرام."
+        "ar": "نرى بعض التقارير التي تشير إلى أن Pro 500 لم يحصل على إعادة الضبط كما هو متوقع في وقت سابق. نحن نتحقّق من الأمر وسنجعّل الأمور على ما يرام.",
+        "ja": "Pro 500 が予定通りリセットされなかったという報告がいくつか見受けられます。調査中ですし、補填いたします。",
+        "es": "Viendo algunos informes de que el Pro 500 no recibió el reinicio como se esperaba antes. Investigando y lo compensaremos."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-03T07:23:44.030Z"
+      "translatedAt": "2026-10-03T08:19:24.050Z"
     }
   },
-  "pending": 85,
-  "lastAttemptAt": "2026-10-03T07:23:58.588Z"
+  "pending": 83,
+  "lastAttemptAt": "2026-10-03T08:19:39.761Z"
 }
