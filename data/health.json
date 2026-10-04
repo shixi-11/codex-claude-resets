@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-04T08:32:46.200Z",
+  "lastAttemptAt": "2026-10-04T13:25:32.994Z",
   "lastSuccessAt": "2026-10-04T07:27:28.777Z",
-  "discoveryAt": "2026-10-04T08:32:46.200Z",
+  "discoveryAt": "2026-10-04T13:25:32.994Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -33,8 +33,8 @@
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": true,
-      "candidates": 14
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -49,8 +49,8 @@
       "url": "https://api.fxtwitter.com/2/profile/claudeai/statuses?count=40&with_replies=1",
       "author": "claudeai",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 18
     },
     {
       "name": "Codex Reset Monitor · discovery only",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 429,
+      "checked": 426,
       "failed": 4
     }
   ],
@@ -99,7 +99,7 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-04T08:32:46.200Z",
+      "lastAttemptAt": "2026-10-04T13:25:32.994Z",
       "status": "degraded",
       "checked": 398,
       "failed": 4,
@@ -121,15 +121,15 @@
       "lastSuccessAt": "2026-10-04T07:27:28.777Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-04T08:32:46.200Z",
+      "lastAttemptAt": "2026-10-04T13:25:32.994Z",
       "status": "degraded",
-      "checked": 31,
+      "checked": 28,
       "failed": 0,
-      "discovered": 61,
+      "discovered": 63,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "AnthropicAI",
@@ -137,7 +137,7 @@
         },
         {
           "author": "claudeai",
-          "ok": false
+          "ok": true
         }
       ],
       "lastSuccessAt": "2026-10-04T07:27:28.777Z"
