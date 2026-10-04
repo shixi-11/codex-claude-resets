@@ -2141,8 +2141,35 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-03T08:19:24.050Z"
+    },
+    "2106845241357824205": {
+      "excerpt": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or…",
+      "contentHash": "475366fe53d83fa6571e6ed1a9369448b13a6b88b4b4ea71c17b2e27f3cbb7fc",
+      "texts": {
+        "zh": "在接下来的 28 天里，每天我们要么发布一件对大多数 codex/work 用户来说是明显改进且相关的事情，要么发布一次全面重置。",
+        "zh-Hant": "在接下來的 28 天內，每天我們要麼推出一個對大多數 Codex/Work 使用者來說顯而易見的改進且相關的東西，要麼進行一次全面重置。",
+        "ja": "今後28日間のうち、各日には、ほとんどのcodex/workユーザーにとって明確な改善であり関連性のあるものを1つリリースするか、完全なリセットをリリースします。",
+        "ko": "앞으로 28일 동안, 매일 우리는 대부분의 codex/work 사용자들에게 분명한 개선이며 관련성 있는 한 가지를 출시하거나, 완전한 리셋을 출시할 것입니다.",
+        "es": "Durante los próximos 28 días, cada día enviaremos ya sea una cosa que sea una mejora clara y relevante para la mayoría de los usuarios de codex/trabajo, o enviaremos un reinicio completo.",
+        "fr": "Au cours des 28 prochains jours, chaque jour, nous livrerons soit une chose qui représente une amélioration claire et pertinente pour la plupart des utilisateurs de codex/work, soit un réinitialisation complète.",
+        "de": "In den nächsten 28 Tagen werden wir jeden Tag entweder eine Sache ausliefern, die eine klare Verbesserung darstellt und für die meisten Codex-/Work-Nutzer relevant ist, oder einen vollständigen Reset durchführen.",
+        "ar": "على مدار الـ28 يومًا القادمة، كل يوم سنقوم إما بإطلاق شيء واحد يُعد تحسينًا واضحًا وذو صلة لمعظم مستخدمي كوديكس/العمل، أو بإطلاق إعادة تشغيل كاملة."
+      },
+      "fullText": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
+      "fullTexts": {
+        "zh": "在接下来的 28 天里，每天我们要么发布一件对大多数 codex/work 用户来说是明显改进且相关的事情，要么发布一次全面重置。让改进开始吧。",
+        "zh-Hant": "在接下來的 28 天內，每天我們要麼推出一個對大多數 Codex/Work 使用者來說顯而易見的改進且相關的東西，要麼進行一次全面重置。讓改進開始吧。",
+        "ja": "今後28日間のうち、各日には、ほとんどのcodex/workユーザーにとって明確な改善であり関連性のあるものを1つリリースするか、完全なリセットをリリースします。改善の始まりです。",
+        "ko": "앞으로 28일 동안, 매일 우리는 대부분의 codex/work 사용자들에게 분명한 개선이며 관련성 있는 한 가지를 출시하거나, 완전한 리셋을 출시할 것입니다. 개선이 시작되길.",
+        "es": "Durante los próximos 28 días, cada día enviaremos ya sea una cosa que sea una mejora clara y relevante para la mayoría de los usuarios de codex/trabajo, o enviaremos un reinicio completo. Que comiencen las mejoras.",
+        "fr": "Au cours des 28 prochains jours, chaque jour, nous livrerons soit une chose qui représente une amélioration claire et pertinente pour la plupart des utilisateurs de codex/work, soit un réinitialisation complète. Que les améliorations commencent.",
+        "de": "In den nächsten 28 Tagen werden wir jeden Tag entweder eine Sache ausliefern, die eine klare Verbesserung darstellt und für die meisten Codex-/Work-Nutzer relevant ist, oder einen vollständigen Reset durchführen. Die Verbesserungen beginnen.",
+        "ar": "على مدار الـ28 يومًا القادمة، كل يوم سنقوم إما بإطلاق شيء واحد يُعد تحسينًا واضحًا وذو صلة لمعظم مستخدمي كوديكس/العمل، أو بإطلاق إعادة تشغيل كاملة. لتبدأ التحسينات."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-04T23:34:14.271Z"
     }
   },
   "pending": 83,
-  "lastAttemptAt": "2026-10-04T20:30:13.090Z"
+  "lastAttemptAt": "2026-10-04T23:34:27.931Z"
 }
