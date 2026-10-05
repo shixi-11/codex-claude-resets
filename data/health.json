@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-05T09:14:59.540Z",
+  "lastAttemptAt": "2026-10-05T09:20:16.625Z",
   "lastSuccessAt": "2026-10-04T17:45:33.637Z",
-  "discoveryAt": "2026-10-05T09:14:59.540Z",
+  "discoveryAt": "2026-10-05T09:20:16.625Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -17,8 +17,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
-      "ok": true,
-      "candidates": 9
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -41,8 +41,8 @@
       "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 21
     },
     {
       "name": "@claudeai timeline via FxEmbed",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 412,
+      "checked": 414,
       "failed": 4
     }
   ],
@@ -99,11 +99,11 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-05T09:14:59.540Z",
+      "lastAttemptAt": "2026-10-05T09:20:16.625Z",
       "status": "degraded",
       "checked": 386,
       "failed": 4,
-      "discovered": 399,
+      "discovered": 390,
       "authors": [
         {
           "author": "thsottiaux",
@@ -111,7 +111,7 @@
         },
         {
           "author": "OpenAIDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "OpenAI",
@@ -121,11 +121,11 @@
       "lastSuccessAt": "2026-10-04T17:45:33.637Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-05T09:14:59.540Z",
+      "lastAttemptAt": "2026-10-05T09:20:16.625Z",
       "status": "degraded",
-      "checked": 26,
+      "checked": 28,
       "failed": 0,
-      "discovered": 42,
+      "discovered": 63,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -133,7 +133,7 @@
         },
         {
           "author": "AnthropicAI",
-          "ok": false
+          "ok": true
         },
         {
           "author": "claudeai",
