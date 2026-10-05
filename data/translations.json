@@ -2168,8 +2168,251 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-04T23:34:14.271Z"
+    },
+    "2090766694897619318": {
+      "excerpt": "Second of all, this is cause for celebration and during the day we will credit every Codex and ChatGPT Work user with a BANKED…",
+      "contentHash": "2e3ef7e4fad889291885bdc357673b95487b6d7fd50fa0ded3a86c94dcf3b603",
+      "texts": {
+        "zh": "其次，这值得庆祝，今天我们将为每位Codex和ChatGPT Work用户记入一个可随时使用的BANKED重置机会。",
+        "zh-Hant": "其次，這是值得慶祝的事，在今天白天，我們將為每位 Codex 和 ChatGPT Work 用戶存入一個可隨時使用的重置機會。",
+        "es": "Segundo que nada, esto es motivo de celebración y durante el día acreditaremos a cada usuario de Codex y ChatGPT Work con un reinicio BANKED que puedes usar a tu propio gusto.",
+        "ar": "ثانياً، هذا سبب للاحتفال، وخلال اليوم سنقوم بإضافة إعادة تعيين محفوظة لكل مستخدم Codex وChatGPT Work يمكنهم استخدامها في أي وقت يرغبون فيه."
+      },
+      "fullText": "It's me again. I come bearing great news. \n\nFirst of all, we have hit 20M active users for Codex some time this week. Second of all, this is cause for celebration and during the day we will credit every Codex and ChatGPT Work user with a BANKED reset that you can use at your own leisure. And we will have some other good news later too!\n\nNow, on usage limits draining faster, while we're not seeing anything abnormal, we do take it incredibly seriously and there is an ongoing investigation. I will share if we do find anything and my below post is really a clarification on a specific pattern that we did see that I wanted to call out.\n\nGo do something amazing today.",
+      "fullTexts": {
+        "zh": "又是我的。我带来了好消息。\n\n首先，我们本周某个时候Codex的活跃用户达到了2000万。其次，这值得庆祝，今天我们将为每位Codex和ChatGPT Work用户记入一个可随时使用的BANKED重置机会。我们稍后还会分享其他好消息！\n\n现在，关于使用限制耗尽得更快的问题，虽然我们没有发现任何异常情况，但我们对此极为重视，目前正在进行调查。如果我们确实发现什么，我会分享的。我下面的帖子实际上是对我们确实观察到的一个特定模式的澄清，我想特别指出这一点。\n\n今天去做什么了不起的事吧。",
+        "zh-Hant": "又是我的聲音。我帶來了好消息。\n\n首先，我們在本週某個時間點，Codex 的活躍用戶數已達到 2000 萬。其次，這是值得慶祝的事，在今天白天，我們將為每位 Codex 和 ChatGPT Work 用戶存入一個可隨時使用的重置機會。而且我們稍後還會有其他好消息！\n\n現在，關於使用限制耗盡得更快，雖然我們沒有發現任何異常情況，但我們極其重視此事，目前正在進行調查。如果我們確實發現什麼，我會分享。而且我下面的貼文其實是對一個我們確實觀察到的特定模式的澄清，我想特別指出這一點。\n\n今天去成就一些了不起的事吧。",
+        "ko": "다시 나야. 좋은 소식을 가지고 왔어.\n\n우선, 이번 주에 Codex의 활성 사용자가 2천만 명을 돌파했어. 둘째, 이건 축하할 일이야. 오늘 낮 동안에 모든 Codex와 ChatGPT Work 사용자에게 자유롭게 사용할 수 있는 BANKED 리셋을 크레딧으로 지급할 거야. 그리고 나중에 다른 좋은 소식도 더 있을 거야!\n\n이제 사용 한도 소모가 더 빨라지는 문제에 대해 말하자면, 우리는 비정상적인 건 아무것도 보지 못하고 있지만, 이 문제를 엄청나게 심각하게 받아들이고 있고 조사가 진행 중이야. 만약 뭔가를 발견하면 공유할게. 그리고 내 아래 포스트는 우리가 실제로 본 특정 패턴에 대한 명확한 설명일 뿐이야. 그걸 지적하고 싶었어.\n\n오늘 멋진 일을 해봐.",
+        "es": "Aquí estoy de nuevo. Vengo con grandes noticias.\n\nPrimero que nada, hemos alcanzado los 20 millones de usuarios activos para Codex en algún momento de esta semana. Segundo que nada, esto es motivo de celebración y durante el día acreditaremos a cada usuario de Codex y ChatGPT Work con un reinicio BANKED que puedes usar a tu propio gusto. ¡Y también tendremos otras buenas noticias más adelante!\n\nAhora, sobre los límites de uso que se agotan más rápido, aunque no estamos viendo nada anormal, lo tomamos increíblemente en serio y hay una investigación en curso. Compartiré si encontramos algo y mi publicación de abajo es realmente una aclaración sobre un patrón específico que sí vimos y que quería destacar.\n\nVe y haz algo increíble hoy.",
+        "ar": "أنا مرة أخرى. أتيت حاملاً بأخبار رائعة.\n\nأولاً، لقد وصلنا إلى 20 مليون مستخدم نشط لـ Codex في وقت ما هذا الأسبوع. ثانياً، هذا سبب للاحتفال، وخلال اليوم سنقوم بإضافة إعادة تعيين محفوظة لكل مستخدم Codex وChatGPT Work يمكنهم استخدامها في أي وقت يرغبون فيه. وسنكون لدينا بعض الأخبار الجيدة الأخرى لاحقاً أيضاً!\n\nالآن، بخصوص حدود الاستخدام التي تنفذ بشكل أسرع، بينما لا نرى أي شيء غير طبيعي، إلا أننا نأخذ الأمر على محمل الجد الشديد وهناك تحقيق جارٍ. سأشارك إذا وجدنا أي شيء، ومنشوري أدناه هو في الواقع توضيح لنمط محدد رأيناه بالفعل وأردت الإشارة إليه.\n\nاذهب وافعل شيئاً مذهلاً اليوم."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-05T18:40:39.758Z"
+    },
+    "2076418567143408112": {
+      "excerpt": "Added a banked reset to 500k users of ChatGPT Work and Codex.",
+      "contentHash": "dd36e2c8318f5ac829ef7662812e7a4f7ba98e045ea9cc00415725e58e078e70",
+      "texts": {
+        "ja": "ChatGPT WorkおよびCodexの50万ユーザーにバンクトリセットを追加しました。"
+      },
+      "fullText": "Added a banked reset to 500k users of ChatGPT Work and Codex.\n\nWhat’s been happening:\n- Just released the ability to use a banked reset from web and mobile. Before today you could only do it in the desktop app\n- Had an issue where less than 10% of users who used a banked reset and it didn’t actually reset. This was during a 2 hour window.\n- It was hard to find all the exact users where it didn’t apply, so instead granted a banked reset to everyone who pressed the reset button in that 2 hour window. This also gives us the opportunity to validate the new infra ahead of tomorrow\n\nTomorrow we will celebrate our 7M active users milestone and grant the first banked reset across all of our ChatGPT Work and Codex users.\n\nWe will also release a bunch of updates to the desktop app, addressing a ton of your feedback.\n\nTalk soon",
+      "fullTexts": {
+        "ja": "ChatGPT WorkおよびCodexの50万ユーザーにバンクトリセットを追加しました。\n\n最近の状況：\n- Webおよびモバイルからバンクトリセットを使用する機能をちょうどリリースしました。今日以前はデスクトップアプリでのみ可能でした\n- バンクトリセットを使用したユーザーの10%未満で、実際にはリセットされなかった問題が発生しました。これは2時間のウィンドウ中でした。\n- 適用されなかった正確なユーザーをすべて特定するのが難しかったため、その2時間のウィンドウでリセットボタンを押した全員にバンクトリセットを付与しました。これにより、明日を前に新しいインフラを検証する機会も得られました\n\n明日、私たちは700万アクティブユーザーのマイルストーンを祝い、ChatGPT WorkおよびCodexの全ユーザーに最初のバンクトリセットを付与します。\n\nデスクトップアプリにたくさんのアップデートをリリースし、あなた方のフィードバックの多くに対応します。\n\nまた近いうちに。"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-05T18:40:42.743Z"
+    },
+    "2075820987833274448": {
+      "excerpt": "another usage limit reset for all our ChatGPT Work and Codex users.",
+      "contentHash": "c90822d991e96981c4b29e222a3cdbfdf81f35c148378cb8240abcafa111468f",
+      "texts": {},
+      "fullText": "Introducing... another usage limit reset for all our ChatGPT Work and Codex users. Should land over next 30 minutes. Hope you have an awesome weekend.\n\nThank you for pushing our systems to the absolute limit, we have never seen traffic increase so quickly. Keep the feedback coming and we'll keep shipping.",
+      "fullTexts": {}
+    },
+    "2075641131002700120": {
+      "excerpt": "We have reset usage limits across Codex and ChatGPT Work.",
+      "contentHash": "b045380177626bfc7cfe947e21700003421aa37ee731afb575d83407112c2249",
+      "texts": {},
+      "fullText": "Hello beautiful people! We have reset usage limits across Codex and ChatGPT Work. And another one will come later in the day. Rejoice.\n\nNow that I have your attention, a quick update on ChatGPT Work, Codex and all the updates we shared yesterday.\n\nWe’ve spent the last 24 hours reading feedback, looking at usage patterns, and talking with many of you. The short version is that there is a *lot* of excitement for GPT 5.6 Sol, ChatGPT Work on mobile & web, but also that we didn't get everything quite right.\n\n- We made it too easy to use the highest-compute settings without making the impact on usage limits sufficiently clear.\n- We reorganized the desktop app in one bold move, making familiar things like chats and projects harder to find.\n- Our launch framing was focused on ChatGPT Work and to some of our Codex fans it made it feel like Codex was going away over time. Absolutely not our intention, we love Codex and it is here to stay.\n- And we introduced regressions for some existing multi-agent workflows, alongside a collection of rough edges in plugins and other parts of the experience.\n\nWe’re landing a first set of improvements today. We’re resetting usage twice so people can keep experimenting, changing defaults and the model picker so they don’t push people toward unnecessarily expensive settings, fixing several plugin submission issues, improving how we represent Codex in the product, and cleaning up some of the most immediate desktop problems.\n\nA larger set of improvements will land next week. We’re bringing chats and projects back into the sidebar in a more familiar and customizable way, making usage and reset timing much more visible, clarifying when to use ChatGPT Work and when to use Codex, and addressing the many other smaller pieces of great feedback we've had.\n\nThe ambition behind this launch hasn’t changed. We think bringing ChatGPT and Codex together into a workspace where people and agents can collaborate is a very important step forward. But an ambitious direction doesn’t excuse avoidable confusion or regressions in the first version.\n\nPlease keep the feedback coming. We’re moving quickly, and you should see the experience already get better with a few updates today; and substantially better again next week.",
+      "fullTexts": {}
+    },
+    "2075330198887940337": {
+      "excerpt": "Enjoy a full reset of your usage limits for ChatGPT Work and Codex.",
+      "contentHash": "94f1cf028594a17ba0f16ab0ba2e0aaf6ed2f529e8eff3b88c8bdceaae679888",
+      "texts": {},
+      "fullText": "Enjoy a full reset of your usage limits for ChatGPT Work and Codex. Propagating in the next hour. just joined to work on model research and push on coding capabilities. You can thank him for pressing the button today.",
+      "fullTexts": {}
+    },
+    "2071740419030053227": {
+      "excerpt": "- Immediate relief: We reset usage limits while rolling out the fixes, then shipped hotfixes across the CLI, desktop app, and usage backend.",
+      "contentHash": "43371603548abaaf54bac5061f38f6adab1ec4dddf956872732f07df0a3b2fcf",
+      "texts": {},
+      "fullText": "Codex usage limits will be fully reset again in the next hour and we will credit one additional reset into your bank for your own usage over the next 24 hours.\n\nWe investigated reports that Codex usage was being consumed faster than expected. There wasn't one central issue, but a few smaller problems compounded for some users.   \n\nHere's what we found and changed: \n- Actual usage: Auto-review had become more proactive, another change was triggering more subagent work, and background suggestions could run twice or retry too frequently after failures. We reverted the changes and fixed suggestion scheduling, duplicate generation, and retry behavior. This should reduce unnecessary background token consumption while preserving the work users explicitly request. \n- Usage reporting: Auto-review was incorrectly appearing as GPT‑5.4 usage, and failed or rate-limited requests were still shown as turns. Auto-review now appears as its own category, and only successful requests count toward the turn graphs. Rate-limited requests were never charged, but they were being displayed incorrectly. \n- Immediate relief: We reset usage limits while rolling out the fixes, then shipped hotfixes across the CLI, desktop app, and usage backend. \n- What to expect: New usage data should be clearer and actual consumption should be lower. Historical charts may still show auto-review under GPT‑5.4 because older turn data was not relabeled. Features that intentionally perform more work; such as /goal, subagents, and higher reasoning levels will still naturally use more capacity.  \n\nAll fixes are now deployed, and we've added more detailed monitoring so we can detect background-usage regressions sooner. We'll continue watching the results closely.\n\nThank you for building and doing all sorts of things with Codex.",
+      "fullTexts": {}
+    },
+    "2071381664853319742": {
+      "excerpt": "This is a hard reset given some users had stacked up to three banked resets already that they can apply on their own schedule.",
+      "contentHash": "5a6e2ad9f07053b281d4bf4d57ba3d81a42796e2c3e0331fc16814a7e6bbd83f",
+      "texts": {},
+      "fullText": "As we are still investigating, I have reset everyone's Codex usage limits. This is a hard reset given some users had stacked up to three banked resets already that they can apply on their own schedule.\n\nFunnily enough, this week at OpenAI is called the RESET week, which is meant for folks to relax a bit. However it will be a different kind of RESET week. Enjoy.",
+      "fullTexts": {}
+    },
+    "2070653282440405046": {
+      "excerpt": "We are giving all Codex users a usage reset on the house.",
+      "contentHash": "82c52e5ca19285651778ca2c5a5939e5198cf264e61b5c8bcb7083e1d73d1163",
+      "texts": {},
+      "fullText": "We are giving all Codex users a usage reset on the house. Should be showing in your accounts in the next few hours.\n\nWe have applied some mitigations, but our investigation hasn't shown users being impacted at large. We are continuing to monitor the situation.",
+      "fullTexts": {}
+    },
+    "2067399435009622521": {
+      "excerpt": "We did a sneaky double reset.",
+      "contentHash": "0f8e74eff091fa21f337cf008a4953fff277e38d701313c93cddfb1eb2a58043",
+      "texts": {},
+      "fullText": "Dearest gentle codexer.\n\nWe did a sneaky double reset. Not only do you get a full reset on us. But you are also getting one into the reset bank to use at your own leisure. \n\nEnjoy",
+      "fullTexts": {}
+    },
+    "2062329981548802523": {
+      "excerpt": "I have reset usage limits for Codex across all paid plans.",
+      "contentHash": "e7dcca275b8da9138c9f0653433caa36438fb2d95631376addced63c836c59f7",
+      "texts": {},
+      "fullText": "Hi. Over the last 24 hours we had three separate small incidents that affected Codex reliability. Those are three too many and we are taking active steps for them to not reproduce.\n\nI have reset usage limits for Codex across all paid plans. May the tokens flow again.",
+      "fullTexts": {}
+    },
+    "2061106703446450392": {
+      "excerpt": "The Codex usage limits have been reset for all paid ChatGPT subscriptions.",
+      "contentHash": "6f93508b48185a8fcb87e7ec9008a415e2c996fc022e7ffac2886a0fb811d236",
+      "texts": {},
+      "fullText": "The Codex usage limits have been reset for all paid ChatGPT subscriptions. You should be back to 100% weekly and 100% hourly limits.\n\nLet the tokens do incredible things today and have fun.",
+      "fullTexts": {}
+    },
+    "2058280452851638313": {
+      "excerpt": "We fixed this and have now reset usage limits for all accounts.",
+      "contentHash": "76ff5570cf8819f67583395f54dd959d7315e06bb119a4e97f2ebbe6778e34cd",
+      "texts": {},
+      "fullText": "Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions. \n\nWe fixed this and have now reset usage limits for all accounts. Enjoy the weekend.",
+      "fullTexts": {}
+    },
+    "2055707616605835333": {
+      "excerpt": "Codex usage limits have now been reset across all paid plans.",
+      "contentHash": "d67d95d59cc2ceb6f4e730023dc6b851ab397c76e01f0b7c0235effaeb6d1f22",
+      "texts": {},
+      "fullText": "Codex usage limits have now been reset across all paid plans. Enjoy the weekend!",
+      "fullTexts": {}
+    },
+    "2048997818673537399": {
+      "excerpt": "Don't just reset Codex rate limits for fun, it costs money.",
+      "contentHash": "bb4ead38db8e45fc013c6f8a161f60e0f8ae9b479b092f3147ff7466eeea713c",
+      "texts": {},
+      "fullText": "Don't just reset Codex rate limits for fun, it costs money.\nDon't just reset Codex rate limits for fun, it costs money.\n\n... but the vibes are good ...\n\nI have reset Codex rate limits for ALL paid plans to celebrate a good week and allow everyone to build more with GPT-5.5. Enjoy",
+      "fullTexts": {}
+    },
+    "2046367145588916687": {
+      "excerpt": "Apologies for the disruption and rate limit reset incoming.",
+      "contentHash": "6d29ce39ef0a5353f65953800969336b02b1b59dfacc1e4b12f054fa27855db5",
+      "texts": {},
+      "fullText": "Codex incident is mitigated, seeing recovery. Lasted about 10 mins, Codex itself helped with the remediation, but ultimately the insight came from a human this time. \n\nApologies for the disruption and rate limit reset incoming.",
+      "fullTexts": {}
+    },
+    "2044943514832871564": {
+      "excerpt": "To celebrate its 1-year anniversary, I have allowed Codex to reset its own rate limits across all plans.",
+      "contentHash": "96e1ff9fee45d8e4f8033acfda343e00841a0308ab91265373014ade85748d00",
+      "texts": {},
+      "fullText": "Hi! To celebrate its 1-year anniversary, I have allowed Codex to reset its own rate limits across all plans. Enjoy all the new features.",
+      "fullTexts": {}
+    },
+    "2042299371602264319": {
+      "excerpt": "It comes with a ton of codex usage.",
+      "contentHash": "a2e4a67f785825e59a529a4528c6e0b9b9da175c8d50583160ce1c7cc8f25714",
+      "texts": {},
+      "fullText": "We did it, say hi to the $100 plan! \n\nIt should be the sweet spot for a ton of you. It comes with a ton of codex usage. And yes we are resetting the limits again too as I mentioned yesterday. Let’s keep building!",
+      "fullTexts": {}
+    },
+    "2041655710346572085": {
+      "excerpt": "To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so…",
+      "contentHash": "5e3e25745803bc382d7578ffe309db9382b95ecd61222d6ad30d3ec764acf394",
+      "texts": {},
+      "fullText": "Three million people are now using Codex weekly - up from two million a little under a month ago. Incredible to see the growth. Thank you to all of you and to the ecosystem we’re part of. To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so we can keep celebrating along the way.\n\nEnjoy and thank you!",
+      "fullTexts": {}
+    },
+    "2039248564967424483": {
+      "excerpt": "Our Codex dashboards are showing increased rate of users hitting rate limits and since we don't fully understand why I have made the cautious…",
+      "contentHash": "1b070476ca289e8df6d915f7e066d473baae58d887f0a3aaa8f54f375eb42b0a",
+      "texts": {},
+      "fullText": "Our Codex dashboards are showing increased rate of users hitting rate limits and since we don't fully understand why I have made the cautious decision of resetting the usage limits for all plans. Enjoy.\n\nI also wanted to celebrate us finding a pocket of fraudulent accounts that we banned and have helped us regain some compute. The fight against abuse never stops, but it's important to mark the moment and make it a little shared victory.",
+      "fullTexts": {}
+    },
+    "2037346989244096581": {
+      "excerpt": "We have reset Codex usage limits across all plans to let everyone experiment with the magnificent plugins we just launched, and because it had…",
+      "contentHash": "9eaf0d11e048c5e0ede86149f055209db022f04d13014f724fcf9118c354ffe8",
+      "texts": {},
+      "fullText": "Hello. We have reset Codex usage limits across all plans to let everyone experiment with the magnificent plugins we just launched, and because it had been a while! \n\nYou can just build unlimited things with Codex. Have fun!",
+      "fullTexts": {}
+    },
+    "2031605592352313567": {
+      "excerpt": "Reset button pressed, should see it in a bit",
+      "contentHash": "bc6b062b32b085307ce98c351f49693feb91a39d68cf2a194f29613f1b5e13d8",
+      "texts": {},
+      "fullText": "OK, Codex is back and stable and we should be good for a while. \n\nReset button pressed, should see it in a bit",
+      "fullTexts": {}
+    },
+    "2031216405266481489": {
+      "excerpt": "You have come to expect it, but yes, that means we will be reseting rate limits in a bit.",
+      "contentHash": "971da112efe9d948a462fdf005e3b2a364bc53c9af0f5ca3b6b77fa6a1a72ed4",
+      "texts": {},
+      "fullText": "This codex issue is now fully resolved and stable for the last couple of hours. \n\nYou have come to expect it, but yes, that means we will be reseting rate limits in a bit. Enjoy.",
+      "fullTexts": {}
+    },
+    "2030474136024400173": {
+      "excerpt": "We don’t have evidence of a widespread issue with codex usage being drained faster than it should but there are enough reports and we…",
+      "contentHash": "e0de7d254f90d53f34ec329fccd2d7ae456ed4d09ce76e79757b5f15e6c2d8e2",
+      "texts": {},
+      "fullText": "We don’t have evidence of a widespread issue with codex usage being drained faster than it should but there are enough reports and we have reset rate limits for plus & pro subscriptions while we work towards wrapping up our investigation over the coming 1-3 days.",
+      "fullTexts": {}
+    },
+    "2029308599835738218": {
+      "excerpt": "We caught an issue that was causing the 2X promotional increase in limits to not be applied to an estimated 9% of plus and…",
+      "contentHash": "b0671103a1cfbbf44d0f7e82486eb86b6df9a75011849c42298ded9b5612644a",
+      "texts": {},
+      "fullText": "We caught an issue that was causing the 2X promotional increase in limits to not be applied to an estimated 9% of plus and pro users for Codex. \n\nWe have now fixed this issue and are reseting the rate limit for all plus and pro users to compensate. Apologies and thank you for the bug reports over the last couple of days.",
+      "fullTexts": {}
+    },
+    "2028649088594436225": {
+      "excerpt": "Team will reset rate limits, that’s been a while.",
+      "contentHash": "efeac9093f4eaf2fad31bcadd24736c8261826174c5d19c56702c3ed5482ae4b",
+      "texts": {},
+      "fullText": "Codex is back up. We introduced an issue that caused requests to be blocked and rejected as high cyber risk. This was fixed in ~8 mins and we are now back online and fully operational.\n\nTeam will reset rate limits, that’s been a while. Enjoy one on us.",
+      "fullTexts": {}
+    },
+    "2004100061933064395": {
+      "excerpt": "For Codex users, to thank you all for the fun we've had over the last months, our first gift is that we have **reset…",
+      "contentHash": "61030d29872e550b38b78c26ebe246cc8e6772153ba61a4e5b8ad785c729b7f1",
+      "texts": {},
+      "fullText": "For Codex users, to thank you all for the fun we've had over the last months, our first gift is that we have **reset rate limits and are lifting the usage limits to 2X the usual limits until the 1st of Jan**. Wish you all a merry holiday and lots of coding!!\n\nSpread the word 👀",
+      "fullTexts": {}
+    },
+    "2002137269134819610": {
+      "excerpt": "We rewrote the underlying system to track and bill usage in Codex and we have reset usage limits in the process.",
+      "contentHash": "6dce57960c933f2568ca1bd092a94ba04c754ebb13fd79e76a394f7477d0c73b",
+      "texts": {},
+      "fullText": "We rewrote the underlying system to track and bill usage in Codex and we have reset usage limits in the process. Backfilling is time consuming and it’s more fun to give free usage. Enjoy!",
+      "fullTexts": {}
+    },
+    "2001114683047317723": {
+      "excerpt": "We have reset everyone’s usage limits, enjoy more Codex and apologies for the disruption.",
+      "contentHash": "419f4f0590153b4a61a78b3c7dbd73a82cdad5b3efa02b3f34dc3f6f347028c1",
+      "texts": {},
+      "fullText": "Didn’t need to do this in a while, but you know the drill. We have reset everyone’s usage limits, enjoy more Codex and apologies for the disruption.",
+      "fullTexts": {}
+    },
+    "1995988609896513743": {
+      "excerpt": "We have reset the usage limits for everyone in Codex, which helps us mitigate the issue the fastest and the team will continue to…",
+      "contentHash": "0b599da3d2645b449b1c43cb8da75042b1a0c68bf5ef2ded2e2076e4efcb21c0",
+      "texts": {},
+      "fullText": "We have reset the usage limits for everyone in Codex, which helps us mitigate the issue the fastest and the team will continue to work on the underlying cause. This should propagate to all users over the next 10 mins, enjoy and apologies for the confusion!",
+      "fullTexts": {}
+    },
+    "1992370994028388670": {
+      "excerpt": "We have reset rate limits for all Codex users to compensate for the unusual high latencies in or near the US in the previous…",
+      "contentHash": "0a0a0d9504abc35b78f7f029939d97050e492aa2a4533edf50e4ee05d617e0b6",
+      "texts": {},
+      "fullText": "We have reset rate limits for all Codex users to compensate for the unusual high latencies in or near the US in the previous hours. Grateful for the team working hard behind the scenes to keep Codex running 24/7.\n\nI do recommend trying out GPT-5.1-Codex-Max too if you haven’t!",
+      "fullTexts": {}
+    },
+    "1986166501435711936": {
+      "excerpt": "We suffered a minor outage for last 45 minutes which turned into a global outage for last 30 minutes, this is now resolved and…",
+      "contentHash": "cc7b403381b33b0e9d304e9b774231b649a6b23b99cae0ab8d5007e20824d0c5",
+      "texts": {},
+      "fullText": "Codex outage resolved.\n\nWe suffered a minor outage for last 45 minutes which turned into a global outage for last 30 minutes, this is now resolved and we have reset the rate limits. Please let me know if you still see issues.",
+      "fullTexts": {}
+    },
+    "1968163721034994139": {
+      "excerpt": "We have reset everyone's limits for gpt-5-codex to allow you all to benefit more from it today and as a way to make up…",
+      "contentHash": "b9914a4846004f32d8c8fe171572e13e12ca48231e070ba999cad8bbfc5421e7",
+      "texts": {},
+      "fullText": "We have reset everyone's limits for gpt-5-codex to allow you all to benefit more from it today and as a way to make up for the slowdowns earlier while we were provisioning additional GPUs. We'll continue to add capacity throughout the week to maintain the speed.\n\nEnjoy!",
+      "fullTexts": {}
     }
   },
-  "pending": 83,
-  "lastAttemptAt": "2026-10-05T09:21:10.842Z"
+  "pending": 334,
+  "lastAttemptAt": "2026-10-05T18:40:43.106Z"
 }
