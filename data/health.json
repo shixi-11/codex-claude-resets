@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-04T23:33:28.541Z",
+  "lastAttemptAt": "2026-10-05T02:21:08.211Z",
   "lastSuccessAt": "2026-10-04T17:45:33.637Z",
-  "discoveryAt": "2026-10-04T23:33:28.541Z",
+  "discoveryAt": "2026-10-05T02:21:08.211Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
-      "candidates": 22
+      "candidates": 23
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -25,8 +25,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
-      "ok": true,
-      "candidates": 16
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -56,7 +56,7 @@
       "name": "Codex Reset Monitor · discovery only",
       "url": "https://codexreset.org/",
       "ok": true,
-      "candidates": 394
+      "candidates": 395
     },
     {
       "name": "Codex Resets · discovery only",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 422,
+      "checked": 423,
       "failed": 4
     }
   ],
@@ -99,11 +99,11 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-04T23:33:28.541Z",
+      "lastAttemptAt": "2026-10-05T02:21:08.211Z",
       "status": "degraded",
-      "checked": 391,
+      "checked": 392,
       "failed": 4,
-      "discovered": 395,
+      "discovered": 396,
       "authors": [
         {
           "author": "thsottiaux",
@@ -115,13 +115,13 @@
         },
         {
           "author": "OpenAI",
-          "ok": true
+          "ok": false
         }
       ],
       "lastSuccessAt": "2026-10-04T17:45:33.637Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-04T23:33:28.541Z",
+      "lastAttemptAt": "2026-10-05T02:21:08.211Z",
       "status": "ok",
       "checked": 31,
       "failed": 0,
@@ -140,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-04T23:33:28.541Z"
+      "lastSuccessAt": "2026-10-05T02:21:08.211Z"
     }
   }
 }
