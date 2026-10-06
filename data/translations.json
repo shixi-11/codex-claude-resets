@@ -2176,7 +2176,9 @@
         "zh": "其次，这值得庆祝，今天我们将为每位Codex和ChatGPT Work用户记入一个可随时使用的BANKED重置机会。",
         "zh-Hant": "其次，這是值得慶祝的事，在今天白天，我們將為每位 Codex 和 ChatGPT Work 用戶存入一個可隨時使用的重置機會。",
         "es": "Segundo que nada, esto es motivo de celebración y durante el día acreditaremos a cada usuario de Codex y ChatGPT Work con un reinicio BANKED que puedes usar a tu propio gusto.",
-        "ar": "ثانياً، هذا سبب للاحتفال، وخلال اليوم سنقوم بإضافة إعادة تعيين محفوظة لكل مستخدم Codex وChatGPT Work يمكنهم استخدامها في أي وقت يرغبون فيه."
+        "ar": "ثانياً، هذا سبب للاحتفال، وخلال اليوم سنقوم بإضافة إعادة تعيين محفوظة لكل مستخدم Codex وChatGPT Work يمكنهم استخدامها في أي وقت يرغبون فيه.",
+        "ja": "次に、これはお祝いの理由で、日中にすべてのCodexおよびChatGPT Workユーザーに、自由に使えるBANKEDリセットを付与します。",
+        "fr": "Deuxièmement, c'est une raison de célébration et au cours de la journée, nous créditerons chaque utilisateur de Codex et de ChatGPT Work avec une réinitialisation BANKED que vous pourrez utiliser à votre guise."
       },
       "fullText": "It's me again. I come bearing great news. \n\nFirst of all, we have hit 20M active users for Codex some time this week. Second of all, this is cause for celebration and during the day we will credit every Codex and ChatGPT Work user with a BANKED reset that you can use at your own leisure. And we will have some other good news later too!\n\nNow, on usage limits draining faster, while we're not seeing anything abnormal, we do take it incredibly seriously and there is an ongoing investigation. I will share if we do find anything and my below post is really a clarification on a specific pattern that we did see that I wanted to call out.\n\nGo do something amazing today.",
       "fullTexts": {
@@ -2184,23 +2186,31 @@
         "zh-Hant": "又是我的聲音。我帶來了好消息。\n\n首先，我們在本週某個時間點，Codex 的活躍用戶數已達到 2000 萬。其次，這是值得慶祝的事，在今天白天，我們將為每位 Codex 和 ChatGPT Work 用戶存入一個可隨時使用的重置機會。而且我們稍後還會有其他好消息！\n\n現在，關於使用限制耗盡得更快，雖然我們沒有發現任何異常情況，但我們極其重視此事，目前正在進行調查。如果我們確實發現什麼，我會分享。而且我下面的貼文其實是對一個我們確實觀察到的特定模式的澄清，我想特別指出這一點。\n\n今天去成就一些了不起的事吧。",
         "ko": "다시 나야. 좋은 소식을 가지고 왔어.\n\n우선, 이번 주에 Codex의 활성 사용자가 2천만 명을 돌파했어. 둘째, 이건 축하할 일이야. 오늘 낮 동안에 모든 Codex와 ChatGPT Work 사용자에게 자유롭게 사용할 수 있는 BANKED 리셋을 크레딧으로 지급할 거야. 그리고 나중에 다른 좋은 소식도 더 있을 거야!\n\n이제 사용 한도 소모가 더 빨라지는 문제에 대해 말하자면, 우리는 비정상적인 건 아무것도 보지 못하고 있지만, 이 문제를 엄청나게 심각하게 받아들이고 있고 조사가 진행 중이야. 만약 뭔가를 발견하면 공유할게. 그리고 내 아래 포스트는 우리가 실제로 본 특정 패턴에 대한 명확한 설명일 뿐이야. 그걸 지적하고 싶었어.\n\n오늘 멋진 일을 해봐.",
         "es": "Aquí estoy de nuevo. Vengo con grandes noticias.\n\nPrimero que nada, hemos alcanzado los 20 millones de usuarios activos para Codex en algún momento de esta semana. Segundo que nada, esto es motivo de celebración y durante el día acreditaremos a cada usuario de Codex y ChatGPT Work con un reinicio BANKED que puedes usar a tu propio gusto. ¡Y también tendremos otras buenas noticias más adelante!\n\nAhora, sobre los límites de uso que se agotan más rápido, aunque no estamos viendo nada anormal, lo tomamos increíblemente en serio y hay una investigación en curso. Compartiré si encontramos algo y mi publicación de abajo es realmente una aclaración sobre un patrón específico que sí vimos y que quería destacar.\n\nVe y haz algo increíble hoy.",
-        "ar": "أنا مرة أخرى. أتيت حاملاً بأخبار رائعة.\n\nأولاً، لقد وصلنا إلى 20 مليون مستخدم نشط لـ Codex في وقت ما هذا الأسبوع. ثانياً، هذا سبب للاحتفال، وخلال اليوم سنقوم بإضافة إعادة تعيين محفوظة لكل مستخدم Codex وChatGPT Work يمكنهم استخدامها في أي وقت يرغبون فيه. وسنكون لدينا بعض الأخبار الجيدة الأخرى لاحقاً أيضاً!\n\nالآن، بخصوص حدود الاستخدام التي تنفذ بشكل أسرع، بينما لا نرى أي شيء غير طبيعي، إلا أننا نأخذ الأمر على محمل الجد الشديد وهناك تحقيق جارٍ. سأشارك إذا وجدنا أي شيء، ومنشوري أدناه هو في الواقع توضيح لنمط محدد رأيناه بالفعل وأردت الإشارة إليه.\n\nاذهب وافعل شيئاً مذهلاً اليوم."
+        "ar": "أنا مرة أخرى. أتيت حاملاً بأخبار رائعة.\n\nأولاً، لقد وصلنا إلى 20 مليون مستخدم نشط لـ Codex في وقت ما هذا الأسبوع. ثانياً، هذا سبب للاحتفال، وخلال اليوم سنقوم بإضافة إعادة تعيين محفوظة لكل مستخدم Codex وChatGPT Work يمكنهم استخدامها في أي وقت يرغبون فيه. وسنكون لدينا بعض الأخبار الجيدة الأخرى لاحقاً أيضاً!\n\nالآن، بخصوص حدود الاستخدام التي تنفذ بشكل أسرع، بينما لا نرى أي شيء غير طبيعي، إلا أننا نأخذ الأمر على محمل الجد الشديد وهناك تحقيق جارٍ. سأشارك إذا وجدنا أي شيء، ومنشوري أدناه هو في الواقع توضيح لنمط محدد رأيناه بالفعل وأردت الإشارة إليه.\n\nاذهب وافعل شيئاً مذهلاً اليوم.",
+        "ja": "また私です。素晴らしいニュースをお持ちしました。\n\nまず、Codexのアクティブユーザーが今週、2000万人に達しました。次に、これはお祝いの理由で、日中にすべてのCodexおよびChatGPT Workユーザーに、自由に使えるBANKEDリセットを付与します。また、後で他の良いニュースもあります！\n\nさて、使用制限が早く枯渇している件について、異常なものは見つかっていませんが、非常に真剣に受け止めており、現在調査中です。何か見つかり次第共有しますし、下の投稿は実際に確認した特定の傾向についての明確化で、指摘したかったものです。\n\n今日、何か素晴らしいことを成し遂げてください。",
+        "fr": "C'est encore moi. Je viens avec de grandes nouvelles.\n\nTout d'abord, nous avons atteint 20 millions d'utilisateurs actifs pour Codex à un moment donné cette semaine. Deuxièmement, c'est une raison de célébration et au cours de la journée, nous créditerons chaque utilisateur de Codex et de ChatGPT Work avec une réinitialisation BANKED que vous pourrez utiliser à votre guise. Et nous aurons d'autres bonnes nouvelles plus tard aussi !\n\nMaintenant, concernant les limites d'utilisation qui se vident plus rapidement, bien que nous ne constations rien d'anormal, nous le prenons extrêmement au sérieux et une enquête est en cours. Je partagerai si nous trouvons quelque chose et mon message ci-dessous est vraiment une clarification sur un schéma spécifique que nous avons observé et que je voulais souligner.\n\nAllez faire quelque chose d'incroyable aujourd'hui."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-05T18:40:39.758Z"
+      "translatedAt": "2026-10-06T00:22:38.135Z"
     },
     "2076418567143408112": {
       "excerpt": "Added a banked reset to 500k users of ChatGPT Work and Codex.",
       "contentHash": "dd36e2c8318f5ac829ef7662812e7a4f7ba98e045ea9cc00415725e58e078e70",
       "texts": {
-        "ja": "ChatGPT WorkおよびCodexの50万ユーザーにバンクトリセットを追加しました。"
+        "ja": "ChatGPT WorkおよびCodexの50万ユーザーにバンクトリセットを追加しました。",
+        "ko": "ChatGPT Work와 Codex의 50만 명 사용자에게 뱅크드 리셋을 추가했습니다.",
+        "es": "Se ha añadido un reinicio bancado a 500k usuarios de ChatGPT Work y Codex.",
+        "ar": "أضفنا إعادة تعيين مخزنة إلى 500 ألف مستخدم من ChatGPT Work وCodex."
       },
       "fullText": "Added a banked reset to 500k users of ChatGPT Work and Codex.\n\nWhat’s been happening:\n- Just released the ability to use a banked reset from web and mobile. Before today you could only do it in the desktop app\n- Had an issue where less than 10% of users who used a banked reset and it didn’t actually reset. This was during a 2 hour window.\n- It was hard to find all the exact users where it didn’t apply, so instead granted a banked reset to everyone who pressed the reset button in that 2 hour window. This also gives us the opportunity to validate the new infra ahead of tomorrow\n\nTomorrow we will celebrate our 7M active users milestone and grant the first banked reset across all of our ChatGPT Work and Codex users.\n\nWe will also release a bunch of updates to the desktop app, addressing a ton of your feedback.\n\nTalk soon",
       "fullTexts": {
-        "ja": "ChatGPT WorkおよびCodexの50万ユーザーにバンクトリセットを追加しました。\n\n最近の状況：\n- Webおよびモバイルからバンクトリセットを使用する機能をちょうどリリースしました。今日以前はデスクトップアプリでのみ可能でした\n- バンクトリセットを使用したユーザーの10%未満で、実際にはリセットされなかった問題が発生しました。これは2時間のウィンドウ中でした。\n- 適用されなかった正確なユーザーをすべて特定するのが難しかったため、その2時間のウィンドウでリセットボタンを押した全員にバンクトリセットを付与しました。これにより、明日を前に新しいインフラを検証する機会も得られました\n\n明日、私たちは700万アクティブユーザーのマイルストーンを祝い、ChatGPT WorkおよびCodexの全ユーザーに最初のバンクトリセットを付与します。\n\nデスクトップアプリにたくさんのアップデートをリリースし、あなた方のフィードバックの多くに対応します。\n\nまた近いうちに。"
+        "ja": "ChatGPT WorkおよびCodexの50万ユーザーにバンクトリセットを追加しました。\n\n最近の状況：\n- Webおよびモバイルからバンクトリセットを使用する機能をちょうどリリースしました。今日以前はデスクトップアプリでのみ可能でした\n- バンクトリセットを使用したユーザーの10%未満で、実際にはリセットされなかった問題が発生しました。これは2時間のウィンドウ中でした。\n- 適用されなかった正確なユーザーをすべて特定するのが難しかったため、その2時間のウィンドウでリセットボタンを押した全員にバンクトリセットを付与しました。これにより、明日を前に新しいインフラを検証する機会も得られました\n\n明日、私たちは700万アクティブユーザーのマイルストーンを祝い、ChatGPT WorkおよびCodexの全ユーザーに最初のバンクトリセットを付与します。\n\nデスクトップアプリにたくさんのアップデートをリリースし、あなた方のフィードバックの多くに対応します。\n\nまた近いうちに。",
+        "ko": "ChatGPT Work와 Codex의 50만 명 사용자에게 뱅크드 리셋을 추가했습니다.\n\n무슨 일이 있었나요:\n- 웹과 모바일에서 뱅크드 리셋을 사용할 수 있는 기능을 방금 출시했습니다. 오늘 이전에는 데스크톱 앱에서만 가능했습니다\n- 뱅크드 리셋을 사용한 사용자 중 10% 미만에서 실제로 리셋이 되지 않는 문제가 발생했습니다. 이는 2시간 동안의 창구에서 일어났습니다.\n- 적용되지 않은 모든 정확한 사용자를 찾기 어려웠기 때문에, 대신 그 2시간 창구에서 리셋 버튼을 누른 모든 사람에게 뱅크드 리셋을 부여했습니다. 이는 또한 내일 앞두고 새로운 인프라를 검증할 기회를 줍니다\n\n내일 우리는 700만 명의 활성 사용자 이정표를 축하하고, ChatGPT Work와 Codex 사용자 전체에 첫 번째 뱅크드 리셋을 부여할 것입니다.\n\n우리는 또한 데스크톱 앱에 여러 업데이트를 출시하여 여러분의 피드백을 많이 반영할 것입니다.\n\n곧 이야기 나눠요",
+        "es": "Se ha añadido un reinicio bancado a 500k usuarios de ChatGPT Work y Codex.\n\nLo que ha estado pasando:\n- Acabamos de lanzar la capacidad de usar un reinicio bancado desde la web y móvil. Antes de hoy, solo podías hacerlo en la app de escritorio\n- Hubo un problema donde menos del 10% de los usuarios que usaron un reinicio bancado y no se reinició realmente. Esto fue durante una ventana de 2 horas.\n- Fue difícil encontrar a todos los usuarios exactos donde no se aplicó, así que en su lugar otorgamos un reinicio bancado a todos los que presionaron el botón de reinicio en esa ventana de 2 horas. Esto también nos da la oportunidad de validar la nueva infraestructura antes de mañana\n\nMañana celebraremos nuestro hito de 7M de usuarios activos y otorgaremos el primer reinicio bancado a todos nuestros usuarios de ChatGPT Work y Codex.\n\nTambién lanzaremos un montón de actualizaciones a la app de escritorio, abordando un montón de tu feedback.\n\nHablamos pronto",
+        "ar": "أضفنا إعادة تعيين مخزنة إلى 500 ألف مستخدم من ChatGPT Work وCodex.\n\nما الذي كان يحدث:\n- للتو أصدرنا القدرة على استخدام إعادة تعيين مخزنة من الويب والموبايل. قبل اليوم كنت تستطيع القيام بذلك فقط في تطبيق سطح المكتب\n- واجهنا مشكلة حيث أقل من 10% من المستخدمين الذين استخدموا إعادة تعيين مخزنة ولم تقم بالفعل بالإعادة. كان ذلك خلال نافذة زمنية مدتها ساعتين.\n- كان من الصعب العثور على جميع المستخدمين الدقيقين الذين لم يتم تطبيقها عليهم، لذا بدلاً من ذلك منحنا إعادة تعيين مخزنة للجميع الذين ضغطوا على زر الإعادة في تلك النافذة الزمنية مدتها ساعتين. هذا أيضاً يمنحنا الفرصة للتحقق من البنية التحتية الجديدة قبل غد.\n\nغداً سنحتفل بمعلمة 7 ملايين مستخدم نشط، ونمنح أول إعادة تعيين مخزنة عبر جميع مستخدمي ChatGPT Work وCodex.\n\nسنصدر أيضاً مجموعة من التحديثات لتطبيق سطح المكتب، معالجين كمية هائلة من تعليقاتكم.\n\nنتحدث قريباً"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-05T18:40:42.743Z"
+      "translatedAt": "2026-10-06T00:22:43.024Z"
     },
     "2075820987833274448": {
       "excerpt": "another usage limit reset for all our ChatGPT Work and Codex users.",
@@ -2413,6 +2423,6 @@
       "fullTexts": {}
     }
   },
-  "pending": 334,
-  "lastAttemptAt": "2026-10-05T18:40:43.106Z"
+  "pending": 329,
+  "lastAttemptAt": "2026-10-06T00:22:43.203Z"
 }
