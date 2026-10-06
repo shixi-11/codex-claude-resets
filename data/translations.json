@@ -2429,8 +2429,40 @@
       "texts": {},
       "fullText": "We have reset everyone's limits for gpt-5-codex to allow you all to benefit more from it today and as a way to make up for the slowdowns earlier while we were provisioning additional GPUs. We'll continue to add capacity throughout the week to maintain the speed.\n\nEnjoy!",
       "fullTexts": {}
+    },
+    "2107539659979121033": {
+      "excerpt": "More details about qualifications and rate limits:",
+      "contentHash": "5bf4f90b883571fb247c1e0e6fd693142e1182dbbaf001736acd2998f69b24fd",
+      "texts": {},
+      "fullText": "If you’re on a paid tier, your organization moves to its new tier automatically. No action needed.\n\nMore details about qualifications and rate limits:",
+      "fullTexts": {}
+    },
+    "2107539647392096384": {
+      "excerpt": "We’re making it easier to qualify for higher OpenAI API rate limits.",
+      "contentHash": "d8e14d41a5fd57c5bb0ac38d2b07a7f6de8b04737bd003978c8bfc71b7c56f4a",
+      "texts": {
+        "zh": "我们正在让获得更高的 OpenAI API 速率限制的资格变得更容易。",
+        "ja": "OpenAI API の高いレート制限の資格を得ることをより簡単にしています。",
+        "ko": "OpenAI API의 더 높은 속도 제한에 자격을 갖추는 것을 더 쉽게 만들고 있습니다.",
+        "es": "Estamos facilitando la calificación para límites de tasa más altos de la API de OpenAI.",
+        "fr": "Nous rendons plus facile la qualification pour des limites de taux plus élevées de l’API OpenAI.",
+        "de": "Wir erleichtern die Qualifikation für höhere OpenAI-API-Ratenlimits.",
+        "ar": "نحن نجعل تأهلك للحصول على حدود معدلات أعلى في واجهة برمجة تطبيقات OpenAI أسهل."
+      },
+      "fullText": "We’re making it easier to qualify for higher OpenAI API rate limits.\n\nFive paid usage tiers become three: Build, Launch, and Grow.\n\nYou can qualify for Grow, our new highest tier, with $500 in total API payments—down from $1,000 for the previous highest tier.",
+      "fullTexts": {
+        "zh": "我们正在让获得更高的 OpenAI API 速率限制的资格变得更容易。\n\n五个付费使用层级简化为三个：Build、Launch 和 Grow。\n\n您只需累计 API 支付金额达到 500 美元，即可获得 Grow 资格，这是我们新的最高层级——之前最高层级需要 1000 美元。",
+        "ja": "OpenAI API の高いレート制限の資格を得ることをより簡単にしています。\n\n5 つの有料使用ティアが 3 つになります：Build、Launch、Grow。\n\n新しい最高ティアである Grow に資格を得るには、API 支払いの合計 $500 で十分です。以前の最高ティアでは $1,000 でした。",
+        "ko": "OpenAI API의 더 높은 속도 제한에 자격을 갖추는 것을 더 쉽게 만들고 있습니다.\n\n유료 사용 등급이 5개에서 3개로 줄어듭니다: Build, Launch, 그리고 Grow.\n\nGrow, 우리의 새로운 최고 등급에 자격을 갖추기 위해 총 $500의 API 결제가 필요합니다—이전 최고 등급의 $1,000에서 낮아진 금액입니다.",
+        "es": "Estamos facilitando la calificación para límites de tasa más altos de la API de OpenAI.\n\nCinco niveles de uso pagado se convierten en tres: Construir, Lanzar y Crecer.\n\nPuedes calificar para Crecer, nuestro nuevo nivel más alto, con $500 en pagos totales de API, en comparación con $1,000 para el nivel más alto anterior.",
+        "fr": "Nous rendons plus facile la qualification pour des limites de taux plus élevées de l’API OpenAI.\n\nCinq niveaux d’utilisation payants deviennent trois : Build, Launch et Grow.\n\nVous pouvez qualifier pour Grow, notre nouveau niveau le plus élevé, avec 500 $ en paiements API totaux — contre 1 000 $ pour l’ancien niveau le plus élevé.",
+        "de": "Wir erleichtern die Qualifikation für höhere OpenAI-API-Ratenlimits.\n\nFünf kostenpflichtige Nutzungsstufen werden zu drei: Build, Launch und Grow.\n\nSie können sich für Grow, unsere neue höchste Stufe, mit 500 $ an gesamten API-Zahlungen qualifizieren – herabgesetzt von 1.000 $ für die vorherige höchste Stufe.",
+        "ar": "نحن نجعل تأهلك للحصول على حدود معدلات أعلى في واجهة برمجة تطبيقات OpenAI أسهل.\n\nتصبح خمسة مستويات استخدام مدفوعة ثلاثة: بناء، إطلاق، ونمو.\n\nيمكنك التأهل لمستوى النمو، وهو أعلى مستوى جديد لدينا، بقيمة 500 دولار في إجمالي مدفوعات واجهة برمجة التطبيقات—انخفاض من 1000 دولار لأعلى مستوى سابق."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-06T19:07:36.517Z"
     }
   },
-  "pending": 327,
-  "lastAttemptAt": "2026-10-06T13:39:29.769Z"
+  "pending": 336,
+  "lastAttemptAt": "2026-10-06T19:07:50.885Z"
 }
