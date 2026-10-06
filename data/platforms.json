@@ -94,7 +94,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-10-06T06:37:44.997Z",
+        "verifiedAt": "2026-10-06T09:07:45.291Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -107,7 +107,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-10-06T06:37:44.997Z",
+      "checkedAt": "2026-10-06T09:07:45.291Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -119,7 +119,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/claudeai/status/2105721630051692804",
       "publishedAt": "2026-10-01T18:08:53.677Z",
-      "verifiedAt": "2026-10-06T06:37:40.936Z",
+      "verifiedAt": "2026-10-06T09:07:36.500Z",
       "excerpt": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less…",
       "fullText": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less of your usage limits.\n\nGive it a try with Claude Sonnet 5.5. It has a strong eye for design and builds slides that need minimal editing.",
       "truncated": false,
@@ -154,7 +154,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
       "publishedAt": "2026-09-28T18:36:08.452Z",
-      "verifiedAt": "2026-10-06T06:37:40.936Z",
+      "verifiedAt": "2026-10-06T09:07:36.500Z",
       "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
