@@ -2447,7 +2447,8 @@
         "es": "Estamos facilitando la calificación para límites de tasa más altos de la API de OpenAI.",
         "fr": "Nous rendons plus facile la qualification pour des limites de taux plus élevées de l’API OpenAI.",
         "de": "Wir erleichtern die Qualifikation für höhere OpenAI-API-Ratenlimits.",
-        "ar": "نحن نجعل تأهلك للحصول على حدود معدلات أعلى في واجهة برمجة تطبيقات OpenAI أسهل."
+        "ar": "نحن نجعل تأهلك للحصول على حدود معدلات أعلى في واجهة برمجة تطبيقات OpenAI أسهل.",
+        "zh-Hant": "我們正在讓符合更高 OpenAI API 速率限制的資格變得更容易。"
       },
       "fullText": "We’re making it easier to qualify for higher OpenAI API rate limits.\n\nFive paid usage tiers become three: Build, Launch, and Grow.\n\nYou can qualify for Grow, our new highest tier, with $500 in total API payments—down from $1,000 for the previous highest tier.",
       "fullTexts": {
@@ -2457,12 +2458,61 @@
         "es": "Estamos facilitando la calificación para límites de tasa más altos de la API de OpenAI.\n\nCinco niveles de uso pagado se convierten en tres: Construir, Lanzar y Crecer.\n\nPuedes calificar para Crecer, nuestro nuevo nivel más alto, con $500 en pagos totales de API, en comparación con $1,000 para el nivel más alto anterior.",
         "fr": "Nous rendons plus facile la qualification pour des limites de taux plus élevées de l’API OpenAI.\n\nCinq niveaux d’utilisation payants deviennent trois : Build, Launch et Grow.\n\nVous pouvez qualifier pour Grow, notre nouveau niveau le plus élevé, avec 500 $ en paiements API totaux — contre 1 000 $ pour l’ancien niveau le plus élevé.",
         "de": "Wir erleichtern die Qualifikation für höhere OpenAI-API-Ratenlimits.\n\nFünf kostenpflichtige Nutzungsstufen werden zu drei: Build, Launch und Grow.\n\nSie können sich für Grow, unsere neue höchste Stufe, mit 500 $ an gesamten API-Zahlungen qualifizieren – herabgesetzt von 1.000 $ für die vorherige höchste Stufe.",
-        "ar": "نحن نجعل تأهلك للحصول على حدود معدلات أعلى في واجهة برمجة تطبيقات OpenAI أسهل.\n\nتصبح خمسة مستويات استخدام مدفوعة ثلاثة: بناء، إطلاق، ونمو.\n\nيمكنك التأهل لمستوى النمو، وهو أعلى مستوى جديد لدينا، بقيمة 500 دولار في إجمالي مدفوعات واجهة برمجة التطبيقات—انخفاض من 1000 دولار لأعلى مستوى سابق."
+        "ar": "نحن نجعل تأهلك للحصول على حدود معدلات أعلى في واجهة برمجة تطبيقات OpenAI أسهل.\n\nتصبح خمسة مستويات استخدام مدفوعة ثلاثة: بناء، إطلاق، ونمو.\n\nيمكنك التأهل لمستوى النمو، وهو أعلى مستوى جديد لدينا، بقيمة 500 دولار في إجمالي مدفوعات واجهة برمجة التطبيقات—انخفاض من 1000 دولار لأعلى مستوى سابق.",
+        "zh-Hant": "我們正在讓符合更高 OpenAI API 速率限制的資格變得更容易。\n\n五個付費使用層級合併為三個：Build、Launch 和 Grow。\n\n您只需累計 API 付款達到 500 美元，即可符合 Grow 資格，這是我們新的最高層級——先前最高層級需要 1,000 美元。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-06T19:07:36.517Z"
+      "translatedAt": "2026-10-06T23:02:41.878Z"
+    },
+    "2107578625419866469": {
+      "excerpt": "Four updates or a reset.",
+      "contentHash": "579c20371c959dc07eaa3b61164667f14682b4ca2488c9b2e7096c84cfc2fdd3",
+      "texts": {
+        "zh": "四个更新或一次重置。",
+        "zh-Hant": "四個更新或重置。",
+        "ko": "네 가지 업데이트 또는 리셋.",
+        "ja": "4つのアップデートかリセットか。",
+        "fr": "Quatre mises à jour ou une réinitialisation.",
+        "es": "Cuatro actualizaciones o un reinicio.",
+        "de": "Vier Updates oder ein Reset.",
+        "ar": "أربعة تحديثات أو إعادة تعيين."
+      },
+      "fullText": "Four updates or a reset. Or both. How was day 2.",
+      "fullTexts": {
+        "zh": "四个更新或一次重置。或者两者兼而有之。第二天怎么样。",
+        "zh-Hant": "四個更新或重置。或者兩者兼具。第二天過得如何。",
+        "ko": "네 가지 업데이트 또는 리셋. 아니면 둘 다. 2일차는 어땠어.",
+        "ja": "4つのアップデートかリセットか。あるいは両方。2日目はどうだった。",
+        "fr": "Quatre mises à jour ou une réinitialisation. Ou les deux. Comment s'est passé le jour 2.",
+        "es": "Cuatro actualizaciones o un reinicio. O ambas. ¿Cómo estuvo el día 2?",
+        "de": "Vier Updates oder ein Reset. Oder beides. Wie war Tag 2.",
+        "ar": "أربعة تحديثات أو إعادة تعيين. أو كلاهما. كيف كان اليوم الثاني."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-06T23:02:39.109Z"
+    },
+    "2107577536779870210": {
+      "excerpt": "I do like giving resets",
+      "contentHash": "c3f3cbc35ec9e9f51b06f2d6efa124b574f1f5f56a7e44f686fd1c6c191b8123",
+      "texts": {
+        "ja": "リセットを与えるのは好きです。",
+        "ko": "저는 리셋을 주는 걸 좋아해요",
+        "de": "Ich gebe gerne Resets.",
+        "ar": "أنا أحب بالفعل إعطاء إعادة التعيين"
+      },
+      "fullText": "I do like giving resets",
+      "fullTexts": {
+        "ja": "リセットを与えるのは好きです。",
+        "ko": "저는 리셋을 주는 걸 좋아해요",
+        "es": "Sí que me gusta dar reseteos",
+        "fr": "J’aime bien donner des resets",
+        "de": "Ich gebe gerne Resets.",
+        "ar": "أنا أحب بالفعل إعطاء إعادة التعيين"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-06T23:02:40.330Z"
     }
   },
-  "pending": 336,
-  "lastAttemptAt": "2026-10-06T19:07:50.885Z"
+  "pending": 339,
+  "lastAttemptAt": "2026-10-06T23:02:54.188Z"
 }
