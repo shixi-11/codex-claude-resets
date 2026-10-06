@@ -2216,14 +2216,16 @@
       "excerpt": "another usage limit reset for all our ChatGPT Work and Codex users.",
       "contentHash": "c90822d991e96981c4b29e222a3cdbfdf81f35c148378cb8240abcafa111468f",
       "texts": {
-        "zh": "介绍……为所有 ChatGPT Work 和 Codex 用户重置另一个使用限制。"
+        "zh": "介绍……为所有 ChatGPT Work 和 Codex 用户重置另一个使用限制。",
+        "zh-Hant": "介紹……為我們所有 ChatGPT Work 和 Codex 用戶重置另一個使用限制。"
       },
       "fullText": "Introducing... another usage limit reset for all our ChatGPT Work and Codex users. Should land over next 30 minutes. Hope you have an awesome weekend.\n\nThank you for pushing our systems to the absolute limit, we have never seen traffic increase so quickly. Keep the feedback coming and we'll keep shipping.",
       "fullTexts": {
-        "zh": "介绍……为所有 ChatGPT Work 和 Codex 用户重置另一个使用限制。将会在接下来的 30 分钟内生效。希望您有一个精彩的周末。\n\n感谢您将我们的系统推向极限，我们从未见过流量增长如此迅速。请继续提供反馈，我们会继续交付。"
+        "zh": "介绍……为所有 ChatGPT Work 和 Codex 用户重置另一个使用限制。将会在接下来的 30 分钟内生效。希望您有一个精彩的周末。\n\n感谢您将我们的系统推向极限，我们从未见过流量增长如此迅速。请继续提供反馈，我们会继续交付。",
+        "zh-Hant": "介紹……為我們所有 ChatGPT Work 和 Codex 用戶重置另一個使用限制。應該會在接下來的 30 分鐘內生效。希望您有個精彩的週末。\n\n感謝您將我們的系統推向極限，我們從未見過流量增長如此迅速。請繼續提供反饋，我們會繼續交付更新。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-06T09:08:00.868Z"
+      "translatedAt": "2026-10-06T13:39:29.590Z"
     },
     "2075641131002700120": {
       "excerpt": "We have reset usage limits across Codex and ChatGPT Work.",
@@ -2429,6 +2431,6 @@
       "fullTexts": {}
     }
   },
-  "pending": 328,
-  "lastAttemptAt": "2026-10-06T09:08:01.048Z"
+  "pending": 327,
+  "lastAttemptAt": "2026-10-06T13:39:29.769Z"
 }
