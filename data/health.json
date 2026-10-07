@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-07T15:56:04.139Z",
+  "lastAttemptAt": "2026-10-07T21:04:31.633Z",
   "lastSuccessAt": "2026-10-07T15:56:04.139Z",
-  "discoveryAt": "2026-10-07T15:56:04.139Z",
+  "discoveryAt": "2026-10-07T21:04:31.633Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,8 +9,8 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": true,
-      "candidates": 23
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 17
+      "candidates": 9
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -26,7 +26,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 16
+      "candidates": 20
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -34,7 +34,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 13
+      "candidates": 15
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -42,7 +42,7 @@
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
-      "candidates": 20
+      "candidates": 21
     },
     {
       "name": "@claudeai timeline via FxEmbed",
@@ -50,29 +50,76 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 20
+      "candidates": 14
+    },
+    {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": true,
+      "candidates": 444
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 59
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 27
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": true,
-      "checked": 17,
-      "failed": 0
+      "ok": false,
+      "checked": 505,
+      "failed": 7
     }
   ],
-  "status": "ok",
-  "failedPosts": [],
+  "status": "degraded",
+  "failedPosts": [
+    {
+      "url": "https://x.com/OpenAI/status/2107596716367388924",
+      "error": "Empty post"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2107378093635899886",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2107370001837773172",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2105176198469087516",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2105039500149948878",
+      "error": "Empty post"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2105007775676072381",
+      "error": "Empty post"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2101738915564851585",
+      "error": "HTTP 404"
+    }
+  ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-07T15:56:04.139Z",
-      "status": "ok",
-      "checked": 9,
-      "failed": 0,
-      "discovered": 56,
+      "lastAttemptAt": "2026-10-07T21:04:31.633Z",
+      "status": "degraded",
+      "checked": 473,
+      "failed": 7,
+      "discovered": 489,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": true
+          "ok": false
         },
         {
           "author": "OpenAIDevs",
@@ -86,11 +133,11 @@
       "lastSuccessAt": "2026-10-07T15:56:04.139Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-07T15:56:04.139Z",
+      "lastAttemptAt": "2026-10-07T21:04:31.633Z",
       "status": "ok",
-      "checked": 8,
+      "checked": 32,
       "failed": 0,
-      "discovered": 53,
+      "discovered": 76,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +152,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-07T15:56:04.139Z"
+      "lastSuccessAt": "2026-10-07T21:04:31.633Z"
     }
   }
 }

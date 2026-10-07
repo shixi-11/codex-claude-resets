@@ -2542,8 +2542,31 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-07T08:52:02.667Z"
+    },
+    "2107913674593644711": {
+      "excerpt": "Loading a banked reset in everyone's paid accounts.",
+      "contentHash": "38ed184e49e4ecc06b346bb520c03ab99c2f259daefc162170bc582a8f11d3d8",
+      "texts": {
+        "zh-Hant": "在每位付費用戶的帳戶中載入一個預存的重置。",
+        "zh": "为每个付费账户加载一个储备的重置。",
+        "ja": "皆さんの有料アカウントに貯めていたリセットをロードしました。",
+        "es": "Cargando un reinicio guardado en las cuentas pagadas de todos.",
+        "de": "Ein gespeichertes Reset in allen bezahlten Konten laden.",
+        "ar": "تحميل إعادة تعيين محفوظة في حسابات الجميع المدفوعة."
+      },
+      "fullText": "Day 3/\n\nThe big one is GPT-6 in Chat, but today is also a little celebration day with a new high of 40M active users across Codex and ChatGPT Work.\n\nLoading a banked reset in everyone's paid accounts. See you again tomorrow!",
+      "fullTexts": {
+        "zh-Hant": "第 3 天/\n\n最大的消息是 Chat 中的 GPT-6，但今天也是一個小小的慶祝日，因為 Codex 和 ChatGPT Work 的活躍用戶數達到新高 40M。\n\n在每位付費用戶的帳戶中載入一個預存的重置。明天再見！",
+        "zh": "第3天/\n\nChat 中的 GPT-6 是重头戏，但今天也是一个小小的庆祝日，因为 Codex 和 ChatGPT Work 的活跃用户达到了4000万的新高。\n\n为每个付费账户加载一个储备的重置。明天再见！",
+        "ja": "3日目/\n\n大きなものはChatのGPT-6ですが、今日はCodexとChatGPT Work全体で4000万人のアクティブユーザーの新記録を達成した小さな祝賀の日でもあります。\n\n皆さんの有料アカウントに貯めていたリセットをロードしました。明日またお会いしましょう！",
+        "es": "Día 3/\n\nEl grande es GPT-6 en Chat, pero hoy también es un pequeño día de celebración con un nuevo máximo de 40M de usuarios activos en Codex y ChatGPT Work.\n\nCargando un reinicio guardado en las cuentas pagadas de todos. ¡Nos vemos de nuevo mañana!",
+        "de": "Tag 3/\n\nDer große ist GPT-6 in Chat, aber heute ist auch ein kleiner Feiertag mit einem neuen Höchststand von 40 Millionen aktiven Nutzern über Codex und ChatGPT Work.\n\nEin gespeichertes Reset in allen bezahlten Konten laden. Bis morgen sehen wir uns wieder!",
+        "ar": "اليوم 3/\n\nالحدث الكبير هو GPT-6 في الدردشة، لكن اليوم هو أيضًا يوم احتفال صغير مع رقم قياسي جديد يبلغ 40 مليون مستخدم نشط عبر Codex وChatGPT Work.\n\nتحميل إعادة تعيين محفوظة في حسابات الجميع المدفوعة. أراكم غدًا!"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-07T21:05:16.303Z"
     }
   },
-  "pending": 337,
-  "lastAttemptAt": "2026-10-07T15:56:28.211Z"
+  "pending": 339,
+  "lastAttemptAt": "2026-10-07T21:05:30.135Z"
 }
