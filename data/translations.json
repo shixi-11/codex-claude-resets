@@ -2515,8 +2515,35 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-07T02:16:59.635Z"
+    },
+    "2107676072871600470": {
+      "excerpt": "the reset has been processed.",
+      "contentHash": "1f63992ad36e3974b81537726aa309046ceecccb6730a178e22703240ca4eb2a",
+      "texts": {
+        "zh": "我们发布了四项被认为从良好到伟大的内容，以及一些数学证明，但投票结果很明确，社区要求重置。",
+        "zh-Hant": "我們發佈了四項被評為從良好到極好的東西，以及一些數學證明，但投票結果很明確，社群要求重置。",
+        "ja": "しかし、投票結果は明確で、コミュニティはリセットを求めています。",
+        "ko": "우리는 네 가지를 출시했는데, 그건 좋음에서 훌륭함으로 평가되었고 몇 가지 수학 증명도 있었지만, 투표는 명확하고 커뮤니티는 리셋을 요구합니다.",
+        "es": "Enviamos cuatro cosas que se consideraron de buenas a excelentes y algunas pruebas matemáticas, pero el voto es claro y la comunidad exige un reinicio.",
+        "fr": "Nous avons livré quatre choses qui ont été jugées bonnes à excellentes et quelques preuves mathématiques, mais le vote est clair et la communauté exige une réinitialisation.",
+        "de": "Wir haben vier Dinge verschickt, die von gut bis großartig eingestuft wurden, und einige Mathe-Nachweise, aber die Abstimmung ist klar und die Community fordert einen Reset.",
+        "ar": "لقد أرسلنا أربعة أشياء تم اعتبارها من جيدة إلى رائعة وبعض إثباتات الرياضيات، لكن التصويت واضح والمجتمع يطالب بإعادة تعيين."
+      },
+      "fullText": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
+      "fullTexts": {
+        "zh": "我们发布了四项被认为从良好到伟大的内容，以及一些数学证明，但投票结果很明确，社区要求重置。我确实调整了它，而且*似乎*游戏对重置有利，但目前规则就是这样。\n\n因此……重置已经处理完成。尽情享受吧！",
+        "zh-Hant": "我們發佈了四項被評為從良好到極好的東西，以及一些數學證明，但投票結果很明確，社群要求重置。我確實對其進行了校準，而且*似乎*遊戲對重置有利，但目前規則就是如此。\n\n因此……重置已經處理完成。盡情享受吧！",
+        "ja": "私たちは、四つの優れたものと、いくつかの数学的証明をリリースしました。しかし、投票結果は明確で、コミュニティはリセットを求めています。私はそれを調整しましたが、*どうやら*ゲームはリセットに有利に仕組まれているようですが、今のところはそれがルールです。\n\nしたがって…リセットは処理されました。楽しんでください！",
+        "ko": "우리는 네 가지를 출시했는데, 그건 좋음에서 훌륭함으로 평가되었고 몇 가지 수학 증명도 있었지만, 투표는 명확하고 커뮤니티는 리셋을 요구합니다. 나는 그것을 조정했는데, *보이기에* 게임이 리셋에 유리하게 조작된 것 같지만, 지금 당장은 그런 규칙입니다.\n\n따라서 ... 리셋이 처리되었습니다. 즐기세요!",
+        "es": "Enviamos cuatro cosas que se consideraron de buenas a excelentes y algunas pruebas matemáticas, pero el voto es claro y la comunidad exige un reinicio. Lo calibré y *parece* que el juego está amañado a favor del reinicio, pero tales son las reglas en este momento.\n\nPor lo tanto... el reinicio ha sido procesado. ¡Disfruten!",
+        "fr": "Nous avons livré quatre choses qui ont été jugées bonnes à excellentes et quelques preuves mathématiques, mais le vote est clair et la communauté exige une réinitialisation. J'ai calibré cela et il *semble* que le jeu est truqué en faveur de la réinitialisation, mais telles sont les règles pour le moment.\n\nPar conséquent... la réinitialisation a été traitée. Profitez-en !",
+        "de": "Wir haben vier Dinge verschickt, die von gut bis großartig eingestuft wurden, und einige Mathe-Nachweise, aber die Abstimmung ist klar und die Community fordert einen Reset. Ich habe es kalibriert, und es *scheint*, dass das Spiel zu Gunsten des Resets manipuliert ist, aber so lauten die Regeln im Moment.\n\nDeshalb ... der Reset wurde durchgeführt. Viel Spaß!",
+        "ar": "لقد أرسلنا أربعة أشياء تم اعتبارها من جيدة إلى رائعة وبعض إثباتات الرياضيات، لكن التصويت واضح والمجتمع يطالب بإعادة تعيين. لقد قمت بمعايرتها ويبدو أن اللعبة مُرتبة لصالح إعادة التعيين، لكن هذه هي القواعد في الوقت الحالي.\n\nلذلك ... تمت معالجة إعادة التعيين. استمتع!"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-07T08:52:02.667Z"
     }
   },
   "pending": 337,
-  "lastAttemptAt": "2026-10-07T02:17:14.118Z"
+  "lastAttemptAt": "2026-10-07T08:52:16.818Z"
 }
