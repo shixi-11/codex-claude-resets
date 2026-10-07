@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-07T09:30:28.018Z",
-  "lastSuccessAt": "2026-10-07T02:16:54.145Z",
-  "discoveryAt": "2026-10-07T09:30:28.018Z",
+  "lastAttemptAt": "2026-10-07T15:56:04.139Z",
+  "lastSuccessAt": "2026-10-07T15:56:04.139Z",
+  "discoveryAt": "2026-10-07T15:56:04.139Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,8 +9,8 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 23
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -25,8 +25,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 16
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -53,93 +53,26 @@
       "candidates": 20
     },
     {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
-      "ok": true,
-      "candidates": 433
-    },
-    {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
-      "ok": true,
-      "candidates": 58
-    },
-    {
-      "name": "Reset Radar · Claude link discovery only",
-      "url": "https://www.resetradar.com/data/events.json",
-      "ok": true,
-      "candidates": 27
-    },
-    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": false,
-      "checked": 492,
-      "failed": 12
+      "ok": true,
+      "checked": 17,
+      "failed": 0
     }
   ],
-  "status": "degraded",
-  "failedPosts": [
-    {
-      "url": "https://x.com/thsottiaux/status/2107597780352950624",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2107596716367388924",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2107378093635899886",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2107370001837773172",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2107295543563362784",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2106605571168510149",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2105176198469087516",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2105039500149948878",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2105007775676072381",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2104976337316589726",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2104827790440935508",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2101738915564851585",
-      "error": "HTTP 404"
-    }
-  ],
+  "status": "ok",
+  "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-07T09:30:28.018Z",
-      "status": "degraded",
-      "checked": 459,
-      "failed": 12,
-      "discovered": 486,
+      "lastAttemptAt": "2026-10-07T15:56:04.139Z",
+      "status": "ok",
+      "checked": 9,
+      "failed": 0,
+      "discovered": 56,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": false
+          "ok": true
         },
         {
           "author": "OpenAIDevs",
@@ -147,17 +80,17 @@
         },
         {
           "author": "OpenAI",
-          "ok": false
+          "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-07T02:16:54.145Z"
+      "lastSuccessAt": "2026-10-07T15:56:04.139Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-07T09:30:28.018Z",
+      "lastAttemptAt": "2026-10-07T15:56:04.139Z",
       "status": "ok",
-      "checked": 33,
+      "checked": 8,
       "failed": 0,
-      "discovered": 77,
+      "discovered": 53,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -172,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-07T09:30:28.018Z"
+      "lastSuccessAt": "2026-10-07T15:56:04.139Z"
     }
   }
 }
