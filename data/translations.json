@@ -2498,7 +2498,9 @@
         "ja": "リセットを与えるのは好きです。",
         "ko": "저는 리셋을 주는 걸 좋아해요",
         "de": "Ich gebe gerne Resets.",
-        "ar": "أنا أحب بالفعل إعطاء إعادة التعيين"
+        "ar": "أنا أحب بالفعل إعطاء إعادة التعيين",
+        "zh": "我确实喜欢给予重置",
+        "zh-Hant": "我確實喜歡給予重置"
       },
       "fullText": "I do like giving resets",
       "fullTexts": {
@@ -2507,12 +2509,14 @@
         "es": "Sí que me gusta dar reseteos",
         "fr": "J’aime bien donner des resets",
         "de": "Ich gebe gerne Resets.",
-        "ar": "أنا أحب بالفعل إعطاء إعادة التعيين"
+        "ar": "أنا أحب بالفعل إعطاء إعادة التعيين",
+        "zh": "我确实喜欢给予重置",
+        "zh-Hant": "我確實喜歡給予重置"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-06T23:02:40.330Z"
+      "translatedAt": "2026-10-07T02:16:59.635Z"
     }
   },
-  "pending": 339,
-  "lastAttemptAt": "2026-10-06T23:02:54.188Z"
+  "pending": 337,
+  "lastAttemptAt": "2026-10-07T02:17:14.118Z"
 }
