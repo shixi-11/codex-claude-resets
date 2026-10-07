@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-07T08:53:47.544Z",
+  "lastAttemptAt": "2026-10-07T09:30:28.018Z",
   "lastSuccessAt": "2026-10-07T02:16:54.145Z",
-  "discoveryAt": "2026-10-07T08:53:47.544Z",
+  "discoveryAt": "2026-10-07T09:30:28.018Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,24 +9,24 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": true,
-      "candidates": 23
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 17
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
-      "ok": true,
-      "candidates": 16
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -74,12 +74,16 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 495,
-      "failed": 7
+      "checked": 492,
+      "failed": 12
     }
   ],
   "status": "degraded",
   "failedPosts": [
+    {
+      "url": "https://x.com/thsottiaux/status/2107597780352950624",
+      "error": "The operation was aborted due to timeout"
+    },
     {
       "url": "https://x.com/OpenAI/status/2107596716367388924",
       "error": "Empty post"
@@ -91,6 +95,14 @@
     {
       "url": "https://x.com/thsottiaux/status/2107370001837773172",
       "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2107295543563362784",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2106605571168510149",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "url": "https://x.com/thsottiaux/status/2105176198469087516",
@@ -105,35 +117,43 @@
       "error": "Empty post"
     },
     {
+      "url": "https://x.com/OpenAI/status/2104976337316589726",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2104827790440935508",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
       "url": "https://x.com/thsottiaux/status/2101738915564851585",
       "error": "HTTP 404"
     }
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-07T08:53:47.544Z",
+      "lastAttemptAt": "2026-10-07T09:30:28.018Z",
       "status": "degraded",
-      "checked": 462,
-      "failed": 7,
-      "discovered": 469,
+      "checked": 459,
+      "failed": 12,
+      "discovered": 486,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": true
-        },
-        {
-          "author": "OpenAIDevs",
           "ok": false
         },
         {
-          "author": "OpenAI",
+          "author": "OpenAIDevs",
           "ok": true
+        },
+        {
+          "author": "OpenAI",
+          "ok": false
         }
       ],
       "lastSuccessAt": "2026-10-07T02:16:54.145Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-07T08:53:47.544Z",
+      "lastAttemptAt": "2026-10-07T09:30:28.018Z",
       "status": "ok",
       "checked": 33,
       "failed": 0,
@@ -152,7 +172,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-07T08:53:47.544Z"
+      "lastSuccessAt": "2026-10-07T09:30:28.018Z"
     }
   }
 }
