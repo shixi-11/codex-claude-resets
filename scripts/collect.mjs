@@ -5,6 +5,8 @@ import { announcementTime } from '../src/announcement-time.mjs';
 import { timelineCandidates, corroborateRelay } from '../src/x-relay.mjs';
 import { ALLOWED_AUTHORS, reclassifyEvents, RULES_VERSION, parsePostUrl, extractEmbed, classify, evidenceExcerpt, mergeEvents, postPlatform } from '../src/evidence.mjs';
 
+import {syncPlatformState} from '../src/platform-state.mjs';
+
 const root = new URL('../', import.meta.url);
 const now = new Date().toISOString();
 const existing = JSON.parse(await readFile(new URL('data/events.json', root), 'utf8'));
@@ -126,20 +128,8 @@ if(health.status==='ok')health.lastSuccessAt=now;
 const merged = reclassifyEvents(mergeEvents(existing.filter(event=>!rejected.has(event.id)), fresh));
 const platformFile = new URL('data/platforms.json',root);
 const platforms = JSON.parse(await readFile(platformFile,'utf8'));
+syncPlatformState(platforms, merged);
 for(const [key,platform] of Object.entries(platforms)){
- const records=merged.filter(event=>postPlatform(event.author)===key);
- platform.latest=records[0]||null;
- platform.latestGift=records.find(event=>event.kind==='banked'&&['announced','reported'].includes(event.state))||null;
- const latestReset=records.find(event=>event.kind==='global'&&['announced','reported'].includes(event.state));
- platform.latestReset=latestReset||null;
- platform.lastReset=records.find(event=>event.kind==='global'&&event.state==='reported')||null;
- if(latestReset?.state==='announced'&&!latestReset.resetAt){
-  platform.reset={state:'announced',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt,...(/a reset is (?:also )?landing by midnight today\./i.test(latestReset.fullText||'')?{deadlineText:'by midnight today'}:{})};
- } else if(latestReset?.state==='announced'&&latestReset.resetAt&&Date.parse(latestReset.resetAt)>Date.now()-86400000){
-  platform.reset={state:'announced',resetAt:latestReset.resetAt,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,approximate:latestReset.approximate,sourceTimezone:latestReset.sourceTimezone,timeBasis:latestReset.timeBasis,timeKind:latestReset.timeKind};
- } else if(latestReset?.state==='reported'&&Date.parse(latestReset.publishedAt)>Date.now()-86400000){
-  platform.reset={state:'completed',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt};
- } else platform.reset={state:'unknown',resetAt:null};
  platform.discoveryMode=health.mode;
  platform.trackingState=platformChecks[key].status==='ok'?'timeline-checked':'partial-coverage';
 }

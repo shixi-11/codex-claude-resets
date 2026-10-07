@@ -32,6 +32,8 @@ jobs:
         run: node scripts/translate.mjs
         env:
           TRANSLATION_REQUEST_LIMIT: '80'
+      - name: Validate collected records and classification synchronization
+        run: node --test
       - run: node scripts/build.mjs
       - name: Save source records for Vercel automatic deployment
         run: |
