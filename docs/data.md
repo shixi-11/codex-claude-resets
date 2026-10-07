@@ -25,3 +25,15 @@ The collector polls all six allowlisted author timelines through FxEmbed. Offici
 8. **Keep translation downstream.** Classification uses verified original text. Translations are bound to content hashes and preserve original paragraphs; missing translations display the original.
 
 The homepage retains its last successful check time. Collection rules remain in the project documentation; detailed source outcomes and independent platform health are exposed in `health.json`. Git history records corrections. The scheduled workflow checks twice hourly, but scheduler or upstream delays are possible.
+
+## Bounded collection and coverage diagnostics
+
+Announcement requests use up to three attempts for transport/timeouts and HTTP 408, 425, 429, 500, 502, 503 or 504. Each attempt has an 18-second timeout (including response-body reading); the request has a 60-second total budget. Backoff starts at 500ms and doubles, with up to 25% jitter. A valid `Retry-After` seconds value or HTTP date is a minimum wait. If that wait exceeds the remaining budget, the failure is recorded without an early retry. Permanent HTTP errors and malformed JSON are not retried.
+
+The complete run has an eight-minute network budget. `COLLECTION_BUDGET_MS` can shorten it for a bounded manual verification, but cannot increase it. Every discovered candidate remains in the scan: exhausted-budget checks are recorded as failed/pending and do not advance successful-check timestamps. Failed timelines remain failures even when community discovery works. No author, community archive, or existing incomplete-evidence candidate is silently dropped to claim healthy coverage.
+
+Candidate merging is keyed by allowed author/post identity, retaining the most complete relay/API text and every discovery index URL. URL-only community duplicates cannot erase timeline text. Complete irrelevant timeline text can avoid an unnecessary embed request under the existing keyword rule, but is counted separately from verified evidence. Relay corroboration failures retain the official incomplete evidence and degrade coverage; they are not a successful full-text check. Stored evidence is never freshly stamped unless primary evidence is actually checked.
+
+`health.requests` contains announcement HTTP attempt, success, failure and retry counts. `health.coverage` includes raw/unique candidate counts, per-author discovered, irrelevant, future, checked, failed, incomplete and pending counts, finish time and budget exhaustion. `failedPosts` and failed sources include failure kind, HTTP status, attempts and retry/budget details. Candidate failures retain their discovery sources. These diagnostics do not change visitor-facing copy.
+
+Generate an engineering-only coverage table and stacked bars with `node scripts/coverage-report.mjs [health-file] [output-html]`. The default is `output/coverage/index.html`; it is not published into the website. Incomplete checks overlap checked counts, and pending counts overlap failures. A green bar describes evidence checks, not account reset completion or full timeline coverage.

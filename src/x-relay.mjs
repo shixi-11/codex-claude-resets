@@ -1,12 +1,27 @@
 import { parsePostUrl } from './evidence.mjs';
-const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
+const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[‘’]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
+const textQuality=post=>{const text=post?.raw_text?.text||post?.text||'';return [!/(?:…|\.\.\.)\s*$/.test(text)&&Boolean(text),text.length];};
+const richer=(a,b)=>{const x=textQuality(a),y=textQuality(b);return y[0]>x[0]||y[0]===x[0]&&y[1]>x[1]?b:a;};
+export function mergeCandidates(candidates){
+ const found=new Map();
+ for(const candidate of candidates){
+  const post=parsePostUrl(candidate.url);if(!post)continue;
+  const key=post.author.toLowerCase()+':'+post.id;
+  const previous=found.get(key)||{},merged={...previous,...candidate,url:post.url};
+  if(previous.relay||candidate.relay)merged.relay=richer(previous.relay,candidate.relay);
+  if(previous.fullText||candidate.fullText)merged.fullText=richer({text:previous.fullText},{text:candidate.fullText}).text;
+  merged.discoverySources=[...new Set([...(previous.discoverySources||[]),...(candidate.discoverySources||[])])];
+  found.set(key,merged);
+ }
+ return [...found.values()].sort((a,b)=>{const x=BigInt(parsePostUrl(a.url).id),y=BigInt(parsePostUrl(b.url).id);return x===y?0:x>y?-1:1;});
+}
 export function timelineCandidates(payload,author){
  if(payload.code!==200||!Array.isArray(payload.results))throw new Error('Invalid relay timeline');
  const found=new Map();
  const visit=item=>{
   if(!item||typeof item!=='object')return;
   const post=parsePostUrl(item.url);
-  if(post&&post.author.toLowerCase()===author.toLowerCase()&&item.author?.screen_name?.toLowerCase()===author.toLowerCase()&&String(item.id)===post.id&&!item.author.protected){found.set(post.id,{url:post.url,relay:item});}
+  if(post&&post.author.toLowerCase()===author.toLowerCase()&&item.author?.screen_name?.toLowerCase()===author.toLowerCase()&&String(item.id)===post.id&&!item.author.protected){found.set(post.id,{url:post.url,relay:richer(found.get(post.id)?.relay,item)});}
   if(item.quote)visit(item.quote);
   if(item.status)visit(item.status);
   if(Array.isArray(item.thread))item.thread.forEach(visit);
