@@ -8,17 +8,18 @@ import { offers } from '../src/offers.mjs';
 import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
 import { locales, names } from '../src/locales.mjs';
 import { CANONICAL, GITHUB_PROFILE, escapeHtml as e, localePath, eventPath, freshness } from '../src/shared.mjs';
-import { validateEvent, postPlatform } from '../src/evidence.mjs';
+import { validateEvent, postPlatform, reclassifyEvents } from '../src/evidence.mjs';
+import {syncPlatformState} from '../src/platform-state.mjs';
 const root = new URL('../', import.meta.url);
 const out = new URL('dist/', root);
 const platforms = JSON.parse(await readFile(new URL('data/platforms.json',root),'utf8')); 
-const events = JSON.parse(await readFile(new URL('data/events.json', root), 'utf8'));
+const events = reclassifyEvents(JSON.parse(await readFile(new URL('data/events.json', root), 'utf8')));
 const heat = JSON.parse(await readFile(new URL('data/topic-heat.json',root),'utf8'));
 const health = JSON.parse(await readFile(new URL('data/health.json', root), 'utf8'));
 events.forEach(validateEvent);
 let translations={posts:{}};try{translations=JSON.parse(await readFile(new URL('data/translations.json',root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
 for(const event of events){const entry=translations.posts[event.id];if(entry&&entry.excerpt===event.excerpt&&entry.contentHash===event.contentHash)event.localized={excerpt:entry.excerpt,contentHash:entry.contentHash,texts:entry.texts,fullText:entry.fullText,fullTexts:entry.fullTexts};}
-for(const platform of Object.values(platforms))for(const key of ['latest','latestGift','latestReset','lastReset'])if(platform[key])platform[key]=events.find(event=>event.id===platform[key].id)||platform[key];
+syncPlatformState(platforms, events);
 await mkdir(out, { recursive: true });
 await cp(new URL('public/', root), out, { recursive: true, filter: path => !String(path).endsWith('mascot-source.png') });
 await mkdir(new URL('assets/', out), { recursive: true });

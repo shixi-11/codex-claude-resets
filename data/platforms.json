@@ -4,16 +4,19 @@
     "profileUrl": "https://x.com/thsottiaux",
     "usageUrl": "https://chatgpt.com/codex/settings/usage",
     "reset": {
-      "state": "unknown",
-      "resetAt": null
+      "state": "completed",
+      "resetAt": null,
+      "sourceUrl": "https://x.com/thsottiaux/status/2107676072871600470",
+      "verifiedAt": "2026-10-07T08:53:47.544Z",
+      "publishedAt": "2026-10-07T03:35:09.157Z"
     },
     "gifts": [],
     "trackingState": "partial-coverage",
     "latest": {
       "id": "2107676072871600470",
-      "kind": "signal",
-      "state": "unconfirmed",
-      "reason": "ambiguous",
+      "kind": "global",
+      "state": "reported",
+      "reason": "explicit-completion",
       "author": "thsottiaux",
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2107676072871600470",
@@ -24,25 +27,26 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2107676072871600470",
-      "rulesVersion": "1.4.2",
+      "rulesVersion": "1.4.3",
       "contentHash": "1f63992ad36e3974b81537726aa309046ceecccb6730a178e22703240ca4eb2a"
     },
     "lastReset": {
-      "id": "2106131810921136451",
+      "id": "2107676072871600470",
       "kind": "global",
       "state": "reported",
       "reason": "explicit-completion",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2106131810921136451",
-      "publishedAt": "2026-10-02T21:18:48.417Z",
+      "sourceUrl": "https://x.com/thsottiaux/status/2107676072871600470",
+      "publishedAt": "2026-10-07T03:35:09.157Z",
       "verifiedAt": "2026-10-07T08:53:47.544Z",
-      "excerpt": "Reset all propagated.",
-      "fullText": "Reset all propagated. Enjoy.",
+      "excerpt": "the reset has been processed.",
+      "fullText": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
       "truncated": false,
-      "provenance": "x-oembed",
-      "rulesVersion": "1.4.2",
-      "contentHash": "8c1e94dab450ab1074427e389293bb9e0a2e67b5edcb39af4fdc7fba3ab17521"
+      "provenance": "x-oembed+fxembed",
+      "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2107676072871600470",
+      "rulesVersion": "1.4.3",
+      "contentHash": "1f63992ad36e3974b81537726aa309046ceecccb6730a178e22703240ca4eb2a"
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
@@ -60,25 +64,26 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
-      "rulesVersion": "1.4.2",
+      "rulesVersion": "1.4.3",
       "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66"
     },
     "latestReset": {
-      "id": "2106131810921136451",
+      "id": "2107676072871600470",
       "kind": "global",
       "state": "reported",
       "reason": "explicit-completion",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2106131810921136451",
-      "publishedAt": "2026-10-02T21:18:48.417Z",
+      "sourceUrl": "https://x.com/thsottiaux/status/2107676072871600470",
+      "publishedAt": "2026-10-07T03:35:09.157Z",
       "verifiedAt": "2026-10-07T08:53:47.544Z",
-      "excerpt": "Reset all propagated.",
-      "fullText": "Reset all propagated. Enjoy.",
+      "excerpt": "the reset has been processed.",
+      "fullText": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
       "truncated": false,
-      "provenance": "x-oembed",
-      "rulesVersion": "1.4.2",
-      "contentHash": "8c1e94dab450ab1074427e389293bb9e0a2e67b5edcb39af4fdc7fba3ab17521"
+      "provenance": "x-oembed+fxembed",
+      "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2107676072871600470",
+      "rulesVersion": "1.4.3",
+      "contentHash": "1f63992ad36e3974b81537726aa309046ceecccb6730a178e22703240ca4eb2a"
     }
   },
   "claude": {
@@ -125,7 +130,7 @@
       "fullText": "For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less of your usage limits.\n\nGive it a try with Claude Sonnet 5.5. It has a strong eye for design and builds slides that need minimal editing.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.2",
+      "rulesVersion": "1.4.3",
       "contentHash": "7c76701cdc7c57c48113dac4a601251687d0e4fa817fe356b86f60a97f4d9e99"
     },
     "lastReset": {
@@ -142,7 +147,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.2",
+      "rulesVersion": "1.4.3",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -160,7 +165,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.2",
+      "rulesVersion": "1.4.3",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -177,7 +182,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.2",
+      "rulesVersion": "1.4.3",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }

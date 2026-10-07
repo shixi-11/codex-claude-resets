@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.2';
+export const RULES_VERSION = '1.4.3';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -68,6 +68,7 @@ export function classify(text, { truncated = false, author = '' } = {}) {
   if (/\bwe (?:have )?(?:already |also |just )?granted\b[^.!?]{0,100}\b(?:users|subscribers|accounts) a reset\b/i.test(value) && /\b(?:apply|use) it (?:whenever|anytime|later)|\breset (?:to use|you can use) (?:anytime|later)\b/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
   // Tibo's complete first-person announcement uses this exact short formulation.
   // Do not infer a global reset from jokes, replies about earlier resets, or other authors.
+  if (author.toLowerCase()==='thsottiaux' && /(?:^|[.!?]\s+)(?:Therefore\s*(?:\.\.\.|…|,)\s*)?(?:the )?reset has been (?:processed|applied|completed|propagated)(?:[.!]|$)/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
   if (author.toLowerCase()==='thsottiaux' && /^(?:Resets? (?:(?:has|have) )?(?:(?:all|fully|successfully) )*(?:propagated|completed)|All reset for everyone)(?:[.!]|$)/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
   if (author.toLowerCase()==='thsottiaux' && /\b(?:Astra|Codex) users\b/i.test(value) && /(?:^|[.!?]\s+)(?:And of course,?\s+)?a reset is (?:also )?landing by midnight today\.$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
