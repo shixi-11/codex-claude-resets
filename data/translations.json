@@ -2576,7 +2576,8 @@
         "es": "(Solo API, sin cambios en los límites de uso de Claude Code.",
         "fr": "(Uniquement pour l'API, aucune modification des limites d'utilisation de Claude Code.",
         "de": "(Nur API, keine Änderung bei den Claude Code-Nutzungslimits.",
-        "ar": "(واجهة برمجة التطبيقات فقط، لا تغيير في حدود استخدام Claude Code."
+        "ar": "(واجهة برمجة التطبيقات فقط، لا تغيير في حدود استخدام Claude Code.",
+        "ja": "（APIのみ、Claude Codeの使用制限に変更なし。"
       },
       "fullText": "ICYMI we've cut the price of Sonnet 5.5 cache reads in half.\n\nIn the Claude Platform, it's now $0.10 per million tokens (input is $2, output is $10). \n\nThis means Sonnet 5.5 now runs ~20% cheaper on most agentic work. \n\n(API only, no change to Claude Code usage limits.)",
       "fullTexts": {
@@ -2586,12 +2587,13 @@
         "es": "POR SI NO LO VISTE, hemos reducido a la mitad el precio de las lecturas de caché de Sonnet 5.5.\n\nEn la Plataforma Claude, ahora es $0.10 por millón de tokens (entrada es $2, salida es $10).\n\nEsto significa que Sonnet 5.5 ahora se ejecuta ~20% más barato en la mayoría de los trabajos agenticos.\n\n(Solo API, sin cambios en los límites de uso de Claude Code.)",
         "fr": "Pour ceux qui l'auraient manqué, nous avons réduit de moitié le prix des lectures de cache de Sonnet 5.5.\n\nSur la plateforme Claude, c'est maintenant 0,10 $ par million de tokens (entrée à 2 $, sortie à 10 $).\n\nCela signifie que Sonnet 5.5 fonctionne maintenant ~20 % moins cher pour la plupart des tâches agentiques.\n\n(Uniquement pour l'API, aucune modification des limites d'utilisation de Claude Code.)",
         "de": "Falls du es verpasst hast: Wir haben den Preis für Sonnet 5.5 Cache-Lesevorgänge halbiert.\n\nIn der Claude Platform beträgt er jetzt 0,10 $ pro Million Tokens (Input: 2 $, Output: 10 $).\n\nDas bedeutet, dass Sonnet 5.5 bei den meisten agentischen Aufgaben nun ~20 % günstiger läuft.\n\n(Nur API, keine Änderung bei den Claude Code-Nutzungslimits.)",
-        "ar": "لمن فاته، قمنا بخفض سعر قراءة ذاكرة Sonnet 5.5 إلى النصف.\n\nفي منصة Claude، أصبح الآن 0.10 دولار لكل مليون رمز (الإدخال 2 دولار، الإخراج 10 دولارات).\n\nهذا يعني أن Sonnet 5.5 أصبح يعمل الآن بنسبة ~20% أرخص في معظم أعمال الوكلاء.\n\n(واجهة برمجة التطبيقات فقط، لا تغيير في حدود استخدام Claude Code.)"
+        "ar": "لمن فاته، قمنا بخفض سعر قراءة ذاكرة Sonnet 5.5 إلى النصف.\n\nفي منصة Claude، أصبح الآن 0.10 دولار لكل مليون رمز (الإدخال 2 دولار، الإخراج 10 دولارات).\n\nهذا يعني أن Sonnet 5.5 أصبح يعمل الآن بنسبة ~20% أرخص في معظم أعمال الوكلاء.\n\n(واجهة برمجة التطبيقات فقط، لا تغيير في حدود استخدام Claude Code.)",
+        "ja": "見逃した人のために、Sonnet 5.5のキャッシュ読み取り価格を半分にしました。\n\nClaude Platformでは、今後100万トークンあたり$0.10（入力は$2、出力は$10）です。\n\nこれにより、Sonnet 5.5はほとんどのエージェント関連の作業で約20%安く動作するようになります。\n\n（APIのみ、Claude Codeの使用制限に変更なし。）"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-09T00:19:58.780Z"
+      "translatedAt": "2026-10-09T06:25:15.377Z"
     }
   },
-  "pending": 340,
-  "lastAttemptAt": "2026-10-09T00:20:13.375Z"
+  "pending": 339,
+  "lastAttemptAt": "2026-10-09T06:25:30.297Z"
 }
