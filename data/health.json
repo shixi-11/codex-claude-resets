@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-10T08:39:48.984Z",
+  "lastAttemptAt": "2026-10-10T08:44:16.048Z",
   "lastSuccessAt": "2026-10-10T08:39:48.984Z",
-  "discoveryAt": "2026-10-10T08:39:48.984Z",
+  "discoveryAt": "2026-10-10T08:44:16.048Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -25,16 +25,16 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
-      "ok": true,
-      "candidates": 16
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": true,
-      "candidates": 19
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -53,22 +53,69 @@
       "candidates": 13
     },
     {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": true,
+      "candidates": 431
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 59
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 29
+    },
+    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": true,
-      "checked": 19,
-      "failed": 0
+      "ok": false,
+      "checked": 494,
+      "failed": 7
     }
   ],
-  "status": "ok",
-  "failedPosts": [],
+  "status": "degraded",
+  "failedPosts": [
+    {
+      "url": "https://x.com/OpenAI/status/2107596716367388924",
+      "error": "Empty post"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2107378093635899886",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2107370001837773172",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2105176198469087516",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2105039500149948878",
+      "error": "Empty post"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2105007775676072381",
+      "error": "Empty post"
+    },
+    {
+      "url": "https://x.com/thsottiaux/status/2101738915564851585",
+      "error": "HTTP 404"
+    }
+  ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-10T08:39:48.984Z",
-      "status": "ok",
-      "checked": 7,
-      "failed": 0,
-      "discovered": 49,
+      "lastAttemptAt": "2026-10-10T08:44:16.048Z",
+      "status": "degraded",
+      "checked": 461,
+      "failed": 7,
+      "discovered": 480,
       "authors": [
         {
           "author": "thsottiaux",
@@ -80,21 +127,21 @@
         },
         {
           "author": "OpenAI",
-          "ok": true
+          "ok": false
         }
       ],
       "lastSuccessAt": "2026-10-10T08:39:48.984Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-10T08:39:48.984Z",
-      "status": "ok",
-      "checked": 12,
+      "lastAttemptAt": "2026-10-10T08:44:16.048Z",
+      "status": "degraded",
+      "checked": 33,
       "failed": 0,
-      "discovered": 53,
+      "discovered": 62,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "AnthropicAI",
