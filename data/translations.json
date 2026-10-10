@@ -2592,8 +2592,56 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-09T06:25:15.377Z"
+    },
+    "2109045392684032299": {
+      "excerpt": "Global reset by EOD.",
+      "contentHash": "ffc17aa008c3eb1b166eaac808dd44a5c203e6035fae3f42d71ac685ba1458cd",
+      "texts": {
+        "zh-Hant": "全球重置於今日結束前完成。",
+        "zh": "全球重置在今天结束前完成。",
+        "ko": "EOD까지 전역 리셋.",
+        "ja": "本日終了までにグローバルリセット。",
+        "de": "Globaler Reset bis EOD.",
+        "ar": "إعادة تعيين عالمية بحلول نهاية اليوم."
+      },
+      "fullText": "Global reset by EOD. May the tokens do good things for you.",
+      "fullTexts": {
+        "zh-Hant": "全球重置於今日結束前完成。願代幣為您帶來好事。",
+        "zh": "全球重置在今天结束前完成。愿令牌为您带来好事。",
+        "ko": "EOD까지 전역 리셋. 토큰들이 당신에게 좋은 일들을 해주기를.",
+        "ja": "本日終了までにグローバルリセット。トークンがあなたに良いことをもたらしますように。",
+        "de": "Globaler Reset bis EOD. Mögen die Tokens gute Dinge für dich tun.",
+        "ar": "إعادة تعيين عالمية بحلول نهاية اليوم. ليكن الرموز تعمل لصالحك."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-10T22:28:07.799Z"
+    },
+    "2109045220411351517": {
+      "excerpt": "Day 6/ Reset",
+      "contentHash": "12c8da8032adfa1c00ee63642248456d90b5d41a591797e98f98b5ab23dad84c",
+      "texts": {
+        "zh": "第6天/重置",
+        "zh-Hant": "第 6 天 / 重置",
+        "ko": "6일차/ 리셋",
+        "fr": "Jour 6 / Réinitialisation",
+        "es": "Día 6/ Reinicio",
+        "ar": "اليوم 6/ إعادة تعيين",
+        "de": "Tag 6/ Zurücksetzen"
+      },
+      "fullText": "Day 6/ Reset",
+      "fullTexts": {
+        "zh": "第6天/重置",
+        "zh-Hant": "第 6 天 / 重置",
+        "ko": "6일차/ 리셋",
+        "fr": "Jour 6 / Réinitialisation",
+        "es": "Día 6/ Reinicio",
+        "ar": "اليوم 6/ إعادة تعيين",
+        "de": "Tag 6/ Zurücksetzen"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-10T22:28:10.422Z"
     }
   },
-  "pending": 339,
-  "lastAttemptAt": "2026-10-10T19:05:35.887Z"
+  "pending": 342,
+  "lastAttemptAt": "2026-10-10T22:28:24.333Z"
 }
