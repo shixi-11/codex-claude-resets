@@ -2644,8 +2644,60 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-11T01:13:22.701Z"
+    },
+    "2109132167112782291": {
+      "excerpt": "Put the reset in the bag.",
+      "contentHash": "dc80e3a7abbf06f3471a9b05ab48b47f68de755a2d9d74c286a72a2f2b0c7d94",
+      "texts": {
+        "zh": "把重置放进袋子里。",
+        "zh-Hant": "把重置放進袋子裡。",
+        "ko": "리셋을 가방에 넣어.",
+        "ja": "リセットを袋に入れて。",
+        "es": "Pon el reinicio en la bolsa.",
+        "de": "Leg den Reset in die Tasche.",
+        "ar": "ضع الإعادة الضبط في الحقيبة."
+      },
+      "fullText": "Put the reset in the bag. All propagated.",
+      "fullTexts": {
+        "zh": "把重置放进袋子里。全部已传播。",
+        "zh-Hant": "把重置放進袋子裡。全部已傳播。",
+        "ko": "리셋을 가방에 넣어. 모두 전파됐어.",
+        "ja": "リセットを袋に入れて。すべて伝播済み。",
+        "es": "Pon el reinicio en la bolsa. Todo propagado.",
+        "fr": "Mets le reset dans le sac. Tout propagé.",
+        "de": "Leg den Reset in die Tasche. Alles propagiert.",
+        "ar": "ضع الإعادة الضبط في الحقيبة. كل شيء تم نشره."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-11T07:15:57.583Z"
+    },
+    "2109090080497508356": {
+      "excerpt": "The day we reach perfection it will be resets from there onwards",
+      "contentHash": "cbe3fcd3a5e0418f988876df4510cb672a627f2e26bc00061714163d3a72e2bc",
+      "texts": {
+        "zh-Hant": "當我們達到完美的那天起，從那時起它將會重置",
+        "zh": "在我们达到完美的日子，它将从那时起重置。",
+        "ja": "完璧に到達した日からは、そこから先はリセットされるでしょう",
+        "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
+        "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
+        "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
+        "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
+      },
+      "fullText": "The day we reach perfection it will be resets from there onwards",
+      "fullTexts": {
+        "zh-Hant": "當我們達到完美的那天起，從那時起它將會重置",
+        "zh": "在我们达到完美的日子，它将从那时起重置。",
+        "ja": "完璧に到達した日からは、そこから先はリセットされるでしょう",
+        "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
+        "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
+        "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
+        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
+        "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-11T07:15:59.522Z"
     }
   },
-  "pending": 340,
-  "lastAttemptAt": "2026-10-11T01:13:38.564Z"
+  "pending": 342,
+  "lastAttemptAt": "2026-10-11T07:16:13.416Z"
 }

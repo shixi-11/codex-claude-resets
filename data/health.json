@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-11T01:12:36.994Z",
+  "lastAttemptAt": "2026-10-11T07:15:13.109Z",
   "lastSuccessAt": "2026-10-10T08:39:48.984Z",
-  "discoveryAt": "2026-10-11T01:12:36.994Z",
+  "discoveryAt": "2026-10-11T07:15:13.109Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -56,7 +56,7 @@
       "name": "Codex Reset Monitor · discovery only",
       "url": "https://codexreset.org/",
       "ok": true,
-      "candidates": 423
+      "candidates": 424
     },
     {
       "name": "Codex Resets · discovery only",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 488,
+      "checked": 489,
       "failed": 7
     }
   ],
@@ -111,9 +111,9 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-11T01:12:36.994Z",
+      "lastAttemptAt": "2026-10-11T07:15:13.109Z",
       "status": "degraded",
-      "checked": 452,
+      "checked": 453,
       "failed": 7,
       "discovered": 460,
       "authors": [
@@ -133,7 +133,7 @@
       "lastSuccessAt": "2026-10-10T08:39:48.984Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-11T01:12:36.994Z",
+      "lastAttemptAt": "2026-10-11T07:15:13.109Z",
       "status": "degraded",
       "checked": 36,
       "failed": 0,
