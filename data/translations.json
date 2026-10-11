@@ -2603,7 +2603,8 @@
         "ja": "本日終了までにグローバルリセット。",
         "de": "Globaler Reset bis EOD.",
         "ar": "إعادة تعيين عالمية بحلول نهاية اليوم.",
-        "es": "Reinicio global para fin de día."
+        "es": "Reinicio global para fin de día.",
+        "fr": "Réinitialisation globale d'ici la fin de journée."
       },
       "fullText": "Global reset by EOD. May the tokens do good things for you.",
       "fullTexts": {
@@ -2613,10 +2614,11 @@
         "ja": "本日終了までにグローバルリセット。トークンがあなたに良いことをもたらしますように。",
         "de": "Globaler Reset bis EOD. Mögen die Tokens gute Dinge für dich tun.",
         "ar": "إعادة تعيين عالمية بحلول نهاية اليوم. ليكن الرموز تعمل لصالحك.",
-        "es": "Reinicio global para fin de día. Que los tokens te traigan cosas buenas."
+        "es": "Reinicio global para fin de día. Que los tokens te traigan cosas buenas.",
+        "fr": "Réinitialisation globale d'ici la fin de journée. Que les jetons vous apportent de bonnes choses."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-11T01:13:22.318Z"
+      "translatedAt": "2026-10-11T09:04:22.265Z"
     },
     "2109045220411351517": {
       "excerpt": "Day 6/ Reset",
@@ -2698,6 +2700,6 @@
       "translatedAt": "2026-10-11T07:15:59.522Z"
     }
   },
-  "pending": 342,
-  "lastAttemptAt": "2026-10-11T07:16:13.416Z"
+  "pending": 341,
+  "lastAttemptAt": "2026-10-11T09:04:36.815Z"
 }
