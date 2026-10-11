@@ -2602,7 +2602,8 @@
         "ko": "EOD까지 전역 리셋.",
         "ja": "本日終了までにグローバルリセット。",
         "de": "Globaler Reset bis EOD.",
-        "ar": "إعادة تعيين عالمية بحلول نهاية اليوم."
+        "ar": "إعادة تعيين عالمية بحلول نهاية اليوم.",
+        "es": "Reinicio global para fin de día."
       },
       "fullText": "Global reset by EOD. May the tokens do good things for you.",
       "fullTexts": {
@@ -2611,10 +2612,11 @@
         "ko": "EOD까지 전역 리셋. 토큰들이 당신에게 좋은 일들을 해주기를.",
         "ja": "本日終了までにグローバルリセット。トークンがあなたに良いことをもたらしますように。",
         "de": "Globaler Reset bis EOD. Mögen die Tokens gute Dinge für dich tun.",
-        "ar": "إعادة تعيين عالمية بحلول نهاية اليوم. ليكن الرموز تعمل لصالحك."
+        "ar": "إعادة تعيين عالمية بحلول نهاية اليوم. ليكن الرموز تعمل لصالحك.",
+        "es": "Reinicio global para fin de día. Que los tokens te traigan cosas buenas."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-10T22:28:07.799Z"
+      "translatedAt": "2026-10-11T01:13:22.318Z"
     },
     "2109045220411351517": {
       "excerpt": "Day 6/ Reset",
@@ -2626,7 +2628,8 @@
         "fr": "Jour 6 / Réinitialisation",
         "es": "Día 6/ Reinicio",
         "ar": "اليوم 6/ إعادة تعيين",
-        "de": "Tag 6/ Zurücksetzen"
+        "de": "Tag 6/ Zurücksetzen",
+        "ja": "6日目 / リセット"
       },
       "fullText": "Day 6/ Reset",
       "fullTexts": {
@@ -2636,12 +2639,13 @@
         "fr": "Jour 6 / Réinitialisation",
         "es": "Día 6/ Reinicio",
         "ar": "اليوم 6/ إعادة تعيين",
-        "de": "Tag 6/ Zurücksetzen"
+        "de": "Tag 6/ Zurücksetzen",
+        "ja": "6日目 / リセット"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-10T22:28:10.422Z"
+      "translatedAt": "2026-10-11T01:13:22.701Z"
     }
   },
-  "pending": 342,
-  "lastAttemptAt": "2026-10-10T22:28:24.333Z"
+  "pending": 340,
+  "lastAttemptAt": "2026-10-11T01:13:38.564Z"
 }
