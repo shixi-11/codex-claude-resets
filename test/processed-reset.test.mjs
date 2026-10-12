@@ -12,7 +12,7 @@ test('complete processed announcements generalize without promoting uncertain cl
  assert.notEqual(classify('The reset has been processed.',{author:'ClaudeDevs'}).state,'reported');
 });
 test('rule reclassification and stale summaries converge without refreshing source health',()=>{
- const events=reclassifyEvents(stored);
+ const events=reclassifyEvents(stored.filter(e=>Date.parse(e.publishedAt)<=Date.parse(completion.publishedAt)));
  const platforms={codex:{reset:{state:'unknown'},lastReset:{id:'obsolete'},gifts:[]},claude:{gifts:[]}};
  syncPlatformState(platforms,events,Date.parse('2026-10-07T12:00:00Z'));
  const p=platforms.codex;
