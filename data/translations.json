@@ -2698,8 +2698,62 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-11T07:15:59.522Z"
+    },
+    "2109439315570999598": {
+      "excerpt": "I definitely thought it would sway much more favorably in the 2X direction across Pro 100/200/500 at the cost of bringing back 5h limits…",
+      "contentHash": "7a066cb0002a6629143bf9f60437a5c0fb2d8f949af1e6375f25a8a78d03ab77",
+      "texts": {
+        "zh": "我确实认为它会在 Pro 100/200/500 的 2X 方向上获得更多支持，即使这意味着为了平滑需求曲线而重新引入 5 小时限制。",
+        "zh-Hant": "我確實以為它會在 Pro 100/200/500 的 2X 方向上獲得更多有利支持，儘管這意味著要恢復 5 小時限制，以平滑需求曲線。",
+        "ja": "需要曲線を滑らかにするために5時間制限を復活させることを代償として。",
+        "ko": "확실히 Pro 100/200/500 전반에서 2X 방향으로 훨씬 더 유리하게 기울 거라고 생각했는데, 수요 곡선을 부드럽게 하기 위해 5시간 제한을 다시 도입하는 대가로요.",
+        "es": "Definitivamente pensé que se inclinarían mucho más favorablemente en la dirección de 2X en todo Pro 100/200/500, a costa de traer de vuelta los límites de 5h con el fin de suavizar la curva de demanda.",
+        "fr": "Je pensais sincèrement qu'ils pencheraient beaucoup plus favorablement vers la direction 2X à travers les Pro 100/200/500, au prix de réintroduire des limites de 5h afin d'aplanir la courbe de la demande.",
+        "ar": "كنت أعتقد بالتأكيد أنها ستكون أكثر ميلاً بشكل كبير في اتجاه 2X عبر Pro 100/200/500 مقابل إعادة الحدود البالغة 5 ساعات لتنعيم منحنى الطلب.",
+        "de": "Ich hatte definitiv gedacht, dass sie viel günstiger in die 2X-Richtung tendieren würde bei den Pro 100/200/500, auf Kosten der Wiedereinführung von 5h-Limits, um die Nachfragekurve zu glätten."
+      },
+      "fullText": "The results of this poll has gotten me confused. I definitely thought it would sway much more favorably in the 2X direction across Pro 100/200/500 at the cost of bringing back 5h limits in order to smoothen the demand curve.",
+      "fullTexts": {
+        "zh": "这个投票结果让我感到困惑。我确实认为它会在 Pro 100/200/500 的 2X 方向上获得更多支持，即使这意味着为了平滑需求曲线而重新引入 5 小时限制。",
+        "zh-Hant": "這次投票的結果讓我感到困惑。我確實以為它會在 Pro 100/200/500 的 2X 方向上獲得更多有利支持，儘管這意味著要恢復 5 小時限制，以平滑需求曲線。",
+        "ja": "この投票の結果を見て、混乱してしまいました。私は間違いなく、Pro 100/200/500で2X方向によりはるかに有利に傾くと思っていました。需要曲線を滑らかにするために5時間制限を復活させることを代償として。",
+        "ko": "이 설문조사 결과가 저를 혼란스럽게 만들었어요. 확실히 Pro 100/200/500 전반에서 2X 방향으로 훨씬 더 유리하게 기울 거라고 생각했는데, 수요 곡선을 부드럽게 하기 위해 5시간 제한을 다시 도입하는 대가로요.",
+        "es": "Los resultados de esta encuesta me han dejado confundido. Definitivamente pensé que se inclinarían mucho más favorablemente en la dirección de 2X en todo Pro 100/200/500, a costa de traer de vuelta los límites de 5h con el fin de suavizar la curva de demanda.",
+        "fr": "Les résultats de ce sondage m'ont vraiment embrouillé. Je pensais sincèrement qu'ils pencheraient beaucoup plus favorablement vers la direction 2X à travers les Pro 100/200/500, au prix de réintroduire des limites de 5h afin d'aplanir la courbe de la demande.",
+        "ar": "نتائج هذه الاستطلاع قد أربكتني. كنت أعتقد بالتأكيد أنها ستكون أكثر ميلاً بشكل كبير في اتجاه 2X عبر Pro 100/200/500 مقابل إعادة الحدود البالغة 5 ساعات لتنعيم منحنى الطلب.",
+        "de": "Die Ergebnisse dieser Umfrage haben mich verwirrt. Ich hatte definitiv gedacht, dass sie viel günstiger in die 2X-Richtung tendieren würde bei den Pro 100/200/500, auf Kosten der Wiedereinführung von 5h-Limits, um die Nachfragekurve zu glätten."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-12T01:49:41.551Z"
+    },
+    "2109430894604026039": {
+      "excerpt": "With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
+      "contentHash": "1090a95c17eea0c635f2964e611edfb77943d2c4710680521de1792e5d5be262",
+      "texts": {
+        "zh": "通过此更改，我们在从订阅中提取使用量时，不再对 GPT-6.",
+        "zh-Hant": "隨著這項變更，我們在從訂閱中提取使用量時，不會對 GPT-6.",
+        "ja": "この変更により、サブスクリプションからの使用量を引き出す際に、GPT-6.",
+        "ko": "이 변경으로 인해 구독에서 사용량을 가져올 때 GPT-6.",
+        "es": "1 Sol cuando se extrae el uso de la suscripción.",
+        "fr": "1 Sol lors du prélèvement d'utilisation à partir de l'abonnement.",
+        "de": "1 Sol, wenn die Nutzung aus dem Abonnement bezogen wird.",
+        "ar": "1 Sol عند سحب الاستخدام من الاشتراك."
+      },
+      "fullText": "With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
+      "fullTexts": {
+        "zh": "通过此更改，我们在从订阅中提取使用量时，不再对 GPT-6.1 Sol 收取长上下文费用。",
+        "zh-Hant": "隨著這項變更，我們在從訂閱中提取使用量時，不會對 GPT-6.1 Sol 收取長上下文費用。",
+        "ja": "この変更により、サブスクリプションからの使用量を引き出す際に、GPT-6.1 Solに対して長文脈手数料を課金しなくなりました。",
+        "ko": "이 변경으로 인해 구독에서 사용량을 가져올 때 GPT-6.1 Sol에 대한 긴 컨텍스트 요금을 부과하지 않습니다.",
+        "es": "Con este cambio, no estamos cobrando tarifas por contexto largo para GPT-6.1 Sol cuando se extrae el uso de la suscripción.",
+        "fr": "Avec ce changement, nous ne facturons pas de frais de contexte long pour GPT-6.1 Sol lors du prélèvement d'utilisation à partir de l'abonnement.",
+        "de": "Mit dieser Änderung erheben wir keine Gebühren für langen Kontext für GPT-6.1 Sol, wenn die Nutzung aus dem Abonnement bezogen wird.",
+        "ar": "مع هذا التغيير، لن نتقاضى رسوم السياق الطويل لـ GPT-6.1 Sol عند سحب الاستخدام من الاشتراك."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-12T01:49:43.047Z"
     }
   },
   "pending": 341,
-  "lastAttemptAt": "2026-10-11T22:45:07.314Z"
+  "lastAttemptAt": "2026-10-12T01:49:56.266Z"
 }
