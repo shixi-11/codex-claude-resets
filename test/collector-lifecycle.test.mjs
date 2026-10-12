@@ -9,7 +9,7 @@ test('collector persists announcement, completion, and credit through later news
  const root=await mkdtemp(join(tmpdir(),'reset-lifecycle-'));
  try{
   for(const dir of ['src','scripts','data'])await mkdir(join(root,dir));
-  for(const file of ['scripts/collect.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/platform-state.mjs','src/announcement-time.mjs','src/x-relay.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/collect.mjs','scripts/collector-request.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/platform-state.mjs','src/announcement-time.mjs','src/x-relay.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   await writeFile(join(root,'data/events.json'),'[]');await writeFile(join(root,'data/health.json'),'{}');await writeFile(join(root,'data/platforms.json'),JSON.stringify({codex:{gifts:[]},claude:{gifts:[]}}));
   const all=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
   const ids=['2103637477760311522','2103911959544610829','2102463847714247142'];
