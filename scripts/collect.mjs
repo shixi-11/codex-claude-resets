@@ -1,3 +1,4 @@
+import {assertTrackingSync} from '../src/tracking-audit.mjs';
 import {refreshTopicHeat} from './topic-heat-refresh.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
@@ -129,6 +130,7 @@ const merged = reclassifyEvents(mergeEvents(existing.filter(event=>!rejected.has
 const platformFile = new URL('data/platforms.json',root);
 const platforms = JSON.parse(await readFile(platformFile,'utf8'));
 syncPlatformState(platforms, merged);
+assertTrackingSync(platforms, merged);
 for(const [key,platform] of Object.entries(platforms)){
  platform.discoveryMode=health.mode;
  platform.trackingState=platformChecks[key].status==='ok'?'timeline-checked':'partial-coverage';

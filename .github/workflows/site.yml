@@ -35,12 +35,28 @@ jobs:
       - name: Validate collected records and classification synchronization
         run: node --test
       - run: node scripts/build.mjs
+      - name: Audit tracking and prepare review queue
+        id: tracking
+        run: node scripts/audit-tracking.mjs
       - name: Save source records for Vercel automatic deployment
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data digests
+          git add data digests monitoring
           if ! git diff --cached --quiet; then
             git commit -m "Refresh verified announcements and source health"
             git push
           fi
+      - name: Retain backend tracking evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tracking-audit
+          path: output/tracking-audit.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Alert on newly detected tracking problems
+        if: steps.tracking.outputs.new_alerts != '' && steps.tracking.outputs.new_alerts != '0'
+        run: |
+          echo '::error::New reset tracking issues require review. See the job summary and tracking-audit artifact.'
+          exit 1

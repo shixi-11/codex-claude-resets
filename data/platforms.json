@@ -23,7 +23,7 @@
       "fullText": "The results of this poll has gotten me confused. I definitely thought it would sway much more favorably in the 2X direction across Pro 100/200/500 at the cost of bringing back 5h limits in order to smoothen the demand curve.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "7a066cb0002a6629143bf9f60437a5c0fb2d8f949af1e6375f25a8a78d03ab77"
     },
     "lastReset": {
@@ -40,7 +40,7 @@
       "fullText": "Put the reset in the bag. All propagated.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "dc80e3a7abbf06f3471a9b05ab48b47f68de755a2d9d74c286a72a2f2b0c7d94"
     },
     "discoveryMode": "profile-relay",
@@ -59,7 +59,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66"
     },
     "latestReset": {
@@ -76,7 +76,7 @@
       "fullText": "Put the reset in the bag. All propagated.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "dc80e3a7abbf06f3471a9b05ab48b47f68de755a2d9d74c286a72a2f2b0c7d94"
     }
   },
@@ -124,7 +124,7 @@
       "fullText": "ICYMI we've cut the price of Sonnet 5.5 cache reads in half.\n\nIn the Claude Platform, it's now $0.10 per million tokens (input is $2, output is $10). \n\nThis means Sonnet 5.5 now runs ~20% cheaper on most agentic work. \n\n(API only, no change to Claude Code usage limits.)",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "0de8f32110c8322e4e2f6adaf8d519253bec9a22d4b0d09e68bc150f3f4262be"
     },
     "lastReset": {
@@ -141,7 +141,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -159,7 +159,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -176,7 +176,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.4",
+      "rulesVersion": "1.4.5",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }

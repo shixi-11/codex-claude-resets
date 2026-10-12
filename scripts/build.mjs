@@ -1,3 +1,4 @@
+import {assertTrackingSync} from '../src/tracking-audit.mjs';
 import {postText} from '../src/post-text.mjs';
 import {visitorCopy} from '../src/visitor-copy.mjs';
 import {priorityCopy,resetDefinitions,earlierPosts} from '../src/priority-details.mjs';
@@ -20,6 +21,7 @@ events.forEach(validateEvent);
 let translations={posts:{}};try{translations=JSON.parse(await readFile(new URL('data/translations.json',root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
 for(const event of events){const entry=translations.posts[event.id];if(entry&&entry.excerpt===event.excerpt&&entry.contentHash===event.contentHash)event.localized={excerpt:entry.excerpt,contentHash:entry.contentHash,texts:entry.texts,fullText:entry.fullText,fullTexts:entry.fullTexts};}
 syncPlatformState(platforms, events);
+assertTrackingSync(platforms, events);
 await mkdir(out, { recursive: true });
 await cp(new URL('public/', root), out, { recursive: true, filter: path => !String(path).endsWith('mascot-source.png') });
 await mkdir(new URL('assets/', out), { recursive: true });

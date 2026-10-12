@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.4';
+export const RULES_VERSION = '1.4.5';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -64,6 +64,10 @@ export function classify(text, { truncated = false, author = '' } = {}) {
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
+  // Secondary verification for terse official announcements, after all safety guards.
+  // EOD states a deadline but does not establish a timezone or an exact clock time.
+  if (author.toLowerCase()==='thsottiaux' && /^Global reset by (?:EOD|end of (?:the )?day)[.!](?:\s+May the tokens do good things for you[.!])?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
+  if (author.toLowerCase()==='thsottiaux' && /^Loading (?:a|one) banked reset\b/i.test(value) && !/[?]/.test(value)) return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
   if (/\b(?:users|subscribers|accounts) (?:now )?(?:get|receive|have received) (?:a|one) reset (?:to use|you can use) (?:anytime|later|at any time)\b/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
   if (/\bwe (?:have )?(?:already |also |just )?granted\b[^.!?]{0,100}\b(?:users|subscribers|accounts) a reset\b/i.test(value) && /\b(?:apply|use) it (?:whenever|anytime|later)|\breset (?:to use|you can use) (?:anytime|later)\b/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
   if (author.toLowerCase()==='thsottiaux' && /^Put the reset in the bag[.!]\s+All (?:(?:fully|successfully) )?propagated[.!]?$/i.test(value)) return {kind:'global',state:'reported',reason:'explicit-completion'};
