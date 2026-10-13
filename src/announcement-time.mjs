@@ -2,6 +2,7 @@
 // Ambiguous wall-clock times and relative durations intentionally remain unset.
 export function announcementTime(text, publishedAt, {truncated=false,author=""}={}) {
  if(truncated) return null;
+ if(author.toLowerCase()==='thsottiaux'&&/^Global reset (?:is )?landing by EOD PST time[.!]?(?:\s+Enjoy[.!]?)?$/i.test(text.trim()))return {resetAt:null,sourceTimezone:'PST',deadlineText:'by EOD PST time',timeBasis:'literal-source-offset',timeKind:'deadline',approximate:true};
  const leadingDay=text.match(/\b(?:lands?|landing)\s+(today|tomorrow)\s+(around\s+)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(PST|PDT|UTC|GMT)\b/i);
  const match=leadingDay ? [leadingDay[0],leadingDay[2],leadingDay[3],leadingDay[4],leadingDay[5],leadingDay[6],leadingDay[1]] : text.match(/\b(?:lands?|landing|reset.{0,30}(?:at|around))\s+(around\s+)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(PST|PDT|UTC|GMT)\s*(today|tomorrow)?\b/i);
  if(!match) {

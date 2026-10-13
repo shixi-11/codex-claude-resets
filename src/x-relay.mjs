@@ -1,4 +1,4 @@
-import { parsePostUrl } from './evidence.mjs';
+import { parsePostUrl, classify } from './evidence.mjs';
 const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
 export function timelineCandidates(payload,author){
  if(payload.code!==200||!Array.isArray(payload.results))throw new Error('Invalid relay timeline');
@@ -24,4 +24,14 @@ export function corroborateRelay(official,relay){
  const prefix=normalize(official.text),full=normalize(text);
  if(prefix.length<24||!full.startsWith(prefix))throw new Error('Relay does not match official excerpt');
  return {...official,text,truncated:false,relayUrl:`https://api.fxtwitter.com/${post.author}/status/${post.id}`};
+}
+
+export function corroborateResetQuote(official,relay,quoteOfficial,verifiedAt) {
+ const own=corroborateRelay(official,relay),quoted=relay?.quote,post=parsePostUrl(quoted?.url);
+ if(!post||post.author.toLowerCase()!==own.author.toLowerCase()||post.id===own.id)throw new Error('Reset quote identity mismatch');
+ const source=corroborateRelay(quoteOfficial,quoted);
+ const classification=classify(source.text,source);
+ const ownAt=Number((BigInt(own.id)>>22n)+1288834974657n),at=Number((BigInt(post.id)>>22n)+1288834974657n);
+ if(classification.kind!=='global'||classification.state!=='announced'||ownAt<at||ownAt-at>48*3600000)throw new Error('Reset quote is not a recent announcement');
+ return {id:source.id,author:source.author,sourceUrl:source.url,fullText:source.text,publishedAt:new Date(at).toISOString(),verifiedAt,truncated:false,provenance:quoteOfficial.truncated?'x-oembed+fxembed':'x-oembed',relation:'quote',relationProvenance:'fxembed'};
 }

@@ -3,8 +3,9 @@ import {refreshTopicHeat} from './topic-heat-refresh.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { announcementTime } from '../src/announcement-time.mjs';
-import { timelineCandidates, corroborateRelay } from '../src/x-relay.mjs';
-import { ALLOWED_AUTHORS, reclassifyEvents, RULES_VERSION, parsePostUrl, extractEmbed, classify, evidenceExcerpt, mergeEvents, postPlatform } from '../src/evidence.mjs';
+import { timelineCandidates, corroborateRelay, corroborateResetQuote } from '../src/x-relay.mjs';
+import {collectionRequest} from '../src/collection-request.mjs';
+import { ALLOWED_AUTHORS, reclassifyEvents, RULES_VERSION, parsePostUrl, extractEmbed, classify, evidenceExcerpt, mergeEvents, postPlatform, needsResetContext } from '../src/evidence.mjs';
 
 import {syncPlatformState} from '../src/platform-state.mjs';
 
@@ -16,13 +17,10 @@ const health = { ...previousHealth, lastAttemptAt: now, sources: [], failedPosts
 const fresh = [];
 const rejected = new Set();
 const platformChecks = Object.fromEntries(['codex','claude'].map(id=>[id,{lastAttemptAt:now, status:'degraded', checked:0, failed:0, discovered:0, authors:[], lastSuccessAt:previousHealth.platforms?.[id]?.lastSuccessAt || null}]));
-const request = async (url, headers = {}, format = 'json') => {
-  const response = await fetch(url, { headers: { 'User-Agent': 'CodexResetTracker/1.0 (public announcement monitoring)', ...headers }, signal: AbortSignal.timeout(18000) });
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return format === 'text' ? response.text() : response.json();
-};
+const collectionDeadline=Date.now()+120000;
+const request = (url, headers = {}, format = 'json') => collectionRequest(url,{headers,format,budgetMs:Math.min(18000,collectionDeadline-Date.now())});
 
-let candidates = [];
+let candidates = (process.env.COLLECT_POST_URLS||'').split(',').filter(Boolean).map(url=>{const post=parsePostUrl(url.trim());if(!post)throw new Error('Invalid explicit post URL');return {url:post.url};});
 let scanCompleted = false;
 try {
   if (process.env.X_BEARER_TOKEN && process.env.ENABLE_PAID_X_API === 'true') {
@@ -101,15 +99,33 @@ try {
         }catch{/* Keep incomplete official evidence unconfirmed. */}
       }
       verified++; check.checked++;
-      const classification = classify(source.text, source);
+      let resetContext;
+      if(needsResetContext(source.text)&&!source.truncated) {
+        try {
+          const relay=candidate.relay||(await request(`https://api.fxtwitter.com/${post.author}/status/${post.id}`)).tweet;
+          const quoted=parsePostUrl(relay?.quote?.url);
+          if(!quoted||quoted.author.toLowerCase()!==post.author.toLowerCase())throw new Error('No matching reset quote');
+          const official=extractEmbed(await request(`https://publish.twitter.com/oembed?url=${encodeURIComponent(quoted.url)}&omit_script=true`),quoted.url);
+          resetContext=corroborateResetQuote(source,relay,official,now);
+          resetContext.contentHash=createHash('sha256').update(resetContext.fullText).digest('hex');
+        }catch(error){
+          failed++;check.failed++;(health.failedPosts||=[]).push({url:post.url,error:`Reset context: ${error.message}`.slice(0,120)});
+          const previous=existing.find(event=>event.id===post.id&&event.fullText===source.text&&!event.truncated);
+          resetContext=previous?.resetContext;
+        }
+      }
+      const classification = classify(source.text, {...source,publishedAt,resetContext});
       if (classification.kind === 'other') { if(!source.truncated)rejected.add(post.id); return; }
       const schedule = classification.kind==='global' && classification.state==='announced' ? announcementTime(source.text,publishedAt,source) : null;
       const eligiblePlans=classification.kind==='banked'&&!source.truncated&&/for all Plus, Pro and Business users/i.test(source.text)&&!/not for all Plus/i.test(source.text)?['Plus','Pro','Business']:null;
-      fresh.push({ id: post.id, kind: classification.kind, state: classification.state, reason: classification.reason, author: post.author, platform:postPlatform(post.author), sourceUrl: post.url, publishedAt, verifiedAt: now, excerpt: evidenceExcerpt(source.text), ...(!source.truncated?{fullText:source.text}:{}), truncated: source.truncated, provenance, ...(source.relayUrl?{relayUrl:source.relayUrl}:{}), ...(eligiblePlans?{eligiblePlans}:{}), rulesVersion: RULES_VERSION, contentHash: createHash('sha256').update(source.text).digest('hex'), ...(schedule||{}) });
+      fresh.push({ id: post.id, kind: classification.kind, state: classification.state, reason: classification.reason, author: post.author, platform:postPlatform(post.author), sourceUrl: post.url, publishedAt, verifiedAt: now, excerpt: evidenceExcerpt(source.text), ...(!source.truncated?{fullText:source.text}:{}), truncated: source.truncated, provenance, ...(resetContext?{resetContext}:{}), ...(source.relayUrl?{relayUrl:source.relayUrl}:{}), ...(eligiblePlans?{eligiblePlans}:{}), rulesVersion: RULES_VERSION, contentHash: createHash('sha256').update(source.text).digest('hex'), ...(schedule||{}) });
     } catch (error) { failed++; check.failed++;(health.failedPosts||=[]).push({url:post.url,error:error.message.slice(0,120)}); }
   }
-  for(let offset=0;offset<candidates.length;offset+=4)await Promise.all(candidates.slice(offset,offset+4).map(checkCandidate));
   scanCompleted = true;
+  for(let offset=0;offset<candidates.length;offset+=4){
+    if(Date.now()>=collectionDeadline){scanCompleted=false;health.sources.push({name:'Collection budget',ok:false,error:'Two-minute collection budget exhausted; remaining candidates deferred'});break;}
+    await Promise.all(candidates.slice(offset,offset+4).map(checkCandidate));
+  }
   health.sources.push({ name: health.mode === 'x-api' ? 'X official API' : 'X official embed', url: 'https://publish.twitter.com/', ok: failed === 0 && verified > 0, checked: verified, failed });
 
 } catch (error) {

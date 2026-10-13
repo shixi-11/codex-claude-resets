@@ -10,7 +10,7 @@ export function syncPlatformState(platforms, events, now = Date.now()) {
  platform.latestReset=latestReset||null;
  platform.lastReset=records.find(event=>event.kind==='global'&&event.state==='reported')||null;
  if(latestReset?.state==='announced'&&!latestReset.resetAt){
-  platform.reset={state:'announced',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt,...(/a reset is (?:also )?landing by midnight today\./i.test(latestReset.fullText||'')?{deadlineText:'by midnight today'}:{})};
+  platform.reset={state:'announced',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt,...(latestReset.sourceTimezone?{sourceTimezone:latestReset.sourceTimezone}:{}),...(latestReset.deadlineText?{deadlineText:latestReset.deadlineText}:{}),...(/a reset is (?:also )?landing by midnight today\./i.test(latestReset.fullText||'')?{deadlineText:'by midnight today'}:{})};
  } else if(latestReset?.state==='announced'&&latestReset.resetAt&&Date.parse(latestReset.resetAt)>now-86400000){
   platform.reset={state:'announced',resetAt:latestReset.resetAt,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,approximate:latestReset.approximate,sourceTimezone:latestReset.sourceTimezone,timeBasis:latestReset.timeBasis,timeKind:latestReset.timeKind};
  } else if(latestReset?.state==='reported'&&Date.parse(latestReset.publishedAt)>now-86400000){

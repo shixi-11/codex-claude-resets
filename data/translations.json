@@ -2752,8 +2752,92 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-12T01:49:43.047Z"
+    },
+    "2109873287853707513": {
+      "excerpt": "What would you like with your side of reset?",
+      "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+      "texts": {
+        "zh-Hant": "重置這道配菜，你還想搭配什麼？",
+        "zh": "重置这道配菜，你还想搭配什么？",
+        "ja": "リセットの付け合わせに何を付けますか？",
+        "es": "¿Qué te gustaría con tu guarnición de reinicio?",
+        "de": "Was möchten Sie zu Ihrer Portion Reset?",
+        "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ?",
+        "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+        "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요?"
+      },
+      "fullText": "What would you like with your side of reset? It's done.",
+      "fullTexts": {
+        "zh-Hant": "重置這道配菜，你還想搭配什麼？已經完成了。",
+        "zh": "重置这道配菜，你还想搭配什么？已经完成了。",
+        "ja": "リセットの付け合わせに何を付けますか？ もう終わりました。",
+        "es": "¿Qué te gustaría con tu guarnición de reinicio? Está listo.",
+        "de": "Was möchten Sie zu Ihrer Portion Reset? Es ist erledigt.",
+        "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ? C’est fait.",
+        "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+        "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요? 완료됐습니다."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-13T06:07:44.062Z",
+      "editorial": true
+    },
+    "2109812360596865224": {
+      "excerpt": "Global reset landing by EOD PST time.",
+      "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b",
+      "texts": {
+        "zh-Hant": "全域重置預計在 PST 當日結束前完成。",
+        "zh": "全局重置预计在 PST 当日结束前完成。",
+        "ja": "本日PST時間EODまでにグローバルリセット着陸。",
+        "ko": "PST 시간대 EOD까지 글로벌 리셋 착륙.",
+        "es": "Reinicio global aterrizando para el final del día hora PST.",
+        "de": "Globaler Reset-Landing bis EOD PST-Zeit.",
+        "fr": "Réinitialisation globale annoncée d’ici la fin de journée PST.",
+        "ar": "ستصل إعادة التعيين العامة بحلول نهاية اليوم بتوقيت PST."
+      },
+      "fullText": "Global reset landing by EOD PST time. Enjoy",
+      "fullTexts": {
+        "zh-Hant": "全域重置預計在 PST 當日結束前完成。盡情使用吧。",
+        "zh": "全局重置预计在 PST 当日结束前完成。尽情使用吧。",
+        "ja": "本日PST時間EODまでにグローバルリセット着陸。楽しんでください。",
+        "ko": "PST 시간대 EOD까지 글로벌 리셋 착륙. 즐기세요.",
+        "es": "Reinicio global aterrizando para el final del día hora PST. Disfruta",
+        "de": "Globaler Reset-Landing bis EOD PST-Zeit. Genießen Sie es.",
+        "fr": "Réinitialisation globale annoncée d’ici la fin de journée PST. Profitez-en.",
+        "ar": "ستصل إعادة التعيين العامة بحلول نهاية اليوم بتوقيت PST. استمتعوا."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-13T06:07:46.828Z",
+      "editorial": true
+    },
+    "2109812216212099456": {
+      "excerpt": "Day 8/ Reset",
+      "contentHash": "8164749d90ecd96301d2918bf1737d0c70308d4822448565319da533cae9775b",
+      "texts": {
+        "zh": "第 8 天 / 重置",
+        "zh-Hant": "第 8 天 / 重置",
+        "ja": "8日目/ リセット",
+        "ko": "8일차/ 리셋",
+        "es": "Día 8/ Reinicio",
+        "fr": "Jour 8 / Réinitialisation",
+        "de": "Tag 8 / Reset",
+        "ar": "اليوم 8 / إعادة التعيين"
+      },
+      "fullText": "Day 8/ Reset",
+      "fullTexts": {
+        "zh": "第 8 天 / 重置",
+        "zh-Hant": "第 8 天 / 重置",
+        "ja": "8日目/ リセット",
+        "ko": "8일차/ 리셋",
+        "es": "Día 8/ Reinicio",
+        "fr": "Jour 8 / Réinitialisation",
+        "de": "Tag 8 / Reset",
+        "ar": "اليوم 8 / إعادة التعيين"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-13T06:07:50.143Z",
+      "editorial": true
     }
   },
   "pending": 341,
-  "lastAttemptAt": "2026-10-13T00:35:43.691Z"
+  "lastAttemptAt": "2026-10-13T06:07:51.101Z"
 }
