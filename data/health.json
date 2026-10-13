@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-13T07:04:19.427Z",
+  "lastAttemptAt": "2026-10-13T09:33:48.792Z",
   "lastSuccessAt": "2026-10-13T06:36:15.627Z",
-  "discoveryAt": "2026-10-13T07:04:19.427Z",
+  "discoveryAt": "2026-10-13T09:33:48.792Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -33,16 +33,16 @@
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": true,
-      "candidates": 19
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
       "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 19
     },
     {
       "name": "@claudeai timeline via FxEmbed",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": false,
-      "checked": 500,
+      "checked": 495,
       "failed": 7
     }
   ],
@@ -111,7 +111,7 @@
   ],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-13T07:04:19.427Z",
+      "lastAttemptAt": "2026-10-13T09:33:48.792Z",
       "status": "degraded",
       "checked": 467,
       "failed": 7,
@@ -133,19 +133,19 @@
       "lastSuccessAt": "2026-10-13T06:36:15.627Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-13T07:04:19.427Z",
+      "lastAttemptAt": "2026-10-13T09:33:48.792Z",
       "status": "degraded",
-      "checked": 33,
+      "checked": 28,
       "failed": 0,
-      "discovered": 45,
+      "discovered": 47,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "AnthropicAI",
-          "ok": false
+          "ok": true
         },
         {
           "author": "claudeai",
