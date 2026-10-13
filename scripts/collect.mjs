@@ -41,7 +41,11 @@ try {
     for(const author of ALLOWED_AUTHORS){
       const url=`https://api.fxtwitter.com/2/profile/${author}/statuses?count=40&with_replies=1`;
       try{
-        const posts=timelineCandidates(await request(url),author);
+        // FxEmbed can transiently return an empty-timeline 404 for existing
+        // accounts. Retry only these monitored timelines, inside the same
+        // request/collection budgets; never treat an empty response as coverage.
+        const payload=await collectionRequest(url,{budgetMs:Math.min(18000,collectionDeadline-Date.now()),retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500});
+        const posts=timelineCandidates(payload,author);
         if(!posts.length)throw new Error('No matching author posts returned');
         candidates.push(...posts);health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:true,candidates:posts.length});
       }catch(error){health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:false,error:error.message});}
