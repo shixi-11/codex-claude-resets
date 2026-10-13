@@ -1,6 +1,6 @@
 # Automation
 
-The production workflow is `.github/workflows/site.yml`. It checks announcements at minutes 7, 17, 27, 37, 47 and 57 each hour, writes a daily Markdown digest at 02:23 UTC, validates records and the static build, then commits changed records to this public repository. Vercel's GitHub integration receives those commits and builds `dist/` with `node scripts/build.mjs`. No GitHub Pages environment or Vercel credential in Actions is required.
+The production workflow is `.github/workflows/site.yml`. It checks announcements at minute 17 UTC each hour, writes a daily Markdown digest at 02:23 UTC, validates records and the static build, then commits changed records to this public repository. Vercel's GitHub integration receives those commits and builds `dist/` with `node scripts/build.mjs`. No GitHub Pages environment or Vercel credential in Actions is required.
 
 The Vercel project is `codex-claude-resets` in the existing `shixilin` workspace, with production origin `https://codex-claude-resets.vercel.app/`. Only the built `dist/` directory is served; collector scripts and Blender sources are not included in it. Vercel Standard Protection keeps previews and generated deployment URLs protected while the production alias remains public. The personal website routes `shixilin.com/ai/codex-claude-resets/` to this Vercel project. Project-level routing permits this origin change without redeploying unrelated work on the main website; the main site's `vercel.json` must retain the matching Vercel origin for future deployments.
 
