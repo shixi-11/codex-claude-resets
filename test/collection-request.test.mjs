@@ -13,3 +13,16 @@ test('short Retry-After and network errors respect the shared budget and bounded
  calls=0;await assert.rejects(collectionRequest('https://example.com',{fetcher:async()=>{calls++;throw new TypeError('fetch failed');},sleep:async()=>{}}),/fetch failed/);assert.equal(calls,2);
  calls=0;let time=0;await assert.rejects(collectionRequest('https://example.com',{budgetMs:200,now:()=>time,fetcher:async()=>{calls++;time=180;throw new TypeError('fetch failed');},sleep:async()=>assert.fail('budget exceeded')}),/fetch failed/);assert.equal(calls,1);
 });
+
+test('monitored timeline 404 retries are bounded and require an actual successful response',async()=>{
+ const policy={retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500};
+ let calls=0;const waits=[];
+ const result=await collectionRequest('https://example.com/timeline',{...policy,fetcher:async()=>++calls<3?new Response('',{status:404}):Response.json({code:200,results:[{id:'1'}]}),sleep:async ms=>waits.push(ms)});
+ assert.equal(calls,3);assert.deepEqual(waits,[500,1000]);assert.equal(result.code,200);
+ calls=0;
+ await assert.rejects(collectionRequest('https://example.com/timeline',{...policy,fetcher:async()=>{calls++;return new Response('',{status:404});},sleep:async()=>{}}),/HTTP 404/);
+ assert.equal(calls,3);
+ calls=0;let time=0;
+ await assert.rejects(collectionRequest('https://example.com/timeline',{...policy,budgetMs:600,now:()=>time,fetcher:async()=>{calls++;return new Response('',{status:404});},sleep:async ms=>{time+=ms;}}),/HTTP 404/);
+ assert.equal(calls,2);
+});

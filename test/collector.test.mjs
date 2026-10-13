@@ -15,9 +15,11 @@ test('collector removes a stored false positive and does not mask a failed Claud
   await writeFile(join(root,'data/events.json'),JSON.stringify([{id,author:'thsottiaux',sourceUrl:`https://x.com/thsottiaux/status/${id}`,kind:'signal',state:'unconfirmed',fullText:'Codex usage has been declining.',truncated:false,verifiedAt:'2026-09-01',publishedAt:'2026-09-01',rulesVersion:'old'}]));
   await writeFile(join(root,'data/health.json'),JSON.stringify({lastSuccessAt:'2026-09-01',platforms:{claude:{lastSuccessAt:'2026-09-01'}}}));
   await writeFile(join(root,'data/platforms.json'),JSON.stringify({codex:{},claude:{}}));
-  await writeFile(join(root,'mock.mjs'),`globalThis.fetch=async input=>{
+  await writeFile(join(root,'mock.mjs'),`const calls={};globalThis.fetch=async input=>{
    const u=new URL(input),author=u.pathname.split('/')[3];
    if(u.pathname.includes('/profile/')){
+    calls[author]=(calls[author]||0)+1;
+    if(author==='OpenAIDevs'&&calls[author]===1)return new Response('',{status:404});
     if(author==='AnthropicAI')return new Response('',{status:503});
     const authors=['thsottiaux','OpenAIDevs','OpenAI','ClaudeDevs','AnthropicAI','claudeai'];
     const id=String(100+authors.indexOf(author));
