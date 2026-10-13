@@ -1,0 +1,3 @@
+import {drumSize} from './drummer-data.mjs?v=9f0da8c28b';
+const labels={en:'Tap to drum',zh:'点一下，捶鼓','zh-Hant':'點一下，捶鼓',ja:'タップして太鼓を叩く',ko:'눌러서 북 치기',es:'Toca para golpear el tambor',fr:'Toucher pour jouer du tambour',de:'Tippen zum Trommeln',ar:'اضغط لقرع الطبل'};
+export function drummer(lang,base='./',version=''){return `<button type="button" class="heat-drummer" data-drummer aria-label="${labels[lang]||labels.en}" title="${labels[lang]||labels.en}" disabled><img class="drummer-poster" src="${base}assets/drummer-poster.webp?v=${version}" width="${drumSize}" height="${drumSize}" alt=""><canvas class="drummer-canvas" width="${drumSize}" height="${drumSize}" hidden aria-hidden="true"></canvas></button>`; }

@@ -1,0 +1,416 @@
+{
+  "codex": {
+    "name": "Codex",
+    "profileUrl": "https://x.com/thsottiaux",
+    "usageUrl": "https://chatgpt.com/codex/settings/usage",
+    "reset": {
+      "state": "completed",
+      "resetAt": null,
+      "sourceUrl": "https://x.com/thsottiaux/status/2109873287853707513",
+      "verifiedAt": "2026-10-13T14:58:21.055Z",
+      "publishedAt": "2026-10-13T05:06:06.031Z"
+    },
+    "gifts": [],
+    "trackingState": "timeline-checked",
+    "latest": {
+      "id": "2109873287853707513",
+      "kind": "global",
+      "state": "reported",
+      "reason": "linked-completion",
+      "author": "thsottiaux",
+      "platform": "codex",
+      "sourceUrl": "https://x.com/thsottiaux/status/2109873287853707513",
+      "publishedAt": "2026-10-13T05:06:06.031Z",
+      "verifiedAt": "2026-10-13T14:58:21.055Z",
+      "excerpt": "What would you like with your side of reset?",
+      "fullText": "What would you like with your side of reset? It's done.",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "resetContext": {
+        "id": "2109812360596865224",
+        "author": "thsottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2109812360596865224",
+        "fullText": "Global reset landing by EOD PST time. Enjoy",
+        "publishedAt": "2026-10-13T01:03:59.841Z",
+        "verifiedAt": "2026-10-13T14:58:21.055Z",
+        "truncated": false,
+        "provenance": "x-oembed",
+        "relation": "quote",
+        "relationProvenance": "fxembed",
+        "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
+      },
+      "rulesVersion": "1.4.6",
+      "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+      "localized": {
+        "excerpt": "What would you like with your side of reset?",
+        "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+        "texts": {
+          "zh-Hant": "重置這道配菜，你還想搭配什麼？",
+          "zh": "重置这道配菜，你还想搭配什么？",
+          "ja": "リセットの付け合わせに何を付けますか？",
+          "es": "¿Qué te gustaría con tu guarnición de reinicio?",
+          "de": "Was möchten Sie zu Ihrer Portion Reset?",
+          "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ?",
+          "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+          "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요?"
+        },
+        "fullText": "What would you like with your side of reset? It's done.",
+        "fullTexts": {
+          "zh-Hant": "重置這道配菜，你還想搭配什麼？已經完成了。",
+          "zh": "重置这道配菜，你还想搭配什么？已经完成了。",
+          "ja": "リセットの付け合わせに何を付けますか？ もう終わりました。",
+          "es": "¿Qué te gustaría con tu guarnición de reinicio? Está listo.",
+          "de": "Was möchten Sie zu Ihrer Portion Reset? Es ist erledigt.",
+          "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ? C’est fait.",
+          "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+          "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요? 완료됐습니다."
+        }
+      }
+    },
+    "lastReset": {
+      "id": "2109873287853707513",
+      "kind": "global",
+      "state": "reported",
+      "reason": "linked-completion",
+      "author": "thsottiaux",
+      "platform": "codex",
+      "sourceUrl": "https://x.com/thsottiaux/status/2109873287853707513",
+      "publishedAt": "2026-10-13T05:06:06.031Z",
+      "verifiedAt": "2026-10-13T14:58:21.055Z",
+      "excerpt": "What would you like with your side of reset?",
+      "fullText": "What would you like with your side of reset? It's done.",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "resetContext": {
+        "id": "2109812360596865224",
+        "author": "thsottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2109812360596865224",
+        "fullText": "Global reset landing by EOD PST time. Enjoy",
+        "publishedAt": "2026-10-13T01:03:59.841Z",
+        "verifiedAt": "2026-10-13T14:58:21.055Z",
+        "truncated": false,
+        "provenance": "x-oembed",
+        "relation": "quote",
+        "relationProvenance": "fxembed",
+        "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
+      },
+      "rulesVersion": "1.4.6",
+      "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+      "localized": {
+        "excerpt": "What would you like with your side of reset?",
+        "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+        "texts": {
+          "zh-Hant": "重置這道配菜，你還想搭配什麼？",
+          "zh": "重置这道配菜，你还想搭配什么？",
+          "ja": "リセットの付け合わせに何を付けますか？",
+          "es": "¿Qué te gustaría con tu guarnición de reinicio?",
+          "de": "Was möchten Sie zu Ihrer Portion Reset?",
+          "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ?",
+          "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+          "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요?"
+        },
+        "fullText": "What would you like with your side of reset? It's done.",
+        "fullTexts": {
+          "zh-Hant": "重置這道配菜，你還想搭配什麼？已經完成了。",
+          "zh": "重置这道配菜，你还想搭配什么？已经完成了。",
+          "ja": "リセットの付け合わせに何を付けますか？ もう終わりました。",
+          "es": "¿Qué te gustaría con tu guarnición de reinicio? Está listo.",
+          "de": "Was möchten Sie zu Ihrer Portion Reset? Es ist erledigt.",
+          "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ? C’est fait.",
+          "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+          "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요? 완료됐습니다."
+        }
+      }
+    },
+    "discoveryMode": "profile-relay",
+    "latestGift": {
+      "id": "2102463847714247142",
+      "kind": "banked",
+      "state": "announced",
+      "reason": "explicit-bank-announcement",
+      "author": "thsottiaux",
+      "platform": "codex",
+      "sourceUrl": "https://x.com/thsottiaux/status/2102463847714247142",
+      "publishedAt": "2026-09-22T18:23:37.841Z",
+      "verifiedAt": "2026-10-13T09:33:48.792Z",
+      "excerpt": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+      "fullText": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
+      "truncated": false,
+      "provenance": "x-oembed+fxembed",
+      "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
+      "rulesVersion": "1.4.6",
+      "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66",
+      "localized": {
+        "excerpt": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+        "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66",
+        "texts": {
+          "es": "También estamos reduciendo permanentemente el precio de la API en un 50%, lo que hace que ambos sean viables para un montón de nuevos casos de uso y permite que tu consumo rinda más, incluso en las suscripciones.",
+          "de": "Wir senken außerdem den API-Preis dauerhaft um 50 %, wodurch beide für eine Menge neuer Anwendungsfälle nutzbar werden und deine Nutzung weiter reicht, sogar bei den Abonnements.",
+          "ar": "كما أننا نُقلل بشكل دائم من سعر الـ API بنسبة 50%، مما يجعل كليهما مناسبين لعدد هائل من حالات الاستخدام الجديدة ويجعل استخدامك يذهب أبعد أيضًا، حتى في الاشتراكات.",
+          "zh": "我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。",
+          "ja": "これにより、両モデルとも多くの新しいユースケースで活用可能になり、購読プランでも利用がより遠くまで広がります。"
+        },
+        "fullText": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
+        "fullTexts": {
+          "es": "GPT-6 Sol y Luna ya están disponibles. No solo representan una mejora muy significativa en todos los aspectos, sino también en la escritura y en la calidad general de \"ya sabes cuando lo pruebas\".\n\nTambién estamos reduciendo permanentemente el precio de la API en un 50%, lo que hace que ambos sean viables para un montón de nuevos casos de uso y permite que tu consumo rinda más, incluso en las suscripciones.\n\nY una cosa más. Estamos cargando un reinicio bancado en todas las cuentas de nuestros usuarios Plus, Pro y Business. ¡Vamos allá!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "de": "GPT-6 Sol und Luna sind draußen. Sie stellen nicht nur eine sehr bedeutende Verbesserung in allen Bereichen dar, sondern auch in der Schreibqualität und der allgemeinen „du weißt schon, wenn du es ausprobierst“-Qualität.\n\nWir senken außerdem den API-Preis dauerhaft um 50 %, wodurch beide für eine Menge neuer Anwendungsfälle nutzbar werden und deine Nutzung weiter reicht, sogar bei den Abonnements.\n\nUnd noch etwas. Wir laden einen gebankten Reset in alle Konten unserer Plus-, Pro- und Business-Nutzer. Los geht’s!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "ar": "صدر GPT-6 Sol و Luna. ليس فقط تحسينًا كبيرًا جدًا في جميع الجوانب، بل أيضًا في الكتابة وجودة \"تعرف عندما تجربها\" العامة.\n\nكما أننا نُقلل بشكل دائم من سعر الـ API بنسبة 50%، مما يجعل كليهما مناسبين لعدد هائل من حالات الاستخدام الجديدة ويجعل استخدامك يذهب أبعد أيضًا، حتى في الاشتراكات.\n\nوأمر آخر. نحن نُحمّل إعادة تعيين مُخزنة في جميع حسابات مستخدمي Plus و Pro و Business. هيا بنا!\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "zh": "GPT-6 Sol 和 Luna 已经推出。它们不仅在各方面都有显著提升，写作以及整体上那种“试过就知道”的体验也有进步。\n\n我们还将 API 价格永久降低 50%，让这两个模型适用于更多新场景，也让你的额度更耐用，包括订阅方案。\n\n还有一件事。我们正在向所有 Plus、Pro 和 Business 用户的账号发放一次可留待以后使用的重置。出发吧！\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "ja": "GPT-6 Sol と Luna がリリースされました。これらは全体的に非常に大きな改善であるだけでなく、執筆や一般的な「試してみるとわかる」品質においてもそうです。\n\nまた、API価格を50%恒久的に引き下げます。これにより、両モデルとも多くの新しいユースケースで活用可能になり、購読プランでも利用がより遠くまで広がります。\n\nもう一つ。Plus、Pro、Businessユーザーの全アカウントにバンクトリセットをロードします。行こう！\n\nhttps://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      }
+    },
+    "latestReset": {
+      "id": "2109873287853707513",
+      "kind": "global",
+      "state": "reported",
+      "reason": "linked-completion",
+      "author": "thsottiaux",
+      "platform": "codex",
+      "sourceUrl": "https://x.com/thsottiaux/status/2109873287853707513",
+      "publishedAt": "2026-10-13T05:06:06.031Z",
+      "verifiedAt": "2026-10-13T14:58:21.055Z",
+      "excerpt": "What would you like with your side of reset?",
+      "fullText": "What would you like with your side of reset? It's done.",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "resetContext": {
+        "id": "2109812360596865224",
+        "author": "thsottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2109812360596865224",
+        "fullText": "Global reset landing by EOD PST time. Enjoy",
+        "publishedAt": "2026-10-13T01:03:59.841Z",
+        "verifiedAt": "2026-10-13T14:58:21.055Z",
+        "truncated": false,
+        "provenance": "x-oembed",
+        "relation": "quote",
+        "relationProvenance": "fxembed",
+        "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
+      },
+      "rulesVersion": "1.4.6",
+      "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+      "localized": {
+        "excerpt": "What would you like with your side of reset?",
+        "contentHash": "6bda9e585c088fe70dc525514f648224f529946104f63ec3106bf66933c8b326",
+        "texts": {
+          "zh-Hant": "重置這道配菜，你還想搭配什麼？",
+          "zh": "重置这道配菜，你还想搭配什么？",
+          "ja": "リセットの付け合わせに何を付けますか？",
+          "es": "¿Qué te gustaría con tu guarnición de reinicio?",
+          "de": "Was möchten Sie zu Ihrer Portion Reset?",
+          "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ?",
+          "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+          "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요?"
+        },
+        "fullText": "What would you like with your side of reset? It's done.",
+        "fullTexts": {
+          "zh-Hant": "重置這道配菜，你還想搭配什麼？已經完成了。",
+          "zh": "重置这道配菜，你还想搭配什么？已经完成了。",
+          "ja": "リセットの付け合わせに何を付けますか？ もう終わりました。",
+          "es": "¿Qué te gustaría con tu guarnición de reinicio? Está listo.",
+          "de": "Was möchten Sie zu Ihrer Portion Reset? Es ist erledigt.",
+          "fr": "Qu’est-ce que vous désirez avec votre accompagnement de réinitialisation ? C’est fait.",
+          "ar": "ماذا تريد مع جانب إعادة التعيين الخاص بك؟ انتهى الأمر.",
+          "ko": "리셋이라는 곁들임에 무엇을 더 원하시나요? 완료됐습니다."
+        }
+      }
+    }
+  },
+  "claude": {
+    "name": "Claude",
+    "profileUrl": "https://x.com/ClaudeDevs",
+    "usageUrl": "https://claude.ai/settings/usage",
+    "reset": {
+      "state": "unknown",
+      "resetAt": null
+    },
+    "gifts": [
+      {
+        "type": "usage-promotion",
+        "state": "announced",
+        "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
+        "announcementId": "2093742321473065266",
+        "verifiedAt": "2026-10-13T14:58:25.838Z",
+        "benefit": "Claude Code standard weekly limits +25% permanently",
+        "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
+        "claim": "Applied automatically to eligible accounts",
+        "effectiveOn": "2026-09-14",
+        "scope": "Claude Code weekly limits only; not five-hour limits or other Claude products",
+        "permanent": true,
+        "isResetCard": false
+      }
+    ],
+    "trackingState": "timeline-checked",
+    "promotionHealth": {
+      "state": "fresh",
+      "checkedAt": "2026-10-13T14:58:25.838Z",
+      "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
+    },
+    "latest": {
+      "id": "2108287358374482381",
+      "kind": "usage",
+      "state": "information",
+      "reason": "usage-change",
+      "author": "ClaudeDevs",
+      "platform": "claude",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2108287358374482381",
+      "publishedAt": "2026-10-08T20:04:10.978Z",
+      "verifiedAt": "2026-10-13T14:58:21.055Z",
+      "excerpt": "(API only, no change to Claude Code usage limits.)",
+      "fullText": "ICYMI we've cut the price of Sonnet 5.5 cache reads in half.\n\nIn the Claude Platform, it's now $0.10 per million tokens (input is $2, output is $10). \n\nThis means Sonnet 5.5 now runs ~20% cheaper on most agentic work. \n\n(API only, no change to Claude Code usage limits.)",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "rulesVersion": "1.4.6",
+      "contentHash": "0de8f32110c8322e4e2f6adaf8d519253bec9a22d4b0d09e68bc150f3f4262be",
+      "localized": {
+        "excerpt": "(API only, no change to Claude Code usage limits.)",
+        "contentHash": "0de8f32110c8322e4e2f6adaf8d519253bec9a22d4b0d09e68bc150f3f4262be",
+        "texts": {
+          "zh": "（仅限 API，Claude Code 使用限制无变化。",
+          "zh-Hant": "（僅限 API，Claude Code 使用限制無變化。",
+          "ko": "(API 전용, Claude Code 사용 제한 변경 없음.",
+          "es": "(Solo API, sin cambios en los límites de uso de Claude Code.",
+          "fr": "(Uniquement pour l'API, aucune modification des limites d'utilisation de Claude Code.",
+          "de": "(Nur API, keine Änderung bei den Claude Code-Nutzungslimits.",
+          "ar": "(واجهة برمجة التطبيقات فقط، لا تغيير في حدود استخدام Claude Code.",
+          "ja": "（APIのみ、Claude Codeの使用制限に変更なし。"
+        },
+        "fullText": "ICYMI we've cut the price of Sonnet 5.5 cache reads in half.\n\nIn the Claude Platform, it's now $0.10 per million tokens (input is $2, output is $10). \n\nThis means Sonnet 5.5 now runs ~20% cheaper on most agentic work. \n\n(API only, no change to Claude Code usage limits.)",
+        "fullTexts": {
+          "zh": "如果你错过了，我们已将 Sonnet 5.5 缓存读取的价格减半。\n\n在 Claude 平台中，现在每百万个令牌 $0.10（输入 $2，输出 $10）。\n\n这意味着 Sonnet 5.5 在大多数代理性工作上现在运行成本降低约 20%。\n\n（仅限 API，Claude Code 使用限制无变化。）",
+          "zh-Hant": "如果你錯過了，我們已將 Sonnet 5.5 快取讀取價格減半。\n\n在 Claude 平臺上，現在每百萬 token 為 $0.10（輸入 $2，輸出 $10）。\n\n這意味著 Sonnet 5.5 在大多數代理式工作中現在運行成本降低約 20%。\n\n（僅限 API，Claude Code 使用限制無變化。）",
+          "ko": "만약 놓쳤다면, Sonnet 5.5 캐시 읽기 가격을 절반으로 낮췄습니다.\n\nClaude Platform에서 이제 백만 토큰당 $0.10입니다 (입력은 $2, 출력은 $10).\n\n이로 인해 Sonnet 5.5가 대부분의 에이전트 작업에서 이제 ~20% 더 저렴하게 실행됩니다.\n\n(API 전용, Claude Code 사용 제한 변경 없음.)",
+          "es": "POR SI NO LO VISTE, hemos reducido a la mitad el precio de las lecturas de caché de Sonnet 5.5.\n\nEn la Plataforma Claude, ahora es $0.10 por millón de tokens (entrada es $2, salida es $10).\n\nEsto significa que Sonnet 5.5 ahora se ejecuta ~20% más barato en la mayoría de los trabajos agenticos.\n\n(Solo API, sin cambios en los límites de uso de Claude Code.)",
+          "fr": "Pour ceux qui l'auraient manqué, nous avons réduit de moitié le prix des lectures de cache de Sonnet 5.5.\n\nSur la plateforme Claude, c'est maintenant 0,10 $ par million de tokens (entrée à 2 $, sortie à 10 $).\n\nCela signifie que Sonnet 5.5 fonctionne maintenant ~20 % moins cher pour la plupart des tâches agentiques.\n\n(Uniquement pour l'API, aucune modification des limites d'utilisation de Claude Code.)",
+          "de": "Falls du es verpasst hast: Wir haben den Preis für Sonnet 5.5 Cache-Lesevorgänge halbiert.\n\nIn der Claude Platform beträgt er jetzt 0,10 $ pro Million Tokens (Input: 2 $, Output: 10 $).\n\nDas bedeutet, dass Sonnet 5.5 bei den meisten agentischen Aufgaben nun ~20 % günstiger läuft.\n\n(Nur API, keine Änderung bei den Claude Code-Nutzungslimits.)",
+          "ar": "لمن فاته، قمنا بخفض سعر قراءة ذاكرة Sonnet 5.5 إلى النصف.\n\nفي منصة Claude، أصبح الآن 0.10 دولار لكل مليون رمز (الإدخال 2 دولار، الإخراج 10 دولارات).\n\nهذا يعني أن Sonnet 5.5 أصبح يعمل الآن بنسبة ~20% أرخص في معظم أعمال الوكلاء.\n\n(واجهة برمجة التطبيقات فقط، لا تغيير في حدود استخدام Claude Code.)",
+          "ja": "見逃した人のために、Sonnet 5.5のキャッシュ読み取り価格を半分にしました。\n\nClaude Platformでは、今後100万トークンあたり$0.10（入力は$2、出力は$10）です。\n\nこれにより、Sonnet 5.5はほとんどのエージェント関連の作業で約20%安く動作するようになります。\n\n（APIのみ、Claude Codeの使用制限に変更なし。）"
+        }
+      }
+    },
+    "lastReset": {
+      "id": "2094856679250919746",
+      "kind": "global",
+      "state": "reported",
+      "reason": "explicit-completion",
+      "author": "ClaudeDevs",
+      "platform": "claude",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2094856679250919746",
+      "publishedAt": "2026-09-01T18:35:27.545Z",
+      "verifiedAt": "2026-10-13T09:33:48.792Z",
+      "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+      "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "rulesVersion": "1.4.6",
+      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+      "localized": {
+        "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+        "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+        "texts": {
+          "zh": "Fable 5.1今天发布，我们也为所有用户重置了5小时额度和每周额度。",
+          "zh-Hant": "Fable 5.1今天發佈，我們也為所有用戶重置了5小時額度和每週額度。",
+          "ja": "本日のFable 5.1公開に合わせて、全ユーザーの5時間枠と週間利用枠もリセットしました。",
+          "ko": "오늘 Fable 5.1 출시와 함께 모든 사용자의 5시간 한도와 주간 한도도 초기화했습니다.",
+          "es": "Con el lanzamiento de Fable 5.1 hoy, también hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+          "fr": "À l’occasion de la sortie de Fable 5.1 aujourd’hui, nous avons aussi réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+          "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+          "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
+        },
+        "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+        "fullTexts": {
+          "zh": "Fable 5.1今天发布，我们也为所有用户重置了5小时额度和每周额度。",
+          "zh-Hant": "Fable 5.1今天發佈，我們也為所有用戶重置了5小時額度和每週額度。",
+          "ko": "오늘 Fable 5.1 출시와 함께 모든 사용자의 5시간 한도와 주간 한도도 초기화했습니다.",
+          "es": "Con el lanzamiento de Fable 5.1 hoy, también hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+          "fr": "À l’occasion de la sortie de Fable 5.1 aujourd’hui, nous avons aussi réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+          "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+          "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين.",
+          "ja": "本日のFable 5.1公開に合わせて、全ユーザーの5時間枠と週間利用枠もリセットしました。"
+        }
+      }
+    },
+    "discoveryMode": "profile-relay",
+    "latestGift": {
+      "id": "2104641323198472430",
+      "kind": "banked",
+      "state": "reported",
+      "reason": "explicit-bank-grant",
+      "author": "ClaudeDevs",
+      "platform": "claude",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2104641323198472430",
+      "publishedAt": "2026-09-28T18:36:08.452Z",
+      "verifiedAt": "2026-10-07T15:56:04.139Z",
+      "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
+      "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "rulesVersion": "1.4.6",
+      "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b",
+      "localized": {
+        "excerpt": "We granted all Pro, Max, and Team users a reset last Tuesday.",
+        "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b",
+        "texts": {
+          "zh-Hant": "我們在上週二為所有 Pro、Max 和 Team 使用者重置了一次。",
+          "zh": "我们上周二为所有 Pro、Max 和 Team 用户提供了一次重置。",
+          "ja": "5 は現在、Claude Platform および Claude Code で利用可能です。",
+          "ko": "5는 현재 Claude Platform과 Claude Code에서 사용할 수 있습니다.",
+          "es": "El martes pasado otorgamos un reinicio a todos los usuarios de Pro, Max y Team.",
+          "de": "Wir haben allen Pro-, Max- und Team-Nutzern letzten Dienstag einen Reset gewährt."
+        },
+        "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
+        "fullTexts": {
+          "zh-Hant": "Sonnet 5.5 現已在 Claude 平台和 Claude Code 中提供。\n\n我們在上週二為所有 Pro、Max 和 Team 使用者重置了一次。如果您尚未使用它，您仍然可以在 10 月 22 日之前隨時應用它。https://clau.de/reset",
+          "zh": "Sonnet 5.5 现已在 Claude 平台和 Claude Code 中提供。\n\n我们上周二为所有 Pro、Max 和 Team 用户提供了一次重置。如果您尚未使用它，您仍然可以在 10 月 22 日之前随时应用它。https://clau.de/reset",
+          "ja": "Sonnet 5.5 は現在、Claude Platform および Claude Code で利用可能です。\n\n先週の火曜日に、すべての Pro、Max、Team ユーザーに対してリセットを付与しました。まだ使用していない場合、10月22日以前であればいつでも適用できます。https://clau.de/reset",
+          "ko": "Sonnet 5.5는 현재 Claude Platform과 Claude Code에서 사용할 수 있습니다.\n\n지난 화요일에 모든 Pro, Max, Team 사용자에게 리셋을 부여했습니다. 아직 사용하지 않으셨다면 10월 22일 이전 언제든지 적용할 수 있습니다. https://clau.de/reset",
+          "fr": "Sonnet 5.5 est maintenant disponible dans la plateforme Claude et Claude Code.\n\nNous avons accordé à tous les utilisateurs Pro, Max et Team une remise à zéro le mardi dernier. Si vous ne l’avez pas encore utilisée, vous pouvez toujours l’appliquer quand vous voulez, avant le 22 octobre. https://clau.de/reset",
+          "es": "Soneto 5.5 ya está disponible en la Plataforma Claude y Claude Code.\n\nEl martes pasado otorgamos un reinicio a todos los usuarios de Pro, Max y Team. Si aún no lo has utilizado, todavía puedes aplicarlo cuando quieras, antes del 22 de octubre. https://clau.de/reset",
+          "de": "Sonett 5.5 ist jetzt in der Claude-Plattform und Claude Code verfügbar.\n\nWir haben allen Pro-, Max- und Team-Nutzern letzten Dienstag einen Reset gewährt. Wenn Sie ihn noch nicht genutzt haben, können Sie ihn immer noch anwenden, wann immer Sie möchten, vor dem 22. Oktober. https://clau.de/reset"
+        }
+      }
+    },
+    "latestReset": {
+      "id": "2094856679250919746",
+      "kind": "global",
+      "state": "reported",
+      "reason": "explicit-completion",
+      "author": "ClaudeDevs",
+      "platform": "claude",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2094856679250919746",
+      "publishedAt": "2026-09-01T18:35:27.545Z",
+      "verifiedAt": "2026-10-13T09:33:48.792Z",
+      "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+      "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+      "truncated": false,
+      "provenance": "x-oembed",
+      "rulesVersion": "1.4.6",
+      "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+      "localized": {
+        "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+        "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c",
+        "texts": {
+          "zh": "Fable 5.1今天发布，我们也为所有用户重置了5小时额度和每周额度。",
+          "zh-Hant": "Fable 5.1今天發佈，我們也為所有用戶重置了5小時額度和每週額度。",
+          "ja": "本日のFable 5.1公開に合わせて、全ユーザーの5時間枠と週間利用枠もリセットしました。",
+          "ko": "오늘 Fable 5.1 출시와 함께 모든 사용자의 5시간 한도와 주간 한도도 초기화했습니다.",
+          "es": "Con el lanzamiento de Fable 5.1 hoy, también hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+          "fr": "À l’occasion de la sortie de Fable 5.1 aujourd’hui, nous avons aussi réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+          "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+          "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين."
+        },
+        "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
+        "fullTexts": {
+          "zh": "Fable 5.1今天发布，我们也为所有用户重置了5小时额度和每周额度。",
+          "zh-Hant": "Fable 5.1今天發佈，我們也為所有用戶重置了5小時額度和每週額度。",
+          "ko": "오늘 Fable 5.1 출시와 함께 모든 사용자의 5시간 한도와 주간 한도도 초기화했습니다.",
+          "es": "Con el lanzamiento de Fable 5.1 hoy, también hemos restablecido los límites de 5 horas y semanales de todos los usuarios.",
+          "fr": "À l’occasion de la sortie de Fable 5.1 aujourd’hui, nous avons aussi réinitialisé les quotas de 5 heures et hebdomadaires de tous les utilisateurs.",
+          "de": "Zum heutigen Start von Fable 5.1 haben wir auch die 5-Stunden- und Wochenlimits aller Nutzer zurückgesetzt.",
+          "ar": "بمناسبة إطلاق Fable 5.1 اليوم، أعدنا أيضًا ضبط حدود الساعات الخمس والحدود الأسبوعية لجميع المستخدمين.",
+          "ja": "本日のFable 5.1公開に合わせて、全ユーザーの5時間枠と週間利用枠もリセットしました。"
+        }
+      }
+    }
+  }
+}

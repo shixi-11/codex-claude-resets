@@ -1,0 +1,111 @@
+{
+  "lastAttemptAt": "2026-10-13T14:58:21.055Z",
+  "lastSuccessAt": "2026-10-13T14:58:21.055Z",
+  "discoveryAt": "2026-10-13T14:58:21.055Z",
+  "mode": "profile-relay",
+  "sources": [
+    {
+      "name": "@thsottiaux timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
+      "author": "thsottiaux",
+      "platform": "codex",
+      "ok": true,
+      "candidates": 22
+    },
+    {
+      "name": "@OpenAIDevs timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
+      "author": "OpenAIDevs",
+      "platform": "codex",
+      "ok": true,
+      "candidates": 10
+    },
+    {
+      "name": "@OpenAI timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+      "author": "OpenAI",
+      "platform": "codex",
+      "ok": true,
+      "candidates": 17
+    },
+    {
+      "name": "@ClaudeDevs timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+      "author": "ClaudeDevs",
+      "platform": "claude",
+      "ok": true,
+      "candidates": 19
+    },
+    {
+      "name": "@AnthropicAI timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
+      "author": "AnthropicAI",
+      "platform": "claude",
+      "ok": true,
+      "candidates": 19
+    },
+    {
+      "name": "@claudeai timeline via FxEmbed",
+      "url": "https://api.fxtwitter.com/2/profile/claudeai/statuses?count=40&with_replies=1",
+      "author": "claudeai",
+      "platform": "claude",
+      "ok": true,
+      "candidates": 13
+    },
+    {
+      "name": "X official embed",
+      "url": "https://publish.twitter.com/",
+      "ok": true,
+      "checked": 20,
+      "failed": 0
+    }
+  ],
+  "status": "ok",
+  "failedPosts": [],
+  "platforms": {
+    "codex": {
+      "lastAttemptAt": "2026-10-13T14:58:21.055Z",
+      "status": "ok",
+      "checked": 10,
+      "failed": 0,
+      "discovered": 49,
+      "authors": [
+        {
+          "author": "thsottiaux",
+          "ok": true
+        },
+        {
+          "author": "OpenAIDevs",
+          "ok": true
+        },
+        {
+          "author": "OpenAI",
+          "ok": true
+        }
+      ],
+      "lastSuccessAt": "2026-10-13T14:58:21.055Z"
+    },
+    "claude": {
+      "lastAttemptAt": "2026-10-13T14:58:21.055Z",
+      "status": "ok",
+      "checked": 10,
+      "failed": 0,
+      "discovered": 51,
+      "authors": [
+        {
+          "author": "ClaudeDevs",
+          "ok": true
+        },
+        {
+          "author": "AnthropicAI",
+          "ok": true
+        },
+        {
+          "author": "claudeai",
+          "ok": true
+        }
+      ],
+      "lastSuccessAt": "2026-10-13T14:58:21.055Z"
+    }
+  }
+}
