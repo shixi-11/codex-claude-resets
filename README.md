@@ -38,7 +38,7 @@ The site, source records, collector and GitHub Actions workflow live in this pub
 
 | Job | Schedule | Output |
 | --- | --- | --- |
-| Announcement check | At minutes 7, 17, 27, 37, 47 and 57 each hour | Verified records and source health committed for Vercel deployment |
+| Announcement check | At minute 17 UTC each hour | Verified records and source health committed for Vercel deployment |
 | Daily digest | 02:23 UTC daily | A source-linked Markdown digest of the previous UTC day |
 | Manual refresh | GitHub Actions → Run workflow | Check, digest and commit for Vercel deployment |
 
