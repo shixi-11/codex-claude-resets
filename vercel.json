@@ -1,6 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
+  "git": {
+    "deploymentEnabled": {
+      "*": false,
+      "deploy-static": true
+    }
+  },
   "installCommand": "echo Bundled static assets",
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "dist",
