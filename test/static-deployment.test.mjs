@@ -10,7 +10,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const sourceConfig = JSON.parse(await readFile(join(root, 'vercel.json'), 'utf8'));
 
 test('static Vercel config preserves routing and disables source-branch deployments', () => {
-  assert.deepEqual(sourceConfig.git.deploymentEnabled, { '*': false, 'deploy-static': true });
+  assert.deepEqual(sourceConfig.git.deploymentEnabled, { '**': false, 'deploy-static': true });
   const config = staticVercelConfig(sourceConfig);
   assert.equal(config.framework, null);
   assert.equal(config.buildCommand, '');
@@ -19,7 +19,7 @@ test('static Vercel config preserves routing and disables source-branch deployme
   assert.equal(config.trailingSlash, true);
   assert.deepEqual(config.redirects, sourceConfig.redirects);
   assert.deepEqual(config.headers, sourceConfig.headers);
-  assert.deepEqual(config.git.deploymentEnabled, { '*': false, 'deploy-static': true });
+  assert.deepEqual(config.git.deploymentEnabled, { '**': false, 'deploy-static': true });
   assert.equal(config.redirects.filter(rule => rule.source === '/').length, 9);
 });
 

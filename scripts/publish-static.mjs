@@ -18,7 +18,7 @@ export function staticVercelConfig(source) {
     outputDirectory: '.',
     git: {
       ...source.git,
-      deploymentEnabled: { '*': false, [branch]: true },
+      deploymentEnabled: { '**': false, [branch]: true },
     },
   };
 }
