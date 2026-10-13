@@ -39,7 +39,8 @@
         "relation": "quote",
         "relationProvenance": "fxembed",
         "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
-      }
+      },
+      "platform": "codex"
     },
     "lastReset": {
       "id": "2109873287853707513",
@@ -68,7 +69,8 @@
         "relation": "quote",
         "relationProvenance": "fxembed",
         "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
-      }
+      },
+      "platform": "codex"
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
@@ -116,7 +118,8 @@
         "relation": "quote",
         "relationProvenance": "fxembed",
         "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
-      }
+      },
+      "platform": "codex"
     }
   },
   "claude": {

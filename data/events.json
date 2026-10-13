@@ -26,7 +26,8 @@
       "relation": "quote",
       "relationProvenance": "fxembed",
       "contentHash": "b91707f3032cf867bff652256672ebdf2845b99bf09cf0e2898cdac65d23bb7b"
-    }
+    },
+    "platform": "codex"
   },
   {
     "id": "2109812360596865224",
@@ -48,7 +49,8 @@
     "deadlineText": "by EOD PST time",
     "timeBasis": "literal-source-offset",
     "timeKind": "deadline",
-    "approximate": true
+    "approximate": true,
+    "platform": "codex"
   },
   {
     "id": "2109812216212099456",
@@ -64,7 +66,8 @@
     "contentHash": "8164749d90ecd96301d2918bf1737d0c70308d4822448565319da533cae9775b",
     "kind": "signal",
     "state": "unconfirmed",
-    "reason": "ambiguous"
+    "reason": "ambiguous",
+    "platform": "codex"
   },
   {
     "id": "2109439315570999598",
