@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.5';
+export const RULES_VERSION = '1.4.6';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -50,22 +50,31 @@ export function reclassifyEvents(events) {
     if (!event.fullText || event.truncated) return [event];
     const result = classify(event.fullText, event);
     if (result.kind === 'other') return [];
-    const {resetAt, approximate, sourceTimezone, timeBasis, timeKind, ...record} = event;
+    const {resetAt, approximate, sourceTimezone, timeBasis, timeKind, deadlineText, ...record} = event;
     return [{...record, ...result, rulesVersion: RULES_VERSION,
       ...(result.kind==='global' && result.state==='announced' ? (announcementTime(event.fullText,event.publishedAt,event)||(resetAt?{resetAt,approximate,sourceTimezone,timeBasis,timeKind}:{})) : {})}];
   });
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export function classify(text, { truncated = false, author = '' } = {}) {
+export const needsResetContext = text => /^What would you like with your side of reset\?\s+It's done[.!]?$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim());
+export function validResetContext(context,author,publishedAt) {
+  const post=parsePostUrl(context?.sourceUrl),gap=Date.parse(publishedAt)-Date.parse(context?.publishedAt);
+  return !!(post && post.id===context.id && post.author.toLowerCase()===author.toLowerCase() && context.author?.toLowerCase()===author.toLowerCase() && !context.truncated && ['x-oembed','x-oembed+fxembed','x-api'].includes(context.provenance) && /^[0-9a-f]{64}$/.test(context.contentHash||'') && Number.isFinite(Date.parse(context.verifiedAt)) && gap>=0 && gap<=48*3600000 && classify(context.fullText||'',{author:context.author}).kind==='global' && classify(context.fullText||'',{author:context.author}).state==='announced');
+}
+export function classify(text, { truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
   if (!isRelevant(value, {author})) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  // This rhetorical question is not a conditional reset claim. Its exact complete
+  // wording still needs a recent, independently verified same-author announcement.
+  if (author.toLowerCase()==='thsottiaux' && needsResetContext(value)) return validResetContext(resetContext,author,publishedAt)?{kind:'global',state:'reported',reason:'linked-completion'}:unknown;
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
   // Secondary verification for terse official announcements, after all safety guards.
   // EOD states a deadline but does not establish a timezone or an exact clock time.
+  if (author.toLowerCase()==='thsottiaux' && /^Global reset (?:is )?landing by EOD PST time[.!]?(?:\s+Enjoy[.!]?)?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (author.toLowerCase()==='thsottiaux' && /^Global reset by (?:EOD|end of (?:the )?day)[.!](?:\s+May the tokens do good things for you[.!])?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (author.toLowerCase()==='thsottiaux' && /^Loading (?:a|one) banked reset\b/i.test(value) && !/[?]/.test(value)) return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
   if (/\b(?:users|subscribers|accounts) (?:now )?(?:get|receive|have received) (?:a|one) reset (?:to use|you can use) (?:anytime|later|at any time)\b/i.test(value)) return {kind:'banked',state:'reported',reason:'explicit-bank-grant'};
@@ -112,6 +121,8 @@ export function validateEvent(event) {
   if (typeof event.excerpt !== 'string' || !event.excerpt.trim() || event.excerpt.split(/\s+/).length > 25) throw new Error('Invalid excerpt');
   if (event.fullText!==undefined&&(typeof event.fullText!=='string'||!event.fullText.trim()||event.fullText.length>20000||event.truncated)) throw new Error('Invalid full text');
   if (!event.rulesVersion || !/^[0-9a-f]{64}$/.test(event.contentHash)) throw new Error('Missing version anchor');
+  if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Invalid reset context');
+  if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
   return true;
 }
 

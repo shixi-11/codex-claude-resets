@@ -11,6 +11,8 @@ const rows = {
 };
 const keys=['heading','next','unknown','local','gifts','noOffer','usage','awaitingConfirmation','completed','cancelled','source','boost','automatic','ends'];
 export const platformCopy=Object.fromEntries(Object.entries(rows).map(([lang,row])=>[lang,Object.fromEntries(keys.map((key,i)=>[key,row[i]]))]));
+const eodPstDeadlines={en:'Announcement: by EOD PST; exact time not published',zh:'公告：PST 当日结束前；未公布准确时间','zh-Hant':'公告：PST 當日結束前；未公布準確時間',ja:'告知：PST の当日中。正確な時刻は未公表',ko:'공지: PST 기준 당일 종료 전. 정확한 시각은 미공개',es:'Anuncio: antes de terminar el día PST; sin hora exacta',fr:'Annonce : avant la fin de journée PST ; heure exacte non publiée',de:'Ankündigung: bis Tagesende PST; genaue Uhrzeit nicht veröffentlicht',ar:'الإعلان: بحلول نهاية اليوم بتوقيت PST؛ لم يُنشر وقت دقيق'};
+for(const [lang,text]of Object.entries(eodPstDeadlines))platformCopy[lang].eodPstDeadline=text;
 const additions={
  en:['Offer ended','Offer needs rechecking','Pro, Max, Team and legacy seat-based Enterprise. Claude Code weekly limits only.','Codex & Claude reset tracker'],
  zh:['活动已结束','活动信息待复核','适用于Pro、Max、Team及旧版按席位计费的Enterprise，仅增加Claude Code每周额度。','Codex与Claude重置追踪'],
