@@ -1,5 +1,11 @@
-import { parsePostUrl, classify } from './evidence.mjs';
+import {createHash} from 'node:crypto';
+import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed } from './evidence.mjs';
 const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
+export function shouldCheckCandidate(candidate) {
+ const text=candidate.relay?.raw_text?.text||candidate.relay?.text;
+ const author=parsePostUrl(candidate.url)?.author;
+ return !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || (author?.toLowerCase()==='thsottiaux' && needsResetContext(text));
+}
 export function timelineCandidates(payload,author){
  if(payload.code!==200||!Array.isArray(payload.results))throw new Error('Invalid relay timeline');
  const found=new Map();
@@ -22,7 +28,8 @@ export function corroborateRelay(official,relay){
  const text=relay.raw_text?.text||relay.text;
  if(typeof text!=='string'||text.length>20000||/(?:…|\.\.\.)\s*$/.test(text))throw new Error('Relay text incomplete');
  const prefix=normalize(official.text),full=normalize(text);
- if(prefix.length<24||!full.startsWith(prefix))throw new Error('Relay does not match official excerpt');
+ // Short complete posts can be corroborated only by exact text equality.
+ if((prefix.length<24 && (official.truncated||full!==prefix))||!full.startsWith(prefix))throw new Error('Relay does not match official excerpt');
  return {...official,text,truncated:false,relayUrl:`https://api.fxtwitter.com/${post.author}/status/${post.id}`};
 }
 
@@ -34,4 +41,28 @@ export function corroborateResetQuote(official,relay,quoteOfficial,verifiedAt) {
  const ownAt=Number((BigInt(own.id)>>22n)+1288834974657n),at=Number((BigInt(post.id)>>22n)+1288834974657n);
  if(classification.kind!=='global'||classification.state!=='announced'||ownAt<at||ownAt-at>48*3600000)throw new Error('Reset quote is not a recent announcement');
  return {id:source.id,author:source.author,sourceUrl:source.url,fullText:source.text,publishedAt:new Date(at).toISOString(),verifiedAt,truncated:false,provenance:quoteOfficial.truncated?'x-oembed+fxembed':'x-oembed',relation:'quote',relationProvenance:'fxembed'};
+}
+
+// Follow at most a completion -> timing reply -> reset-day signal chain.
+// Fetch detail endpoints: timeline quotes can omit the quoted post's reply ID.
+export async function resolveResetContext(official,request,verifiedAt,depth=0) {
+ if(depth>1 || official.author.toLowerCase()!=='thsottiaux')throw new Error('Unsupported reset context chain');
+ const relay=(await request(`https://api.fxtwitter.com/${official.author}/status/${official.id}`)).tweet;
+ const own=corroborateRelay(official,relay);
+ let parent=parsePostUrl(relay?.quote?.url),relation='quote';
+ if(!parent){
+  const reply=relay?.replying_to;
+  parent=typeof reply==='object'&&reply?parsePostUrl(reply.url):parsePostUrl(`https://x.com/${reply}/status/${relay?.replying_to_status}`);
+  relation='reply';
+ }
+ if(!parent || parent.author.toLowerCase()!==own.author.toLowerCase() || parent.id===own.id)throw new Error('No matching reset relation');
+ const parentOfficial=extractEmbed(await request(`https://publish.twitter.com/oembed?url=${encodeURIComponent(parent.url)}&omit_script=true`),parent.url);
+ const parentRelay=relation==='quote'?relay.quote:(await request(`https://api.fxtwitter.com/${parent.author}/status/${parent.id}`)).tweet;
+ const source=corroborateRelay(parentOfficial,parentRelay);
+ const at=new Date(Number((BigInt(parent.id)>>22n)+1288834974657n)).toISOString();
+ const context={id:source.id,author:source.author,sourceUrl:source.url,fullText:source.text,publishedAt:at,verifiedAt,truncated:false,provenance:parentOfficial.truncated?'x-oembed+fxembed':'x-oembed',relation,relationProvenance:'fxembed',contentHash:createHash('sha256').update(source.text).digest('hex')};
+ if(isResetTiming(source.text))context.resetContext=await resolveResetContext(source,request,verifiedAt,depth+1);
+ const ownAt=new Date(Number((BigInt(own.id)>>22n)+1288834974657n)).toISOString();
+ if(!validResetContext(context,own.author,ownAt,{allowDaySignal:isResetTiming(own.text)}))throw new Error('Reset relation is not a recent announcement');
+ return context;
 }

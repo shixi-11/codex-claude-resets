@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.6';
+export const RULES_VERSION = '1.4.7';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -57,19 +57,30 @@ export function reclassifyEvents(events) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export const needsResetContext = text => /^What would you like with your side of reset\?\s+It's done[.!]?$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim());
-export function validResetContext(context,author,publishedAt) {
+export const isResetTiming = text => /^Landing within the next [1-9]\d? hours[.!]?$/i.test(text.trim());
+export const needsResetContext = text => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim());
+const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*Reset[.!]?$/i.test(text.trim());
+export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {
+  if(depth>1)return false;
   const post=parsePostUrl(context?.sourceUrl),gap=Date.parse(publishedAt)-Date.parse(context?.publishedAt);
-  return !!(post && post.id===context.id && post.author.toLowerCase()===author.toLowerCase() && context.author?.toLowerCase()===author.toLowerCase() && !context.truncated && ['x-oembed','x-oembed+fxembed','x-api'].includes(context.provenance) && /^[0-9a-f]{64}$/.test(context.contentHash||'') && Number.isFinite(Date.parse(context.verifiedAt)) && gap>=0 && gap<=48*3600000 && classify(context.fullText||'',{author:context.author}).kind==='global' && classify(context.fullText||'',{author:context.author}).state==='announced');
+  if(!(post && post.id===context.id && post.author.toLowerCase()===author.toLowerCase() && context.author?.toLowerCase()===author.toLowerCase() && !context.truncated && ['x-oembed','x-oembed+fxembed','x-api'].includes(context.provenance) && /^[0-9a-f]{64}$/.test(context.contentHash||'') && Number.isFinite(Date.parse(context.verifiedAt)) && gap>=0 && gap<=48*3600000))return false;
+  if(allowDaySignal && author.toLowerCase()==='thsottiaux' && resetDaySignal(context.fullText||'') && !context.resetContext)return true;
+  if(isResetTiming(context.fullText||''))return author.toLowerCase()==='thsottiaux' && validResetContext(context.resetContext,author,context.publishedAt,{allowDaySignal:true,depth:depth+1});
+  const result=classify(context.fullText||'',{author:context.author});
+  return result.kind==='global' && result.state==='announced';
 }
 export function classify(text, { truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
-  if (!isRelevant(value, {author})) return { kind: 'other', state: 'information', reason: 'unrelated' };
+  const linked=author.toLowerCase()==='thsottiaux' && needsResetContext(value);
+  if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   // This rhetorical question is not a conditional reset claim. Its exact complete
   // wording still needs a recent, independently verified same-author announcement.
-  if (author.toLowerCase()==='thsottiaux' && needsResetContext(value)) return validResetContext(resetContext,author,publishedAt)?{kind:'global',state:'reported',reason:'linked-completion'}:unknown;
+  if (linked) {
+    const timing=isResetTiming(value);
+    return validResetContext(resetContext,author,publishedAt,{allowDaySignal:timing})?{kind:'global',state:timing?'announced':'reported',reason:timing?'linked-announcement':'linked-completion'}:unknown;
+  }
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
   // Secondary verification for terse official announcements, after all safety guards.
@@ -103,7 +114,7 @@ export function classify(text, { truncated = false, author = '', publishedAt, re
 
 export function evidenceExcerpt(text) {
   const sentences = text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
-  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || '';
+  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text)?text:'');
   const words = sentence.trim().split(/\s+/).filter(Boolean);
   return words.slice(0, 24).join(' ') + (words.length > 24 ? '…' : '');
 }
@@ -121,7 +132,8 @@ export function validateEvent(event) {
   if (typeof event.excerpt !== 'string' || !event.excerpt.trim() || event.excerpt.split(/\s+/).length > 25) throw new Error('Invalid excerpt');
   if (event.fullText!==undefined&&(typeof event.fullText!=='string'||!event.fullText.trim()||event.fullText.length>20000||event.truncated)) throw new Error('Invalid full text');
   if (!event.rulesVersion || !/^[0-9a-f]{64}$/.test(event.contentHash)) throw new Error('Missing version anchor');
-  if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Invalid reset context');
+  if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:isResetTiming(event.fullText||'')})) throw new Error('Invalid reset context');
+  if (event.reason==='linked-announcement' && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:true})) throw new Error('Announcement needs verified reset context');
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
   return true;
 }

@@ -2864,6 +2864,62 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-15T07:34:41.271Z"
+    },
+    "2110618732666257557": {
+      "excerpt": "Done and dusted",
+      "contentHash": "4e68971b3a0de09a3fad966bc99a5c3322e6881369d6ba534c81b4e19cf81db7",
+      "texts": {
+        "zh": "大功告成",
+        "zh-Hant": "大功告成",
+        "ja": "無事に完了",
+        "ko": "완료되었습니다",
+        "es": "Todo listo",
+        "fr": "C’est terminé",
+        "de": "Erledigt",
+        "ar": "تم الأمر"
+      },
+      "fullText": "Done and dusted",
+      "fullTexts": {
+        "zh": "大功告成",
+        "zh-Hant": "大功告成",
+        "ja": "無事に完了",
+        "ko": "완료되었습니다",
+        "es": "Todo listo",
+        "fr": "C’est terminé",
+        "de": "Erledigt",
+        "ar": "تم الأمر"
+      },
+      "provider": "editorial",
+      "editorial": true,
+      "translatedAt": "2026-10-15T10:20:05.297Z"
+    },
+    "2110595554036400151": {
+      "excerpt": "Landing within the next 2 hours",
+      "contentHash": "8516c339fed841a33c4834a2d43ead6a08ddbcf42508579c8144b6eabec9f634",
+      "texts": {
+        "zh": "将在接下来 2 小时内生效",
+        "zh-Hant": "將在接下來 2 小時內生效",
+        "ja": "今後2時間以内に反映されます",
+        "ko": "앞으로 2시간 이내에 반영됩니다",
+        "es": "Llegará en las próximas 2 horas",
+        "fr": "Arrivée dans les 2 prochaines heures",
+        "de": "Kommt innerhalb der nächsten 2 Stunden",
+        "ar": "سيصل خلال الساعتين القادمتين"
+      },
+      "fullText": "Landing within the next 2 hours",
+      "fullTexts": {
+        "zh": "将在接下来 2 小时内生效",
+        "zh-Hant": "將在接下來 2 小時內生效",
+        "ja": "今後2時間以内に反映されます",
+        "ko": "앞으로 2시간 이내에 반영됩니다",
+        "es": "Llegará en las próximas 2 horas",
+        "fr": "Arrivée dans les 2 prochaines heures",
+        "de": "Kommt innerhalb der nächsten 2 Stunden",
+        "ar": "سيصل خلال الساعتين القادمتين"
+      },
+      "provider": "editorial",
+      "editorial": true,
+      "translatedAt": "2026-10-15T10:20:05.298Z"
     }
   },
   "pending": 340,
