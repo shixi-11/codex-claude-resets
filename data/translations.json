@@ -2694,7 +2694,7 @@
         "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
         "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
         "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
-        "de": "Der Tag, an dem wir die Vollkommenheit erreichen, wird von da an neu gestartet werden.",
+        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
         "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
       },
       "provider": "FxEmbed",
@@ -2923,5 +2923,5 @@
     }
   },
   "pending": 340,
-  "lastAttemptAt": "2026-10-15T10:34:47.104Z"
+  "lastAttemptAt": "2026-10-15T13:24:43.321Z"
 }
