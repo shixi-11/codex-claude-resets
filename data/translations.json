@@ -2848,7 +2848,8 @@
         "es": "Los informes sobre la pérdida de mi botón de reinicio están grandemente exagerados",
         "fr": "Les rumeurs sur la perte de mon bouton de réinitialisation sont grandement exagérées",
         "de": "Die Berichte über den Verlust meines Reset-Knopfes sind stark übertrieben",
-        "ar": "تقارير فقدان زر إعادة الضبط الخاص بي مبالغ فيها بشكل كبير"
+        "ar": "تقارير فقدان زر إعادة الضبط الخاص بي مبالغ فيها بشكل كبير",
+        "ja": "私のリセットボタンが紛失したという報告は、大いに誇張されている"
       },
       "fullText": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
       "fullTexts": {
@@ -2858,12 +2859,13 @@
         "es": "Los informes sobre la pérdida de mi botón de reinicio están grandemente exagerados\n\nDía 10/ Reinicio",
         "fr": "Les rumeurs sur la perte de mon bouton de réinitialisation sont grandement exagérées\n\nJour 10/ Réinitialisation",
         "de": "Die Berichte über den Verlust meines Reset-Knopfes sind stark übertrieben\n\nTag 10/ Reset",
-        "ar": "تقارير فقدان زر إعادة الضبط الخاص بي مبالغ فيها بشكل كبير\n\nاليوم 10/ إعادة الضبط"
+        "ar": "تقارير فقدان زر إعادة الضبط الخاص بي مبالغ فيها بشكل كبير\n\nاليوم 10/ إعادة الضبط",
+        "ja": "私のリセットボタンが紛失したという報告は、大いに誇張されている\n\n10日目／リセット"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-15T07:24:36.809Z"
+      "translatedAt": "2026-10-15T07:34:41.271Z"
     }
   },
-  "pending": 341,
-  "lastAttemptAt": "2026-10-15T07:24:50.343Z"
+  "pending": 340,
+  "lastAttemptAt": "2026-10-15T07:34:58.054Z"
 }
