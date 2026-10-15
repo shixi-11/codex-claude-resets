@@ -72,7 +72,7 @@ test('real collector discovers the Oct15 chain from timeline and degrades on fai
  const dir=await mkdtemp(join(tmpdir(),'oct15-collector-'));
  try{
   for(const part of ['src','scripts','data'])await mkdir(join(dir,part));
-  for(const file of ['scripts/collect.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/tracking-audit.mjs','src/platform-state.mjs','src/announcement-time.mjs','src/x-relay.mjs','src/collection-request.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(dir,file));
+  for(const file of ['scripts/collect.mjs','scripts/collect-posts.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/tracking-audit.mjs','src/platform-state.mjs','src/announcement-time.mjs','src/x-relay.mjs','src/collection-request.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(dir,file));
   await writeFile(join(dir,'fixture.json'),JSON.stringify(fixture));
   await writeFile(join(dir,'data/events.json'),'[]');await writeFile(join(dir,'data/health.json'),'{}');await writeFile(join(dir,'data/platforms.json'),JSON.stringify({codex:{},claude:{}}));
   await writeFile(join(dir,'mock.mjs'),`
@@ -99,6 +99,15 @@ test('real collector discovers the Oct15 chain from timeline and degrades on fai
    assert.equal(p.codex.lastReset.id,done);assert.equal(events.find(e=>e.id===timing).resetAt,undefined);
    assert.equal(h.platforms.codex.status,fail==='0'?'ok':'degraded');
    if(fail==='1')assert.ok(h.failedPosts.some(e=>e.url.endsWith(done)&&e.error.startsWith('Reset context:')));
+  }
+  const healthBefore=await readFile(join(dir,'data/health.json'),'utf8');
+  await writeFile(join(dir,'data/events.json'),'[]');
+  for(const id of [timing,done]){
+   const r=spawnSync(process.execPath,['--import',pathToFileURL(join(dir,'mock.mjs')).href,join(dir,'scripts/collect-posts.mjs'),fixture.details[id].url],{encoding:'utf8',timeout:10000,env:{...process.env,FAIL_CONTEXT:'0'}});
+   assert.equal(r.status,0,r.stderr);
+   const events=JSON.parse(await readFile(join(dir,'data/events.json'),'utf8'));
+   assert.equal(events.find(e=>e.id===id).state,id===done?'reported':'announced');
+   assert.equal(await readFile(join(dir,'data/health.json'),'utf8'),healthBefore);
   }
  }finally{if(dirname(resolve(dir))===resolve(tmpdir()))await rm(dir,{recursive:true,force:true});}
 });
