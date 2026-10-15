@@ -2837,8 +2837,33 @@
       "provider": "FxEmbed",
       "translatedAt": "2026-10-13T06:07:50.143Z",
       "editorial": true
+    },
+    "2110595484180214059": {
+      "excerpt": "The reports of my reset button being lost are greatly exaggerated Day 10/ Reset",
+      "contentHash": "587d6b5239545a6a8413672d01bea6d5f87f9dbebbdd2b7a5716dc67da939d6f",
+      "texts": {
+        "zh": "关于我重置按钮丢失的报道被大大夸大了",
+        "zh-Hant": "關於我重置按鈕丟失的報導被極大地誇大了",
+        "ko": "내 리셋 버튼이 사라졌다는 보고는 크게 과장된 것이다.",
+        "es": "Los informes sobre la pérdida de mi botón de reinicio están grandemente exagerados",
+        "fr": "Les rumeurs sur la perte de mon bouton de réinitialisation sont grandement exagérées",
+        "de": "Die Berichte über den Verlust meines Reset-Knopfes sind stark übertrieben",
+        "ar": "تقارير فقدان زر إعادة الضبط الخاص بي مبالغ فيها بشكل كبير"
+      },
+      "fullText": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
+      "fullTexts": {
+        "zh": "关于我重置按钮丢失的报道被大大夸大了\n\n第10天/重置",
+        "zh-Hant": "關於我重置按鈕丟失的報導被極大地誇大了\n\n第 10 天 / 重置",
+        "ko": "내 리셋 버튼이 사라졌다는 보고는 크게 과장된 것이다.\n\n10일차 / 리셋",
+        "es": "Los informes sobre la pérdida de mi botón de reinicio están grandemente exagerados\n\nDía 10/ Reinicio",
+        "fr": "Les rumeurs sur la perte de mon bouton de réinitialisation sont grandement exagérées\n\nJour 10/ Réinitialisation",
+        "de": "Die Berichte über den Verlust meines Reset-Knopfes sind stark übertrieben\n\nTag 10/ Reset",
+        "ar": "تقارير فقدان زر إعادة الضبط الخاص بي مبالغ فيها بشكل كبير\n\nاليوم 10/ إعادة الضبط"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-15T07:24:36.809Z"
     }
   },
-  "pending": 340,
-  "lastAttemptAt": "2026-10-15T01:27:49.153Z"
+  "pending": 341,
+  "lastAttemptAt": "2026-10-15T07:24:50.343Z"
 }
