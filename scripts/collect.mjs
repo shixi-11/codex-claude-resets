@@ -3,7 +3,7 @@ import {refreshTopicHeat} from './topic-heat-refresh.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { announcementTime } from '../src/announcement-time.mjs';
-import { timelineCandidates, corroborateRelay, corroborateResetQuote } from '../src/x-relay.mjs';
+import { timelineCandidates, corroborateRelay, resolveResetContext, shouldCheckCandidate } from '../src/x-relay.mjs';
 import {collectionRequest} from '../src/collection-request.mjs';
 import { ALLOWED_AUTHORS, reclassifyEvents, RULES_VERSION, parsePostUrl, extractEmbed, classify, evidenceExcerpt, mergeEvents, postPlatform, needsResetContext } from '../src/evidence.mjs';
 
@@ -86,8 +86,7 @@ try {
     if (!post) return;
     const check = platformChecks[postPlatform(post.author)];
     check.discovered++;
-    const candidateText=candidate.relay?.raw_text?.text||candidate.relay?.text;
-    if(candidateText&&!/(?:…|\.\.\.)\s*$/.test(candidateText)&&!/reset|usage|allowance|quota|limit|credit/i.test(candidateText))return;
+    if(!shouldCheckCandidate(candidate))return;
     // Snowflake creation time comes from the verified post ID, never from the discovery feed.
     const publishedAt = new Date(Number((BigInt(post.id) >> 22n) + 1288834974657n)).toISOString();
     if (Date.parse(publishedAt) > Date.now() + 300000) return;
@@ -106,12 +105,7 @@ try {
       let resetContext;
       if(needsResetContext(source.text)&&!source.truncated) {
         try {
-          const relay=candidate.relay||(await request(`https://api.fxtwitter.com/${post.author}/status/${post.id}`)).tweet;
-          const quoted=parsePostUrl(relay?.quote?.url);
-          if(!quoted||quoted.author.toLowerCase()!==post.author.toLowerCase())throw new Error('No matching reset quote');
-          const official=extractEmbed(await request(`https://publish.twitter.com/oembed?url=${encodeURIComponent(quoted.url)}&omit_script=true`),quoted.url);
-          resetContext=corroborateResetQuote(source,relay,official,now);
-          resetContext.contentHash=createHash('sha256').update(resetContext.fullText).digest('hex');
+          resetContext=await resolveResetContext(source,request,now);
         }catch(error){
           failed++;check.failed++;(health.failedPosts||=[]).push({url:post.url,error:`Reset context: ${error.message}`.slice(0,120)});
           const previous=existing.find(event=>event.id===post.id&&event.fullText===source.text&&!event.truncated);

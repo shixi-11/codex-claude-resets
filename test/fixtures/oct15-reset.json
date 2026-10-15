@@ -1,0 +1,137 @@
+{
+  "details": {
+    "2110595484180214059": {
+      "id": "2110595484180214059",
+      "url": "https://x.com/thsottiaux/status/2110595484180214059",
+      "text": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "created_timestamp": 1792040151
+    },
+    "2110595554036400151": {
+      "id": "2110595554036400151",
+      "url": "https://x.com/thsottiaux/status/2110595554036400151",
+      "text": "Landing within the next 2 hours",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "created_timestamp": 1792040167,
+      "replying_to": "thsottiaux",
+      "replying_to_status": "2110595484180214059"
+    },
+    "2110618732666257557": {
+      "id": "2110618732666257557",
+      "url": "https://x.com/thsottiaux/status/2110618732666257557",
+      "text": "Done and dusted",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "created_timestamp": 1792045693,
+      "quote": {
+        "id": "2110595554036400151",
+        "url": "https://x.com/thsottiaux/status/2110595554036400151",
+        "text": "Landing within the next 2 hours",
+        "author": {
+          "screen_name": "thsottiaux",
+          "protected": false
+        },
+        "created_timestamp": 1792040167,
+        "replying_to": "thsottiaux",
+        "replying_to_status": "2110595484180214059"
+      }
+    }
+  },
+  "embeds": {
+    "2110595484180214059": {
+      "url": "https://x.com/thsottiaux/status/2110595484180214059",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The reports of my reset button being lost are greatly exaggerated<br><br>Day 10/ Reset</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2110595484180214059?ref_src=twsrc%5Etfw\">October 15, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "2110595554036400151": {
+      "url": "https://x.com/thsottiaux/status/2110595554036400151",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Landing within the next 2 hours</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2110595554036400151?ref_src=twsrc%5Etfw\">October 15, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "2110618732666257557": {
+      "url": "https://x.com/thsottiaux/status/2110618732666257557",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Done and dusted <a href=\"https://t.co/0fehr43VS4\">https://t.co/0fehr43VS4</a></p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2110618732666257557?ref_src=twsrc%5Etfw\">October 15, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    }
+  },
+  "timeline": [
+    {
+      "id": "2110618732666257557",
+      "url": "https://x.com/thsottiaux/status/2110618732666257557",
+      "text": "Done and dusted",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "created_timestamp": 1792045693,
+      "quote": {
+        "id": "2110595554036400151",
+        "url": "https://x.com/thsottiaux/status/2110595554036400151",
+        "text": "Landing within the next 2 hours",
+        "author": {
+          "screen_name": "thsottiaux",
+          "protected": false
+        },
+        "created_timestamp": 1792040167
+      }
+    },
+    {
+      "id": "2110595484180214059",
+      "url": "https://x.com/thsottiaux/status/2110595484180214059",
+      "text": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "created_timestamp": 1792040151
+    },
+    {
+      "id": "2110595554036400151",
+      "url": "https://x.com/thsottiaux/status/2110595554036400151",
+      "text": "Landing within the next 2 hours",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "created_timestamp": 1792040167,
+      "replying_to": {
+        "screen_name": "thsottiaux",
+        "status": "2110595484180214059",
+        "url": "https://x.com/thsottiaux/status/2110595484180214059",
+        "profile_url": "https://x.com/thsottiaux"
+      }
+    }
+  ]
+}

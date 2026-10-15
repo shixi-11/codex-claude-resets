@@ -25,3 +25,11 @@ The collector polls all six allowlisted author timelines through FxEmbed. Offici
 8. **Keep translation downstream.** Classification uses verified original text. Translations are bound to content hashes and preserve original paragraphs; missing translations display the original.
 
 The homepage retains its last successful check time. Collection rules remain in the project documentation; detailed source outcomes and independent platform health are exposed in `health.json`. Git history records corrections. The scheduled workflow checks hourly, but scheduler or upstream delays are possible.
+
+### Linked reset replies
+
+Tibo's exact timing reply (`Landing within the next N hours`) and terse completion (`Done and dusted`) pass the discovery filter even without a reset keyword. They require verified same-author context, within 48 hours at each link. The collector follows at most completion → quoted timing reply → replied-to reset-day post. Detail endpoints supply reply IDs that timeline quote objects can omit; official embeds corroborate every post, and relay identity, timestamp and text must match. Short complete text requires exact equality, never a short truncated prefix.
+
+A reset-day signal alone remains unconfirmed. A timing reply with verified reset context is an announcement without a fabricated clock instant; elapsed time cannot complete it. Completion requires its own verified wording and announcement link. Missing context degrades the check while retaining previously verified complete evidence. No link establishes personal receipt or eligible subscription plans.
+
+On October 15, 2026, [the Day 10 post](https://x.com/thsottiaux/status/2110595484180214059) was followed by [the timing reply](https://x.com/thsottiaux/status/2110595554036400151), then [the completion quote](https://x.com/thsottiaux/status/2110618732666257557) at 06:28:13 UTC. Earlier collection had skipped both keywordless posts and incorrectly left successful coverage with only the day signal. `test/fixtures/oct15-reset.json` retains the relevant primary embed and relay fields; the regression runs the actual collector, including a later failed context recheck.

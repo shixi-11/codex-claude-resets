@@ -3,7 +3,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {parsePostUrl,postPlatform,extractEmbed,classify,needsResetContext,evidenceExcerpt,RULES_VERSION,mergeEvents,reclassifyEvents,validateEvent} from '../src/evidence.mjs';
 import {collectionRequest} from '../src/collection-request.mjs';
-import {corroborateResetQuote} from '../src/x-relay.mjs';
+import {resolveResetContext} from '../src/x-relay.mjs';
 import {announcementTime} from '../src/announcement-time.mjs';
 import {syncPlatformState} from '../src/platform-state.mjs';
 import {assertTrackingSync} from '../src/tracking-audit.mjs';
@@ -16,9 +16,7 @@ for(const url of process.argv.slice(2)) {
  const source=await embed(post),publishedAt=new Date(Number((BigInt(post.id)>>22n)+1288834974657n)).toISOString();
  let resetContext;
  if(needsResetContext(source.text)&&!source.truncated){
-  const relay=(await collectionRequest(`https://api.fxtwitter.com/${post.author}/status/${post.id}`)).tweet;
-  const quoted=parsePostUrl(relay?.quote?.url);if(!quoted)throw new Error('No quoted primary announcement');
-  resetContext=corroborateResetQuote(source,relay,await embed(quoted),now);resetContext.contentHash=hash(resetContext.fullText);
+  resetContext=await resolveResetContext(source,collectionRequest,now);
  }
  const result=classify(source.text,{...source,publishedAt,resetContext});if(result.kind==='other')continue;
  const event={id:post.id,author:post.author,platform:postPlatform(post.author),sourceUrl:post.url,publishedAt,verifiedAt:now,excerpt:evidenceExcerpt(source.text),...(!source.truncated?{fullText:source.text}:{}),truncated:source.truncated,provenance:'x-oembed',rulesVersion:RULES_VERSION,contentHash:hash(source.text),...result,...(resetContext?{resetContext}:{}),...(result.kind==='global'&&result.state==='announced'?announcementTime(source.text,publishedAt,source):{})};
