@@ -1892,7 +1892,7 @@
         "es": "Lo siento, Gia. Habrá más reinicios la próxima semana.",
         "fr": "Désolé Gia. Plus de resets arrivent la semaine prochaine.",
         "de": "Entschuldigung, Gia. Mehr Resets kommen nächste Woche.",
-        "ar": "عذرًا يا جيا. المزيد من إعادات التعيين قادمة الأسبوع القادم",
+        "ar": "@giadotai آسف يا جيا. المزيد من الإعادات قادمة الأسبوع المقبل",
         "ja": "ごめん、Gia。来週さらにリセットが来るよ。"
       },
       "provider": "FxEmbed",
@@ -2923,5 +2923,5 @@
     }
   },
   "pending": 340,
-  "lastAttemptAt": "2026-10-16T00:23:35.897Z"
+  "lastAttemptAt": "2026-10-16T05:50:46.850Z"
 }
