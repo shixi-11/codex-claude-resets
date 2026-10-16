@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-16T19:56:58.708Z",
-  "lastSuccessAt": "2026-10-16T19:56:58.708Z",
-  "discoveryAt": "2026-10-16T19:56:58.708Z",
+  "lastAttemptAt": "2026-10-16T22:49:59.811Z",
+  "lastSuccessAt": "2026-10-16T22:49:59.811Z",
+  "discoveryAt": "2026-10-16T22:49:59.811Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 17
+      "candidates": 18
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -26,7 +26,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 19
+      "candidates": 15
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -34,7 +34,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 19
+      "candidates": 20
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -56,7 +56,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 12,
+      "checked": 10,
       "failed": 0
     }
   ],
@@ -64,11 +64,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-16T19:56:58.708Z",
+      "lastAttemptAt": "2026-10-16T22:49:59.811Z",
       "status": "ok",
-      "checked": 7,
+      "checked": 5,
       "failed": 0,
-      "discovered": 55,
+      "discovered": 52,
       "authors": [
         {
           "author": "thsottiaux",
@@ -83,14 +83,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-16T19:56:58.708Z"
+      "lastSuccessAt": "2026-10-16T22:49:59.811Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-16T19:56:58.708Z",
+      "lastAttemptAt": "2026-10-16T22:49:59.811Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
-      "discovered": 50,
+      "discovered": 51,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-16T19:56:58.708Z"
+      "lastSuccessAt": "2026-10-16T22:49:59.811Z"
     }
   }
 }
