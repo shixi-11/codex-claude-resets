@@ -26,6 +26,10 @@ The collector polls all six allowlisted author timelines through FxEmbed. Offici
 
 The homepage retains its last successful check time. Collection rules remain in the project documentation; detailed source outcomes and independent platform health are exposed in `health.json`. Git history records corrections. The scheduled workflow checks hourly, but scheduler or upstream delays are possible.
 
+### Effective usage
+
+Codex or ChatGPT Work announcements that explicitly increase or improve the effective usage a user gets are allowance-efficiency information, even without the words “subscription limits”. The October 16 Day 12 post is `usage` / `information`; context reuse, longer caching and request routing do not establish a quota reset, reset credit or reset time. `test/fixtures/oct16-effective-usage.json` preserves its official embed and public relay fields, and the regression exercises duplicate discovery, repeat collection, seven-day ordering and unchanged reset summaries.
+
 ### Linked reset replies
 
 Tibo's exact timing reply (`Landing within the next N hours`) and terse completion (`Done and dusted`) pass the discovery filter even without a reset keyword. They require verified same-author context, within 48 hours at each link. The collector follows at most completion → quoted timing reply → replied-to reset-day post. Detail endpoints supply reply IDs that timeline quote objects can omit; official embeds corroborate every post, and relay identity, timestamp and text must match. Short complete text requires exact equality, never a short truncated prefix.
