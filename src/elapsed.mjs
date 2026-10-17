@@ -1,4 +1,4 @@
-export const elapsedLabel={en:'Since last reset announcement',zh:'距上次重置公告','zh-Hant':'距上次重置公告',ja:'前回のリセット告知から',ko:'마지막 초기화 공지 이후',es:'Desde el último anuncio de restablecimiento',fr:'Depuis la dernière annonce de réinitialisation',de:'Seit der letzten Reset-Ankündigung',ar:'منذ آخر إعلان لإعادة الضبط'};
+export const elapsedLabel={en:'Since last reset completion report',zh:'距上次重置完成公告','zh-Hant':'距上次重置完成公告',ja:'前回のリセット完了報告から',ko:'마지막 초기화 완료 보고 이후',es:'Desde el último aviso de restablecimiento completado',fr:'Depuis le dernier avis de réinitialisation terminée',de:'Seit der letzten Reset-Abschlussmeldung',ar:'منذ آخر إعلان عن اكتمال إعادة الضبط'};
 export function elapsedSince(at,lang,now=Date.now()){
  const stamp=Date.parse(at);if(!Number.isFinite(stamp)||stamp>now)return '—';
  const minutes=Math.floor((now-stamp)/60000),days=Math.floor(minutes/1440),hours=Math.floor(minutes/60)%24;

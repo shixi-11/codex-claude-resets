@@ -5,7 +5,7 @@
 
 ![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/56761e1f38c20dbac82bcff5c5e1bc039582101b/docs/screenshot.jpg)
 
-Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and elapsed time since the last reset announcement. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
+Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and elapsed time since the last reset completion report was published. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
 
 - **See what was actually said.** Announcements, reported completions, reset credits, usage changes and unconfirmed signals are distinct.
 - **Read the complete post.** Codex and Claude both offer “Read full post” and “Show less”. Verified full text is stored alongside the summary; full translations retain the rest of the announcement.
@@ -85,7 +85,7 @@ This is a source-available project under a custom noncommercial license, not an 
 - 区分重置预告、已宣布完成、重置卡、额度变化和尚未确认的线索。
 - Codex和Claude两边均可展开、收起全文。采集时同时保存经核验的完整正文与摘要，全文翻译保留公告的后续内容。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
-- 首页展示下次重置、最新相关推文和上次重置公告；上次公告以持续更新的已过去时间显示，准确日期与来源在下方查看。
+- 首页展示下次重置、最新相关推文和上次重置完成公告；经过时间从这条完成公告的发布时间计算，准确日期与来源在下方查看。
 - 最新重置与额度方案放在近期消息前面。Codex按发布时间选择最新的统一重置或赠卡公告，较早方案留在消息记录中。
 - 消息列表只显示最近7天，按原帖发布时间从新到旧排列，支持全部、Codex、Claude筛选。历史原始记录及独立链接仍保留。
 - 公告、截止时间、消息列表和上次成功检查时间均显示访客设备的本地时间及GMT偏移，自动处理夏令时；切换语言不会改变时区。
