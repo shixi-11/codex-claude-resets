@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-10-17T04:38:10.9036724Z",
+  "sourceUrl": "https://x.com/thsottiaux/status/2111244596131111253",
+  "embed": {
+    "url": "https://x.com/thsottiaux/status/2111244596131111253",
+    "author_name": "Tibo",
+    "author_url": "https://x.com/thsottiaux",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 12/<br><br>We’ve made improvements to Codex &amp; Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2111244596131111253?ref_src=twsrc%5Etfw\">October 16, 2026</a></blockquote>\n\n",
+    "width": 550,
+    "height": null,
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "X",
+    "provider_url": "https://x.com",
+    "version": "1.0"
+  },
+  "relay": {
+    "id": "2111244596131111253",
+    "url": "https://x.com/thsottiaux/status/2111244596131111253",
+    "author": {
+      "screen_name": "thsottiaux",
+      "protected": false
+    },
+    "created_timestamp": 1792194911,
+    "text": "Day 12/\n\nWe’ve made improvements to Codex & Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits.",
+    "raw_text": {
+      "text": "Day 12/\n\nWe’ve made improvements to Codex &amp; Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits."
+    }
+  }
+}

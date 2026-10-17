@@ -2920,6 +2920,33 @@
       "provider": "editorial",
       "editorial": true,
       "translatedAt": "2026-10-15T10:20:05.298Z"
+    },
+    "2111244596131111253": {
+      "excerpt": "Day 12/ We’ve made improvements to Codex & Work that increase the effective usage you get.",
+      "contentHash": "ef20f0606035d4d1712d3181991ebb373ecf8ad6eed9546b60bee6a12fe7afc3",
+      "texts": {
+        "zh": "第12天/ 我们改进了 Codex 和 Work，让你能获得更多有效用量。",
+        "zh-Hant": "第12天/ 我們改進了 Codex 和 Work，讓你能獲得更多有效用量。",
+        "ja": "12日目/ Codex と Work を改善し、実際に使える利用量を増やしました。",
+        "ko": "12일차/ Codex와 Work를 개선해 실질적으로 사용할 수 있는 사용량을 늘렸습니다.",
+        "es": "Día 12/ Hemos mejorado Codex y Work para aumentar el uso efectivo que obtienes.",
+        "fr": "Jour 12/ Nous avons amélioré Codex et Work pour augmenter l’utilisation effective dont vous bénéficiez.",
+        "de": "Tag 12/ Wir haben Codex und Work verbessert, sodass dir effektiv mehr Nutzung zur Verfügung steht.",
+        "ar": "اليوم 12/ أجرينا تحسينات على Codex وWork تزيد الاستخدام الفعلي المتاح لك."
+      },
+      "fullText": "Day 12/\n\nWe’ve made improvements to Codex & Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits.",
+      "fullTexts": {
+        "zh": "第12天/\n\n我们改进了 Codex 和 Work，让你能获得更多有效用量。 我们通过在子代理之间复用上下文、延长上下文缓存保留时间，以及改进请求路由来提高缓存命中率，实现了这一点。",
+        "zh-Hant": "第12天/\n\n我們改進了 Codex 和 Work，讓你能獲得更多有效用量。 我們透過在子代理之間重用上下文、延長上下文快取保留時間，以及改進請求路由來提高快取命中率，實現了這一點。",
+        "ja": "12日目/\n\nCodex と Work を改善し、実際に使える利用量を増やしました。 サブエージェント間でコンテキストを再利用し、コンテキストのキャッシュ保持期間を延ばし、リクエストのルーティングを改善してキャッシュのヒット率を高めることで実現しました。",
+        "ko": "12일차/\n\nCodex와 Work를 개선해 실질적으로 사용할 수 있는 사용량을 늘렸습니다. 하위 에이전트 간에 컨텍스트를 재사용하고, 컨텍스트 캐시를 더 오래 유지하며, 요청 라우팅을 개선해 캐시 적중률을 높여 이를 달성했습니다.",
+        "es": "Día 12/\n\nHemos mejorado Codex y Work para aumentar el uso efectivo que obtienes. Lo logramos reutilizando el contexto entre subagentes, conservándolo en caché durante más tiempo y mejorando el enrutamiento de solicitudes para aumentar los aciertos de caché.",
+        "fr": "Jour 12/\n\nNous avons amélioré Codex et Work pour augmenter l’utilisation effective dont vous bénéficiez. Nous y sommes parvenus en réutilisant le contexte entre les sous-agents, en le conservant plus longtemps en cache et en améliorant le routage des requêtes pour augmenter le taux de succès du cache.",
+        "de": "Tag 12/\n\nWir haben Codex und Work verbessert, sodass dir effektiv mehr Nutzung zur Verfügung steht. Dazu verwenden wir Kontext zwischen Unteragenten wieder, halten ihn länger im Cache und verbessern das Routing der Anfragen, um mehr Cache-Treffer zu erzielen.",
+        "ar": "اليوم 12/\n\nأجرينا تحسينات على Codex وWork تزيد الاستخدام الفعلي المتاح لك. حققنا ذلك بإعادة استخدام السياق بين الوكلاء الفرعيين، والاحتفاظ به في الذاكرة المؤقتة مدة أطول، وتحسين توجيه الطلبات لزيادة مرات العثور على البيانات في الذاكرة المؤقتة."
+      },
+      "provider": "editorial",
+      "translatedAt": "2026-10-17T04:40:08.339Z"
     }
   },
   "pending": 340,

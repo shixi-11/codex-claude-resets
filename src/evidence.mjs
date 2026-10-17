@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.7';
+export const RULES_VERSION = '1.4.8';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -40,6 +40,8 @@ export function isRelevant(text, {author = ''} = {}) {
   const reset = /\breset(?:s|ting|ing|ed)?\b/i.test(value);
   if (reset && /\b(?:password|router|device|factory|conversation|context|settings)\s+reset|\breset\s+(?:your |the )?(?:password|router|device|context|settings)\b/i.test(value) && !/quota|usage|allowance|weekly|5.hour|banked/i.test(value)) return false;
   if (reset && (author.toLowerCase()==='thsottiaux' || /codex|claude|usage|limits?|quotas?|allowance|banked|credits?|all users|everyone|\b(?:Pro|Max|Plus|Team|Business)\b/i.test(value))) return true;
+  // Effective usage a subscriber gets is allowance efficiency, not product adoption.
+  if (/\b(?:codex|chatgpt work)\b/i.test(value) && /\b(?:increase[sd]?|improv(?:e[sd]?|ing))\s+(?:the\s+)?effective usage you get\b/i.test(value)) return true;
   return /\b(?:usage|rate|weekly|daily|5.hour|5h|subscription)\s+(?:limits?|quotas?|allowance|allocation)\b|\b(?:weekly|subscription)\s+usage\b|\busage\b.{0,60}\b(?:subscription|allocation|allowance)\b|\b(?:quota|allowance)\b|\b(?:codex|claude(?: code)?)(?:'s)?\s+(?:(?:weekly|usage|rate)\s+)?limits?\b|\b(?:usage consumption|usage optimizations)\b/i.test(value);
 }
 
