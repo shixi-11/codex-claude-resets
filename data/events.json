@@ -8,7 +8,7 @@
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2111244596131111253",
     "publishedAt": "2026-10-16T23:55:11.402Z",
-    "verifiedAt": "2026-10-17T06:55:30.632Z",
+    "verifiedAt": "2026-10-17T07:03:03.840Z",
     "excerpt": "Day 12/ We’ve made improvements to Codex & Work that increase the effective usage you get.",
     "fullText": "Day 12/\n\nWe’ve made improvements to Codex & Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits.",
     "truncated": false,
