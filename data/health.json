@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-17T01:18:12.397Z",
-  "lastSuccessAt": "2026-10-17T01:18:12.397Z",
-  "discoveryAt": "2026-10-17T01:18:12.397Z",
+  "lastAttemptAt": "2026-10-17T04:44:23.807Z",
+  "lastSuccessAt": "2026-10-17T04:44:23.807Z",
+  "discoveryAt": "2026-10-17T04:44:23.807Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 15
+      "candidates": 14
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -64,11 +64,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-17T01:18:12.397Z",
+      "lastAttemptAt": "2026-10-17T04:44:23.807Z",
       "status": "ok",
       "checked": 6,
       "failed": 0,
-      "discovered": 50,
+      "discovered": 49,
       "authors": [
         {
           "author": "thsottiaux",
@@ -83,10 +83,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-17T01:18:12.397Z"
+      "lastSuccessAt": "2026-10-17T04:44:23.807Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-17T01:18:12.397Z",
+      "lastAttemptAt": "2026-10-17T04:44:23.807Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-17T01:18:12.397Z"
+      "lastSuccessAt": "2026-10-17T04:44:23.807Z"
     }
   }
 }
