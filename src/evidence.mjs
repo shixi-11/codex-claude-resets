@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.8';
+export const RULES_VERSION = '1.4.9';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -59,9 +59,10 @@ export function reclassifyEvents(events) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export const isResetTiming = text => /^Landing within the next [1-9]\d? hours[.!]?$/i.test(text.trim());
+export const isResetTiming = text => /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 export const needsResetContext = text => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim());
-const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*Reset[.!]?$/i.test(text.trim());
+// Relay raw text retains a trailing media shortlink removed by the official embed.
+const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
 export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {
   if(depth>1)return false;
   const post=parsePostUrl(context?.sourceUrl),gap=Date.parse(publishedAt)-Date.parse(context?.publishedAt);

@@ -32,6 +32,8 @@ Codex or ChatGPT Work announcements that explicitly increase or improve the effe
 
 ### Linked reset replies
 
+The October 17 [Day 13 signal](https://x.com/thsottiaux/status/2111492673890824348) says “Le limit reset”; its [same-author reply](https://x.com/thsottiaux/status/2111492738025959922) says “Landing sometime today by EOD PST”. The signal stays unconfirmed. The complete timing reply becomes an announcement only with the verified reply relation and reset-day context. PST is retained literally, with an approximate deadline description and no exact `resetAt`; passing EOD cannot establish completion or eligible plans. `test/fixtures/oct17-reset.json` and its collector regression cover discovery, context failures, state priority, reclassification and literal-zone handling.
+
 Tibo's exact timing reply (`Landing within the next N hours`) and terse completion (`Done and dusted`) pass the discovery filter even without a reset keyword. They require verified same-author context, within 48 hours at each link. The collector follows at most completion → quoted timing reply → replied-to reset-day post. Detail endpoints supply reply IDs that timeline quote objects can omit; official embeds corroborate every post, and relay identity, timestamp and text must match. Short complete text requires exact equality, never a short truncated prefix.
 
 A reset-day signal alone remains unconfirmed. A timing reply with verified reset context is an announcement without a fabricated clock instant; elapsed time cannot complete it. Completion requires its own verified wording and announcement link. Missing context degrades the check while retaining previously verified complete evidence. No link establishes personal receipt or eligible subscription plans.

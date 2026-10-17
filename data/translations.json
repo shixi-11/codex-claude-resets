@@ -2947,6 +2947,62 @@
       },
       "provider": "editorial",
       "translatedAt": "2026-10-17T04:40:08.339Z"
+    },
+    "2111492673890824348": {
+      "excerpt": "Day 13/ Le limit reset",
+      "contentHash": "63add0a7447b6734fee2221c04ddfd80088c10eb65170f3f7d2054c901c28b71",
+      "texts": {
+        "zh": "第13天/ 额度重置",
+        "zh-Hant": "第13天/ 額度重置",
+        "ja": "13日目/ 利用枠リセット",
+        "ko": "13일차/ 사용량 한도 초기화",
+        "es": "Día 13/ Restablecimiento del límite",
+        "fr": "Jour 13/ Réinitialisation de la limite",
+        "de": "Tag 13/ Zurücksetzen des Nutzungslimits",
+        "ar": "اليوم 13/ إعادة ضبط حد الاستخدام"
+      },
+      "fullText": "Day 13/ Le limit reset",
+      "fullTexts": {
+        "zh": "第13天/ 额度重置",
+        "zh-Hant": "第13天/ 額度重置",
+        "ja": "13日目/ 利用枠リセット",
+        "ko": "13일차/ 사용량 한도 초기화",
+        "es": "Día 13/ Restablecimiento del límite",
+        "fr": "Jour 13/ Réinitialisation de la limite",
+        "de": "Tag 13/ Zurücksetzen des Nutzungslimits",
+        "ar": "اليوم 13/ إعادة ضبط حد الاستخدام"
+      },
+      "provider": "editorial",
+      "editorial": true,
+      "translatedAt": "2026-10-17T17:25:19.287Z"
+    },
+    "2111492738025959922": {
+      "excerpt": "Landing sometime today by EOD PST",
+      "contentHash": "9837b3215374cbc4cec1a8c935be6306989e23d772120affb8141fe26dffb6c0",
+      "texts": {
+        "zh": "将在今天 PST 当日结束前的某个时间生效。",
+        "zh-Hant": "將在今天 PST 當日結束前的某個時間生效。",
+        "ja": "本日PSTの終わりまでのいずれかの時点で反映されます。",
+        "ko": "오늘 PST 기준 하루가 끝나기 전 어느 시점에 반영됩니다.",
+        "es": "Se aplicará en algún momento de hoy, antes del final del día en PST.",
+        "fr": "Prévu à un moment de la journée, au plus tard à la fin de la journée PST.",
+        "de": "Wird irgendwann heute bis zum Tagesende nach PST wirksam.",
+        "ar": "سيُطبّق في وقت ما اليوم، بحلول نهاية اليوم بتوقيت PST."
+      },
+      "fullText": "Landing sometime today by EOD PST",
+      "fullTexts": {
+        "zh": "将在今天 PST 当日结束前的某个时间生效。",
+        "zh-Hant": "將在今天 PST 當日結束前的某個時間生效。",
+        "ja": "本日PSTの終わりまでのいずれかの時点で反映されます。",
+        "ko": "오늘 PST 기준 하루가 끝나기 전 어느 시점에 반영됩니다.",
+        "es": "Se aplicará en algún momento de hoy, antes del final del día en PST.",
+        "fr": "Prévu à un moment de la journée, au plus tard à la fin de la journée PST.",
+        "de": "Wird irgendwann heute bis zum Tagesende nach PST wirksam.",
+        "ar": "سيُطبّق في وقت ما اليوم، بحلول نهاية اليوم بتوقيت PST."
+      },
+      "provider": "editorial",
+      "editorial": true,
+      "translatedAt": "2026-10-17T17:25:19.288Z"
     }
   },
   "pending": 340,
