@@ -3031,8 +3031,33 @@
       "provider": "editorial",
       "editorial": true,
       "translatedAt": "2026-10-18T03:04:41.507Z"
+    },
+    "2111918768733753664": {
+      "excerpt": "People have escaped the TL and are asking me for resets on the street now.",
+      "contentHash": "b3f5592c3030c700f43aa7fd19233ac905177581e986914bdef31fb3f6fd676c",
+      "texts": {
+        "zh-Hant": "人們已經逃離了 TL，現在在街上找我要求重置。",
+        "zh": "人们已经逃离了TL，现在在街上找我要重置。",
+        "ko": "사람들이 TL에서 탈출해서 이제 거리에서 저한테 리셋을 요청하고 있어요.",
+        "ja": "人々がTLから逃げ出して、今や路上で私にリセットを求めてくるようになりました。",
+        "de": "Die Leute sind aus der TL geflüchtet und fragen mich jetzt auf der Straße nach Resets.",
+        "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن."
+      },
+      "fullText": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
+      "fullTexts": {
+        "zh-Hant": "人們已經逃離了 TL，現在在街上找我要求重置。我會製作小卡片來分發。",
+        "zh": "人们已经逃离了TL，现在在街上找我要重置。我会做些小卡片来分发。",
+        "ko": "사람들이 TL에서 탈출해서 이제 거리에서 저한테 리셋을 요청하고 있어요. 나눠줄 작은 카드들을 만들 거예요.",
+        "ja": "人々がTLから逃げ出して、今や路上で私にリセットを求めてくるようになりました。小さなカードを作って配るつもりです。",
+        "fr": "Les gens échappent au TL et me demandent des resets dans la rue maintenant. Je vais faire de petites cartes à distribuer.",
+        "es": "La gente ha escapado del TL y ahora me pide resets en la calle. Haré tarjetas pequeñas para repartir.",
+        "de": "Die Leute sind aus der TL geflüchtet und fragen mich jetzt auf der Straße nach Resets. Ich werde kleine Karten machen, um sie zu verteilen.",
+        "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن. سأصنع بطاقات صغيرة لتوزيعها"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-18T20:40:11.751Z"
     }
   },
-  "pending": 340,
-  "lastAttemptAt": "2026-10-18T17:21:43.921Z"
+  "pending": 342,
+  "lastAttemptAt": "2026-10-18T20:40:27.583Z"
 }
