@@ -1,10 +1,11 @@
 import {createHash} from 'node:crypto';
-import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed, reviewedResetAnnouncement } from './evidence.mjs';
+import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed, reviewedResetAnnouncement, isReviewedResetSource } from './evidence.mjs';
 const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
 export function shouldCheckCandidate(candidate) {
  const text=candidate.relay?.raw_text?.text||candidate.relay?.text;
  const post=parsePostUrl(candidate.url);
- return !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || (post?.author.toLowerCase()==='thsottiaux' && needsResetContext(text,post));
+ // Always recheck this reviewed identity, even if its text gains an exception.
+ return isReviewedResetSource(post) || !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || (post?.author.toLowerCase()==='thsottiaux' && needsResetContext(text,post));
 }
 export function timelineCandidates(payload,author){
  if(payload.code!==200||!Array.isArray(payload.results))throw new Error('Invalid relay timeline');

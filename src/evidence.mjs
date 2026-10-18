@@ -62,7 +62,8 @@ export function reclassifyEvents(events) {
 export const isResetTiming = text => /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
-export const reviewedResetAnnouncement = ({id,author='',text=''}={}) => id==='2111566005684289735' && author.toLowerCase()==='thsottiaux' && text.trim()==='Done' ? '2111492738025959922' : null;
+export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
+export const reviewedResetAnnouncement = ({text='',...source}={}) => isReviewedResetSource(source) && text.trim()==='Done' ? '2111492738025959922' : null;
 export const needsResetContext = (text,source={}) => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
 // Relay raw text retains a trailing media shortlink removed by the official embed.
 const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
@@ -80,6 +81,7 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
   const reviewed=reviewedResetAnnouncement({id,author,text:value});
   const linked=author.toLowerCase()==='thsottiaux' && needsResetContext(value,{id,author});
+  if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
   // Keywordless claims need a recent, independently verified same-author
@@ -122,7 +124,7 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
 
 export function evidenceExcerpt(text,source={}) {
   const sentences = text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
-  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text,source)?text:'');
+  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text,source)||isReviewedResetSource(source)?text:'');
   const words = sentence.trim().split(/\s+/).filter(Boolean);
   return words.slice(0, 24).join(' ') + (words.length > 24 ? '…' : '');
 }

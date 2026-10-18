@@ -25,10 +25,12 @@ test('reviewed standalone Done reaches verification without treating arbitrary D
   assert.equal(parts.day,day);assert.equal(parts.hour,hour);assert.equal(parts.minute,'12');assert.equal(parts.second,'21');
  }
  assert.equal(shouldCheckCandidate({url:source.url,relay:fixture.details[done]}),true);
+ assert.equal(shouldCheckCandidate({url:source.url,relay:{text:'Done except Business'}}),true);
  assert.equal(shouldCheckCandidate({url:'https://x.com/thsottiaux/status/2111566005684289736',relay:{text:'Done'}}),false);
  assert.equal(shouldCheckCandidate({url:'https://x.com/ClaudeDevs/status/'+done,relay:{text:'Done'}}),false);
  assert.notEqual(classify(source.text,source).state,'reported');
  assert.equal(evidenceExcerpt(source.text,source),'Done');
+ assert.equal(evidenceExcerpt('Done except Business',source),'Done except Business');
 });
 
 test('reviewed sequence is explicit editorial association, independently reverified and never a fabricated reply',async()=>{
@@ -68,6 +70,7 @@ test('actual collector replaces the Day13 preview with the reviewed completion a
   await writeFile(join(dir,'fixture.json'),JSON.stringify(fixture));await writeFile(join(dir,'data/events.json'),JSON.stringify(existing));await writeFile(join(dir,'data/health.json'),'{}');await writeFile(join(dir,'data/platforms.json'),JSON.stringify({codex:{gifts:[]},claude:{gifts:[]}}));
   await writeFile(join(dir,'mock.mjs'),`
    import {readFileSync} from 'node:fs';const f=JSON.parse(readFileSync(new URL('./fixture.json',import.meta.url)));
+   if(process.env.CHANGED_SOURCE==='1'){f.details['${done}'].text='Done except Business';f.details['${done}'].raw_text.text='Done except Business';f.embeds['${done}'].html='<p>Done except Business</p>';f.timeline=f.timeline.map(x=>x.id==='${done}'?f.details['${done}']:x);}
    const RealDate=Date;globalThis.Date=class extends RealDate{constructor(...args){super(...(args.length?args:['${now}']));}static now(){return RealDate.parse('${now}');}};
    globalThis.fetch=async input=>{const u=new URL(input);
     if(u.pathname.includes('/profile/')){const a=u.pathname.split('/')[3],noise={id:'2111566005684289736',url:'https://x.com/'+a+'/status/2111566005684289736',author:{screen_name:a},text:'Done'};return Response.json({code:200,results:a==='thsottiaux'?[...f.timeline,f.details['${done}'],noise]:[noise]});}
@@ -84,5 +87,8 @@ test('actual collector replaces the Day13 preview with the reviewed completion a
    assert.equal(h.platforms.codex.status,fail==='0'?'ok':'degraded');
   }
   const before=await readFile(join(dir,'data/health.json'),'utf8');const result=spawnSync(process.execPath,['--import',pathToFileURL(join(dir,'mock.mjs')).href,join(dir,'scripts/collect-posts.mjs'),fixture.details[done].url],{encoding:'utf8',timeout:10000,env:{...process.env,FAIL_CONTEXT:'0'}});assert.equal(result.status,0,result.stderr);assert.equal(await readFile(join(dir,'data/health.json'),'utf8'),before);
+  const changed=spawnSync(process.execPath,['--import',pathToFileURL(join(dir,'mock.mjs')).href,join(dir,'scripts/collect.mjs')],{encoding:'utf8',timeout:10000,env:{...process.env,ENABLE_PAID_X_API:'false',COLLECT_POST_URLS:'',FAIL_CONTEXT:'0',CHANGED_SOURCE:'1'}});assert.equal(changed.status,0,changed.stderr);
+  const amended=JSON.parse(await readFile(join(dir,'data/events.json'),'utf8')).find(e=>e.id===done),p=JSON.parse(await readFile(join(dir,'data/platforms.json'),'utf8'));
+  assert.equal(amended.fullText,'Done except Business');assert.equal(amended.state,'unconfirmed');assert.equal(amended.reason,'reviewed-source-changed');assert.equal(p.codex.reset.state,'announced');assert.equal(p.codex.latestReset.id,timing);
  }finally{if(dirname(resolve(dir))===resolve(tmpdir()))await rm(dir,{recursive:true,force:true});}
 });
