@@ -1,10 +1,10 @@
 import {createHash} from 'node:crypto';
-import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed } from './evidence.mjs';
+import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed, reviewedResetAnnouncement } from './evidence.mjs';
 const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
 export function shouldCheckCandidate(candidate) {
  const text=candidate.relay?.raw_text?.text||candidate.relay?.text;
- const author=parsePostUrl(candidate.url)?.author;
- return !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || (author?.toLowerCase()==='thsottiaux' && needsResetContext(text));
+ const post=parsePostUrl(candidate.url);
+ return !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || (post?.author.toLowerCase()==='thsottiaux' && needsResetContext(text,post));
 }
 export function timelineCandidates(payload,author){
  if(payload.code!==200||!Array.isArray(payload.results))throw new Error('Invalid relay timeline');
@@ -49,18 +49,21 @@ export async function resolveResetContext(official,request,verifiedAt,depth=0) {
  if(depth>1 || official.author.toLowerCase()!=='thsottiaux')throw new Error('Unsupported reset context chain');
  const relay=(await request(`https://api.fxtwitter.com/${official.author}/status/${official.id}`)).tweet;
  const own=corroborateRelay(official,relay);
+ const reviewed=reviewedResetAnnouncement(own);
+ if(reviewed && (relay.quote || relay.replying_to || relay.replying_to_status))throw new Error('Reviewed completion is no longer standalone');
  let parent=parsePostUrl(relay?.quote?.url),relation='quote';
  if(!parent){
   const reply=relay?.replying_to;
   parent=typeof reply==='object'&&reply?parsePostUrl(reply.url):parsePostUrl(`https://x.com/${reply}/status/${relay?.replying_to_status}`);
   relation='reply';
  }
+ if(!parent && reviewed){parent=parsePostUrl(`https://x.com/${own.author}/status/${reviewed}`);relation='reviewed-sequence';}
  if(!parent || parent.author.toLowerCase()!==own.author.toLowerCase() || parent.id===own.id)throw new Error('No matching reset relation');
  const parentOfficial=extractEmbed(await request(`https://publish.twitter.com/oembed?url=${encodeURIComponent(parent.url)}&omit_script=true`),parent.url);
  const parentRelay=relation==='quote'?relay.quote:(await request(`https://api.fxtwitter.com/${parent.author}/status/${parent.id}`)).tweet;
  const source=corroborateRelay(parentOfficial,parentRelay);
  const at=new Date(Number((BigInt(parent.id)>>22n)+1288834974657n)).toISOString();
- const context={id:source.id,author:source.author,sourceUrl:source.url,fullText:source.text,publishedAt:at,verifiedAt,truncated:false,provenance:parentOfficial.truncated?'x-oembed+fxembed':'x-oembed',relation,relationProvenance:'fxembed',contentHash:createHash('sha256').update(source.text).digest('hex')};
+ const context={id:source.id,author:source.author,sourceUrl:source.url,fullText:source.text,publishedAt:at,verifiedAt,truncated:false,provenance:parentOfficial.truncated?'x-oembed+fxembed':'x-oembed',relation,relationProvenance:reviewed?'editorial-primary':'fxembed',contentHash:createHash('sha256').update(source.text).digest('hex')};
  if(isResetTiming(source.text))context.resetContext=await resolveResetContext(source,request,verifiedAt,depth+1);
  const ownAt=new Date(Number((BigInt(own.id)>>22n)+1288834974657n)).toISOString();
  if(!validResetContext(context,own.author,ownAt,{allowDaySignal:isResetTiming(own.text)}))throw new Error('Reset relation is not a recent announcement');

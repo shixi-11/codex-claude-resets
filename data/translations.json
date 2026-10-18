@@ -3003,6 +3003,34 @@
       "provider": "editorial",
       "editorial": true,
       "translatedAt": "2026-10-17T17:25:19.288Z"
+    },
+    "2111566005684289735": {
+      "excerpt": "Done",
+      "contentHash": "11a6767d5674c7e45f7e00dc525762275b3a48491ad6045427d2609cc496c516",
+      "texts": {
+        "zh": "已完成",
+        "zh-Hant": "已完成",
+        "ja": "完了",
+        "ko": "완료",
+        "es": "Hecho",
+        "fr": "Terminé",
+        "de": "Erledigt",
+        "ar": "تم"
+      },
+      "fullText": "Done",
+      "fullTexts": {
+        "zh": "已完成",
+        "zh-Hant": "已完成",
+        "ja": "完了",
+        "ko": "완료",
+        "es": "Hecho",
+        "fr": "Terminé",
+        "de": "Erledigt",
+        "ar": "تم"
+      },
+      "provider": "editorial",
+      "editorial": true,
+      "translatedAt": "2026-10-18T03:04:41.507Z"
     }
   },
   "pending": 340,

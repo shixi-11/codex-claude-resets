@@ -15,11 +15,11 @@ for(const url of process.argv.slice(2)) {
  const post=parsePostUrl(url);if(!post)throw new Error('Invalid primary URL');
  const source=await embed(post),publishedAt=new Date(Number((BigInt(post.id)>>22n)+1288834974657n)).toISOString();
  let resetContext;
- if(needsResetContext(source.text)&&!source.truncated){
+ if(needsResetContext(source.text,source)&&!source.truncated){
   resetContext=await resolveResetContext(source,collectionRequest,now);
  }
  const result=classify(source.text,{...source,publishedAt,resetContext});if(result.kind==='other')continue;
- const event={id:post.id,author:post.author,platform:postPlatform(post.author),sourceUrl:post.url,publishedAt,verifiedAt:now,excerpt:evidenceExcerpt(source.text),...(!source.truncated?{fullText:source.text}:{}),truncated:source.truncated,provenance:'x-oembed',rulesVersion:RULES_VERSION,contentHash:hash(source.text),...result,...(resetContext?{resetContext}:{}),...(result.kind==='global'&&result.state==='announced'?announcementTime(source.text,publishedAt,source):{})};
+ const event={id:post.id,author:post.author,platform:postPlatform(post.author),sourceUrl:post.url,publishedAt,verifiedAt:now,excerpt:evidenceExcerpt(source.text,source),...(!source.truncated?{fullText:source.text}:{}),truncated:source.truncated,provenance:'x-oembed',rulesVersion:RULES_VERSION,contentHash:hash(source.text),...result,...(resetContext?{resetContext}:{}),...(result.kind==='global'&&result.state==='announced'?announcementTime(source.text,publishedAt,source):{})};
  validateEvent(event);fresh.push(event);
 }
 const events=reclassifyEvents(mergeEvents(JSON.parse(await readFile(new URL('data/events.json',root),'utf8')),fresh));
