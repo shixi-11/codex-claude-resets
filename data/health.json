@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-17T21:26:55.081Z",
+  "lastAttemptAt": "2026-10-18T00:01:38.525Z",
   "lastSuccessAt": "2026-10-17T21:26:55.081Z",
-  "discoveryAt": "2026-10-17T21:26:55.081Z",
+  "discoveryAt": "2026-10-18T00:01:38.525Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -17,8 +17,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
-      "ok": true,
-      "candidates": 14
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -53,22 +53,40 @@
       "candidates": 12
     },
     {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": true,
+      "candidates": 42
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 63
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 30
+    },
+    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 9,
+      "checked": 119,
       "failed": 0
     }
   ],
-  "status": "ok",
+  "status": "degraded",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-17T21:26:55.081Z",
-      "status": "ok",
-      "checked": 4,
+      "lastAttemptAt": "2026-10-18T00:01:38.525Z",
+      "status": "degraded",
+      "checked": 86,
       "failed": 0,
-      "discovered": 50,
+      "discovered": 118,
       "authors": [
         {
           "author": "thsottiaux",
@@ -76,7 +94,7 @@
         },
         {
           "author": "OpenAIDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "OpenAI",
@@ -86,11 +104,11 @@
       "lastSuccessAt": "2026-10-17T21:26:55.081Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-17T21:26:55.081Z",
+      "lastAttemptAt": "2026-10-18T00:01:38.525Z",
       "status": "ok",
-      "checked": 5,
+      "checked": 33,
       "failed": 0,
-      "discovered": 51,
+      "discovered": 79,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +123,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-17T21:26:55.081Z"
+      "lastSuccessAt": "2026-10-18T00:01:38.525Z"
     }
   }
 }
