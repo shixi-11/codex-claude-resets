@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.9';
+export const RULES_VERSION = '1.4.10';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -60,7 +60,10 @@ export function reclassifyEvents(events) {
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
 export const isResetTiming = text => /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
-export const needsResetContext = text => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim());
+// A reviewed independent post is not a reply. Pin its identity and exact text;
+// unrelated standalone "Done" posts must not inherit a nearby reset announcement.
+export const reviewedResetAnnouncement = ({id,author='',text=''}={}) => id==='2111566005684289735' && author.toLowerCase()==='thsottiaux' && text.trim()==='Done' ? '2111492738025959922' : null;
+export const needsResetContext = (text,source={}) => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
 // Relay raw text retains a trailing media shortlink removed by the official embed.
 const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
 export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {
@@ -72,17 +75,19 @@ export function validResetContext(context,author,publishedAt,{allowDaySignal=fal
   const result=classify(context.fullText||'',{author:context.author});
   return result.kind==='global' && result.state==='announced';
 }
-export function classify(text, { truncated = false, author = '', publishedAt, resetContext } = {}) {
+export function classify(text, { id, truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
-  const linked=author.toLowerCase()==='thsottiaux' && needsResetContext(value);
+  const reviewed=reviewedResetAnnouncement({id,author,text:value});
+  const linked=author.toLowerCase()==='thsottiaux' && needsResetContext(value,{id,author});
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
-  // This rhetorical question is not a conditional reset claim. Its exact complete
-  // wording still needs a recent, independently verified same-author announcement.
+  // Keywordless claims need a recent, independently verified same-author
+  // announcement; a reviewed independent post also needs its editorial marker.
   if (linked) {
     const timing=isResetTiming(value);
-    return validResetContext(resetContext,author,publishedAt,{allowDaySignal:timing})?{kind:'global',state:timing?'announced':'reported',reason:timing?'linked-announcement':'linked-completion'}:unknown;
+    if(reviewed && (resetContext?.id!==reviewed || resetContext.relation!=='reviewed-sequence' || resetContext.relationProvenance!=='editorial-primary'))return unknown;
+    return validResetContext(resetContext,author,publishedAt,{allowDaySignal:timing})?{kind:'global',state:timing?'announced':'reported',reason:timing?'linked-announcement':reviewed?'reviewed-completion':'linked-completion'}:unknown;
   }
   if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
@@ -115,9 +120,9 @@ export function classify(text, { truncated = false, author = '', publishedAt, re
   return unknown;
 }
 
-export function evidenceExcerpt(text) {
+export function evidenceExcerpt(text,source={}) {
   const sentences = text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
-  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text)?text:'');
+  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text,source)?text:'');
   const words = sentence.trim().split(/\s+/).filter(Boolean);
   return words.slice(0, 24).join(' ') + (words.length > 24 ? '…' : '');
 }
@@ -138,6 +143,7 @@ export function validateEvent(event) {
   if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:isResetTiming(event.fullText||'')})) throw new Error('Invalid reset context');
   if (event.reason==='linked-announcement' && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:true})) throw new Error('Announcement needs verified reset context');
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
+  if (event.reason==='reviewed-completion' && (event.kind!=='global' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-completion')) throw new Error('Reviewed completion needs its pinned source and verified editorial context');
   return true;
 }
 

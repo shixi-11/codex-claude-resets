@@ -103,7 +103,7 @@ try {
       }
       verified++; check.checked++;
       let resetContext;
-      if(needsResetContext(source.text)&&!source.truncated) {
+      if(needsResetContext(source.text,source)&&!source.truncated) {
         try {
           resetContext=await resolveResetContext(source,request,now);
         }catch(error){
@@ -116,7 +116,7 @@ try {
       if (classification.kind === 'other') { if(!source.truncated)rejected.add(post.id); return; }
       const schedule = classification.kind==='global' && classification.state==='announced' ? announcementTime(source.text,publishedAt,source) : null;
       const eligiblePlans=classification.kind==='banked'&&!source.truncated&&/for all Plus, Pro and Business users/i.test(source.text)&&!/not for all Plus/i.test(source.text)?['Plus','Pro','Business']:null;
-      fresh.push({ id: post.id, kind: classification.kind, state: classification.state, reason: classification.reason, author: post.author, platform:postPlatform(post.author), sourceUrl: post.url, publishedAt, verifiedAt: now, excerpt: evidenceExcerpt(source.text), ...(!source.truncated?{fullText:source.text}:{}), truncated: source.truncated, provenance, ...(resetContext?{resetContext}:{}), ...(source.relayUrl?{relayUrl:source.relayUrl}:{}), ...(eligiblePlans?{eligiblePlans}:{}), rulesVersion: RULES_VERSION, contentHash: createHash('sha256').update(source.text).digest('hex'), ...(schedule||{}) });
+      fresh.push({ id: post.id, kind: classification.kind, state: classification.state, reason: classification.reason, author: post.author, platform:postPlatform(post.author), sourceUrl: post.url, publishedAt, verifiedAt: now, excerpt: evidenceExcerpt(source.text,source), ...(!source.truncated?{fullText:source.text}:{}), truncated: source.truncated, provenance, ...(resetContext?{resetContext}:{}), ...(source.relayUrl?{relayUrl:source.relayUrl}:{}), ...(eligiblePlans?{eligiblePlans}:{}), rulesVersion: RULES_VERSION, contentHash: createHash('sha256').update(source.text).digest('hex'), ...(schedule||{}) });
     } catch (error) { failed++; check.failed++;(health.failedPosts||=[]).push({url:post.url,error:error.message.slice(0,120)}); }
   }
   scanCompleted = true;
