@@ -3066,7 +3066,8 @@
         "ja": "15日目／気にしないで、まだ調理中…そしてリセット。",
         "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋.",
         "es": "y reinicio.",
-        "de": "und zurücksetzen."
+        "de": "und zurücksetzen.",
+        "ar": "وإعادة تعيين."
       },
       "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
       "fullTexts": {
@@ -3076,12 +3077,13 @@
         "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋. 즐기세요.",
         "es": "Día 15/ No importa, todavía estamos cocinando... y reinicio. Disfruta.",
         "fr": "Jour 15 / Peu importe, on est encore en train de mijoter... et remise à zéro. Profitez.",
-        "de": "Tag 15/ Egal, wir kochen immer noch... und zurücksetzen. Viel Spaß."
+        "de": "Tag 15/ Egal, wir kochen immer noch... und zurücksetzen. Viel Spaß.",
+        "ar": "اليوم 15/ لا عليك، ما زلنا نطبخ... وإعادة تعيين. استمتع."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-20T07:45:24.662Z"
+      "translatedAt": "2026-10-20T10:02:10.087Z"
     }
   },
-  "pending": 344,
-  "lastAttemptAt": "2026-10-20T07:45:41.336Z"
+  "pending": 343,
+  "lastAttemptAt": "2026-10-20T10:02:25.845Z"
 }
