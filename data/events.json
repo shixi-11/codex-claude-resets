@@ -1,19 +1,19 @@
 [
   {
     "id": "2112432076767289678",
-    "kind": "signal",
-    "state": "unconfirmed",
-    "reason": "ambiguous",
+    "kind": "global",
+    "state": "announced",
+    "reason": "explicit-announcement",
     "author": "thsottiaux",
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
     "publishedAt": "2026-10-20T06:33:48.848Z",
-    "verifiedAt": "2026-10-20T10:02:04.796Z",
+    "verifiedAt": "2026-10-20T10:09:54.363Z",
     "excerpt": "and reset.",
     "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.4.10",
+    "rulesVersion": "1.4.11",
     "contentHash": "93d4d446646976412da89af6e724c3df52d182e0e22ba7dd1aa99f950d81f043"
   },
   {
