@@ -3056,8 +3056,32 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-18T20:40:11.751Z"
+    },
+    "2112432076767289678": {
+      "excerpt": "and reset.",
+      "contentHash": "93d4d446646976412da89af6e724c3df52d182e0e22ba7dd1aa99f950d81f043",
+      "texts": {
+        "zh": "第15天/ 无所谓，我们还在准备中……然后重置。",
+        "zh-Hant": "第 15 天 / 算了，我們還在醞釀中……並重置。",
+        "ja": "15日目／気にしないで、まだ調理中…そしてリセット。",
+        "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋.",
+        "es": "y reinicio.",
+        "de": "und zurücksetzen."
+      },
+      "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
+      "fullTexts": {
+        "zh": "第15天/ 无所谓，我们还在准备中……然后重置。享受吧。",
+        "zh-Hant": "第 15 天 / 算了，我們還在醞釀中……並重置。享受吧。",
+        "ja": "15日目／気にしないで、まだ調理中…そしてリセット。楽しんで。",
+        "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋. 즐기세요.",
+        "es": "Día 15/ No importa, todavía estamos cocinando... y reinicio. Disfruta.",
+        "fr": "Jour 15 / Peu importe, on est encore en train de mijoter... et remise à zéro. Profitez.",
+        "de": "Tag 15/ Egal, wir kochen immer noch... und zurücksetzen. Viel Spaß."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-20T07:45:24.662Z"
     }
   },
-  "pending": 342,
-  "lastAttemptAt": "2026-10-20T04:47:41.596Z"
+  "pending": 344,
+  "lastAttemptAt": "2026-10-20T07:45:41.336Z"
 }
