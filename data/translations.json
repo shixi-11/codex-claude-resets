@@ -3082,8 +3082,42 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-20T10:02:10.087Z"
+    },
+    "2112712984644784534": {
+      "excerpt": "Day 16/ You can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever…",
+      "contentHash": "f9c74a0b3e353201fc053e5ee5bfb0c5d54c70be1aec93c51cd0a05137d75adf",
+      "texts": {},
+      "fullText": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache.",
+      "fullTexts": {}
+    },
+    "2112592264686149749": {
+      "excerpt": "There were reports of usage draining faster than anticipated for some users over the weekend.",
+      "contentHash": "6d39f80d0adef2f895f0a82f985f4398be06f1d5d3166c6b63da04c55e5c301d",
+      "texts": {
+        "zh": "周末有报道称，一些用户的使用量消耗速度比预期快。",
+        "zh-Hant": "本週末，有報導指出部分用戶的使用量消耗速度快於預期。",
+        "ja": "週末に一部のユーザーの利用状況が予想よりも早く枯渇するという報告がありました。",
+        "ko": "주말 동안 일부 사용자들에게 예상보다 빠르게 사용량이 소진되었다는 보고가 있었습니다.",
+        "es": "Hubo informes de que el uso se agotaba más rápido de lo previsto para algunos usuarios durante el fin de semana.",
+        "fr": "Nous avons identifié environ 40 000 comptes qui présentaient une incohérence concernant les limites d'utilisation, où la consommation réelle appliquée ne correspondait pas à leur plan sélectionné.",
+        "de": "Es gab Berichte, dass das Nutzungsvolumen für einige Nutzer am Wochenende schneller als erwartet abnahm.",
+        "ar": "لقد حددنا حوالي 40,000 حساب كان به تناقض في حدود الاستخدام حيث لم يتطابق الاستخدام الفعلي المطبق مع الخطة الفعلية المختارة."
+      },
+      "fullText": "There were reports of usage draining faster than anticipated for some users over the weekend. We've identified approximately 40,000 accounts that had an inconsistency on which usage limits where the actual usage that was applied did not correspond to their actual selected plan. We are reaching out individually to all these users and have corrected the issue. If this affected you, we'll add credits to your account. Sorry we got this wrong.",
+      "fullTexts": {
+        "zh": "周末有报道称，一些用户的使用量消耗速度比预期快。我们已识别出大约 40,000 个账户存在不一致情况，即实际应用的用量限制与他们实际选择的计划不符。我们正在逐一联系所有这些用户，并已修正了该问题。如果这影响了您，我们将向您的账户添加信用点。很抱歉我们搞错了这一点。",
+        "zh-Hant": "本週末，有報導指出部分用戶的使用量消耗速度快於預期。我們已確認約 40,000 個帳戶存在不一致情況，即實際應用的使用限制與其所選計劃不符。我們正逐一聯繫所有這些用戶，並已修正此問題。若您受到影響，我們將為您的帳戶補充點數。很抱歉我們處理不當。",
+        "ja": "週末に一部のユーザーの利用状況が予想よりも早く枯渇するという報告がありました。私たちは、適用された実際の利用状況が実際の選択されたプランに対応していなかった不整合があった約40,000のアカウントを特定しました。私たちはこれらのすべてのユーザーに個別に連絡を取っており、問題を修正しました。これがあなたに影響を与えた場合、あなたのアカウントにクレジットを追加します。この点で間違えてしまい、申し訳ありません。",
+        "ko": "주말 동안 일부 사용자들에게 예상보다 빠르게 사용량이 소진되었다는 보고가 있었습니다. 우리는 실제로 적용된 사용량이 사용자가 선택한 실제 요금제와 일치하지 않는 불일치를 가진 약 40,000개의 계정을 확인했습니다. 우리는 이 모든 사용자들에게 개별적으로 연락을 취하고 있으며, 문제를 수정했습니다. 이 문제가 당신에게 영향을 미쳤다면, 계정에 크레딧을 추가하겠습니다. 이 부분을 잘못 처리해서 죄송합니다.",
+        "es": "Hubo informes de que el uso se agotaba más rápido de lo previsto para algunos usuarios durante el fin de semana. Hemos identificado aproximadamente 40,000 cuentas que tenían una inconsistencia en la que los límites de uso aplicados no correspondían a su plan seleccionado real. Estamos contactando individualmente a todos estos usuarios y hemos corregido el problema. Si esto te afectó, agregaremos créditos a tu cuenta. Lo sentimos por este error.",
+        "fr": "Des rapports ont fait état d'une consommation plus rapide que prévu pour certains utilisateurs au cours du week-end. Nous avons identifié environ 40 000 comptes qui présentaient une incohérence concernant les limites d'utilisation, où la consommation réelle appliquée ne correspondait pas à leur plan sélectionné. Nous contactons individuellement tous ces utilisateurs et avons corrigé le problème. Si cela vous a concerné, nous ajouterons des crédits à votre compte. Désolés d'avoir mal géré cela.",
+        "de": "Es gab Berichte, dass das Nutzungsvolumen für einige Nutzer am Wochenende schneller als erwartet abnahm. Wir haben etwa 40.000 Konten identifiziert, bei denen eine Unstimmigkeit bestand, bei der die angewandten Nutzungsbeschränkungen nicht mit ihrem tatsächlich ausgewählten Plan übereinstimmten. Wir nehmen individuell Kontakt zu all diesen Nutzern auf und haben das Problem behoben. Falls Sie davon betroffen waren, werden wir Guthaben zu Ihrem Konto hinzufügen. Entschuldigung, dass wir das falsch gemacht haben.",
+        "ar": "كانت هناك تقارير عن استهلاك أسرع من المتوقع لبعض المستخدمين خلال عطلة نهاية الأسبوع. لقد حددنا حوالي 40,000 حساب كان به تناقض في حدود الاستخدام حيث لم يتطابق الاستخدام الفعلي المطبق مع الخطة الفعلية المختارة. نحن نتواصل بشكل فردي مع جميع هؤلاء المستخدمين وقد قمنا بتصحيح المشكلة. إذا تأثرت بهذا الأمر، سنضيف رصيدًا إلى حسابك. آسفون لأننا أخطأنا في هذا."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-21T03:18:50.003Z"
     }
   },
-  "pending": 343,
-  "lastAttemptAt": "2026-10-20T10:19:47.500Z"
+  "pending": 351,
+  "lastAttemptAt": "2026-10-21T03:19:02.823Z"
 }
