@@ -28,6 +28,12 @@ The homepage retains its last successful check time. Collection rules remain in 
 
 ### Effective usage
 
+The October 20 [plan-limit correction](https://x.com/thsottiaux/status/2112592264686149749) is `usage` / `information`: approximately 40,000 accounts had limits inconsistent with their selected plans, the issue was corrected, and credits were promised conditionally to affected accounts. It is not a global reset or a reset-credit grant. Its official embed is truncated; complete text requires the same identity, timestamp and prefix checks as other long posts, including in the explicit-primary collector.
+
+The October 21 [Day 16 cache guarantee](https://x.com/thsottiaux/status/2112712984644784534) is also `usage` / `information`. Discovery and relevance recognize the logged-in Codex & Work guarantee of permanent caching and no penalty for returning to an old conversation. Generic API cache duration, performance and adoption do not qualify. The original's two paragraphs are retained. Its own post ID supplies 01:10:02 UTC; the quoted API post's 17:56:38 UTC timestamp is not inherited. Both updates preserve the Day 15 announcement, unknown reset instant, previous completion and actual source-coverage health. `test/fixtures/oct21-usage.json` retains the independently retrieved official embeds and matching relay fields.
+
+The Day 15 regression uses a fixed verification timestamp together with its fixed test clock, rather than mutable collected timestamps. A later successful source recheck must not fail the workflow's second test pass and prevent otherwise valid collected records from being committed.
+
 Codex or ChatGPT Work announcements that explicitly increase or improve the effective usage a user gets are allowance-efficiency information, even without the words “subscription limits”. The October 16 Day 12 post is `usage` / `information`; context reuse, longer caching and request routing do not establish a quota reset, reset credit or reset time. `test/fixtures/oct16-effective-usage.json` preserves its official embed and public relay fields, and the regression exercises duplicate discovery, repeat collection, seven-day ordering and unchanged reset summaries.
 
 ### Linked reset replies

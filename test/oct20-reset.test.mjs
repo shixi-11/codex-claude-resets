@@ -35,8 +35,8 @@ test('Day15 complete official wording announces a reset without reporting comple
 });
 
 test('stored Day15 signal reclassifies idempotently while preserving the Oct17 completion and source anchors',()=>{
- const prior={...stored.find(e=>e.id===id),kind:'signal',state:'unconfirmed',reason:'ambiguous',rulesVersion:'old'};
- const events=reclassifyEvents([prior,...stored.filter(e=>e.id!==id)]),event=events.find(e=>e.id===id);
+ const prior={...stored.find(e=>e.id===id),verifiedAt:now,kind:'signal',state:'unconfirmed',reason:'ambiguous',rulesVersion:'old'};
+ const events=reclassifyEvents([prior,...stored.filter(e=>e.id===done)]),event=events.find(e=>e.id===id);
  assert.equal(event.kind,'global');assert.equal(event.state,'announced');
  for(const field of ['contentHash','verifiedAt','publishedAt','fullText','provenance'])assert.equal(event[field],prior[field]);
  assert.deepEqual(reclassifyEvents(events),events);events.forEach(validateEvent);
