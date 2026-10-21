@@ -7,7 +7,7 @@
       "state": "announced",
       "resetAt": null,
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
-      "verifiedAt": "2026-10-21T07:49:15.370Z",
+      "verifiedAt": "2026-10-21T10:10:24.152Z",
       "publishedAt": "2026-10-20T06:33:48.848Z"
     },
     "gifts": [],
@@ -21,12 +21,12 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2112712984644784534",
       "publishedAt": "2026-10-21T01:10:02.505Z",
-      "verifiedAt": "2026-10-21T07:49:15.370Z",
+      "verifiedAt": "2026-10-21T10:10:24.152Z",
       "excerpt": "Day 16/ You can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever…",
       "fullText": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "f9c74a0b3e353201fc053e5ee5bfb0c5d54c70be1aec93c51cd0a05137d75adf"
     },
     "lastReset": {
@@ -69,7 +69,7 @@
           "contentHash": "3dbde3f4c75a3aa60819fba7927d40eb9d4945aa9546a7cd421344c12a91021f"
         }
       },
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "11a6767d5674c7e45f7e00dc525762275b3a48491ad6045427d2609cc496c516"
     },
     "discoveryMode": "profile-relay",
@@ -88,7 +88,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66"
     },
     "latestReset": {
@@ -100,12 +100,12 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
       "publishedAt": "2026-10-20T06:33:48.848Z",
-      "verifiedAt": "2026-10-21T07:49:15.370Z",
+      "verifiedAt": "2026-10-21T10:10:24.152Z",
       "excerpt": "and reset.",
       "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "93d4d446646976412da89af6e724c3df52d182e0e22ba7dd1aa99f950d81f043"
     }
   },
@@ -153,7 +153,7 @@
       "fullText": "ICYMI we've cut the price of Sonnet 5.5 cache reads in half.\n\nIn the Claude Platform, it's now $0.10 per million tokens (input is $2, output is $10). \n\nThis means Sonnet 5.5 now runs ~20% cheaper on most agentic work. \n\n(API only, no change to Claude Code usage limits.)",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "0de8f32110c8322e4e2f6adaf8d519253bec9a22d4b0d09e68bc150f3f4262be"
     },
     "lastReset": {
@@ -170,7 +170,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -188,7 +188,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -205,7 +205,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.12",
+      "rulesVersion": "1.4.13",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }
