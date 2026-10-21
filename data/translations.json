@@ -3126,7 +3126,9 @@
         "ko": "나는 리셋을 요구합니다.",
         "fr": "Je réclame une réinitialisation.",
         "es": "Exijo un reinicio",
-        "ar": "أنا أطالب بإعادة ضبط"
+        "ar": "أنا أطالب بإعادة ضبط",
+        "de": "Ich fordere einen Reset.",
+        "zh-Hant": "我要求重置"
       },
       "fullText": "I demand a reset",
       "fullTexts": {
@@ -3135,13 +3137,14 @@
         "ko": "나는 리셋을 요구합니다.",
         "fr": "Je réclame une réinitialisation.",
         "es": "@theo Exijo un reinicio",
-        "de": "@theo Ich verlange einen Neustart",
-        "ar": "@theo أنا أطالب بإعادة ضبط"
+        "de": "Ich fordere einen Reset.",
+        "ar": "@theo أنا أطالب بإعادة ضبط",
+        "zh-Hant": "我要求重置"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-21T07:37:08.659Z"
+      "translatedAt": "2026-10-21T07:49:21.514Z"
     }
   },
-  "pending": 353,
-  "lastAttemptAt": "2026-10-21T07:37:22.111Z"
+  "pending": 351,
+  "lastAttemptAt": "2026-10-21T07:49:38.003Z"
 }
