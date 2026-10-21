@@ -3143,8 +3143,31 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-21T07:49:21.514Z"
+    },
+    "2113029854417600834": {
+      "excerpt": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
+      "contentHash": "554fe652c10cbdb4f0ee68caeeef24dd4e04c2e4e0dbd3f24cc7a4cb274056f5",
+      "texts": {
+        "zh": "完全包含在 Pro 计划中，不会占用您的每周使用量。",
+        "zh-Hant": "完全包含在 Pro 方案中，不會計入您的每週使用量。",
+        "ja": "Pro プランに完全に含まれ、毎週の使用量には影響しません。",
+        "ko": "Pro 플랜에 완전히 포함되어 있으며, 주간 사용량을 차감하지 않습니다.",
+        "de": "Vollständig im Pro-Plan enthalten, zieht nicht von Ihrer wöchentlichen Nutzung ab.",
+        "ar": "مدرج بالكامل في خطة Pro، ولا يستنزف من استخدامك الأسبوعي."
+      },
+      "fullText": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
+      "fullTexts": {
+        "zh": "完全包含在 Pro 计划中，不会占用您的每周使用量。",
+        "zh-Hant": "完全包含在 Pro 方案中，不會計入您的每週使用量。",
+        "ja": "Pro プランに完全に含まれ、毎週の使用量には影響しません。",
+        "ko": "Pro 플랜에 완전히 포함되어 있으며, 주간 사용량을 차감하지 않습니다.",
+        "de": "Vollständig im Pro-Plan enthalten, zieht nicht von Ihrer wöchentlichen Nutzung ab.",
+        "ar": "مدرج بالكامل في خطة Pro، ولا يستنزف من استخدامك الأسبوعي."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-21T22:19:40.940Z"
     }
   },
-  "pending": 351,
-  "lastAttemptAt": "2026-10-21T18:37:32.701Z"
+  "pending": 353,
+  "lastAttemptAt": "2026-10-21T22:19:56.996Z"
 }
