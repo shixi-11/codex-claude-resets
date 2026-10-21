@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.11';
+export const RULES_VERSION = '1.4.12';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -34,6 +34,10 @@ export function extractEmbed(embed, requestedUrl) {
   return { ...post, text, truncated: /(?:…|\.\.\.)\s*$/.test(text) };
 }
 
+// This subscriber cache guarantee changes the cost of resuming a conversation.
+// Generic API cache duration, performance and adoption posts remain unrelated.
+export const isCacheAllowanceUpdate = text => /\blogged in users across Codex & Work\b/i.test(text) && /\bwe keep cache forever\b/i.test(text) && /\byou don['’]t have any penalty for coming back to an old conversation\b/i.test(text) && /\bguaranteed to hit the cache\b/i.test(text);
+
 // Relevance is separate from evidence strength. "Usage" alone may mean adoption.
 export function isRelevant(text, {author = ''} = {}) {
   const value = text.replace(/[’‘]/g, "'");
@@ -42,6 +46,7 @@ export function isRelevant(text, {author = ''} = {}) {
   if (reset && (author.toLowerCase()==='thsottiaux' || /codex|claude|usage|limits?|quotas?|allowance|banked|credits?|all users|everyone|\b(?:Pro|Max|Plus|Team|Business)\b/i.test(value))) return true;
   // Effective usage a subscriber gets is allowance efficiency, not product adoption.
   if (/\b(?:codex|chatgpt work)\b/i.test(value) && /\b(?:increase[sd]?|improv(?:e[sd]?|ing))\s+(?:the\s+)?effective usage you get\b/i.test(value)) return true;
+  if (isCacheAllowanceUpdate(value)) return true;
   return /\b(?:usage|rate|weekly|daily|5.hour|5h|subscription)\s+(?:limits?|quotas?|allowance|allocation)\b|\b(?:weekly|subscription)\s+usage\b|\busage\b.{0,60}\b(?:subscription|allocation|allowance)\b|\b(?:quota|allowance)\b|\b(?:codex|claude(?: code)?)(?:'s)?\s+(?:(?:weekly|usage|rate)\s+)?limits?\b|\b(?:usage consumption|usage optimizations)\b/i.test(value);
 }
 
@@ -120,13 +125,13 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
     if (/\bwe (?:have )?(?:now |just |already )?reset\s+(?:the )?(?:usage|limits?|quotas?)|\breset (?:has (?:been )?|is now )(?:applied|propagated|complete|completed)|\b(?:usage|limits?) (?:has|have) (?:been )?reset/i.test(value)) return { kind: 'global', state: 'reported', reason: 'explicit-completion' };
     if (/\bwe (?:will|are going to) (?:do |perform |apply )?(?:a |the )?(?:global )?reset|\b(?:reset|resets?) will (?:land|arrive|happen)|\bwe are reset(?:t)?ing usage/i.test(value)) return { kind: 'global', state: 'announced', reason: 'explicit-announcement' };
   }
-  if (/\b(?:usage|limits?|allowance|quota)\b/i.test(value) && /\b(?:improv|reduc|chang|increas|less|lower|more|return|lift|fix|pricing)/i.test(value)) return { kind: 'usage', state: 'information', reason: 'usage-change' };
+  if (isCacheAllowanceUpdate(value) || /\b(?:usage|limits?|allowance|quota)\b/i.test(value) && /\b(?:improv|reduc|chang|increas|less|lower|more|return|lift|fix|correct|pricing)/i.test(value)) return { kind: 'usage', state: 'information', reason: 'usage-change' };
   return unknown;
 }
 
 export function evidenceExcerpt(text,source={}) {
   const sentences = text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
-  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text,source)||isReviewedResetSource(source)?text:'');
+  const sentence = sentences.find(part => /(?:global reset|banked reset|reset usage|reset (?:has|will)|usage.{0,45}(?:improv|less|reduc))/i.test(part)) || sentences.find(part => /reset|usage|quota|limit/i.test(part)) || (needsResetContext(text,source)||isReviewedResetSource(source)||isCacheAllowanceUpdate(text)?text:'');
   const words = sentence.trim().split(/\s+/).filter(Boolean);
   return words.slice(0, 24).join(' ') + (words.length > 24 ? '…' : '');
 }

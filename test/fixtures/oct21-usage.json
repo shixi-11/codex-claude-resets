@@ -1,0 +1,73 @@
+{
+  "2112592264686149749": {
+    "embed": {
+      "url": "https://x.com/thsottiaux/status/2112592264686149749",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">There were reports of usage draining faster than anticipated for some users over the weekend. We&#39;ve identified approximately 40,000 accounts that had an inconsistency on which usage limits where the actual usage that was applied did not correspond to their actual selected plan.…</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2112592264686149749?ref_src=twsrc%5Etfw\">October 20, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "relay": {
+      "id": "2112592264686149749",
+      "url": "https://x.com/thsottiaux/status/2112592264686149749",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "text": "There were reports of usage draining faster than anticipated for some users over the weekend. We've identified approximately 40,000 accounts that had an inconsistency on which usage limits where the actual usage that was applied did not correspond to their actual selected plan. We are reaching out individually to all these users and have corrected the issue. If this affected you, we'll add credits to your account. Sorry we got this wrong.",
+      "raw_text": {
+        "text": "There were reports of usage draining faster than anticipated for some users over the weekend. We've identified approximately 40,000 accounts that had an inconsistency on which usage limits where the actual usage that was applied did not correspond to their actual selected plan. We are reaching out individually to all these users and have corrected the issue. If this affected you, we'll add credits to your account. Sorry we got this wrong.",
+        "display_text_range": [
+          0,
+          442
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1792516220
+    }
+  },
+  "2112712984644784534": {
+    "embed": {
+      "url": "https://x.com/thsottiaux/status/2112712984644784534",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 16/<br><br>You can now cache for 12h in the API and for logged in users across Codex &amp; Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache. <a href=\"https://t.co/0HYeB01KVh\">https://t.co/0HYeB01KVh</a></p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2112712984644784534?ref_src=twsrc%5Etfw\">October 21, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "relay": {
+      "id": "2112712984644784534",
+      "url": "https://x.com/thsottiaux/status/2112712984644784534",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "text": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache.",
+      "raw_text": {
+        "text": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex &amp; Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache.",
+        "display_text_range": [
+          0,
+          256
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1792545002,
+      "quote": {
+        "id": "2112603916076781778",
+        "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+        "created_timestamp": 1792518998
+      }
+    }
+  }
+}

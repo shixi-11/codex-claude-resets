@@ -3,7 +3,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {parsePostUrl,postPlatform,extractEmbed,classify,needsResetContext,evidenceExcerpt,RULES_VERSION,mergeEvents,reclassifyEvents,validateEvent} from '../src/evidence.mjs';
 import {collectionRequest} from '../src/collection-request.mjs';
-import {resolveResetContext} from '../src/x-relay.mjs';
+import {resolveResetContext,corroborateRelay} from '../src/x-relay.mjs';
 import {announcementTime} from '../src/announcement-time.mjs';
 import {syncPlatformState} from '../src/platform-state.mjs';
 import {assertTrackingSync} from '../src/tracking-audit.mjs';
@@ -13,13 +13,17 @@ const hash=text=>createHash('sha256').update(text).digest('hex');
 if(!process.argv.slice(2).length)throw new Error('Pass one or more allowlisted X post URLs');
 for(const url of process.argv.slice(2)) {
  const post=parsePostUrl(url);if(!post)throw new Error('Invalid primary URL');
- const source=await embed(post),publishedAt=new Date(Number((BigInt(post.id)>>22n)+1288834974657n)).toISOString();
+ let source=await embed(post),provenance='x-oembed';
+ if(source.truncated){
+  try{source=corroborateRelay(source,(await collectionRequest(`https://api.fxtwitter.com/${post.author}/status/${post.id}`)).tweet);provenance='x-oembed+fxembed';}catch{/* Retain incomplete primary evidence as unconfirmed. */}
+ }
+ const publishedAt=new Date(Number((BigInt(post.id)>>22n)+1288834974657n)).toISOString();
  let resetContext;
  if(needsResetContext(source.text,source)&&!source.truncated){
   resetContext=await resolveResetContext(source,collectionRequest,now);
  }
  const result=classify(source.text,{...source,publishedAt,resetContext});if(result.kind==='other')continue;
- const event={id:post.id,author:post.author,platform:postPlatform(post.author),sourceUrl:post.url,publishedAt,verifiedAt:now,excerpt:evidenceExcerpt(source.text,source),...(!source.truncated?{fullText:source.text}:{}),truncated:source.truncated,provenance:'x-oembed',rulesVersion:RULES_VERSION,contentHash:hash(source.text),...result,...(resetContext?{resetContext}:{}),...(result.kind==='global'&&result.state==='announced'?announcementTime(source.text,publishedAt,source):{})};
+ const event={id:post.id,author:post.author,platform:postPlatform(post.author),sourceUrl:post.url,publishedAt,verifiedAt:now,excerpt:evidenceExcerpt(source.text,source),...(!source.truncated?{fullText:source.text}:{}),truncated:source.truncated,provenance,...(source.relayUrl?{relayUrl:source.relayUrl}:{}),rulesVersion:RULES_VERSION,contentHash:hash(source.text),...result,...(resetContext?{resetContext}:{}),...(result.kind==='global'&&result.state==='announced'?announcementTime(source.text,publishedAt,source):{})};
  validateEvent(event);fresh.push(event);
 }
 const events=reclassifyEvents(mergeEvents(JSON.parse(await readFile(new URL('data/events.json',root),'utf8')),fresh));
