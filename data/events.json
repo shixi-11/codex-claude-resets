@@ -1,22 +1,5 @@
 [
   {
-    "id": "2112798407928713717",
-    "kind": "signal",
-    "state": "unconfirmed",
-    "reason": "ambiguous",
-    "author": "thsottiaux",
-    "platform": "codex",
-    "sourceUrl": "https://x.com/thsottiaux/status/2112798407928713717",
-    "publishedAt": "2026-10-21T06:49:29.003Z",
-    "verifiedAt": "2026-10-21T07:49:15.370Z",
-    "excerpt": "I demand a reset",
-    "fullText": "I demand a reset",
-    "truncated": false,
-    "provenance": "x-oembed",
-    "rulesVersion": "1.4.12",
-    "contentHash": "0410597f49f234d7370b0ed485cb36c29f5cb232eeab6063c8c211024373ecab"
-  },
-  {
     "id": "2112712984644784534",
     "kind": "usage",
     "state": "information",

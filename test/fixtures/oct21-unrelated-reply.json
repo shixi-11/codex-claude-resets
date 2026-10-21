@@ -1,0 +1,80 @@
+{
+  "reply": {
+    "embed": {
+      "url": "https://x.com/thsottiaux/status/2112798407928713717",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">I demand a reset</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2112798407928713717?ref_src=twsrc%5Etfw\">October 21, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "relay": {
+      "id": "2112798407928713717",
+      "url": "https://x.com/thsottiaux/status/2112798407928713717",
+      "author": {
+        "screen_name": "thsottiaux"
+      },
+      "text": "@theo I demand a reset",
+      "raw_text": {
+        "text": "@theo I demand a reset",
+        "display_text_range": [
+          6,
+          22
+        ],
+        "facets": [
+          {
+            "type": "mention",
+            "indices": [
+              0,
+              5
+            ],
+            "original": "theo",
+            "id": "786375418685165568"
+          }
+        ]
+      },
+      "created_timestamp": 1792565369,
+      "replying_to": "theo",
+      "replying_to_status": "2112359232595165185"
+    }
+  },
+  "parent": {
+    "embed": {
+      "url": "https://x.com/theo/status/2112359232595165185",
+      "author_name": "Theo - t3.gg",
+      "author_url": "https://x.com/theo",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">T3 Connect has not been reliable today. Super sorry about that. Should be recovered now 🤞<br><br>Nerdy deets below for those who care:<br><br>T3 Connect is our built-in alternative to Tailscale for remote connections on T3 Code.<br><br>Turns out there&#39;s so many T3 Connect users that we are…</p>&mdash; Theo - t3.gg (@theo) <a href=\"https://x.com/theo/status/2112359232595165185?ref_src=twsrc%5Etfw\">October 20, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "relay": {
+      "id": "2112359232595165185",
+      "url": "https://x.com/theo/status/2112359232595165185",
+      "author": {
+        "screen_name": "theo"
+      },
+      "text": "T3 Connect has not been reliable today. Super sorry about that. Should be recovered now 🤞\n\nNerdy deets below for those who care:\n\nT3 Connect is our built-in alternative to Tailscale for remote connections on T3 Code.\n\nTurns out there's so many T3 Connect users that we are hitting some rate limits on Cloudflare's side! They have confirmed the issues on their end and are working on fixes.\n\nWe were unaware of these limits (seems like they were too). We're well under the limits we knew about, specifically the # of tunnels we can deploy to our users. The alerting on these failures was also pretty rough. CF has confirmed all of this and is working on fixes on their end 🙏\n\nCrazy to have a product so popular that it's taking down CloudFlare lol. We are working hard to prevent these types of regressions going forward.\n\nThis work is full of fun challenges. Once a thundering herd starts, we're a bit screwed since we can't control the code you're running on your end! We have to plan way in advance for changes because we can't guarantee that users are on the latest version at any given time.\n\nThanks for sticking through with us in the interim. If you want to maximize your uptime and minimize chances of connection loss like today, I will not be disappointed if you set up Tailscale as a fallback (I do this personally)",
+      "raw_text": {
+        "text": "T3 Connect has not been reliable today. Super sorry about that. Should be recovered now 🤞\n\nNerdy deets below for those who care:\n\nT3 Connect is our built-in alternative to Tailscale for remote connections on T3 Code.\n\nTurns out there's so many T3 Connect users that we are hitting some rate limits on Cloudflare's side! They have confirmed the issues on their end and are working on fixes.\n\nWe were unaware of these limits (seems like they were too). We're well under the limits we knew about, specifically the # of tunnels we can deploy to our users. The alerting on these failures was also pretty rough. CF has confirmed all of this and is working on fixes on their end 🙏\n\nCrazy to have a product so popular that it's taking down CloudFlare lol. We are working hard to prevent these types of regressions going forward.\n\nThis work is full of fun challenges. Once a thundering herd starts, we're a bit screwed since we can't control the code you're running on your end! We have to plan way in advance for changes because we can't guarantee that users are on the latest version at any given time.\n\nThanks for sticking through with us in the interim. If you want to maximize your uptime and minimize chances of connection loss like today, I will not be disappointed if you set up Tailscale as a fallback (I do this personally)",
+        "display_text_range": [
+          0,
+          1326
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1792460661,
+      "replying_to": null,
+      "replying_to_status": null
+    }
+  }
+}
