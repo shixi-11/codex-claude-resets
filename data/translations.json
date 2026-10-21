@@ -3116,8 +3116,32 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-21T03:18:50.003Z"
+    },
+    "2112798407928713717": {
+      "excerpt": "I demand a reset",
+      "contentHash": "0410597f49f234d7370b0ed485cb36c29f5cb232eeab6063c8c211024373ecab",
+      "texts": {
+        "zh": "我要求重置",
+        "ja": "私はリセットを要求します。",
+        "ko": "나는 리셋을 요구합니다.",
+        "fr": "Je réclame une réinitialisation.",
+        "es": "Exijo un reinicio",
+        "ar": "أنا أطالب بإعادة ضبط"
+      },
+      "fullText": "I demand a reset",
+      "fullTexts": {
+        "zh": "我要求重置",
+        "ja": "私はリセットを要求します。",
+        "ko": "나는 리셋을 요구합니다.",
+        "fr": "Je réclame une réinitialisation.",
+        "es": "@theo Exijo un reinicio",
+        "de": "@theo Ich verlange einen Neustart",
+        "ar": "@theo أنا أطالب بإعادة ضبط"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-21T07:37:08.659Z"
     }
   },
-  "pending": 351,
-  "lastAttemptAt": "2026-10-21T03:23:27.330Z"
+  "pending": 353,
+  "lastAttemptAt": "2026-10-21T07:37:22.111Z"
 }
