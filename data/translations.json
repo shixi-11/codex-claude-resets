@@ -3181,7 +3181,8 @@
         "es": "Día 17/ Apuesto a que pensaste que lo olvidamos, pero no, hoy es día de reinicio.",
         "fr": "Jour 17 / Je parie que vous pensiez qu’on avait oublié, mais non, c’est le jour de la réinitialisation aujourd’hui.",
         "de": "Tag 17/ Wetten, du hast gedacht, wir hätten es vergessen, aber nein, heute ist Reset-Tag.",
-        "ar": "اليوم 17/ راهنتَ أنك ظننتَ أننا نسينا، لكن لا، اليوم يوم إعادة التعيين."
+        "ar": "اليوم 17/ راهنتَ أنك ظننتَ أننا نسينا، لكن لا، اليوم يوم إعادة التعيين.",
+        "zh": "第17天/ 你肯定以为我们忘了，但没有，今天是重置日。"
       },
       "fullText": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.",
       "fullTexts": {
@@ -3191,12 +3192,13 @@
         "es": "Día 17/ Apuesto a que pensaste que lo olvidamos, pero no, hoy es día de reinicio.\n\nTambién es un buen momento para recordarte que obtengas acceso a Daybreak Blue, solo toma 15 minutos y no querrás tener que hacerlo en medio de un incidente.",
         "fr": "Jour 17 / Je parie que vous pensiez qu’on avait oublié, mais non, c’est le jour de la réinitialisation aujourd’hui.\n\nAussi bon moment pour vous rappeler de vous procurer l’accès Daybreak Blue, ça ne prend que 15 minutes et vous ne voulez pas avoir à le faire au milieu d’un incident.",
         "de": "Tag 17/ Wetten, du hast gedacht, wir hätten es vergessen, aber nein, heute ist Reset-Tag.\n\nAuch eine gute Gelegenheit, dich daran zu erinnern, den Daybreak Blue-Zugang zu besorgen, es dauert nur 15 Minuten und du willst es nicht mitten in einem Vorfall erledigen müssen.",
-        "ar": "اليوم 17/ راهنتَ أنك ظننتَ أننا نسينا، لكن لا، اليوم يوم إعادة التعيين.\n\nوقت جيد أيضًا لتذكيرك بالحصول على وصول Daybreak Blue، إنه يستغرق فقط 15 دقيقة ولا تريد أن تضطر إلى القيام به في منتصف حادثة."
+        "ar": "اليوم 17/ راهنتَ أنك ظننتَ أننا نسينا، لكن لا، اليوم يوم إعادة التعيين.\n\nوقت جيد أيضًا لتذكيرك بالحصول على وصول Daybreak Blue، إنه يستغرق فقط 15 دقيقة ولا تريد أن تضطر إلى القيام به في منتصف حادثة.",
+        "zh": "第17天/ 你肯定以为我们忘了，但没有，今天是重置日。\n\n这也是个好时机提醒你获取Daybreak Blue权限，只需15分钟，你可不想在事件发生中间才去做这件事。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-22T07:32:58.537Z"
+      "translatedAt": "2026-10-22T07:45:27.794Z"
     }
   },
-  "pending": 352,
-  "lastAttemptAt": "2026-10-22T07:33:13.342Z"
+  "pending": 351,
+  "lastAttemptAt": "2026-10-22T07:45:44.351Z"
 }

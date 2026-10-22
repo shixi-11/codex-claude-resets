@@ -7,7 +7,7 @@
       "state": "announced",
       "resetAt": null,
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
-      "verifiedAt": "2026-10-22T07:32:50.842Z",
+      "verifiedAt": "2026-10-22T07:45:14.240Z",
       "publishedAt": "2026-10-20T06:33:48.848Z"
     },
     "gifts": [],
@@ -21,7 +21,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2113162277688070445",
       "publishedAt": "2026-10-22T06:55:22.314Z",
-      "verifiedAt": "2026-10-22T07:32:50.842Z",
+      "verifiedAt": "2026-10-22T07:45:14.240Z",
       "excerpt": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.",
       "fullText": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.",
       "truncated": false,
@@ -100,7 +100,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
       "publishedAt": "2026-10-20T06:33:48.848Z",
-      "verifiedAt": "2026-10-22T07:32:50.842Z",
+      "verifiedAt": "2026-10-22T07:45:14.240Z",
       "excerpt": "and reset.",
       "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
       "truncated": false,
@@ -123,7 +123,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-10-22T07:32:56.448Z",
+        "verifiedAt": "2026-10-22T07:45:26.913Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Team, and seat-based Enterprise; excludes Free and consumption-based Enterprise seats",
         "claim": "Applied automatically to eligible accounts",
@@ -136,7 +136,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-10-22T07:32:56.448Z",
+      "checkedAt": "2026-10-22T07:45:26.913Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
