@@ -7,11 +7,11 @@
       "state": "announced",
       "resetAt": null,
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
-      "verifiedAt": "2026-10-22T01:29:52.932Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "publishedAt": "2026-10-20T06:33:48.848Z"
     },
     "gifts": [],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "latest": {
       "id": "2113029854417600834",
       "kind": "usage",
@@ -21,7 +21,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2113029854417600834",
       "publishedAt": "2026-10-21T22:09:10.146Z",
-      "verifiedAt": "2026-10-22T03:11:50.022Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "excerpt": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
       "fullText": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
       "truncated": false,
@@ -38,7 +38,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2111566005684289735",
       "publishedAt": "2026-10-17T21:12:21.411Z",
-      "verifiedAt": "2026-10-20T10:18:44.597Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "excerpt": "Done",
       "fullText": "Done",
       "truncated": false,
@@ -49,7 +49,7 @@
         "sourceUrl": "https://x.com/thsottiaux/status/2111492738025959922",
         "fullText": "Landing sometime today by EOD PST",
         "publishedAt": "2026-10-17T16:21:13.040Z",
-        "verifiedAt": "2026-10-20T10:18:44.597Z",
+        "verifiedAt": "2026-10-22T03:15:34.225Z",
         "truncated": false,
         "provenance": "x-oembed",
         "relation": "reviewed-sequence",
@@ -61,7 +61,7 @@
           "sourceUrl": "https://x.com/thsottiaux/status/2111492673890824348",
           "fullText": "Day 13/ Le limit reset https://t.co/zXd2DIH5xf",
           "publishedAt": "2026-10-17T16:20:57.749Z",
-          "verifiedAt": "2026-10-20T10:18:44.597Z",
+          "verifiedAt": "2026-10-22T03:15:34.225Z",
           "truncated": false,
           "provenance": "x-oembed",
           "relation": "reply",
@@ -69,7 +69,7 @@
           "contentHash": "3dbde3f4c75a3aa60819fba7927d40eb9d4945aa9546a7cd421344c12a91021f"
         }
       },
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "11a6767d5674c7e45f7e00dc525762275b3a48491ad6045427d2609cc496c516"
     },
     "discoveryMode": "profile-relay",
@@ -82,13 +82,13 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2102463847714247142",
       "publishedAt": "2026-09-22T18:23:37.841Z",
-      "verifiedAt": "2026-10-20T10:18:44.597Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "excerpt": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
       "fullText": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2102463847714247142",
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "4ac9290d6548527970e017547345489ef39dd0524473d62d748ba3d7f30f7d66"
     },
     "latestReset": {
@@ -100,12 +100,12 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
       "publishedAt": "2026-10-20T06:33:48.848Z",
-      "verifiedAt": "2026-10-22T01:29:52.932Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "excerpt": "and reset.",
       "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "93d4d446646976412da89af6e724c3df52d182e0e22ba7dd1aa99f950d81f043"
     }
   },
@@ -153,7 +153,7 @@
       "fullText": "ICYMI we've cut the price of Sonnet 5.5 cache reads in half.\n\nIn the Claude Platform, it's now $0.10 per million tokens (input is $2, output is $10). \n\nThis means Sonnet 5.5 now runs ~20% cheaper on most agentic work. \n\n(API only, no change to Claude Code usage limits.)",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "0de8f32110c8322e4e2f6adaf8d519253bec9a22d4b0d09e68bc150f3f4262be"
     },
     "lastReset": {
@@ -165,12 +165,12 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2094856679250919746",
       "publishedAt": "2026-09-01T18:35:27.545Z",
-      "verifiedAt": "2026-10-20T10:18:44.597Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -188,7 +188,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -200,12 +200,12 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2094856679250919746",
       "publishedAt": "2026-09-01T18:35:27.545Z",
-      "verifiedAt": "2026-10-20T10:18:44.597Z",
+      "verifiedAt": "2026-10-22T03:15:34.225Z",
       "excerpt": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.13",
+      "rulesVersion": "1.4.14",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }
