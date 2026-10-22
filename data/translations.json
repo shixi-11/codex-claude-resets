@@ -3041,7 +3041,8 @@
         "ko": "사람들이 TL에서 탈출해서 이제 거리에서 저한테 리셋을 요청하고 있어요.",
         "ja": "人々がTLから逃げ出して、今や路上で私にリセットを求めてくるようになりました。",
         "de": "Die Leute sind aus der TL geflüchtet und fragen mich jetzt auf der Straße nach Resets.",
-        "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن."
+        "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن.",
+        "fr": "Des gens ont échappé au TL et me demandent maintenant des réinitialisations dans la rue."
       },
       "fullText": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
       "fullTexts": {
@@ -3049,13 +3050,13 @@
         "zh": "人们已经逃离了TL，现在在街上找我要重置。我会做些小卡片来分发。",
         "ko": "사람들이 TL에서 탈출해서 이제 거리에서 저한테 리셋을 요청하고 있어요. 나눠줄 작은 카드들을 만들 거예요.",
         "ja": "人々がTLから逃げ出して、今や路上で私にリセットを求めてくるようになりました。小さなカードを作って配るつもりです。",
-        "fr": "Les gens échappent au TL et me demandent des resets dans la rue maintenant. Je vais faire de petites cartes à distribuer.",
+        "fr": "Des gens ont échappé au TL et me demandent maintenant des réinitialisations dans la rue. Je vais faire de petites cartes à distribuer",
         "es": "La gente ha escapado del TL y ahora me pide resets en la calle. Haré tarjetas pequeñas para repartir.",
         "de": "Die Leute sind aus der TL geflüchtet und fragen mich jetzt auf der Straße nach Resets. Ich werde kleine Karten machen, um sie zu verteilen.",
         "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن. سأصنع بطاقات صغيرة لتوزيعها"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-18T20:40:11.751Z"
+      "translatedAt": "2026-10-22T10:21:23.477Z"
     },
     "2112432076767289678": {
       "excerpt": "and reset.",
@@ -3210,10 +3211,11 @@
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
-        "de": "Kommt morgen vor 10 Uhr morgens PST an."
+        "de": "Kommt morgen vor 10 Uhr morgens PST an.",
+        "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
     }
   },
-  "pending": 359,
-  "lastAttemptAt": "2026-10-22T10:16:03.727Z"
+  "pending": 358,
+  "lastAttemptAt": "2026-10-22T10:21:35.170Z"
 }
