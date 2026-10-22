@@ -26,6 +26,7 @@ const deadline={resetAt:null,sourceTimezone:'PST',deadlineText:'tomorrow before 
 
 test('Day17 originals retain paragraphs, identity, direct reply and distinct publication seconds',()=>{
  for(const id of [root,timing])assert.equal(corroborateRelay(official(id),fixture.details[id]).text,fixture.details[id].text);
+ for(const id of [root,timing])assert.equal(new Date(Math.floor(Date.parse(date(id))/1000)*1000).toISOString(),fixture.dom.datetime[id]);
  assert.equal(official(root).text.split('\n\n').length,2);
  assert.match(date(root),/^2026-10-22T06:55:22\./);assert.match(date(timing),/^2026-10-22T06:55:54\./);
  assert.equal(fixture.details[timing].replying_to,'thsottiaux');assert.equal(fixture.details[timing].replying_to_status,root);
