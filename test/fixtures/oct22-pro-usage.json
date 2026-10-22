@@ -1,0 +1,70 @@
+{
+  "reply": {
+    "embed": {
+      "url": "https://x.com/thsottiaux/status/2113029854417600834",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Fully included in the Pro plan, doesn&#39;t draw on your weekly usage.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113029854417600834?ref_src=twsrc%5Etfw\">October 21, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "relay": {
+      "id": "2113029854417600834",
+      "url": "https://x.com/thsottiaux/status/2113029854417600834",
+      "author": {
+        "screen_name": "thsottiaux"
+      },
+      "text": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
+      "raw_text": {
+        "text": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
+        "display_text_range": [
+          0,
+          66
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1792620550,
+      "replying_to": "thsottiaux",
+      "replying_to_status": "2113029655095836957"
+    }
+  },
+  "parent": {
+    "embed": {
+      "url": "https://x.com/thsottiaux/status/2113029655095836957",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"hu\" dir=\"ltr\">Dot, Dotter, Dottest</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113029655095836957?ref_src=twsrc%5Etfw\">October 21, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "relay": {
+      "id": "2113029655095836957",
+      "url": "https://x.com/thsottiaux/status/2113029655095836957",
+      "author": {
+        "screen_name": "thsottiaux"
+      },
+      "text": "Dot, Dotter, Dottest",
+      "raw_text": {
+        "text": "Dot, Dotter, Dottest",
+        "display_text_range": [
+          0,
+          20
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1792620502,
+      "replying_to": null,
+      "replying_to_status": null
+    }
+  }
+}

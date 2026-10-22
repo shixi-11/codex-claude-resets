@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.13';
+export const RULES_VERSION = '1.4.14';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -128,6 +128,9 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
     if (/\bwe (?:have )?(?:now |just |already )?reset\s+(?:the )?(?:usage|limits?|quotas?)|\breset (?:has (?:been )?|is now )(?:applied|propagated|complete|completed)|\b(?:usage|limits?) (?:has|have) (?:been )?reset/i.test(value)) return { kind: 'global', state: 'reported', reason: 'explicit-completion' };
     if (/\bwe (?:will|are going to) (?:do |perform |apply )?(?:a |the )?(?:global )?reset|\b(?:reset|resets?) will (?:land|arrive|happen)|\bwe are reset(?:t)?ing usage/i.test(value)) return { kind: 'global', state: 'announced', reason: 'explicit-announcement' };
   }
+  // Included plan features that do not consume weekly usage explain allowance
+  // treatment; they do not announce a reset, credit grant or new reset time.
+  if (/\bincluded in (?:the |your )?(?:Pro|Plus|Max|Team|Business) plan\b/i.test(value) && /\bdoes(?:n't| not) draw on (?:your |the )?weekly usage\b/i.test(value)) return {kind:'usage',state:'information',reason:'usage-inclusion'};
   if (isCacheAllowanceUpdate(value) || /\b(?:usage|limits?|allowance|quota)\b/i.test(value) && /\b(?:improv|reduc|chang|increas|less|lower|more|return|lift|fix|correct|pricing)/i.test(value)) return { kind: 'usage', state: 'information', reason: 'usage-change' };
   return unknown;
 }
