@@ -1,5 +1,5 @@
 import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.14';
+export const RULES_VERSION = '1.4.15';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -67,7 +67,7 @@ export function reclassifyEvents(events) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export const isResetTiming = text => /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
+export const isResetTiming = text => /^(?:Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)|Lands tomorrow before 10am PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
 export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
@@ -99,8 +99,11 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
     if(reviewed && (resetContext?.id!==reviewed || resetContext.relation!=='reviewed-sequence' || resetContext.relationProvenance!=='editorial-primary'))return unknown;
     return validResetContext(resetContext,author,publishedAt,{allowDaySignal:timing})?{kind:'global',state:timing?'announced':'reported',reason:timing?'linked-announcement':reviewed?'reviewed-completion':'linked-completion'}:unknown;
   }
-  if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
+  // This complete official formulation negates forgetting, not the reset.
+  // Keep the exception narrow so genuine denials and amended claims stay guarded.
+  if (author.toLowerCase()==='thsottiaux' && /^Day 17\/ Bet you thought we forgot, but no, it's reset day today\. Also good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don't want to have to do it in the middle of an incident\.$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
+  if (/\b(?:not|no|never|won't|isn't|hasn't|didn't|don't|cannot|can't|if|might|maybe|could|would)\b[^.!?;)]{0,65}\breset|\breset\b.{0,55}\b(?:not today|not yet|joke|hypothetical)\b/i.test(value)) return unknown;
   // Secondary verification for terse official announcements, after all safety guards.
   // Day 15 announces a reset, without claiming completed propagation or a time.
   if (author.toLowerCase()==='thsottiaux' && /^Day 15\/ Nevermind, we are still cooking\.\.\. and reset\. Enjoy\.$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
