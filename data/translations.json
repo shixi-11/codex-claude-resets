@@ -3153,7 +3153,9 @@
         "ja": "Pro プランに完全に含まれ、毎週の使用量には影響しません。",
         "ko": "Pro 플랜에 완전히 포함되어 있으며, 주간 사용량을 차감하지 않습니다.",
         "de": "Vollständig im Pro-Plan enthalten, zieht nicht von Ihrer wöchentlichen Nutzung ab.",
-        "ar": "مدرج بالكامل في خطة Pro، ولا يستنزف من استخدامك الأسبوعي."
+        "ar": "مدرج بالكامل في خطة Pro، ولا يستنزف من استخدامك الأسبوعي.",
+        "fr": "Entièrement inclus dans le plan Pro, ne puise pas dans votre utilisation hebdomadaire.",
+        "es": "Totalmente incluido en el plan Pro, no consume tu uso semanal."
       },
       "fullText": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
       "fullTexts": {
@@ -3162,12 +3164,14 @@
         "ja": "Pro プランに完全に含まれ、毎週の使用量には影響しません。",
         "ko": "Pro 플랜에 완전히 포함되어 있으며, 주간 사용량을 차감하지 않습니다.",
         "de": "Vollständig im Pro-Plan enthalten, zieht nicht von Ihrer wöchentlichen Nutzung ab.",
-        "ar": "مدرج بالكامل في خطة Pro، ولا يستنزف من استخدامك الأسبوعي."
+        "ar": "مدرج بالكامل في خطة Pro، ولا يستنزف من استخدامك الأسبوعي.",
+        "fr": "Entièrement inclus dans le plan Pro, ne puise pas dans votre utilisation hebdomadaire.",
+        "es": "Totalmente incluido en el plan Pro, no consume tu uso semanal."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-21T22:19:40.940Z"
+      "translatedAt": "2026-10-22T01:30:01.775Z"
     }
   },
-  "pending": 353,
-  "lastAttemptAt": "2026-10-21T22:19:56.996Z"
+  "pending": 351,
+  "lastAttemptAt": "2026-10-22T01:30:19.497Z"
 }
