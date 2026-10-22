@@ -1,0 +1,75 @@
+{
+  "verifiedAt": "2026-10-22T10:00:11.959Z",
+  "embeds": {
+    "2113162277688070445": {
+      "url": "https://x.com/thsottiaux/status/2113162277688070445",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 17/ Bet you thought we forgot, but no, it’s reset day today.<br><br>Also good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113162277688070445?ref_src=twsrc%5Etfw\">October 22, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "2113162413008884099": {
+      "url": "https://x.com/thsottiaux/status/2113162413008884099",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Lands tomorrow before 10am PST.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113162413008884099?ref_src=twsrc%5Etfw\">October 22, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    }
+  },
+  "details": {
+    "2113162277688070445": {
+      "id": "2113162277688070445",
+      "url": "https://x.com/thsottiaux/status/2113162277688070445",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "text": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.",
+      "raw_text": {
+        "text": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.",
+        "display_text_range": [
+          0,
+          211
+        ],
+        "facets": []
+      },
+      "created_at": "Thu Oct 22 06:55:22 +0000 2026",
+      "created_timestamp": 1792652122,
+      "replying_to": null,
+      "replying_to_status": null
+    },
+    "2113162413008884099": {
+      "id": "2113162413008884099",
+      "url": "https://x.com/thsottiaux/status/2113162413008884099",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "text": "Lands tomorrow before 10am PST.",
+      "raw_text": {
+        "text": "Lands tomorrow before 10am PST.",
+        "display_text_range": [
+          0,
+          31
+        ],
+        "facets": []
+      },
+      "created_at": "Thu Oct 22 06:55:54 +0000 2026",
+      "created_timestamp": 1792652154,
+      "replying_to": "thsottiaux",
+      "replying_to_status": "2113162277688070445"
+    }
+  }
+}
