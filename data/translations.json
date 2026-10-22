@@ -3197,8 +3197,23 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-22T07:45:27.794Z"
+    },
+    "2113162413008884099": {
+      "excerpt": "Lands tomorrow before 10am PST.",
+      "contentHash": "0beceaa7c3ce63896d4626c32c332474d996a495d857a90fe9797ef6587cfdd3",
+      "texts": {},
+      "fullText": "Lands tomorrow before 10am PST.",
+      "fullTexts": {
+        "zh": "明天太平洋标准时间上午10点前抵达。",
+        "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
+        "ja": "明日午前10時PST前に到着します。",
+        "ko": "내일 오전 10시 PST 이전에 도착합니다.",
+        "es": "Llega mañana antes de las 10am PST.",
+        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
+        "de": "Kommt morgen vor 10 Uhr morgens PST an."
+      }
     }
   },
-  "pending": 351,
-  "lastAttemptAt": "2026-10-22T07:45:44.351Z"
+  "pending": 359,
+  "lastAttemptAt": "2026-10-22T10:10:29.037Z"
 }
