@@ -1,5 +1,5 @@
 import {createHash} from 'node:crypto';
-import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed, reviewedResetAnnouncement, isReviewedResetSource, isCacheAllowanceUpdate } from './evidence.mjs';
+import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed, reviewedResetAnnouncement, isReviewedResetSource, isCacheAllowanceUpdate, decodeHtml } from './evidence.mjs';
 const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
 export function shouldCheckCandidate(candidate) {
  const text=candidate.relay?.raw_text?.text||candidate.relay?.text;
@@ -26,9 +26,12 @@ export function corroborateRelay(official,relay){
  if(!post||post.id!==official.id||post.author.toLowerCase()!==official.author.toLowerCase()||relay.author?.screen_name?.toLowerCase()!==official.author.toLowerCase()||String(relay.id)!==official.id||relay.author?.protected)throw new Error('Relay identity mismatch');
  const expected=Number((BigInt(post.id)>>22n)+1288834974657n);
  if(!Number.isFinite(relay.created_timestamp)||Math.abs(relay.created_timestamp*1000-expected)>1000)throw new Error('Relay timestamp mismatch');
- const text=relay.raw_text?.text||relay.text;
+ let text=relay.raw_text?.text||relay.text;
  if(typeof text!=='string'||text.length>20000||/(?:…|\.\.\.)\s*$/.test(text))throw new Error('Relay text incomplete');
- const prefix=normalize(official.text),full=normalize(text);
+ const prefix=normalize(official.text);let full=normalize(text);
+ // Some raw_text responses HTML-encode ampersands. Decode once only when the
+ // raw form fails the primary excerpt; identity, time and text checks still apply.
+ if(!full.startsWith(prefix)){text=decodeHtml(text);full=normalize(text);}
  // Short complete posts can be corroborated only by exact text equality.
  if((prefix.length<24 && (official.truncated||full!==prefix))||!full.startsWith(prefix))throw new Error('Relay does not match official excerpt');
  return {...official,text,truncated:false,relayUrl:`https://api.fxtwitter.com/${post.author}/status/${post.id}`};

@@ -1,0 +1,82 @@
+{
+  "verifiedAt": "2026-10-23T10:07:11.856Z",
+  "embeds": {
+    "2113492187770175603": {
+      "url": "https://x.com/thsottiaux/status/2113492187770175603",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex &amp; work. But yes… that’s a reset!</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113492187770175603?ref_src=twsrc%5Etfw\">October 23, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "2113492502355562875": {
+      "url": "https://x.com/thsottiaux/status/2113492502355562875",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Landing tomorrow before 10am PST together with a small ship.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113492502355562875?ref_src=twsrc%5Etfw\">October 23, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    }
+  },
+  "details": {
+    "2113492187770175603": {
+      "id": "2113492187770175603",
+      "url": "https://x.com/thsottiaux/status/2113492187770175603",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "text": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work. But yes… that’s a reset!",
+      "raw_text": {
+        "text": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex &amp; work. But yes… that’s a reset!",
+        "display_text_range": [
+          0,
+          183
+        ],
+        "facets": []
+      },
+      "created_at": "Fri Oct 23 04:46:19 +0000 2026",
+      "created_timestamp": 1792730779,
+      "replying_to": null,
+      "replying_to_status": null
+    },
+    "2113492502355562875": {
+      "id": "2113492502355562875",
+      "url": "https://x.com/thsottiaux/status/2113492502355562875",
+      "author": {
+        "screen_name": "thsottiaux",
+        "protected": false
+      },
+      "text": "Landing tomorrow before 10am PST together with a small ship.",
+      "raw_text": {
+        "text": "Landing tomorrow before 10am PST together with a small ship.",
+        "display_text_range": [
+          0,
+          60
+        ],
+        "facets": []
+      },
+      "created_at": "Fri Oct 23 04:47:34 +0000 2026",
+      "created_timestamp": 1792730854,
+      "replying_to": "thsottiaux",
+      "replying_to_status": "2113492187770175603"
+    }
+  },
+  "dom": {
+    "provenance": "Direct X time datetime attributes read by the delegated cloud browser and supplied in trusted task evidence",
+    "datetime": {
+      "2113492187770175603": "2026-10-23T04:46:19.000Z",
+      "2113492502355562875": "2026-10-23T04:47:34.000Z"
+    }
+  }
+}

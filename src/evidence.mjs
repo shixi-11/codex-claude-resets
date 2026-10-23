@@ -1,5 +1,5 @@
-import {announcementTime} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.15';
+import {announcementTime,isBeforeTenPacificDeadline} from './announcement-time.mjs';
+export const RULES_VERSION = '1.4.16';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -67,7 +67,7 @@ export function reclassifyEvents(events) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export const isResetTiming = text => /^(?:Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)|Lands tomorrow before 10am PST)[.!]?$/i.test(text.trim());
+export const isResetTiming = text => isBeforeTenPacificDeadline(text) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
 export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
@@ -107,6 +107,9 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   // Secondary verification for terse official announcements, after all safety guards.
   // Day 15 announces a reset, without claiming completed propagation or a time.
   if (author.toLowerCase()==='thsottiaux' && /^Day 15\/ Nevermind, we are still cooking\.\.\. and reset\. Enjoy\.$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
+  // This complete Day 18 wording announces a reset alongside product news.
+  // It supplies neither completed execution nor a reset instant or plan scope.
+  if (author.toLowerCase()==='thsottiaux' && /^Day 18\/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work\. But yes(?:…|\.\.\.) that's a reset!$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   // EOD states a deadline but does not establish a timezone or an exact clock time.
   if (author.toLowerCase()==='thsottiaux' && /^Global reset (?:is )?landing by EOD PST time[.!]?(?:\s+Enjoy[.!]?)?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (author.toLowerCase()==='thsottiaux' && /^Global reset by (?:EOD|end of (?:the )?day)[.!](?:\s+May the tokens do good things for you[.!])?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
