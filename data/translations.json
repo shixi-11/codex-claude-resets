@@ -3221,8 +3221,24 @@
       "texts": {},
       "fullText": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work. But yes… that’s a reset!",
       "fullTexts": {}
+    },
+    "2113492502355562875": {
+      "excerpt": "Landing tomorrow before 10am PST together with a small ship.",
+      "contentHash": "2a0136bee4f91125a61036478c0008f20a84d9dbf19ecb75ea1646b8305d6965",
+      "texts": {},
+      "fullText": "Landing tomorrow before 10am PST together with a small ship.",
+      "fullTexts": {
+        "zh": "明天上午10点前太平洋标准时间与一艘小型飞船一同着陆。",
+        "zh-Hant": "明天太平洋標準時間上午 10 點前抵陸，與一艘小型船一同抵達。",
+        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
+        "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
+        "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
+        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
+        "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
+      }
     }
   },
-  "pending": 366,
-  "lastAttemptAt": "2026-10-23T07:43:33.572Z"
+  "pending": 374,
+  "lastAttemptAt": "2026-10-23T10:16:28.041Z"
 }
