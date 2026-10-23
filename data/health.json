@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-23T18:19:09.869Z",
-  "lastSuccessAt": "2026-10-23T18:19:09.869Z",
-  "discoveryAt": "2026-10-23T18:19:09.869Z",
+  "lastAttemptAt": "2026-10-23T22:08:23.976Z",
+  "lastSuccessAt": "2026-10-23T22:08:23.976Z",
+  "discoveryAt": "2026-10-23T22:08:23.976Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -26,7 +26,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 15
+      "candidates": 16
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -34,7 +34,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 21
+      "candidates": 19
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -50,13 +50,13 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 18
+      "candidates": 19
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 16,
+      "checked": 15,
       "failed": 0
     }
   ],
@@ -64,11 +64,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-23T18:19:09.869Z",
+      "lastAttemptAt": "2026-10-23T22:08:23.976Z",
       "status": "ok",
       "checked": 9,
       "failed": 0,
-      "discovered": 44,
+      "discovered": 45,
       "authors": [
         {
           "author": "thsottiaux",
@@ -83,14 +83,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-23T18:19:09.869Z"
+      "lastSuccessAt": "2026-10-23T22:08:23.976Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-23T18:19:09.869Z",
+      "lastAttemptAt": "2026-10-23T22:08:23.976Z",
       "status": "ok",
-      "checked": 7,
+      "checked": 6,
       "failed": 0,
-      "discovered": 59,
+      "discovered": 58,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-23T18:19:09.869Z"
+      "lastSuccessAt": "2026-10-23T22:08:23.976Z"
     }
   }
 }
