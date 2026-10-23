@@ -3214,8 +3214,15 @@
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
+    },
+    "2113492187770175603": {
+      "excerpt": "But yes… that’s a reset!",
+      "contentHash": "92d08ce2cd96b7c3f6b413426684c4be7731c62c1c2df677d69c70095f0279bf",
+      "texts": {},
+      "fullText": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work. But yes… that’s a reset!",
+      "fullTexts": {}
     }
   },
-  "pending": 358,
-  "lastAttemptAt": "2026-10-23T01:30:41.289Z"
+  "pending": 366,
+  "lastAttemptAt": "2026-10-23T07:29:34.673Z"
 }
