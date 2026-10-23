@@ -1882,7 +1882,8 @@
         "ko": "다음 주에 더 많은 리셋이 올 거야.",
         "es": "Habrá más reinicios la próxima semana.",
         "de": "Mehr Resets kommen nächste Woche.",
-        "ja": "来週さらにリセットが来るよ。"
+        "ja": "来週さらにリセットが来るよ。",
+        "fr": "D'autres réinitialisations arrivent la semaine prochaine"
       },
       "fullText": "Sorry Gia. More resets coming next week",
       "fullTexts": {
@@ -1890,13 +1891,13 @@
         "zh-Hant": "抱歉，Gia。下週還會有更多重置。",
         "ko": "미안해, Gia. 다음 주에 더 많은 리셋이 올 거야.",
         "es": "Lo siento, Gia. Habrá más reinicios la próxima semana.",
-        "fr": "Désolé Gia. Plus de resets arrivent la semaine prochaine.",
+        "fr": "@giadotai Désolée Gia. D'autres réinitialisations arrivent la semaine prochaine",
         "de": "Entschuldigung, Gia. Mehr Resets kommen nächste Woche.",
         "ar": "عذرًا يا جيا. المزيد من إعادات التعيين قادمة الأسبوع القادم",
         "ja": "ごめん、Gia。来週さらにリセットが来るよ。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-09-27T02:45:51.737Z"
+      "translatedAt": "2026-10-23T10:22:15.040Z"
     },
     "2076119366647894371": {
       "excerpt": "Step 1: Install CLIProxyAPI Step 2: Connect Step 3: Define following alias and enjoy claudex ``` alias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\ CLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\ CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\ ENABLE_TOOL_SEARCH=false…",
@@ -3239,6 +3240,6 @@
       }
     }
   },
-  "pending": 374,
-  "lastAttemptAt": "2026-10-23T10:16:28.041Z"
+  "pending": 373,
+  "lastAttemptAt": "2026-10-23T10:22:18.439Z"
 }
