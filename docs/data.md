@@ -1,5 +1,15 @@
 # Data contract
 
+## Reviewed individual reset reports
+
+The [Skydev reply](https://x.com/skydev0h/status/2113687857000812837) was published at 2026-10-23 17:43:50 UTC (October 24 01:43:50 Beijing), directly replying to the [Day 18 timing announcement](https://x.com/thsottiaux/status/2113492502355562875). The original text thanks the author for refuelling after reaching 2%. Its attached third-party terminal dashboard displays weekly remaining 100% and `Reset: Fri 30 Oct 19:41 EET`. The image is a user-supplied display, not an authenticated official account balance. It supports an individual user's report of receipt, with unknown account/plan coverage and actual execution time. Neither the report publication time nor the next-reset label is used to derive an actual reset instant.
+
+The [Day 19 official post](https://x.com/thsottiaux/status/2113770573994299544) was published later, at 23:12:31 UTC, and describes dots connection speed, cache behaviour and a CLI update. It contains no reset or completion claim. The earlier reply is therefore attached to its actual Day 18 parent, not fabricated as a Day 19 official completion.
+
+`platforms.codex.accountReports` stores this separately reviewed evidence with its primary text/hash, direct parent, source publication and review timestamps, literal screenshot readings and original image URL/SHA-256. It is not an official `events.json` entry and does not expand the official-author allowlist. The original screenshot is linked rather than republished. The parent identity and content hash must match the active announced reset before its derived `reset.accountReport` is exposed. A newer announcement, parent amendment or explicit official completion removes that report from the current verdict, while retaining the historical evidence.
+
+The card's `userReported` presentation says a user reports a reset, with an attributed source link, explicitly labelled report publication time and the unknown official-completion, execution-time and plan scope. Official `reset.state` remains `announced`; `lastReset` and its elapsed timer remain tied to the last explicit official completion post. The report does not become a countdown, a global completion, or a receipt guarantee for visitors. Ordinary collection does not refresh this editorial report's `verifiedAt`, and its presence does not make source coverage healthy. `test/fixtures/oct24-account-report.json` preserves the independently retrieved source representations and image fingerprint; regressions cover scope, tampering, cycle separation, live presentation and repeated real collection.
+
 `events.json` contains source-linked Codex and Claude announcements, newest first. Accepted X authors are `thsottiaux`, `OpenAIDevs`, `OpenAI`, `ClaudeDevs`, `AnthropicAI` and `claudeai`. The author and platform must agree with the source URL.
 
 Each record carries its post ID, source URL, publication and verification times, kind, evidence state, short original-language excerpt, truncation flag, provenance, rules version and source-text hash. `reported` means the author reported completion, not that this site observed a visitor’s balance.

@@ -180,3 +180,20 @@ export function mergeEvents(existing, incoming) {
   }
   return [...records.values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
 }
+
+// Curated account reports stay separate from the official-author event feed.
+// This reviewed reply concerns Day 18; it is not a Day 19 completion notice.
+const reviewedAccountReport={id:'2113687857000812837',author:'skydev0h',announcementId:'2113492502355562875',publishedAt:'2026-10-23T17:43:50.187Z',fullText:'thank you ser for refueling the furnace, got it down to 2% before the Reset :)',contentHash:'ace9ba891efef478b60488894a9955a868374e53113ed00f8209fefeb8fa5819',imageHash:'9aa7423bb6e0037718b5c3ad2f0d131194ad58d4b3a843dc8ce75103cc8aa121'};
+export function validateAccountReport(report) {
+ const expected=reviewedAccountReport;
+ if(!report||!['id','author','publishedAt','fullText','contentHash'].every(key=>report[key]===expected[key])||report.sourceUrl!==`https://x.com/${expected.author}/status/${expected.id}`||report.platform!=='codex'||report.kind!=='account-report'||report.state!=='user-reported'||report.official!==false||report.scope!=='individual-user-report'||report.resetAt!==null||report.eligiblePlans!==undefined||report.provenance!=='reviewed-x-oembed+fxembed+image'||!Number.isFinite(Date.parse(report.verifiedAt))||Date.parse(report.verifiedAt)<Date.parse(report.publishedAt))throw new Error('Invalid reviewed account report');
+ if(report.replyTo!==`https://x.com/thsottiaux/status/${expected.announcementId}`||report.announcementContentHash!=='2a0136bee4f91125a61036478c0008f20a84d9dbf19ecb75ea1646b8305d6965'||report.relation!=='reply'||report.relationProvenance!=='fxembed'||report.image?.sourceUrl!=='https://pbs.twimg.com/media/HVVTkF4XgAAL8Og.jpg?name=orig'||report.image?.sha256!==expected.imageHash)throw new Error('Invalid account report evidence');
+ return true;
+}
+export function accountReportForReset(reset,reports=[]) {
+ if(reset?.state!=='announced')return null;
+ return [...reports].filter(report=>{
+  try{validateAccountReport(report);}catch{return false;}
+  return report.replyTo===reset.sourceUrl&&report.announcementContentHash===reset.announcementContentHash&&Date.parse(report.publishedAt)>=Date.parse(reset.publishedAt);
+ }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt))[0]||null;
+}
