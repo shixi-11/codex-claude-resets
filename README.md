@@ -3,7 +3,7 @@
 <p align="center"><strong>Reset times. Sources. History.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-claude-resets/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-claude-resets/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-claude-resets/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
-![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/a73dd7e613a5c8eaf6269637a48e07ecc0035079/docs/screenshot.jpg)
+![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/bdc66eb2fe6daa0ed852678843e5579da3aec712/docs/screenshot.jpg)
 
 Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and elapsed time since the last reset completion report was published. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
 
