@@ -3,7 +3,7 @@ import { resetStatus, countdown, localResetTime } from './reset-status.mjs';
 import { watchCopy } from './watch-copy.mjs';
 import { platformCopy } from './platform-copy.mjs';
 import { pageData, refreshLiveData } from './live-data.mjs';
-import {priorityDetails} from './priority-details.mjs';
+import {priorityDetails,userReportCopy} from './priority-details.mjs';
 const {lang,platforms}=pageData,p=platformCopy[lang],w=watchCopy[lang];
 function tickAll(){
  document.querySelectorAll('[data-reset-elapsed]').forEach(el=>{if(el.dataset.resetElapsed)el.textContent=elapsedSince(el.dataset.resetElapsed,lang);});
@@ -11,7 +11,7 @@ function tickAll(){
  document.querySelectorAll('[data-platform]').forEach(card=>{
   const q=s=>card.querySelector(s),data=platforms[card.dataset.platform],state=resetStatus(data.reset),at=Date.parse(state.at),running=state.state==='announced';
   q('[data-clock-countdown]').hidden=!running;if(running)countdown(state.remainingMs).split(':').forEach((v,i)=>q(`[data-digit="${i}"]`).textContent=v);
-  q('[data-clock-verdict]').textContent=running?'':state.state==='unknown'?w.waiting:p[state.state];q('[data-clock-verdict]').hidden=running;
+  q('[data-clock-verdict]').textContent=running?'':state.state==='unknown'?w.waiting:state.state==='userReported'?userReportCopy[lang].title:p[state.state];q('[data-clock-verdict]').hidden=running;
   q('[data-public-time]').textContent=Number.isFinite(at)?(data.reset.timeBasis==='author-usual-PST'?p.inferredDeadline.replace('{time}',localResetTime(at,lang)):`${data.reset.approximate?'≈ ':''}${localResetTime(at,lang)}`):state.state==='announcedUntimed'?(data.reset.deadlineText==='by midnight today'?p.midnightDeadline:['by EOD PST time','sometime today by EOD PST'].includes(data.reset.deadlineText)?p.eodPstDeadline:p.unknown):'';
   card.dataset.clockState=state.state;
  });

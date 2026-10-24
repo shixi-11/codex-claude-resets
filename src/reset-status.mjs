@@ -1,3 +1,4 @@
+import {accountReportForReset} from './evidence.mjs';
 // Public announcements and personal rolling limits are distinct clocks.
 // Never turn an elapsed announcement into evidence of completion.
 export function resetStatus(record, now = Date.now()) {
@@ -7,6 +8,9 @@ export function resetStatus(record, now = Date.now()) {
   if (record.state !== 'announced' || !record.sourceUrl || !record.verifiedAt) {
     return { state: 'unknown', remainingMs: null, at: null };
   }
+  // A historical individual report is not a timed global completion. It never
+  // creates a countdown or changes the last official completion announcement.
+  if(accountReportForReset(record,[record.accountReport]))return {state:'userReported',remainingMs:null,at:null};
   const checked = Date.parse(record.verifiedAt);
   if (!Number.isFinite(checked) || checked > now + 300000 || now - checked > 3 * 3600000) {
     return { state: 'unknown', remainingMs: null, at: null };

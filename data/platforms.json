@@ -10,7 +10,37 @@
       "verifiedAt": "2026-10-24T05:50:35.756Z",
       "publishedAt": "2026-10-23T04:47:34.010Z",
       "sourceTimezone": "PST",
-      "deadlineText": "tomorrow before 10am PST"
+      "deadlineText": "tomorrow before 10am PST",
+      "accountReport": {
+        "id": "2113687857000812837",
+        "author": "skydev0h",
+        "platform": "codex",
+        "sourceUrl": "https://x.com/skydev0h/status/2113687857000812837",
+        "kind": "account-report",
+        "state": "user-reported",
+        "official": false,
+        "scope": "individual-user-report",
+        "publishedAt": "2026-10-23T17:43:50.187Z",
+        "verifiedAt": "2026-10-24T07:10:05.294Z",
+        "fullText": "thank you ser for refueling the furnace, got it down to 2% before the Reset :)",
+        "contentHash": "ace9ba891efef478b60488894a9955a868374e53113ed00f8209fefeb8fa5819",
+        "provenance": "reviewed-x-oembed+fxembed+image",
+        "replyTo": "https://x.com/thsottiaux/status/2113492502355562875",
+        "relation": "reply",
+        "relationProvenance": "fxembed",
+        "resetAt": null,
+        "image": {
+          "sourceUrl": "https://pbs.twimg.com/media/HVVTkF4XgAAL8Og.jpg?name=orig",
+          "sha256": "9aa7423bb6e0037718b5c3ad2f0d131194ad58d4b3a843dc8ce75103cc8aa121",
+          "width": 2318,
+          "height": 1518,
+          "weeklyRemainingLabel": "100%",
+          "nextResetLabel": "Fri 30 Oct 19:41 EET",
+          "interpretation": "User-supplied third-party dashboard, not an authenticated account balance; actual reset time and plan coverage are unverified."
+        },
+        "announcementContentHash": "2a0136bee4f91125a61036478c0008f20a84d9dbf19ecb75ea1646b8305d6965"
+      },
+      "announcementContentHash": "2a0136bee4f91125a61036478c0008f20a84d9dbf19ecb75ea1646b8305d6965"
     },
     "gifts": [],
     "trackingState": "timeline-checked",
@@ -147,7 +177,38 @@
       "timeBasis": "source-timezone-ambiguous",
       "timeKind": "deadline",
       "approximate": true
-    }
+    },
+    "accountReports": [
+      {
+        "id": "2113687857000812837",
+        "author": "skydev0h",
+        "platform": "codex",
+        "sourceUrl": "https://x.com/skydev0h/status/2113687857000812837",
+        "kind": "account-report",
+        "state": "user-reported",
+        "official": false,
+        "scope": "individual-user-report",
+        "publishedAt": "2026-10-23T17:43:50.187Z",
+        "verifiedAt": "2026-10-24T07:10:05.294Z",
+        "fullText": "thank you ser for refueling the furnace, got it down to 2% before the Reset :)",
+        "contentHash": "ace9ba891efef478b60488894a9955a868374e53113ed00f8209fefeb8fa5819",
+        "provenance": "reviewed-x-oembed+fxembed+image",
+        "replyTo": "https://x.com/thsottiaux/status/2113492502355562875",
+        "relation": "reply",
+        "relationProvenance": "fxembed",
+        "resetAt": null,
+        "image": {
+          "sourceUrl": "https://pbs.twimg.com/media/HVVTkF4XgAAL8Og.jpg?name=orig",
+          "sha256": "9aa7423bb6e0037718b5c3ad2f0d131194ad58d4b3a843dc8ce75103cc8aa121",
+          "width": 2318,
+          "height": 1518,
+          "weeklyRemainingLabel": "100%",
+          "nextResetLabel": "Fri 30 Oct 19:41 EET",
+          "interpretation": "User-supplied third-party dashboard, not an authenticated account balance; actual reset time and plan coverage are unverified."
+        },
+        "announcementContentHash": "2a0136bee4f91125a61036478c0008f20a84d9dbf19ecb75ea1646b8305d6965"
+      }
+    ]
   },
   "claude": {
     "name": "Claude",

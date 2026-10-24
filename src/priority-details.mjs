@@ -1,7 +1,7 @@
 import {elapsedSince,elapsedLabel} from './elapsed.mjs';
 import {postText} from './post-text.mjs';
 import {visitorCopy} from './visitor-copy.mjs';
-import {postPlatform} from './evidence.mjs';
+import {postPlatform,accountReportForReset} from './evidence.mjs';
 import {watchCopy} from './watch-copy.mjs';
 import {escapeHtml as e} from './shared.mjs';
 import {localResetTime} from './reset-status.mjs';
@@ -20,12 +20,31 @@ const keys=['latest','previous','archive','timeNote','empty','last','complete','
 export const priorityCopy=Object.fromEntries(Object.entries(rows).map(([lang,row])=>[lang,Object.fromEntries(keys.map((key,i)=>[key,row[i]]))]));
 const belongs=(ev,id)=>postPlatform(ev.author)===id;
 const sourceAction={en:'View original',zh:'查看原文','zh-Hant':'查看原文',ja:'原文を見る',ko:'원문 보기',es:'Ver original',fr:'Voir l’original',de:'Original ansehen',ar:'عرض المنشور الأصلي'};
+const reportRows={
+ en:['User reports a reset','Individual user report; no explicit official completion post verified. Reset time and plan coverage are unknown.','View user report','Report posted'],
+ zh:['用户报告已重置','一位用户的报告；尚未核到官方明确完成公告。实际重置时刻与套餐覆盖范围未知。','查看用户报告','报告发布时间'],
+ 'zh-Hant':['使用者回報已重置','一位使用者的回報；尚未核實官方明確完成公告。實際重置時刻與方案涵蓋範圍未知。','查看使用者回報','回報發布時間'],
+ ja:['ユーザーがリセットを報告','個人の報告です。公式の明確な完了発表は未確認です。実行時刻と対象プランは不明です。','ユーザーの報告を見る','報告の投稿時刻'],
+ ko:['사용자 초기화 보고','개별 사용자 보고입니다. 공식 완료 발표는 확인되지 않았으며 실제 초기화 시각과 대상 요금제는 알 수 없습니다.','사용자 보고 보기','보고 게시 시각'],
+ es:['Un usuario informa del restablecimiento','Informe individual; no se ha verificado un anuncio oficial de finalización. Se desconocen la hora y los planes cubiertos.','Ver informe del usuario','Informe publicado'],
+ fr:['Un utilisateur signale la réinitialisation','Signalement individuel ; aucune annonce officielle explicite de fin vérifiée. Heure exacte et offres couvertes inconnues.','Voir le signalement','Signalement publié'],
+ de:['Nutzer meldet Zurücksetzung','Einzelner Nutzerbericht; keine ausdrückliche offizielle Abschlussmeldung bestätigt. Zeitpunkt und Tarifabdeckung sind unbekannt.','Nutzerbericht ansehen','Bericht veröffentlicht'],
+ ar:['مستخدم يبلغ عن إعادة الضبط','بلاغ فردي؛ لم يتم التحقق من إعلان رسمي صريح باكتمال العملية. وقت التنفيذ والخطط المشمولة غير معروفين.','عرض بلاغ المستخدم','وقت نشر البلاغ']
+};
+export const userReportCopy=Object.fromEntries(Object.entries(reportRows).map(([lang,row])=>[lang,Object.fromEntries(['title','note','source','posted'].map((key,i)=>[key,row[i]]))]));
+const officialElapsed={en:'Since last official completion report',zh:'距上次官方明确完成公告','zh-Hant':'距上次官方明確完成公告',ja:'前回の公式完了報告から',ko:'마지막 공식 완료 보고 이후',es:'Desde el último aviso oficial de finalización',fr:'Depuis le dernier avis officiel de fin',de:'Seit der letzten offiziellen Abschlussmeldung',ar:'منذ آخر إعلان رسمي باكتمال العملية'};
+for(const [lang,text]of Object.entries(officialElapsed))userReportCopy[lang].officialElapsed=text;
+export function accountReportDetails(platform,lang){
+ const report=accountReportForReset(platform.reset,platform.accountReports);if(!report)return '';
+ const t=userReportCopy[lang];
+ return `<div data-account-report><p class="tweet-meaning"><strong>${e(t.title)}</strong></p><p class="tweet-excerpt">${e(t.note)}</p><a class="tweet-source" href="${e(report.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>${e(t.source)} · @${e(report.author)}</span><span aria-hidden="true">↗</span></a><div class="priority-label"><span>${e(t.posted)}</span><time datetime="${e(report.publishedAt)}">${e(localResetTime(report.publishedAt,lang))}</time></div></div>`;
+}
 export function priorityDetails(platform,id,events,lang){
  const t=priorityCopy[lang],list=(events||[]).filter(ev=>belongs(ev,id)).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
  const latest=list.find(ev=>['global','banked'].includes(ev.kind)&&['announced','reported'].includes(ev.state))||list[0]||platform.latest,last=platform.lastReset;
  const when=at=>localResetTime(at,lang);
  return `<div class="latest-post"><div class="priority-label"><span>${e(t.latest)}</span>${latest?`<time datetime="${e(latest.publishedAt)}">${e(when(latest.publishedAt))}</time>`:''}</div>${latest?`<a class="tweet-source" href="${e(latest.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>@${e(latest.author)}</span><span class="source-action"><span class="source-action-label">${e(sourceAction[lang])}</span><span class="source-arrow" aria-hidden="true">↗</span></span></a>${postText(latest,lang,'tweet-excerpt')}<p class="tweet-meaning"><span class="post-kind" data-kind="${e(latest.kind)}">${e(latest.reason==='replacement-credit'?replacementLabels[lang]:postKindLabel(latest.kind,lang))}</span> ${e(latest.kind==='global'&&latest.state==='reported'?t.complete:latest.state==='unconfirmed'?t.unconfirmed:postStateLabel(latest.state,lang))}</p>`:`<p>${e(t.empty)}</p>`}</div>
- <div class="last-reset"><span>${e(elapsedLabel[lang])}</span><span data-last-reset data-reset-elapsed="${e(last?.publishedAt||'')}" title="${last?e(when(last.publishedAt)):''}">${last?e(elapsedSince(last.publishedAt,lang)):e(watchCopy[lang].noHistory)}</span></div>
+ ${accountReportDetails(platform,lang)}<div class="last-reset"><span>${e(accountReportForReset(platform.reset,platform.accountReports)?userReportCopy[lang].officialElapsed:elapsedLabel[lang])}</span><span data-last-reset data-reset-elapsed="${e(last?.publishedAt||'')}" title="${last?e(when(last.publishedAt)):''}">${last?e(elapsedSince(last.publishedAt,lang)):e(watchCopy[lang].noHistory)}</span></div>
 `;
 }
 const kindRows={en:['Quota reset','Reset credit','Usage change','Unconfirmed signal'],zh:['额度重置','重置卡','额度变化','未确认线索'],'zh-Hant':['額度重置','重置卡','額度變化','未確認線索'],ja:['利用枠リセット','リセット権','利用枠の変更','未確認情報'],ko:['사용량 초기화','초기화 이용권','사용량 변경','미확인 정보'],es:['Restablecimiento','Crédito de restablecimiento','Cambio de uso','Indicio sin confirmar'],fr:['Réinitialisation','Crédit de réinitialisation','Changement d’utilisation','Information non confirmée'],de:['Limit-Reset','Reset-Guthaben','Nutzungsänderung','Unbestätigter Hinweis'],ar:['إعادة ضبط الحد','رصيد إعادة ضبط','تغيير الاستخدام','إشارة غير مؤكّدة']};

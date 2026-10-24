@@ -1,0 +1,168 @@
+{
+  "report": {
+    "id": "2113687857000812837",
+    "author": "skydev0h",
+    "platform": "codex",
+    "sourceUrl": "https://x.com/skydev0h/status/2113687857000812837",
+    "kind": "account-report",
+    "state": "user-reported",
+    "official": false,
+    "scope": "individual-user-report",
+    "publishedAt": "2026-10-23T17:43:50.187Z",
+    "verifiedAt": "2026-10-24T07:10:05.294Z",
+    "fullText": "thank you ser for refueling the furnace, got it down to 2% before the Reset :)",
+    "contentHash": "ace9ba891efef478b60488894a9955a868374e53113ed00f8209fefeb8fa5819",
+    "provenance": "reviewed-x-oembed+fxembed+image",
+    "replyTo": "https://x.com/thsottiaux/status/2113492502355562875",
+    "relation": "reply",
+    "relationProvenance": "fxembed",
+    "resetAt": null,
+    "image": {
+      "sourceUrl": "https://pbs.twimg.com/media/HVVTkF4XgAAL8Og.jpg?name=orig",
+      "sha256": "9aa7423bb6e0037718b5c3ad2f0d131194ad58d4b3a843dc8ce75103cc8aa121",
+      "width": 2318,
+      "height": 1518,
+      "weeklyRemainingLabel": "100%",
+      "nextResetLabel": "Fri 30 Oct 19:41 EET",
+      "interpretation": "User-supplied third-party dashboard, not an authenticated account balance; actual reset time and plan coverage are unverified."
+    },
+    "announcementContentHash": "2a0136bee4f91125a61036478c0008f20a84d9dbf19ecb75ea1646b8305d6965"
+  },
+  "reportEmbed": {
+    "url": "https://x.com/skydev0h/status/2113687857000812837",
+    "author_name": "Skydev",
+    "author_url": "https://x.com/skydev0h",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">thank you ser for refueling the furnace, got it down to 2% before the Reset :) <a href=\"https://t.co/z3fDeyXSfK\">pic.twitter.com/z3fDeyXSfK</a></p>&mdash; Skydev (@skydev0h) <a href=\"https://x.com/skydev0h/status/2113687857000812837?ref_src=twsrc%5Etfw\">October 23, 2026</a></blockquote>\n\n",
+    "width": 550,
+    "height": null,
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "X",
+    "provider_url": "https://x.com",
+    "version": "1.0"
+  },
+  "reportRelay": {
+    "id": "2113687857000812837",
+    "url": "https://x.com/skydev0h/status/2113687857000812837",
+    "author": {
+      "screen_name": "skydev0h"
+    },
+    "text": "@thsottiaux thank you ser for refueling the furnace, got it down to 2% before the Reset :)",
+    "raw_text": {
+      "text": "@thsottiaux thank you ser for refueling the furnace, got it down to 2% before the Reset :) https://t.co/z3fDeyXSfK",
+      "display_text_range": [
+        12,
+        90
+      ],
+      "facets": [
+        {
+          "type": "mention",
+          "indices": [
+            0,
+            11
+          ],
+          "original": "thsottiaux",
+          "id": "1953337039510003712"
+        },
+        {
+          "type": "media",
+          "indices": [
+            91,
+            114
+          ],
+          "id": "2113687479639310336",
+          "display": "pic.x.com/z3fDeyXSfK",
+          "original": "https://t.co/z3fDeyXSfK",
+          "replacement": "https://x.com/skydev0h/status/2113687857000812837/photo/1"
+        }
+      ]
+    },
+    "created_timestamp": 1792777430,
+    "replying_to": "thsottiaux",
+    "replying_to_status": "2113492502355562875",
+    "media": {
+      "all": [
+        {
+          "type": "photo",
+          "id": "2113687479639310336",
+          "url": "https://pbs.twimg.com/media/HVVTkF4XgAAL8Og.jpg?name=orig",
+          "width": 2318,
+          "height": 1518
+        }
+      ],
+      "photos": [
+        {
+          "type": "photo",
+          "id": "2113687479639310336",
+          "url": "https://pbs.twimg.com/media/HVVTkF4XgAAL8Og.jpg?name=orig",
+          "width": 2318,
+          "height": 1518
+        }
+      ]
+    }
+  },
+  "day19Embed": {
+    "url": "https://x.com/thsottiaux/status/2113770573994299544",
+    "author_name": "Tibo",
+    "author_url": "https://x.com/thsottiaux",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 19/ Small updates. Calls connect much faster for dots, changing reasoning in codex &amp; work mid conversation does not invalidate cache anymore and a we&#39;ve also updated the codex cli.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113770573994299544?ref_src=twsrc%5Etfw\">October 23, 2026</a></blockquote>\n\n",
+    "width": 550,
+    "height": null,
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "X",
+    "provider_url": "https://x.com",
+    "version": "1.0"
+  },
+  "day19Relay": {
+    "id": "2113770573994299544",
+    "url": "https://x.com/thsottiaux/status/2113770573994299544",
+    "author": {
+      "screen_name": "thsottiaux"
+    },
+    "text": "Day 19/ Small updates. Calls connect much faster for dots, changing reasoning in codex & work mid conversation does not invalidate cache anymore and a we've also updated the codex cli.",
+    "raw_text": {
+      "text": "Day 19/ Small updates. Calls connect much faster for dots, changing reasoning in codex &amp; work mid conversation does not invalidate cache anymore and a we've also updated the codex cli.",
+      "display_text_range": [
+        0,
+        188
+      ],
+      "facets": []
+    },
+    "created_timestamp": 1792797151,
+    "replying_to": null,
+    "replying_to_status": null
+  },
+  "parentEmbed": {
+    "url": "https://x.com/thsottiaux/status/2113492502355562875",
+    "author_name": "Tibo",
+    "author_url": "https://x.com/thsottiaux",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Landing tomorrow before 10am PST together with a small ship.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2113492502355562875?ref_src=twsrc%5Etfw\">October 23, 2026</a></blockquote>\n\n",
+    "width": 550,
+    "height": null,
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "X",
+    "provider_url": "https://x.com",
+    "version": "1.0"
+  },
+  "parentRelay": {
+    "id": "2113492502355562875",
+    "url": "https://x.com/thsottiaux/status/2113492502355562875",
+    "author": {
+      "screen_name": "thsottiaux"
+    },
+    "text": "Landing tomorrow before 10am PST together with a small ship.",
+    "raw_text": {
+      "text": "Landing tomorrow before 10am PST together with a small ship.",
+      "display_text_range": [
+        0,
+        60
+      ],
+      "facets": []
+    },
+    "created_timestamp": 1792730854,
+    "replying_to": "thsottiaux",
+    "replying_to_status": "2113492187770175603"
+  }
+}

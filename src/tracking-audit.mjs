@@ -1,9 +1,12 @@
-import {ALLOWED_AUTHORS, postPlatform} from './evidence.mjs';
+import {ALLOWED_AUTHORS, postPlatform,accountReportForReset,validateAccountReport} from './evidence.mjs';
 
 // Backend-only checks. Compare complete source records, not just their IDs.
 export function assertTrackingSync(platforms, events) {
  const fields=['id','sourceUrl','publishedAt','verifiedAt','contentHash','kind','state','resetAt'];
  for(const [id,p] of Object.entries(platforms)) {
+  for(const report of p.accountReports||[])validateAccountReport(report);
+  const report=accountReportForReset(p.reset,p.accountReports);
+  if(JSON.stringify(p.reset?.accountReport||null)!==JSON.stringify(report))throw new Error(`Account report mismatch: ${id}`);
   const list=events.filter(e=>postPlatform(e.author)===id).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
   const confirmed=e=>['announced','reported'].includes(e.state);
   const expected={latest:list[0],latestGift:list.find(e=>e.kind==='banked'&&confirmed(e)),latestReset:list.find(e=>e.kind==='global'&&confirmed(e)),lastReset:list.find(e=>e.kind==='global'&&e.state==='reported')};
@@ -23,7 +26,7 @@ export function trackingAudit({platforms,events,health,previous={},now=Date.now(
  const issues=[];
  try{assertTrackingSync(platforms,events);}catch(error){issues.push({key:'summary-mismatch',message:error.message});}
  const gap=now-Date.parse(previous.checkedAt||health.lastSuccessAt||0);
- if(!Number.isFinite(gap)||gap>3*3600000)issues.push({key:'collection-gap',message:'No tracking audit for over three hours'});
+ if(!Number.isFinite(gap)||gap>3*3600000)issues.push({key:'collection-gap',message:'No tracking audit for over three hours',gapMs:Number.isFinite(gap)?gap:null,previousCheckedAt:previous.checkedAt||health.lastSuccessAt||null});
  for(const id of ['codex','claude']) {
   const h=health.platforms?.[id];
   if(h?.status!=='ok')issues.push({key:`coverage:${id}`,message:`${id}: collection is incomplete`});

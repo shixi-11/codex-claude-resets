@@ -1,4 +1,4 @@
-import {postPlatform} from './evidence.mjs';
+import {postPlatform,accountReportForReset} from './evidence.mjs';
 
 // Derive summaries from classified evidence at both collection and build time.
 export function syncPlatformState(platforms, events, now = Date.now()) {
@@ -16,6 +16,8 @@ export function syncPlatformState(platforms, events, now = Date.now()) {
  } else if(latestReset?.state==='reported'&&Date.parse(latestReset.publishedAt)>now-86400000){
   platform.reset={state:'completed',resetAt:null,sourceUrl:latestReset.sourceUrl,verifiedAt:latestReset.verifiedAt,publishedAt:latestReset.publishedAt};
  } else platform.reset={state:'unknown',resetAt:null};
+ const accountReport=accountReportForReset({...platform.reset,announcementContentHash:latestReset?.contentHash},platform.accountReports);
+ if(accountReport)Object.assign(platform.reset,{accountReport,announcementContentHash:latestReset.contentHash});
  }
  return platforms;
 }
