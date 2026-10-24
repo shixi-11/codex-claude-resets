@@ -3,7 +3,7 @@
 <p align="center"><strong>Reset times. Sources. History.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-claude-resets/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-claude-resets/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-claude-resets/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
-![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/1ace6d2fd0ca96428f24c917f9b8fc23d7f64624/docs/screenshot.jpg)
+![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/a73dd7e613a5c8eaf6269637a48e07ecc0035079/docs/screenshot.jpg)
 
 Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and elapsed time since the last reset completion report was published. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
 
@@ -25,6 +25,8 @@ Only quota resets, reset credits and subscription allowance information enter th
 ### What “checked” means
 
 The collector polls @thsottiaux, @OpenAIDevs, @OpenAI, @ClaudeDevs, @AnthropicAI and @claudeai through the public FxEmbed relay. Each account has its own discovery budget; busy accounts cannot displace another account’s candidates. X official embeds independently check author, post ID and visible text. For a long post, the full relay text must match that official excerpt and the post timestamp; its record identifies `x-oembed+fxembed` provenance. This is a relay-backed tracker, not an official X API integration. Community pages are fallback link indexes only. Claude promotion terms are fetched directly from its official help center.
+
+Individually reviewed user reports appear beside their actual linked announcement, with attribution and report time. They remain separate from explicit official completion, do not establish plan coverage, and never supply an actual reset instant.
 
 A post that remains truncated stays **unconfirmed**, even when the visible portion sounds promising. An announcement never becomes a completed reset just because time has passed. “Reported complete” describes the source's statement; it does not verify your account.
 
@@ -82,6 +84,7 @@ This is a source-available project under a custom noncommercial license, not an 
 
 [打开网站](https://shixilin.com/ai/codex-claude-resets/zh/) · [RSS订阅](https://shixilin.com/ai/codex-claude-resets/feed.xml) · [公开JSON](https://shixilin.com/ai/codex-claude-resets/events.json)
 
+- 用户到账报告与官方明确完成公告分开显示，保留来源、范围和报告发布时间；不据此保证所有账户到账，也不把发帖时间当作执行时刻。
 - 区分重置预告、已宣布完成、重置卡、额度变化和尚未确认的线索。
 - Codex和Claude两边均可展开、收起全文。采集时同时保存经核验的完整正文与摘要，全文翻译保留公告的后续内容。
 - 原文截断就保留为尚未确认，不根据时间推算“已经恢复”。
