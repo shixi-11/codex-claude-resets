@@ -1,10 +1,12 @@
 {
-  "checkedAt": "2026-10-25T11:24:44.524Z",
+  "checkedAt": "2026-10-25T16:15:40.467Z",
   "openKeys": [
     "collection-gap",
+    "coverage:claude",
     "coverage:codex",
     "review:2111918768733753664:b3f5592c3030c700f43aa7fd19233ac905177581e986914bdef31fb3f6fd676c",
     "review:2114228044072403055:bff39a427a83012c31a1ec22cbd9036b0e402435ed338da04d2dff32e52bc6bd",
+    "stale:claude",
     "stale:codex"
   ]
 }
