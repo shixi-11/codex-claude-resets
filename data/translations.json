@@ -3268,26 +3268,51 @@
       "excerpt": "Day 20/ Rest and reset",
       "contentHash": "dddab42cb13a0a06365e3e8a7ad96f1bdc4a22f170feb6ed71aa57d0050aaafd",
       "texts": {
-        "zh": "第20天 / 休息与重置",
+        "zh": "第 20 天 / 休息与重置",
         "zh-Hant": "第 20 天 / 休息與重置",
-        "ja": "20日目／休息とリセット",
-        "ko": "20일차 / 휴식과 재설정",
-        "es": "Día 20/ Descanso y reinicio",
-        "ar": "اليوم 20/ راحة وإعادة ضبط"
+        "ja": "20日目 / 休息とリセット",
+        "ko": "20일차 / 휴식과 리셋",
+        "es": "Día 20 / Descanso y reinicio",
+        "fr": "Jour 20 / Repos et réinitialisation",
+        "de": "Tag 20 / Ruhe und Reset",
+        "ar": "اليوم 20 / راحة وإعادة ضبط"
       },
       "fullText": "Day 20/ Rest and reset",
       "fullTexts": {
-        "zh": "第20天 / 休息与重置",
+        "zh": "第 20 天 / 休息与重置",
         "zh-Hant": "第 20 天 / 休息與重置",
-        "ja": "20日目／休息とリセット",
-        "ko": "20일차 / 휴식과 재설정",
-        "es": "Día 20/ Descanso y reinicio",
-        "fr": "Jour 20 / Repos et remise à zéro",
-        "de": "Tag 20 / Ruhe und Neustart",
-        "ar": "اليوم 20/ راحة وإعادة ضبط"
+        "ja": "20日目 / 休息とリセット",
+        "ko": "20일차 / 휴식과 리셋",
+        "es": "Día 20 / Descanso y reinicio",
+        "fr": "Jour 20 / Repos et réinitialisation",
+        "de": "Tag 20 / Ruhe und Reset",
+        "ar": "اليوم 20 / راحة وإعادة ضبط"
+      }
+    },
+    "2114200291319124163": {
+      "excerpt": "By midnight PST",
+      "contentHash": "a7094de21c518d36d89afaf1272dd1426334e40421c4844d3fa4e44251a8b7ad",
+      "texts": {
+        "zh": "不晚于午夜（PST）",
+        "zh-Hant": "不晚於午夜（PST）",
+        "ja": "PSTの真夜中までに",
+        "ko": "PST 자정까지",
+        "es": "A más tardar a medianoche PST",
+        "fr": "Au plus tard à minuit PST",
+        "de": "Bis Mitternacht PST",
+        "ar": "بحلول منتصف الليل بتوقيت PST"
       },
-      "provider": "FxEmbed",
-      "translatedAt": "2026-10-25T06:06:06.722Z"
+      "fullText": "By midnight PST",
+      "fullTexts": {
+        "zh": "不晚于午夜（PST）",
+        "zh-Hant": "不晚於午夜（PST）",
+        "ja": "PSTの真夜中までに",
+        "ko": "PST 자정까지",
+        "es": "A más tardar a medianoche PST",
+        "fr": "Au plus tard à minuit PST",
+        "de": "Bis Mitternacht PST",
+        "ar": "بحلول منتصف الليل بتوقيت PST"
+      }
     }
   },
   "pending": 376,
