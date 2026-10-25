@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.16';
+export const RULES_VERSION = '1.4.17';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -67,14 +67,14 @@ export function reclassifyEvents(events) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export const isResetTiming = text => isBeforeTenPacificDeadline(text) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
+export const isResetTiming = text => isBeforeTenPacificDeadline(text) || /^By midnight PST[.!]?$/i.test(text.trim()) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
 export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
 export const reviewedResetAnnouncement = ({text='',...source}={}) => isReviewedResetSource(source) && text.trim()==='Done' ? '2111492738025959922' : null;
 export const needsResetContext = (text,source={}) => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
 // Relay raw text retains a trailing media shortlink removed by the official embed.
-const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
+const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset|Rest (?:and|&) reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
 export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {
   if(depth>1)return false;
   const post=parsePostUrl(context?.sourceUrl),gap=Date.parse(publishedAt)-Date.parse(context?.publishedAt);
@@ -110,6 +110,8 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   // This complete Day 18 wording announces a reset alongside product news.
   // It supplies neither completed execution nor a reset instant or plan scope.
   if (author.toLowerCase()==='thsottiaux' && /^Day 18\/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work\. But yes(?:…|\.\.\.) that's a reset!$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
+  // Complete reset-day wording announces a new cycle, not execution or plan scope.
+  if (author.toLowerCase()==='thsottiaux' && /^Day \d+\/ Rest (?:and|&) reset[.!]?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   // EOD states a deadline but does not establish a timezone or an exact clock time.
   if (author.toLowerCase()==='thsottiaux' && /^Global reset (?:is )?landing by EOD PST time[.!]?(?:\s+Enjoy[.!]?)?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (author.toLowerCase()==='thsottiaux' && /^Global reset by (?:EOD|end of (?:the )?day)[.!](?:\s+May the tokens do good things for you[.!])?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};

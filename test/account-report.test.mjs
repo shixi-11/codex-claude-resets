@@ -13,7 +13,7 @@ import {assertTrackingSync,trackingAudit} from '../src/tracking-audit.mjs';
 import {priorityDetails,userReportCopy} from '../src/priority-details.mjs';
 import {clockPanel} from '../src/clock-panel.mjs';
 const fixture=JSON.parse(await readFile(new URL('./fixtures/oct24-account-report.json',import.meta.url),'utf8'));
-const events=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
+const events=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8')).filter(e=>Date.parse(e.publishedAt)<=Date.parse('2026-10-24T07:15:00Z'));
 const before=JSON.parse(await readFile(new URL('../data/platforms.json',import.meta.url),'utf8'));
 const heat=JSON.parse(await readFile(new URL('../data/topic-heat.json',import.meta.url),'utf8'));
 const report=fixture.report,parent='2113492502355562875',now=Date.parse('2026-10-24T07:15:00Z');
