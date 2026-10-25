@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.17';
+export const RULES_VERSION = '1.4.18';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -72,7 +72,9 @@ export const isResetTiming = text => isBeforeTenPacificDeadline(text) || /^By mi
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
 export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
 export const reviewedResetAnnouncement = ({text='',...source}={}) => isReviewedResetSource(source) && text.trim()==='Done' ? '2111492738025959922' : null;
-export const needsResetContext = (text,source={}) => isResetTiming(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
+// Keywordless propagation is meaningful only through a verified reset quote/reply.
+export const isLinkedPropagation = text => /^It is (?:all|fully) propagated[.!](?:\s+Enjoy some mad codexing tomorrow[.!])?(?:\s+Fun week ahead(?: too)?[.!])?$/i.test(text.trim());
+export const needsResetContext = (text,source={}) => isResetTiming(text) || isLinkedPropagation(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
 // Relay raw text retains a trailing media shortlink removed by the official embed.
 const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset|Rest (?:and|&) reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
 export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {

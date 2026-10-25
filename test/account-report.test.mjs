@@ -39,7 +39,7 @@ test('single user report remains distinct from official completion and cannot fo
  const p=state();assertTrackingSync(p,events);
  assert.equal(p.codex.reset.state,'announced');assert.equal(p.codex.reset.accountReport.id,report.id);assert.equal(p.codex.reset.resetAt,null);
  assert.equal(resetStatus(p.codex.reset,now).state,'userReported');assert.equal(resetStatus(p.codex.reset,now).remainingMs,null);assert.equal(resetStatus(p.codex.reset,now).at,null);
- assert.equal(p.codex.lastReset.id,'2111566005684289735');assert.equal(p.codex.lastReset.id,before.codex.lastReset.id);
+ assert.equal(p.codex.lastReset.id,'2111566005684289735');assert.equal(p.codex.lastReset.id,events.find(e=>e.kind==='global'&&e.state==='reported').id);
  assert.equal(p.codex.lastReset.publishedAt,'2026-10-17T21:12:21.411Z');assert.equal(p.codex.latestReset.id,parent);
  const next={...events.find(e=>e.id===parent),id:'2113770573994299544',sourceUrl:'https://x.com/thsottiaux/status/2113770573994299544',publishedAt:'2026-10-23T23:12:31Z'};
  const newCycle=state([...events,next]);assert.equal(newCycle.codex.reset.accountReport,undefined);assert.notEqual(resetStatus(newCycle.codex.reset,now).state,'userReported');
