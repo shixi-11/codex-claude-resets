@@ -3241,8 +3241,55 @@
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
+    },
+    "2114228044072403055": {
+      "excerpt": "Not a real improvement, put the reset in the bag",
+      "contentHash": "bff39a427a83012c31a1ec22cbd9036b0e402435ed338da04d2dff32e52bc6bd",
+      "texts": {
+        "zh-Hant": "不是真正的改進，把重置放進包裡",
+        "zh": "不是真正的改进，把重置放进包里",
+        "ko": "진짜 개선은 아니야, 리셋을 가방에 넣어.",
+        "de": "Kein echter Fortschritt, leg den Reset in die Tasche",
+        "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة"
+      },
+      "fullText": "Not a real improvement, put the reset in the bag",
+      "fullTexts": {
+        "zh-Hant": "不是真正的改進，把重置放進包裡",
+        "zh": "不是真正的改进，把重置放进包里",
+        "ko": "진짜 개선은 아니야, 리셋을 가방에 넣어.",
+        "fr": "Pas une vraie amélioration, mettre le reset dans le sac",
+        "de": "Kein echter Fortschritt, leg den Reset in die Tasche",
+        "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-25T06:06:05.268Z"
+    },
+    "2114200152701575656": {
+      "excerpt": "Day 20/ Rest and reset",
+      "contentHash": "dddab42cb13a0a06365e3e8a7ad96f1bdc4a22f170feb6ed71aa57d0050aaafd",
+      "texts": {
+        "zh": "第20天 / 休息与重置",
+        "zh-Hant": "第 20 天 / 休息與重置",
+        "ja": "20日目／休息とリセット",
+        "ko": "20일차 / 휴식과 재설정",
+        "es": "Día 20/ Descanso y reinicio",
+        "ar": "اليوم 20/ راحة وإعادة ضبط"
+      },
+      "fullText": "Day 20/ Rest and reset",
+      "fullTexts": {
+        "zh": "第20天 / 休息与重置",
+        "zh-Hant": "第 20 天 / 休息與重置",
+        "ja": "20日目／休息とリセット",
+        "ko": "20일차 / 휴식과 재설정",
+        "es": "Día 20/ Descanso y reinicio",
+        "fr": "Jour 20 / Repos et remise à zéro",
+        "de": "Tag 20 / Ruhe und Neustart",
+        "ar": "اليوم 20/ راحة وإعادة ضبط"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-25T06:06:06.722Z"
     }
   },
-  "pending": 371,
-  "lastAttemptAt": "2026-10-25T01:09:05.074Z"
+  "pending": 376,
+  "lastAttemptAt": "2026-10-25T06:06:19.908Z"
 }
