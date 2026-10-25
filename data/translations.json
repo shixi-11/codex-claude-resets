@@ -3250,7 +3250,9 @@
         "zh": "不是真正的改进，把重置放进包里",
         "ko": "진짜 개선은 아니야, 리셋을 가방에 넣어.",
         "de": "Kein echter Fortschritt, leg den Reset in die Tasche",
-        "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة"
+        "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة",
+        "ja": "本物の改善じゃない、リセットを袋にしまえ",
+        "es": "No es una mejora real, guarda el reinicio en la bolsa"
       },
       "fullText": "Not a real improvement, put the reset in the bag",
       "fullTexts": {
@@ -3259,10 +3261,12 @@
         "ko": "진짜 개선은 아니야, 리셋을 가방에 넣어.",
         "fr": "Pas une vraie amélioration, mettre le reset dans le sac",
         "de": "Kein echter Fortschritt, leg den Reset in die Tasche",
-        "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة"
+        "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة",
+        "ja": "本物の改善じゃない、リセットを袋にしまえ",
+        "es": "No es una mejora real, guarda el reinicio en la bolsa"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-25T06:06:05.268Z"
+      "translatedAt": "2026-10-25T06:46:04.346Z"
     },
     "2114200152701575656": {
       "excerpt": "Day 20/ Rest and reset",
@@ -3315,6 +3319,6 @@
       }
     }
   },
-  "pending": 376,
-  "lastAttemptAt": "2026-10-25T06:06:19.908Z"
+  "pending": 372,
+  "lastAttemptAt": "2026-10-25T06:46:21.190Z"
 }
