@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-25T16:14:21.274Z",
-  "lastSuccessAt": "2026-10-25T07:40:32.595Z",
-  "discoveryAt": "2026-10-25T16:14:21.274Z",
+  "lastAttemptAt": "2026-10-25T19:03:50.096Z",
+  "lastSuccessAt": "2026-10-25T19:03:50.096Z",
+  "discoveryAt": "2026-10-25T19:03:50.096Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -17,8 +17,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 6
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -33,8 +33,8 @@
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 19
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -53,77 +53,22 @@
       "candidates": 19
     },
     {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
-      "ok": true,
-      "candidates": 452
-    },
-    {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
-      "ok": true,
-      "candidates": 67
-    },
-    {
-      "name": "Reset Radar · Claude link discovery only",
-      "url": "https://www.resetradar.com/data/events.json",
-      "ok": true,
-      "candidates": 30
-    },
-    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": false,
-      "checked": 513,
-      "failed": 9
+      "ok": true,
+      "checked": 11,
+      "failed": 0
     }
   ],
-  "status": "degraded",
-  "failedPosts": [
-    {
-      "url": "https://x.com/thsottiaux/status/2114228445043691592",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2112034328549216593",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2111323620471632217",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/OpenAI/status/2107596716367388924",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2107378093635899886",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2107370001837773172",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2105176198469087516",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2105039500149948878",
-      "error": "Empty post"
-    },
-    {
-      "url": "https://x.com/thsottiaux/status/2105007775676072381",
-      "error": "Empty post"
-    }
-  ],
+  "status": "ok",
+  "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-25T16:14:21.274Z",
-      "status": "degraded",
-      "checked": 480,
-      "failed": 9,
-      "discovered": 489,
+      "lastAttemptAt": "2026-10-25T19:03:50.096Z",
+      "status": "ok",
+      "checked": 5,
+      "failed": 0,
+      "discovered": 43,
       "authors": [
         {
           "author": "thsottiaux",
@@ -131,25 +76,25 @@
         },
         {
           "author": "OpenAIDevs",
-          "ok": false
+          "ok": true
         },
         {
           "author": "OpenAI",
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-25T07:40:32.595Z"
+      "lastSuccessAt": "2026-10-25T19:03:50.096Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-25T16:14:21.274Z",
-      "status": "degraded",
-      "checked": 33,
+      "lastAttemptAt": "2026-10-25T19:03:50.096Z",
+      "status": "ok",
+      "checked": 6,
       "failed": 0,
-      "discovered": 68,
+      "discovered": 58,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": false
+          "ok": true
         },
         {
           "author": "AnthropicAI",
@@ -160,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-25T11:23:33.927Z"
+      "lastSuccessAt": "2026-10-25T19:03:50.096Z"
     }
   }
 }
