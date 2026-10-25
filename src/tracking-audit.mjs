@@ -1,3 +1,4 @@
+import {latestResetRecord} from './platform-state.mjs';
 import {ALLOWED_AUTHORS, postPlatform,accountReportForReset,validateAccountReport} from './evidence.mjs';
 
 // Backend-only checks. Compare complete source records, not just their IDs.
@@ -9,7 +10,7 @@ export function assertTrackingSync(platforms, events) {
   if(JSON.stringify(p.reset?.accountReport||null)!==JSON.stringify(report))throw new Error(`Account report mismatch: ${id}`);
   const list=events.filter(e=>postPlatform(e.author)===id).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
   const confirmed=e=>['announced','reported'].includes(e.state);
-  const expected={latest:list[0],latestGift:list.find(e=>e.kind==='banked'&&confirmed(e)),latestReset:list.find(e=>e.kind==='global'&&confirmed(e)),lastReset:list.find(e=>e.kind==='global'&&e.state==='reported')};
+  const expected={latest:list[0],latestGift:list.find(e=>e.kind==='banked'&&confirmed(e)),latestReset:latestResetRecord(list),lastReset:list.find(e=>e.kind==='global'&&e.state==='reported')};
   for(const [key,want] of Object.entries(expected))for(const field of fields)if((p[key]?.[field]??null)!==(want?.[field]??null))throw new Error(`Tracking mismatch: ${id}.${key}.${field}`);
   if(p.reset?.state!=='unknown') {
    if(!expected.latestReset)throw new Error(`Reset without evidence: ${id}`);

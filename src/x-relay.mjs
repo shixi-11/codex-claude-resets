@@ -5,7 +5,7 @@ export function shouldCheckCandidate(candidate) {
  const text=candidate.relay?.raw_text?.text||candidate.relay?.text;
  const post=parsePostUrl(candidate.url);
  // Always recheck this reviewed identity, even if its text gains an exception.
- return isReviewedResetSource(post) || !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || isCacheAllowanceUpdate(text.replace(/&amp;/g,'&')) || (post?.author.toLowerCase()==='thsottiaux' && needsResetContext(text,post));
+ return isReviewedResetSource(post) || !text || /(?:…|\.\.\.)\s*$/.test(text) || /reset|usage|allowance|quota|limit|credit/i.test(text) || isCacheAllowanceUpdate(text.replace(/&amp;/g,'&')) || (post?.author.toLowerCase()==='thsottiaux' && needsResetContext(normalize(text),post));
 }
 export function timelineCandidates(payload,author){
  if(payload.code!==200||!Array.isArray(payload.results))throw new Error('Invalid relay timeline');
