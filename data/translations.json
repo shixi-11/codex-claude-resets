@@ -3342,8 +3342,52 @@
         "de": "Alles ist verteilt. Viel Spaß beim ausgiebigen Arbeiten mit Codex morgen. Auch eine spannende Woche steht bevor.",
         "ar": "اكتمل الانتشار بالكامل. استمتعوا باستخدام Codex غدًا. وينتظرنا أسبوع ممتع أيضًا."
       }
+    },
+    "2114599388454481930": {
+      "excerpt": "Not enough resets",
+      "contentHash": "8a1c88be8742513dca25e8f73f76b566117e773bad0392d0854bee80c0a4bb4c",
+      "texts": {
+        "zh": "重置次数不足",
+        "ko": "리셋이 충분하지 않음",
+        "ja": "リセットが足りません",
+        "es": "No hay suficientes reinicios"
+      },
+      "fullText": "Not enough resets",
+      "fullTexts": {
+        "zh": "重置次数不足",
+        "ko": "리셋이 충분하지 않음",
+        "ja": "@larsencc @bot リセットが足りません",
+        "es": "@larsencc @bot No hay suficientes reinicios",
+        "ar": "@larsencc @bot ليس هناك عدد كافٍ من الإعادات"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-26T06:10:49.799Z"
+    },
+    "2114588174249071102": {
+      "excerpt": "But today is a reset.",
+      "contentHash": "00bea276356bdb1bdf10a9a8d4d1e6a9c833a5a2e04bf2c686914319568846c1",
+      "texts": {
+        "ja": "でも今日はリセットの日です。",
+        "ko": "하지만 오늘은 리셋이다.",
+        "es": "Pero hoy es un reinicio.",
+        "de": "Aber heute ist ein Reset.",
+        "ar": "لكن اليوم هو إعادة تعيين."
+      },
+      "fullText": "Day 21/ Wonder what happens the remaining seven days. But today is a reset.",
+      "fullTexts": {
+        "zh": "第21天/ 好奇接下来的七天会发生什么。但今天是一个重新开始。",
+        "zh-Hant": "第 21 天／好奇剩下的七天會發生什麼事。但今天是一個重新開始。",
+        "ja": "21日目／残りの7日間で何が起こるのかしら。でも今日はリセットの日です。",
+        "ko": "21일째/ 앞으로 남은 7일 동안 무슨 일이 일어날지 궁금하다. 하지만 오늘은 리셋이다.",
+        "es": "Día 21/ Me pregunto qué pasa en los siete días restantes. Pero hoy es un reinicio.",
+        "fr": "Jour 21/ Je me demande ce qui se passe les sept jours restants. Mais aujourd'hui est une remise à zéro.",
+        "de": "Tag 21/ Ich frage mich, was in den verbleibenden sieben Tagen passiert. Aber heute ist ein Reset.",
+        "ar": "اليوم 21/ أتساءل عما سيحدث في الأيام السبعة المتبقية. لكن اليوم هو إعادة تعيين."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-26T06:10:52.203Z"
     }
   },
-  "pending": 372,
-  "lastAttemptAt": "2026-10-26T00:21:30.124Z"
+  "pending": 379,
+  "lastAttemptAt": "2026-10-26T06:11:04.691Z"
 }
