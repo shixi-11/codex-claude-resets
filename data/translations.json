@@ -3367,16 +3367,19 @@
       "excerpt": "But today is a reset.",
       "contentHash": "00bea276356bdb1bdf10a9a8d4d1e6a9c833a5a2e04bf2c686914319568846c1",
       "texts": {
+        "zh": "但今天重置。",
+        "zh-Hant": "但今天重置。",
         "ja": "でも今日はリセットの日です。",
-        "ko": "하지만 오늘은 리셋이다.",
-        "es": "Pero hoy es un reinicio.",
-        "de": "Aber heute ist ein Reset.",
-        "ar": "لكن اليوم هو إعادة تعيين."
+        "ko": "하지만 오늘은 리셋이 있습니다.",
+        "es": "Pero hoy hay un reinicio.",
+        "fr": "Mais aujourd’hui, il y a une remise à zéro.",
+        "de": "Aber heute gibt es einen Reset.",
+        "ar": "لكن اليوم هناك إعادة تعيين."
       },
       "fullText": "Day 21/ Wonder what happens the remaining seven days. But today is a reset.",
       "fullTexts": {
-        "zh": "第21天/ 好奇接下来的七天会发生什么。但今天是一个重新开始。",
-        "zh-Hant": "第 21 天／好奇剩下的七天會發生什麼事。但今天是一個重新開始。",
+        "zh": "第21天/ 好奇剩下的七天会发生什么。但今天重置。",
+        "zh-Hant": "第21天/ 好奇剩下的七天會發生什麼。但今天重置。",
         "ja": "21日目／残りの7日間で何が起こるのかしら。でも今日はリセットの日です。",
         "ko": "21일째/ 앞으로 남은 7일 동안 무슨 일이 일어날지 궁금하다. 하지만 오늘은 리셋이다.",
         "es": "Día 21/ Me pregunto qué pasa en los siete días restantes. Pero hoy es un reinicio.",
@@ -3384,7 +3387,7 @@
         "de": "Tag 21/ Ich frage mich, was in den verbleibenden sieben Tagen passiert. Aber heute ist ein Reset.",
         "ar": "اليوم 21/ أتساءل عما سيحدث في الأيام السبعة المتبقية. لكن اليوم هو إعادة تعيين."
       },
-      "provider": "FxEmbed",
+      "provider": "editorial-primary",
       "translatedAt": "2026-10-26T06:10:52.203Z"
     }
   },
