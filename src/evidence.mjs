@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.18';
+export const RULES_VERSION = '1.4.19';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -94,6 +94,9 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  // Reviewed in its primary X reply context: a joke answering @larsencc about
+  // @bot/Grok (parent 2114462742757449730), not a Codex reset announcement.
+  if (author.toLowerCase()==='thsottiaux' && id==='2114599388454481930' && value==='Not enough resets') return {kind:'other',state:'information',reason:'reviewed-unrelated-reply'};
   // Keywordless claims need a recent, independently verified same-author
   // announcement; a reviewed independent post also needs its editorial marker.
   if (linked) {
@@ -114,6 +117,8 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if (author.toLowerCase()==='thsottiaux' && /^Day 18\/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work\. But yes(?:…|\.\.\.) that's a reset!$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   // Complete reset-day wording announces a new cycle, not execution or plan scope.
   if (author.toLowerCase()==='thsottiaux' && /^Day \d+\/ Rest (?:and|&) reset[.!]?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
+  // Day 21 explicitly announces today's reset, without a completion or time claim.
+  if (author.toLowerCase()==='thsottiaux' && /^Day 21\/ Wonder what happens the remaining seven days\. But today is a reset\.$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   // EOD states a deadline but does not establish a timezone or an exact clock time.
   if (author.toLowerCase()==='thsottiaux' && /^Global reset (?:is )?landing by EOD PST time[.!]?(?:\s+Enjoy[.!]?)?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (author.toLowerCase()==='thsottiaux' && /^Global reset by (?:EOD|end of (?:the )?day)[.!](?:\s+May the tokens do good things for you[.!])?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
