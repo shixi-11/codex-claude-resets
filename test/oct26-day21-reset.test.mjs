@@ -14,6 +14,18 @@ test('complete official Day21 is an announcement, not execution or all-account c
  for(const altered of ['Maybe '+text,'"'+text+'"',text+' Not today.',text.replace('is a reset','is not a reset'),text.replace('is a reset','might be a reset'),text.replace('is a reset','is a reset?'),'Someone said '+text])assert.notEqual(classify(altered,source).state,'announced',altered);
  for(const altered of [{...source,author:'OpenAI'},{...source,author:'random'},{...source,truncated:true}])assert.notEqual(classify(text,altered).state,'announced');
 });
+
+test('Day22 Terra and 2X usage do not complete the Day21 reset or supply a reset time',()=>{
+ const usage={id:'2114800277677092936',author,publishedAt:'2026-10-26T19:24:11.000Z'};
+ const fullText='Day 22/ Terra is back! \n\nOur first model that is significantly better at writing,  personality and nuanced understanding of requests.\n\nPacks a punch across the board, very good at computer use, and gives 2X more usage than 6.1 Sol across API and subscriptions.';
+ const classification=classify(fullText,usage);
+ assert.notEqual(classification.kind,'global');assert.notEqual(classification.state,'reported');
+ assert.equal(announcementTime(fullText,usage.publishedAt,usage),null);
+ const events=[{...source,fullText:text,...classify(text,source),platform:'codex',sourceUrl:`https://x.com/${author}/status/${id}`},...(classification.kind==='other'?[]:[{...usage,fullText,...classification,platform:'codex',sourceUrl:`https://x.com/${author}/status/${usage.id}`}])];
+ const p=syncPlatformState({codex:{},claude:{}},events,Date.parse('2026-10-27T22:00:00Z'));
+ assert.equal(p.codex.latestReset.id,id);
+ assert.equal(p.codex.reset.state,'announced');assert.equal(p.codex.reset.resetAt,null);assert.equal(p.codex.lastReset,null);
+});
 test('Grok feedback joke is excluded only for the reviewed author, ID and complete text',()=>{
  const joke={id:'2114599388454481930',author};
  assert.equal(classify('Not enough resets',joke).kind,'other');
