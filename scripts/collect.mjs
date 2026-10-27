@@ -3,7 +3,7 @@ import {refreshTopicHeat} from './topic-heat-refresh.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { announcementTime } from '../src/announcement-time.mjs';
-import { timelineCandidates, corroborateRelay, resolveResetContext, shouldCheckCandidate } from '../src/x-relay.mjs';
+import { timelineCandidates, mergeDiscoveryCandidates, corroborateRelay, resolveResetContext, shouldCheckCandidate } from '../src/x-relay.mjs';
 import {collectionRequest} from '../src/collection-request.mjs';
 import { ALLOWED_AUTHORS, reclassifyEvents, RULES_VERSION, parsePostUrl, extractEmbed, classify, evidenceExcerpt, mergeEvents, postPlatform, needsResetContext } from '../src/evidence.mjs';
 
@@ -62,7 +62,7 @@ try {
         const html = await request(source.url, {}, 'text');
         const urls = [...new Set(html.match(/https:\/\/(?:x|twitter)\.com\/[A-Za-z0-9_]+\/status\/\d+/g) || [])].filter(url => parsePostUrl(url));
         if (!urls.length) throw new Error('No allowed source links');
-        candidates.push(...urls.map(url => ({ url })));
+        candidates.push(...urls.map(url => ({ url, discoveryOnly:true })));
         health.sources.push({ ...source, ok: true, candidates: urls.length });
       } catch (error) { health.sources.push({ ...source, ok: false, error: error.message.slice(0, 100) }); }
     }
@@ -71,9 +71,10 @@ try {
       const checked = Date.parse(feed.lastSuccessfulCheckAt);
       if (!Array.isArray(feed.events) || !Number.isFinite(checked) || Date.now() - checked > 3 * 3600000 || checked > Date.now() + 300000) throw new Error('Fallback discovery is stale');
       const serialized = JSON.stringify(feed);
-      candidates = [...new Set(serialized.match(/https:\/\/(?:x|twitter)\.com\/[A-Za-z0-9_]+\/status\/\d+/g) || [])].filter(url => parsePostUrl(url)).map(url => ({ url }));
+      candidates = [...new Set(serialized.match(/https:\/\/(?:x|twitter)\.com\/[A-Za-z0-9_]+\/status\/\d+/g) || [])].filter(url => parsePostUrl(url)).map(url => ({ url, discoveryOnly:true }));
       health.sources.push({ name: 'CodexRunway · discovery only', url: 'https://www.codexrunway.com/api/status.json', ok: candidates.length > 0 });
     }
+    candidates=mergeDiscoveryCandidates(candidates,health.sources.filter(source=>source.author&&source.ok).map(source=>source.author));
     for(const event of existing.filter(event=>event.truncated&&Date.parse(event.publishedAt)>Date.now()-14*86400000))if(!candidates.some(post=>parsePostUrl(post.url)?.id===event.id))candidates.push({url:event.sourceUrl});
     const sorted = [...new Map(candidates.map(post => [parsePostUrl(post.url).id, post])).values()].sort((a,b) => {const x=BigInt(parsePostUrl(a.url).id),y=BigInt(parsePostUrl(b.url).id);return x===y?0:x>y?-1:1;});
     candidates = sorted; // Do not let busy accounts crowd out another author's posts.

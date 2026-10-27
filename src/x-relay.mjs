@@ -21,6 +21,25 @@ export function timelineCandidates(payload,author){
  payload.results.forEach(visit);
  return [...found.values()];
 }
+
+// Community indexes can contain an entire archive. Bound fallback work per
+// uncovered author, and never replace timeline evidence with a URL-only entry.
+export function mergeDiscoveryCandidates(candidates,coveredAuthors=[]) {
+ const covered=new Set(coveredAuthors.map(author=>author.toLowerCase()));
+ const found=new Map(),counts=new Map();
+ for(const candidate of candidates.filter(candidate=>!candidate.discoveryOnly)) {
+  const post=parsePostUrl(candidate.url);if(!post)continue;
+  const previous=found.get(post.id);
+  found.set(post.id,{...candidate,...previous,...(candidate.relay&&!previous?.relay?{relay:candidate.relay}:{}),...(candidate.fullText&&!previous?.fullText?{fullText:candidate.fullText}:{})});
+ }
+ const fallback=candidates.filter(candidate=>candidate.discoveryOnly&&parsePostUrl(candidate.url)).sort((a,b)=>BigInt(parsePostUrl(a.url).id)>BigInt(parsePostUrl(b.url).id)?-1:1);
+ for(const candidate of fallback) {
+  const post=parsePostUrl(candidate.url),author=post.author.toLowerCase();
+  if(found.has(post.id)||covered.has(author)||(counts.get(author)||0)>=40)continue;
+  found.set(post.id,candidate);counts.set(author,(counts.get(author)||0)+1);
+ }
+ return [...found.values()];
+}
 export function corroborateRelay(official,relay){
  const post=parsePostUrl(relay?.url);
  if(!post||post.id!==official.id||post.author.toLowerCase()!==official.author.toLowerCase()||relay.author?.screen_name?.toLowerCase()!==official.author.toLowerCase()||String(relay.id)!==official.id||relay.author?.protected)throw new Error('Relay identity mismatch');
