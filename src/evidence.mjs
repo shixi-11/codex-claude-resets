@@ -1,5 +1,5 @@
-import {announcementTime,isBeforeTenPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.19';
+import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
+export const RULES_VERSION = '1.4.20';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -67,7 +67,7 @@ export function reclassifyEvents(events) {
 }
 
 // Conservative by design: incomplete, quoted, negative or conditional claims need review.
-export const isResetTiming = text => isBeforeTenPacificDeadline(text) || /^By midnight PST[.!]?$/i.test(text.trim()) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
+export const isResetTiming = text => isBeforeTenPacificDeadline(text) || isMidnightPacificDeadline(text) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
 export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
@@ -119,6 +119,9 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if (author.toLowerCase()==='thsottiaux' && /^Day \d+\/ Rest (?:and|&) reset[.!]?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   // Day 21 explicitly announces today's reset, without a completion or time claim.
   if (author.toLowerCase()==='thsottiaux' && /^Day 21\/ Wonder what happens the remaining seven days\. But today is a reset\.$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
+  // The plugin launch is the joke; the complete reviewed Day23 text announces
+  // a reset without claiming execution, eligibility or an exact instant.
+  if (author.toLowerCase()==='thsottiaux' && /^Day 23\/ Much requested iCloud Main & Calendar plugins\. Just kidding, today is a reset\. Still much requested though!$/.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   // EOD states a deadline but does not establish a timezone or an exact clock time.
   if (author.toLowerCase()==='thsottiaux' && /^Global reset (?:is )?landing by EOD PST time[.!]?(?:\s+Enjoy[.!]?)?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
   if (author.toLowerCase()==='thsottiaux' && /^Global reset by (?:EOD|end of (?:the )?day)[.!](?:\s+May the tokens do good things for you[.!])?$/i.test(value)) return {kind:'global',state:'announced',reason:'explicit-announcement'};
