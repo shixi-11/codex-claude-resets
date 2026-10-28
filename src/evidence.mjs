@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.20';
+export const RULES_VERSION = '1.4.21';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -74,7 +74,7 @@ export const isReviewedResetSource = source => source?.id==='2111566005684289735
 export const reviewedResetAnnouncement = ({text='',...source}={}) => isReviewedResetSource(source) && text.trim()==='Done' ? '2111492738025959922' : null;
 // Keywordless propagation is meaningful only through a verified reset quote/reply.
 export const isLinkedPropagation = text => /^It is (?:all|fully) propagated[.!](?:\s+Enjoy some mad codexing tomorrow[.!])?(?:\s+Fun week ahead(?: too)?[.!])?$/i.test(text.trim());
-export const needsResetContext = (text,source={}) => isResetTiming(text) || isLinkedPropagation(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
+export const needsResetContext = (text,source={}) => isResetTiming(text) || isLinkedPropagation(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?|And it's done\. See you tomorrow for some good news\.)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
 // Relay raw text retains a trailing media shortlink removed by the official embed.
 const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset|Rest (?:and|&) reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
 export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {
