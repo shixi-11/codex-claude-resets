@@ -14,7 +14,7 @@ export async function collectionRequest(url,{headers={},format='json',fetcher=fe
     try{
      const result=validate(format==='text'?await response.text():await response.json());
      outcome.ok=true;return result;
-    }catch(error){if(retryInvalidResponse)error.name='InvalidResponseError';throw error;}
+    }catch(error){if(retryInvalidResponse&&error.retryable!==false)error.name='InvalidResponseError';throw error;}
    }
    const error=new Error(`HTTP ${response.status}`);
    outcome.error=error.message;
@@ -26,7 +26,7 @@ export async function collectionRequest(url,{headers={},format='json',fetcher=fe
   }catch(error) {
    outcome.error=error.message;
    const wait=Math.min(1500,retryDelayMs*2**attempt);
-   if(attempt===maxAttempts-1||!['TypeError','TimeoutError','AbortError',...(retryInvalidResponse?['InvalidResponseError']:[])].includes(error.name)||deadline-now()<=wait)throw error;
+   if(error.retryable===false||attempt===maxAttempts-1||!['TypeError','TimeoutError','AbortError',...(retryInvalidResponse?['InvalidResponseError']:[])].includes(error.name)||deadline-now()<=wait)throw error;
    await sleep(wait);
   }finally{onAttempt({...outcome,elapsedMs:Math.max(0,now()-started)});}
  }

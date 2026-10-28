@@ -46,6 +46,11 @@ try {
         // accounts. Retry only these monitored timelines, inside the same
         // request/collection budgets; never treat an empty response as coverage.
         const posts=await collectionRequest(url,{budgetMs:Math.min(18000,collectionDeadline-Date.now()),retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500,retryInvalidResponse:true,onAttempt:attempt=>attempts.push(attempt),validate:payload=>{
+          // A relay can carry its application status inside HTTP 200. Do not
+          // retry authentication refusals or throttling disguised this way.
+          if([401,403,429].includes(payload?.code)){
+            const error=new Error(`Relay application HTTP ${payload.code}`);error.retryable=false;throw error;
+          }
           const posts=timelineCandidates(payload,author);
           if(!posts.length)throw new Error('No matching author posts returned');
           return posts;

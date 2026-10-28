@@ -49,6 +49,9 @@ test('only opt-in validated responses retry malformed or application-level failu
  assert.deepEqual(attempts.map(a=>a.ok),[false,false,true]);assert.deepEqual(attempts.map(a=>a.status),[200,200,200]);assert.match(attempts[1].error,/Invalid timeline/);
  calls=0;
  await assert.rejects(collectionRequest('https://example.com',{validate,fetcher:async()=>{calls++;return Response.json({code:404});}}),/Invalid timeline/);assert.equal(calls,1);
+ for(const code of [401,403,429]){
+  calls=0;await assert.rejects(collectionRequest('https://example.com',{retryInvalidResponse:true,validate:()=>{throw Object.assign(new TypeError(`Application ${code}`),{retryable:false});},fetcher:async()=>{calls++;return Response.json({code});},sleep:async()=>assert.fail('must stop on application refusal')}),new RegExp(`Application ${code}`));assert.equal(calls,1);
+ }
  for(const [status,headers]of [[403,{}],[429,{'retry-after':'60'}]]){
   calls=0;await assert.rejects(collectionRequest('https://example.com',{validate,retryInvalidResponse:true,retryStatuses:[404,429,503],maxAttempts:3,fetcher:async()=>{calls++;return new Response('',{status,headers});},sleep:async()=>assert.fail('must respect refusal or Retry-After')}),new RegExp(`HTTP ${status}`));assert.equal(calls,1);
  }
