@@ -26,3 +26,30 @@ test('monitored timeline 404 retries are bounded and require an actual successfu
  await assert.rejects(collectionRequest('https://example.com/timeline',{...policy,budgetMs:600,now:()=>time,fetcher:async()=>{calls++;return new Response('',{status:404});},sleep:async ms=>{time+=ms;}}),/HTTP 404/);
  assert.equal(calls,2);
 });
+
+test('a real hung first attempt times out early enough for a successful retry',async()=>{
+ let calls=0;const attempts=[];
+ // AbortSignal.timeout uses an unref timer; keep the fake hung transport alive.
+ const keepAlive=setTimeout(()=>{},2000);
+ try{
+  const result=await collectionRequest('https://example.com',{budgetMs:1000,retryDelayMs:0,onAttempt:a=>attempts.push(a),fetcher:async(url,{signal})=>{
+   if(++calls===1)return new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(signal.reason),{once:true}));
+   return Response.json({ok:true});
+  }});
+  assert.deepEqual(result,{ok:true});assert.equal(calls,2);
+  assert.equal(attempts.length,2);assert.ok(attempts[0].timeoutMs<=500);assert.equal(attempts[0].ok,false);assert.equal(attempts[1].ok,true);
+ }finally{clearTimeout(keepAlive);}
+});
+
+test('only opt-in validated responses retry malformed or application-level failures',async()=>{
+ const validate=payload=>{if(payload.code!==200)throw new Error('Invalid timeline');return payload.results;};
+ let calls=0;const attempts=[];
+ const result=await collectionRequest('https://example.com',{validate,retryInvalidResponse:true,maxAttempts:3,sleep:async()=>{},onAttempt:a=>attempts.push(a),fetcher:async()=>++calls===1?new Response('{'):calls===2?Response.json({code:404}):Response.json({code:200,results:['verified identity']})});
+ assert.deepEqual(result,['verified identity']);assert.equal(calls,3);
+ assert.deepEqual(attempts.map(a=>a.ok),[false,false,true]);assert.deepEqual(attempts.map(a=>a.status),[200,200,200]);assert.match(attempts[1].error,/Invalid timeline/);
+ calls=0;
+ await assert.rejects(collectionRequest('https://example.com',{validate,fetcher:async()=>{calls++;return Response.json({code:404});}}),/Invalid timeline/);assert.equal(calls,1);
+ for(const [status,headers]of [[403,{}],[429,{'retry-after':'60'}]]){
+  calls=0;await assert.rejects(collectionRequest('https://example.com',{validate,retryInvalidResponse:true,retryStatuses:[404,429,503],maxAttempts:3,fetcher:async()=>{calls++;return new Response('',{status,headers});},sleep:async()=>assert.fail('must respect refusal or Retry-After')}),new RegExp(`HTTP ${status}`));assert.equal(calls,1);
+ }
+});
