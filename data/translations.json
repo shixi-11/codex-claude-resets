@@ -3234,7 +3234,7 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
+        "ja": "明日の午前10時PST前に、小さな船と一緒に到着します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
@@ -3399,10 +3399,10 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜に到着します。",
+        "ja": "PSTの深夜までに着陸します。",
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
-        "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
+        "ar": "يصل الأرض بحلول منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
       }
     },
@@ -3425,11 +3425,11 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     }
   },
   "pending": 396,
-  "lastAttemptAt": "2026-10-28T18:52:26.924Z"
+  "lastAttemptAt": "2026-10-28T23:14:24.306Z"
 }
