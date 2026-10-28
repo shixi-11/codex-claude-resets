@@ -33,7 +33,7 @@ test('Grok feedback joke is excluded only for the reviewed author, ID and comple
  assert.notEqual(classify('Not enough resets. A global reset will land.',joke).kind,'other');
 });
 test('migration is idempotent and promotes Day21 without carrying Day20 completion into the new cycle',async()=>{
- const events=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
+ const events=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8')).filter(e=>Date.parse(e.publishedAt)<Date.parse('2026-10-28T00:00:00Z'));
  const old=structuredClone(events);Object.assign(old.find(e=>e.id===id),{kind:'signal',state:'unconfirmed',reason:'ambiguous',rulesVersion:'1.4.18'});
  const next=reclassifyEvents(old),e=next.find(e=>e.id===id);validateEvent(e);
  for(const key of ['fullText','contentHash','publishedAt','verifiedAt'])assert.equal(e[key],old.find(e=>e.id===id)[key]);

@@ -1,0 +1,71 @@
+{
+  "embeds": {
+    "2115273064481218829": {
+      "url": "https://x.com/thsottiaux/status/2115273064481218829",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 23/ Much requested iCloud Main &amp; Calendar plugins. Just kidding, today is a reset. Still much requested though! <a href=\"https://t.co/tHe09XkVXH\">https://t.co/tHe09XkVXH</a></p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2115273064481218829?ref_src=twsrc%5Etfw\">October 28, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "2115273253711409208": {
+      "url": "https://x.com/thsottiaux/status/2115273253711409208",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Lands by midnight PST.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2115273253711409208?ref_src=twsrc%5Etfw\">October 28, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    }
+  },
+  "details": {
+    "2115273064481218829": {
+      "id": "2115273064481218829",
+      "url": "https://x.com/thsottiaux/status/2115273064481218829",
+      "author": {
+        "screen_name": "thsottiaux"
+      },
+      "text": "Day 23/ Much requested iCloud Main & Calendar plugins. Just kidding, today is a reset. Still much requested though!",
+      "raw_text": {
+        "text": "Day 23/ Much requested iCloud Main &amp; Calendar plugins. Just kidding, today is a reset. Still much requested though!",
+        "display_text_range": [
+          0,
+          119
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1793155373,
+      "replying_to": null,
+      "replying_to_status": null
+    },
+    "2115273253711409208": {
+      "id": "2115273253711409208",
+      "url": "https://x.com/thsottiaux/status/2115273253711409208",
+      "author": {
+        "screen_name": "thsottiaux"
+      },
+      "text": "Lands by midnight PST.",
+      "raw_text": {
+        "text": "Lands by midnight PST.",
+        "display_text_range": [
+          0,
+          22
+        ],
+        "facets": []
+      },
+      "created_timestamp": 1793155418,
+      "replying_to": "thsottiaux",
+      "replying_to_status": "2115273064481218829"
+    }
+  },
+  "reviewedAt": "2026-10-28T03:02:52.140Z"
+}

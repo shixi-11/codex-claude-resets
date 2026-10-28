@@ -1,10 +1,11 @@
 // Parse only explicit clock times with a named offset from complete originals.
 // Ambiguous wall-clock times and relative durations intentionally remain unset.
 export const isBeforeTenPacificDeadline = text => /^(?:Lands|Landing) tomorrow before 10am PST(?: together with a small ship)?[.!]?$/i.test(text.trim());
+export const isMidnightPacificDeadline = text => /^(?:Lands )?by midnight PST[.!]?$/i.test(text.trim());
 export function announcementTime(text, publishedAt, {truncated=false,author=""}={}) {
  if(truncated) return null;
  // Preserve literal PST when daylight-time usage makes the intended offset ambiguous.
- if(author.toLowerCase()==='thsottiaux'&&/^By midnight PST[.!]?$/i.test(text.trim()))return {resetAt:null,sourceTimezone:'PST',deadlineText:'by midnight PST',timeBasis:'source-timezone-ambiguous',timeKind:'deadline',approximate:true};
+ if(author.toLowerCase()==='thsottiaux'&&isMidnightPacificDeadline(text))return {resetAt:null,sourceTimezone:'PST',deadlineText:'by midnight PST',timeBasis:'source-timezone-ambiguous',timeKind:'deadline',approximate:true};
  // "Before" gives an upper bound. The author's literal PST during daylight
  // time does not resolve whether PST or colloquial Pacific time was intended.
  if(author.toLowerCase()==='thsottiaux'&&isBeforeTenPacificDeadline(text))return {resetAt:null,sourceTimezone:'PST',deadlineText:'tomorrow before 10am PST',timeBasis:'source-timezone-ambiguous',timeKind:'deadline',approximate:true};
