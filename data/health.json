@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-28T03:06:43.162Z",
-  "lastSuccessAt": "2026-10-27T23:46:31.330Z",
-  "discoveryAt": "2026-10-28T03:06:43.162Z",
+  "lastAttemptAt": "2026-10-28T05:39:16.044Z",
+  "lastSuccessAt": "2026-10-28T05:39:16.044Z",
+  "discoveryAt": "2026-10-28T05:39:16.044Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,8 +9,8 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": false,
-      "error": "No matching author posts returned"
+      "ok": true,
+      "candidates": 22
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -53,49 +53,26 @@
       "candidates": 17
     },
     {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
-      "ok": true,
-      "candidates": 452
-    },
-    {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
-      "ok": true,
-      "candidates": 69
-    },
-    {
-      "name": "Reset Radar · Claude link discovery only",
-      "url": "https://www.resetradar.com/data/events.json",
-      "ok": true,
-      "candidates": 30
-    },
-    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
-      "ok": false,
-      "checked": 45,
-      "failed": 1
+      "ok": true,
+      "checked": 11,
+      "failed": 0
     }
   ],
-  "status": "degraded",
-  "failedPosts": [
-    {
-      "url": "https://x.com/thsottiaux/status/2114228445043691592",
-      "error": "Empty post"
-    }
-  ],
+  "status": "ok",
+  "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-28T03:06:43.162Z",
-      "status": "degraded",
-      "checked": 39,
-      "failed": 1,
-      "discovered": 68,
+      "lastAttemptAt": "2026-10-28T05:39:16.044Z",
+      "status": "ok",
+      "checked": 5,
+      "failed": 0,
+      "discovered": 50,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": false
+          "ok": true
         },
         {
           "author": "OpenAIDevs",
@@ -106,10 +83,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-27T23:46:31.330Z"
+      "lastSuccessAt": "2026-10-28T05:39:16.044Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-28T03:06:43.162Z",
+      "lastAttemptAt": "2026-10-28T05:39:16.044Z",
       "status": "ok",
       "checked": 6,
       "failed": 0,
@@ -128,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-28T03:06:43.162Z"
+      "lastSuccessAt": "2026-10-28T05:39:16.044Z"
     }
   }
 }
