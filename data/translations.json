@@ -3425,10 +3425,11 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة."
+        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     }
   },
   "pending": 396,
-  "lastAttemptAt": "2026-10-28T08:44:44.124Z"
+  "lastAttemptAt": "2026-10-28T12:50:40.508Z"
 }
