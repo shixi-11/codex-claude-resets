@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-29T16:55:26.556Z",
-  "lastSuccessAt": "2026-10-29T16:55:26.556Z",
-  "discoveryAt": "2026-10-29T16:55:26.556Z",
+  "lastAttemptAt": "2026-10-29T21:49:02.125Z",
+  "lastSuccessAt": "2026-10-29T21:49:02.125Z",
+  "discoveryAt": "2026-10-29T21:49:02.125Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
-      "candidates": 20
+      "candidates": 21
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -18,7 +18,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 11
+      "candidates": 9
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -26,7 +26,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 14
+      "candidates": 13
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
@@ -56,7 +56,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 9,
+      "checked": 10,
       "failed": 0
     }
   ],
@@ -64,11 +64,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-29T16:55:26.556Z",
+      "lastAttemptAt": "2026-10-29T21:49:02.125Z",
       "status": "ok",
-      "checked": 6,
+      "checked": 7,
       "failed": 0,
-      "discovered": 45,
+      "discovered": 43,
       "authors": [
         {
           "author": "thsottiaux",
@@ -83,10 +83,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-29T16:55:26.556Z"
+      "lastSuccessAt": "2026-10-29T21:49:02.125Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-29T16:55:26.556Z",
+      "lastAttemptAt": "2026-10-29T21:49:02.125Z",
       "status": "ok",
       "checked": 3,
       "failed": 0,
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-29T16:55:26.556Z"
+      "lastSuccessAt": "2026-10-29T21:49:02.125Z"
     }
   }
 }

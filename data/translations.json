@@ -2695,7 +2695,7 @@
         "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
         "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
         "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
-        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
+        "de": "Der Tag, an dem wir die Vollkommenheit erreichen, wird von da an neu gestartet.",
         "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
       },
       "provider": "FxEmbed",
@@ -3043,7 +3043,8 @@
         "ja": "人々がTLから逃げ出して、今や路上で私にリセットを求めてくるようになりました。",
         "de": "Die Leute sind aus der TL geflüchtet und fragen mich jetzt auf der Straße nach Resets.",
         "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن.",
-        "fr": "Des gens ont échappé au TL et me demandent maintenant des réinitialisations dans la rue."
+        "fr": "Des gens ont échappé au TL et me demandent maintenant des réinitialisations dans la rue.",
+        "es": "La gente ha escapado del TL y ahora me está pidiendo reinicios en la calle."
       },
       "fullText": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
       "fullTexts": {
@@ -3052,12 +3053,12 @@
         "ko": "사람들이 TL에서 탈출해서 이제 거리에서 저한테 리셋을 요청하고 있어요. 나눠줄 작은 카드들을 만들 거예요.",
         "ja": "人々がTLから逃げ出して、今や路上で私にリセットを求めてくるようになりました。小さなカードを作って配るつもりです。",
         "fr": "Des gens ont échappé au TL et me demandent maintenant des réinitialisations dans la rue. Je vais faire de petites cartes à distribuer",
-        "es": "La gente ha escapado del TL y ahora me pide resets en la calle. Haré tarjetas pequeñas para repartir.",
+        "es": "La gente ha escapado del TL y ahora me está pidiendo reinicios en la calle. Haré pequeñas tarjetas para repartir.",
         "de": "Die Leute sind aus der TL geflüchtet und fragen mich jetzt auf der Straße nach Resets. Ich werde kleine Karten machen, um sie zu verteilen.",
         "ar": "لقد هرب الناس من الـ TL وأصبحوا يطلبون مني إعادة تعيينات في الشارع الآن. سأصنع بطاقات صغيرة لتوزيعها"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-22T10:21:23.477Z"
+      "translatedAt": "2026-10-29T21:49:28.405Z"
     },
     "2112432076767289678": {
       "excerpt": "and reset.",
@@ -3237,7 +3238,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
+        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3423,13 +3424,57 @@
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
-        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
+        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
+    },
+    "2115851621137784832": {
+      "excerpt": "Graduating from The Reset Company to The Token Company.",
+      "contentHash": "8e0d1e3817ace4c9a44da541cf45f5d63c41cd29ec3a18c66b13330a8b3707e3",
+      "texts": {
+        "ko": "리셋 컴퍼니에서 토큰 컴퍼니로의 졸업.",
+        "de": "Abschluss bei The Reset Company, Übergang zu The Token Company.",
+        "ar": "التخرج من شركة الإعادة التشغيل إلى شركة الرموز."
+      },
+      "fullText": "Graduating from The Reset Company to The Token Company.",
+      "fullTexts": {
+        "zh-Hant": "從 The Reset Company 畢業到 The Token Company。",
+        "ja": "The Reset Company から The Token Company への卒業。",
+        "ko": "리셋 컴퍼니에서 토큰 컴퍼니로의 졸업.",
+        "es": "Graduándose de The Reset Company a The Token Company.",
+        "fr": "Passer de The Reset Company à The Token Company.",
+        "de": "Abschluss bei The Reset Company, Übergang zu The Token Company.",
+        "ar": "التخرج من شركة الإعادة التشغيل إلى شركة الرموز."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-29T21:49:10.025Z"
+    },
+    "2115850175868727621": {
+      "excerpt": "Day 25/ We are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.",
+      "contentHash": "27c7a16b3f0f5f40f9bf1a4e4d53d7fd5b239edb40175c76c4399fa32da1bfb4",
+      "texts": {
+        "zh": "我们将把所有 Pro 100/200/500 层级和 Business Premium 的所有使用限额翻倍，即日起生效。",
+        "zh-Hant": "我們將從今天起對所有 Pro 100/200/500 級別和 Business Premium 的所有使用限制進行雙倍提升。",
+        "ja": "本日より、すべての Pro 100/200/500 ティアおよび Business Premium の全使用制限を倍にします。",
+        "es": "Estamos duplicando todos los límites de uso para todos los niveles Pro 100/200/500 y Business Premium, efectivo a partir de hoy.",
+        "de": "Wir verdoppeln alle Nutzungsgrenzen für alle Pro 100/200/500-Stufen und Business Premium, wirksam ab heute.",
+        "ar": "نحن نضاعف جميع حدود الاستخدام لجميع المستويات Pro 100/200/500 وBusiness Premium، بدءًا من اليوم."
+      },
+      "fullText": "Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard your kind feedback and won’t be reducing usage limits for Pro 200, so your Work and Codex usage will stay the same. We’re also going to continue offering extended limits for dots for now, and usage of your dot will still continue to be separate from your default usage.\n\nAnd we'll of course also keep shipping better models and other efficiency improvements that increase your effective usage over time.",
+      "fullTexts": {
+        "zh": "第 25 天/\n\n我们将把所有 Pro 100/200/500 层级和 Business Premium 的所有使用限额翻倍，即日起生效。\n\n我们听到了你们友善的反馈，不会降低 Pro 200 的使用限额，因此你们的工作和 Codex 使用量将保持不变。我们也将继续为 dots 提供扩展限额，目前你们的 dot 使用量仍将与默认使用量分开计算。\n\n当然，我们还会继续推出更好的模型和其他效率改进措施，这些将随着时间推移逐步提升你们的有效使用量。",
+        "zh-Hant": "第 25 天/\n\n我們將從今天起對所有 Pro 100/200/500 級別和 Business Premium 的所有使用限制進行雙倍提升。\n\n我們聽到了你們友善的回饋，並且不會降低 Pro 200 的使用限制，因此你的 Work 和 Codex 使用量將保持不變。我們也將繼續為 dots 提供延長的限制，並且你的 dot 使用量仍將繼續與你的預設使用量分開計算。\n\n當然，我們也將繼續推出更好的模型和其他效率改進，這些改進將隨著時間推移增加你的有效使用量。",
+        "ja": "Day 25/\n\n本日より、すべての Pro 100/200/500 ティアおよび Business Premium の全使用制限を倍にします。\n\n皆様からの温かいフィードバックを伺いましたので、Pro 200 の使用制限を削減せず、あなたの Work および Codex の使用量はこれまで通り維持されます。また、dots の拡張制限を当面継続して提供し、あなたの dot の使用はデフォルトの使用量とは引き続き分離されたままとなります。\n\nもちろん、より優れたモデルや他の効率向上策を継続的に提供し、時間とともにあなたの効果的な使用量を増やしていきます。",
+        "es": "Día 25/\n\nEstamos duplicando todos los límites de uso para todos los niveles Pro 100/200/500 y Business Premium, efectivo a partir de hoy.\n\nEscuchamos su amable retroalimentación y no reduciremos los límites de uso para Pro 200, por lo que su uso de Work y Codex se mantendrá igual. También continuaremos ofreciendo límites extendidos para dots por ahora, y el uso de su dot seguirá siendo separado de su uso predeterminado.\n\nY, por supuesto, también seguiremos lanzando mejores modelos y otras mejoras de eficiencia que aumenten su uso efectivo con el tiempo.",
+        "de": "Tag 25/\n\nWir verdoppeln alle Nutzungsgrenzen für alle Pro 100/200/500-Stufen und Business Premium, wirksam ab heute.\n\nWir haben Ihr freundliches Feedback gehört und werden die Nutzungsgrenzen für Pro 200 nicht reduzieren, sodass Ihre Nutzung von Work und Codex gleich bleiben wird. Wir werden auch vorerst weiterhin erweiterte Grenzen für dots anbieten, und die Nutzung Ihres dots wird weiterhin getrennt von Ihrer Standardnutzung bleiben.\n\nUnd wir werden natürlich auch weiterhin bessere Modelle und andere Effizienzverbesserungen ausliefern, die Ihre effektive Nutzung im Laufe der Zeit steigern.",
+        "ar": "اليوم 25/\n\nنحن نضاعف جميع حدود الاستخدام لجميع المستويات Pro 100/200/500 وBusiness Premium، بدءًا من اليوم.\n\nلقد سمعنا ردودكم اللطيفة وسنظل غير ناقصين حدود الاستخدام لـ Pro 200، لذا سيبقى استخدامكم لـ Work وCodex كما هو. كما سنستمر في تقديم حدود ممتدة لـ dots في الوقت الحالي، وسيظل استخدام نقطتكم منفصلاً عن استخدامكم الافتراضي.\n\nوسوف نواصل بالطبع إصدار نماذج أفضل وتحسينات كفاءة أخرى تزيد من استخدامكم الفعال مع مرور الوقت."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-29T21:49:12.543Z"
     }
   },
-  "pending": 396,
-  "lastAttemptAt": "2026-10-29T16:56:08.955Z"
+  "pending": 402,
+  "lastAttemptAt": "2026-10-29T21:49:30.175Z"
 }
