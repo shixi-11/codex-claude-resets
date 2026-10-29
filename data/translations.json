@@ -3235,7 +3235,7 @@
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
-        "ko": "작은 배와 함께 내일 오전 10시 PST 이전에 착륙합니다.",
+        "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
@@ -3422,7 +3422,7 @@
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
+        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
@@ -3431,5 +3431,5 @@
     }
   },
   "pending": 396,
-  "lastAttemptAt": "2026-10-29T09:56:08.549Z"
+  "lastAttemptAt": "2026-10-29T16:56:08.955Z"
 }
