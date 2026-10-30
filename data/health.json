@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-10-30T08:37:33.106Z",
-  "lastSuccessAt": "2026-10-30T08:37:33.106Z",
-  "discoveryAt": "2026-10-30T08:37:33.106Z",
+  "lastAttemptAt": "2026-10-30T08:46:38.747Z",
+  "lastSuccessAt": "2026-10-30T08:46:38.747Z",
+  "discoveryAt": "2026-10-30T08:46:38.747Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -64,7 +64,7 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-10-30T08:37:33.106Z",
+      "lastAttemptAt": "2026-10-30T08:46:38.747Z",
       "status": "ok",
       "checked": 7,
       "failed": 0,
@@ -83,10 +83,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-30T08:37:33.106Z"
+      "lastSuccessAt": "2026-10-30T08:46:38.747Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-10-30T08:37:33.106Z",
+      "lastAttemptAt": "2026-10-30T08:46:38.747Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
@@ -105,7 +105,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-10-30T08:37:33.106Z"
+      "lastSuccessAt": "2026-10-30T08:46:38.747Z"
     }
   }
 }
