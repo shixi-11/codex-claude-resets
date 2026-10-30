@@ -3215,8 +3215,8 @@
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
-        "de": "Kommt morgen vor 10 Uhr morgens PST an.",
-        "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
+        "de": "Landet morgen vor 10 Uhr PST.",
+        "ar": "يهبط غدًا قبل الساعة 10 صباحًا بتوقيت الباسيفيك."
       }
     },
     "2113492187770175603": {
@@ -3237,7 +3237,7 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日の午前10時PST前に、小型船と一緒に着陸します。",
+        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
@@ -3402,7 +3402,7 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜に到着します。",
+        "ja": "PSTの深夜までに着陸します。",
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
@@ -3483,5 +3483,5 @@
     }
   },
   "pending": 398,
-  "lastAttemptAt": "2026-10-30T08:47:05.742Z"
+  "lastAttemptAt": "2026-10-30T15:55:58.748Z"
 }
