@@ -46,4 +46,14 @@ test('partial collection and a missed schedule cannot silently pass',()=>{
  const pending=trackingAudit({events:[announced],platforms:state([announced]),health,now});assert.ok(pending.issues.some(i=>i.key.startsWith('completion:')));
 });
 
+test('October 28 six-hour scheduler gap remains independent of current source recovery',()=>{
+ const at=Date.parse('2026-10-28T18:52:40.654Z'),previous={checkedAt:'2026-10-28T12:50:54.916Z',openKeys:[]};
+ const recovered={status:'ok',lastSuccessAt:new Date(at).toISOString(),platforms:Object.fromEntries(['codex','claude'].map(id=>[id,{status:'ok',lastSuccessAt:new Date(at).toISOString()}]))};
+ const audit=trackingAudit({events:[],platforms:state([]),health:recovered,previous,now:at});
+ assert.equal(audit.issues.length,1);assert.equal(audit.issues[0].key,'collection-gap');assert.equal(audit.issues[0].gapMs,21705738);assert.equal(audit.issues[0].previousCheckedAt,previous.checkedAt);
+ const failed={...recovered,platforms:{...recovered.platforms,codex:{status:'degraded',lastSuccessAt:'2026-10-28T12:50:14.203Z'}}};
+ const degraded=trackingAudit({events:[],platforms:state([]),health:failed,previous,now:at});
+ assert.ok(degraded.issues.some(i=>i.key==='collection-gap'));assert.ok(degraded.issues.some(i=>i.key==='coverage:codex'));assert.ok(degraded.issues.some(i=>i.key==='stale:codex'));
+});
+
 

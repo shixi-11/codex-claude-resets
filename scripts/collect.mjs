@@ -40,15 +40,23 @@ try {
     // embeds independently check identities and visible text below.
     for(const author of ALLOWED_AUTHORS){
       const url=`https://api.fxtwitter.com/2/profile/${author}/statuses?count=40&with_replies=1`;
+      const attempts=[];
       try{
         // FxEmbed can transiently return an empty-timeline 404 for existing
         // accounts. Retry only these monitored timelines, inside the same
         // request/collection budgets; never treat an empty response as coverage.
-        const payload=await collectionRequest(url,{budgetMs:Math.min(18000,collectionDeadline-Date.now()),retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500});
-        const posts=timelineCandidates(payload,author);
-        if(!posts.length)throw new Error('No matching author posts returned');
-        candidates.push(...posts);health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:true,candidates:posts.length});
-      }catch(error){health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:false,error:error.message});}
+        const posts=await collectionRequest(url,{budgetMs:Math.min(18000,collectionDeadline-Date.now()),retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500,retryInvalidResponse:true,onAttempt:attempt=>attempts.push(attempt),validate:payload=>{
+          // A relay can carry its application status inside HTTP 200. Do not
+          // retry authentication refusals or throttling disguised this way.
+          if([401,403,429].includes(payload?.code)){
+            const error=new Error(`Relay application HTTP ${payload.code}`);error.retryable=false;throw error;
+          }
+          const posts=timelineCandidates(payload,author);
+          if(!posts.length)throw new Error('No matching author posts returned');
+          return posts;
+        }});
+        candidates.push(...posts);health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:true,candidates:posts.length,attempts});
+      }catch(error){health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:false,error:error.message,attempts});}
     }
     health.mode=candidates.length?'profile-relay':'community-discovery';
     // Independent public pages are discovery indexes only. Never accept their classifications or text as evidence.
