@@ -3081,7 +3081,7 @@
         "ja": "15日目／気にしないで、まだ調理中…そしてリセット。楽しんで。",
         "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋. 즐기세요.",
         "es": "Día 15/ No importa, todavía estamos cocinando... y reinicio. Disfruta.",
-        "fr": "Jour 15 / Peu importe, on est encore en train de mijoter... et remise à zéro. Profitez.",
+        "fr": "Jour 15/ Peu importe, nous cuisinons toujours... et recommençons. Profitez-en.",
         "de": "Tag 15/ Egal, wir kochen immer noch... und zurücksetzen. Viel Spaß.",
         "ar": "اليوم 15/ لا عليك، ما زلنا نطبخ... وإعادة تعيين. استمتع."
       },
@@ -3215,8 +3215,8 @@
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
-        "de": "Landet morgen vor 10 Uhr PST.",
-        "ar": "يهبط غدًا قبل الساعة 10 صباحًا بتوقيت الباسيفيك."
+        "de": "Kommt morgen vor 10 Uhr morgens PST an.",
+        "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
     },
     "2113492187770175603": {
@@ -3240,7 +3240,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3402,7 +3402,7 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜までに着陸します。",
+        "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
@@ -3428,7 +3428,7 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3480,8 +3480,61 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-30T01:57:14.481Z"
+    },
+    "2116256600436641887": {
+      "excerpt": "Better announce 28 days of reset",
+      "contentHash": "cf4602500c0b70a95a7607513fe0e5a99b2a01fa5f2e93f10d04b3db150b9fb6",
+      "texts": {
+        "zh": "最好宣布 28 天的重置",
+        "zh-Hant": "最好宣布 28 天的重置",
+        "ja": "28日間のリセットを発表する方が良い",
+        "ko": "28일 리셋을 더 잘 공지하는 게 좋겠어",
+        "fr": "Mieux vaut annoncer 28 jours de réinitialisation",
+        "es": "Mejor anunciar 28 días de reinicio",
+        "de": "Besser 28 Tage Reset ankündigen",
+        "ar": "أفضل الإعلان عن 28 يومًا من إعادة الضبط"
+      },
+      "fullText": "Better announce 28 days of reset",
+      "fullTexts": {
+        "zh": "最好宣布 28 天的重置",
+        "zh-Hant": "最好宣布 28 天的重置",
+        "ja": "28日間のリセットを発表する方が良い",
+        "ko": "28일 리셋을 더 잘 공지하는 게 좋겠어",
+        "fr": "Mieux vaut annoncer 28 jours de réinitialisation",
+        "es": "Mejor anunciar 28 días de reinicio",
+        "de": "Besser 28 Tage Reset ankündigen",
+        "ar": "أفضل الإعلان عن 28 يومًا من إعادة الضبط"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-30T20:46:42.355Z"
+    },
+    "2116220869479428500": {
+      "excerpt": "We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers.",
+      "contentHash": "7898af24c40787e9944de7b25c683423e909cee4ada657d4cf6bf495baac68b1",
+      "texts": {
+        "zh": "我们还正在移除已验证 Ultra 账户的 5 小时限制，从今天开始适用于大多数现有订阅者。",
+        "zh-Hant": "我們還將從今天開始為已驗證的 Ultra 帳戶移除 5 小時限制，適用於大多數現有訂閱者。",
+        "ja": "また、本日より、ほとんどの既存のサブスクリプションを持つ認証済みUltraアカウントについて、5時間の制限を削除します。",
+        "ko": "또한 오늘부터 대부분의 기존 구독자를 대상으로 인증된 Ultra 계정에 대한 5시간 제한을 제거합니다.",
+        "es": "También estamos eliminando el límite de 5 horas para las cuentas Ultra verificadas, a partir de hoy para la mayoría de los suscriptores existentes.",
+        "fr": "Nous supprimons également la limite de 5 heures pour les comptes Ultra vérifiés, à partir d’aujourd’hui pour la plupart des abonnés existants.",
+        "ar": "تبقى الحدود الأسبوعية دون تغيير."
+      },
+      "fullText": "We’re renaming our Max plans: \n\nMax 5x → Max\nMax 20x → Ultra\n\nMax is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do.\n\nWe’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers. Newer accounts keep a temporary limit until they’re verified, which helps us prevent fraud and abuse. You'll get an email when it's removed.\n\nWeekly limits remain unchanged. View our plans here:  https://t.co/niRpyGF5Me",
+      "fullTexts": {
+        "zh": "我们正在更名为我们的 Max 计划：\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax 仍然是每月 100 美元，Ultra 仍然是 200 美元。如果您是订阅者，则无需执行任何操作。\n\n我们还正在移除已验证 Ultra 账户的 5 小时限制，从今天开始适用于大多数现有订阅者。新账户在验证之前仍保留临时限制，这有助于我们防止欺诈和滥用。当限制移除时，您将收到一封电子邮件。\n\n每周限制保持不变。在这里查看我们的计划：",
+        "zh-Hant": "我們正在重新命名我們的 Max 方案：\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax 仍然是每月 100 美元，Ultra 仍然是 200 美元。如果您是訂閱者，則無需執行任何操作。\n\n我們還將從今天開始為已驗證的 Ultra 帳戶移除 5 小時限制，適用於大多數現有訂閱者。新帳戶在驗證之前將保留臨時限制，這有助於我們防止詐騙和濫用。移除限制時，您將收到電子郵件。\n\n每週限制保持不變。在此查看我們的方案：",
+        "ja": "Maxプランの名称を変更します：\n\nMax 5x → Max\nMax 20x → Ultra\n\nMaxは引き続き月額$100、Ultraは引き続き$200です。サブスクリプション中の場合、何もする必要はありません。\n\nまた、本日より、ほとんどの既存のサブスクリプションを持つ認証済みUltraアカウントについて、5時間の制限を削除します。新規アカウントは認証が完了するまで一時的な制限が残ります。これは、詐欺や悪用を防ぐためです。制限が削除されたら、メールをお送りします。\n\n週次制限は変更ありません。プランはこちらでご覧ください：",
+        "ko": "Max 플랜을 이름 변경합니다:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax는 여전히 $100/월이며, Ultra는 여전히 $200입니다. 구독자라면 할 일은 아무것도 없습니다.\n\n또한 오늘부터 대부분의 기존 구독자를 대상으로 인증된 Ultra 계정에 대한 5시간 제한을 제거합니다. 새 계정은 인증될 때까지 임시 제한이 유지되며, 이는 사기와 남용을 방지하는 데 도움이 됩니다. 제한이 제거되면 이메일을 받게 됩니다.\n\n주간 제한은 변경되지 않습니다. 플랜 보기:",
+        "es": "Estamos renombrando nuestros planes Max:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax sigue costando $100/mes, y Ultra sigue costando $200. Si eres suscriptor, no necesitas hacer nada.\n\nTambién estamos eliminando el límite de 5 horas para las cuentas Ultra verificadas, a partir de hoy para la mayoría de los suscriptores existentes. Las cuentas más nuevas mantienen un límite temporal hasta que se verifiquen, lo que nos ayuda a prevenir fraudes y abusos. Recibirás un correo electrónico cuando se elimine.\n\nLos límites semanales permanecen sin cambios. Consulta nuestros planes aquí:",
+        "fr": "Nous renommons nos plans Max :\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax reste à 100 $/mois, et Ultra reste à 200 $. Si vous êtes abonné, il n’y a rien que vous ayez besoin de faire.\n\nNous supprimons également la limite de 5 heures pour les comptes Ultra vérifiés, à partir d’aujourd’hui pour la plupart des abonnés existants. Les comptes plus récents conservent une limite temporaire jusqu’à ce qu’ils soient vérifiés, ce qui nous aide à prévenir la fraude et les abus. Vous recevrez un e-mail lorsque la limite sera supprimée.\n\nLes limites hebdomadaires restent inchangées. Consultez nos plans ici :",
+        "ar": "نحن نعيد تسمية خطط Max الخاصة بنا:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax لا يزال بـ 100 دولار/شهر، وUltra لا يزال بـ 200 دولار. إذا كنت مشتركًا، لا يوجد شيء تحتاج إلى القيام به.\n\nنحن أيضًا نزيل حد الـ 5 ساعات لحسابات Ultra الموثقة، بدءًا من اليوم مع معظم المشتركين الحاليين. الحسابات الأحدث تحتفظ بحد مؤقت حتى يتم التحقق منها، مما يساعدنا على منع الاحتيال والإساءة. ستتلقى بريدًا إلكترونيًا عند إزالته.\n\nتبقى الحدود الأسبوعية دون تغيير. شاهد خططنا هنا:",
+        "de": "Wir benennen unsere Max-Pläne um:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax kostet immer noch 100 $/Monat, und Ultra kostet immer noch 200 $. Wenn Sie Abonnent sind, müssen Sie nichts unternehmen.\n\nWir entfernen außerdem die 5-Stunden-Grenze für verifizierte Ultra-Accounts, beginnend heute bei den meisten bestehenden Abonnenten. Neuere Accounts behalten vorübergehend eine Grenze, bis sie verifiziert sind, was uns hilft, Betrug und Missbrauch zu verhindern. Sie erhalten eine E-Mail, wenn sie entfernt wird.\n\nWöchentliche Grenzen bleiben unverändert. Sehen Sie sich unsere Pläne hier an:"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-10-30T20:46:43.811Z"
     }
   },
-  "pending": 398,
-  "lastAttemptAt": "2026-10-30T15:55:58.748Z"
+  "pending": 399,
+  "lastAttemptAt": "2026-10-30T20:47:03.291Z"
 }
