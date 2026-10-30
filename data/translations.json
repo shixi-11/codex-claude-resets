@@ -2502,21 +2502,22 @@
         "de": "Ich gebe gerne Resets.",
         "ar": "أنا أحب بالفعل إعطاء إعادة التعيين",
         "zh": "我确实喜欢给予重置",
-        "zh-Hant": "我確實喜歡給予重置"
+        "zh-Hant": "我確實喜歡給予重置",
+        "fr": "J'aime donner des réinitialisations"
       },
       "fullText": "I do like giving resets",
       "fullTexts": {
         "ja": "リセットを与えるのは好きです。",
         "ko": "저는 리셋을 주는 걸 좋아해요",
         "es": "Sí que me gusta dar reseteos",
-        "fr": "J’aime bien donner des resets",
+        "fr": "@The_Alex J'aime donner des réinitialisations",
         "de": "Ich gebe gerne Resets.",
         "ar": "أنا أحب بالفعل إعطاء إعادة التعيين",
         "zh": "我确实喜欢给予重置",
         "zh-Hant": "我確實喜歡給予重置"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-07T02:16:59.635Z"
+      "translatedAt": "2026-10-30T01:57:39.614Z"
     },
     "2107676072871600470": {
       "excerpt": "the reset has been processed.",
@@ -2695,7 +2696,7 @@
         "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
         "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
         "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
-        "de": "Der Tag, an dem wir die Vollkommenheit erreichen, wird von da an neu gestartet.",
+        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
         "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
       },
       "provider": "FxEmbed",
@@ -3239,7 +3240,7 @@
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
-        "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
+        "de": "Landung morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
     },
@@ -3424,7 +3425,7 @@
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
-        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
+        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
@@ -3446,7 +3447,8 @@
         "es": "Graduándose de The Reset Company a The Token Company.",
         "fr": "Passer de The Reset Company à The Token Company.",
         "de": "Abschluss bei The Reset Company, Übergang zu The Token Company.",
-        "ar": "التخرج من شركة الإعادة التشغيل إلى شركة الرموز."
+        "ar": "التخرج من شركة الإعادة التشغيل إلى شركة الرموز.",
+        "zh": "从 The Reset Company 毕业到 The Token Company。"
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-10-29T21:49:10.025Z"
@@ -3460,7 +3462,9 @@
         "ja": "本日より、すべての Pro 100/200/500 ティアおよび Business Premium の全使用制限を倍にします。",
         "es": "Estamos duplicando todos los límites de uso para todos los niveles Pro 100/200/500 y Business Premium, efectivo a partir de hoy.",
         "de": "Wir verdoppeln alle Nutzungsgrenzen für alle Pro 100/200/500-Stufen und Business Premium, wirksam ab heute.",
-        "ar": "نحن نضاعف جميع حدود الاستخدام لجميع المستويات Pro 100/200/500 وBusiness Premium، بدءًا من اليوم."
+        "ar": "نحن نضاعف جميع حدود الاستخدام لجميع المستويات Pro 100/200/500 وBusiness Premium، بدءًا من اليوم.",
+        "ko": "오늘부터 모든 Pro 100/200/500 등급과 Business Premium에 대해 모든 사용 한도를 두 배로 늘립니다.",
+        "fr": "Nous doublons toutes les limites d'utilisation pour tous les niveaux Pro 100/200/500 et Business Premium, effectif dès aujourd'hui."
       },
       "fullText": "Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard your kind feedback and won’t be reducing usage limits for Pro 200, so your Work and Codex usage will stay the same. We’re also going to continue offering extended limits for dots for now, and usage of your dot will still continue to be separate from your default usage.\n\nAnd we'll of course also keep shipping better models and other efficiency improvements that increase your effective usage over time.",
       "fullTexts": {
@@ -3469,12 +3473,14 @@
         "ja": "Day 25/\n\n本日より、すべての Pro 100/200/500 ティアおよび Business Premium の全使用制限を倍にします。\n\n皆様からの温かいフィードバックを伺いましたので、Pro 200 の使用制限を削減せず、あなたの Work および Codex の使用量はこれまで通り維持されます。また、dots の拡張制限を当面継続して提供し、あなたの dot の使用はデフォルトの使用量とは引き続き分離されたままとなります。\n\nもちろん、より優れたモデルや他の効率向上策を継続的に提供し、時間とともにあなたの効果的な使用量を増やしていきます。",
         "es": "Día 25/\n\nEstamos duplicando todos los límites de uso para todos los niveles Pro 100/200/500 y Business Premium, efectivo a partir de hoy.\n\nEscuchamos su amable retroalimentación y no reduciremos los límites de uso para Pro 200, por lo que su uso de Work y Codex se mantendrá igual. También continuaremos ofreciendo límites extendidos para dots por ahora, y el uso de su dot seguirá siendo separado de su uso predeterminado.\n\nY, por supuesto, también seguiremos lanzando mejores modelos y otras mejoras de eficiencia que aumenten su uso efectivo con el tiempo.",
         "de": "Tag 25/\n\nWir verdoppeln alle Nutzungsgrenzen für alle Pro 100/200/500-Stufen und Business Premium, wirksam ab heute.\n\nWir haben Ihr freundliches Feedback gehört und werden die Nutzungsgrenzen für Pro 200 nicht reduzieren, sodass Ihre Nutzung von Work und Codex gleich bleiben wird. Wir werden auch vorerst weiterhin erweiterte Grenzen für dots anbieten, und die Nutzung Ihres dots wird weiterhin getrennt von Ihrer Standardnutzung bleiben.\n\nUnd wir werden natürlich auch weiterhin bessere Modelle und andere Effizienzverbesserungen ausliefern, die Ihre effektive Nutzung im Laufe der Zeit steigern.",
-        "ar": "اليوم 25/\n\nنحن نضاعف جميع حدود الاستخدام لجميع المستويات Pro 100/200/500 وBusiness Premium، بدءًا من اليوم.\n\nلقد سمعنا ردودكم اللطيفة وسنظل غير ناقصين حدود الاستخدام لـ Pro 200، لذا سيبقى استخدامكم لـ Work وCodex كما هو. كما سنستمر في تقديم حدود ممتدة لـ dots في الوقت الحالي، وسيظل استخدام نقطتكم منفصلاً عن استخدامكم الافتراضي.\n\nوسوف نواصل بالطبع إصدار نماذج أفضل وتحسينات كفاءة أخرى تزيد من استخدامكم الفعال مع مرور الوقت."
+        "ar": "اليوم 25/\n\nنحن نضاعف جميع حدود الاستخدام لجميع المستويات Pro 100/200/500 وBusiness Premium، بدءًا من اليوم.\n\nلقد سمعنا ردودكم اللطيفة وسنظل غير ناقصين حدود الاستخدام لـ Pro 200، لذا سيبقى استخدامكم لـ Work وCodex كما هو. كما سنستمر في تقديم حدود ممتدة لـ dots في الوقت الحالي، وسيظل استخدام نقطتكم منفصلاً عن استخدامكم الافتراضي.\n\nوسوف نواصل بالطبع إصدار نماذج أفضل وتحسينات كفاءة أخرى تزيد من استخدامكم الفعال مع مرور الوقت.",
+        "ko": "25일째/\n\n오늘부터 모든 Pro 100/200/500 등급과 Business Premium에 대해 모든 사용 한도를 두 배로 늘립니다.\n\n여러분의 친절한 피드백을 듣고 Pro 200의 사용 한도를 줄이지 않기로 했습니다. 따라서 여러분의 Work와 Codex 사용량은 그대로 유지될 것입니다. 또한 현재로서는 dots에 대한 확장된 한도를 계속 제공할 예정이며, 여러분의 dot 사용은 기본 사용량과 여전히 별도로 유지될 것입니다.\n\n그리고 물론 더 나은 모델을 출시하고 시간이 지남에 따라 효과적인 사용량을 증가시키는 기타 효율성 개선 사항을 계속 제공할 것입니다.",
+        "fr": "Jour 25/\n\nNous doublons toutes les limites d'utilisation pour tous les niveaux Pro 100/200/500 et Business Premium, effectif dès aujourd'hui.\n\nNous avons entendu vos retours bienveillants et ne réduirons pas les limites d'utilisation pour Pro 200, donc votre utilisation de Work et Codex restera inchangée. Nous continuerons également pour l'instant à offrir des limites étendues pour les dots, et l'utilisation de votre dot continuera d'être séparée de votre utilisation par défaut.\n\nEt bien sûr, nous continuerons à livrer de meilleurs modèles et d'autres améliorations d'efficacité qui augmenteront votre utilisation effective au fil du temps."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-29T21:49:12.543Z"
+      "translatedAt": "2026-10-30T01:57:14.481Z"
     }
   },
-  "pending": 402,
-  "lastAttemptAt": "2026-10-29T21:49:30.175Z"
+  "pending": 399,
+  "lastAttemptAt": "2026-10-30T01:57:45.785Z"
 }
