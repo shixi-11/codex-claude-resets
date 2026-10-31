@@ -3213,7 +3213,7 @@
       "fullTexts": {
         "zh": "明天太平洋标准时间上午10点前抵达。",
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
-        "ja": "明日午前10時PST前に到着します。",
+        "ja": "明日の午前10時までにPSTに到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
@@ -3242,7 +3242,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
+        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3405,7 +3405,7 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Llega a las 12 de la medianoche PST.",
+        "es": "Aterriza a medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
@@ -3431,7 +3431,7 @@
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
-        "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
+        "fr": "Et c'est fait. À demain pour de bonnes nouvelles."
       }
     },
     "2115851621137784832": {
@@ -3563,5 +3563,5 @@
     }
   },
   "pending": 399,
-  "lastAttemptAt": "2026-10-31T08:33:54.380Z"
+  "lastAttemptAt": "2026-10-31T13:38:55.552Z"
 }
