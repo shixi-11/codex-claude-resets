@@ -2504,13 +2504,14 @@
         "ar": "أنا أحب بالفعل إعطاء إعادة التعيين",
         "zh": "我确实喜欢给予重置",
         "zh-Hant": "我確實喜歡給予重置",
-        "fr": "J'aime donner des réinitialisations"
+        "fr": "J'aime donner des réinitialisations",
+        "es": "Me gusta dar reinicios"
       },
       "fullText": "I do like giving resets",
       "fullTexts": {
         "ja": "リセットを与えるのは好きです。",
         "ko": "저는 리셋을 주는 걸 좋아해요",
-        "es": "Sí que me gusta dar reseteos",
+        "es": "@The_Alex Me gusta dar reinicios",
         "fr": "@The_Alex J'aime donner des réinitialisations",
         "de": "Ich gebe gerne Resets.",
         "ar": "أنا أحب بالفعل إعطاء إعادة التعيين",
@@ -2518,7 +2519,7 @@
         "zh-Hant": "我確實喜歡給予重置"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-30T01:57:39.614Z"
+      "translatedAt": "2026-10-31T00:47:23.640Z"
     },
     "2107676072871600470": {
       "excerpt": "the reset has been processed.",
@@ -3072,7 +3073,8 @@
         "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋.",
         "es": "y reinicio.",
         "de": "und zurücksetzen.",
-        "ar": "وإعادة تعيين."
+        "ar": "وإعادة تعيين.",
+        "fr": "et réinitialisons."
       },
       "fullText": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
       "fullTexts": {
@@ -3081,12 +3083,12 @@
         "ja": "15日目／気にしないで、まだ調理中…そしてリセット。楽しんで。",
         "ko": "15일차 / 아무튼, 우리는 여전히 요리 중… 그리고 리셋. 즐기세요.",
         "es": "Día 15/ No importa, todavía estamos cocinando... y reinicio. Disfruta.",
-        "fr": "Jour 15/ Peu importe, nous cuisinons toujours... et recommençons. Profitez-en.",
+        "fr": "Jour 15/ Peu importe, nous cuisinons toujours... et réinitialisons. Profitez-en.",
         "de": "Tag 15/ Egal, wir kochen immer noch... und zurücksetzen. Viel Spaß.",
         "ar": "اليوم 15/ لا عليك، ما زلنا نطبخ... وإعادة تعيين. استمتع."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-20T10:02:10.087Z"
+      "translatedAt": "2026-10-31T00:47:22.825Z"
     },
     "2112712984644784534": {
       "excerpt": "Day 16/ You can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever…",
@@ -3428,7 +3430,7 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
+        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3535,6 +3537,6 @@
       "translatedAt": "2026-10-30T20:46:43.811Z"
     }
   },
-  "pending": 399,
-  "lastAttemptAt": "2026-10-30T20:47:03.291Z"
+  "pending": 397,
+  "lastAttemptAt": "2026-10-31T00:47:27.010Z"
 }
