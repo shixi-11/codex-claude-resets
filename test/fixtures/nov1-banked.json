@@ -1,0 +1,158 @@
+{
+  "embeds": {
+    "2116692529970311254": {
+      "url": "https://x.com/thsottiaux/status/2116692529970311254",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Banked 1/2</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2116692529970311254?ref_src=twsrc%5Etfw\">November 1, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    },
+    "2116405414921384099": {
+      "url": "https://x.com/thsottiaux/status/2116405414921384099",
+      "author_name": "Tibo",
+      "author_url": "https://x.com/thsottiaux",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.<a href=\"https://t.co/iQxsqbuk0f\">https://t.co/iQxsqbuk0f</a></p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2116405414921384099?ref_src=twsrc%5Etfw\">October 31, 2026</a></blockquote>\n\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "X",
+      "provider_url": "https://x.com",
+      "version": "1.0"
+    }
+  },
+  "details": {
+    "2116692529970311254": {
+      "url": "https://x.com/thsottiaux/status/2116692529970311254",
+      "id": "2116692529970311254",
+      "text": "Banked 1/2",
+      "raw_text": {
+        "text": "Banked 1/2",
+        "display_text_range": [
+          0,
+          10
+        ],
+        "facets": []
+      },
+      "author": {
+        "screen_name": "thsottiaux",
+        "url": "https://x.com/thsottiaux",
+        "id": "1953337039510003712",
+        "followers": 972320,
+        "following": 76,
+        "likes": 10616,
+        "media_count": 158,
+        "name": "Tibo",
+        "description": "Codex & ChatGPT @OpenAI",
+        "raw_description": {
+          "text": "Codex & ChatGPT @OpenAI",
+          "facets": []
+        },
+        "location": "",
+        "banner_url": "",
+        "avatar_url": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg",
+        "joined": "Thu Aug 07 06:07:07 +0000 2025",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "avatar_color": null
+      },
+      "replies": 1537,
+      "retweets": 223,
+      "likes": 9181,
+      "bookmarks": 201,
+      "quotes": 254,
+      "created_at": "Sun Nov 01 00:43:20 +0000 2026",
+      "created_timestamp": 1793493800,
+      "views": 1119489,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "en",
+      "replying_to": null,
+      "replying_to_status": null,
+      "twitter_card": "tweet",
+      "color": null,
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    "2116405414921384099": {
+      "url": "https://x.com/thsottiaux/status/2116405414921384099",
+      "id": "2116405414921384099",
+      "text": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
+      "raw_text": {
+        "text": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
+        "display_text_range": [
+          0,
+          194
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              171,
+              194
+            ],
+            "original": "https://t.co/iQxsqbuk0f",
+            "replacement": "https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
+            "display": "help.openai.com/en/articles/20…"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "thsottiaux",
+        "url": "https://x.com/thsottiaux",
+        "id": "1953337039510003712",
+        "followers": 972320,
+        "following": 76,
+        "likes": 10616,
+        "media_count": 158,
+        "name": "Tibo",
+        "description": "Codex & ChatGPT @OpenAI",
+        "raw_description": {
+          "text": "Codex & ChatGPT @OpenAI",
+          "facets": []
+        },
+        "location": "",
+        "banner_url": "",
+        "avatar_url": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg",
+        "joined": "Thu Aug 07 06:07:07 +0000 2025",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "avatar_color": null
+      },
+      "replies": 2589,
+      "retweets": 642,
+      "likes": 14298,
+      "bookmarks": 1121,
+      "quotes": 944,
+      "created_at": "Sat Oct 31 05:42:26 +0000 2026",
+      "created_timestamp": 1793425346,
+      "possibly_sensitive": false,
+      "views": 2866075,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "en",
+      "replying_to": null,
+      "replying_to_status": null,
+      "twitter_card": "tweet",
+      "color": null,
+      "provider": "twitter",
+      "reposted_by": null
+    }
+  }
+}

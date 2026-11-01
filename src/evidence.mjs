@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.21';
+export const RULES_VERSION = '1.4.23';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -70,21 +70,21 @@ export function reclassifyEvents(events) {
 export const isResetTiming = text => isBeforeTenPacificDeadline(text) || isMidnightPacificDeadline(text) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
-export const isReviewedResetSource = source => source?.id==='2111566005684289735' && source.author?.toLowerCase()==='thsottiaux';
-export const reviewedResetAnnouncement = ({text='',...source}={}) => isReviewedResetSource(source) && text.trim()==='Done' ? '2111492738025959922' : null;
+export const isReviewedResetSource = source => ['2111566005684289735','2116692529970311254'].includes(source?.id) && source.author?.toLowerCase()==='thsottiaux';
+export const reviewedResetAnnouncement = ({text='',...source}={}) => source.author?.toLowerCase()==='thsottiaux' ? (source.id==='2111566005684289735' && text.trim()==='Done' ? '2111492738025959922' : source.id==='2116692529970311254' && text.trim()==='Banked 1/2' ? '2116405414921384099' : null) : null;
 // Keywordless propagation is meaningful only through a verified reset quote/reply.
 export const isLinkedPropagation = text => /^It is (?:all|fully) propagated[.!](?:\s+Enjoy some mad codexing tomorrow[.!])?(?:\s+Fun week ahead(?: too)?[.!])?$/i.test(text.trim());
 export const needsResetContext = (text,source={}) => isResetTiming(text) || isLinkedPropagation(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?|And it's done\. See you tomorrow for some good news\.)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
 // Relay raw text retains a trailing media shortlink removed by the official embed.
 const resetDaySignal = text => /^(?:The reports of my reset button being lost are greatly exaggerated\s+)?Day \d+\/\s*(?:Reset|Le limit reset|Rest (?:and|&) reset)[.!]?$/i.test(text.replace(/\s+https:\/\/t\.co\/[A-Za-z0-9]+\s*$/,'').trim());
-export function validResetContext(context,author,publishedAt,{allowDaySignal=false,depth=0}={}) {
+export function validResetContext(context,author,publishedAt,{allowDaySignal=false,allowBanked=false,depth=0}={}) {
   if(depth>1)return false;
   const post=parsePostUrl(context?.sourceUrl),gap=Date.parse(publishedAt)-Date.parse(context?.publishedAt);
   if(!(post && post.id===context.id && post.author.toLowerCase()===author.toLowerCase() && context.author?.toLowerCase()===author.toLowerCase() && !context.truncated && ['x-oembed','x-oembed+fxembed','x-api'].includes(context.provenance) && /^[0-9a-f]{64}$/.test(context.contentHash||'') && Number.isFinite(Date.parse(context.verifiedAt)) && gap>=0 && gap<=48*3600000))return false;
   if(allowDaySignal && author.toLowerCase()==='thsottiaux' && resetDaySignal(context.fullText||'') && !context.resetContext)return true;
   if(isResetTiming(context.fullText||''))return author.toLowerCase()==='thsottiaux' && validResetContext(context.resetContext,author,context.publishedAt,{allowDaySignal:true,depth:depth+1});
-  const result=classify(context.fullText||'',{author:context.author});
-  return result.kind==='global' && result.state==='announced';
+  const result=classify(context.fullText||'',{id:context.id,author:context.author});
+  return (allowBanked ? (result.kind==='banked' && result.reason==='explicit-bank-announcement') : result.kind==='global') && result.state==='announced';
 }
 export function classify(text, { id, truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
@@ -94,14 +94,23 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  // Reviewed Day 26 promises two banked credits, not a global reset or exact time.
+  if (author.toLowerCase()==='thsottiaux' && id==='2116405414921384099' && value.replace(/\s+https:\/\/(?:t\.co\/[A-Za-z0-9]+|help\.openai\.com\/en\/articles\/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile)$/,'')==='Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.') return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
+  // Reviewed primary reply to Claude's plan rename: commentary, not a
+  // Codex reset. Keep its source record without promoting it into a reset.
+  if (author.toLowerCase()==='thsottiaux' && id==='2116256600436641887' && value==='Better announce 28 days of reset') return {kind:'commentary',state:'information',reason:'reviewed-policy-commentary'};
+  // Complete official Ultra policy: conditional five-hour removal, not a reset.
+  // Exact identity/text guard keeps amended, truncated or quoted claims in review.
+  if (author.toLowerCase()==='claudeai' && id==='2116220869479428500' && value==="we are renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you're a subscriber, there's nothing you need to do. we are also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers. Newer accounts keep a temporary limit until they're verified, which helps us prevent fraud and abuse. You'll get an email when it's removed. Weekly limits remain unchanged. View our plans here: https://t.co/niRpyGF5Me") return {kind:'usage',state:'information',reason:'usage-change'};
   // Reviewed in its primary X reply context: a joke answering @larsencc about
   // @bot/Grok (parent 2114462742757449730), not a Codex reset announcement.
   if (author.toLowerCase()==='thsottiaux' && id==='2114599388454481930' && value==='Not enough resets') return {kind:'other',state:'information',reason:'reviewed-unrelated-reply'};
   // Keywordless claims need a recent, independently verified same-author
   // announcement; a reviewed independent post also needs its editorial marker.
   if (linked) {
-    const timing=isResetTiming(value);
+    const timing=isResetTiming(value),banked=id==='2116692529970311254' && reviewed==='2116405414921384099';
     if(reviewed && (resetContext?.id!==reviewed || resetContext.relation!=='reviewed-sequence' || resetContext.relationProvenance!=='editorial-primary'))return unknown;
+    if(banked)return validResetContext(resetContext,author,publishedAt,{allowBanked:true}) && resetContext.id===reviewed ? {kind:'banked',state:'reported',reason:'reviewed-bank-grant'} : unknown;
     return validResetContext(resetContext,author,publishedAt,{allowDaySignal:timing})?{kind:'global',state:timing?'announced':'reported',reason:timing?'linked-announcement':reviewed?'reviewed-completion':'linked-completion'}:unknown;
   }
   if (/\b(?:he|she|they|someone) (?:said|says)|\b(?:quote|quoted|correction|retraction|retracted|hypothetical|example)\b|[“”"`]/i.test(value.replace(/"you know when you try it"/gi,''))) return unknown;
@@ -165,7 +174,7 @@ export function validateEvent(event) {
   if (!post || post.id !== event.id) throw new Error('Invalid source');
   if (typeof event.author !== 'string' || event.author.toLowerCase() !== post.author.toLowerCase()) throw new Error('Event author mismatch');
   if (event.platform && event.platform !== postPlatform(event.author)) throw new Error('Event platform mismatch');
-  if (!['global', 'banked', 'usage', 'signal'].includes(event.kind)) throw new Error('Invalid kind');
+  if (!['global', 'banked', 'usage', 'signal', 'commentary'].includes(event.kind)) throw new Error('Invalid kind');
   if (!['reported', 'announced', 'information', 'unconfirmed'].includes(event.state)) throw new Error('Invalid state');
   if (!Number.isFinite(Date.parse(event.publishedAt)) || !Number.isFinite(Date.parse(event.verifiedAt))) throw new Error('Invalid date');
   if (event.truncated && event.state !== 'unconfirmed') throw new Error('Incomplete evidence cannot confirm a claim');
@@ -173,9 +182,10 @@ export function validateEvent(event) {
   if (typeof event.excerpt !== 'string' || !event.excerpt.trim() || event.excerpt.split(/\s+/).length > 25) throw new Error('Invalid excerpt');
   if (event.fullText!==undefined&&(typeof event.fullText!=='string'||!event.fullText.trim()||event.fullText.length>20000||event.truncated)) throw new Error('Invalid full text');
   if (!event.rulesVersion || !/^[0-9a-f]{64}$/.test(event.contentHash)) throw new Error('Missing version anchor');
-  if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:isResetTiming(event.fullText||'')})) throw new Error('Invalid reset context');
+  if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:isResetTiming(event.fullText||''),allowBanked:event.reason==='reviewed-bank-grant'})) throw new Error('Invalid reset context');
   if (event.reason==='linked-announcement' && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:true})) throw new Error('Announcement needs verified reset context');
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
+  if (event.reason==='reviewed-bank-grant' && (event.kind!=='banked' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-bank-grant')) throw new Error('Bank grant needs its pinned source and verified editorial context');
   if (event.reason==='reviewed-completion' && (event.kind!=='global' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-completion')) throw new Error('Reviewed completion needs its pinned source and verified editorial context');
   return true;
 }
