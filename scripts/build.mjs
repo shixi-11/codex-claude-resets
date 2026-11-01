@@ -8,7 +8,7 @@ import { clockPanel } from '../src/clock-panel.mjs';
 import { offers } from '../src/offers.mjs';
 import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
 import { locales, names, eventStateLabel } from '../src/locales.mjs';
-import { CANONICAL, GITHUB_PROFILE, escapeHtml as e, localePath, eventPath, freshness } from '../src/shared.mjs';
+import { CANONICAL, GITHUB_PROFILE, escapeHtml as e, eventIcon, localePath, eventPath, freshness } from '../src/shared.mjs';
 import { validateEvent, postPlatform, reclassifyEvents } from '../src/evidence.mjs';
 import {syncPlatformState} from '../src/platform-state.mjs';
 const root = new URL('../', import.meta.url);
@@ -33,9 +33,8 @@ const write = async (path, text) => {const url = new URL(path, out); await mkdir
 const bookmarkNames={"en":"Codex & Claude Resets","zh":"Codex与Claude重置","zh-Hant":"Codex與Claude重置","ja":"Codex・Claudeリセット","ko":"Codex·Claude 초기화","es":"Restablecimientos de Codex y Claude","fr":"Réinitialisations Codex et Claude","de":"Codex- und Claude-Resets","ar":"إعادة ضبط Codex وClaude"};
 const date = (at,lang) => new Intl.DateTimeFormat(lang, { dateStyle:'medium', timeStyle:'short', timeZone:'UTC' }).format(new Date(at)) + ' UTC';
 const kindLabel = (ev,t) => t[ev.kind === 'usage' ? 'usageKind' : ev.kind];
-const icon = kind => ({global:'↻',banked:'☆',usage:'↗',signal:'·'}[kind] || '↻');
 const cursor = '<img class="brand-icon" src="__BASE__favicon.svg?v=4" width="42" height="42" alt="">';
-function row(ev,lang,base) {const t=locales[lang];return `<article class="event-row" data-kind="${e(ev.kind)}" data-platform-feed="${postPlatform(ev.author)}"><div class="event-icon" aria-hidden="true">${icon(ev.kind)}</div><div class="event-main"><div class="event-title"><a href="${base}${eventPath(lang,ev.id)}">${e(kindLabel(ev,t))}</a><span class="badge ${ev.state}">${e(eventStateLabel(ev,lang))}</span></div>${postText(ev,lang)}<div class="event-meta"><span>${postPlatform(ev.author)==="claude"?"Claude":"Codex"} · @${e(ev.author)}</span><time datetime="${ev.publishedAt}" title="${ev.publishedAt}">${e(date(ev.publishedAt,lang))}</time><a href="${e(ev.sourceUrl)}" target="_blank" rel="noopener noreferrer">${e(t.source)} ↗</a></div></div></article>`;}
+function row(ev,lang,base) {const t=locales[lang];return `<article class="event-row" data-kind="${e(ev.kind)}" data-platform-feed="${postPlatform(ev.author)}"><div class="event-icon" aria-hidden="true">${eventIcon(ev.kind)}</div><div class="event-main"><div class="event-title"><a href="${base}${eventPath(lang,ev.id)}">${e(kindLabel(ev,t))}</a><span class="badge ${ev.state}">${e(eventStateLabel(ev,lang))}</span></div>${postText(ev,lang)}<div class="event-meta"><span>${postPlatform(ev.author)==="claude"?"Claude":"Codex"} · @${e(ev.author)}</span><time datetime="${ev.publishedAt}" title="${ev.publishedAt}">${e(date(ev.publishedAt,lang))}</time><a href="${e(ev.sourceUrl)}" target="_blank" rel="noopener noreferrer">${e(t.source)} ↗</a></div></div></article>`;}
 function render(lang,ev=null){
 const t={...locales[lang],a1:platformCopy[lang].accountNote,a3:platformCopy[lang].clockNote,a4:platformCopy[lang].sourceNote};const path=ev?eventPath(lang,ev.id):localePath(lang);const base=ev?'../../../':'../';const url=CANONICAL+path;const title=ev?`${kindLabel(ev,t)} · ${eventStateLabel(ev,lang)} | Codex & Claude Resets`:bookmarkNames[lang];
 const options=Object.entries(names).map(([code,name])=>`<option value="${base}${ev?eventPath(code,ev.id):localePath(code)}" ${lang===code?'selected':''}>${name}</option>`).join('');
