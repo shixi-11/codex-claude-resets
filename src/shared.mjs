@@ -14,3 +14,6 @@ export function calendarFile(timestamp, title, url = CANONICAL) {
   const clean = String(title).replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/,/g, '\\,').replace(/;/g, '\\;');
   return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Codex and Claude Resets//Public announcement reminder//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:codex-respawn-${timestamp}@shixilin.com`,`DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z')}`,`DTSTART:${date}`,`SUMMARY:${clean}`,`URL:${url}`,'BEGIN:VALARM','TRIGGER:PT0M','ACTION:DISPLAY',`DESCRIPTION:${clean}`,'END:VALARM','END:VEVENT','END:VCALENDAR',''].join('\r\n');
 }
+
+// Commentary is not a reset; keep static and live-update icons consistent.
+export function eventIcon(kind){return {global:'↻',banked:'☆',usage:'↗',signal:'·',commentary:'“'}[kind]||'·';}
