@@ -2699,7 +2699,7 @@
         "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
         "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
         "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
-        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
+        "de": "Der Tag, an dem wir die Vollkommenheit erreichen, wird von da an neu gestartet werden.",
         "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
       },
       "provider": "FxEmbed",
@@ -3405,9 +3405,9 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜までに着陸します。",
+        "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
-        "fr": "Atterrit avant minuit HNP.",
+        "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
       }
@@ -3427,11 +3427,11 @@
       "fullTexts": {
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
-        "ja": "そして終わりました。明日、良いニュースを楽しみにしてください。",
+        "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
+        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3602,5 +3602,5 @@
     }
   },
   "pending": 408,
-  "lastAttemptAt": "2026-11-01T17:31:29.289Z"
+  "lastAttemptAt": "2026-11-01T17:37:02.618Z"
 }
