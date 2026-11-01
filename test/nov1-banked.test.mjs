@@ -31,3 +31,20 @@ test('banked progress never becomes global completion, reset instant or assumed 
 });
 
 test('banked progress labels do not promise a completed global or personal grant',async()=>{const {eventStateLabel,names}=await import('../src/locales.mjs');for(const lang of Object.keys(names))assert.match(eventStateLabel({reason:'reviewed-bank-grant',state:'reported'},lang),/1\/2/);assert.equal(eventStateLabel({state:'reported'},'en'),'Reported complete');});
+
+test('reviewed banked translation stays bound to exact source and avoids financial-bank wording',async()=>{
+ const {reviewedTranslation,translationLanguages}=await import('../src/post-text.mjs');
+ const event=JSON.parse(readFileSync(new URL('./fixtures/nov1-banked-event.json',import.meta.url))),entry=reviewedTranslation(event);
+ for(const lang of translationLanguages){assert.match(entry.fullTexts[lang],/1\/2/);assert.equal(entry.texts[lang],entry.fullTexts[lang]);}
+ assert.equal(entry.fullTexts.ar,'تم الادخار 1/2');assert.equal(entry.fullTexts.fr,'Mis en réserve 1/2');
+ for(const change of [{id:'123'},{author:'OpenAI'},{contentHash:'0'.repeat(64)},{fullText:'Banked 2/2'},{excerpt:'Changed'}])assert.equal(reviewedTranslation({...event,...change}),null);
+});
+
+test('reviewed request in reply context is commentary, not credit or allowance news',async()=>{
+ const source={id:'2116942192497533418',author:'thsottiaux'},text='I demand a banked reset';
+ assert.deepEqual(classify(text,source),{kind:'commentary',state:'information',reason:'reviewed-reset-request'});
+ for(const change of [{id:'123'},{author:'OpenAI'},{truncated:true}])assert.notEqual(classify(text,{...source,...change}).reason,'reviewed-reset-request');
+ assert.notEqual(classify(text+' for all users tomorrow',source).reason,'reviewed-reset-request');
+ const {reviewedTranslation}=await import('../src/post-text.mjs'),event={...source,fullText:text,excerpt:text,contentHash:'3406c8366e6f3c4fee5116f672dc271f41189762ec5b12d3a72d907633441600'};
+ assert.equal(reviewedTranslation(event).fullTexts.zh,'我要求来一次可储存的重置');assert.equal(reviewedTranslation({...event,fullText:text+'!'}),null);
+});

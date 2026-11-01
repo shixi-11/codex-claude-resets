@@ -20,3 +20,15 @@ export function postText(event,lang,className='excerpt',tag='p'){
  return `<div class="post-body">${continuousPreview}<details class="post-full" data-post-id="${e(event.id)}"><summary><span class="expand-label">${e(actions[0])}</span><span class="collapse-label">${e(actions[1])}</span></summary><${tag} class="full-post-text ${className}" lang="${e(fullLang)}" dir="${fullLang==='ar'?'rtl':'ltr'}">${e(full)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[translated?0:1])}</small>`}</details></div>`;
 }
 const expandLabels={en:['Read full post','Show less'],zh:['展开全文','收起全文'],'zh-Hant':['展開全文','收起全文'],ja:['全文を表示','折りたたむ'],ko:['전체 글 보기','접기'],es:['Leer publicación completa','Mostrar menos'],fr:['Lire la publication complète','Réduire'],de:['Vollständigen Beitrag lesen','Weniger anzeigen'],ar:['عرض المنشور كاملاً','عرض أقل']};
+
+// Reviewed short progress wording, bound to the exact official source version.
+// “Banked” means saved reset credit here, not a financial bank or a global reset.
+export function reviewedTranslation(event){
+ if(event?.id==='2116942192497533418'&&event.author==='thsottiaux'&&event.contentHash==='3406c8366e6f3c4fee5116f672dc271f41189762ec5b12d3a72d907633441600'&&event.fullText==='I demand a banked reset'&&event.excerpt===event.fullText){
+  const texts={zh:'我要求来一次可储存的重置','zh-Hant':'我要求來一次可儲存的重置',ja:'ストックできるリセットを要求します',ko:'저장해 둘 수 있는 초기화를 요구합니다',es:'Exijo un restablecimiento que pueda guardar',fr:'Je réclame une réinitialisation à mettre en réserve',de:'Ich fordere einen Reset zum Aufsparen',ar:'أطالب بإعادة ضبط يمكن ادخارها'};
+  return {excerpt:event.excerpt,fullText:event.fullText,contentHash:event.contentHash,texts,fullTexts:{...texts},provider:'editorial-review'};
+ }
+ if(event?.id!=='2116692529970311254'||event.author!=='thsottiaux'||event.contentHash!=='5915a6e0f9c1c184eb0caed04eecc59fbe1f2da78ff5a27d7c826b55be5b9c06'||event.fullText!=='Banked 1/2'||event.excerpt!=='Banked 1/2')return null;
+ const texts={zh:'已储存 1/2','zh-Hant':'已儲存 1/2',ja:'ストック済み 1/2',ko:'적립 완료 1/2',es:'Guardado 1/2',fr:'Mis en réserve 1/2',de:'Gespeichert 1/2',ar:'تم الادخار 1/2'};
+ return {excerpt:event.excerpt,fullText:event.fullText,contentHash:event.contentHash,texts,fullTexts:{...texts},provider:'editorial-review'};
+}
