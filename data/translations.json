@@ -3213,10 +3213,10 @@
       "fullTexts": {
         "zh": "明天太平洋标准时间上午10点前抵达。",
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
-        "ja": "明日の午前10時までにPSTに到着します。",
+        "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
-        "es": "Llega mañana antes de las 10 a.m. PST.",
-        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
+        "es": "Llega mañana antes de las 10am PST.",
+        "fr": "Atterrit demain avant 10h PST.",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
@@ -3405,7 +3405,7 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜までに着陸します。",
-        "es": "Aterriza a medianoche PST.",
+        "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
@@ -3545,7 +3545,8 @@
         "ja": "次の2日間はリセット…貯蓄…この情報は好きに使ってください 👀。",
         "ko": "다음 이틀은 리셋… 은행에 예치… 이걸로 어떻게 하든 알아서 하세요 👀.",
         "de": "Die nächsten zwei Tage werden Resets sein… gespeichert… mach damit, was du willst 👀.",
-        "ar": "اليومان القادمان سيكونان إعادة تعيين."
+        "ar": "اليومان القادمان سيكونان إعادة تعيين.",
+        "es": "Los próximos dos días serán reinicios."
       },
       "fullText": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.",
       "fullTexts": {
@@ -3553,15 +3554,15 @@
         "zh-Hant": "第 26 天 / 您現在可以在行動裝置上輕鬆切換多個帳戶，桌面版即將推出。接下來的兩天將進行重置…已儲存…請隨意處置 👀。https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ja": "26日目／モバイルで複数のアカウントを簡単に切り替えられるようになりました。デスクトップ版でも近日対応予定です。次の2日間はリセット…貯蓄…この情報は好きに使ってください 👀。https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ko": "26일째 / 이제 모바일에서 여러 계정 간에 쉽게 전환할 수 있으며, 곧 데스크톱에도 적용될 예정입니다. 다음 이틀은 리셋… 은행에 예치… 이걸로 어떻게 하든 알아서 하세요 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
-        "es": "Día 26/ Ahora puedes cambiar fácilmente entre múltiples cuentas en móvil, y pronto también estará disponible en escritorio. Los próximos dos días serán reseteos… acumulados… haz con esto lo que quieras 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
+        "es": "Día 26/ Ahora puedes cambiar fácilmente entre varias cuentas en móvil, y pronto también en el escritorio. Los próximos dos días serán reinicios... bancoados... haz lo que 👀 quieras con esto. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "fr": "Jour 26/ Vous pouvez désormais facilement passer d'un compte à un autre sur mobile, et bientôt aussi sur desktop. Les deux prochains jours seront des resets… banked… faites-en ce que vous voulez 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "de": "Tag 26/ Du kannst jetzt einfach zwischen mehreren Konten auf dem Mobilgerät wechseln, und bald auch auf dem Desktop. Die nächsten zwei Tage werden Resets sein… gespeichert… mach damit, was du willst 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ar": "اليوم 26/ يمكنك الآن التبديل بسهولة بين حسابات متعددة على الهاتف المحمول، وستصل قريبًا إلى سطح المكتب أيضًا. اليومان القادمان سيكونان إعادة تعيين... محفوظة... افعل بهذا ما شئت 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-31T06:59:16.808Z"
+      "translatedAt": "2026-11-01T09:24:54.895Z"
     }
   },
-  "pending": 399,
-  "lastAttemptAt": "2026-11-01T09:15:32.917Z"
+  "pending": 398,
+  "lastAttemptAt": "2026-11-01T09:25:19.135Z"
 }
