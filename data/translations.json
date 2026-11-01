@@ -3405,7 +3405,7 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜までに着陸します。",
+        "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
@@ -3430,7 +3430,7 @@
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
-        "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
+        "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
@@ -3556,7 +3556,7 @@
         "ja": "26日目／モバイルで複数のアカウントを簡単に切り替えられるようになりました。デスクトップ版でも近日対応予定です。次の2日間はリセット…貯蓄…この情報は好きに使ってください 👀。https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ko": "26일째 / 이제 모바일에서 여러 계정 간에 쉽게 전환할 수 있으며, 곧 데스크톱에도 적용될 예정입니다. 다음 이틀은 리셋… 은행에 예치… 이걸로 어떻게 하든 알아서 하세요 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "es": "Día 26/ Ahora puedes cambiar fácilmente entre varias cuentas en móvil, y pronto también en el escritorio. Los próximos dos días serán reinicios... bancoados... haz lo que 👀 quieras con esto. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
-        "fr": "Jour 26/ Vous pouvez désormais facilement passer d’un compte à l’autre sur mobile, et bientôt sur ordinateur aussi. Les deux prochains jours seront redémarrés... mis en banc... faites ce que vous 👀 voulez avec ça. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
+        "fr": "Jour 26/ Vous pouvez désormais facilement passer d'un compte à un autre sur mobile, et bientôt aussi sur desktop. Les deux prochains jours seront des resets… banked… faites-en ce que vous voulez 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "de": "Tag 26/ Du kannst jetzt einfach zwischen mehreren Konten auf dem Mobilgerät wechseln, und bald auch auf dem Desktop. Die nächsten zwei Tage werden Resets sein… gespeichert… mach damit, was du willst 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ar": "اليوم 26/ يمكنك الآن التبديل بسهولة بين حسابات متعددة على الهاتف المحمول، وستصل قريبًا إلى سطح المكتب أيضًا. اليومان القادمان سيكونان إعادة تعيين... محفوظة... افعل بهذا ما شئت 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile"
       },
@@ -3571,7 +3571,9 @@
         "ja": "私はバンクトリセットを要求します",
         "ko": "나는 뱅크드 리셋을 요구합니다.",
         "es": "Exijo un reinicio bancado",
-        "ar": "أنا أطالب بإعادة ضبط مخزنة"
+        "ar": "أنا أطالب بإعادة ضبط مخزنة",
+        "fr": "J'exige une réinitialisation en banque",
+        "de": "Ich verlange einen gebankten Reset"
       },
       "fullText": "I demand a banked reset",
       "fullTexts": {
@@ -3579,10 +3581,12 @@
         "ja": "私はバンクトリセットを要求します",
         "ko": "나는 뱅크드 리셋을 요구합니다.",
         "es": "Exijo un reinicio bancado",
-        "ar": "@TokenGremlin أنا أطالب بإعادة ضبط مخزنة"
+        "ar": "@TokenGremlin أنا أطالب بإعادة ضبط مخزنة",
+        "fr": "@TokenGremlin J'exige une réinitialisation en banque",
+        "de": "@TokenGremlin Ich verlange einen gebankten Reset"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-11-01T17:31:06.686Z"
+      "translatedAt": "2026-11-01T19:26:04.273Z"
     },
     "2116692529970311254": {
       "excerpt": "Banked 1/2",
@@ -3593,7 +3597,7 @@
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
         "ja": "1/2を確保しました",
-        "ko": "경사 1/2",
+        "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
@@ -3601,6 +3605,6 @@
       }
     }
   },
-  "pending": 408,
-  "lastAttemptAt": "2026-11-01T18:29:40.311Z"
+  "pending": 406,
+  "lastAttemptAt": "2026-11-01T19:26:25.887Z"
 }
