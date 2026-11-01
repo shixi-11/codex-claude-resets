@@ -23,7 +23,15 @@ const expandLabels={en:['Read full post','Show less'],zh:['展开全文','收起
 
 // Reviewed short progress wording, bound to the exact official source version.
 // “Banked” means saved reset credit here, not a financial bank or a global reset.
-export function reviewedTranslation(event){
+export function reviewedTranslation(event,cached){
+ const day26='Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.';
+ if(event?.id==='2116405414921384099'&&event.author==='thsottiaux'&&event.contentHash==='e2414b20f80c27ddb3f6ab34633d145fe83117f623f30b88cc9993e65fd6eee4'&&event.fullText===day26&&event.excerpt==='Next two days will be resets… banked… do with this what you may 👀.'){
+  const base=cached?.contentHash===event.contentHash&&cached?.fullText===event.fullText&&cached?.excerpt===event.excerpt?cached:{};
+  const texts={fr:'Les deux prochains jours, il y aura des réinitialisations à conserver pour plus tard… à vous d’en faire ce que vous voulez 👀.',ko:'앞으로 이틀 동안은 나중에 사용할 수 있도록 저장해 두는 리셋입니다… 이걸 어떻게 활용할지는 여러분에게 맡길게요 👀.'};
+  const fullTexts={fr:'Jour 26/ Vous pouvez désormais passer facilement d’un compte à l’autre sur mobile ; cette fonction arrivera bientôt aussi sur ordinateur. '+texts.fr,ko:'26일째 / 이제 모바일에서 여러 계정 간에 쉽게 전환할 수 있으며, 데스크톱에서도 곧 지원될 예정입니다. '+texts.ko};
+  return {...base,excerpt:event.excerpt,fullText:event.fullText,contentHash:event.contentHash,texts:{...base.texts,...texts},fullTexts:{...base.fullTexts,...fullTexts},reviewedLanguages:['fr','ko']};
+ }
+
  if(event?.id==='2116942192497533418'&&event.author==='thsottiaux'&&event.contentHash==='3406c8366e6f3c4fee5116f672dc271f41189762ec5b12d3a72d907633441600'&&event.fullText==='I demand a banked reset'&&event.excerpt===event.fullText){
   const texts={zh:'我要求来一次可储存的重置','zh-Hant':'我要求來一次可儲存的重置',ja:'ストックできるリセットを要求します',ko:'저장해 둘 수 있는 초기화를 요구합니다',es:'Exijo un restablecimiento que pueda guardar',fr:'Je réclame une réinitialisation à mettre en réserve',de:'Ich fordere einen Reset zum Aufsparen',ar:'أطالب بإعادة ضبط يمكن ادخارها'};
   return {excerpt:event.excerpt,fullText:event.fullText,contentHash:event.contentHash,texts,fullTexts:{...texts},provider:'editorial-review'};
