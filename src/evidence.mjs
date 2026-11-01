@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.23';
+export const RULES_VERSION = '1.4.24';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -94,6 +94,8 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  // Primary reply to @TokenGremlin (2116820985873571993): a request, not a grant.
+  if(author.toLowerCase()==='thsottiaux' && id==='2116942192497533418' && value==='I demand a banked reset')return {kind:'commentary',state:'information',reason:'reviewed-reset-request'};
   // Reviewed Day 26 promises two banked credits, not a global reset or exact time.
   if (author.toLowerCase()==='thsottiaux' && id==='2116405414921384099' && value.replace(/\s+https:\/\/(?:t\.co\/[A-Za-z0-9]+|help\.openai\.com\/en\/articles\/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile)$/,'')==='Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.') return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
   // Reviewed primary reply to Claude's plan rename: commentary, not a
