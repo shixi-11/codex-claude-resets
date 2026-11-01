@@ -40,3 +40,8 @@ const focusedPrivacy={"en":"No login. No account access. No email collection.","
 for(const [lang,text]of Object.entries(focusedPrivacy))locales[lang].privacy=text;
 
 Object.entries({en:'No new reset or usage-limit announcements in the past 7 days.',zh:'最近7天暂无新的重置或额度公告','zh-Hant':'最近7天暫無新的重置或額度公告',ja:'過去7日間に新しいリセット・利用枠の告知はありません。',ko:'최근 7일간 새로운 초기화 또는 사용량 한도 공지가 없습니다.',es:'No hay nuevos anuncios de restablecimiento o límites de uso en los últimos 7 días.',fr:'Aucune nouvelle annonce de réinitialisation ou de quota au cours des 7 derniers jours.',de:'Keine neuen Ankündigungen zu Resets oder Nutzungslimits in den letzten 7 Tagen.',ar:'لا توجد إعلانات جديدة عن إعادة الضبط أو حدود الاستخدام خلال الأيام السبعة الماضية.'}).forEach(([lang,text])=>locales[lang].empty=text);
+
+Object.entries({"en": "Commentary", "zh": "评论 · 非重置公告", "zh-Hant": "評論 · 非重置公告", "ja": "コメント（リセット告知ではありません）", "ko": "논평 · 초기화 공지 아님", "es": "Comentario · no anuncia un restablecimiento", "fr": "Commentaire · pas une annonce de réinitialisation", "de": "Kommentar · keine Reset-Ankündigung", "ar": "تعليق · ليس إعلان إعادة ضبط"}).forEach(([lang,text])=>locales[lang].commentary=text);
+
+const bankedProgressLabels={en:'Reported banked · 1/2',zh:'官方报告储存进度 · 1/2','zh-Hant':'官方報告儲存進度 · 1/2',ja:'ストック進捗の報告 · 1/2',ko:'적립 진행 보고 · 1/2',es:'Progreso guardado anunciado · 1/2',fr:'Mise en réserve annoncée · 1/2',de:'Gemeldeter Speicherfortschritt · 1/2',ar:'تقدم الادخار المُعلن · 1/2'};
+export function eventStateLabel(event,lang='en'){return event.reason==='reviewed-bank-grant'?bankedProgressLabels[lang]:locales[lang][event.state];}

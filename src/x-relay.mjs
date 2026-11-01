@@ -89,6 +89,6 @@ export async function resolveResetContext(official,request,verifiedAt,depth=0) {
  const context={id:source.id,author:source.author,sourceUrl:source.url,fullText:source.text,publishedAt:at,verifiedAt,truncated:false,provenance:parentOfficial.truncated?'x-oembed+fxembed':'x-oembed',relation,relationProvenance:reviewed?'editorial-primary':'fxembed',contentHash:createHash('sha256').update(source.text).digest('hex')};
  if(isResetTiming(source.text))context.resetContext=await resolveResetContext(source,request,verifiedAt,depth+1);
  const ownAt=new Date(Number((BigInt(own.id)>>22n)+1288834974657n)).toISOString();
- if(!validResetContext(context,own.author,ownAt,{allowDaySignal:isResetTiming(own.text)}))throw new Error('Reset relation is not a recent announcement');
+ if(!validResetContext(context,own.author,ownAt,{allowDaySignal:isResetTiming(own.text),allowBanked:own.id==='2116692529970311254' && reviewed==='2116405414921384099'}))throw new Error('Reset relation is not a recent announcement');
  return context;
 }

@@ -1,3 +1,4 @@
+import {reclassifyEvents} from '../src/evidence.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {mkdtemp,mkdir,copyFile,writeFile,readFile,rm} from 'node:fs/promises';
@@ -49,7 +50,7 @@ test('failed timelines use bounded fallback without losing relay text or refresh
   }
   assert.equal(health.failedPosts.length,80);
   const events=JSON.parse(await readFile(join(root,'data/events.json'),'utf8'));
-  assert.deepEqual(events,[stored]);
+  assert.deepEqual(events,reclassifyEvents([stored]));
   const codex=JSON.parse(await readFile(join(root,'data/platforms.json'),'utf8')).codex;
   assert.equal(codex.reset.state,'announced');assert.equal(codex.reset.resetAt,null);assert.equal(codex.lastReset,null);
  } finally {if(dirname(resolve(root))===resolve(tmpdir()))await rm(root,{recursive:true,force:true});}
