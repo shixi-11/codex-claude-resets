@@ -3243,7 +3243,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3406,7 +3406,7 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Aterriza a medianoche PST.",
+        "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
@@ -3427,7 +3427,7 @@
       "fullTexts": {
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
-        "ja": "そして終わりました。明日、良いニュースを楽しみにしてください。",
+        "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
@@ -3446,7 +3446,7 @@
       "fullText": "Graduating from The Reset Company to The Token Company.",
       "fullTexts": {
         "zh-Hant": "從 The Reset Company 畢業到 The Token Company。",
-        "ja": "The Reset CompanyからThe Token Companyへの卒業。",
+        "ja": "The Reset Company から The Token Company への卒業。",
         "ko": "리셋 컴퍼니에서 토큰 컴퍼니로의 졸업.",
         "es": "Graduándose de The Reset Company a The Token Company.",
         "fr": "Passer de The Reset Company à The Token Company.",
@@ -3557,7 +3557,7 @@
         "ja": "26日目／モバイルで複数のアカウントを簡単に切り替えられるようになりました。デスクトップ版でも近日対応予定です。次の2日間はリセット…貯蓄…この情報は好きに使ってください 👀。https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ko": "26일째 / 이제 모바일에서 여러 계정 간에 쉽게 전환할 수 있으며, 곧 데스크톱에도 적용될 예정입니다. 다음 이틀은 리셋… 은행에 예치… 이걸로 어떻게 하든 알아서 하세요 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "es": "Día 26/ Ahora puedes cambiar fácilmente entre varias cuentas en móvil, y pronto también en el escritorio. Los próximos dos días serán reinicios... bancoados... haz lo que 👀 quieras con esto. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
-        "fr": "Jour 26/ Vous pouvez désormais facilement passer d’un compte à l’autre sur mobile, et bientôt sur ordinateur aussi. Les deux prochains jours seront redémarrés... mis en banc... faites ce que vous 👀 voulez avec ça. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
+        "fr": "Jour 26/ Vous pouvez désormais facilement passer d'un compte à un autre sur mobile, et bientôt aussi sur desktop. Les deux prochains jours seront des resets… banked… faites-en ce que vous voulez 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "de": "Tag 26/ Du kannst jetzt einfach zwischen mehreren Konten auf dem Mobilgerät wechseln, und bald auch auf dem Desktop. Die nächsten zwei Tage werden Resets sein… gespeichert… mach damit, was du willst 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ar": "اليوم 26/ يمكنك الآن التبديل بسهولة بين حسابات متعددة على الهاتف المحمول، وستصل قريبًا إلى سطح المكتب أيضًا. اليومان القادمان سيكونان إعادة تعيين... محفوظة... افعل بهذا ما شئت 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile"
       },
@@ -3601,7 +3601,7 @@
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
-        "de": "Gebankte 1/2",
+        "de": "1/2 gespart",
         "ar": "مصرف 1/2"
       }
     },
@@ -3613,15 +3613,15 @@
       "fullTexts": {
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
-        "ko": "28일차/ 은행 2/2",
+        "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
-        "fr": "Jour 28/ Mis en réserve 2/2",
-        "ar": "اليوم 28/ محفوظ 2/2",
+        "fr": "Jour 28 / En banque 2/2",
+        "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-02T03:22:24.491Z"
+  "lastAttemptAt": "2026-11-02T07:40:27.785Z"
 }
