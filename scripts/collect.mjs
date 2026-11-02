@@ -22,8 +22,8 @@ const request = (url, headers = {}, format = 'json') => collectionRequest(url,{h
 
 let candidates = (process.env.COLLECT_POST_URLS||'').split(',').filter(Boolean).map(url=>{const post=parsePostUrl(url.trim());if(!post)throw new Error('Invalid explicit post URL');return {url:post.url};});
 // Reviewed primary URL missing during a relay outage. Verify normally; this is
-// discovery only and must never count as timeline coverage. Keep retrying until stored.
-if(!existing.some(event=>event.id==='2117035794678546764'&&event.state==='reported'))candidates.push({url:'https://x.com/thsottiaux/status/2117035794678546764',discoveryOnly:true});
+// an explicit recovery, not timeline coverage. Keep retrying until stored.
+if(!existing.some(event=>event.id==='2117035794678546764'&&event.state==='reported'))candidates.push({url:'https://x.com/thsottiaux/status/2117035794678546764'});
 let scanCompleted = false;
 try {
   if (process.env.X_BEARER_TOKEN && process.env.ENABLE_PAID_X_API === 'true') {

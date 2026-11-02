@@ -13,7 +13,8 @@ test('failed timelines use bounded fallback without losing relay text or refresh
   for(const dir of ['src','data','scripts'])await mkdir(join(root,dir));
   for(const file of ['scripts/collect.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/tracking-audit.mjs','src/platform-state.mjs','src/announcement-time.mjs','src/x-relay.mjs','src/collection-request.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   const stored=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8')).find(e=>e.id==='2114588174249071102');
-  await writeFile(join(root,'data/events.json'),JSON.stringify([stored]));
+  const recovered=JSON.parse(await readFile(new URL('./fixtures/nov2-banked-event.json',import.meta.url),'utf8'));
+  await writeFile(join(root,'data/events.json'),JSON.stringify([recovered,stored]));
   const previous='2026-10-27T14:29:12.417Z';
   await writeFile(join(root,'data/health.json'),JSON.stringify({lastSuccessAt:previous,platforms:{codex:{lastSuccessAt:previous},claude:{lastSuccessAt:previous}}}));
   await writeFile(join(root,'data/platforms.json'),JSON.stringify({codex:{},claude:{}}));
@@ -50,7 +51,7 @@ test('failed timelines use bounded fallback without losing relay text or refresh
   }
   assert.equal(health.failedPosts.length,80);
   const events=JSON.parse(await readFile(join(root,'data/events.json'),'utf8'));
-  assert.deepEqual(events,reclassifyEvents([stored]));
+  assert.deepEqual(events,reclassifyEvents([recovered,stored]));
   const codex=JSON.parse(await readFile(join(root,'data/platforms.json'),'utf8')).codex;
   assert.equal(codex.reset.state,'announced');assert.equal(codex.reset.resetAt,null);assert.equal(codex.lastReset,null);
  } finally {if(dirname(resolve(root))===resolve(tmpdir()))await rm(root,{recursive:true,force:true});}
