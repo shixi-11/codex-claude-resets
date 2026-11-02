@@ -1,0 +1,30 @@
+{
+  "id": "2117035794678546764",
+  "author": "thsottiaux",
+  "platform": "codex",
+  "sourceUrl": "https://x.com/thsottiaux/status/2117035794678546764",
+  "publishedAt": "2026-11-01T23:27:20.731Z",
+  "verifiedAt": "2026-11-02T03:09:49.035Z",
+  "excerpt": "Day 28/ Banked 2/2",
+  "fullText": "Day 28/ Banked 2/2",
+  "truncated": false,
+  "provenance": "x-oembed",
+  "rulesVersion": "1.4.25",
+  "contentHash": "2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f",
+  "kind": "banked",
+  "state": "reported",
+  "reason": "reviewed-bank-grant",
+  "resetContext": {
+    "id": "2116405414921384099",
+    "author": "thsottiaux",
+    "sourceUrl": "https://x.com/thsottiaux/status/2116405414921384099",
+    "fullText": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
+    "publishedAt": "2026-10-31T05:42:26.485Z",
+    "verifiedAt": "2026-11-02T03:09:49.035Z",
+    "truncated": false,
+    "provenance": "x-oembed",
+    "relation": "reviewed-sequence",
+    "relationProvenance": "editorial-primary",
+    "contentHash": "cad880732943fccf826f493b4f676944d60a37797e46e3137ad8cd69790c4608"
+  }
+}

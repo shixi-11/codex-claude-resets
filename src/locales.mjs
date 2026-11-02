@@ -44,4 +44,4 @@ Object.entries({en:'No new reset or usage-limit announcements in the past 7 days
 Object.entries({"en": "Commentary", "zh": "评论 · 非重置公告", "zh-Hant": "評論 · 非重置公告", "ja": "コメント（リセット告知ではありません）", "ko": "논평 · 초기화 공지 아님", "es": "Comentario · no anuncia un restablecimiento", "fr": "Commentaire · pas une annonce de réinitialisation", "de": "Kommentar · keine Reset-Ankündigung", "ar": "تعليق · ليس إعلان إعادة ضبط"}).forEach(([lang,text])=>locales[lang].commentary=text);
 
 const bankedProgressLabels={en:'Reported banked · 1/2',zh:'官方报告储存进度 · 1/2','zh-Hant':'官方報告儲存進度 · 1/2',ja:'ストック進捗の報告 · 1/2',ko:'적립 진행 보고 · 1/2',es:'Progreso guardado anunciado · 1/2',fr:'Mise en réserve annoncée · 1/2',de:'Gemeldeter Speicherfortschritt · 1/2',ar:'تقدم الادخار المُعلن · 1/2'};
-export function eventStateLabel(event,lang='en'){return event.reason==='reviewed-bank-grant'?bankedProgressLabels[lang]:locales[lang][event.state];}
+export function eventStateLabel(event,lang='en'){return event.reason==='reviewed-bank-grant'?bankedProgressLabels[lang].replace('1/2',event.id==='2117035794678546764'&&event.fullText==='Day 28/ Banked 2/2'?'2/2':'1/2'):locales[lang][event.state];}

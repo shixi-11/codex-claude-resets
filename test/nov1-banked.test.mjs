@@ -24,7 +24,7 @@ test('standalone banked progress requires exact reviewed identity and independen
  const bad=structuredClone(f);bad.details[id].replying_to='someone';await assert.rejects(()=>resolveResetContext(own,request(bad),now));
 });
 test('banked progress never becomes global completion, reset instant or assumed eligibility',()=>{
- const event=JSON.parse(readFileSync(new URL('./fixtures/nov1-banked-event.json',import.meta.url))),events=[event,...JSON.parse(readFileSync(new URL('../data/events.json',import.meta.url))).filter(e=>e.id!==id)];
+ const event=JSON.parse(readFileSync(new URL('./fixtures/nov1-banked-event.json',import.meta.url))),events=[event,...JSON.parse(readFileSync(new URL('../data/events.json',import.meta.url))).filter(e=>e.id!==id&&Date.parse(e.publishedAt)<=Date.parse(now))];
  assert.ok(event);validateEvent(event);assert.equal(event.kind,'banked');assert.equal(event.resetAt,undefined);assert.equal(event.eligiblePlans,undefined);
  const p=syncPlatformState({codex:{},claude:{}},events,Date.parse(now));assert.equal(p.codex.latestGift.id,id);assert.notEqual(p.codex.lastReset?.id,id);assert.notEqual(p.codex.reset.state,'completed');
  assert.deepEqual(reclassifyEvents(reclassifyEvents(events)),reclassifyEvents(events));
