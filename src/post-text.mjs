@@ -24,6 +24,10 @@ const expandLabels={en:['Read full post','Show less'],zh:['展开全文','收起
 // Reviewed short progress wording, bound to the exact official source version.
 // “Banked” means saved reset credit here, not a financial bank or a global reset.
 export function reviewedTranslation(event,cached){
+ if(event?.id==='2117035794678546764'&&event.author==='thsottiaux'&&event.contentHash==='2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f'&&event.fullText==='Day 28/ Banked 2/2'&&event.excerpt===event.fullText){
+  const texts={zh:'第 28 天 / 已储存 2/2','zh-Hant':'第 28 天 / 已儲存 2/2',ja:'28日目 / ストック済み 2/2',ko:'28일째 / 적립 완료 2/2',es:'Día 28/ Guardado 2/2',fr:'Jour 28/ Mis en réserve 2/2',de:'Tag 28/ Gespeichert 2/2',ar:'اليوم 28/ تم الادخار 2/2'};
+  return {excerpt:event.excerpt,fullText:event.fullText,contentHash:event.contentHash,texts,fullTexts:{...texts},provider:'editorial-review'};
+ }
  const day26='Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.';
  if(event?.id==='2116405414921384099'&&event.author==='thsottiaux'&&event.contentHash==='e2414b20f80c27ddb3f6ab34633d145fe83117f623f30b88cc9993e65fd6eee4'&&event.fullText===day26&&event.excerpt==='Next two days will be resets… banked… do with this what you may 👀.'){
   const base=cached?.contentHash===event.contentHash&&cached?.fullText===event.fullText&&cached?.excerpt===event.excerpt?cached:{};

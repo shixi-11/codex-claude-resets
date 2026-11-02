@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.24';
+export const RULES_VERSION = '1.4.25';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -70,8 +70,8 @@ export function reclassifyEvents(events) {
 export const isResetTiming = text => isBeforeTenPacificDeadline(text) || isMidnightPacificDeadline(text) || /^Landing (?:within the next [1-9]\d? hours|sometime today by EOD PST)[.!]?$/i.test(text.trim());
 // A reviewed independent post is not a reply. Pin its identity and exact text;
 // unrelated standalone "Done" posts must not inherit a nearby reset announcement.
-export const isReviewedResetSource = source => ['2111566005684289735','2116692529970311254'].includes(source?.id) && source.author?.toLowerCase()==='thsottiaux';
-export const reviewedResetAnnouncement = ({text='',...source}={}) => source.author?.toLowerCase()==='thsottiaux' ? (source.id==='2111566005684289735' && text.trim()==='Done' ? '2111492738025959922' : source.id==='2116692529970311254' && text.trim()==='Banked 1/2' ? '2116405414921384099' : null) : null;
+export const isReviewedResetSource = source => ['2111566005684289735','2116692529970311254','2117035794678546764'].includes(source?.id) && source.author?.toLowerCase()==='thsottiaux';
+export const reviewedResetAnnouncement = ({text='',...source}={}) => source.author?.toLowerCase()==='thsottiaux' ? (source.id==='2111566005684289735' && text.trim()==='Done' ? '2111492738025959922' : ((source.id==='2116692529970311254' && text.trim()==='Banked 1/2') || (source.id==='2117035794678546764' && text.trim()==='Day 28/ Banked 2/2')) ? '2116405414921384099' : null) : null;
 // Keywordless propagation is meaningful only through a verified reset quote/reply.
 export const isLinkedPropagation = text => /^It is (?:all|fully) propagated[.!](?:\s+Enjoy some mad codexing tomorrow[.!])?(?:\s+Fun week ahead(?: too)?[.!])?$/i.test(text.trim());
 export const needsResetContext = (text,source={}) => isResetTiming(text) || isLinkedPropagation(text) || /^(?:What would you like with your side of reset\?\s+It's done[.!]?|Done and dusted[.!]?|And it's done\. See you tomorrow for some good news\.)$/i.test(text.replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim()) || !!reviewedResetAnnouncement({...source,text});
@@ -110,7 +110,7 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   // Keywordless claims need a recent, independently verified same-author
   // announcement; a reviewed independent post also needs its editorial marker.
   if (linked) {
-    const timing=isResetTiming(value),banked=id==='2116692529970311254' && reviewed==='2116405414921384099';
+    const timing=isResetTiming(value),banked=['2116692529970311254','2117035794678546764'].includes(id) && reviewed==='2116405414921384099';
     if(reviewed && (resetContext?.id!==reviewed || resetContext.relation!=='reviewed-sequence' || resetContext.relationProvenance!=='editorial-primary'))return unknown;
     if(banked)return validResetContext(resetContext,author,publishedAt,{allowBanked:true}) && resetContext.id===reviewed ? {kind:'banked',state:'reported',reason:'reviewed-bank-grant'} : unknown;
     return validResetContext(resetContext,author,publishedAt,{allowDaySignal:timing})?{kind:'global',state:timing?'announced':'reported',reason:timing?'linked-announcement':reviewed?'reviewed-completion':'linked-completion'}:unknown;
