@@ -12,7 +12,9 @@ test('collector removes a stored false positive and does not mask a failed Claud
   for(const dir of ['src','data','scripts'])await mkdir(join(root,dir));
   for(const file of ['scripts/collect.mjs','scripts/topic-heat-refresh.mjs','src/evidence.mjs','src/tracking-audit.mjs','src/platform-state.mjs','src/announcement-time.mjs','src/x-relay.mjs','src/collection-request.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   const id='2098300998968357218';
-  await writeFile(join(root,'data/events.json'),JSON.stringify([{id,author:'thsottiaux',sourceUrl:`https://x.com/thsottiaux/status/${id}`,kind:'signal',state:'unconfirmed',fullText:'Codex usage has been declining.',truncated:false,verifiedAt:'2026-09-01',publishedAt:'2026-09-01',rulesVersion:'old'}]));
+  const recovered=JSON.parse(await readFile(new URL('./fixtures/nov2-banked-event.json',import.meta.url),'utf8'));
+  // This scenario tests unrelated source health with the targeted backfill already stored.
+  await writeFile(join(root,'data/events.json'),JSON.stringify([recovered,{id,author:'thsottiaux',sourceUrl:`https://x.com/thsottiaux/status/${id}`,kind:'signal',state:'unconfirmed',fullText:'Codex usage has been declining.',truncated:false,verifiedAt:'2026-09-01',publishedAt:'2026-09-01',rulesVersion:'old'}]));
   await writeFile(join(root,'data/health.json'),JSON.stringify({lastSuccessAt:'2026-09-01',platforms:{claude:{lastSuccessAt:'2026-09-01'}}}));
   await writeFile(join(root,'data/platforms.json'),JSON.stringify({codex:{},claude:{}}));
   await writeFile(join(root,'mock.mjs'),`const calls={};globalThis.fetch=async input=>{
@@ -35,7 +37,7 @@ test('collector removes a stored false positive and does not mask a failed Claud
   assert.equal(health.platforms.claude.lastSuccessAt,'2026-09-01');
   assert.equal(health.status,'degraded');
   assert.equal(health.lastSuccessAt,'2026-09-01');
-  assert.deepEqual(JSON.parse(await readFile(join(root,'data/events.json'),'utf8')),[]);
-  assert.equal(JSON.parse(await readFile(join(root,'data/platforms.json'),'utf8')).codex.latest,null);
+  assert.deepEqual(JSON.parse(await readFile(join(root,'data/events.json'),'utf8')).map(e=>e.id),[recovered.id]);
+  assert.equal(JSON.parse(await readFile(join(root,'data/platforms.json'),'utf8')).codex.latest.id,recovered.id);
  } finally {if(dirname(resolve(root))===resolve(tmpdir()))await rm(root,{recursive:true,force:true});}
 });

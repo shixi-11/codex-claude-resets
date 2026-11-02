@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {classify,extractEmbed,validateEvent,reclassifyEvents} from '../src/evidence.mjs';
-import {shouldCheckCandidate,resolveResetContext} from '../src/x-relay.mjs';
+import {shouldCheckCandidate,resolveResetContext,mergeDiscoveryCandidates} from '../src/x-relay.mjs';
 import {syncPlatformState} from '../src/platform-state.mjs';
 const f=JSON.parse(readFileSync(new URL('./fixtures/nov2-banked.json',import.meta.url)));
 const id='2117035794678546764',parent='2116405414921384099',now='2026-11-02T03:00:00Z';
@@ -24,7 +24,7 @@ test('standalone banked progress requires exact reviewed identity and independen
  const bad=structuredClone(f);bad.details[id].replying_to='someone';await assert.rejects(()=>resolveResetContext(own,request(bad),now));
 });
 test('banked progress never becomes global completion, reset instant or assumed eligibility',()=>{
- const event=JSON.parse(readFileSync(new URL('./fixtures/nov2-banked-event.json',import.meta.url))),events=[event,...JSON.parse(readFileSync(new URL('../data/events.json',import.meta.url))).filter(e=>e.id!==id)];
+ const event=JSON.parse(readFileSync(new URL('./fixtures/nov2-banked-event.json',import.meta.url))),events=[event,...JSON.parse(readFileSync(new URL('../data/events.json',import.meta.url))).filter(e=>e.id!==id&&Date.parse(e.publishedAt)<=Date.parse(now))];
  assert.ok(event);validateEvent(event);assert.equal(event.kind,'banked');assert.equal(event.resetAt,undefined);assert.equal(event.eligiblePlans,undefined);
  const p=syncPlatformState({codex:{},claude:{}},events,Date.parse(now));assert.equal(p.codex.latestGift.id,id);assert.notEqual(p.codex.lastReset?.id,id);assert.notEqual(p.codex.reset.state,'completed');
  assert.deepEqual(reclassifyEvents(reclassifyEvents(events)),reclassifyEvents(events));
@@ -42,3 +42,9 @@ test('reviewed banked translation stays bound to exact source and avoids financi
 
 
 test('Day 28 publication is November 1 UTC / November 2 Beijing, not a global reset instant',()=>{assert.equal(date(id),'2026-11-01T23:27:20.731Z');const event=JSON.parse(readFileSync(new URL('./fixtures/nov2-banked-event.json',import.meta.url)));assert.equal(event.resetAt,undefined);assert.equal(event.fullText,'Day 28/ Banked 2/2');});
+
+test('targeted recovery remains explicit when a successful author timeline omits the post',()=>{
+ const collector=readFileSync(new URL('../scripts/collect.mjs',import.meta.url),'utf8');
+ assert.ok(collector.includes("candidates.push({url:'https://x.com/thsottiaux/status/2117035794678546764'});"));
+ const candidate={url:own.url};assert.deepEqual(mergeDiscoveryCandidates([candidate],['thsottiaux']),[candidate]);
+});
