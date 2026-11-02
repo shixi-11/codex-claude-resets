@@ -3217,7 +3217,7 @@
         "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
-        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
+        "fr": "Atterrit demain avant 10h PST.",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
@@ -3243,7 +3243,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3521,7 +3521,8 @@
         "ko": "또한 오늘부터 대부분의 기존 구독자를 대상으로 인증된 Ultra 계정에 대한 5시간 제한을 제거합니다.",
         "es": "También estamos eliminando el límite de 5 horas para las cuentas Ultra verificadas, a partir de hoy para la mayoría de los suscriptores existentes.",
         "fr": "Nous supprimons également la limite de 5 heures pour les comptes Ultra vérifiés, à partir d’aujourd’hui pour la plupart des abonnés existants.",
-        "ar": "تبقى الحدود الأسبوعية دون تغيير."
+        "ar": "تبقى الحدود الأسبوعية دون تغيير.",
+        "de": "Wir entfernen außerdem ab heute das 5-Stunden-Limit für verifizierte Ultra-Konten bei den meisten bestehenden Abonnenten."
       },
       "fullText": "We’re renaming our Max plans: \n\nMax 5x → Max\nMax 20x → Ultra\n\nMax is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do.\n\nWe’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers. Newer accounts keep a temporary limit until they’re verified, which helps us prevent fraud and abuse. You'll get an email when it's removed.\n\nWeekly limits remain unchanged. View our plans here:  https://t.co/niRpyGF5Me",
       "fullTexts": {
@@ -3532,10 +3533,10 @@
         "es": "Estamos renombrando nuestros planes Max:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax sigue costando $100/mes, y Ultra sigue costando $200. Si eres suscriptor, no necesitas hacer nada.\n\nTambién estamos eliminando el límite de 5 horas para las cuentas Ultra verificadas, a partir de hoy para la mayoría de los suscriptores existentes. Las cuentas más nuevas mantienen un límite temporal hasta que se verifiquen, lo que nos ayuda a prevenir fraudes y abusos. Recibirás un correo electrónico cuando se elimine.\n\nLos límites semanales permanecen sin cambios. Consulta nuestros planes aquí:",
         "fr": "Nous renommons nos plans Max :\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax reste à 100 $/mois, et Ultra reste à 200 $. Si vous êtes abonné, il n’y a rien que vous ayez besoin de faire.\n\nNous supprimons également la limite de 5 heures pour les comptes Ultra vérifiés, à partir d’aujourd’hui pour la plupart des abonnés existants. Les comptes plus récents conservent une limite temporaire jusqu’à ce qu’ils soient vérifiés, ce qui nous aide à prévenir la fraude et les abus. Vous recevrez un e-mail lorsque la limite sera supprimée.\n\nLes limites hebdomadaires restent inchangées. Consultez nos plans ici :",
         "ar": "نحن نعيد تسمية خطط Max الخاصة بنا:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax لا يزال بـ 100 دولار/شهر، وUltra لا يزال بـ 200 دولار. إذا كنت مشتركًا، لا يوجد شيء تحتاج إلى القيام به.\n\nنحن أيضًا نزيل حد الـ 5 ساعات لحسابات Ultra الموثقة، بدءًا من اليوم مع معظم المشتركين الحاليين. الحسابات الأحدث تحتفظ بحد مؤقت حتى يتم التحقق منها، مما يساعدنا على منع الاحتيال والإساءة. ستتلقى بريدًا إلكترونيًا عند إزالته.\n\nتبقى الحدود الأسبوعية دون تغيير. شاهد خططنا هنا:",
-        "de": "Wir benennen unsere Max-Pläne um:\n\nMax 5x → Max\nMax 20x → Ultra\n\nMax kostet immer noch 100 $/Monat, und Ultra kostet immer noch 200 $. Wenn Sie Abonnent sind, müssen Sie nichts unternehmen.\n\nWir entfernen außerdem die 5-Stunden-Grenze für verifizierte Ultra-Accounts, beginnend heute bei den meisten bestehenden Abonnenten. Neuere Accounts behalten vorübergehend eine Grenze, bis sie verifiziert sind, was uns hilft, Betrug und Missbrauch zu verhindern. Sie erhalten eine E-Mail, wenn sie entfernt wird.\n\nWöchentliche Grenzen bleiben unverändert. Sehen Sie sich unsere Pläne hier an:"
+        "de": "Wir benennen unsere Max-Pläne um:\n\nMax 5x → Max\nMaximal 20x → Ultra\n\nMax kostet immer noch 100 Dollar im Monat, Ultra immer noch 200 Dollar. Wenn du Abonnent bist, musst du nichts tun.\n\nWir entfernen außerdem ab heute das 5-Stunden-Limit für verifizierte Ultra-Konten bei den meisten bestehenden Abonnenten. Neuere Konten behalten ein temporäres Limit, bis sie verifiziert sind, was uns hilft, Betrug und Missbrauch zu verhindern. Du bekommst eine E-Mail, wenn es entfernt wird.\n\nDie wöchentlichen Limits bleiben unverändert. Unsere Pläne finden Sie hier: http://claude.com/pricing"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-10-30T20:46:43.811Z"
+      "translatedAt": "2026-11-02T00:43:11.477Z"
     },
     "2116405414921384099": {
       "excerpt": "Next two days will be resets… banked… do with this what you may 👀.",
@@ -3556,7 +3557,7 @@
         "ja": "26日目／モバイルで複数のアカウントを簡単に切り替えられるようになりました。デスクトップ版でも近日対応予定です。次の2日間はリセット…貯蓄…この情報は好きに使ってください 👀。https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ko": "26일째 / 이제 모바일에서 여러 계정 간에 쉽게 전환할 수 있으며, 곧 데스크톱에도 적용될 예정입니다. 다음 이틀은 리셋… 은행에 예치… 이걸로 어떻게 하든 알아서 하세요 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "es": "Día 26/ Ahora puedes cambiar fácilmente entre varias cuentas en móvil, y pronto también en el escritorio. Los próximos dos días serán reinicios... bancoados... haz lo que 👀 quieras con esto. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
-        "fr": "Jour 26/ Vous pouvez désormais facilement passer d’un compte à l’autre sur mobile, et bientôt sur ordinateur aussi. Les deux prochains jours seront redémarrés... mis en banc... faites ce que vous 👀 voulez avec ça. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
+        "fr": "Jour 26/ Vous pouvez désormais facilement passer d'un compte à un autre sur mobile, et bientôt aussi sur desktop. Les deux prochains jours seront des resets… banked… faites-en ce que vous voulez 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "de": "Tag 26/ Du kannst jetzt einfach zwischen mehreren Konten auf dem Mobilgerät wechseln, und bald auch auf dem Desktop. Die nächsten zwei Tage werden Resets sein… gespeichert… mach damit, was du willst 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile",
         "ar": "اليوم 26/ يمكنك الآن التبديل بسهولة بين حسابات متعددة على الهاتف المحمول، وستصل قريبًا إلى سطح المكتب أيضًا. اليومان القادمان سيكونان إعادة تعيين... محفوظة... افعل بهذا ما شئت 👀. https://help.openai.com/en/articles/20001068-using-multiple-chatgpt-accounts-on-web-and-mobile"
       },
@@ -3600,11 +3601,11 @@
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
-        "de": "1/2 gespart",
+        "de": "Gebankte 1/2",
         "ar": "مصرف 1/2"
       }
     }
   },
-  "pending": 406,
-  "lastAttemptAt": "2026-11-01T20:30:11.781Z"
+  "pending": 405,
+  "lastAttemptAt": "2026-11-02T00:43:30.144Z"
 }
