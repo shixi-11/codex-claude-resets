@@ -8,23 +8,36 @@
       "resetAt": null
     },
     "gifts": [],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "latest": {
-      "id": "2116942192497533418",
-      "kind": "commentary",
-      "state": "information",
-      "reason": "reviewed-reset-request",
+      "id": "2117035794678546764",
+      "kind": "banked",
+      "state": "reported",
+      "reason": "reviewed-bank-grant",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2116942192497533418",
-      "publishedAt": "2026-11-01T17:15:24.232Z",
-      "verifiedAt": "2026-11-02T00:42:41.005Z",
-      "excerpt": "I demand a banked reset",
-      "fullText": "I demand a banked reset",
+      "sourceUrl": "https://x.com/thsottiaux/status/2117035794678546764",
+      "publishedAt": "2026-11-01T23:27:20.731Z",
+      "verifiedAt": "2026-11-02T03:13:54.860Z",
+      "excerpt": "Day 28/ Banked 2/2",
+      "fullText": "Day 28/ Banked 2/2",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.24",
-      "contentHash": "3406c8366e6f3c4fee5116f672dc271f41189762ec5b12d3a72d907633441600"
+      "resetContext": {
+        "id": "2116405414921384099",
+        "author": "thsottiaux",
+        "sourceUrl": "https://x.com/thsottiaux/status/2116405414921384099",
+        "fullText": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
+        "publishedAt": "2026-10-31T05:42:26.485Z",
+        "verifiedAt": "2026-11-02T03:13:54.860Z",
+        "truncated": false,
+        "provenance": "x-oembed",
+        "relation": "reviewed-sequence",
+        "relationProvenance": "editorial-primary",
+        "contentHash": "cad880732943fccf826f493b4f676944d60a37797e46e3137ad8cd69790c4608"
+      },
+      "rulesVersion": "1.4.25",
+      "contentHash": "2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f"
     },
     "lastReset": {
       "id": "2115330127886463244",
@@ -66,22 +79,22 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.24",
+      "rulesVersion": "1.4.25",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
-      "id": "2116692529970311254",
+      "id": "2117035794678546764",
       "kind": "banked",
       "state": "reported",
       "reason": "reviewed-bank-grant",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2116692529970311254",
-      "publishedAt": "2026-11-01T00:43:20.047Z",
-      "verifiedAt": "2026-11-02T00:42:41.005Z",
-      "excerpt": "Banked 1/2",
-      "fullText": "Banked 1/2",
+      "sourceUrl": "https://x.com/thsottiaux/status/2117035794678546764",
+      "publishedAt": "2026-11-01T23:27:20.731Z",
+      "verifiedAt": "2026-11-02T03:13:54.860Z",
+      "excerpt": "Day 28/ Banked 2/2",
+      "fullText": "Day 28/ Banked 2/2",
       "truncated": false,
       "provenance": "x-oembed",
       "resetContext": {
@@ -90,15 +103,15 @@
         "sourceUrl": "https://x.com/thsottiaux/status/2116405414921384099",
         "fullText": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
         "publishedAt": "2026-10-31T05:42:26.485Z",
-        "verifiedAt": "2026-11-02T00:42:41.005Z",
+        "verifiedAt": "2026-11-02T03:13:54.860Z",
         "truncated": false,
         "provenance": "x-oembed",
         "relation": "reviewed-sequence",
         "relationProvenance": "editorial-primary",
         "contentHash": "cad880732943fccf826f493b4f676944d60a37797e46e3137ad8cd69790c4608"
       },
-      "rulesVersion": "1.4.24",
-      "contentHash": "5915a6e0f9c1c184eb0caed04eecc59fbe1f2da78ff5a27d7c826b55be5b9c06"
+      "rulesVersion": "1.4.25",
+      "contentHash": "2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f"
     },
     "latestReset": {
       "id": "2115330127886463244",
@@ -140,7 +153,7 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.24",
+      "rulesVersion": "1.4.25",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "accountReports": [
@@ -214,13 +227,13 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/claudeai/status/2116220869479428500",
       "publishedAt": "2026-10-30T17:29:07.423Z",
-      "verifiedAt": "2026-11-02T00:42:41.005Z",
+      "verifiedAt": "2026-11-02T03:13:54.860Z",
       "excerpt": "We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers.",
       "fullText": "We’re renaming our Max plans: \n\nMax 5x → Max\nMax 20x → Ultra\n\nMax is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do.\n\nWe’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers. Newer accounts keep a temporary limit until they’re verified, which helps us prevent fraud and abuse. You'll get an email when it's removed.\n\nWeekly limits remain unchanged. View our plans here:  https://t.co/niRpyGF5Me",
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/claudeai/status/2116220869479428500",
-      "rulesVersion": "1.4.24",
+      "rulesVersion": "1.4.25",
       "contentHash": "7898af24c40787e9944de7b25c683423e909cee4ada657d4cf6bf495baac68b1"
     },
     "lastReset": {
@@ -237,7 +250,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.24",
+      "rulesVersion": "1.4.25",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -255,7 +268,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.24",
+      "rulesVersion": "1.4.25",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -272,7 +285,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.24",
+      "rulesVersion": "1.4.25",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }

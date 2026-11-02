@@ -3217,7 +3217,7 @@
         "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
-        "fr": "Atterrit demain avant 10h PST.",
+        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
@@ -3241,10 +3241,10 @@
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
-        "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
+        "ko": "작은 배와 함께 내일 오전 10시 PST 이전에 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
-        "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
+        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "de": "Landung morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
     },
@@ -3601,11 +3601,27 @@
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
-        "de": "Gebankte 1/2",
+        "de": "1/2 gespart",
         "ar": "مصرف 1/2"
+      }
+    },
+    "2117035794678546764": {
+      "excerpt": "Day 28/ Banked 2/2",
+      "contentHash": "2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f",
+      "texts": {},
+      "fullText": "Day 28/ Banked 2/2",
+      "fullTexts": {
+        "zh-Hant": "第28天 / 存入 2/2",
+        "zh": "第28天/ 存档 2/2",
+        "ko": "28일째/ 적립 2/2",
+        "ja": "28日目/ 貯蓄 2/2",
+        "es": "Día 28/ Acumulados 2/2",
+        "fr": "Jour 28 / En banque 2/2",
+        "ar": "اليوم 28/ مخزن 2/2",
+        "de": "Tag 28/ Gespart 2/2"
       }
     }
   },
-  "pending": 405,
-  "lastAttemptAt": "2026-11-02T00:43:30.144Z"
+  "pending": 413,
+  "lastAttemptAt": "2026-11-02T03:14:32.574Z"
 }
