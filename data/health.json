@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-02T07:39:56.604Z",
+  "lastAttemptAt": "2026-11-02T09:39:52.663Z",
   "lastSuccessAt": "2026-11-02T07:39:56.604Z",
-  "discoveryAt": "2026-11-02T07:39:56.604Z",
+  "discoveryAt": "2026-11-02T09:39:52.663Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -17,8 +17,8 @@
       "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
-      "ok": true,
-      "candidates": 11
+      "ok": false,
+      "error": "No matching author posts returned"
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -53,22 +53,40 @@
       "candidates": 14
     },
     {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": true,
+      "candidates": 371
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 71
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 32
+    },
+    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 13,
+      "checked": 10,
       "failed": 0
     }
   ],
-  "status": "ok",
+  "status": "degraded",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-02T07:39:56.604Z",
-      "status": "ok",
-      "checked": 8,
+      "lastAttemptAt": "2026-11-02T09:39:52.663Z",
+      "status": "degraded",
+      "checked": 5,
       "failed": 0,
-      "discovered": 45,
+      "discovered": 34,
       "authors": [
         {
           "author": "thsottiaux",
@@ -76,7 +94,7 @@
         },
         {
           "author": "OpenAIDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "OpenAI",
@@ -86,7 +104,7 @@
       "lastSuccessAt": "2026-11-02T07:39:56.604Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-02T07:39:56.604Z",
+      "lastAttemptAt": "2026-11-02T09:39:52.663Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
@@ -105,7 +123,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-02T07:39:56.604Z"
+      "lastSuccessAt": "2026-11-02T09:39:52.663Z"
     }
   }
 }

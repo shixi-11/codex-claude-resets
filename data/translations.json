@@ -3217,7 +3217,7 @@
         "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
-        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
+        "fr": "Atterrit demain avant 10h PST.",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
@@ -3405,9 +3405,9 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜に到着します。",
-        "es": "Llega a las 12 de la medianoche PST.",
-        "fr": "Atterrit à minuit heure du Pacifique.",
+        "ja": "PSTの深夜までに到着します。",
+        "es": "Aterriza a medianoche PST.",
+        "fr": "Atterrit avant minuit HNP.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
       }
@@ -3428,10 +3428,10 @@
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
+        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3623,5 +3623,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-02T07:40:27.785Z"
+  "lastAttemptAt": "2026-11-02T09:40:28.492Z"
 }
