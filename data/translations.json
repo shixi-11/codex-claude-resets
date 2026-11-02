@@ -2699,7 +2699,7 @@
         "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
         "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
         "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
-        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
+        "de": "Der Tag, an dem wir die Vollkommenheit erreichen, wird von da an neu gestartet werden.",
         "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
       },
       "provider": "FxEmbed",
@@ -3405,11 +3405,11 @@
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
-        "ja": "PSTの深夜までに到着します。",
-        "es": "Aterriza a medianoche PST.",
-        "fr": "Atterrit avant minuit HNP.",
+        "ja": "PSTの深夜に到着します。",
+        "es": "Llega a las 12 de la medianoche PST.",
+        "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
-        "de": "Landung um Mitternacht PST."
+        "de": "Landet bis Mitternacht PST."
       }
     },
     "2115273064481218829": {
@@ -3428,7 +3428,7 @@
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
+        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
@@ -3597,7 +3597,7 @@
       "fullTexts": {
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
-        "ja": "1/2を確保しました",
+        "ja": "バンクド 1/2",
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
@@ -3623,5 +3623,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-02T09:40:28.492Z"
+  "lastAttemptAt": "2026-11-02T18:20:58.993Z"
 }
