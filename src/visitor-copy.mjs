@@ -11,3 +11,6 @@ const rows={
 };
 const keys=['checked','failed','credit','extra','creditTitle','plans','how','redeem','posted','ends','weeklyOnly','lastReset','stale'];
 export const visitorCopy=Object.fromEntries(Object.entries(rows).map(([lang,values])=>[lang,Object.fromEntries(keys.map((key,i)=>[key,values[i]]))]));
+
+const currentWeeklyOnly={en:'Claude Code weekly limits.',zh:'Claude Code 每周额度。','zh-Hant':'Claude Code 每週額度。',ja:'Claude Code の週間利用枠。',ko:'Claude Code 주간 사용 한도.',es:'Límites semanales de Claude Code.',fr:'Limites hebdomadaires de Claude Code.',de:'Wöchentliche Claude-Code-Limits.',ar:'حدود Claude Code الأسبوعية.'};
+for(const [lang,text]of Object.entries(currentWeeklyOnly))visitorCopy[lang].currentWeeklyOnly=text;
