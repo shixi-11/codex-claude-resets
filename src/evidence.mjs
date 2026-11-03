@@ -29,7 +29,14 @@ export function extractEmbed(embed, requestedUrl) {
   if (!embeddedPost || embeddedPost.id !== post.id || embeddedPost.author.toLowerCase() !== post.author.toLowerCase()) throw new Error('Post mismatch');
   const body = embed.html.match(/<p\b[^>]*>([\s\S]*?)<\/p>/i)?.[1];
   if (!body) throw new Error('Missing post text');
-  const text = decodeHtml(body.replace(/<br\s*\/?\s*>/gi, '\n').replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, '').replace(/<[^>]*>/g, '')).trim();
+  let text = decodeHtml(body.replace(/<br\s*\/?\s*>/gi, '\n').replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, '').replace(/<[^>]*>/g, '')).trim();
+  // A verified link-only post is not an empty/failed embed. Preserve only an
+  // exact visible HTTPS shortlink; never treat arbitrary anchor claims or media
+  // as complete text, and keep ordinary excerpt/truncation handling unchanged.
+  if (!text) {
+    const link = body.trim().match(/^<a\b[^>]*href=["'](https:\/\/t\.co\/[A-Za-z0-9]+)["'][^>]*>\1<\/a>$/);
+    if (link) text = link[1];
+  }
   if (!text) throw new Error('Empty post');
   return { ...post, text, truncated: /(?:…|\.\.\.)\s*$/.test(text) };
 }

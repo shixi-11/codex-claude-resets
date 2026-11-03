@@ -17,8 +17,10 @@ test('collector removes a stored false positive and does not mask a failed Claud
   await writeFile(join(root,'data/events.json'),JSON.stringify([recovered,{id,author:'thsottiaux',sourceUrl:`https://x.com/thsottiaux/status/${id}`,kind:'signal',state:'unconfirmed',fullText:'Codex usage has been declining.',truncated:false,verifiedAt:'2026-09-01',publishedAt:'2026-09-01',rulesVersion:'old'}]));
   await writeFile(join(root,'data/health.json'),JSON.stringify({lastSuccessAt:'2026-09-01',platforms:{claude:{lastSuccessAt:'2026-09-01'}}}));
   await writeFile(join(root,'data/platforms.json'),JSON.stringify({codex:{},claude:{}}));
+  const linkOnly=JSON.parse(await readFile(new URL('./fixtures/openai-link-only.json',import.meta.url),'utf8'));
   await writeFile(join(root,'mock.mjs'),`const calls={};globalThis.fetch=async input=>{
    const u=new URL(input),author=u.pathname.split('/')[3];
+   if(u.hostname==='publish.twitter.com')return Response.json(${JSON.stringify(linkOnly)});
    if(u.pathname.includes('/profile/')){
     calls[author]=(calls[author]||0)+1;
     if(author==='OpenAIDevs'&&calls[author]===1)return new Response('',{status:404});
@@ -29,10 +31,11 @@ test('collector removes a stored false positive and does not mask a failed Claud
    }
    return new Response('');
   };`);
-  const result=spawnSync(process.execPath,['--import',pathToFileURL(join(root,'mock.mjs')).href,join(root,'scripts/collect.mjs')],{encoding:'utf8',timeout:10000,env:{...process.env,ENABLE_PAID_X_API:'false'}});
+  const result=spawnSync(process.execPath,['--import',pathToFileURL(join(root,'mock.mjs')).href,join(root,'scripts/collect.mjs')],{encoding:'utf8',timeout:10000,env:{...process.env,ENABLE_PAID_X_API:'false',COLLECT_POST_URLS:'https://x.com/OpenAI/status/2107596716367388924'}});
   assert.equal(result.status,0,result.stderr);
   const health=JSON.parse(await readFile(join(root,'data/health.json'),'utf8'));
-  assert.equal(health.platforms.codex.status,'ok'); // Zero matching candidates is valid.
+  assert.equal(health.platforms.codex.status,'ok'); // Link-only official source was verified; no quota event was invented.
+  assert.equal(health.platforms.codex.checked,1);assert.equal(health.platforms.codex.failed,0);
   assert.equal(health.platforms.claude.status,'degraded');
   assert.equal(health.platforms.claude.lastSuccessAt,'2026-09-01');
   assert.equal(health.status,'degraded');
