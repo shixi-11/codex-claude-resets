@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-03T17:50:07.884Z",
+  "lastAttemptAt": "2026-11-03T18:42:09.770Z",
   "lastSuccessAt": "2026-11-03T09:43:54.881Z",
-  "discoveryAt": "2026-11-03T17:50:07.884Z",
+  "discoveryAt": "2026-11-03T18:42:09.770Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,8 +9,8 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": true,
-      "candidates": 20
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
@@ -33,8 +33,8 @@
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true,
+      "candidates": 14
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
@@ -74,7 +74,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 28,
+      "checked": 45,
       "failed": 0
     }
   ],
@@ -82,15 +82,15 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-03T17:50:07.884Z",
-      "status": "ok",
-      "checked": 5,
+      "lastAttemptAt": "2026-11-03T18:42:09.770Z",
+      "status": "degraded",
+      "checked": 41,
       "failed": 0,
-      "discovered": 44,
+      "discovered": 64,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": true
+          "ok": false
         },
         {
           "author": "OpenAIDevs",
@@ -104,15 +104,15 @@
       "lastSuccessAt": "2026-11-03T17:50:07.884Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-03T17:50:07.884Z",
+      "lastAttemptAt": "2026-11-03T18:42:09.770Z",
       "status": "degraded",
-      "checked": 23,
+      "checked": 4,
       "failed": 0,
-      "discovered": 36,
+      "discovered": 28,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": false
+          "ok": true
         },
         {
           "author": "AnthropicAI",
