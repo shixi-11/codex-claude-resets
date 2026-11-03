@@ -5,7 +5,7 @@ import {offers} from '../src/offers.mjs';
 import {locales} from '../src/locales.mjs';
 import {platformCopy} from '../src/platform-copy.mjs';
 import {visitorCopy} from '../src/visitor-copy.mjs';
-const official="So while the full promotional boost couldn't last, we're making part of it permanent: starting September 14, 2026, weekly limits in Claude Code are 25% higher than they were before the promotion for Pro, Max, Team, and seat-based Enterprise plans.";
+const official="This promotion was a limited-time boost on top of your plan. It ran from May 13 through September 13, 2026. We were planning to return weekly limits to their original levels, but we know many of you found the extra usage helpful. So while the full promotional boost couldn't last, we're making part of it permanent: starting September 14, 2026, weekly limits in Claude Code are 25% higher than they were before the promotion for Pro, Max, Team, and seat-based Enterprise plans.";
 const historical="From May 13, 2026 through September 13, 2026, weekly usage was 50% higher. 5-hour usage limits were not affected by this promotion. The increased weekly limit was automatically applied to your account.";
 
 const updated=official.replace('Pro, Max, Team','Pro, Max, Ultra, Team');
@@ -74,4 +74,11 @@ test('old cached permanent records cannot render historical claims as current co
   const html=offers({claude:{name:'Claude',gifts:[gift]}},lang);
   assert.ok(!html.includes(platformCopy[lang].automatic));assert.ok(!html.includes(visitorCopy[lang].weeklyOnly));
  }
+});
+
+test('the entire real current paragraph is checked, including preceding eligibility conditions',()=>{
+ for(const altered of ['Only US subscribers qualify. '+updated,updated.replace('This promotion was','For verified accounts only. This promotion was'),updated.replace('We were planning','Regional restrictions apply. We were planning'),updated.slice(updated.indexOf("we're making"))]){
+  assert.throws(()=>currentClaudePromotion(altered+'\n'+historical,url,at),/changed/);
+ }
+ assert.ok(currentClaudePromotion(claudeHelpText('<p>'+updated+'</p>'),url,at).eligiblePlans.includes('Ultra'));
 });

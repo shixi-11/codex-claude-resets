@@ -11,7 +11,7 @@ test('actual promotion collector retains last verified evidence when current con
   for(const dir of ['src','scripts','data'])await mkdir(join(root,dir));
   for(const file of ['src/claude-promotion.mjs','scripts/collect-platforms.mjs'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   const url='https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion';
-  const current="We're making part of it permanent: starting September 14, 2026, weekly limits in Claude Code are 25% higher than they were before the promotion for Pro, Max, Ultra, Team, and seat-based Enterprise plans.";
+  const current="This promotion was a limited-time boost on top of your plan. It ran from May 13 through September 13, 2026. We were planning to return weekly limits to their original levels, but we know many of you found the extra usage helpful. So while the full promotional boost couldn't last, we're making part of it permanent: starting September 14, 2026, weekly limits in Claude Code are 25% higher than they were before the promotion for Pro, Max, Ultra, Team, and seat-based Enterprise plans.";
   const historical='5-hour usage limits were not affected by this promotion. The increased weekly limit was automatically applied to your account.';
   await writeFile(join(root,'data/platforms.json'),JSON.stringify({claude:{gifts:[{type:'usage-promotion',sourceUrl:url,claim:'Applied automatically to eligible accounts',verifiedAt:'2026-09-01T00:00:00Z'}]}}));
   await writeFile(join(root,'mock.mjs'),'globalThis.fetch=async()=>new Response(process.env.TEST_HTML,{headers:{"content-type":"text/html"}});');
