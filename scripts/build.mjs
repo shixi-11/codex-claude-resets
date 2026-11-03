@@ -1,4 +1,5 @@
 import {assertTrackingSync} from '../src/tracking-audit.mjs';
+import {publicPlatforms} from '../src/platform-public.mjs';
 import {postText,reviewedTranslation} from '../src/post-text.mjs';
 import {visitorCopy} from '../src/visitor-copy.mjs';
 import {priorityCopy,resetDefinitions,earlierPosts} from '../src/priority-details.mjs';
@@ -13,7 +14,7 @@ import { validateEvent, postPlatform, reclassifyEvents } from '../src/evidence.m
 import {syncPlatformState} from '../src/platform-state.mjs';
 const root = new URL('../', import.meta.url);
 const out = new URL('dist/', root);
-const platforms = JSON.parse(await readFile(new URL('data/platforms.json',root),'utf8')); 
+const platforms = publicPlatforms(JSON.parse(await readFile(new URL('data/platforms.json',root),'utf8')));
 const events = reclassifyEvents(JSON.parse(await readFile(new URL('data/events.json', root), 'utf8')));
 const heat = JSON.parse(await readFile(new URL('data/topic-heat.json',root),'utf8'));
 const health = JSON.parse(await readFile(new URL('data/health.json', root), 'utf8'));
@@ -25,7 +26,7 @@ assertTrackingSync(platforms, events);
 await mkdir(out, { recursive: true });
 await cp(new URL('public/', root), out, { recursive: true, filter: path => !String(path).endsWith('mascot-source.png') });
 await mkdir(new URL('assets/', out), { recursive: true });
-const clientFiles=['announcement-time.mjs','drummer.mjs','drummer-data.mjs','drummer-client.mjs','topic-heat.mjs','topic-heat-client.mjs','elapsed.mjs','locales.mjs','app.mjs','style.css','shared.mjs','reset-status.mjs','platform-copy.mjs','clock-app.mjs','clock-copy.mjs','watch-copy.mjs','live-data.mjs','offers.mjs','priority-details.mjs','post-text.mjs','visitor-copy.mjs','evidence.mjs','clocks.css'];
+const clientFiles=['platform-public.mjs','announcement-time.mjs','drummer.mjs','drummer-data.mjs','drummer-client.mjs','topic-heat.mjs','topic-heat-client.mjs','elapsed.mjs','locales.mjs','app.mjs','style.css','shared.mjs','reset-status.mjs','platform-copy.mjs','clock-app.mjs','clock-copy.mjs','watch-copy.mjs','live-data.mjs','offers.mjs','priority-details.mjs','post-text.mjs','visitor-copy.mjs','evidence.mjs','clocks.css'];
 const assetVersion=createHash('sha256').update(Buffer.concat(await Promise.all([...clientFiles.map(file=>readFile(new URL('src/'+file,root))),readFile(new URL('public/assets/social.jpg',root)),readFile(new URL('public/assets/drummer-poster.webp',root)),readFile(new URL('public/assets/drummer-atlas.webp',root))]))).digest('hex').slice(0,10);
 for (const file of clientFiles) {const source=new URL(`src/${file}`,root),target=new URL(`assets/${file}`,out);if(file.endsWith('.mjs')){const text=await readFile(source,'utf8');await writeFile(target,text.replace(/((?:from|import)\s*['"]\.\/[^'"]+\.mjs)(['"])/g,(_,path,quote)=>path+'?v='+assetVersion+quote));}else await cp(source,target);}
 for (const [name,data] of Object.entries({events,health,platforms,'topic-heat':JSON.parse(await readFile(new URL('data/topic-heat.json',root),'utf8'))})) await writeFile(new URL(name+'.json',out),JSON.stringify(data,null,2)+'\n');

@@ -1,6 +1,8 @@
 import {validateEvent,parsePostUrl,postPlatform,validateAccountReport,accountReportForReset} from './evidence.mjs';
 import { watchCopy } from './watch-copy.mjs';
+import {publicPlatforms} from './platform-public.mjs';
 export const pageData=JSON.parse(document.querySelector('#page-data').textContent);
+pageData.platforms=publicPlatforms(pageData.platforms);
 const base=new URL('../',import.meta.url),w=watchCopy[pageData.lang];
 let busy=false;
 const safeSource=(value,id)=>{const post=parsePostUrl(value);if(post)return postPlatform(post.author)===id;try{const u=new URL(value);return id==='claude'&&u.protocol==='https:'&&u.hostname==='support.claude.com';}catch{return false;}};
@@ -10,7 +12,7 @@ export async function refreshLiveData(){
  try{
   const [platforms,health,events]=await Promise.all(['platforms.json','health.json','events.json'].map(path=>fetch(new URL(path+'?t='+Date.now(),base),{cache:'no-store',signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();})));
   if(!valid(platforms)||!Number.isFinite(Date.parse(health.lastSuccessAt))||!Array.isArray(events)||!events.every(validateEvent))throw Error('Invalid data');
-  pageData.events=events;Object.assign(pageData.platforms,platforms);Object.assign(pageData.health,health);window.dispatchEvent(new Event('reset-data-updated'));
+  pageData.events=events;Object.assign(pageData.platforms,publicPlatforms(platforms));Object.assign(pageData.health,health);window.dispatchEvent(new Event('reset-data-updated'));
   const label=document.querySelector('[data-live-status]');if(label){label.textContent=w.updated;label.hidden=true;}
  }catch{const label=document.querySelector('[data-live-status]');if(label){label.textContent=w.offline;label.hidden=false;}}finally{busy=false;if(button)button.disabled=false;}
 }
