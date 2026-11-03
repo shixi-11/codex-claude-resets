@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-03T19:14:17.396Z",
+  "lastAttemptAt": "2026-11-03T20:28:52.573Z",
   "lastSuccessAt": "2026-11-03T19:14:17.396Z",
-  "discoveryAt": "2026-11-03T19:14:17.396Z",
+  "discoveryAt": "2026-11-03T20:28:52.573Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -41,8 +41,8 @@
       "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
-      "ok": true,
-      "candidates": 18
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "name": "@claudeai timeline via FxEmbed",
@@ -53,18 +53,36 @@
       "candidates": 14
     },
     {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": true,
+      "candidates": 367
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 71
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 32
+    },
+    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 10,
+      "checked": 9,
       "failed": 0
     }
   ],
-  "status": "ok",
+  "status": "degraded",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-03T19:14:17.396Z",
+      "lastAttemptAt": "2026-11-03T20:28:52.573Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
@@ -83,14 +101,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-03T19:14:17.396Z"
+      "lastSuccessAt": "2026-11-03T20:28:52.573Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-03T19:14:17.396Z",
-      "status": "ok",
-      "checked": 5,
+      "lastAttemptAt": "2026-11-03T20:28:52.573Z",
+      "status": "degraded",
+      "checked": 4,
       "failed": 0,
-      "discovered": 46,
+      "discovered": 28,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -98,7 +116,7 @@
         },
         {
           "author": "AnthropicAI",
-          "ok": true
+          "ok": false
         },
         {
           "author": "claudeai",
