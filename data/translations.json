@@ -3428,9 +3428,9 @@
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
-        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
-        "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
+        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
+        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
+        "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
@@ -3615,7 +3615,7 @@
         "zh": "第28天/ 存档 2/2",
         "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
-        "es": "Día 28/ Acumulados 2/2",
+        "es": "Día 28/ Acumulado 2/2",
         "fr": "Jour 28 / En banque 2/2",
         "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
@@ -3623,5 +3623,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-04T14:37:40.696Z"
+  "lastAttemptAt": "2026-11-04T15:26:30.210Z"
 }
