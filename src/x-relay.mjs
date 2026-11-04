@@ -1,4 +1,5 @@
 import {createHash} from 'node:crypto';
+import {collectionRequest} from './collection-request.mjs';
 import { parsePostUrl, classify, needsResetContext, isResetTiming, validResetContext, extractEmbed, reviewedResetAnnouncement, isReviewedResetSource, isCacheAllowanceUpdate, decodeHtml } from './evidence.mjs';
 const normalize=text=>text.replace(/https?:\/\/\S+/g,'').replace(/[’‘]/g,"'").replace(/(?:…|\.\.\.)\s*$/,'').replace(/\s+/g,' ').trim();
 export function shouldCheckCandidate(candidate) {
@@ -20,6 +21,57 @@ export function timelineCandidates(payload,author){
  };
  payload.results.forEach(visit);
  return [...found.values()];
+}
+
+// Public relay profile/detail evidence pins this ID, not an authenticated X API.
+export const TIBO_ID='1953337039510003712';
+export async function readAuthorTimeline(author,{budgetMs=18000,fetcher=fetch,now=Date.now,sleep=ms=>new Promise(r=>setTimeout(r,ms))}={}) {
+ const endpoint=handle=>`https://api.fxtwitter.com/2/profile/${handle}/statuses?count=40&with_replies=1`;
+ const original=endpoint(author);
+ if(author!=='thsottiaux'){
+  const payload=await collectionRequest(original,{budgetMs,fetcher,now,sleep,retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500});
+  const posts=timelineCandidates(payload,author);if(!posts.length)throw Error('No matching author posts returned');
+  return {posts,url:original};
+ }
+ const deadline=now()+budgetMs,attempts=[];let useId=false,lastError;
+ for(let i=0;i<3;i++){
+  const remaining=deadline-now();if(remaining<=0)break;
+  const url=endpoint(useId?'id:'+TIBO_ID:author),attempt={url,ok:false};let retryAfter=null;attempts.push(attempt);
+  try{
+   const response=await fetcher(url,{headers:{'User-Agent':'CodexResetTracker/1.0 (public announcement monitoring)'},signal:AbortSignal.timeout(Math.max(1,Math.floor(remaining/(3-i))))});
+   attempt.status=response.status;
+   retryAfter=response.headers.get('retry-after');
+   let payload;
+   if(response.ok){payload=await response.json();if(payload?.code!==200){attempt.status=payload?.code;throw Error('Invalid relay timeline');}}
+   else throw Error(`HTTP ${response.status}`);
+   let posts=timelineCandidates(payload,author);
+   if(!posts.length)throw Error('No matching author posts returned');
+   if(useId){
+    // Coverage requires own root posts; a matching quote inside
+    // another author's timeline does not establish coverage.
+    const roots=payload.results.flatMap(row=>Array.isArray(row.thread)?row.thread:row.status?[row.status]:[row]);
+    const matching=roots.filter(row=>row.author?.screen_name?.toLowerCase()===author&&String(row.author?.id)===TIBO_ID&&!row.author?.protected&&parsePostUrl(row.url)?.author.toLowerCase()===author&&String(row.id)===parsePostUrl(row.url)?.id);
+    if(!matching.length||roots.some(row=>(row.author?.screen_name?.toLowerCase()===author&&String(row.author?.id)!==TIBO_ID)||(String(row.author?.id)===TIBO_ID&&row.author?.screen_name?.toLowerCase()!==author)))throw Error('ID timeline identity mismatch');
+    // Replies may include other authors as context rows. Never discover their
+    // posts or their quotes as proof of this account's timeline coverage.
+    posts=[...new Map(matching.map(row=>[row.id,{url:parsePostUrl(row.url).url,relay:row}])).values()];
+   }
+   if(now()>=deadline)throw Error('Request budget exhausted');
+   attempt.ok=true;return {posts,url,attempts};
+  }catch(error){
+   lastError=error;attempt.error=error.message;
+   const status=attempt.status;
+   if(status===404)useId=true;
+   const retryable=[404,429,500,502,503,504].includes(status)||['TypeError','TimeoutError','AbortError'].includes(error.name);
+   if(!retryable||i===2)break;
+   const wait=retryAfter===null?Math.min(1500,500*2**i):/^\d+(?:\.\d+)?$/.test(retryAfter)?Number(retryAfter)*1000:Math.max(0,Date.parse(retryAfter)-now());
+   // A server's Retry-After is authoritative: do not evade it by switching paths.
+   if(!Number.isFinite(wait)||wait>1500)break;
+   if(deadline-now()<=wait)break;
+   await sleep(wait);
+  }
+ }
+ const error=lastError||Error('Request budget exhausted');error.timelineAttempts=attempts;throw error;
 }
 
 // Community indexes can contain an entire archive. Bound fallback work per

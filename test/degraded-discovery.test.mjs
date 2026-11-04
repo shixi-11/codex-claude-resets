@@ -24,7 +24,7 @@ test('failed timelines use bounded fallback without losing relay text or refresh
    globalThis.fetch=async input=>{
     const u=new URL(input);
     if(u.pathname.includes('/profile/')) {
-     const author=u.pathname.split('/')[3];counters.timelines[author]=(counters.timelines[author]||0)+1;
+     const handle=u.pathname.split('/')[3],author=handle==='id:1953337039510003712'?'thsottiaux':handle;counters.timelines[author]=(counters.timelines[author]||0)+1;
      if(['thsottiaux','claudeai'].includes(author))return new Response('',{status:404});
      const id=String(8000+['OpenAI','OpenAIDevs','ClaudeDevs','AnthropicAI'].indexOf(author));
      return Response.json({code:200,results:[{id,url:'https://x.com/'+author+'/status/'+id,author:{screen_name:author},text:'Hello world'}]});
