@@ -3,7 +3,7 @@ import {refreshTopicHeat} from './topic-heat-refresh.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { announcementTime } from '../src/announcement-time.mjs';
-import { timelineCandidates, mergeDiscoveryCandidates, corroborateRelay, resolveResetContext, shouldCheckCandidate } from '../src/x-relay.mjs';
+import { readAuthorTimeline, timelineCandidates, mergeDiscoveryCandidates, corroborateRelay, resolveResetContext, shouldCheckCandidate } from '../src/x-relay.mjs';
 import {collectionRequest} from '../src/collection-request.mjs';
 import { ALLOWED_AUTHORS, reclassifyEvents, RULES_VERSION, parsePostUrl, extractEmbed, classify, evidenceExcerpt, mergeEvents, postPlatform, needsResetContext } from '../src/evidence.mjs';
 
@@ -47,11 +47,10 @@ try {
         // FxEmbed can transiently return an empty-timeline 404 for existing
         // accounts. Retry only these monitored timelines, inside the same
         // request/collection budgets; never treat an empty response as coverage.
-        const payload=await collectionRequest(url,{budgetMs:Math.min(18000,collectionDeadline-Date.now()),retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500});
-        const posts=timelineCandidates(payload,author);
-        if(!posts.length)throw new Error('No matching author posts returned');
-        candidates.push(...posts);health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:true,candidates:posts.length});
-      }catch(error){health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:false,error:error.message});}
+        const result=await readAuthorTimeline(author,{budgetMs:Math.min(18000,collectionDeadline-Date.now())});
+        const posts=result.posts;
+        candidates.push(...posts);health.sources.push({name:`@${author} timeline via FxEmbed`,url:result.url,author,platform:postPlatform(author),ok:true,candidates:posts.length,...(result.attempts?{attempts:result.attempts}:{})});
+      }catch(error){health.sources.push({name:`@${author} timeline via FxEmbed`,url,author,platform:postPlatform(author),ok:false,error:error.message,...(error.timelineAttempts?{attempts:error.timelineAttempts}:{})});}
     }
     health.mode=candidates.length?'profile-relay':'community-discovery';
     // Independent public pages are discovery indexes only. Never accept their classifications or text as evidence.
