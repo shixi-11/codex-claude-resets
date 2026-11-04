@@ -2699,7 +2699,7 @@
         "ko": "우리가 완벽에 도달하는 날부터 그 이후로는 리셋될 것입니다.",
         "fr": "Le jour où nous atteindrons la perfection, tout sera réinitialisé à partir de là et par la suite.",
         "es": "El día que alcancemos la perfección, se reiniciará desde ese momento en adelante",
-        "de": "Der Tag, an dem wir die Vollkommenheit erreichen, wird von da an neu gestartet.",
+        "de": "Der Tag, an dem wir Vollkommenheit erreichen, wird von da an zurückgesetzt werden.",
         "ar": "اليوم الذي نصل فيه إلى الكمال سيكون إعادة تعيين من هناك فصاعدًا"
       },
       "provider": "FxEmbed",
@@ -3240,8 +3240,8 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日の午前10時PST前に、小型船と一緒に着陸します。",
-        "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
+        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
+        "ko": "작은 배와 함께 내일 오전 10시 PST 이전에 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
@@ -3430,7 +3430,7 @@
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
-        "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
+        "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
@@ -3599,7 +3599,7 @@
         "zh-Hant": "已儲存 1/2",
         "ja": "1/2を確保しました",
         "ko": "1/2 적립됨",
-        "es": "Acumulado 1/2",
+        "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
         "ar": "مصرف 1/2"
@@ -3613,7 +3613,7 @@
       "fullTexts": {
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
-        "ko": "28일차/ 은행 2/2",
+        "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
@@ -3623,5 +3623,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-04T09:30:44.973Z"
+  "lastAttemptAt": "2026-11-04T14:37:40.696Z"
 }
