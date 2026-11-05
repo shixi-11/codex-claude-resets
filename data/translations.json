@@ -3214,7 +3214,7 @@
       "fullTexts": {
         "zh": "明天太平洋标准时间上午10点前抵达。",
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
-        "ja": "明日の午前10時までにPSTに着陸します。",
+        "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
@@ -3243,7 +3243,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3429,7 +3429,7 @@
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
-        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
+        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
@@ -3602,7 +3602,7 @@
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
-        "ar": "مصرف 1/2"
+        "ar": "مصرف نصف"
       }
     },
     "2117035794678546764": {
@@ -3615,7 +3615,7 @@
         "zh": "第28天/ 存档 2/2",
         "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
-        "es": "Día 28/ Acumulados 2/2",
+        "es": "Día 28/ Acumulado 2/2",
         "fr": "Jour 28 / En banque 2/2",
         "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
@@ -3650,5 +3650,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-05T10:51:26.230Z"
+  "lastAttemptAt": "2026-11-05T10:55:17.454Z"
 }
