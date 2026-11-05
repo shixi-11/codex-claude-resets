@@ -24,4 +24,12 @@ An ID response establishes coverage only through direct own root posts with the 
 - An independent focused review passed 20 tests with no blocking findings.
 - An isolated live collector at 2026-11-05T10:44:02.960Z naturally encountered handle 404s for both Tibo and ClaudeDevs and recovered through their respective IDs. All six timelines and nine official embeds succeeded. This was a live isolated validation, not a production deployment. Its 162 events retained the same IDs, classification, source publication times, reset times, plan fields and full text. No isolated data was copied into the repository.
 
-After normal merge, verify the exact main workflow and production data, inspect the live EN/ZH desktop/mobile pages, capture the deployed page into docs/screenshot.jpg, and pin README to that image commit as required by AGENTS.md. Do not bypass branch protection or suppress coverage/staleness alerts to obtain a green result.
+## Production verification
+
+PR #57 was normally merged as 1a382860c27a7b7387a03a76f220ec07bbcd797f without changing branch protection. Its [main workflow 42013696787](https://github.com/shixi-11/codex-claude-resets/actions/runs/42013696787) passed all 187 tests, collection, validation, build and publication. The collector wrote data commit 6e52273726bb5a257ed60b7216e78053e93c899a.
+
+The public health endpoint now reports 2026-11-05T10:48:32.903Z as the last complete successful check, with Codex and Claude both healthy, all six timelines successful, and nine official embeds checked with zero failures. In this production run both handles themselves returned 200. The naturally failing 404-to-ID recovery was proven in the isolated live run above, not in this production run. This distinction is intentional.
+
+The live English and Simplified Chinese desktop pages were visually checked after deployment. Both retained the existing reset-credit/completion distinctions and latest usage post, and displayed the new successful check time without the stale-source warning. Images loaded and no horizontal overflow was observed. No frontend content or styling was changed. A fresh full-page English production screenshot was captured at approximately 10:50 UTC for docs/screenshot.jpg and README's immutable image reference. Mobile layout was not re-tested in this backend-only change.
+
+The existing unrelated Tibo review item remains pending. Scheduling cadence and alert thresholds are unchanged; this repair does not guarantee against future upstream outages or GitHub scheduling delays.
