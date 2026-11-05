@@ -6,7 +6,7 @@ import {join,dirname,resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {spawnSync} from 'node:child_process';
 
-test('two Claude timeline 404s remain degraded despite primary success; only complete recovery advances coverage',async()=>{
+test('Claude ID recovery advances coverage only when every Claude timeline succeeds, including repeated runs',async()=>{
  const root=await mkdtemp(join(tmpdir(),'claude-recovery-'));
  try {
   for(const dir of ['src','scripts','data'])await mkdir(join(root,dir));
@@ -21,27 +21,32 @@ test('two Claude timeline 404s remain degraded despite primary success; only com
    globalThis.fetch=async input=>{
     const u=new URL(input);
     if(u.pathname.includes('/profile/')){
-     const author=u.pathname.split('/')[3];counts[author]=(counts[author]||0)+1;
-     if(['ClaudeDevs','AnthropicAI'].includes(author)&&process.env.TEST_RECOVER!=='1')return new Response('',{status:404});
+     const handle=u.pathname.split('/')[3],author=handle==='id:2024518793679294464'?'ClaudeDevs':handle;counts[author]=(counts[author]||0)+1;
+     if(author==='ClaudeDevs'&&(handle==='ClaudeDevs'||process.env.TEST_RECOVER==='0'))return new Response('',{status:404});
+     if(author==='AnthropicAI'&&process.env.TEST_RECOVER!=='1')return new Response('',{status:404});
      const id=author==='claudeai'?'2116220869479428500':'123';
-     return Response.json({code:200,results:[{id,url:'https://x.com/'+author+'/status/'+id,author:{screen_name:author},text:author==='claudeai'?'Claude weekly usage limits increased.':'Hello world'}]});
+     return Response.json({code:200,results:[{id,url:'https://x.com/'+author+'/status/'+id,author:{screen_name:author,...(author==='ClaudeDevs'?{id:'2024518793679294464'}:{})},text:author==='claudeai'?'Claude weekly usage limits increased.':'Hello world'}]});
     }
     if(u.hostname==='publish.twitter.com')return Response.json({url:u.searchParams.get('url'),author_url:'https://x.com/claudeai',html:'<p>Claude weekly usage limits increased.</p>'});
     return new Response('',{status:503});
    };
   `);
-  for(const recover of ['0','1']){
+  for(const recover of ['0','id-only','1','1']){
    const result=spawnSync(process.execPath,['--import',pathToFileURL(join(root,'mock.mjs')).href,join(root,'scripts/collect.mjs')],{encoding:'utf8',timeout:15000,env:{...process.env,TEST_RECOVER:recover,ENABLE_PAID_X_API:'false',COLLECT_POST_URLS:''}});
    assert.equal(result.status,0,result.stderr);
    const health=JSON.parse(await readFile(join(root,'data/health.json'),'utf8'));
    const counts=JSON.parse(result.stdout.match(/COUNTS:(.*)/)[1]);
    assert.equal(health.platforms.codex.status,'ok');assert.equal(health.platforms.claude.checked,1);assert.equal(health.platforms.claude.failed,0);
    assert.equal(health.platforms.claude.authors.length,3);
-   for(const author of ['ClaudeDevs','AnthropicAI'])assert.equal(counts[author],recover==='0'?3:1);
-   if(recover==='0'){
+   assert.equal(counts.ClaudeDevs,recover==='0'?3:2);
+   assert.equal(counts.AnthropicAI,recover==='1'?1:3);
+   const claudeSource=health.sources.find(source=>source.author==='ClaudeDevs');
+   assert.equal(claudeSource.attempts[0].status,404);
+   if(recover!=='0')assert.ok(claudeSource.url.includes('id:2024518793679294464'));
+   if(recover!=='1'){
     assert.equal(health.status,'degraded');assert.equal(health.platforms.claude.status,'degraded');
     assert.equal(health.lastSuccessAt,previous);assert.equal(health.platforms.claude.lastSuccessAt,previous);
-    assert.equal(health.platforms.claude.authors.filter(a=>!a.ok).length,2);
+    assert.equal(health.platforms.claude.authors.filter(a=>!a.ok).length,recover==='0'?2:1);
    }else{
     assert.equal(health.status,'ok');assert.equal(health.platforms.claude.status,'ok');
     assert.equal(health.lastSuccessAt,health.lastAttemptAt);assert.equal(health.platforms.claude.lastSuccessAt,health.lastAttemptAt);
