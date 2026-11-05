@@ -3243,7 +3243,7 @@
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
+        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3602,7 +3602,7 @@
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
-        "ar": "مصرف نصف"
+        "ar": "مصرف 1/2"
       }
     },
     "2117035794678546764": {
@@ -3615,9 +3615,9 @@
         "zh": "第28天/ 存档 2/2",
         "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
-        "es": "Día 28/ Acumulado 2/2",
+        "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
-        "ar": "اليوم 28/ مخزن 2/2",
+        "ar": "اليوم 28/ محفوظ 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     },
@@ -3650,5 +3650,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-05T10:55:17.454Z"
+  "lastAttemptAt": "2026-11-05T18:44:46.540Z"
 }

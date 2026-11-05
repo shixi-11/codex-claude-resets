@@ -1,25 +1,19 @@
 {
-  "lastAttemptAt": "2026-11-05T10:54:41.050Z",
-  "lastSuccessAt": "2026-11-05T10:54:41.050Z",
-  "discoveryAt": "2026-11-05T10:54:41.050Z",
+  "lastAttemptAt": "2026-11-05T18:44:18.225Z",
+  "lastSuccessAt": "2026-11-05T18:44:18.225Z",
+  "discoveryAt": "2026-11-05T18:44:18.225Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
-      "candidates": 19,
+      "candidates": 20,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -31,7 +25,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 8
+      "candidates": 10
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -70,13 +64,13 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 14
+      "candidates": 16
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 9,
+      "checked": 8,
       "failed": 0
     }
   ],
@@ -84,11 +78,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-05T10:54:41.050Z",
+      "lastAttemptAt": "2026-11-05T18:44:18.225Z",
       "status": "ok",
-      "checked": 1,
+      "checked": 0,
       "failed": 0,
-      "discovered": 41,
+      "discovered": 44,
       "authors": [
         {
           "author": "thsottiaux",
@@ -103,14 +97,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-05T10:54:41.050Z"
+      "lastSuccessAt": "2026-11-05T18:44:18.225Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-05T10:54:41.050Z",
+      "lastAttemptAt": "2026-11-05T18:44:18.225Z",
       "status": "ok",
       "checked": 8,
       "failed": 0,
-      "discovered": 48,
+      "discovered": 50,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -125,7 +119,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-05T10:54:41.050Z"
+      "lastSuccessAt": "2026-11-05T18:44:18.225Z"
     }
   }
 }
