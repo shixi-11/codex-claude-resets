@@ -3216,10 +3216,10 @@
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
         "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
-        "es": "Llega mañana antes de las 10am PST.",
+        "es": "Llega mañana antes de las 10 a.m. PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
-        "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
+        "ar": "يهبط غدًا قبل الساعة 10 صباحًا بتوقيت الباسيفيك."
       }
     },
     "2113492187770175603": {
@@ -3241,7 +3241,7 @@
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
-        "ko": "작은 배와 함께 내일 오전 10시 PST 이전에 착륙합니다.",
+        "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
@@ -3407,7 +3407,7 @@
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
-        "fr": "Atterrit avant minuit HNP.",
+        "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
       }
@@ -3431,7 +3431,7 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3613,10 +3613,10 @@
       "fullTexts": {
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
-        "ko": "28일째/ 적립 2/2",
+        "ko": "28일차/ 은행 2/2",
         "ja": "28日目/ 貯蓄 2/2",
-        "es": "Día 28/ Acumulados 2/2",
-        "fr": "Jour 28 / En banque 2/2",
+        "es": "Día 28/ Acumulado 2/2",
+        "fr": "Jour 28/ Mis en réserve 2/2",
         "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
@@ -3631,7 +3631,8 @@
         "ko": "Claude Code의 백그라운드 서브에이전트가 이제 사용 한도를 덜 사용합니다.",
         "fr": "Les sous-agents en arrière-plan dans Claude Code utilisent désormais moins de votre limite d'utilisation.",
         "de": "Hintergrund-Subagenten in Claude Code verwenden jetzt weniger von Ihrem Nutzungs-Limit.",
-        "ar": "وكلاء الفرعيين في الخلفية في Claude Code يستخدمون الآن أقل من حد الاستخدام الخاص بك."
+        "ar": "وكلاء الفرعيين في الخلفية في Claude Code يستخدمون الآن أقل من حد الاستخدام الخاص بك.",
+        "es": "Los subagentes en segundo plano en Claude Code ahora usan menos de tu límite de uso."
       },
       "fullText": "Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
       "fullTexts": {
@@ -3641,12 +3642,13 @@
         "ko": "Claude Code의 백그라운드 서브에이전트가 이제 사용 한도를 덜 사용합니다.\n\n실행 중인 서브에이전트는 30초마다 상태 줄을 업데이트하며, 각 업데이트는 이전에 전체 대화를 다시 읽었습니다. 이제 Haiku 5.5는 짧은 노트에서 이를 작성하므로, 각 업데이트 비용이 약 99% 적게 듭니다.",
         "fr": "Les sous-agents en arrière-plan dans Claude Code utilisent désormais moins de votre limite d'utilisation.\n\nUn sous-agent en cours d'exécution met à jour sa ligne de statut toutes les 30 secondes, et chaque mise à jour consistait auparavant à relire l'intégralité de sa conversation. Désormais, Haiku 5.5 l'écrit à partir de notes courtes, de sorte que chaque mise à jour coûte environ 99 % de moins.",
         "de": "Hintergrund-Subagenten in Claude Code verwenden jetzt weniger von Ihrem Nutzungs-Limit.\n\nEin laufender Subagent aktualisiert seine Statuszeile alle 30 Sekunden, und jede Aktualisierung las früher die gesamte Konversation neu. Jetzt schreibt Haiku 5.5 sie stattdessen aus kurzen Notizen, sodass jede Aktualisierung etwa 99 % weniger kostet.",
-        "ar": "وكلاء الفرعيين في الخلفية في Claude Code يستخدمون الآن أقل من حد الاستخدام الخاص بك.\n\nوكيل فرعي يعمل يحدّث سطر حالته كل 30 ثانية، وكانت كل تحديث يعيد قراءة المحادثة بأكملها سابقًا. الآن Haiku 5.5 يكتبها من ملاحظات قصيرة بدلاً من ذلك، لذا يكلف كل تحديث حوالي 99% أقل."
+        "ar": "وكلاء الفرعيين في الخلفية في Claude Code يستخدمون الآن أقل من حد الاستخدام الخاص بك.\n\nوكيل فرعي يعمل يحدّث سطر حالته كل 30 ثانية، وكانت كل تحديث يعيد قراءة المحادثة بأكملها سابقًا. الآن Haiku 5.5 يكتبها من ملاحظات قصيرة بدلاً من ذلك، لذا يكلف كل تحديث حوالي 99% أقل.",
+        "es": "Los subagentes en segundo plano en Claude Code ahora usan menos de tu límite de uso.\n\nUn subagente en ejecución actualiza su línea de estado cada 30 segundos, y cada actualización solía volver a leer toda su conversación. Ahora Haiku 5.5 la escribe a partir de notas cortas en lugar de eso, por lo que cada actualización cuesta aproximadamente un 99% menos."
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-11-04T21:19:53.373Z"
+      "translatedAt": "2026-11-05T02:26:02.377Z"
     }
   },
-  "pending": 414,
-  "lastAttemptAt": "2026-11-04T21:20:17.916Z"
+  "pending": 413,
+  "lastAttemptAt": "2026-11-05T02:26:24.621Z"
 }
