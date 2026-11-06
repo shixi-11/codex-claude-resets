@@ -1,12 +1,12 @@
 {
-  "lastAttemptAt": "2026-11-06T00:14:22.213Z",
-  "lastSuccessAt": "2026-11-06T00:14:22.213Z",
-  "discoveryAt": "2026-11-06T00:14:22.213Z",
+  "lastAttemptAt": "2026-11-06T06:46:11.159Z",
+  "lastSuccessAt": "2026-11-06T06:46:11.159Z",
+  "discoveryAt": "2026-11-06T06:46:11.159Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
@@ -14,6 +14,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -25,7 +31,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 9
+      "candidates": 8
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
@@ -78,11 +84,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-06T00:14:22.213Z",
+      "lastAttemptAt": "2026-11-06T06:46:11.159Z",
       "status": "ok",
       "checked": 0,
       "failed": 0,
-      "discovered": 43,
+      "discovered": 42,
       "authors": [
         {
           "author": "thsottiaux",
@@ -97,10 +103,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-06T00:14:22.213Z"
+      "lastSuccessAt": "2026-11-06T06:46:11.159Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-06T00:14:22.213Z",
+      "lastAttemptAt": "2026-11-06T06:46:11.159Z",
       "status": "ok",
       "checked": 8,
       "failed": 0,
@@ -119,7 +125,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-06T00:14:22.213Z"
+      "lastSuccessAt": "2026-11-06T06:46:11.159Z"
     }
   }
 }
