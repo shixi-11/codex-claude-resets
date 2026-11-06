@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-06T09:32:09.400Z",
-  "lastSuccessAt": "2026-11-06T09:32:09.400Z",
-  "discoveryAt": "2026-11-06T09:32:09.400Z",
+  "lastAttemptAt": "2026-11-06T15:00:22.900Z",
+  "lastSuccessAt": "2026-11-06T15:00:22.900Z",
+  "discoveryAt": "2026-11-06T15:00:22.900Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
@@ -45,6 +45,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -78,7 +84,7 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-06T09:32:09.400Z",
+      "lastAttemptAt": "2026-11-06T15:00:22.900Z",
       "status": "ok",
       "checked": 0,
       "failed": 0,
@@ -97,10 +103,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-06T09:32:09.400Z"
+      "lastSuccessAt": "2026-11-06T15:00:22.900Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-06T09:32:09.400Z",
+      "lastAttemptAt": "2026-11-06T15:00:22.900Z",
       "status": "ok",
       "checked": 8,
       "failed": 0,
@@ -119,7 +125,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-06T09:32:09.400Z"
+      "lastSuccessAt": "2026-11-06T15:00:22.900Z"
     }
   }
 }

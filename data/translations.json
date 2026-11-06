@@ -3219,7 +3219,7 @@
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
-        "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
+        "ar": "يهبط غدًا قبل الساعة 10 صباحًا بتوقيت الباسيفيكي."
       }
     },
     "2113492187770175603": {
@@ -3240,7 +3240,7 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日の午前10時PST前に、小型船と一緒に着陸します。",
+        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
@@ -3406,7 +3406,7 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Aterriza a medianoche PST.",
+        "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
@@ -3430,7 +3430,7 @@
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
-        "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
+        "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
@@ -3602,7 +3602,7 @@
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
-        "ar": "مصرف 1/2"
+        "ar": "مصرف نصف"
       }
     },
     "2117035794678546764": {
@@ -3613,7 +3613,7 @@
       "fullTexts": {
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
-        "ko": "28일차 / 은행 보관 2/2",
+        "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
@@ -3650,5 +3650,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-06T09:32:41.165Z"
+  "lastAttemptAt": "2026-11-06T15:01:02.512Z"
 }
