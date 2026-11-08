@@ -28,10 +28,11 @@ export const TIBO_ID='1953337039510003712';
 export const CLAUDE_DEVS_ID='2024518793679294464';
 export const OPENAI_ID='4398626122';
 export const ANTHROPIC_AI_ID='1353836358901501952';
+export const OPENAI_DEVS_ID='1633874951508721686';
 export async function readAuthorTimeline(author,{budgetMs=18000,fetcher=fetch,now=Date.now,sleep=ms=>new Promise(r=>setTimeout(r,ms))}={}) {
  const endpoint=handle=>`https://api.fxtwitter.com/2/profile/${handle}/statuses?count=40&with_replies=1`;
  const original=endpoint(author);
- const pinnedId=author==='thsottiaux'?TIBO_ID:author==='ClaudeDevs'?CLAUDE_DEVS_ID:author==='OpenAI'?OPENAI_ID:author==='AnthropicAI'?ANTHROPIC_AI_ID:null;
+ const pinnedId=author==='thsottiaux'?TIBO_ID:author==='ClaudeDevs'?CLAUDE_DEVS_ID:author==='OpenAI'?OPENAI_ID:author==='AnthropicAI'?ANTHROPIC_AI_ID:author==='OpenAIDevs'?OPENAI_DEVS_ID:null;
  const expectedHandle=author.toLowerCase();
  if(!pinnedId){
   const payload=await collectionRequest(original,{budgetMs,fetcher,now,sleep,retryStatuses:[404,429,500,502,503,504],maxAttempts:3,retryDelayMs:500});

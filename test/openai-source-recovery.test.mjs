@@ -22,7 +22,7 @@ test('OpenAI ID recovery advances coverage only when every Codex timeline succee
    globalThis.fetch=async input=>{
     const u=new URL(input);
     if(u.pathname.includes('/profile/')){
-     const handle=u.pathname.split('/')[3],author=handle==='id:4398626122'?'OpenAI':handle;counts[author]=(counts[author]||0)+1;
+     const handle=u.pathname.split('/')[3],author=({'id:4398626122':'OpenAI','id:1633874951508721686':'OpenAIDevs'})[handle]||handle;counts[author]=(counts[author]||0)+1;
      if(author==='OpenAI'&&(handle==='OpenAI'||process.env.TEST_RECOVER==='0'))return new Response('',{status:404});
      if(author==='OpenAIDevs'&&process.env.TEST_RECOVER!=='1')return new Response('',{status:404});
      const id=author==='claudeai'?'2116220869479428500':'123';
