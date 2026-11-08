@@ -8,7 +8,7 @@
       "resetAt": null
     },
     "gifts": [],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "latest": {
       "id": "2117035794678546764",
       "kind": "banked",
@@ -202,7 +202,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-07T22:44:21.061Z",
+        "verifiedAt": "2026-11-08T02:28:36.597Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -221,7 +221,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-07T22:44:21.061Z",
+      "checkedAt": "2026-11-08T02:28:36.597Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -233,7 +233,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2118063143167693011",
       "publishedAt": "2026-11-04T19:29:39.698Z",
-      "verifiedAt": "2026-11-07T22:44:14.486Z",
+      "verifiedAt": "2026-11-08T02:28:08.070Z",
       "excerpt": "Background subagents in Claude Code now use less of your usage limit.",
       "fullText": "Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
       "truncated": false,

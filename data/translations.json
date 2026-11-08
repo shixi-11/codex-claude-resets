@@ -3217,7 +3217,7 @@
         "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
-        "fr": "Atterrit demain avant 10h PST.",
+        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
@@ -3407,8 +3407,8 @@
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
-        "fr": "Atterrit avant minuit HNP.",
-        "ar": "يصل الأرض بحلول منتصف الليل بتوقيت المحيط الهادئ.",
+        "fr": "Atterrit à minuit heure du Pacifique.",
+        "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
       }
     },
@@ -3428,7 +3428,7 @@
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
+        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
@@ -3597,10 +3597,10 @@
       "fullTexts": {
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
-        "ja": "1/2を確保しました",
+        "ja": "バンクド 1/2",
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
-        "fr": "Mis en banque 1/2",
+        "fr": "En banque 1/2",
         "de": "1/2 gespart",
         "ar": "مصرف 1/2"
       }
@@ -3614,8 +3614,8 @@
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
         "ko": "28일째/ 적립 2/2",
-        "ja": "28日目/ 貯蓄 2/2",
-        "es": "Día 28/ Acumulados 2/2",
+        "ja": "28日目／貯金済み 2/2",
+        "es": "Día 28/ Acumulado 2/2",
         "fr": "Jour 28 / En banque 2/2",
         "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
@@ -3650,5 +3650,5 @@
     }
   },
   "pending": 413,
-  "lastAttemptAt": "2026-11-07T22:44:49.463Z"
+  "lastAttemptAt": "2026-11-08T02:29:07.702Z"
 }
