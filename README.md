@@ -40,11 +40,11 @@ The site, source records, collector and GitHub Actions workflow live in this pub
 
 | Job | Schedule | Output |
 | --- | --- | --- |
-| Announcement check | At minute 17 UTC each hour | Verified records and source health committed for Vercel deployment |
+| Announcement check | At minutes 17 and 47 UTC each hour | Verified records and source health committed for Vercel deployment |
 | Daily digest | 02:23 UTC daily | A source-linked Markdown digest of the previous UTC day |
 | Manual refresh | GitHub Actions → Run workflow | Check, digest and commit for Vercel deployment |
 
-GitHub schedules may be delayed. Failures retain existing records and publish the degraded health state. The production workflow requires **no paid API or model**. An optional X API adapter exists in the collector, but paid access is never enabled by default. Subscription OAuth and device credentials do not belong in repository secrets or hosted runners.
+GitHub schedules may be delayed or dropped; the two hourly opportunities do not guarantee a fresh check. A refresh job times out after ten minutes so a stalled job cannot block later attempts indefinitely. Failures retain existing records and publish the degraded health state. The production workflow requires **no paid API or model**. An optional X API adapter exists in the collector, but paid access is never enabled by default. Subscription OAuth and device credentials do not belong in repository secrets or hosted runners.
 
 Standard GitHub-hosted runners on this public repository do not consume the owner's private Actions minutes. Other private repositories on the account still share the GitHub Free 2,000-minute allowance. Vercel hosting is separate. No paid Actions budget is enabled by this project. See [automation](docs/automation.md) for deployment details.
 
