@@ -61,7 +61,7 @@ test('ClaudeDevs: other retryable errors stay on the handle; long Retry-After fo
  }
 });
 test('other configured authors retain handle-only retries',async()=>{
- for(const author of ['AnthropicAI','claudeai','OpenAIDevs']){
+ for(const author of ['claudeai','OpenAIDevs']){
   const calls=[];await assert.rejects(readAuthorTimeline(author,{fetcher:async url=>{calls.push(url);return new Response('',{status:404});},sleep:async()=>{}}));
   assert.equal(calls.length,3);assert.ok(calls.every(url=>url.includes('/profile/'+author+'/')));
  }

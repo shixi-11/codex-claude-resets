@@ -22,7 +22,7 @@ test('Claude ID recovery advances coverage only when every Claude timeline succe
    globalThis.fetch=async input=>{
     const u=new URL(input);
     if(u.pathname.includes('/profile/')){
-     const handle=u.pathname.split('/')[3],author=handle==='id:2024518793679294464'?'ClaudeDevs':handle;counts[author]=(counts[author]||0)+1;
+     const handle=u.pathname.split('/')[3],author=({'id:2024518793679294464':'ClaudeDevs','id:1353836358901501952':'AnthropicAI'})[handle]||handle;counts[author]=(counts[author]||0)+1;
      if(author==='ClaudeDevs'&&(handle==='ClaudeDevs'||process.env.TEST_RECOVER==='0'))return new Response('',{status:404});
      if(author==='AnthropicAI'&&process.env.TEST_RECOVER!=='1')return new Response('',{status:404});
      const id=author==='claudeai'?'2116220869479428500':'123';
