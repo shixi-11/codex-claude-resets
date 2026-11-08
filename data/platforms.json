@@ -18,12 +18,12 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2119308687676432672",
       "publishedAt": "2026-11-08T05:59:00.650Z",
-      "verifiedAt": "2026-11-08T09:13:25.961Z",
+      "verifiedAt": "2026-11-08T10:23:27.750Z",
       "excerpt": "We hesitated to embed x.com into the codex app to make sense of the resets, but decided against it.",
       "fullText": "We hesitated to embed x.com into the codex app to make sense of the resets, but decided against it.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "f25dc747950e60d7936c6ea20fc8abdb644d2616156898c245eb506917f21104"
     },
     "lastReset": {
@@ -66,7 +66,7 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "discoveryMode": "profile-relay",
@@ -97,7 +97,7 @@
         "relationProvenance": "editorial-primary",
         "contentHash": "cad880732943fccf826f493b4f676944d60a37797e46e3137ad8cd69790c4608"
       },
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f"
     },
     "latestReset": {
@@ -140,7 +140,7 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "accountReports": [
@@ -189,7 +189,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-08T09:13:31.199Z",
+        "verifiedAt": "2026-11-08T10:23:32.153Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -208,7 +208,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-08T09:13:31.199Z",
+      "checkedAt": "2026-11-08T10:23:32.153Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -220,12 +220,12 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2118063143167693011",
       "publishedAt": "2026-11-04T19:29:39.698Z",
-      "verifiedAt": "2026-11-08T09:13:25.961Z",
+      "verifiedAt": "2026-11-08T10:23:27.750Z",
       "excerpt": "Background subagents in Claude Code now use less of your usage limit.",
       "fullText": "Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "d01e98e9e93f3d2399a7227a2cd9186b91d88f5b468f4e6b81f3573dce2b327e"
     },
     "lastReset": {
@@ -242,7 +242,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -260,7 +260,7 @@
       "fullText": "Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b"
     },
     "latestReset": {
@@ -277,7 +277,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.26",
+      "rulesVersion": "1.4.27",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }
