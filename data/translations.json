@@ -3218,7 +3218,7 @@
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
-        "de": "Landet morgen vor 10 Uhr PST.",
+        "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
     },
@@ -3240,11 +3240,11 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
+        "ja": "明日の午前10時PST前に、小型船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
-        "es": "Aterrizando mañana antes de las 10 a.m. PST junto con una nave pequeña.",
+        "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
-        "de": "Landung morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff.",
+        "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
     },
@@ -3404,10 +3404,10 @@
       "fullTexts": {
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
-        "ko": "PST 자정에 도착함.",
+        "ko": "PST 기준 자정까지 도착합니다.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Llega a las 12 de la medianoche PST.",
-        "fr": "Atterrit à minuit heure du Pacifique.",
+        "es": "Aterriza a medianoche PST.",
+        "fr": "Atterrit avant minuit HNP.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
       }
@@ -3431,8 +3431,8 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
-        "fr": "Et c'est fait. À demain pour de bonnes nouvelles."
+        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
     "2115851621137784832": {
@@ -3597,7 +3597,7 @@
       "fullTexts": {
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
-        "ja": "バンクド 1/2",
+        "ja": "1/2を確保しました",
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
@@ -3684,5 +3684,5 @@
     }
   },
   "pending": 421,
-  "lastAttemptAt": "2026-11-08T15:45:02.440Z"
+  "lastAttemptAt": "2026-11-08T19:43:17.435Z"
 }
