@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.26';
+export const RULES_VERSION = '1.4.27';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -97,6 +97,7 @@ export function validResetContext(context,author,publishedAt,{allowDaySignal=fal
   const result=classify(context.fullText||'',{id:context.id,author:context.author});
   return (allowBanked ? (result.kind==='banked' && result.reason==='explicit-bank-announcement') : result.kind==='global') && result.state==='announced';
 }
+const reviewedProUsage = "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared to Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, access to ultrafast";
 export function classify(text, { id, truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
   const unknown = { kind: 'signal', state: 'unconfirmed', reason: 'ambiguous' };
@@ -105,6 +106,8 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  // Complete, reviewed plan comparison: no new reset or reset time.
+  if (author.toLowerCase()==='thsottiaux' && id==='2119296267545419987' && text===reviewedProUsage) return {kind:'usage',state:'information',reason:'reviewed-plan-usage'};
   // Primary parent: https://x.com/ForwardEditor/status/2119185994326905218.
   // Match raw complete text: changed, truncated or other identities stay guarded.
   if (isProductCommentarySource({id,author}) && text===productCommentary.text) return {kind:'commentary',state:'information',reason:'reviewed-product-commentary'};
@@ -201,6 +204,7 @@ export function validateEvent(event) {
   if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:isResetTiming(event.fullText||''),allowBanked:event.reason==='reviewed-bank-grant'})) throw new Error('Invalid reset context');
   if (event.reason==='linked-announcement' && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:true})) throw new Error('Announcement needs verified reset context');
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
+  if (event.reason==='reviewed-plan-usage' && (event.kind!=='usage' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-plan-usage')) throw new Error('Plan usage needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-product-commentary' && (event.kind!=='commentary' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-product-commentary')) throw new Error('Product commentary needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-bank-grant' && (event.kind!=='banked' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-bank-grant')) throw new Error('Bank grant needs its pinned source and verified editorial context');
   if (event.reason==='reviewed-completion' && (event.kind!=='global' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-completion')) throw new Error('Reviewed completion needs its pinned source and verified editorial context');

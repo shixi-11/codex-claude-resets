@@ -56,3 +56,5 @@
 .platform-card:not([data-clock-state=announced]) .clock-reading{position:static;display:flex;align-items:center;justify-content:center;align-self:stretch;padding-inline:12px}
 .platform-card:not([data-clock-state=announced]) .clock-verdict{position:static;transform:none;width:100%;max-width:100%;min-width:0;text-align:center;text-wrap:balance;overflow-wrap:anywhere;word-break:normal}
 .platform-card:not([data-clock-state=announced]) .station-art{margin-inline-start:auto}
+
+.credit-availability{font-size:11px;line-height:1.65;color:#667168;margin:8px 0 0}.badge.expired{background:#f1e7d4;color:#70521f}[data-credit-state=expired]{color:#70521f}

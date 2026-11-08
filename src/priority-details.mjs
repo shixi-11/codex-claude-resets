@@ -1,3 +1,4 @@
+import {creditStatusMarkup,creditNoticeMarkup} from './credit-availability.mjs';
 import {eventStateLabel} from './locales.mjs';
 import {elapsedSince,elapsedLabel} from './elapsed.mjs';
 import {postText} from './post-text.mjs';
@@ -40,11 +41,11 @@ export function accountReportDetails(platform,lang){
  const t=userReportCopy[lang];
  return `<div data-account-report><p class="tweet-meaning"><strong>${e(t.title)}</strong></p><p class="tweet-excerpt">${e(t.note)}</p><a class="tweet-source" href="${e(report.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>${e(t.source)} · @${e(report.author)}</span><span aria-hidden="true">↗</span></a><div class="priority-label"><span>${e(t.posted)}</span><time datetime="${e(report.publishedAt)}">${e(localResetTime(report.publishedAt,lang))}</time></div></div>`;
 }
-export function priorityDetails(platform,id,events,lang){
+export function priorityDetails(platform,id,events,lang,now=Date.now()){
  const t=priorityCopy[lang],list=(events||[]).filter(ev=>belongs(ev,id)).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
  const latest=list.find(ev=>['global','banked'].includes(ev.kind)&&['announced','reported'].includes(ev.state))||list[0]||platform.latest,last=platform.lastReset;
  const when=at=>localResetTime(at,lang);
- return `<div class="latest-post"><div class="priority-label"><span>${e(t.latest)}</span>${latest?`<time datetime="${e(latest.publishedAt)}">${e(when(latest.publishedAt))}</time>`:''}</div>${latest?`<a class="tweet-source" href="${e(latest.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>@${e(latest.author)}</span><span class="source-action"><span class="source-action-label">${e(sourceAction[lang])}</span><span class="source-arrow" aria-hidden="true">↗</span></span></a>${postText(latest,lang,'tweet-excerpt')}<p class="tweet-meaning"><span class="post-kind" data-kind="${e(latest.kind)}">${e(latest.reason==='replacement-credit'?replacementLabels[lang]:postKindLabel(latest.kind,lang))}</span> ${e(latest.reason==='reviewed-bank-grant'?eventStateLabel(latest,lang):latest.kind==='global'&&latest.state==='reported'?t.complete:latest.state==='unconfirmed'?t.unconfirmed:postStateLabel(latest.state,lang))}</p>`:`<p>${e(t.empty)}</p>`}</div>
+ return `<div class="latest-post"><div class="priority-label"><span>${e(t.latest)}</span>${latest?`<time datetime="${e(latest.publishedAt)}">${e(when(latest.publishedAt))}</time>`:''}</div>${latest?`<a class="tweet-source" href="${e(latest.sourceUrl)}" target="_blank" rel="noopener noreferrer"><span>@${e(latest.author)}</span><span class="source-action"><span class="source-action-label">${e(sourceAction[lang])}</span><span class="source-arrow" aria-hidden="true">↗</span></span></a>${postText(latest,lang,'tweet-excerpt')}<p class="tweet-meaning"><span class="post-kind" data-kind="${e(latest.kind)}">${e(latest.reason==='replacement-credit'?replacementLabels[lang]:postKindLabel(latest.kind,lang))}</span> ${creditStatusMarkup(latest,lang,now)||e(latest.reason==='reviewed-bank-grant'?eventStateLabel(latest,lang):latest.kind==='global'&&latest.state==='reported'?t.complete:latest.state==='unconfirmed'?t.unconfirmed:postStateLabel(latest.state,lang))}</p>${creditNoticeMarkup(latest,lang,now)}`:`<p>${e(t.empty)}</p>`}</div>
  ${accountReportDetails(platform,lang)}<div class="last-reset"><span>${e(accountReportForReset(platform.reset,platform.accountReports)?userReportCopy[lang].officialElapsed:elapsedLabel[lang])}</span><span data-last-reset data-reset-elapsed="${e(last?.publishedAt||'')}" title="${last?e(when(last.publishedAt)):''}">${last?e(elapsedSince(last.publishedAt,lang)):e(watchCopy[lang].noHistory)}</span></div>
 `;
 }
