@@ -8,36 +8,23 @@
       "resetAt": null
     },
     "gifts": [],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "latest": {
-      "id": "2117035794678546764",
-      "kind": "banked",
-      "state": "reported",
-      "reason": "reviewed-bank-grant",
+      "id": "2119308687676432672",
+      "kind": "signal",
+      "state": "unconfirmed",
+      "reason": "ambiguous",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2117035794678546764",
-      "publishedAt": "2026-11-01T23:27:20.731Z",
-      "verifiedAt": "2026-11-04T15:33:12.664Z",
-      "excerpt": "Day 28/ Banked 2/2",
-      "fullText": "Day 28/ Banked 2/2",
+      "sourceUrl": "https://x.com/thsottiaux/status/2119308687676432672",
+      "publishedAt": "2026-11-08T05:59:00.650Z",
+      "verifiedAt": "2026-11-08T08:16:18.844Z",
+      "excerpt": "We hesitated to embed into the codex app to make sense of the resets, but decided against it.",
+      "fullText": "We hesitated to embed  into the codex app to make sense of the resets, but decided against it.",
       "truncated": false,
       "provenance": "x-oembed",
-      "resetContext": {
-        "id": "2116405414921384099",
-        "author": "thsottiaux",
-        "sourceUrl": "https://x.com/thsottiaux/status/2116405414921384099",
-        "fullText": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
-        "publishedAt": "2026-10-31T05:42:26.485Z",
-        "verifiedAt": "2026-11-04T15:33:12.664Z",
-        "truncated": false,
-        "provenance": "x-oembed",
-        "relation": "reviewed-sequence",
-        "relationProvenance": "editorial-primary",
-        "contentHash": "cad880732943fccf826f493b4f676944d60a37797e46e3137ad8cd69790c4608"
-      },
       "rulesVersion": "1.4.25",
-      "contentHash": "2ce701372e9688500219169fcf0bb23c23b07bcf9c8ade9a05cd5b6b3179b96f"
+      "contentHash": "b79edda841cf4c4101901fb801426e77ba44e40a9be15d92b95a01ebdfd70a0c"
     },
     "lastReset": {
       "id": "2115330127886463244",
@@ -202,7 +189,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-08T02:28:36.597Z",
+        "verifiedAt": "2026-11-08T08:16:24.088Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -221,7 +208,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-08T02:28:36.597Z",
+      "checkedAt": "2026-11-08T08:16:24.088Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -233,7 +220,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2118063143167693011",
       "publishedAt": "2026-11-04T19:29:39.698Z",
-      "verifiedAt": "2026-11-08T02:28:08.070Z",
+      "verifiedAt": "2026-11-08T08:16:18.844Z",
       "excerpt": "Background subagents in Claude Code now use less of your usage limit.",
       "fullText": "Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
       "truncated": false,

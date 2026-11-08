@@ -3408,8 +3408,8 @@
         "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
-        "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
-        "de": "Landung um Mitternacht PST."
+        "ar": "يصل الأرض بحلول منتصف الليل بتوقيت المحيط الهادئ.",
+        "de": "Landet bis Mitternacht PST."
       }
     },
     "2115273064481218829": {
@@ -3427,9 +3427,9 @@
       "fullTexts": {
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
-        "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
-        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
+        "ja": "そして終わりました。明日、良いニュースを楽しみにしてください。",
+        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
+        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
@@ -3597,10 +3597,10 @@
       "fullTexts": {
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
-        "ja": "バンクド 1/2",
-        "ko": "1/2 적립됨",
+        "ja": "1/2を確保しました",
+        "ko": "경사 1/2",
         "es": "Acreditado 1/2",
-        "fr": "En banque 1/2",
+        "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
         "ar": "مصرف 1/2"
       }
@@ -3614,8 +3614,8 @@
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
         "ko": "28일째/ 적립 2/2",
-        "ja": "28日目／貯金済み 2/2",
-        "es": "Día 28/ Acumulado 2/2",
+        "ja": "28日目 / 2/2蓄積済み",
+        "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
         "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
@@ -3647,8 +3647,59 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-11-05T02:26:02.377Z"
+    },
+    "2119308687676432672": {
+      "excerpt": "We hesitated to embed into the codex app to make sense of the resets, but decided against it.",
+      "contentHash": "b79edda841cf4c4101901fb801426e77ba44e40a9be15d92b95a01ebdfd70a0c",
+      "texts": {
+        "zh-Hant": "我們猶豫是否要將  嵌入 codex 應用程式中，以解釋這些重置，但最終決定不這麼做。",
+        "zh": "我们犹豫是否将  嵌入到 codex 应用中，以便理解这些重置，但最终决定不这么做。",
+        "ko": "리셋을 이해하기 위해  코덱스 앱에 내장하는 것을 망설였지만, 결국 그렇게 하지 않기로 결정했습니다.",
+        "ja": "をコデックスアプリに埋め込んでリセットの意味を理解しようか迷いましたが、やめることにしました。",
+        "es": "Dudamos en incorporar  en la aplicación codex para entender los reinicios, pero decidimos no hacerlo.",
+        "fr": "Nous avons hésité à intégrer  dans l'application codex pour donner un sens aux réinitialisations, mais nous avons décidé de ne pas le faire.",
+        "de": "Wir haben gezögert,  in die Codex-App einzubetten, um die Resets nachzuvollziehen, haben uns aber dagegen entschieden."
+      },
+      "fullText": "We hesitated to embed  into the codex app to make sense of the resets, but decided against it.",
+      "fullTexts": {
+        "zh-Hant": "我們猶豫是否要將 https://x.com 嵌入 codex 應用程式中，以解釋這些重置，但最終決定不這麼做。",
+        "zh": "我们犹豫是否将 https://x.com 嵌入到 codex 应用中，以便理解这些重置，但最终决定不这么做。",
+        "ko": "리셋을 이해하기 위해 https://x.com를 코덱스 앱에 내장하는 것을 망설였지만, 결국 그렇게 하지 않기로 결정했습니다.",
+        "ja": "https://x.com をコデックスアプリに埋め込んでリセットの意味を理解しようか迷いましたが、やめることにしました。",
+        "es": "Dudamos en incorporar https://x.com en la aplicación codex para entender los reinicios, pero decidimos no hacerlo.",
+        "fr": "Nous avons hésité à intégrer https://x.com dans l'application codex pour donner un sens aux réinitialisations, mais nous avons décidé de ne pas le faire.",
+        "ar": "ترددنا في تضمين https://x.com في تطبيق كوديكس لفهم إعادات التعيين، لكننا قررنا عدم القيام بذلك.",
+        "de": "@ForwardEditor Wir haben gezögert, https://x.com in die Codex-App einzubetten, um die Resets nachzuvollziehen, haben uns aber dagegen entschieden."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-08T08:16:27.673Z"
+    },
+    "2119296267545419987": {
+      "excerpt": "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared to Plus.",
+      "contentHash": "f81c21e33121308d5c82470c378aaf4ae1a1f3ba1a9ab51645f343231d9e0ebc",
+      "texts": {
+        "zh-Hant": "看到一些混淆，但所有 Pro 方案都沒有 5 小時限制，並提供以下與 Plus 相比的使用量。",
+        "ja": "いくつかの混乱が見られましたが、すべてのProプランには5時間制限がなく、Plusと比較して以下の使用量が提供されます。",
+        "ko": "일부 혼란을 보았지만, 모든 Pro 플랜에는 5시간 제한이 없으며, Plus에 비해 다음과 같은 사용량을 제공합니다.",
+        "es": "Vi algunas confusiones, pero todos los planes Pro no tienen límites de 5 horas, y ofrecen el siguiente uso en comparación con Plus.",
+        "fr": "J'ai vu quelques confusions, mais tous les plans Pro n'ont pas de limites de 5 heures, et offrent l'utilisation suivante par rapport à Plus.",
+        "ar": "لاحظت بعض الالتباسات، لكن جميع خطط Pro لا تحتوي على حدود 5 ساعات، وتوفر الاستخدام التالي مقارنة بخطة Plus.",
+        "de": "Sah einige Verwirrungen, aber alle Pro-Pläne haben keine 5-Stunden-Limits und bieten folgende Nutzung im Vergleich zu Plus."
+      },
+      "fullText": "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared to Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, access to ultrafast",
+      "fullTexts": {
+        "zh-Hant": "看到一些混淆，但所有 Pro 方案都沒有 5 小時限制，並提供以下與 Plus 相比的使用量。\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X，存取超高速",
+        "ja": "いくつかの混乱が見られましたが、すべてのProプランには5時間制限がなく、Plusと比較して以下の使用量が提供されます。\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X、ultrafastへのアクセス",
+        "ko": "일부 혼란을 보았지만, 모든 Pro 플랜에는 5시간 제한이 없으며, Plus에 비해 다음과 같은 사용량을 제공합니다.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, ultrafast 액세스",
+        "es": "Vi algunas confusiones, pero todos los planes Pro no tienen límites de 5 horas, y ofrecen el siguiente uso en comparación con Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, acceso a ultrafast",
+        "fr": "J'ai vu quelques confusions, mais tous les plans Pro n'ont pas de limites de 5 heures, et offrent l'utilisation suivante par rapport à Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, accès à ultrafast",
+        "ar": "لاحظت بعض الالتباسات، لكن جميع خطط Pro لا تحتوي على حدود 5 ساعات، وتوفر الاستخدام التالي مقارنة بخطة Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X، الوصول إلى السرعة الفائقة",
+        "de": "Sah einige Verwirrungen, aber alle Pro-Pläne haben keine 5-Stunden-Limits und bieten folgende Nutzung im Vergleich zu Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, Zugang zu ultrafast"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-08T08:16:28.734Z"
     }
   },
-  "pending": 413,
-  "lastAttemptAt": "2026-11-08T02:29:07.702Z"
+  "pending": 415,
+  "lastAttemptAt": "2026-11-08T08:16:51.277Z"
 }
