@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.25';
+export const RULES_VERSION = '1.4.26';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -20,6 +20,16 @@ export function decodeHtml(text) {
   }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
 }
 
+// Reviewed in its primary reply context: embedding X in Codex is product
+// communication, not a new reset. The exact embed body binds the shortlink
+// expansion to the link label verified on X and in the relay URL facet.
+const productCommentary = {
+  id: '2119308687676432672', author: 'thsottiaux',
+  text: 'We hesitated to embed x.com into the codex app to make sense of the resets, but decided against it.',
+  embedBody: 'We hesitated to embed <a href="https://t.co/TnRNoyTR5X">https://t.co/TnRNoyTR5X</a> into the codex app to make sense of the resets, but decided against it.',
+};
+const isProductCommentarySource = source => source.id===productCommentary.id && source.author?.toLowerCase()===productCommentary.author;
+
 export function extractEmbed(embed, requestedUrl) {
   const post = parsePostUrl(requestedUrl);
   if (!post || typeof embed?.html !== 'string') throw new Error('Invalid embed');
@@ -29,7 +39,8 @@ export function extractEmbed(embed, requestedUrl) {
   if (!embeddedPost || embeddedPost.id !== post.id || embeddedPost.author.toLowerCase() !== post.author.toLowerCase()) throw new Error('Post mismatch');
   const body = embed.html.match(/<p\b[^>]*>([\s\S]*?)<\/p>/i)?.[1];
   if (!body) throw new Error('Missing post text');
-  const text = decodeHtml(body.replace(/<br\s*\/?\s*>/gi, '\n').replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, '').replace(/<[^>]*>/g, '')).trim();
+  let text = decodeHtml(body.replace(/<br\s*\/?\s*>/gi, '\n').replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, '').replace(/<[^>]*>/g, '')).trim();
+  if (isProductCommentarySource(post) && body===productCommentary.embedBody) text=productCommentary.text;
   if (!text) throw new Error('Empty post');
   return { ...post, text, truncated: /(?:…|\.\.\.)\s*$/.test(text) };
 }
@@ -94,6 +105,9 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  // Primary parent: https://x.com/ForwardEditor/status/2119185994326905218.
+  // Match raw complete text: changed, truncated or other identities stay guarded.
+  if (isProductCommentarySource({id,author}) && text===productCommentary.text) return {kind:'commentary',state:'information',reason:'reviewed-product-commentary'};
   // Primary reply to @TokenGremlin (2116820985873571993): a request, not a grant.
   if(author.toLowerCase()==='thsottiaux' && id==='2116942192497533418' && value==='I demand a banked reset')return {kind:'commentary',state:'information',reason:'reviewed-reset-request'};
   // Reviewed Day 26 promises two banked credits, not a global reset or exact time.
@@ -187,6 +201,7 @@ export function validateEvent(event) {
   if (event.resetContext && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:isResetTiming(event.fullText||''),allowBanked:event.reason==='reviewed-bank-grant'})) throw new Error('Invalid reset context');
   if (event.reason==='linked-announcement' && !validResetContext(event.resetContext,event.author,event.publishedAt,{allowDaySignal:true})) throw new Error('Announcement needs verified reset context');
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
+  if (event.reason==='reviewed-product-commentary' && (event.kind!=='commentary' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-product-commentary')) throw new Error('Product commentary needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-bank-grant' && (event.kind!=='banked' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-bank-grant')) throw new Error('Bank grant needs its pinned source and verified editorial context');
   if (event.reason==='reviewed-completion' && (event.kind!=='global' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-completion')) throw new Error('Reviewed completion needs its pinned source and verified editorial context');
   return true;

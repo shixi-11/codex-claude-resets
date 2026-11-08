@@ -1,0 +1,41 @@
+{
+  "embed": {
+    "url": "https://x.com/thsottiaux/status/2119308687676432672",
+    "author_name": "Tibo",
+    "author_url": "https://x.com/thsottiaux",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">We hesitated to embed <a href=\"https://t.co/TnRNoyTR5X\">https://t.co/TnRNoyTR5X</a> into the codex app to make sense of the resets, but decided against it.</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2119308687676432672?ref_src=twsrc%5Etfw\">November 8, 2026</a></blockquote>\n\n"
+  },
+  "detail": {
+    "id": "2119308687676432672",
+    "url": "https://x.com/thsottiaux/status/2119308687676432672",
+    "author": {
+      "id": "1953337039510003712",
+      "screen_name": "thsottiaux",
+      "protected": false
+    },
+    "text": "@ForwardEditor We hesitated to embed https://x.com into the codex app to make sense of the resets, but decided against it.",
+    "raw_text": {
+      "text": "@ForwardEditor We hesitated to embed https://t.co/TnRNoyTR5X into the codex app to make sense of the resets, but decided against it.",
+      "display_text_range": [
+        15,
+        132
+      ],
+      "facets": [
+        {
+          "type": "url",
+          "indices": [
+            37,
+            60
+          ],
+          "original": "https://t.co/TnRNoyTR5X",
+          "replacement": "https://x.com",
+          "display": "x.com"
+        }
+      ]
+    },
+    "replying_to": "ForwardEditor",
+    "replying_to_status": "2119185994326905218"
+  },
+  "parentUrl": "https://x.com/ForwardEditor/status/2119185994326905218",
+  "visibleText": "We hesitated to embed x.com into the codex app to make sense of the resets, but decided against it."
+}

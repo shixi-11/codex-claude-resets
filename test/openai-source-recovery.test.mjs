@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {RULES_VERSION} from '../src/evidence.mjs';
 import assert from 'node:assert/strict';
 import {mkdtemp,mkdir,copyFile,writeFile,readFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
@@ -53,7 +54,7 @@ test('OpenAI ID recovery advances coverage only when every Codex timeline succee
     assert.ok(health.platforms.codex.authors.every(a=>a.ok));
    }
    const events=JSON.parse(await readFile(join(root,'data/events.json'),'utf8'));
-   assert.deepEqual(events.find(e=>e.id===stored.id),stored);
+   assert.deepEqual(events.find(e=>e.id===stored.id),{...stored,rulesVersion:RULES_VERSION});
    const usage=events.find(e=>e.author==='claudeai');assert.equal(usage.kind,'usage');assert.notEqual(usage.state,'reported');assert.equal(usage.resetAt,undefined);
   }
  }finally{if(dirname(resolve(root))===resolve(tmpdir()))await rm(root,{recursive:true,force:true});}
