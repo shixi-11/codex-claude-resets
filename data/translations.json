@@ -3214,12 +3214,12 @@
       "fullTexts": {
         "zh": "明天太平洋标准时间上午10点前抵达。",
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
-        "ja": "明日の午前10時までにPSTに着陸します。",
+        "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
         "de": "Kommt morgen vor 10 Uhr morgens PST an.",
-        "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
+        "ar": "يهبط غدًا قبل الساعة 10 صباحًا بتوقيت الباسيفيك."
       }
     },
     "2113492187770175603": {
@@ -3240,11 +3240,11 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
-        "ko": "작은 배와 함께 내일 오전 10시 PST 이전에 착륙합니다.",
-        "es": "Aterrizando mañana antes de las 10 a.m. PST junto con una nave pequeña.",
-        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
-        "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
+        "ja": "明日の午前10時PST前に、小型船と一緒に着陸します。",
+        "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
+        "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
+        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "de": "Landung morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
     },
@@ -3265,7 +3265,7 @@
         "zh-Hant": "不是真正的改進，把重置放進包裡",
         "zh": "不是真正的改进，把重置放进包里",
         "ko": "진짜 개선은 아니야, 리셋을 가방에 넣어.",
-        "fr": "@theo Pas une vraie amélioration, mets le reset dans le sac",
+        "fr": "Pas une vraie amélioration, mettre le reset dans le sac",
         "de": "Kein echter Fortschritt, leg den Reset in die Tasche",
         "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة",
         "ja": "本物の改善じゃない、リセットを袋にしまえ",
@@ -3406,7 +3406,7 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Aterriza a medianoche PST.",
+        "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
@@ -3601,7 +3601,7 @@
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
-        "de": "1/2 gespart",
+        "de": "Gebankte 1/2",
         "ar": "مصرف 1/2"
       }
     },
@@ -3613,11 +3613,11 @@
       "fullTexts": {
         "zh-Hant": "第28天 / 存入 2/2",
         "zh": "第28天/ 存档 2/2",
-        "ko": "28일째/ 적립 2/2",
+        "ko": "28일차/ 은행 2/2",
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
-        "fr": "Jour 28/ Mis en réserve 2/2",
-        "ar": "اليوم 28/ محفوظ 2/2",
+        "fr": "Jour 28 / En banque 2/2",
+        "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     },
@@ -3684,5 +3684,5 @@
     }
   },
   "pending": 421,
-  "lastAttemptAt": "2026-11-09T09:58:02.220Z"
+  "lastAttemptAt": "2026-11-09T10:24:00.964Z"
 }
