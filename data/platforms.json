@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2119308687676432672",
       "publishedAt": "2026-11-08T05:59:00.650Z",
-      "verifiedAt": "2026-11-09T10:23:25.185Z",
+      "verifiedAt": "2026-11-09T21:06:08.109Z",
       "excerpt": "We hesitated to embed x.com into the codex app to make sense of the resets, but decided against it.",
       "fullText": "We hesitated to embed x.com into the codex app to make sense of the resets, but decided against it.",
       "truncated": false,
@@ -189,7 +189,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-09T10:23:34.981Z",
+        "verifiedAt": "2026-11-09T21:06:26.507Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -205,28 +205,28 @@
         "isResetCard": false
       }
     ],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-09T10:23:34.981Z",
+      "checkedAt": "2026-11-09T21:06:26.507Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
-      "id": "2118063143167693011",
-      "kind": "usage",
-      "state": "information",
-      "reason": "usage-change",
+      "id": "2119868704544711108",
+      "kind": "signal",
+      "state": "unconfirmed",
+      "reason": "ambiguous",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "sourceUrl": "https://x.com/ClaudeDevs/status/2118063143167693011",
-      "publishedAt": "2026-11-04T19:29:39.698Z",
-      "verifiedAt": "2026-11-09T10:23:25.185Z",
-      "excerpt": "Background subagents in Claude Code now use less of your usage limit.",
-      "fullText": "Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2119868704544711108",
+      "publishedAt": "2026-11-09T19:04:19.076Z",
+      "verifiedAt": "2026-11-09T21:06:08.109Z",
+      "excerpt": "We're giving Ultra and Team Premium users Fable resets based on how long you've subscribed: <6 mo: 1 6–12 mo: 2 >12 mo: 3…",
+      "fullText": "We're giving Ultra and Team Premium users Fable resets based on how long you've subscribed:\n\n<6 mo: 1\n6–12 mo: 2\n>12 mo: 3\n\nUse them anytime by March 8.\n\nPro and Team Standard get a week to try Fable 5.2, up to half your weekly limit, plus one reset.",
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.4.27",
-      "contentHash": "d01e98e9e93f3d2399a7227a2cd9186b91d88f5b468f4e6b81f3573dce2b327e"
+      "contentHash": "bf57126c0fbdf2ef1681e840551987332aa5d466b1dfd16ab5278d679a021641"
     },
     "lastReset": {
       "id": "2094856679250919746",
