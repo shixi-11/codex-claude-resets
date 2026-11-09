@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-08T23:09:42.185Z",
-  "lastSuccessAt": "2026-11-08T23:09:42.185Z",
-  "discoveryAt": "2026-11-08T23:09:42.185Z",
+  "lastAttemptAt": "2026-11-09T02:39:21.028Z",
+  "lastSuccessAt": "2026-11-09T02:39:21.028Z",
+  "discoveryAt": "2026-11-09T02:39:21.028Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -66,7 +66,7 @@
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
@@ -74,12 +74,6 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -105,7 +99,7 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-08T23:09:42.185Z",
+      "lastAttemptAt": "2026-11-09T02:39:21.028Z",
       "status": "ok",
       "checked": 6,
       "failed": 0,
@@ -124,10 +118,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-08T23:09:42.185Z"
+      "lastSuccessAt": "2026-11-09T02:39:21.028Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-08T23:09:42.185Z",
+      "lastAttemptAt": "2026-11-09T02:39:21.028Z",
       "status": "ok",
       "checked": 8,
       "failed": 0,
@@ -146,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-08T23:09:42.185Z"
+      "lastSuccessAt": "2026-11-09T02:39:21.028Z"
     }
   }
 }

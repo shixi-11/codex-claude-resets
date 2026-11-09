@@ -3214,11 +3214,11 @@
       "fullTexts": {
         "zh": "明天太平洋标准时间上午10点前抵达。",
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
-        "ja": "明日の午前10時までにPSTに到着します。",
+        "ja": "明日午前10時PST前に到着します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
-        "es": "Llega mañana antes de las 10 a.m. PST.",
-        "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
-        "de": "Landet morgen vor 10 Uhr PST.",
+        "es": "Llega mañana antes de las 10am PST.",
+        "fr": "Atterrit demain avant 10h PST.",
+        "de": "Kommt morgen vor 10 Uhr morgens PST an.",
         "ar": "يصل غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ."
       }
     },
@@ -3240,10 +3240,10 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日の午前10時PST前に、小さな船と一緒に着陸します。",
+        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10 a.m. PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3265,7 +3265,7 @@
         "zh-Hant": "不是真正的改進，把重置放進包裡",
         "zh": "不是真正的改进，把重置放进包里",
         "ko": "진짜 개선은 아니야, 리셋을 가방에 넣어.",
-        "fr": "Pas une vraie amélioration, mettre le reset dans le sac",
+        "fr": "@theo Pas une vraie amélioration, mets le reset dans le sac",
         "de": "Kein echter Fortschritt, leg den Reset in die Tasche",
         "ar": "ليس تحسينًا حقيقيًا، ضع الإعادة في الحقيبة",
         "ja": "本物の改善じゃない、リセットを袋にしまえ",
@@ -3409,7 +3409,7 @@
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
-        "de": "Landung um Mitternacht PST."
+        "de": "Landet bis Mitternacht PST."
       }
     },
     "2115273064481218829": {
@@ -3684,5 +3684,5 @@
     }
   },
   "pending": 421,
-  "lastAttemptAt": "2026-11-08T23:10:18.163Z"
+  "lastAttemptAt": "2026-11-09T02:39:53.897Z"
 }
