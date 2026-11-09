@@ -10,6 +10,9 @@ export function translatedText(event,lang){
  const valid=entry?.excerpt===event?.excerpt&&entry?.contentHash===event?.contentHash&&typeof text==='string'&&text.trim()&&text.length<=1200;
  return lang!=='en'&&valid?{text,lang,translated:true}:{text:event?.excerpt||'',lang:'en',translated:false};
 }
+// A localized event page is indexable only when its post text is really translated;
+// otherwise it repeats the English original and points search engines there.
+export function indexableEventLanguage(event,lang){return lang==='en'||translatedText(event,lang).translated;}
 export function postText(event,lang,className='excerpt',tag='p'){
  const value=translatedText(event,lang),label=labels[lang]||labels.en;
  const preview=`<${tag} class="${className}" lang="${e(value.lang)}" dir="${value.lang==='ar'?'rtl':'ltr'}">${e(value.text)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[value.translated?0:1])}</small>`}`;
