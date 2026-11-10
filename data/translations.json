@@ -3244,7 +3244,7 @@
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
-        "de": "Landung morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff.",
+        "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
     },
@@ -3406,10 +3406,10 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Llega a las 12 de la medianoche PST.",
+        "es": "Aterriza a medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
-        "de": "Landet bis Mitternacht PST."
+        "de": "Landung um Mitternacht PST."
       }
     },
     "2115273064481218829": {
@@ -3428,10 +3428,10 @@
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
-        "ko": "그리고 끝났습니다. 좋은 소식을 위해 내일 뵙겠습니다.",
-        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
-        "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
+        "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
+        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
+        "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
+        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3689,8 +3689,29 @@
       "texts": {},
       "fullText": "We're giving Ultra and Team Premium users Fable resets based on how long you've subscribed:\n\n<6 mo: 1\n6–12 mo: 2\n>12 mo: 3\n\nUse them anytime by March 8.\n\nPro and Team Standard get a week to try Fable 5.2, up to half your weekly limit, plus one reset.",
       "fullTexts": {}
+    },
+    "2120212598385733732": {
+      "excerpt": "Your workspace admin can enable access and set usage limits for supported tools, including open-source tools.",
+      "contentHash": "b8bd54b06b5174a448d3a4cb52ab7214ec7cd801d6450ef843c3b2d824bb28d5",
+      "texts": {
+        "zh": "您的工作区管理员可以启用对支持工具的访问权限并设置使用限制，包括开源工具。",
+        "zh-Hant": "您的工作區管理員可以啟用存取權限並為支援的工具設定使用限制，包括開源工具。",
+        "ja": "あなたのワークスペース管理者により、サポートされているツール（オープンソースツールを含む）へのアクセスを有効にし、使用制限を設定することができます。",
+        "es": "El administrador de tu espacio de trabajo puede habilitar el acceso y establecer límites de uso para las herramientas compatibles, incluidas las herramientas de código abierto.",
+        "ar": "يمكن لمدير مساحة عملك تمكين الوصول وتحديد حدود الاستخدام للأدوات المدعومة، بما في ذلك الأدوات مفتوحة المصدر."
+      },
+      "fullText": "Your workspace admin can enable access and set usage limits for supported tools, including open-source tools.",
+      "fullTexts": {
+        "zh": "您的工作区管理员可以启用对支持工具的访问权限并设置使用限制，包括开源工具。https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "zh-Hant": "您的工作區管理員可以啟用存取權限並為支援的工具設定使用限制，包括開源工具。https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "ja": "あなたのワークスペース管理者により、サポートされているツール（オープンソースツールを含む）へのアクセスを有効にし、使用制限を設定することができます。https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "es": "El administrador de tu espacio de trabajo puede habilitar el acceso y establecer límites de uso para las herramientas compatibles, incluidas las herramientas de código abierto. https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "ar": "يمكن لمدير مساحة عملك تمكين الوصول وتحديد حدود الاستخدام للأدوات المدعومة، بما في ذلك الأدوات مفتوحة المصدر. https://learn.chatgpt.com/docs/sign-in-with-chatgpt"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-10T18:53:15.944Z"
     }
   },
-  "pending": 428,
-  "lastAttemptAt": "2026-11-10T11:47:11.048Z"
+  "pending": 431,
+  "lastAttemptAt": "2026-11-10T18:53:39.589Z"
 }
