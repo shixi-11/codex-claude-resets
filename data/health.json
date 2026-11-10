@@ -1,25 +1,19 @@
 {
-  "lastAttemptAt": "2026-11-09T21:06:08.109Z",
-  "lastSuccessAt": "2026-11-09T10:23:25.185Z",
-  "discoveryAt": "2026-11-09T21:06:08.109Z",
+  "lastAttemptAt": "2026-11-10T03:33:32.793Z",
+  "lastSuccessAt": "2026-11-10T03:33:32.793Z",
+  "discoveryAt": "2026-11-10T03:33:32.793Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
-      "candidates": 21,
+      "candidates": 22,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -27,14 +21,20 @@
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:1633874951508721686/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 12,
+      "candidates": 11,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:1633874951508721686/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -46,7 +46,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 14,
+      "candidates": 15,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
@@ -72,7 +72,7 @@
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
@@ -80,12 +80,6 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -96,44 +90,26 @@
       "url": "https://api.fxtwitter.com/2/profile/claudeai/statuses?count=40&with_replies=1",
       "author": "claudeai",
       "platform": "claude",
-      "ok": false,
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
       "ok": true,
-      "candidates": 343
-    },
-    {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
-      "ok": true,
-      "candidates": 71
-    },
-    {
-      "name": "Reset Radar · Claude link discovery only",
-      "url": "https://www.resetradar.com/data/events.json",
-      "ok": true,
-      "candidates": 34
+      "candidates": 6
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 18,
+      "checked": 11,
       "failed": 0
     }
   ],
-  "status": "degraded",
+  "status": "ok",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-09T21:06:08.109Z",
+      "lastAttemptAt": "2026-11-10T03:33:32.793Z",
       "status": "ok",
       "checked": 3,
       "failed": 0,
-      "discovered": 47,
+      "discovered": 48,
       "authors": [
         {
           "author": "thsottiaux",
@@ -148,14 +124,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-09T21:06:08.109Z"
+      "lastSuccessAt": "2026-11-10T03:33:32.793Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-09T21:06:08.109Z",
-      "status": "degraded",
-      "checked": 15,
+      "lastAttemptAt": "2026-11-10T03:33:32.793Z",
+      "status": "ok",
+      "checked": 8,
       "failed": 0,
-      "discovered": 42,
+      "discovered": 40,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -167,10 +143,10 @@
         },
         {
           "author": "claudeai",
-          "ok": false
+          "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-09T10:23:25.185Z"
+      "lastSuccessAt": "2026-11-10T03:33:32.793Z"
     }
   }
 }
