@@ -3,7 +3,7 @@
 <p align="center"><strong>Reset times. Sources. History.</strong><br>When do Codex and Claude reset? One page. Your local time.</p>
 <p align="center"><a href="https://shixilin.com/ai/codex-claude-resets/">Open the tracker</a> · <a href="https://shixilin.com/ai/codex-claude-resets/feed.xml">RSS</a> · <a href="https://shixilin.com/ai/codex-claude-resets/events.json">Public JSON</a> · <a href="#简体中文">简体中文</a></p>
 
-![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/8099cc78231fab689e596e9332bf77e201ceeca7/docs/screenshot.jpg)
+![Codex & Claude Resets desktop interface](https://raw.githubusercontent.com/shixi-11/codex-claude-resets/1fadf736ff6f83ec2ca7f2a5d118ce75976f0750/docs/screenshot.jpg)
 
 Codex & Claude Resets puts the next confirmed Codex and Claude reset time first. See the next confirmed time, the latest relevant post with its publication time, and elapsed time since the last reset completion report was published. The latest published reset or credit announcement and the current Claude usage promotion appear before recent source posts. Sections are expanded by default.
 
@@ -95,7 +95,7 @@ This is a source-available project under a custom noncommercial license, not an 
 - 默认英文，提供九种语言，消息正文随语言切换并保留原文入口。新消息自动尝试翻译，未完成时显示英文原文与待更新提示。
 - 只收录额度重置、重置卡及订阅额度信息；模型退役、发布或使用人数变化不会仅因含有“usage”而进入消息列表。规则更新后会重新判断完整历史原文，清除误收。
 - 六个允许的官方账号分别采集，Codex与Claude的独立检查状态保存在数据中，页面保留上次成功检查时间。没有新消息与来源检查失败分开处理；计划、线索、补发和已宣布完成不会混为一谈。
-- 每10分钟计划检查公开消息，每天生成来源摘要。Actions提交更新后的记录，由Vercel自动构建发布；网站不再依赖GitHub Pages。调度可能延迟，来源故障和过期状态会在页面显示。
+- 每小时在第17和47分钟计划检查公开消息，每天生成来源摘要。Actions提交更新后的记录，由Vercel自动构建发布；网站不再依赖GitHub Pages。调度可能延迟，来源故障和过期状态会在页面显示。
 
 网站无法查看或重置个人账号的实际额度。请以Codex额度面板或CLI中的`/status`为准。日常自动化不需要付费模型，也不会把订阅登录凭据上传到GitHub。
 
