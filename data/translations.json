@@ -3242,7 +3242,7 @@
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
-        "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
+        "es": "Aterrizando mañana antes de las 10 a.m. PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
@@ -3404,7 +3404,7 @@
       "fullTexts": {
         "zh": "太平洋标准时间午夜时分抵达。",
         "zh-Hant": "太平洋標準時間午夜時抵達。",
-        "ko": "PST 기준 자정까지 도착합니다.",
+        "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
@@ -3429,7 +3429,7 @@
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
-        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
+        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
@@ -3599,7 +3599,7 @@
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
         "ja": "1/2を確保しました",
-        "ko": "1/2 적립됨",
+        "ko": "경사 1/2",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
@@ -3618,7 +3618,7 @@
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
-        "ar": "اليوم 28/ محفوظ 2/2",
+        "ar": "اليوم 28/ مخزن 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     },
@@ -3754,7 +3754,8 @@
         "fr": "Peut-être aussi un bon moment pour une réinitialisation en réserve.",
         "de": "Vielleicht auch eine gute Zeit für einen gebankten Reset.",
         "es": "Quizás también sea un buen momento para un reinicio acumulado.",
-        "ar": "ربما أيضًا وقت جيد لإعادة ضبط مؤجلة."
+        "ar": "ربما أيضًا وقت جيد لإعادة ضبط مؤجلة.",
+        "zh": "也许也是个适合重置已积累额度的好时机。"
       },
       "fullText": "Thursday is feeling codexy to me. Perhaps also a good time for a banked reset.",
       "fullTexts": {
@@ -3764,10 +3765,11 @@
         "fr": "Le jeudi me semble codexien. Peut-être aussi un bon moment pour une réinitialisation en réserve.",
         "de": "Donnerstag fühlt sich codexy für mich an. Vielleicht auch eine gute Zeit für einen gebankten Reset.",
         "es": "El jueves me está pareciendo codex. Quizás también sea un buen momento para un reinicio acumulado.",
-        "ar": "الخميس يشعرني بأنه كوديكس. ربما أيضًا وقت جيد لإعادة ضبط مؤجلة."
+        "ar": "الخميس يشعرني بأنه كوديكس. ربما أيضًا وقت جيد لإعادة ضبط مؤجلة.",
+        "zh": "周四让我感觉有点 Codex 的味道。也许也是个适合重置已积累额度的好时机。"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-11-11T09:37:18.117Z"
+      "translatedAt": "2026-11-11T14:15:31.211Z"
     },
     "2120410006273380750": {
       "excerpt": "It’s been a while without resets.",
@@ -3797,6 +3799,6 @@
       "translatedAt": "2026-11-11T09:37:19.942Z"
     }
   },
-  "pending": 429,
-  "lastAttemptAt": "2026-11-11T09:37:41.496Z"
+  "pending": 428,
+  "lastAttemptAt": "2026-11-11T14:15:57.215Z"
 }
