@@ -3240,7 +3240,7 @@
       "fullTexts": {
         "zh": "将于明天上午 10 点（PST）之前生效，同时发布一项小更新。",
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
-        "ja": "明日の午前10時PST前に、小型船と一緒に着陸します。",
+        "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
         "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
         "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
@@ -3407,7 +3407,7 @@
         "ko": "PST 기준 자정까지 도착합니다.",
         "ja": "PSTの深夜に到着します。",
         "es": "Llega a las 12 de la medianoche PST.",
-        "fr": "Atterrit avant minuit HNP.",
+        "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landet bis Mitternacht PST."
       }
@@ -3429,10 +3429,10 @@
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
         "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
-        "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
-        "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
+        "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
+        "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
-        "fr": "Et c'est fait. À demain pour de bonnes nouvelles."
+        "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
     "2115851621137784832": {
@@ -3599,8 +3599,8 @@
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
         "ja": "1/2を確保しました",
-        "ko": "경사 1/2",
-        "es": "Acumulado 1/2",
+        "ko": "1/2 적립됨",
+        "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
         "de": "1/2 gespart",
         "ar": "مصرف 1/2"
@@ -3618,7 +3618,7 @@
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
-        "ar": "اليوم 28/ مخزن 2/2",
+        "ar": "اليوم 28/ محفوظ 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     },
@@ -3743,8 +3743,60 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-11-11T06:09:26.226Z"
+    },
+    "2120410480204525936": {
+      "excerpt": "Perhaps also a good time for a banked reset.",
+      "contentHash": "34396f550d7d1ad921fed48ceaba451d5a7fa02fe79042947e73880805bce6e5",
+      "texts": {
+        "zh-Hant": "或許也是進行儲備重置的好時機。",
+        "ja": "溜めておいたリセットを使うにも、ちょうどいい頃合いなのかも。",
+        "ko": "아마도 쌓아둔 리셋을 할 좋은 때일지도요.",
+        "fr": "Peut-être aussi un bon moment pour une réinitialisation en réserve.",
+        "de": "Vielleicht auch eine gute Zeit für einen gebankten Reset.",
+        "es": "Quizás también sea un buen momento para un reinicio acumulado.",
+        "ar": "ربما أيضًا وقت جيد لإعادة ضبط مؤجلة."
+      },
+      "fullText": "Thursday is feeling codexy to me. Perhaps also a good time for a banked reset.",
+      "fullTexts": {
+        "zh-Hant": "星期四讓我感覺有點像 Codex。或許也是進行儲備重置的好時機。",
+        "ja": "木曜日はコーデックスっぽい感じがする。溜めておいたリセットを使うにも、ちょうどいい頃合いなのかも。",
+        "ko": "목요일이 나에게 코드엑시 느낌으로 다가오네요. 아마도 쌓아둔 리셋을 할 좋은 때일지도요.",
+        "fr": "Le jeudi me semble codexien. Peut-être aussi un bon moment pour une réinitialisation en réserve.",
+        "de": "Donnerstag fühlt sich codexy für mich an. Vielleicht auch eine gute Zeit für einen gebankten Reset.",
+        "es": "El jueves me está pareciendo codex. Quizás también sea un buen momento para un reinicio acumulado.",
+        "ar": "الخميس يشعرني بأنه كوديكس. ربما أيضًا وقت جيد لإعادة ضبط مؤجلة."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-11T09:37:18.117Z"
+    },
+    "2120410006273380750": {
+      "excerpt": "It’s been a while without resets.",
+      "contentHash": "6d135919c0c85c4f9857f3b29ed39c1fd20d1022a105231659e53d6644f22303",
+      "texts": {
+        "zh": "已经有一阵子没重置了。",
+        "zh-Hant": "已經好一陣子沒有重置了。",
+        "ja": "リセットなしでしばらく経ったな。",
+        "ko": "리셋 없이 꽤 오랜만이네.",
+        "fr": "Ça fait un moment sans réinitialisations.",
+        "de": "Es ist schon eine Weile her ohne Resets.",
+        "ar": "لقد مر وقت طويل دون إعادة تعيين.",
+        "es": "Hace tiempo que no hay reinicios."
+      },
+      "fullText": "It’s been a while without resets. Maybe I should come back out of the basement",
+      "fullTexts": {
+        "zh": "已经有一阵子没重置了。也许我该从地下室里出来了。",
+        "zh-Hant": "已經好一陣子沒有重置了。也許我該從地下室出來了。",
+        "ja": "リセットなしでしばらく経ったな。もしかしたら地下室から出てくるべきかも",
+        "ko": "리셋 없이 꽤 오랜만이네. 어쩌면 내가 지하실에서 다시 나와야 할지도 몰라.",
+        "fr": "Ça fait un moment sans réinitialisations. Peut-être que je devrais sortir de la cave.",
+        "de": "Es ist schon eine Weile her ohne Resets. Vielleicht sollte ich aus dem Keller zurückkommen.",
+        "ar": "لقد مر وقت طويل دون إعادة تعيين. ربما يجب أن أخرج من القبو.",
+        "es": "Hace tiempo que no hay reinicios. Tal vez debería salir del sótano"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-11T09:37:19.942Z"
     }
   },
-  "pending": 428,
-  "lastAttemptAt": "2026-11-11T06:29:20.366Z"
+  "pending": 429,
+  "lastAttemptAt": "2026-11-11T09:37:41.496Z"
 }
