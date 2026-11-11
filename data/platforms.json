@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/OpenAIDevs/status/2120212598385733732",
       "publishedAt": "2026-11-10T17:50:49.757Z",
-      "verifiedAt": "2026-11-11T00:02:20.318Z",
+      "verifiedAt": "2026-11-11T06:09:14.059Z",
       "excerpt": "Your workspace admin can enable access and set usage limits for supported tools, including open-source tools.",
       "fullText": "Your workspace admin can enable access and set usage limits for supported tools, including open-source tools.",
       "truncated": false,
@@ -189,7 +189,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-11T00:02:40.138Z",
+        "verifiedAt": "2026-11-11T06:09:25.379Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -208,7 +208,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-11T00:02:40.138Z",
+      "checkedAt": "2026-11-11T06:09:25.379Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -220,7 +220,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2120275296637321476",
       "publishedAt": "2026-11-10T21:59:58.185Z",
-      "verifiedAt": "2026-11-11T00:02:20.318Z",
+      "verifiedAt": "2026-11-11T06:09:14.059Z",
       "excerpt": "We've given all Pro, Max, Ultra, and Team users one free full reset, across all models and limits.",
       "fullText": "We've given all Pro, Max, Ultra, and Team users one free full reset, across all models and limits. Use it anytime before December 10 at 2:00PM PT.\n\nWe recently fixed a few small issues that used more limits than intended, and the Fable resets didn't do much for those of you who'd already hit your weekly limits for all models. While these issues didn't affect everyone, we want to make up for the trouble.\n\nYou'll find it in Settings > Usage, or at https://t.co/5YRzheAZyQ.",
       "truncated": false,
