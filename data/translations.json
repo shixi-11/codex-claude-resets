@@ -3242,8 +3242,8 @@
         "zh-Hant": "將於明天上午 10 點（PST）之前生效，同時發布一項小更新。",
         "ja": "明日午前10時PST前に、小さな船と一緒に着陸します。",
         "ko": "내일 오전 10시 PST 이전에 작은 배와 함께 착륙합니다.",
-        "es": "Aterrizando mañana antes de las 10am PST junto con una pequeña nave.",
-        "fr": "Atterrissage demain avant 10h du matin heure du Pacifique, ensemble avec un petit vaisseau.",
+        "es": "Aterrizando mañana antes de las 10 a.m. PST junto con un barco pequeño.",
+        "fr": "Atterrissage demain avant 10h PST avec un petit navire.",
         "de": "Morgen vor 10 Uhr PST zusammen mit einem kleinen Schiff landet.",
         "ar": "الهبوط غدًا قبل الساعة 10 صباحًا بتوقيت المحيط الهادئ مع سفينة صغيرة."
       }
@@ -3431,7 +3431,7 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist erledigt. Wir sehen uns morgen für gute Nachrichten.",
-        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
+        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3598,11 +3598,11 @@
       "fullTexts": {
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
-        "ja": "1/2を確保しました",
+        "ja": "バンクド 1/2",
         "ko": "1/2 적립됨",
         "es": "Acreditado 1/2",
-        "fr": "Mis en banque 1/2",
-        "de": "Gebankte 1/2",
+        "fr": "En banque 1/2",
+        "de": "1/2 gespart",
         "ar": "مصرف 1/2"
       }
     },
@@ -3698,7 +3698,10 @@
         "zh-Hant": "您的工作區管理員可以啟用存取權限並為支援的工具設定使用限制，包括開源工具。",
         "ja": "あなたのワークスペース管理者により、サポートされているツール（オープンソースツールを含む）へのアクセスを有効にし、使用制限を設定することができます。",
         "es": "El administrador de tu espacio de trabajo puede habilitar el acceso y establecer límites de uso para las herramientas compatibles, incluidas las herramientas de código abierto.",
-        "ar": "يمكن لمدير مساحة عملك تمكين الوصول وتحديد حدود الاستخدام للأدوات المدعومة، بما في ذلك الأدوات مفتوحة المصدر."
+        "ar": "يمكن لمدير مساحة عملك تمكين الوصول وتحديد حدود الاستخدام للأدوات المدعومة، بما في ذلك الأدوات مفتوحة المصدر.",
+        "ko": "워크스페이스 관리자가 지원되는 도구(오픈 소스 도구 포함)에 대한 액세스를 활성화하고 사용 제한을 설정할 수 있습니다.",
+        "fr": "L'administrateur de votre espace de travail peut activer l'accès et définir des limites d'utilisation pour les outils pris en charge, y compris les outils open-source.",
+        "de": "Ihr Workspace-Administrator kann den Zugriff aktivieren und Nutzungsbeschränkungen für unterstützte Tools festlegen, einschließlich Open-Source-Tools."
       },
       "fullText": "Your workspace admin can enable access and set usage limits for supported tools, including open-source tools.",
       "fullTexts": {
@@ -3706,12 +3709,38 @@
         "zh-Hant": "您的工作區管理員可以啟用存取權限並為支援的工具設定使用限制，包括開源工具。https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
         "ja": "あなたのワークスペース管理者により、サポートされているツール（オープンソースツールを含む）へのアクセスを有効にし、使用制限を設定することができます。https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
         "es": "El administrador de tu espacio de trabajo puede habilitar el acceso y establecer límites de uso para las herramientas compatibles, incluidas las herramientas de código abierto. https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
-        "ar": "يمكن لمدير مساحة عملك تمكين الوصول وتحديد حدود الاستخدام للأدوات المدعومة، بما في ذلك الأدوات مفتوحة المصدر. https://learn.chatgpt.com/docs/sign-in-with-chatgpt"
+        "ar": "يمكن لمدير مساحة عملك تمكين الوصول وتحديد حدود الاستخدام للأدوات المدعومة، بما في ذلك الأدوات مفتوحة المصدر. https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "ko": "워크스페이스 관리자가 지원되는 도구(오픈 소스 도구 포함)에 대한 액세스를 활성화하고 사용 제한을 설정할 수 있습니다. https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "fr": "L'administrateur de votre espace de travail peut activer l'accès et définir des limites d'utilisation pour les outils pris en charge, y compris les outils open-source. https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
+        "de": "Ihr Workspace-Administrator kann den Zugriff aktivieren und Nutzungsbeschränkungen für unterstützte Tools festlegen, einschließlich Open-Source-Tools. https://learn.chatgpt.com/docs/sign-in-with-chatgpt"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-11-10T18:53:15.944Z"
+      "translatedAt": "2026-11-11T00:02:44.773Z"
+    },
+    "2120275296637321476": {
+      "excerpt": "We've given all Pro, Max, Ultra, and Team users one free full reset, across all models and limits.",
+      "contentHash": "cbc827f7ed501e02460819e2e6a33e2d8ee3bd9b4e2590162b5fcf4f3ece6208",
+      "texts": {
+        "zh-Hant": "我們已為所有 Pro、Max、Ultra 和 Team 用戶提供一次免費的完整重置，涵蓋所有模型和限制。",
+        "ja": "Pro、Max、Ultra、Teamユーザー全員に、すべてのモデルと制限にわたる1回の無料フルリセットを提供しました。",
+        "ko": "Pro, Max, Ultra, 그리고 Team 사용자 모두에게 모든 모델과 한도에 걸쳐 한 번의 무료 전체 리셋을 제공했습니다.",
+        "es": "Hemos otorgado un restablecimiento completo gratuito a todos los usuarios de Pro, Max, Ultra y Team, en todos los modelos y límites.",
+        "fr": "Nous avons accordé à tous les utilisateurs Pro, Max, Ultra et Team un réinitialisation complète gratuite, applicable à tous les modèles et limites.",
+        "ar": "لقد منحنا جميع مستخدمي Pro و Max و Ultra و Team إعادة تعيين كاملة مجانية واحدة، عبر جميع النماذج والحدود."
+      },
+      "fullText": "We've given all Pro, Max, Ultra, and Team users one free full reset, across all models and limits. Use it anytime before December 10 at 2:00PM PT.\n\nWe recently fixed a few small issues that used more limits than intended, and the Fable resets didn't do much for those of you who'd already hit your weekly limits for all models. While these issues didn't affect everyone, we want to make up for the trouble.\n\nYou'll find it in Settings > Usage, or at https://t.co/5YRzheAZyQ.",
+      "fullTexts": {
+        "zh-Hant": "我們已為所有 Pro、Max、Ultra 和 Team 用戶提供一次免費的完整重置，涵蓋所有模型和限制。您可以在 12 月 10 日太平洋時間下午 2:00 之前隨時使用。\n\n我們最近修復了幾個小問題，這些問題使用了超出預期的限制，而且 Fable 重置對於那些已經達到所有模型每週限制的用戶來說幫助不大。雖然這些問題並非影響所有人，但我們希望彌補由此帶來的麻煩。\n\n您可以在「設定」>「使用情況」中找到它，或在 http://clau.de/reset 存取。",
+        "ja": "Pro、Max、Ultra、Teamユーザー全員に、すべてのモデルと制限にわたる1回の無料フルリセットを提供しました。12月10日午後2:00（PT）までにいつでも使用してください。\n\n最近、意図したよりも多くの制限を使用してしまういくつかの小さな問題を修正しました。また、Fableのリセットは、すでにすべてのモデルの週間制限に達していた方々にはあまり役に立ちませんでした。これらの問題はすべての方に影響を与えたわけではありませんが、ご迷惑をおかけしたことに対して補償したいと思います。\n\nSettings > Usage または http://clau.de/reset で見つかります。",
+        "ko": "Pro, Max, Ultra, 그리고 Team 사용자 모두에게 모든 모델과 한도에 걸쳐 한 번의 무료 전체 리셋을 제공했습니다. 12월 10일 오후 2:00 PT 이전 언제든지 사용하세요.\n\n최근 의도보다 더 많은 한도를 사용하게 만든 몇 가지 작은 문제를 수정했습니다. 그리고 Fable 리셋은 이미 모든 모델에 대한 주간 한도에 도달한 사용자들에게 큰 도움이 되지 않았습니다. 이러한 문제는 모든 사용자에게 영향을 미치지 않았지만, 불편을 드린 점에 대해 보상하고자 합니다.\n\n설정 > 사용량에서 찾을 수 있습니다. 또는 http://clau.de/reset에서 확인하세요.",
+        "es": "Hemos otorgado un restablecimiento completo gratuito a todos los usuarios de Pro, Max, Ultra y Team, en todos los modelos y límites. Úsalo en cualquier momento antes del 10 de diciembre a las 2:00 p. m. PT.\n\nRecientemente solucionamos algunos pequeños problemas que consumían más límites de lo previsto, y los restablecimientos de Fable no ayudaron mucho a aquellos de ustedes que ya habían alcanzado sus límites semanales en todos los modelos. Aunque estos problemas no afectaron a todos, queremos compensar las molestias.\n\nLo encontrarás en Configuración > Uso, o en http://clau.de/reset.",
+        "fr": "Nous avons accordé à tous les utilisateurs Pro, Max, Ultra et Team un réinitialisation complète gratuite, applicable à tous les modèles et limites. Utilisez-la à tout moment avant le 10 décembre à 14h00 PT.\n\nNous avons récemment corrigé quelques petits problèmes qui consommaient plus de limites que prévu, et les réinitialisations Fable n'ont pas beaucoup aidé ceux d'entre vous qui avaient déjà atteint leurs limites hebdomadaires pour tous les modèles. Bien que ces problèmes n'aient pas affecté tout le monde, nous voulons nous faire pardonner pour les désagréments.\n\nVous la trouverez dans Paramètres > Utilisation, ou à l'adresse http://clau.de/reset.",
+        "ar": "لقد منحنا جميع مستخدمي Pro و Max و Ultra و Team إعادة تعيين كاملة مجانية واحدة، عبر جميع النماذج والحدود. استخدمها في أي وقت قبل 10 ديسمبر الساعة 2:00 مساءً بتوقيت المحيط الهادئ.\n\nلقد قمنا مؤخرًا بإصلاح بعض المشكلات الصغيرة التي كانت تستخدم حدودًا أكثر مما هو مقصود، وإعادات التعيين Fable لم تفعل الكثير لأولئك منكم الذين وصلوا بالفعل إلى حدودهم الأسبوعية لجميع النماذج. بينما لم تؤثر هذه المشكلات على الجميع، نريد أن نعوض عن المتاعب.\n\nستجدونها في الإعدادات > الاستخدام، أو على http://clau.de/reset."
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-11T00:02:43.138Z"
     }
   },
-  "pending": 431,
-  "lastAttemptAt": "2026-11-10T18:53:39.589Z"
+  "pending": 430,
+  "lastAttemptAt": "2026-11-11T00:03:14.178Z"
 }
