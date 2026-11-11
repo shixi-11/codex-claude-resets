@@ -47,3 +47,37 @@ test('partial collection and a missed schedule cannot silently pass',()=>{
 });
 
 
+
+test('each separate missed collection interval alerts even when the preceding gap is still open',()=>{
+ // Actual production audits surrounding runs 42928083076 and 42970353531.
+ const firstAt=Date.parse('2026-11-11T00:03:45.738Z');
+ const secondAt=Date.parse('2026-11-11T06:10:35.305Z');
+ const freshHealth=at=>({...health,lastSuccessAt:new Date(at).toISOString(),platforms:Object.fromEntries(['codex','claude'].map(id=>[id,{status:'ok',lastSuccessAt:new Date(at).toISOString()}]))});
+ const previous={checkedAt:'2026-11-10T18:54:07.580Z',openKeys:['collection-gap']};
+ const first=trackingAudit({events:[],platforms:state([]),health:freshHealth(firstAt),previous,now:firstAt});
+ assert.equal(first.newIssues.filter(i=>i.key==='collection-gap').length,1);
+ // The workflow persists only checkedAt/openKeys, not the full report.
+ const saved={checkedAt:first.checkedAt,openKeys:first.openKeys};
+ const second=trackingAudit({events:[],platforms:state([]),health:freshHealth(secondAt),previous:saved,now:secondAt});
+ const gap=second.newIssues.find(i=>i.key==='collection-gap');
+ assert.ok(gap);
+ assert.equal(gap.gapMs,secondAt-firstAt);
+ assert.equal(gap.previousCheckedAt,first.checkedAt);
+ assert.equal(second.status,'attention');
+ const recovered=trackingAudit({events:[],platforms:state([]),health:freshHealth(secondAt+30*60000),previous:{checkedAt:second.checkedAt,openKeys:second.openKeys},now:secondAt+30*60000});
+ assert.equal(recovered.issues.some(i=>i.key==='collection-gap'),false);
+ assert.equal(recovered.newIssues.length,0);
+});
+
+test('repeat gap alerts do not repeat unresolved review alerts or weaken the three-hour threshold',()=>{
+ const events=[make('2109132167112782291','A reset for some accounts soon?')];
+ const first=trackingAudit({events,platforms:state(events),health,previous:{checkedAt:new Date(now-4*3600000).toISOString()},now});
+ assert.ok(first.newIssues.some(i=>i.key==='collection-gap'));
+ assert.ok(first.newIssues.some(i=>i.key.startsWith('review:')));
+ const later=now+4*3600000;
+ const updatedHealth={...health,lastSuccessAt:new Date(later).toISOString(),platforms:Object.fromEntries(['codex','claude'].map(id=>[id,{status:'ok',lastSuccessAt:new Date(later).toISOString()}]))};
+ const second=trackingAudit({events,platforms:state(events),health:updatedHealth,previous:{checkedAt:first.checkedAt,openKeys:first.openKeys},now:later});
+ assert.deepEqual(second.newIssues.map(i=>i.key),['collection-gap']);
+ const boundary=trackingAudit({events:[],platforms:state([]),health:updatedHealth,previous:{checkedAt:new Date(later-3*3600000).toISOString(),openKeys:['collection-gap']},now:later});
+ assert.equal(boundary.issues.some(i=>i.key==='collection-gap'),false);
+});

@@ -40,6 +40,8 @@ export function trackingAudit({platforms,events,health,previous={},now=Date.now(
   if(!events.some(done=>done.kind==='global'&&done.state==='reported'&&postPlatform(done.author)===postPlatform(e.author)&&Date.parse(done.publishedAt)>=Date.parse(e.publishedAt)))issues.push({key:`completion:${e.id}`,message:`Scheduled reset has no later completion: ${e.sourceUrl}`});
  }
  const old=new Set(previous.openKeys||[]);
- const newIssues=issues.filter(issue=>!old.has(issue.key));
+ // A gap describes the interval since the previous audit, not a persistent issue.
+ // Consecutive missed intervals must each alert even if the last run also had a gap.
+ const newIssues=issues.filter(issue=>issue.key==='collection-gap'||!old.has(issue.key));
  return {checkedAt:new Date(now).toISOString(),status:issues.length?'attention':'ok',openKeys:issues.map(i=>i.key).sort(),issues,newIssues,queue};
 }
