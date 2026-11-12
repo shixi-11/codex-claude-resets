@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-12T18:36:37.905Z",
-  "lastSuccessAt": "2026-11-12T18:36:37.905Z",
-  "discoveryAt": "2026-11-12T18:36:37.905Z",
+  "lastAttemptAt": "2026-11-12T23:53:01.452Z",
+  "lastSuccessAt": "2026-11-12T23:53:01.452Z",
+  "discoveryAt": "2026-11-12T23:53:01.452Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -55,7 +55,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 16,
+      "candidates": 18,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
@@ -85,13 +85,13 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 10
+      "candidates": 13
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 12,
+      "checked": 13,
       "failed": 0
     }
   ],
@@ -99,9 +99,9 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-12T18:36:37.905Z",
+      "lastAttemptAt": "2026-11-12T23:53:01.452Z",
       "status": "ok",
-      "checked": 4,
+      "checked": 5,
       "failed": 0,
       "discovered": 53,
       "authors": [
@@ -118,14 +118,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-12T18:36:37.905Z"
+      "lastSuccessAt": "2026-11-12T23:53:01.452Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-12T18:36:37.905Z",
+      "lastAttemptAt": "2026-11-12T23:53:01.452Z",
       "status": "ok",
       "checked": 8,
       "failed": 0,
-      "discovered": 45,
+      "discovered": 50,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -140,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-12T18:36:37.905Z"
+      "lastSuccessAt": "2026-11-12T23:53:01.452Z"
     }
   }
 }
