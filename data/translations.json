@@ -3214,7 +3214,7 @@
       "fullTexts": {
         "zh": "明天太平洋标准时间上午10点前抵达。",
         "zh-Hant": "明天太平洋標準時間上午 10 點前抵達。",
-        "ja": "明日午前10時PST前に到着します。",
+        "ja": "明日の午前10時までにPSTに着陸します。",
         "ko": "내일 오전 10시 PST 이전에 도착합니다.",
         "es": "Llega mañana antes de las 10am PST.",
         "fr": "Arrive demain avant 10h du matin (heure du Pacifique).",
@@ -3406,7 +3406,7 @@
         "zh-Hant": "太平洋標準時間午夜時抵達。",
         "ko": "PST 자정에 도착함.",
         "ja": "PSTの深夜に到着します。",
-        "es": "Llega a las 12 de la medianoche PST.",
+        "es": "Aterriza a medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
         "de": "Landung um Mitternacht PST."
@@ -3431,7 +3431,7 @@
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y ya está. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
-        "ar": "وهذا تم. أراك غدًا لبعض الأخبار السارة.",
+        "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
       }
     },
@@ -3598,7 +3598,7 @@
       "fullTexts": {
         "zh": "已存 1/2",
         "zh-Hant": "已儲存 1/2",
-        "ja": "1/2を確保しました",
+        "ja": "バンクド 1/2",
         "ko": "경사 1/2",
         "es": "Acreditado 1/2",
         "fr": "Mis en banque 1/2",
@@ -3616,9 +3616,9 @@
         "zh": "第28天/ 存档 2/2",
         "ko": "28일째/ 적립 2/2",
         "ja": "28日目/ 貯蓄 2/2",
-        "es": "Día 28/ Acumulados 2/2",
-        "fr": "Jour 28 / En banque 2/2",
-        "ar": "اليوم 28/ مخزن 2/2",
+        "es": "Día 28/ Acumulado 2/2",
+        "fr": "Jour 28/ Mis en réserve 2/2",
+        "ar": "اليوم 28/ محفوظ 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     },
@@ -3800,5 +3800,5 @@
     }
   },
   "pending": 428,
-  "lastAttemptAt": "2026-11-12T02:32:48.238Z"
+  "lastAttemptAt": "2026-11-12T09:58:42.031Z"
 }
