@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-12T10:19:56.566Z",
-  "lastSuccessAt": "2026-11-12T10:19:56.566Z",
-  "discoveryAt": "2026-11-12T10:19:56.566Z",
+  "lastAttemptAt": "2026-11-12T18:36:37.905Z",
+  "lastSuccessAt": "2026-11-12T18:36:37.905Z",
+  "discoveryAt": "2026-11-12T18:36:37.905Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -25,7 +25,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 15,
+      "candidates": 14,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
@@ -55,7 +55,7 @@
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
-      "candidates": 17,
+      "candidates": 16,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
@@ -91,7 +91,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 14,
+      "checked": 12,
       "failed": 0
     }
   ],
@@ -99,11 +99,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-12T10:19:56.566Z",
+      "lastAttemptAt": "2026-11-12T18:36:37.905Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
-      "discovered": 54,
+      "discovered": 53,
       "authors": [
         {
           "author": "thsottiaux",
@@ -118,14 +118,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-12T10:19:56.566Z"
+      "lastSuccessAt": "2026-11-12T18:36:37.905Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-12T10:19:56.566Z",
+      "lastAttemptAt": "2026-11-12T18:36:37.905Z",
       "status": "ok",
-      "checked": 10,
+      "checked": 8,
       "failed": 0,
-      "discovered": 46,
+      "discovered": 45,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -140,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-12T10:19:56.566Z"
+      "lastSuccessAt": "2026-11-12T18:36:37.905Z"
     }
   }
 }
