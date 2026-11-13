@@ -3414,7 +3414,7 @@
         "es": "Llega a las 12 de la medianoche PST.",
         "fr": "Atterrit à minuit heure du Pacifique.",
         "ar": "تصل في منتصف الليل بتوقيت المحيط الهادئ.",
-        "de": "Landung um Mitternacht PST."
+        "de": "Landet bis Mitternacht PST."
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-11-12T18:36:58.922Z"
@@ -3429,18 +3429,22 @@
     "2115330127886463244": {
       "excerpt": "And it's done. See you tomorrow for some good news.",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5",
-      "texts": {},
+      "texts": {
+        "ja": "您正在使用旧版本的 DeepL。"
+      },
       "fullText": "And it's done. See you tomorrow for some good news.",
       "fullTexts": {
         "zh": "完成了。明天见，会有好消息。",
         "zh-Hant": "完成了。明天見，帶來一些好消息。",
-        "ja": "そして、完了です。明日また、良いニュースのために会いましょう。",
+        "ja": "You're using an older version of DeepL. To continue using the app, please update to the latest version. Sie verwenden eine ältere Version von DeepL. Bitte aktualisieren Sie die App, um sie weiterhin nutzen zu können. Вы используете старую версию DeepL. Чтобы продолжить работу с приложением, обновите его до последней версии. Vous utilisez une ancienne version de DeepL. Veuillez mettre à jour l'application pour continuer à l'utiliser.您正在使用旧版本的 DeepL。 如需继续使用该应用程序，请更新至最新版本。DeepLの古いバージョンをご利用中です。 引き続きご利用いただくには、アプリを最新版へアップデートしてください。Estás usando una versión antigua de DeepL. Para seguir usando la aplicación, actualízala a la versión más reciente. Ти використовуєш стару версію DeepL. Щоб продовжити користуватися програмою, онови її до останньої версії. Stai utilizzando una versione precedente di DeepL. Per continuare a utilizzare l'app, aggiornala all'ultima versione. DeepL'in eski bir sürümünü kullanıyorsun. Uygulamayı kullanmaya devam etmek için en son sürüme güncelle. Korzystasz ze starszej wersji DeepL. Jeżeli chcesz kontynuować korzystanie z aplikacji, zaktualizuj ją do najnowszej wersji. Está a utilizar uma versão mais antiga do DeepL. Para continuar a utilizar a aplicação, atualize-a para a versão mais recente. U gebruikt een oudere versie van DeepL. Om de app te blijven gebruiken, moet u updaten naar de nieuwste versie. Anda menggunakan DeepL versi lama. Untuk terus menggunakan aplikasi ini, harap perbarui ke versi terbaru. Používáte starší verzi DeepL. Pokud chcete aplikaci dále používat, aktualizujte ji na nejnovější verzi.",
         "ko": "그리고 끝났어. 내일 좋은 소식을 위해 봐.",
         "es": "Y está hecho. Nos vemos mañana para algunas buenas noticias.",
         "de": "Und es ist geschafft. Bis morgen mit guten Neuigkeiten.",
         "ar": "وتم الانتهاء. أراك غدًا لبعض الأخبار الجيدة.",
         "fr": "Et voilà, c'est fini. À demain pour de bonnes nouvelles."
-      }
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-13T06:38:48.450Z"
     },
     "2115851621137784832": {
       "excerpt": "Graduating from The Reset Company to The Token Company.",
@@ -3629,7 +3633,7 @@
         "ja": "28日目/ 貯蓄 2/2",
         "es": "Día 28/ Acumulados 2/2",
         "fr": "Jour 28 / En banque 2/2",
-        "ar": "اليوم 28/ مخزن 2/2",
+        "ar": "اليوم 28/ محفوظ 2/2",
         "de": "Tag 28/ Gespart 2/2"
       }
     },
@@ -3829,6 +3833,6 @@
       "translatedAt": "2026-11-12T23:53:15.189Z"
     }
   },
-  "pending": 430,
-  "lastAttemptAt": "2026-11-12T23:53:36.369Z"
+  "pending": 429,
+  "lastAttemptAt": "2026-11-13T06:38:56.909Z"
 }
