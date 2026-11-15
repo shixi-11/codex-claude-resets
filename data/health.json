@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-15T14:19:23.803Z",
-  "lastSuccessAt": "2026-11-15T14:19:23.803Z",
-  "discoveryAt": "2026-11-15T14:19:23.803Z",
+  "lastAttemptAt": "2026-11-15T19:57:03.586Z",
+  "lastSuccessAt": "2026-11-15T19:57:03.586Z",
+  "discoveryAt": "2026-11-15T19:57:03.586Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:4398626122/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
@@ -44,6 +44,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:4398626122/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -51,7 +57,7 @@
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
@@ -59,6 +65,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -99,7 +111,7 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-15T14:19:23.803Z",
+      "lastAttemptAt": "2026-11-15T19:57:03.586Z",
       "status": "ok",
       "checked": 3,
       "failed": 0,
@@ -118,10 +130,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-15T14:19:23.803Z"
+      "lastSuccessAt": "2026-11-15T19:57:03.586Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-15T14:19:23.803Z",
+      "lastAttemptAt": "2026-11-15T19:57:03.586Z",
       "status": "ok",
       "checked": 6,
       "failed": 0,
@@ -140,7 +152,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-15T14:19:23.803Z"
+      "lastSuccessAt": "2026-11-15T19:57:03.586Z"
     }
   }
 }
