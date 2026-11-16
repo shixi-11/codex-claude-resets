@@ -1,9 +1,16 @@
+import {manualResetGrant,isManualResetGrant,bankedActivation,isBankedActivation} from './evidence.mjs';
 import {escapeHtml as e} from './shared.mjs';
 // This is a current presentation of a historical grant, never a change to its
 // reported state, source text, content hash or a user's redemption status.
 const source={id:'2104641323198472430',author:'claudedevs',url:'https://x.com/ClaudeDevs/status/2104641323198472430',hash:'899d99d26a6c3a5e02d399eb3448343816e5a28dbf1e4988c9e7281058982d3b',text:'Sonnet 5.5 is available now in the Claude Platform and Claude Code.\n\nWe granted all Pro, Max, and Team users a reset last Tuesday. If you haven’t used it yet, you can still apply it whenever you want, before Oct 22.'};
 const beforeDate='2026-10-22',day=86400000,date=Date.parse(beforeDate+'T00:00:00Z');
 export function creditAvailability(event,now=Date.now()) {
+ if(event?.reason==='reviewed-bank-rollout' && event.kind==='banked' && event.state==='announced' && isBankedActivation(event) && event.sourceUrl===bankedActivation.sourceUrl && event.contentHash===bankedActivation.contentHash && event.publishedAt===bankedActivation.publishedAt)return {state:'pending',rollout:true};
+ if(event?.id===manualResetGrant.id && event.author?.toLowerCase()===manualResetGrant.author.toLowerCase() && event.sourceUrl===manualResetGrant.sourceUrl && event.kind==='banked' && event.state==='reported' && !event.truncated){
+  if(!isManualResetGrant(event)||event.contentHash!==manualResetGrant.contentHash||event.publishedAt!==manualResetGrant.publishedAt||!Number.isFinite(now))return {state:'unknown'};
+  return {state:now<Date.parse(manualResetGrant.endsAt)?'before':'expired',endsAt:manualResetGrant.endsAt,timezone:'America/Los_Angeles'};
+ }
+
  if(event?.id!==source.id||event.author?.toLowerCase()!==source.author||event.sourceUrl!==source.url||event.kind!=='banked'||event.state!=='reported'||event.truncated)return null;
  // Old or changed evidence must not inherit a checked expiry from identity alone.
  if(event.fullText!==source.text||event.contentHash!==source.hash||event.publishedAt!=='2026-09-28T18:36:08.452Z'||!Number.isFinite(now))return {state:'unknown'};
@@ -23,9 +30,17 @@ const rows={
  de:['Gewährt · zeitlich begrenzt','Datumsgrenze · Verfügbarkeit unklar','Abgelaufen · historische Gewährung','Historische Gewährung · Verfügbarkeit ungeprüft','Frist laut Quelle: vor dem {date}; Zeitzone nicht angegeben.','Falls ungenutzt, beachte die Frist der Quelle.','An dieser Datumsgrenze ist die aktuelle Verfügbarkeit unklar.','Der Nutzungszeitraum ist abgelaufen.','Ob du das Guthaben bereits genutzt hast, ist unbekannt.','Aktuelle Bedingungen sind ungeprüft; dieser historische Eintrag belegt kein ungenutztes Guthaben.'],
  ar:['مُنح · له مهلة استخدام','حد التاريخ · الإتاحة غير مؤكدة','منتهي الصلاحية · سجل منح سابق','سجل منح سابق · الإتاحة غير متحققة','مهلة المصدر: قبل {date}؛ لم تُذكر المنطقة الزمنية.','إذا لم يُستخدم، فاتبع مهلة المصدر.','الإتاحة الحالية غير مؤكدة عند حد هذا التاريخ.','انتهت فترة الاستخدام.','لا نعرف ما إذا كنت قد استخدمت الرصيد.','الشروط الحالية غير متحققة؛ لا يثبت هذا السجل السابق وجود رصيد غير مستخدم.'],
 };
+const activationNotes={"en": ["Activated · delivery pending", "The banked reset has been activated and should reach accounts soon. Receipt by every account is not confirmed."], "zh": ["已激活 · 陆续到账中", "储存重置已激活，预计不久后陆续到账；尚未确认所有账号均已收到。"], "zh-Hant": ["已啟用 · 陸續到帳中", "儲存重置已啟用，預計不久後陸續到帳；尚未確認所有帳號均已收到。"], "ja": ["有効化済み · 順次配布待ち", "ストックできるリセットは有効化され、まもなく各アカウントに届く見込みです。すべてのアカウントでの受領は未確認です。"], "ko": ["활성화됨 · 순차 지급 중", "저장형 초기화가 활성화되었으며 곧 계정에 도착할 예정입니다. 모든 계정의 수령은 확인되지 않았습니다."], "es": ["Activado · entrega pendiente", "El restablecimiento acumulable se ha activado y debería llegar pronto a las cuentas. No se ha confirmado su recepción en todas ellas."], "fr": ["Activé · distribution en attente", "La réinitialisation à conserver a été activée et devrait bientôt arriver sur les comptes. Sa réception par tous les comptes n’est pas confirmée."], "de": ["Aktiviert · Zustellung ausstehend", "Der aufbewahrbare Reset wurde aktiviert und sollte bald auf den Konten eintreffen. Der Erhalt auf allen Konten ist nicht bestätigt."], "ar": ["تم التفعيل · الإيداع قيد الانتظار", "تم تفعيل إعادة الضبط القابلة للاحتفاظ، ومن المتوقع أن تصل إلى الحسابات قريبًا. لم يُؤكد استلام جميع الحسابات لها."]};
+const manualNotes={"en": "One free full reset across all models and limits for Pro, Max, Ultra and Team. Use it manually in Settings > Usage before {date}.", "zh": "Pro、Max、Ultra 和 Team 用户可获得一次免费完整重置，涵盖所有模型与额度上限。请在{date}之前到“设置 > 使用量”手动使用。", "zh-Hant": "Pro、Max、Ultra 和 Team 使用者可獲得一次免費完整重置，涵蓋所有模型與額度上限。請在{date}之前到「設定 > 使用量」手動使用。", "ja": "Pro、Max、Ultra、Team向けに、すべてのモデルと利用上限を対象とした無料のフルリセットを1回付与。{date}より前に「設定 > 使用状況」で手動で使用してください。", "ko": "Pro, Max, Ultra, Team 사용자에게 모든 모델과 한도에 적용되는 무료 전체 초기화 1회가 지급됩니다. {date} 전에 설정 > 사용량에서 직접 사용하세요.", "es": "Un restablecimiento completo gratuito para todos los modelos y límites de Pro, Max, Ultra y Team. Úsalo manualmente en Configuración > Uso antes del {date}.", "fr": "Une réinitialisation complète gratuite pour tous les modèles et limites de Pro, Max, Ultra et Team. Utilisez-la manuellement dans Paramètres > Utilisation avant le {date}.", "de": "Ein kostenloser vollständiger Reset für alle Modelle und Limits von Pro, Max, Ultra und Team. Vor {date} unter Einstellungen > Nutzung manuell einlösen.", "ar": "إعادة ضبط كاملة مجانية واحدة لجميع النماذج والحدود لمستخدمي Pro وMax وUltra وTeam. استخدمها يدويًا من الإعدادات > الاستخدام قبل {date}."};
 export function creditPresentation(event,lang='en',now=Date.now()) {
  const terms=creditAvailability(event,now);if(!terms)return null;
+ if(terms.rollout){const [label,note]=activationNotes[lang]||activationNotes.en;return {...terms,label,note};}
  const r=rows[lang]||rows.en,index={before:0,boundary:1,expired:2,unknown:3}[terms.state];
+ if(terms.endsAt){
+  const formatted=new Intl.DateTimeFormat(lang,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'shortOffset'}).format(new Date(terms.endsAt));
+  return {...terms,label:r[index],note:[(manualNotes[lang]||manualNotes.en).replace('{date}',formatted),...(terms.state==='expired'?[r[7]]:[]),r[8]].join(' ')};
+ }
+
  const formatted=terms.beforeDate?new Intl.DateTimeFormat(lang,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(terms.beforeDate+'T12:00:00Z')):null;
  return {...terms,label:r[index],note:terms.state==='unknown'?r[9]:[r[4].replace('{date}',formatted),r[{before:5,boundary:6,expired:7}[terms.state]],r[8]].join(' ')};
 }

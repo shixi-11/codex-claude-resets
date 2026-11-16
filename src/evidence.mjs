@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.27';
+export const RULES_VERSION = '1.4.30';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -97,6 +97,13 @@ export function validResetContext(context,author,publishedAt,{allowDaySignal=fal
   const result=classify(context.fullText||'',{id:context.id,author:context.author});
   return (allowBanked ? (result.kind==='banked' && result.reason==='explicit-bank-announcement') : result.kind==='global') && result.state==='announced';
 }
+// Independently reviewed official one-time manual reset grant. The deadline is
+// a redemption cutoff, never a global reset instant or proof of account use.
+export const manualResetGrant = {"id": "2120275296637321476", "author": "ClaudeDevs", "sourceUrl": "https://x.com/ClaudeDevs/status/2120275296637321476", "publishedAt": "2026-11-10T21:59:58.185Z", "contentHash": "cbc827f7ed501e02460819e2e6a33e2d8ee3bd9b4e2590162b5fcf4f3ece6208", "fullText": "We've given all Pro, Max, Ultra, and Team users one free full reset, across all models and limits. Use it anytime before December 10 at 2:00PM PT.\n\nWe recently fixed a few small issues that used more limits than intended, and the Fable resets didn't do much for those of you who'd already hit your weekly limits for all models. While these issues didn't affect everyone, we want to make up for the trouble.\n\nYou'll find it in Settings > Usage, or at https://t.co/5YRzheAZyQ.", "endsAt": "2026-12-10T22:00:00Z"};
+export const isManualResetGrant = event => event?.id===manualResetGrant.id && event.author?.toLowerCase()===manualResetGrant.author.toLowerCase() && event.fullText===manualResetGrant.fullText && !event.truncated;
+// Activation is not proof of receipt by every account or a global reset.
+export const bankedActivation = {"id": "2120999993079451919", "author": "thsottiaux", "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919", "publishedAt": "2026-11-12T21:59:39.281Z", "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3", "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!"};
+export const isBankedActivation = event => event?.id===bankedActivation.id && event.author?.toLowerCase()===bankedActivation.author && event.fullText===bankedActivation.fullText && !event.truncated;
 const reviewedProUsage = "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared to Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, access to ultrafast";
 export function classify(text, { id, truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
@@ -106,6 +113,8 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  if (isBankedActivation({id,author,fullText:text,truncated})) return {kind:'banked',state:'announced',reason:'reviewed-bank-rollout'};
+  if (isManualResetGrant({id,author,fullText:text,truncated})) return {kind:'banked',state:'reported',reason:'reviewed-manual-grant'};
   // Complete, reviewed plan comparison: no new reset or reset time.
   if (author.toLowerCase()==='thsottiaux' && id==='2119296267545419987' && text===reviewedProUsage) return {kind:'usage',state:'information',reason:'reviewed-plan-usage'};
   // Primary parent: https://x.com/ForwardEditor/status/2119185994326905218.
@@ -206,6 +215,8 @@ export function validateEvent(event) {
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
   if (event.reason==='reviewed-plan-usage' && (event.kind!=='usage' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-plan-usage')) throw new Error('Plan usage needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-product-commentary' && (event.kind!=='commentary' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-product-commentary')) throw new Error('Product commentary needs its exact reviewed identity and complete text');
+  if (event.reason==='reviewed-bank-rollout' && (event.kind!=='banked' || event.state!=='announced' || !isBankedActivation(event))) throw new Error('Bank activation needs its exact reviewed identity and complete text');
+  if (event.reason==='reviewed-manual-grant' && (event.kind!=='banked' || event.state!=='reported' || !isManualResetGrant(event))) throw new Error('Manual reset grant needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-bank-grant' && (event.kind!=='banked' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-bank-grant')) throw new Error('Bank grant needs its pinned source and verified editorial context');
   if (event.reason==='reviewed-completion' && (event.kind!=='global' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-completion')) throw new Error('Reviewed completion needs its pinned source and verified editorial context');
   return true;
