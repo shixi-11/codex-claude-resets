@@ -3,7 +3,7 @@
     "id": "2120999993079451919",
     "kind": "banked",
     "state": "announced",
-    "reason": "explicit-bank-announcement",
+    "reason": "reviewed-bank-rollout",
     "author": "thsottiaux",
     "platform": "codex",
     "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919",
@@ -13,7 +13,7 @@
     "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
     "truncated": false,
     "provenance": "x-oembed",
-    "rulesVersion": "1.4.27",
+    "rulesVersion": "1.4.30",
     "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3"
   },
   {
@@ -52,9 +52,9 @@
   },
   {
     "id": "2120275296637321476",
-    "kind": "usage",
-    "state": "information",
-    "reason": "usage-change",
+    "kind": "banked",
+    "state": "reported",
+    "reason": "reviewed-manual-grant",
     "author": "ClaudeDevs",
     "platform": "claude",
     "sourceUrl": "https://x.com/ClaudeDevs/status/2120275296637321476",
@@ -65,7 +65,7 @@
     "truncated": false,
     "provenance": "x-oembed+fxembed",
     "relayUrl": "https://api.fxtwitter.com/ClaudeDevs/status/2120275296637321476",
-    "rulesVersion": "1.4.27",
+    "rulesVersion": "1.4.30",
     "contentHash": "cbc827f7ed501e02460819e2e6a33e2d8ee3bd9b4e2590162b5fcf4f3ece6208"
   },
   {

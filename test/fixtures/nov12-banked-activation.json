@@ -1,0 +1,60 @@
+{
+  "checkedOn": "2026-11-16",
+  "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919",
+  "embed": {
+    "url": "https://x.com/thsottiaux/status/2120999993079451919",
+    "author_name": "Tibo",
+    "author_url": "https://x.com/thsottiaux",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon! <a href=\"https://t.co/Y7Mnp6Cuu1\">https://t.co/Y7Mnp6Cuu1</a></p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2120999993079451919?ref_src=twsrc%5Etfw\">November 12, 2026</a></blockquote>\n\n",
+    "width": 550,
+    "height": null,
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "X",
+    "provider_url": "https://x.com",
+    "version": "1.0"
+  },
+  "relay": {
+    "id": "2120999993079451919",
+    "url": "https://x.com/thsottiaux/status/2120999993079451919",
+    "created_timestamp": 1794520779,
+    "text": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+    "raw_text": {
+      "text": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+      "display_text_range": [
+        0,
+        135
+      ],
+      "facets": []
+    },
+    "author": {
+      "screen_name": "thsottiaux",
+      "protected": false
+    }
+  },
+  "syndication": {
+    "id_str": "2120999993079451919",
+    "created_at": "2026-11-12T21:59:39.000Z",
+    "text": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+    "user": {
+      "screen_name": "thsottiaux"
+    }
+  },
+  "original": {
+    "id": "2120999993079451919",
+    "kind": "banked",
+    "state": "announced",
+    "reason": "explicit-bank-announcement",
+    "author": "thsottiaux",
+    "platform": "codex",
+    "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919",
+    "publishedAt": "2026-11-12T21:59:39.281Z",
+    "verifiedAt": "2026-11-16T09:55:46.203Z",
+    "excerpt": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+    "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+    "truncated": false,
+    "provenance": "x-oembed",
+    "rulesVersion": "1.4.27",
+    "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3"
+  }
+}
