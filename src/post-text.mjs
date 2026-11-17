@@ -3,11 +3,27 @@ import {escapeHtml as e} from './shared.mjs';
 export const translationLanguages=['zh','zh-Hant','ja','ko','es','fr','de','ar'];
 const labels={en:['Translation','Original text; translation pending'],zh:['译文','原文 · 译文待更新'],'zh-Hant':['譯文','原文 · 譯文待更新'],ja:['翻訳','原文・翻訳待ち'],ko:['번역','원문 · 번역 대기 중'],es:['Traducción','Original · traducción pendiente'],fr:['Traduction','Original · traduction en attente'],de:['Übersetzung','Original · Übersetzung ausstehend'],ar:['ترجمة','النص الأصلي · الترجمة قيد الانتظار']};
 
+// Recognize provider failure boilerplate, not mentions of the provider itself.
+// This shared guard protects both freshly returned text and old cached values.
+export function isProviderErrorText(text){
+ if(typeof text!=='string')return false;
+ const value=text.normalize('NFKC').replace(/[’‘]/g,"'").trim();
+ return [
+  /\b(?:you're|you are) using an (?:older|old|outdated) version of DeepL\b/i,
+  /您(?:正在)?使用[旧舊]版本的\s*DeepL/u,
+  /\bSie verwenden eine (?:ältere|veraltete) Version von DeepL\b/iu,
+  /\bVous utilisez une (?:ancienne|vieille) version de DeepL\b/iu,
+  /\bEst[aá]s usando una versi[oó]n (?:antigua|anterior) de DeepL\b/iu,
+  /DeepLの古いバージョンをご利用中/u,
+  /^(?:error:\s*)?(?:translation (?:failed|unavailable)|(?:deepl|translation service) (?:error|unavailable|temporarily unavailable|rate limit exceeded|quota exceeded))(?:[.!:]\s*.*)?$/i,
+ ].some(pattern=>pattern.test(value));
+}
+
 // A translation belongs to an exact source version, never just a post ID.
 export function translatedText(event,lang){
  const entry=event?.localized;
  const text=entry?.texts?.[lang];
- const valid=entry?.excerpt===event?.excerpt&&entry?.contentHash===event?.contentHash&&typeof text==='string'&&text.trim()&&text.length<=1200;
+ const valid=entry?.excerpt===event?.excerpt&&entry?.contentHash===event?.contentHash&&typeof text==='string'&&text.trim()&&text.length<=1200&&!isProviderErrorText(text);
  return lang!=='en'&&valid?{text,lang,translated:true}:{text:event?.excerpt||'',lang:'en',translated:false};
 }
 // A localized event page is indexable only when its post text is really translated;
@@ -17,7 +33,7 @@ export function postText(event,lang,className='excerpt',tag='p'){
  const value=translatedText(event,lang),label=labels[lang]||labels.en;
  const preview=`<${tag} class="${className}" lang="${e(value.lang)}" dir="${value.lang==='ar'?'rtl':'ltr'}">${e(value.text)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[value.translated?0:1])}</small>`}`;
  if(!event.fullText||event.truncated)return preview;
- const entry=event.localized,translated=lang!=='en'&&entry?.contentHash===event.contentHash&&entry?.fullText===event.fullText&&typeof entry?.fullTexts?.[lang]==='string'&&entry.fullTexts[lang].trim();
+ const entry=event.localized,translated=lang!=='en'&&entry?.contentHash===event.contentHash&&entry?.fullText===event.fullText&&typeof entry?.fullTexts?.[lang]==='string'&&entry.fullTexts[lang].trim()&&!isProviderErrorText(entry.fullTexts[lang]);
  const full=translated?entry.fullTexts[lang]:event.fullText,fullLang=translated?lang:'en',actions=expandLabels[lang]||expandLabels.en;
  const continuousPreview=`<${tag} class="${className} post-preview" lang="${e(fullLang)}" dir="${fullLang==='ar'?'rtl':'ltr'}">${e(full)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[translated?0:1])}</small>`}`;
  return `<div class="post-body">${continuousPreview}<details class="post-full" data-post-id="${e(event.id)}"><summary><span class="expand-label">${e(actions[0])}</span><span class="collapse-label">${e(actions[1])}</span></summary><${tag} class="full-post-text ${className}" lang="${e(fullLang)}" dir="${fullLang==='ar'?'rtl':'ltr'}">${e(full)}</${tag}>${lang==='en'?'':`<small class="translation-note">${e(label[translated?0:1])}</small>`}</details></div>`;

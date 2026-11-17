@@ -1,6 +1,6 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {translationLanguages} from '../src/post-text.mjs';
+import {translationLanguages,isProviderErrorText} from '../src/post-text.mjs';
 import {parsePostUrl} from '../src/evidence.mjs';
 
 const root=new URL('../',import.meta.url),file=new URL('data/translations.json',root);
@@ -22,6 +22,7 @@ export function translationFromResponse(event,lang,payload,full=false){
  if(payload?.code!==200||String(post?.id)!==event.id||!url||url.id!==event.id||url.author.toLowerCase()!==event.author.toLowerCase()||post.author?.screen_name?.toLowerCase()!==event.author.toLowerCase()||post.author?.protected)throw Error('Translation source identity mismatch');
  if(typeof post.text!=='string'||!normalize(post.text).includes(normalize(event.excerpt)))throw Error('Translation source text changed');
  if(typeof translation?.text!=='string'||translation.text.length>20000||translation.target_lang?.toLowerCase()!==targetCodes[lang]||!translation.text.trim())throw Error('Translation unavailable');
+ if(isProviderErrorText(translation.text))throw Error('Translation provider returned an error message');
  if(full){
   if(!event.fullText||normalize(post.raw_text?.text||post.text)!==normalize(event.fullText))throw Error('Full translation source text changed');
   const text=matchSourceBreaks(event.fullText,translation.text);
@@ -43,10 +44,25 @@ export function translationFromResponse(event,lang,payload,full=false){
  return text;
 }
 
+// Sanitize independently of the current event list, before any copy/skip path.
+// Keep valid languages, exact source anchors and provenance timestamps intact.
+export function sanitizeTranslationCache(cache){
+ const removed=[];
+ for(const [id,entry] of Object.entries(cache.posts||{})){
+  if(!entry||typeof entry!=='object')continue;
+  for(const field of ['texts','fullTexts'])for(const [lang,text] of Object.entries(entry[field]||{})){
+   if(!isProviderErrorText(text))continue;
+   delete entry[field][lang];removed.push({id,field,lang});
+  }
+ }
+ return removed;
+}
+
 async function main(){
  const events=JSON.parse(await readFile(new URL('data/events.json',root),'utf8'));
  let cache={version:1,posts:{}};try{cache=JSON.parse(await readFile(file,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
  const before=JSON.stringify(cache);
+ const removedProviderErrors=sanitizeTranslationCache(cache).length;
  const pending=[];
  for(const event of events){
   let entry=cache.posts[event.id];
@@ -56,14 +72,17 @@ async function main(){
   if(event.fullText&&normalize(event.fullText)===normalize(event.excerpt))for(const lang of translationLanguages)if(entry.texts[lang])entry.fullTexts[lang]||=entry.texts[lang];
   for(const lang of translationLanguages)if(!entry.texts[lang]||(event.fullText&&!entry.fullTexts[lang]))pending.push({event,lang,entry});
  }
- if(!pending.length){if(JSON.stringify(cache)!==before)await writeFile(file,JSON.stringify(cache,null,2)+'\n');console.log('Translations ready; no requests.');return;}
+ if(!pending.length){if(JSON.stringify(cache)!==before)await writeFile(file,JSON.stringify(cache,null,2)+'\n');console.log(JSON.stringify({translated:0,removedProviderErrors,pending:0}));return;}
  const budget=Math.min(Number(process.env.TRANSLATION_REQUEST_LIMIT)||400,400),queue=pending.slice(0,budget);let done=0,failed=0,cursor=0;
  async function worker(){while(cursor<queue.length){const {event,lang,entry}=queue[cursor++];try{
   const response=await fetch(`https://api.fxtwitter.com/2/status/${event.id}?lang=${targetCodes[lang]}`,{headers:{'User-Agent':'CodexClaudeResets/1.0 (cached public post translations)'},signal:AbortSignal.timeout(20000)});
   if(!response.ok)throw Error(`HTTP ${response.status}`);
   const payload=await response.json();
-  if(event.fullText)entry.fullTexts[lang]=translationFromResponse(event,lang,payload,true);
-  if(!entry.texts[lang])entry.texts[lang]=translationFromResponse(event,lang,payload);
+  // Validate all missing fields before committing either of them.
+  const fullText=event.fullText&&!entry.fullTexts[lang]?translationFromResponse(event,lang,payload,true):null;
+  const excerpt=!entry.texts[lang]?translationFromResponse(event,lang,payload):null;
+  if(fullText)entry.fullTexts[lang]=fullText;
+  if(excerpt)entry.texts[lang]=excerpt;
   entry.provider='FxEmbed';entry.translatedAt=new Date().toISOString();done++;
  }catch(error){failed++;console.warn(`Translation pending ${event.id}/${lang}: ${error.message}`);}
  await new Promise(resolve=>setTimeout(resolve,180));
@@ -71,6 +90,6 @@ async function main(){
  await Promise.all([worker(),worker()]);
  cache.lastAttemptAt=new Date().toISOString();cache.pending=pending.length-done;
  const temporary=fileURLToPath(file)+'.tmp';await writeFile(temporary,JSON.stringify(cache,null,2)+'\n');await rename(temporary,fileURLToPath(file));
- console.log(JSON.stringify({translated:done,failed,pending:cache.pending,cachedPosts:Object.keys(cache.posts).length}));
+ console.log(JSON.stringify({translated:done,failed,pending:cache.pending,cachedPosts:Object.keys(cache.posts).length,removedProviderErrors}));
 }
 if(process.argv[1]&&fileURLToPath(import.meta.url)===process.argv[1])await main();
