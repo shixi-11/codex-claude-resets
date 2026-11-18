@@ -8,23 +8,23 @@
       "resetAt": null
     },
     "gifts": [],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "latest": {
-      "id": "2120999993079451919",
-      "kind": "banked",
-      "state": "announced",
-      "reason": "reviewed-bank-rollout",
-      "author": "thsottiaux",
+      "id": "2122824859491205152",
+      "kind": "signal",
+      "state": "unconfirmed",
+      "reason": "ambiguous",
+      "author": "OpenAIDevs",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919",
-      "publishedAt": "2026-11-12T21:59:39.281Z",
-      "verifiedAt": "2026-11-17T19:28:36.257Z",
-      "excerpt": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
-      "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+      "sourceUrl": "https://x.com/OpenAIDevs/status/2122824859491205152",
+      "publishedAt": "2026-11-17T22:51:01.338Z",
+      "verifiedAt": "2026-11-18T00:57:00.662Z",
+      "excerpt": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.",
+      "fullText": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.\n\nIn Analytics, you can now:\n• Better track usage and spend\n• Check rate limits and rate-limited requests\n• Explore errors by model, project, or API key",
       "truncated": false,
       "provenance": "x-oembed",
       "rulesVersion": "1.4.30",
-      "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3"
+      "contentHash": "5f72ed5dd67b93c5ce2ecad7c44dc707c5175ab3e1e01516e0c25bd6e4cae81a"
     },
     "lastReset": {
       "id": "2115330127886463244",
@@ -79,7 +79,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919",
       "publishedAt": "2026-11-12T21:59:39.281Z",
-      "verifiedAt": "2026-11-17T19:28:36.257Z",
+      "verifiedAt": "2026-11-18T00:57:00.662Z",
       "excerpt": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
       "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
       "truncated": false,
@@ -176,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-17T19:28:54.808Z",
+        "verifiedAt": "2026-11-18T00:57:07.158Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -195,7 +195,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-17T19:28:54.808Z",
+      "checkedAt": "2026-11-18T00:57:07.158Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {

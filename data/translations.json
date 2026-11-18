@@ -3819,8 +3819,31 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-11-14T19:55:53.192Z"
+    },
+    "2122824859491205152": {
+      "excerpt": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.",
+      "contentHash": "5f72ed5dd67b93c5ce2ecad7c44dc707c5175ab3e1e01516e0c25bd6e4cae81a",
+      "texts": {
+        "zh-Hant": "我們更新了 API 使用量儀表板，使其更容易監控您的使用情況並調查問題。",
+        "ja": "API 使用状況ダッシュボードを更新し、使用状況の監視と問題の調査をより簡単にしました。",
+        "ko": "API 사용 대시보드를 업데이트하여 사용량 모니터링과 문제 조사 작업을 더 쉽게 할 수 있도록 했습니다.",
+        "es": "Actualizamos el panel de uso de la API para facilitar el monitoreo de tu uso e investigación de problemas.",
+        "de": "Wir haben das API-Nutzungs-Dashboard aktualisiert, um die Überwachung Ihrer Nutzung zu erleichtern und Probleme zu untersuchen.",
+        "ar": "قمنا بتحديث لوحة تحكم استخدام واجهة برمجة التطبيقات لجعلها أسهل في مراقبة استخدامك وتحقيق المشكلات."
+      },
+      "fullText": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.\n\nIn Analytics, you can now:\n• Better track usage and spend\n• Check rate limits and rate-limited requests\n• Explore errors by model, project, or API key",
+      "fullTexts": {
+        "zh-Hant": "我們更新了 API 使用量儀表板，使其更容易監控您的使用情況並調查問題。\n\n在 Analytics 中，您現在可以：\n• 更好地追蹤使用量和支出\n• 檢查速率限制和受速率限制的請求\n• 按模型、專案或 API 金鑰探索錯誤",
+        "ja": "API 使用状況ダッシュボードを更新し、使用状況の監視と問題の調査をより簡単にしました。\n\nAnalytics では、以下のことが可能になりました：\n• 使用状況と支出をより詳細に追跡\n• レート制限とレート制限されたリクエストを確認\n• モデル、プロジェクト、または API キー別にエラーを調査",
+        "ko": "API 사용 대시보드를 업데이트하여 사용량 모니터링과 문제 조사 작업을 더 쉽게 할 수 있도록 했습니다.\n\nAnalytics에서 이제 다음을 수행할 수 있습니다:\n• 사용량과 지출을 더 잘 추적\n• 속도 제한 및 속도 제한된 요청 확인\n• 모델, 프로젝트 또는 API 키별 오류 탐색",
+        "es": "Actualizamos el panel de uso de la API para facilitar el monitoreo de tu uso e investigación de problemas.\n\nEn Analytics, ahora puedes:\n• Monitorear mejor el uso y el gasto\n• Verificar límites de tasa y solicitudes limitadas por tasa\n• Explorar errores por modelo, proyecto o clave de API",
+        "de": "Wir haben das API-Nutzungs-Dashboard aktualisiert, um die Überwachung Ihrer Nutzung zu erleichtern und Probleme zu untersuchen.\n\nIn Analytics können Sie jetzt:\n• Die Nutzung und Ausgaben besser verfolgen\n• Ratenlimits und durch Ratenlimits eingeschränkte Anfragen überprüfen\n• Fehler nach Modell, Projekt oder API-Schlüssel erkunden",
+        "ar": "قمنا بتحديث لوحة تحكم استخدام واجهة برمجة التطبيقات لجعلها أسهل في مراقبة استخدامك وتحقيق المشكلات.\n\nفي Analytics، يمكنك الآن:\n• تتبع الاستخدام والإنفاق بشكل أفضل\n• التحقق من حدود المعدل وطلبات المعدل المحدود\n• استكشاف الأخطاء حسب النموذج أو المشروع أو مفتاح واجهة برمجة التطبيقات"
+      },
+      "provider": "FxEmbed",
+      "translatedAt": "2026-11-18T00:57:10.173Z"
     }
   },
-  "pending": 432,
-  "lastAttemptAt": "2026-11-17T19:29:34.084Z"
+  "pending": 434,
+  "lastAttemptAt": "2026-11-18T00:57:32.204Z"
 }
