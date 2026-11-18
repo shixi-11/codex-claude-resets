@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.30';
+export const RULES_VERSION = '1.4.31';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -61,7 +61,15 @@ export function isRelevant(text, {author = ''} = {}) {
   // Effective usage a subscriber gets is allowance efficiency, not product adoption.
   if (/\b(?:codex|chatgpt work)\b/i.test(value) && /\b(?:increase[sd]?|improv(?:e[sd]?|ing))\s+(?:the\s+)?effective usage you get\b/i.test(value)) return true;
   if (isCacheAllowanceUpdate(value)) return true;
-  return /\b(?:usage|rate|weekly|daily|5.hour|5h|subscription)\s+(?:limits?|quotas?|allowance|allocation)\b|\b(?:weekly|subscription)\s+usage\b|\busage\b.{0,60}\b(?:subscription|allocation|allowance)\b|\b(?:quota|allowance)\b|\b(?:codex|claude(?: code)?)(?:'s)?\s+(?:(?:weekly|usage|rate)\s+)?limits?\b|\b(?:usage consumption|usage optimizations)\b/i.test(value);
+  // API analytics observes existing limits; viewing them is not a quota change.
+  // Strip only observational phrases in a dashboard announcement. Any other
+  // allowance subject or change wording still goes through the normal guards.
+  let quotaText = value;
+  if (/\bAPI\b/i.test(value) && /\b(?:dashboard|analytics)\b/i.test(value) &&
+      !/\b(?:reset\w*|increas\w*|decreas\w*|doubl\w*|tripl\w*|rais\w*|reduc\w*|lower\w*|higher|lift\w*|remov\w*|chang\w*|grant\w*|credit\w*|restor\w*|replenish\w*|unlimited|extra|more|less)\b|\b\d+(?:\.\d+)?(?:x|%)/i.test(value)) {
+    quotaText = value.replace(/\b(?:check|monitor|track|view|inspect)\s+(?:(?:your|the|current)\s+)*(?:(?:usage|rate|weekly|daily|subscription)\s+(?:limits?|quotas?|allowance)|quotas?|allowance|weekly usage)\b/gi, '');
+  }
+  return /\b(?:usage|rate|weekly|daily|5.hour|5h|subscription)\s+(?:limits?|quotas?|allowance|allocation)\b|\b(?:weekly|subscription)\s+usage\b|\busage\b.{0,60}\b(?:subscription|allocation|allowance)\b|\b(?:quota|allowance)\b|\b(?:codex|claude(?: code)?)(?:'s)?\s+(?:(?:weekly|usage|rate)\s+)?limits?\b|\b(?:usage consumption|usage optimizations)\b/i.test(quotaText);
 }
 
 // Re-evaluate complete stored evidence when rules change, even if it drops out of timelines.

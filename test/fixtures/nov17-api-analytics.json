@@ -1,0 +1,32 @@
+{
+  "embed": {
+    "url": "https://x.com/OpenAIDevs/status/2122824859491205152",
+    "author_name": "OpenAI Developers",
+    "author_url": "https://x.com/OpenAIDevs",
+    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.<br><br>In Analytics, you can now:<br>• Better track usage and spend<br>• Check rate limits and rate-limited requests<br>• Explore errors by model, project, or API key <a href=\"https://t.co/IFHhB2LBvj\">pic.twitter.com/IFHhB2LBvj</a></p>&mdash; OpenAI Developers (@OpenAIDevs) <a href=\"https://x.com/OpenAIDevs/status/2122824859491205152?ref_src=twsrc%5Etfw\">November 17, 2026</a></blockquote>\n\n",
+    "width": 550,
+    "height": null,
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "X",
+    "provider_url": "https://x.com",
+    "version": "1.0"
+  },
+  "original": {
+    "id": "2122824859491205152",
+    "kind": "signal",
+    "state": "unconfirmed",
+    "reason": "ambiguous",
+    "author": "OpenAIDevs",
+    "platform": "codex",
+    "sourceUrl": "https://x.com/OpenAIDevs/status/2122824859491205152",
+    "publishedAt": "2026-11-17T22:51:01.338Z",
+    "verifiedAt": "2026-11-18T00:57:00.662Z",
+    "excerpt": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.",
+    "fullText": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.\n\nIn Analytics, you can now:\n• Better track usage and spend\n• Check rate limits and rate-limited requests\n• Explore errors by model, project, or API key",
+    "truncated": false,
+    "provenance": "x-oembed",
+    "rulesVersion": "1.4.30",
+    "contentHash": "5f72ed5dd67b93c5ce2ecad7c44dc707c5175ab3e1e01516e0c25bd6e4cae81a"
+  }
+}
