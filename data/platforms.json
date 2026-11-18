@@ -176,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-18T20:42:41.510Z",
+        "verifiedAt": "2026-11-18T23:35:49.337Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -192,10 +192,10 @@
         "isResetCard": false
       }
     ],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-18T20:42:41.510Z",
+      "checkedAt": "2026-11-18T23:35:49.337Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
