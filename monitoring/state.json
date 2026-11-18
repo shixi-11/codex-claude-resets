@@ -1,9 +1,7 @@
 {
-  "checkedAt": "2026-11-18T00:58:05.135Z",
+  "checkedAt": "2026-11-18T02:15:44.978Z",
   "openKeys": [
-    "collection-gap",
-    "coverage:codex",
-    "review:2120410006273380750:6d135919c0c85c4f9857f3b29ed39c1fd20d1022a105231659e53d6644f22303",
-    "stale:codex"
+    "coverage:claude",
+    "review:2120410006273380750:6d135919c0c85c4f9857f3b29ed39c1fd20d1022a105231659e53d6644f22303"
   ]
 }
