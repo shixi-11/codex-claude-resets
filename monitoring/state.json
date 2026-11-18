@@ -1,4 +1,8 @@
 {
-  "checkedAt": "2026-11-18T17:35:08.780Z",
-  "openKeys": []
+  "checkedAt": "2026-11-18T20:43:46.637Z",
+  "openKeys": [
+    "collection-gap",
+    "coverage:claude",
+    "stale:claude"
+  ]
 }
