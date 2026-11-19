@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-19T13:54:57.626Z",
-  "lastSuccessAt": "2026-11-19T13:54:57.626Z",
-  "discoveryAt": "2026-11-19T13:54:57.626Z",
+  "lastAttemptAt": "2026-11-19T16:31:09.428Z",
+  "lastSuccessAt": "2026-11-19T16:31:09.428Z",
+  "discoveryAt": "2026-11-19T16:31:09.428Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -51,7 +51,7 @@
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
@@ -59,12 +59,6 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -76,7 +70,7 @@
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
-      "candidates": 20,
+      "candidates": 19,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
@@ -97,7 +91,7 @@
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 6,
+      "checked": 5,
       "failed": 0
     }
   ],
@@ -105,7 +99,7 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-19T13:54:57.626Z",
+      "lastAttemptAt": "2026-11-19T16:31:09.428Z",
       "status": "ok",
       "checked": 1,
       "failed": 0,
@@ -124,14 +118,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-19T13:54:57.626Z"
+      "lastSuccessAt": "2026-11-19T16:31:09.428Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-19T13:54:57.626Z",
+      "lastAttemptAt": "2026-11-19T16:31:09.428Z",
       "status": "ok",
-      "checked": 5,
+      "checked": 4,
       "failed": 0,
-      "discovered": 52,
+      "discovered": 51,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -146,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-19T13:54:57.626Z"
+      "lastSuccessAt": "2026-11-19T16:31:09.428Z"
     }
   }
 }
