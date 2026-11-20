@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-20T19:16:56.874Z",
-  "lastSuccessAt": "2026-11-20T19:16:56.874Z",
-  "discoveryAt": "2026-11-20T19:16:56.874Z",
+  "lastAttemptAt": "2026-11-20T21:27:35.883Z",
+  "lastSuccessAt": "2026-11-20T21:27:35.883Z",
+  "discoveryAt": "2026-11-20T21:27:35.883Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
-      "candidates": 20,
+      "candidates": 19,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
@@ -21,14 +21,20 @@
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:1633874951508721686/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 7,
+      "candidates": 5,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:1633874951508721686/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -36,14 +42,20 @@
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:4398626122/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 15,
+      "candidates": 17,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:4398626122/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -51,7 +63,7 @@
     },
     {
       "name": "@ClaudeDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
       "ok": true,
@@ -59,6 +71,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:2024518793679294464/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -66,7 +84,7 @@
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
@@ -74,6 +92,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -99,11 +123,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-20T19:16:56.874Z",
+      "lastAttemptAt": "2026-11-20T21:27:35.883Z",
       "status": "ok",
       "checked": 0,
       "failed": 0,
-      "discovered": 42,
+      "discovered": 41,
       "authors": [
         {
           "author": "thsottiaux",
@@ -118,10 +142,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-20T19:16:56.874Z"
+      "lastSuccessAt": "2026-11-20T21:27:35.883Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-20T19:16:56.874Z",
+      "lastAttemptAt": "2026-11-20T21:27:35.883Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
@@ -140,7 +164,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-20T19:16:56.874Z"
+      "lastSuccessAt": "2026-11-20T21:27:35.883Z"
     }
   }
 }
