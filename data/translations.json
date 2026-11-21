@@ -3807,7 +3807,8 @@
         "zh": "我们今天为 dots 上线了一些不错的更新，已累积的重置奖励也已激活，应该很快就会到大家的账户里！",
         "ja": "貯めておいたリセットも有効化され、まもなく皆さんのアカウントに反映されるはずです！",
         "de": "Wir haben heute einige gute Updates für dots verschickt, und der banked reset wurde aktiviert und sollte bald in allen Konten eintreffen!",
-        "ar": "لقد أرسلنا بعض التحديثات الجيدة للنقاط اليوم وتم تفعيل إعادة التعيين المخزنة ويجب أن تصل إلى حسابات الجميع في وقت قريب!"
+        "ar": "لقد أرسلنا بعض التحديثات الجيدة للنقاط اليوم وتم تفعيل إعادة التعيين المخزنة ويجب أن تصل إلى حسابات الجميع في وقت قريب!",
+        "fr": "Nous avons expédié aujourd'hui quelques bonnes mises à jour pour Dots et la réinitialisation accumulée a été activée et devrait apparaître bientôt dans les comptes de tout le monde !"
       },
       "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
       "fullTexts": {
@@ -3815,10 +3816,11 @@
         "ja": "今日、dotsにいくつか良いアップデートをリリースしました。貯めておいたリセットも有効化され、まもなく皆さんのアカウントに反映されるはずです！",
         "ko": "오늘 dots에 좋은 업데이트 몇 가지를 배포했으며, banked reset이 활성화되어 곧 모두의 계정에 반영될 예정입니다!",
         "de": "Wir haben heute einige gute Updates für dots verschickt, und der banked reset wurde aktiviert und sollte bald in allen Konten eintreffen!",
-        "ar": "لقد أرسلنا بعض التحديثات الجيدة للنقاط اليوم وتم تفعيل إعادة التعيين المخزنة ويجب أن تصل إلى حسابات الجميع في وقت قريب!"
+        "ar": "لقد أرسلنا بعض التحديثات الجيدة للنقاط اليوم وتم تفعيل إعادة التعيين المخزنة ويجب أن تصل إلى حسابات الجميع في وقت قريب!",
+        "fr": "Nous avons expédié aujourd'hui quelques bonnes mises à jour pour Dots et la réinitialisation accumulée a été activée et devrait apparaître bientôt dans les comptes de tout le monde !"
       },
       "provider": "FxEmbed",
-      "translatedAt": "2026-11-14T19:55:53.192Z"
+      "translatedAt": "2026-11-21T09:58:31.140Z"
     },
     "2122824859491205152": {
       "excerpt": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.",
@@ -3844,6 +3846,6 @@
       "translatedAt": "2026-11-18T00:57:10.173Z"
     }
   },
-  "pending": 432,
-  "lastAttemptAt": "2026-11-21T08:17:10.780Z"
+  "pending": 431,
+  "lastAttemptAt": "2026-11-21T09:59:17.839Z"
 }
