@@ -8,7 +8,7 @@
       "resetAt": null
     },
     "gifts": [],
-    "trackingState": "partial-coverage",
+    "trackingState": "timeline-checked",
     "latest": {
       "id": "2120999993079451919",
       "kind": "banked",
@@ -176,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-23T12:27:47.199Z",
+        "verifiedAt": "2026-11-23T20:11:12.582Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -195,7 +195,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-23T12:27:47.199Z",
+      "checkedAt": "2026-11-23T20:11:12.582Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {

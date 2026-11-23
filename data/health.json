@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-23T12:27:36.727Z",
-  "lastSuccessAt": "2026-11-23T10:55:56.352Z",
-  "discoveryAt": "2026-11-23T12:27:36.727Z",
+  "lastAttemptAt": "2026-11-23T20:11:05.531Z",
+  "lastSuccessAt": "2026-11-23T20:11:05.531Z",
+  "discoveryAt": "2026-11-23T20:11:05.531Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -9,14 +9,13 @@
       "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
-      "ok": false,
-      "error": "No matching author posts returned",
+      "ok": true,
+      "candidates": 21,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 200,
-          "error": "No matching author posts returned"
+          "ok": true,
+          "status": 200
         }
       ]
     },
@@ -26,7 +25,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 2,
+      "candidates": 3,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
@@ -41,7 +40,7 @@
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 20,
+      "candidates": 21,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
@@ -86,47 +85,29 @@
       "author": "claudeai",
       "platform": "claude",
       "ok": true,
-      "candidates": 13
-    },
-    {
-      "name": "Codex Reset Monitor · discovery only",
-      "url": "https://codexreset.org/",
-      "ok": false,
-      "error": "fetch failed"
-    },
-    {
-      "name": "Codex Resets · discovery only",
-      "url": "https://codex-resets.com/",
-      "ok": true,
-      "candidates": 72
-    },
-    {
-      "name": "Reset Radar · Claude link discovery only",
-      "url": "https://www.resetradar.com/data/events.json",
-      "ok": true,
-      "candidates": 38
+      "candidates": 12
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 44,
+      "checked": 6,
       "failed": 0
     }
   ],
-  "status": "degraded",
+  "status": "ok",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-23T12:27:36.727Z",
-      "status": "degraded",
-      "checked": 40,
+      "lastAttemptAt": "2026-11-23T20:11:05.531Z",
+      "status": "ok",
+      "checked": 2,
       "failed": 0,
-      "discovered": 62,
+      "discovered": 45,
       "authors": [
         {
           "author": "thsottiaux",
-          "ok": false
+          "ok": true
         },
         {
           "author": "OpenAIDevs",
@@ -137,14 +118,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-23T10:55:56.352Z"
+      "lastSuccessAt": "2026-11-23T20:11:05.531Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-23T12:27:36.727Z",
+      "lastAttemptAt": "2026-11-23T20:11:05.531Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
-      "discovered": 51,
+      "discovered": 50,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -159,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-23T12:27:36.727Z"
+      "lastSuccessAt": "2026-11-23T20:11:05.531Z"
     }
   }
 }
