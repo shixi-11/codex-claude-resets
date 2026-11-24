@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
       "publishedAt": "2026-11-24T18:43:21.717Z",
-      "verifiedAt": "2026-11-24T23:06:38.928Z",
+      "verifiedAt": "2026-11-24T23:27:17.465Z",
       "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
       "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "truncated": false,
@@ -66,7 +66,7 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "discoveryMode": "profile-relay",
@@ -79,7 +79,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
       "publishedAt": "2026-11-24T18:43:21.717Z",
-      "verifiedAt": "2026-11-24T23:06:38.928Z",
+      "verifiedAt": "2026-11-24T23:27:17.465Z",
       "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
       "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "truncated": false,
@@ -127,7 +127,7 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "accountReports": [
@@ -176,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-24T23:06:52.633Z",
+        "verifiedAt": "2026-11-24T23:27:33.745Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -192,10 +192,10 @@
         "isResetCard": false
       }
     ],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-24T23:06:52.633Z",
+      "checkedAt": "2026-11-24T23:27:33.745Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -207,7 +207,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
       "publishedAt": "2026-11-24T19:47:54.824Z",
-      "verifiedAt": "2026-11-24T23:06:38.928Z",
+      "verifiedAt": "2026-11-24T23:27:17.465Z",
       "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
       "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
       "truncated": false,
@@ -229,7 +229,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -248,7 +248,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/ClaudeDevs/status/2120275296637321476",
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "cbc827f7ed501e02460819e2e6a33e2d8ee3bd9b4e2590162b5fcf4f3ece6208"
     },
     "latestReset": {
@@ -265,7 +265,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }
