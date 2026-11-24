@@ -3844,8 +3844,22 @@
       },
       "provider": "FxEmbed",
       "translatedAt": "2026-11-18T00:57:10.173Z"
+    },
+    "2125315493771059685": {
+      "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
+      "contentHash": "95e19d8e1c692240fa25c8056c65aad1da89b3c75ce399975c87d78f2afc8724",
+      "texts": {},
+      "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
+      "fullTexts": {}
+    },
+    "2125299248782778588": {
+      "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
+      "contentHash": "bcb8ce248b321738ed05b130c0e20af2c6faf9dc9856e6e9d1b0638bec1a563e",
+      "texts": {},
+      "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+      "fullTexts": {}
     }
   },
-  "pending": 431,
-  "lastAttemptAt": "2026-11-24T12:41:21.888Z"
+  "pending": 447,
+  "lastAttemptAt": "2026-11-24T23:07:12.087Z"
 }
