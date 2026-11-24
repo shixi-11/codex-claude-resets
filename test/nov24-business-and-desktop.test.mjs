@@ -17,8 +17,13 @@ import {names,eventStateLabel} from '../src/locales.mjs';
 import {escapeHtml} from '../src/shared.mjs';
 const fixture=JSON.parse(await readFile(new URL('./fixtures/nov24-business-and-desktop.json',import.meta.url),'utf8'));
 const [bankSource,desktopSource]=fixture.posts,bank=reclassifyEvents([bankSource.original])[0],desktop=reclassifyEvents([desktopSource.original])[0];
-const stored=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
-const originals=stored.map(e=>fixture.posts.find(p=>p.original.id===e.id)?.original||e),events=reclassifyEvents(originals);
+const history=JSON.parse(await readFile(new URL('./fixtures/nov11-manual-reset-history.json',import.meta.url),'utf8'));
+const manual=JSON.parse(await readFile(new URL('./fixtures/nov11-manual-reset.json',import.meta.url),'utf8'));
+const activation=JSON.parse(await readFile(new URL('./fixtures/nov12-banked-activation.json',import.meta.url),'utf8'));
+const recovered=JSON.parse(await readFile(new URL('./fixtures/nov2-banked-event.json',import.meta.url),'utf8'));
+// These assertions describe the November 24 announcement sequence, not the
+// latest production feed. Future official posts must not change this history.
+const originals=[...fixture.posts.map(p=>p.original),...reclassifyEvents([manual.original,activation.original,recovered,...history.events])].sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)),events=reclassifyEvents(originals);
 const at='2026-11-24T23:30:00Z',now=Date.parse(at);
 const before=syncPlatformState({codex:{name:'Codex',gifts:[]},claude:{name:'Claude',gifts:[]}},originals.map(e=>({...e,rulesVersion:RULES_VERSION})),now);
 const after=syncPlatformState(structuredClone(before),events,now);
@@ -107,8 +112,8 @@ test('actual nine-language builds feature the Business credit, retain the Claude
  const dir=await mkdtemp(join(tmpdir(),'business-desktop-build-'));
  try{
   for(const part of ['src','scripts','public','data'])await cp(new URL('../'+part+'/',import.meta.url),join(dir,part),{recursive:true});
-  const input=JSON.stringify(originals);await writeFile(join(dir,'data/events.json'),input);
-  const health=JSON.parse(await readFile(join(dir,'data/health.json'),'utf8'));health.status='degraded';health.lastSuccessAt='2026-11-24T20:00:00Z';health.platforms.codex.status='degraded';health.platforms.codex.lastSuccessAt=health.lastSuccessAt;
+  const input=JSON.stringify(originals);await writeFile(join(dir,'data/events.json'),input);await writeFile(join(dir,'data/platforms.json'),JSON.stringify(before));
+  const health={status:'degraded',lastAttemptAt:at,lastSuccessAt:'2026-11-24T20:00:00Z',platforms:{codex:{status:'degraded',lastSuccessAt:'2026-11-24T20:00:00Z'},claude:{status:'ok',lastSuccessAt:at}}};
   const savedHealth=JSON.stringify(health);await writeFile(join(dir,'data/health.json'),savedHealth);
   for(const time of [at,'2026-12-31T23:59:59Z','2027-01-02T00:00:00Z']){
    await writeFile(join(dir,'clock.mjs'),`const RealDate=Date;globalThis.Date=class extends RealDate{constructor(...args){super(...(args.length?args:[${JSON.stringify(time)}]));}static now(){return RealDate.parse(${JSON.stringify(time)});}};`);
