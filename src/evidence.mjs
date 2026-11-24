@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.31';
+export const RULES_VERSION = '1.4.32';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -112,6 +112,10 @@ export const isManualResetGrant = event => event?.id===manualResetGrant.id && ev
 // Activation is not proof of receipt by every account or a global reset.
 export const bankedActivation = {"id": "2120999993079451919", "author": "thsottiaux", "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919", "publishedAt": "2026-11-12T21:59:39.281Z", "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3", "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!"};
 export const isBankedActivation = event => event?.id===bankedActivation.id && event.author?.toLowerCase()===bankedActivation.author && event.fullText===bankedActivation.fullText && !event.truncated;
+// The Business grant and its separate Fast offer do not establish account
+// receipt, a global reset instant or a reset-credit redemption deadline.
+export const businessBankedReset = {id:'2125299248782778588',author:'thsottiaux',sourceUrl:'https://x.com/thsottiaux/status/2125299248782778588',publishedAt:'2026-11-24T18:43:21.717Z',contentHash:'bcb8ce248b321738ed05b130c0e20af2c6faf9dc9856e6e9d1b0638bec1a563e',fullText:'To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!'};
+export const isBusinessBankedReset = event => event?.id===businessBankedReset.id && event.author?.toLowerCase()===businessBankedReset.author && event.fullText===businessBankedReset.fullText && !event.truncated;
 const reviewedProUsage = "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared to Plus.\n\n✅ Pro 100 = 10X\n✅ Pro 200 = 20X\n✅ Pro 500 = 50X, access to ultrafast";
 export function classify(text, { id, truncated = false, author = '', publishedAt, resetContext } = {}) {
   const value = text.replace(/[’‘]/g, "'").replace(/\bwe've\b/gi,'we have').replace(/\bwe'll\b/gi,'we will').replace(/\bwe're\b/gi,'we are').replace(/\s+/g, ' ').trim();
@@ -123,6 +127,7 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if (truncated) return { ...unknown, reason: 'truncated' };
   if (isBankedActivation({id,author,fullText:text,truncated})) return {kind:'banked',state:'announced',reason:'reviewed-bank-rollout'};
   if (isManualResetGrant({id,author,fullText:text,truncated})) return {kind:'banked',state:'reported',reason:'reviewed-manual-grant'};
+  if (isBusinessBankedReset({id,author,fullText:text,truncated})) return {kind:'banked',state:'announced',reason:'reviewed-business-bank'};
   // Complete, reviewed plan comparison: no new reset or reset time.
   if (author.toLowerCase()==='thsottiaux' && id==='2119296267545419987' && text===reviewedProUsage) return {kind:'usage',state:'information',reason:'reviewed-plan-usage'};
   // Primary parent: https://x.com/ForwardEditor/status/2119185994326905218.
@@ -182,6 +187,7 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if (/\bbanked\s+(?:usage\s+)?reset|\breset\s+credits?\b/i.test(value)) {
     if (/\b(?:affected|not fully applying)\b/i.test(value) && /getting another|replacement|replac|compensat/i.test(value)) return {kind:'banked',state:'announced',reason:'replacement-credit'};
     if (/\b(?:has|have) (?:now )?(?:landed|arrived)|\b(?:is|are) now available|\bwe (?:have )?(?:granted|added|deposited)/i.test(value)) return { kind: 'banked', state: 'reported', reason: 'explicit-bank-grant' };
+    if (author.toLowerCase()==='thsottiaux' && /\bChatGPT Business teams\b/i.test(value) && /\bwe have\b[^.!?]{0,100}\ba banked reset\b/i.test(value)) return {kind:'banked',state:'announced',reason:'explicit-bank-announcement'};
     if (/\bwe (?:will|are going to|are (?:loading|granting|adding|giving|sending))|\bwill (?:give|land|arrive)|\blands?\b/i.test(value)) return { kind: 'banked', state: 'announced', reason: 'explicit-bank-announcement' };
     return { kind: 'usage', state: 'information', reason: 'bank-information' };
   }
@@ -194,6 +200,8 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   // Included plan features that do not consume weekly usage explain allowance
   // treatment; they do not announce a reset, credit grant or new reset time.
   if (/\bincluded in (?:the |your )?(?:Pro|Plus|Max|Team|Business) plan\b/i.test(value) && /\bdoes(?:n't| not) draw on (?:your |the )?weekly usage\b/i.test(value)) return {kind:'usage',state:'information',reason:'usage-inclusion'};
+  // Existing usage accounting explains consumption without announcing a reset.
+  if (/\b(?:calls?|requests?|building (?:the|an?) app)\b[^.!?]{0,100}\bcounts? (?:toward|towards|against) (?:your |the )?(?:existing )?usage limits?\b/i.test(value)) return {kind:'usage',state:'information',reason:'usage-accounting'};
   if (isCacheAllowanceUpdate(value) || /\b(?:usage|limits?|allowance|quota)\b/i.test(value) && /\b(?:improv|reduc|chang|increas|less|lower|more|return|lift|fix|correct|pricing)/i.test(value)) return { kind: 'usage', state: 'information', reason: 'usage-change' };
   return unknown;
 }
@@ -223,6 +231,7 @@ export function validateEvent(event) {
   if (event.reason==='linked-completion' && !validResetContext(event.resetContext,event.author,event.publishedAt)) throw new Error('Completion needs verified reset context');
   if (event.reason==='reviewed-plan-usage' && (event.kind!=='usage' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-plan-usage')) throw new Error('Plan usage needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-product-commentary' && (event.kind!=='commentary' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-product-commentary')) throw new Error('Product commentary needs its exact reviewed identity and complete text');
+  if (event.reason==='reviewed-business-bank' && (event.kind!=='banked' || event.state!=='announced' || !isBusinessBankedReset(event) || event.sourceUrl!==businessBankedReset.sourceUrl || event.contentHash!==businessBankedReset.contentHash || event.publishedAt!==businessBankedReset.publishedAt)) throw new Error('Business bank needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-bank-rollout' && (event.kind!=='banked' || event.state!=='announced' || !isBankedActivation(event))) throw new Error('Bank activation needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-manual-grant' && (event.kind!=='banked' || event.state!=='reported' || !isManualResetGrant(event))) throw new Error('Manual reset grant needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-bank-grant' && (event.kind!=='banked' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-bank-grant')) throw new Error('Bank grant needs its pinned source and verified editorial context');

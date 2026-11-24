@@ -1,0 +1,207 @@
+{
+  "checkedAt": "2026-11-24T23:14:57.602Z",
+  "posts": [
+    {
+      "embed": {
+        "url": "https://x.com/thsottiaux/status/2125299248782778588",
+        "author_name": "Tibo",
+        "author_url": "https://x.com/thsottiaux",
+        "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!</p>&mdash; Tibo (@thsottiaux) <a href=\"https://x.com/thsottiaux/status/2125299248782778588?ref_src=twsrc%5Etfw\">November 24, 2026</a></blockquote>\n\n",
+        "width": 550,
+        "height": null,
+        "type": "rich",
+        "cache_age": "3153600000",
+        "provider_name": "X",
+        "provider_url": "https://x.com",
+        "version": "1.0"
+      },
+      "relay": {
+        "url": "https://x.com/thsottiaux/status/2125299248782778588",
+        "id": "2125299248782778588",
+        "text": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+        "raw_text": {
+          "text": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+          "display_text_range": [
+            0,
+            152
+          ],
+          "facets": []
+        },
+        "author": {
+          "screen_name": "thsottiaux",
+          "url": "https://x.com/thsottiaux",
+          "id": "1953337039510003712",
+          "followers": 1025800,
+          "following": 78,
+          "likes": 10862,
+          "media_count": 166,
+          "name": "Tibo",
+          "description": "Codex & ChatGPT @OpenAI",
+          "raw_description": {
+            "text": "Codex & ChatGPT @OpenAI",
+            "facets": []
+          },
+          "location": "",
+          "banner_url": "",
+          "avatar_url": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg",
+          "joined": "Thu Aug 07 06:07:07 +0000 2025",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "avatar_color": null
+        },
+        "replies": 632,
+        "retweets": 104,
+        "likes": 3494,
+        "bookmarks": 315,
+        "quotes": 121,
+        "created_at": "Tue Nov 24 18:43:21 +0000 2026",
+        "created_timestamp": 1795545801,
+        "views": 333838,
+        "is_note_tweet": false,
+        "community_note": null,
+        "lang": "en",
+        "replying_to": null,
+        "replying_to_status": null,
+        "twitter_card": "tweet",
+        "color": null,
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "original": {
+        "id": "2125299248782778588",
+        "kind": "usage",
+        "state": "information",
+        "reason": "bank-information",
+        "author": "thsottiaux",
+        "platform": "codex",
+        "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
+        "publishedAt": "2026-11-24T18:43:21.717Z",
+        "verifiedAt": "2026-11-24T23:06:38.928Z",
+        "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
+        "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+        "truncated": false,
+        "provenance": "x-oembed",
+        "rulesVersion": "1.4.31",
+        "contentHash": "bcb8ce248b321738ed05b130c0e20af2c6faf9dc9856e6e9d1b0638bec1a563e"
+      }
+    },
+    {
+      "embed": {
+        "url": "https://x.com/ClaudeDevs/status/2125315493771059685",
+        "author_name": "ClaudeDevs",
+        "author_url": "https://x.com/ClaudeDevs",
+        "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">You don&#39;t have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.<br><br>It&#39;s in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).<a href=\"https://t.co/dof0Qmy9ge\">https://t.co/dof0Qmy9ge</a></p>&mdash; ClaudeDevs (@ClaudeDevs) <a href=\"https://x.com/ClaudeDevs/status/2125315493771059685?ref_src=twsrc%5Etfw\">November 24, 2026</a></blockquote>\n\n",
+        "width": 550,
+        "height": null,
+        "type": "rich",
+        "cache_age": "3153600000",
+        "provider_name": "X",
+        "provider_url": "https://x.com",
+        "version": "1.0"
+      },
+      "relay": {
+        "url": "https://x.com/ClaudeDevs/status/2125315493771059685",
+        "id": "2125315493771059685",
+        "text": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).\nhttps://claude.com/resources/articles/install-as-app",
+        "raw_text": {
+          "text": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).\nhttps://t.co/dof0Qmy9ge",
+          "display_text_range": [
+            0,
+            270
+          ],
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                247,
+                270
+              ],
+              "original": "https://t.co/dof0Qmy9ge",
+              "replacement": "https://claude.com/resources/articles/install-as-app",
+              "display": "claude.com/resources/arti…"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs",
+          "id": "2024518793679294464",
+          "followers": 846385,
+          "following": 2,
+          "likes": 99,
+          "media_count": 208,
+          "name": "ClaudeDevs",
+          "description": "Official updates for developers building with @ClaudeAI",
+          "raw_description": {
+            "text": "Official updates for developers building with @ClaudeAI",
+            "facets": []
+          },
+          "location": "",
+          "banner_url": "https://pbs.twimg.com/profile_banners/2024518793679294464/1776108340",
+          "avatar_url": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png",
+          "joined": "Thu Feb 19 16:19:46 +0000 2026",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "avatar_color": null
+        },
+        "replies": 16,
+        "retweets": 16,
+        "likes": 772,
+        "bookmarks": 290,
+        "quotes": 4,
+        "created_at": "Tue Nov 24 19:47:54 +0000 2026",
+        "created_timestamp": 1795549674,
+        "possibly_sensitive": false,
+        "views": 173214,
+        "is_note_tweet": false,
+        "community_note": null,
+        "lang": "en",
+        "replying_to": "ClaudeDevs",
+        "replying_to_status": "2125315491522650299",
+        "card": {
+          "url": "https://claude.com/resources/articles/install-as-app",
+          "title": "Turn artifacts into Mac and Windows apps",
+          "description": "Open the artifacts you use every day like any other app, and let them do more on your computer. Rolling out in beta in Claude for Mac and Windows.",
+          "domain": "claude.com",
+          "image": {
+            "width": 800,
+            "height": 419,
+            "url": "https://pbs.twimg.com/card_img/2125315232935432192/JuU8c1S3?format=png&name=800x419",
+            "alt": "Turn artifacts into Mac and Windows apps"
+          }
+        },
+        "twitter_card": "tweet",
+        "color": null,
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "original": {
+        "id": "2125315493771059685",
+        "kind": "signal",
+        "state": "unconfirmed",
+        "reason": "ambiguous",
+        "author": "ClaudeDevs",
+        "platform": "claude",
+        "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
+        "publishedAt": "2026-11-24T19:47:54.824Z",
+        "verifiedAt": "2026-11-24T23:06:38.928Z",
+        "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
+        "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
+        "truncated": false,
+        "provenance": "x-oembed",
+        "rulesVersion": "1.4.31",
+        "contentHash": "95e19d8e1c692240fa25c8056c65aad1da89b3c75ce399975c87d78f2afc8724"
+      }
+    }
+  ]
+}
