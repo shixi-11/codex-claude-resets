@@ -11,9 +11,9 @@
     "trackingState": "timeline-checked",
     "latest": {
       "id": "2125299248782778588",
-      "kind": "usage",
-      "state": "information",
-      "reason": "bank-information",
+      "kind": "banked",
+      "state": "announced",
+      "reason": "reviewed-business-bank",
       "author": "thsottiaux",
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
@@ -23,7 +23,7 @@
       "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "bcb8ce248b321738ed05b130c0e20af2c6faf9dc9856e6e9d1b0638bec1a563e"
     },
     "lastReset": {
@@ -71,21 +71,21 @@
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
-      "id": "2120999993079451919",
+      "id": "2125299248782778588",
       "kind": "banked",
       "state": "announced",
-      "reason": "reviewed-bank-rollout",
+      "reason": "reviewed-business-bank",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919",
-      "publishedAt": "2026-11-12T21:59:39.281Z",
-      "verifiedAt": "2026-11-23T12:27:36.727Z",
-      "excerpt": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
-      "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
+      "publishedAt": "2026-11-24T18:43:21.717Z",
+      "verifiedAt": "2026-11-24T23:06:38.928Z",
+      "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
+      "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.31",
-      "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3"
+      "rulesVersion": "1.4.32",
+      "contentHash": "bcb8ce248b321738ed05b130c0e20af2c6faf9dc9856e6e9d1b0638bec1a563e"
     },
     "latestReset": {
       "id": "2115330127886463244",
@@ -200,9 +200,9 @@
     },
     "latest": {
       "id": "2125315493771059685",
-      "kind": "signal",
-      "state": "unconfirmed",
-      "reason": "ambiguous",
+      "kind": "usage",
+      "state": "information",
+      "reason": "usage-accounting",
       "author": "ClaudeDevs",
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
@@ -212,7 +212,7 @@
       "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.31",
+      "rulesVersion": "1.4.32",
       "contentHash": "95e19d8e1c692240fa25c8056c65aad1da89b3c75ce399975c87d78f2afc8724"
     },
     "lastReset": {
