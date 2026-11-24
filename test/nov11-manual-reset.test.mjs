@@ -54,10 +54,14 @@ test('redemption expiry is exact, refreshes open views, and never becomes a rese
 });
 
 test('new credit replaces expired offer in every language without changing global reset history',async()=>{
- const stored=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
+ const history=JSON.parse(await readFile(new URL('./fixtures/nov11-manual-reset-history.json',import.meta.url),'utf8'));
+ assert.equal(Date.parse(history.asOf),now);assert.ok(history.events.every(e=>Date.parse(e.publishedAt)<now));
+ const stored=[f.original,...history.events];
  const before=syncPlatformState({claude:{gifts:[],name:'Claude'},codex:{gifts:[],name:'Codex'}},reclassifyEvents(stored).map(e=>e.id===f.original.id?f.original:e),now);
  const after=syncPlatformState(structuredClone(before),reclassifyEvents(stored),now);
+ assert.equal(before.claude.latestGift.id,'2104641323198472430');assert.equal(creditAvailability(before.claude.latestGift,now).state,'expired');
  assert.equal(after.claude.latestGift.id,fixed.id);assert.equal(after.claude.latest.id,fixed.id);
+ assert.ok(after.claude.lastReset);assert.ok(after.codex.lastReset);assert.ok(after.codex.latestReset);
  for(const key of ['lastReset','latestReset','reset'])assert.deepEqual(after.claude[key],before.claude[key]);
  assert.deepEqual(after.codex,before.codex);
  for(const lang of Object.keys(names))for(const at of [now,Date.parse(manualResetGrant.endsAt)]){
