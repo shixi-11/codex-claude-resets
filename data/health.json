@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-25T04:09:41.577Z",
+  "lastAttemptAt": "2026-11-25T11:29:23.606Z",
   "lastSuccessAt": "2026-11-25T04:09:41.577Z",
-  "discoveryAt": "2026-11-25T04:09:41.577Z",
+  "discoveryAt": "2026-11-25T11:29:23.606Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -54,13 +54,14 @@
       "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
       "author": "ClaudeDevs",
       "platform": "claude",
-      "ok": true,
-      "candidates": 18,
+      "ok": false,
+      "error": "No matching author posts returned",
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/ClaudeDevs/statuses?count=40&with_replies=1",
-          "ok": true,
-          "status": 200
+          "ok": false,
+          "status": 200,
+          "error": "No matching author posts returned"
         }
       ]
     },
@@ -88,18 +89,36 @@
       "candidates": 13
     },
     {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
+      "ok": true,
+      "candidates": 73
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 42
+    },
+    {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 8,
+      "checked": 34,
       "failed": 0
     }
   ],
-  "status": "ok",
+  "status": "degraded",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-25T04:09:41.577Z",
+      "lastAttemptAt": "2026-11-25T11:29:23.606Z",
       "status": "ok",
       "checked": 3,
       "failed": 0,
@@ -118,18 +137,18 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-25T04:09:41.577Z"
+      "lastSuccessAt": "2026-11-25T11:29:23.606Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-25T04:09:41.577Z",
-      "status": "ok",
-      "checked": 5,
+      "lastAttemptAt": "2026-11-25T11:29:23.606Z",
+      "status": "degraded",
+      "checked": 31,
       "failed": 0,
-      "discovered": 50,
+      "discovered": 61,
       "authors": [
         {
           "author": "ClaudeDevs",
-          "ok": true
+          "ok": false
         },
         {
           "author": "AnthropicAI",
