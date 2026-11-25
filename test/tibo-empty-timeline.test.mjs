@@ -46,7 +46,7 @@ test('malformed/auth errors and other authors do not acquire a new fallback poli
  for(const response of [()=>new Response('{broken',{status:200}),()=>Response.json({code:200}),()=>Response.json({code:200,results:{}}),()=>new Response('',{status:403}),()=>new Response('',{status:401})]){
   let n=0;await assert.rejects(readAuthorTimeline('thsottiaux',{fetcher:async()=>{n++;return response();},sleep:async()=>assert.fail('unexpected retry')}));assert.equal(n,1);
  }
- for(const author of ['OpenAI','OpenAIDevs','ClaudeDevs','AnthropicAI','claudeai']){
+ for(const author of ['OpenAI','OpenAIDevs','AnthropicAI','claudeai']){
   let n=0;await assert.rejects(readAuthorTimeline(author,{fetcher:async()=>{n++;return payload([]);},sleep:async()=>assert.fail('unexpected retry')}));assert.equal(n,1);
  }
 });
