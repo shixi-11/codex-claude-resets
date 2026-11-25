@@ -42,7 +42,7 @@ export async function readAuthorTimeline(author,{budgetMs=18000,fetcher=fetch,no
  const deadline=now()+budgetMs,attempts=[];let useId=false,lastError;
  for(let i=0;i<3;i++){
   const remaining=deadline-now();if(remaining<=0)break;
-  const url=endpoint(useId?'id:'+pinnedId:author),attempt={url,ok:false};let retryAfter=null,emptyTiboHandle=false;attempts.push(attempt);
+  const url=endpoint(useId?'id:'+pinnedId:author),attempt={url,ok:false};let retryAfter=null,emptyRecoverableHandle=false;attempts.push(attempt);
   try{
    const response=await fetcher(url,{headers:{'User-Agent':'CodexResetTracker/1.0 (public announcement monitoring)'},signal:AbortSignal.timeout(Math.max(1,Math.floor(remaining/(3-i))))});
    attempt.status=response.status;
@@ -52,9 +52,9 @@ export async function readAuthorTimeline(author,{budgetMs=18000,fetcher=fetch,no
    else throw Error(`HTTP ${response.status}`);
    let posts=timelineCandidates(payload,author);
    if(!posts.length){
-    // A valid but empty handle response is not coverage. Tibo's known ID
-    // may still resolve; use only the remaining attempts and shared budget.
-    emptyTiboHandle=author==='thsottiaux'&&!useId;
+    // A valid but empty handle response is not coverage. These accounts'
+    // known IDs may resolve within the same attempts and shared budget.
+    emptyRecoverableHandle=['thsottiaux','ClaudeDevs'].includes(author)&&!useId;
     throw Error('No matching author posts returned');
    }
    if(useId){
@@ -72,8 +72,8 @@ export async function readAuthorTimeline(author,{budgetMs=18000,fetcher=fetch,no
   }catch(error){
    lastError=error;attempt.error=error.message;
    const status=attempt.status;
-   if(status===404||emptyTiboHandle)useId=true;
-   const retryable=emptyTiboHandle||[404,429,500,502,503,504].includes(status)||['TypeError','TimeoutError','AbortError'].includes(error.name);
+   if(status===404||emptyRecoverableHandle)useId=true;
+   const retryable=emptyRecoverableHandle||[404,429,500,502,503,504].includes(status)||['TypeError','TimeoutError','AbortError'].includes(error.name);
    if(!retryable||i===2)break;
    const wait=retryAfter===null?Math.min(1500,500*2**i):/^\d+(?:\.\d+)?$/.test(retryAfter)?Number(retryAfter)*1000:Math.max(0,Date.parse(retryAfter)-now());
    // A server's Retry-After is authoritative: do not evade it by switching paths.
