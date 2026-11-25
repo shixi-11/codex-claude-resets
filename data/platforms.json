@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
       "publishedAt": "2026-11-24T18:43:21.717Z",
-      "verifiedAt": "2026-11-25T14:16:56.987Z",
+      "verifiedAt": "2026-11-25T23:08:06.064Z",
       "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
       "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "truncated": false,
@@ -79,7 +79,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
       "publishedAt": "2026-11-24T18:43:21.717Z",
-      "verifiedAt": "2026-11-25T14:16:56.987Z",
+      "verifiedAt": "2026-11-25T23:08:06.064Z",
       "excerpt": "We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31.",
       "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "truncated": false,
@@ -176,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-25T14:17:04.424Z",
+        "verifiedAt": "2026-11-25T23:08:15.187Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -195,7 +195,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-25T14:17:04.424Z",
+      "checkedAt": "2026-11-25T23:08:15.187Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -207,7 +207,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
       "publishedAt": "2026-11-24T19:47:54.824Z",
-      "verifiedAt": "2026-11-25T14:16:56.987Z",
+      "verifiedAt": "2026-11-25T23:08:06.064Z",
       "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
       "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
       "truncated": false,
