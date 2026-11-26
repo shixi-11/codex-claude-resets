@@ -3865,8 +3865,15 @@
       "texts": {},
       "fullText": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
       "fullTexts": {}
+    },
+    "2125853628250599730": {
+      "excerpt": "Banked reset is online",
+      "contentHash": "ce2ea9d5f705da2ccf89e50ef821d24cc4d4fe831179d1cae1a67d409177f6cc",
+      "texts": {},
+      "fullText": "Banked reset is online",
+      "fullTexts": {}
     }
   },
-  "pending": 455,
-  "lastAttemptAt": "2026-11-26T05:00:10.566Z"
+  "pending": 463,
+  "lastAttemptAt": "2026-11-26T11:08:48.790Z"
 }
