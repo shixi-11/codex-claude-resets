@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-26T19:55:10.805Z",
-  "lastSuccessAt": "2026-11-26T19:55:10.805Z",
-  "discoveryAt": "2026-11-26T19:55:10.805Z",
+  "lastAttemptAt": "2026-11-26T22:51:43.507Z",
+  "lastSuccessAt": "2026-11-26T22:51:43.507Z",
+  "discoveryAt": "2026-11-26T22:51:43.507Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -25,7 +25,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 8,
+      "candidates": 7,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
@@ -66,7 +66,7 @@
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
@@ -74,12 +74,6 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -105,11 +99,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-26T19:55:10.805Z",
+      "lastAttemptAt": "2026-11-26T22:51:43.507Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
-      "discovered": 46,
+      "discovered": 45,
       "authors": [
         {
           "author": "thsottiaux",
@@ -124,10 +118,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-26T19:55:10.805Z"
+      "lastSuccessAt": "2026-11-26T22:51:43.507Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-26T19:55:10.805Z",
+      "lastAttemptAt": "2026-11-26T22:51:43.507Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
@@ -146,7 +140,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-26T19:55:10.805Z"
+      "lastSuccessAt": "2026-11-26T22:51:43.507Z"
     }
   }
 }
