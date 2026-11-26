@@ -3858,8 +3858,15 @@
       "texts": {},
       "fullText": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
       "fullTexts": {}
+    },
+    "2125784147889393806": {
+      "excerpt": "As a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+      "contentHash": "45ddfe4069b408ef591f84e29ec24008513cbcc353cce623bd43a13b8c489991",
+      "texts": {},
+      "fullText": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+      "fullTexts": {}
     }
   },
-  "pending": 447,
-  "lastAttemptAt": "2026-11-25T23:08:34.255Z"
+  "pending": 455,
+  "lastAttemptAt": "2026-11-26T05:00:10.566Z"
 }
