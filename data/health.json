@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-26T15:09:13.845Z",
-  "lastSuccessAt": "2026-11-26T15:09:13.845Z",
-  "discoveryAt": "2026-11-26T15:09:13.845Z",
+  "lastAttemptAt": "2026-11-26T19:55:10.805Z",
+  "lastSuccessAt": "2026-11-26T19:55:10.805Z",
+  "discoveryAt": "2026-11-26T19:55:10.805Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -25,7 +25,7 @@
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
-      "candidates": 10,
+      "candidates": 8,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
@@ -105,11 +105,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-26T15:09:13.845Z",
+      "lastAttemptAt": "2026-11-26T19:55:10.805Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
-      "discovered": 48,
+      "discovered": 46,
       "authors": [
         {
           "author": "thsottiaux",
@@ -124,10 +124,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-26T15:09:13.845Z"
+      "lastSuccessAt": "2026-11-26T19:55:10.805Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-26T15:09:13.845Z",
+      "lastAttemptAt": "2026-11-26T19:55:10.805Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
@@ -146,7 +146,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-26T15:09:13.845Z"
+      "lastSuccessAt": "2026-11-26T19:55:10.805Z"
     }
   }
 }
