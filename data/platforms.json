@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125853628250599730",
       "publishedAt": "2026-11-26T07:26:16.082Z",
-      "verifiedAt": "2026-11-27T13:39:10.333Z",
+      "verifiedAt": "2026-11-27T18:27:46.653Z",
       "excerpt": "Banked reset is online",
       "fullText": "Banked reset is online",
       "truncated": false,
@@ -79,7 +79,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
       "publishedAt": "2026-11-26T02:50:10.673Z",
-      "verifiedAt": "2026-11-27T13:39:10.333Z",
+      "verifiedAt": "2026-11-27T18:27:46.653Z",
       "excerpt": "As a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
       "fullText": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
       "truncated": false,
@@ -177,7 +177,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-27T13:39:16.361Z",
+        "verifiedAt": "2026-11-27T18:28:05.615Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -193,10 +193,10 @@
         "isResetCard": false
       }
     ],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-27T13:39:16.361Z",
+      "checkedAt": "2026-11-27T18:28:05.615Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -208,7 +208,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
       "publishedAt": "2026-11-24T19:47:54.824Z",
-      "verifiedAt": "2026-11-27T13:39:10.333Z",
+      "verifiedAt": "2026-11-27T18:27:46.653Z",
       "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
       "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
       "truncated": false,
