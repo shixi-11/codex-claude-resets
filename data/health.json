@@ -1,12 +1,12 @@
 {
-  "lastAttemptAt": "2026-11-28T01:41:00.841Z",
-  "lastSuccessAt": "2026-11-28T01:41:00.841Z",
-  "discoveryAt": "2026-11-28T01:41:00.841Z",
+  "lastAttemptAt": "2026-11-28T09:27:26.166Z",
+  "lastSuccessAt": "2026-11-28T09:27:26.166Z",
+  "discoveryAt": "2026-11-28T09:27:26.166Z",
   "mode": "profile-relay",
   "sources": [
     {
       "name": "@thsottiaux timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
       "author": "thsottiaux",
       "platform": "codex",
       "ok": true,
@@ -14,6 +14,12 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:1953337039510003712/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -21,7 +27,7 @@
     },
     {
       "name": "@OpenAIDevs timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1633874951508721686/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
       "author": "OpenAIDevs",
       "platform": "codex",
       "ok": true,
@@ -29,12 +35,6 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAIDevs/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1633874951508721686/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -42,14 +42,20 @@
     },
     {
       "name": "@OpenAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/id:4398626122/statuses?count=40&with_replies=1",
       "author": "OpenAI",
       "platform": "codex",
       "ok": true,
-      "candidates": 19,
+      "candidates": 18,
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/OpenAI/statuses?count=40&with_replies=1",
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://api.fxtwitter.com/2/profile/id:4398626122/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -72,7 +78,7 @@
     },
     {
       "name": "@AnthropicAI timeline via FxEmbed",
-      "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
+      "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
       "author": "AnthropicAI",
       "platform": "claude",
       "ok": true,
@@ -80,12 +86,6 @@
       "attempts": [
         {
           "url": "https://api.fxtwitter.com/2/profile/AnthropicAI/statuses?count=40&with_replies=1",
-          "ok": false,
-          "status": 404,
-          "error": "HTTP 404"
-        },
-        {
-          "url": "https://api.fxtwitter.com/2/profile/id:1353836358901501952/statuses?count=40&with_replies=1",
           "ok": true,
           "status": 200
         }
@@ -111,11 +111,11 @@
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-28T01:41:00.841Z",
+      "lastAttemptAt": "2026-11-28T09:27:26.166Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
-      "discovered": 46,
+      "discovered": 45,
       "authors": [
         {
           "author": "thsottiaux",
@@ -130,10 +130,10 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-28T01:41:00.841Z"
+      "lastSuccessAt": "2026-11-28T09:27:26.166Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-28T01:41:00.841Z",
+      "lastAttemptAt": "2026-11-28T09:27:26.166Z",
       "status": "ok",
       "checked": 5,
       "failed": 0,
@@ -152,7 +152,7 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-28T01:41:00.841Z"
+      "lastSuccessAt": "2026-11-28T09:27:26.166Z"
     }
   }
 }
