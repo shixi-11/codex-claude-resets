@@ -13,7 +13,8 @@ import {assertTrackingSync} from '../src/tracking-audit.mjs';
 const fixture=JSON.parse(await readFile(new URL('./fixtures/nov17-api-analytics.json',import.meta.url),'utf8'));
 const bad=fixture.original,source=extractEmbed(fixture.embed,bad.sourceUrl),now='2026-11-18T01:00:00Z';
 const stored=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
-const controls=stored.filter(e=>e.id!==bad.id);
+// Keep this historical scenario within the date being tested.
+const controls=stored.filter(e=>e.id!==bad.id && Date.parse(e.publishedAt)<=Date.parse(now));
 const platforms=JSON.parse(await readFile(new URL('../data/platforms.json',import.meta.url),'utf8'));
 
 test('complete official API analytics evidence describes observation, not an allowance change',()=>{
