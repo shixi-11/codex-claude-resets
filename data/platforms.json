@@ -11,19 +11,19 @@
     "trackingState": "timeline-checked",
     "latest": {
       "id": "2125853628250599730",
-      "kind": "usage",
-      "state": "information",
-      "reason": "bank-information",
+      "kind": "banked",
+      "state": "reported",
+      "reason": "reviewed-bank-online",
       "author": "thsottiaux",
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125853628250599730",
       "publishedAt": "2026-11-26T07:26:16.082Z",
-      "verifiedAt": "2026-11-28T09:27:26.166Z",
+      "verifiedAt": "2026-11-28T10:09:49.371Z",
       "excerpt": "Banked reset is online",
       "fullText": "Banked reset is online",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "ce2ea9d5f705da2ccf89e50ef821d24cc4d4fe831179d1cae1a67d409177f6cc"
     },
     "lastReset": {
@@ -66,27 +66,26 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "discoveryMode": "profile-relay",
     "latestGift": {
-      "id": "2125784147889393806",
+      "id": "2125853628250599730",
       "kind": "banked",
-      "state": "announced",
-      "reason": "explicit-bank-announcement",
+      "state": "reported",
+      "reason": "reviewed-bank-online",
       "author": "thsottiaux",
       "platform": "codex",
-      "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
-      "publishedAt": "2026-11-26T02:50:10.673Z",
-      "verifiedAt": "2026-11-28T09:27:26.166Z",
-      "excerpt": "As a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
-      "fullText": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125853628250599730",
+      "publishedAt": "2026-11-26T07:26:16.082Z",
+      "verifiedAt": "2026-11-28T10:09:49.371Z",
+      "excerpt": "Banked reset is online",
+      "fullText": "Banked reset is online",
       "truncated": false,
-      "provenance": "x-oembed+fxembed",
-      "relayUrl": "https://api.fxtwitter.com/thsottiaux/status/2125784147889393806",
-      "rulesVersion": "1.4.32",
-      "contentHash": "45ddfe4069b408ef591f84e29ec24008513cbcc353cce623bd43a13b8c489991"
+      "provenance": "x-oembed",
+      "rulesVersion": "1.4.33",
+      "contentHash": "ce2ea9d5f705da2ccf89e50ef821d24cc4d4fe831179d1cae1a67d409177f6cc"
     },
     "latestReset": {
       "id": "2115330127886463244",
@@ -128,7 +127,7 @@
           "contentHash": "fe8ab6f273b339f05df2396d9b7a02a3e20883d4be061cbe5194f3c6ec3a24c6"
         }
       },
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "a8878b2661f048c20ceaf62ce11db80c14431d1249ce975e406001821ac1eae5"
     },
     "accountReports": [
@@ -177,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-28T09:27:32.979Z",
+        "verifiedAt": "2026-11-28T10:10:01.398Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -196,7 +195,7 @@
     "trackingState": "timeline-checked",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-28T09:27:32.979Z",
+      "checkedAt": "2026-11-28T10:10:01.398Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -208,12 +207,12 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
       "publishedAt": "2026-11-24T19:47:54.824Z",
-      "verifiedAt": "2026-11-28T09:27:26.166Z",
+      "verifiedAt": "2026-11-28T10:09:49.371Z",
       "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
       "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "95e19d8e1c692240fa25c8056c65aad1da89b3c75ce399975c87d78f2afc8724"
     },
     "lastReset": {
@@ -230,7 +229,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     },
     "discoveryMode": "profile-relay",
@@ -249,7 +248,7 @@
       "truncated": false,
       "provenance": "x-oembed+fxembed",
       "relayUrl": "https://api.fxtwitter.com/ClaudeDevs/status/2120275296637321476",
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "cbc827f7ed501e02460819e2e6a33e2d8ee3bd9b4e2590162b5fcf4f3ece6208"
     },
     "latestReset": {
@@ -266,7 +265,7 @@
       "fullText": "With Fable 5.1 out today, we've also reset 5-hour and weekly limits for all users.",
       "truncated": false,
       "provenance": "x-oembed",
-      "rulesVersion": "1.4.32",
+      "rulesVersion": "1.4.33",
       "contentHash": "13df11b1625d7b7f7c57df21e00a016ca42c778e284a0a17abafbf75fabdb61c"
     }
   }
