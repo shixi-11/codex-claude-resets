@@ -18,7 +18,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125853628250599730",
       "publishedAt": "2026-11-26T07:26:16.082Z",
-      "verifiedAt": "2026-11-28T10:09:49.371Z",
+      "verifiedAt": "2026-11-28T10:12:33.867Z",
       "excerpt": "Banked reset is online",
       "fullText": "Banked reset is online",
       "truncated": false,
@@ -79,7 +79,7 @@
       "platform": "codex",
       "sourceUrl": "https://x.com/thsottiaux/status/2125853628250599730",
       "publishedAt": "2026-11-26T07:26:16.082Z",
-      "verifiedAt": "2026-11-28T10:09:49.371Z",
+      "verifiedAt": "2026-11-28T10:12:33.867Z",
       "excerpt": "Banked reset is online",
       "fullText": "Banked reset is online",
       "truncated": false,
@@ -176,7 +176,7 @@
         "state": "announced",
         "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
         "announcementId": "2093742321473065266",
-        "verifiedAt": "2026-11-28T10:10:01.398Z",
+        "verifiedAt": "2026-11-28T10:12:48.469Z",
         "benefit": "Claude Code standard weekly limits +25% permanently",
         "eligible": "Pro, Max, Ultra, Team, and seat-based Enterprise",
         "eligiblePlans": [
@@ -192,10 +192,10 @@
         "isResetCard": false
       }
     ],
-    "trackingState": "timeline-checked",
+    "trackingState": "partial-coverage",
     "promotionHealth": {
       "state": "fresh",
-      "checkedAt": "2026-11-28T10:10:01.398Z",
+      "checkedAt": "2026-11-28T10:12:48.469Z",
       "sourceUrl": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion"
     },
     "latest": {
@@ -207,7 +207,7 @@
       "platform": "claude",
       "sourceUrl": "https://x.com/ClaudeDevs/status/2125315493771059685",
       "publishedAt": "2026-11-24T19:47:54.824Z",
-      "verifiedAt": "2026-11-28T10:09:49.371Z",
+      "verifiedAt": "2026-11-28T10:12:33.867Z",
       "excerpt": "Building the app and any calls it makes to Claude count toward your usage limits.",
       "fullText": "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.\n\nIt's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
       "truncated": false,

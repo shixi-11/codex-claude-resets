@@ -1,7 +1,7 @@
 {
-  "lastAttemptAt": "2026-11-28T10:09:49.371Z",
+  "lastAttemptAt": "2026-11-28T10:12:33.867Z",
   "lastSuccessAt": "2026-11-28T10:09:49.371Z",
-  "discoveryAt": "2026-11-28T10:09:49.371Z",
+  "discoveryAt": "2026-11-28T10:12:33.867Z",
   "mode": "profile-relay",
   "sources": [
     {
@@ -114,22 +114,40 @@
       "url": "https://api.fxtwitter.com/2/profile/claudeai/statuses?count=40&with_replies=1",
       "author": "claudeai",
       "platform": "claude",
+      "ok": false,
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Codex Reset Monitor · discovery only",
+      "url": "https://codexreset.org/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "name": "Codex Resets · discovery only",
+      "url": "https://codex-resets.com/",
       "ok": true,
-      "candidates": 9
+      "candidates": 74
+    },
+    {
+      "name": "Reset Radar · Claude link discovery only",
+      "url": "https://www.resetradar.com/data/events.json",
+      "ok": true,
+      "candidates": 43
     },
     {
       "name": "X official embed",
       "url": "https://publish.twitter.com/",
       "ok": true,
-      "checked": 9,
+      "checked": 17,
       "failed": 0
     }
   ],
-  "status": "ok",
+  "status": "degraded",
   "failedPosts": [],
   "platforms": {
     "codex": {
-      "lastAttemptAt": "2026-11-28T10:09:49.371Z",
+      "lastAttemptAt": "2026-11-28T10:12:33.867Z",
       "status": "ok",
       "checked": 4,
       "failed": 0,
@@ -148,14 +166,14 @@
           "ok": true
         }
       ],
-      "lastSuccessAt": "2026-11-28T10:09:49.371Z"
+      "lastSuccessAt": "2026-11-28T10:12:33.867Z"
     },
     "claude": {
-      "lastAttemptAt": "2026-11-28T10:09:49.371Z",
-      "status": "ok",
-      "checked": 5,
+      "lastAttemptAt": "2026-11-28T10:12:33.867Z",
+      "status": "degraded",
+      "checked": 13,
       "failed": 0,
-      "discovered": 47,
+      "discovered": 46,
       "authors": [
         {
           "author": "ClaudeDevs",
@@ -167,7 +185,7 @@
         },
         {
           "author": "claudeai",
-          "ok": true
+          "ok": false
         }
       ],
       "lastSuccessAt": "2026-11-28T10:09:49.371Z"
