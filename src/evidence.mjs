@@ -1,5 +1,5 @@
 import {announcementTime,isBeforeTenPacificDeadline,isMidnightPacificDeadline} from './announcement-time.mjs';
-export const RULES_VERSION = '1.4.32';
+export const RULES_VERSION = '1.4.33';
 export const ALLOWED_AUTHORS = ['thsottiaux', 'OpenAIDevs', 'OpenAI', 'ClaudeDevs', 'AnthropicAI', 'claudeai'];
 export const postPlatform = author => ['claudedevs','anthropicai','claudeai'].includes(author.toLowerCase()) ? 'claude' : 'codex';
 
@@ -112,6 +112,9 @@ export const isManualResetGrant = event => event?.id===manualResetGrant.id && ev
 // Activation is not proof of receipt by every account or a global reset.
 export const bankedActivation = {"id": "2120999993079451919", "author": "thsottiaux", "sourceUrl": "https://x.com/thsottiaux/status/2120999993079451919", "publishedAt": "2026-11-12T21:59:39.281Z", "contentHash": "b56e57c3cc846a217eeadf04a1316443c6f2fba996dc3e060f86e209426605e3", "fullText": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!"};
 export const isBankedActivation = event => event?.id===bankedActivation.id && event.author?.toLowerCase()===bankedActivation.author && event.fullText===bankedActivation.fullText && !event.truncated;
+// The feature is online; this neither applies a global reset nor confirms personal receipt.
+export const bankedOnline={id:'2125853628250599730',author:'thsottiaux',sourceUrl:'https://x.com/thsottiaux/status/2125853628250599730',publishedAt:'2026-11-26T07:26:16.082Z',contentHash:'ce2ea9d5f705da2ccf89e50ef821d24cc4d4fe831179d1cae1a67d409177f6cc',fullText:'Banked reset is online'};
+export const isBankedOnline = event => event?.id===bankedOnline.id && event.author?.toLowerCase()===bankedOnline.author && event.fullText===bankedOnline.fullText && !event.truncated;
 // The Business grant and its separate Fast offer do not establish account
 // receipt, a global reset instant or a reset-credit redemption deadline.
 export const businessBankedReset = {id:'2125299248782778588',author:'thsottiaux',sourceUrl:'https://x.com/thsottiaux/status/2125299248782778588',publishedAt:'2026-11-24T18:43:21.717Z',contentHash:'bcb8ce248b321738ed05b130c0e20af2c6faf9dc9856e6e9d1b0638bec1a563e',fullText:'To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!'};
@@ -125,6 +128,7 @@ export function classify(text, { id, truncated = false, author = '', publishedAt
   if(isReviewedResetSource({id,author}) && !reviewed)return {...unknown,reason:truncated?'truncated':'reviewed-source-changed'};
   if (!isRelevant(value, {author}) && !linked) return { kind: 'other', state: 'information', reason: 'unrelated' };
   if (truncated) return { ...unknown, reason: 'truncated' };
+  if (isBankedOnline({id,author,fullText:text,truncated}) && publishedAt===bankedOnline.publishedAt) return {kind:'banked',state:'reported',reason:'reviewed-bank-online'};
   if (isBankedActivation({id,author,fullText:text,truncated})) return {kind:'banked',state:'announced',reason:'reviewed-bank-rollout'};
   if (isManualResetGrant({id,author,fullText:text,truncated})) return {kind:'banked',state:'reported',reason:'reviewed-manual-grant'};
   if (isBusinessBankedReset({id,author,fullText:text,truncated})) return {kind:'banked',state:'announced',reason:'reviewed-business-bank'};
@@ -232,6 +236,7 @@ export function validateEvent(event) {
   if (event.reason==='reviewed-plan-usage' && (event.kind!=='usage' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-plan-usage')) throw new Error('Plan usage needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-product-commentary' && (event.kind!=='commentary' || event.state!=='information' || classify(event.fullText||'',event).reason!=='reviewed-product-commentary')) throw new Error('Product commentary needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-business-bank' && (event.kind!=='banked' || event.state!=='announced' || !isBusinessBankedReset(event) || event.sourceUrl!==businessBankedReset.sourceUrl || event.contentHash!==businessBankedReset.contentHash || event.publishedAt!==businessBankedReset.publishedAt)) throw new Error('Business bank needs its exact reviewed identity and complete text');
+  if (event.reason==='reviewed-bank-online' && (event.kind!=='banked' || event.state!=='reported' || !isBankedOnline(event) || event.sourceUrl!==bankedOnline.sourceUrl || event.contentHash!==bankedOnline.contentHash || event.publishedAt!==bankedOnline.publishedAt || event.resetAt || event.eligiblePlans || event.endsAt)) throw new Error('Bank availability needs its exact source and does not establish a reset time, deadline or eligibility');
   if (event.reason==='reviewed-bank-rollout' && (event.kind!=='banked' || event.state!=='announced' || !isBankedActivation(event))) throw new Error('Bank activation needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-manual-grant' && (event.kind!=='banked' || event.state!=='reported' || !isManualResetGrant(event))) throw new Error('Manual reset grant needs its exact reviewed identity and complete text');
   if (event.reason==='reviewed-bank-grant' && (event.kind!=='banked' || event.state!=='reported' || classify(event.fullText||'',event).reason!=='reviewed-bank-grant')) throw new Error('Bank grant needs its pinned source and verified editorial context');
